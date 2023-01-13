@@ -149,8 +149,7 @@ Ermöglicht die Lizenzierung für Cloud Volumes Edge Cache.
 
 * Dieselben Funktionen wie das Professional-Paket mit Business Continuity und Datenschutz für ein verteiltes Unternehmen
 * Intelligentes Edge-Caching mithilfe einer Windows VM mit geringem Platzbedarf an jedem Standort
-* Mindestens 30 tib mit sechs Edge-Nodes enthalten
-* Ein Edge-Node mit jeweils 3 TIBS zusätzlicher Kapazität
+* Ein Edge-Node mit jeweils 3 TIBS Kapazität erworben
 
 
 ifdef::azure[]

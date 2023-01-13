@@ -2207,8 +2207,6 @@
   <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">Ermöglicht die Lizenzierung für Cloud Volumes Edge Cache.</block>
   <block id="cbea577daebf267793d8d7234ee50729" category="list-text">Dieselben Funktionen wie das Professional-Paket mit Business Continuity und Datenschutz für ein verteiltes Unternehmen</block>
   <block id="90083db3dbad73e69a817501be172673" category="list-text">Intelligentes Edge-Caching mithilfe einer Windows VM mit geringem Platzbedarf an jedem Standort</block>
-  <block id="c42bae5dc6b1d94a8229aa520a055d09" category="list-text">Mindestens 30 tib mit sechs Edge-Nodes enthalten</block>
-  <block id="9228e835b818682287047b781e3a92b5" category="list-text">Ein Edge-Node mit jeweils 3 TIBS zusätzlicher Kapazität</block>
   <block id="7c4c7c30514b4cc21e76f21acfaacf2a" category="inline-link">Erfahren Sie mehr darüber, wie Cloud Volumes Edge Cache Sie dabei unterstützen kann</block>
   <block id="20044e95e1ba41fb44c428898ee01dc2" category="paragraph"><block ref="20044e95e1ba41fb44c428898ee01dc2" category="inline-link-rx"></block></block>
   <block id="26e0cffca193fe47b1c5c8f73ea3c3e1" category="section-title">Verbrauchsmodelle</block>
@@ -4621,4 +4619,5 @@
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">Mit beiden Optionen sollten Sie dies tun <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>.</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">Version 9.10.0 und früher</block>
   <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">Sie können WORM Storage auf einem Cloud Volumes ONTAP System aktivieren, wenn Sie eine neue Arbeitsumgebung erstellen. SIE können WORM Storage nicht auf einzelnen Volumes aktivieren --WORM muss auf Systemebene aktiviert sein. Sie kann nur aktiviert werden, wenn Sie die Arbeitsumgebung erstellen.</block>
+  <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">Ein Edge-Node mit jeweils 3 TIBS Kapazität erworben</block>
 </blocks>
