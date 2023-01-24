@@ -76,7 +76,7 @@ image:diagram_ha_azure_maz.png["Ein Konzept-Image, das einen Load Balancer für 
 Beachten Sie Folgendes zu den Azure Komponenten, die BlueXP für Sie implementiert:
 
 Azure Standard Load Balancer:: Der Load Balancer managt den eingehenden Datenverkehr zum Cloud Volumes ONTAP HA-Paar.
-Verfügbarkeitszonen:: Zwei Cloud Volumes ONTAP-Nodes werden in verschiedenen Verfügbarkeitszonen bereitgestellt. Verfügbarkeitszonen stellen sicher, dass sich die Nodes in unterschiedlichen Fehlerdomänen befinden. https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy["Weitere Informationen zur Azure Storage-Redundanz finden Sie in der Azure Dokumentation"^].
+Verfügbarkeitszonen:: Zwei Cloud Volumes ONTAP-Nodes werden in verschiedenen Verfügbarkeitszonen bereitgestellt. Verfügbarkeitszonen stellen sicher, dass sich die Nodes in unterschiedlichen Fehlerdomänen befinden. https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["Weitere Informationen zum zonenredundanten Azure-Speicher für verwaltete Festplatten finden Sie in den Azure-Dokumentationen"^].
 Festplatten:: Kundendaten befinden sich auf zonenredundanten Storage-Laufwerken (ZRS), die von gemanagt werden. Jeder Node hat Zugriff auf den Storage des anderen Nodes. Für ist auch zusätzlicher Speicher erforderlich link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["Boot-, Root-, Partner-Root- und Kerndaten"].
 Konten mit Storage-Systemen:: Storage-Konten werden für gemanagte, festplattenbasierte Implementierungen verwendet, um Diagnoseprotokolle und das Tiering an Blob-Storage zu verarbeiten.
 
