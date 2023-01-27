@@ -574,7 +574,6 @@
   <block id="c0f65045a034bd8451814ab893994b7b" category="admonition">Seit dem 3. Dezember 2021 nutzt NetApp eine neue Methode zur Registrierung von Zugangsdaten für NSS-Konten.<block ref="aa125d01c1b555d9e118821165394c02" category="inline-link-rx"></block>. Wenn Ihr NSS-Konto den alten Satz von Anmeldeinformationen verwendet, müssen Sie das Konto auf die neuen Anmeldedaten aktualisieren.</block>
   <block id="8aec6a2bcfb78af1fffa4f2c52dfe49d" category="inline-link">Active IQ Digital Advisor Dokumentation</block>
   <block id="e778b936b44de5bd4765be37fb61b14b" category="paragraph">Siehe<block ref="6b8a787f5f28cd8a65ef0852e940136e" category="inline-link-rx"></block> Entsprechende Details.</block>
-  <block id="17cdbe368c7c729de5966fefda692ad9" category="summary">Richten Sie Ihr Azure Netzwerk ein, um Cloud Volumes ONTAP Systeme ordnungsgemäß funktionieren zu können. Dazu gehört auch die Vernetzung von Connector und Cloud Volumes ONTAP.</block>
   <block id="412590af9448ac66459e9c3d686de880" category="doc">Netzwerkanforderungen für Cloud Volumes ONTAP in Azure</block>
   <block id="72928bd9aacf64df0eb1285c03f5f5c0" category="section-title">Anforderungen für Cloud Volumes ONTAP</block>
   <block id="098d8cb8c4a1291e10ee07b333610f24" category="paragraph">Die folgenden Netzwerkanforderungen müssen in Azure erfüllt werden.</block>
@@ -776,13 +775,6 @@
   <block id="74082482ea0cad59170e3d4dce025b4e" category="cell">Syslog-Server</block>
   <block id="a21848ca8e1b04c74552ca38f4284f2b" category="cell">Syslog-Weiterleitungsmeldungen</block>
   <block id="a02218676e4b3b1478891bbfdaee427f" category="section-title">Anforderungen an den Steckverbinder</block>
-  <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">Für den Connector ist ein abgehender Internetzugang erforderlich, um Ressourcen und Prozesse in Ihrer Public Cloud-Umgebung zu managen.</block>
-  <block id="b8724da75fb917e992576b17378e66b3" category="cell">Endpunkte</block>
-  <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\https://support.netapp.com</block>
-  <block id="db9e137068a05efe5440105c2494b7f1" category="cell">Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden.</block>
-  <block id="23486ca53d499245ebae5460cf6d10ad" category="cell">Um SaaS-Funktionen und -Services in BlueXP zur Verfügung zu stellen.</block>
-  <block id="554841a7559bd190d883de523464d1d1" category="cell">\https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net</block>
-  <block id="065880318484084e9bfe33ea9c6a8702" category="cell">Aktualisierung des Connectors und seiner Docker Komponenten.</block>
   <block id="0fbb894005047753551829b93d408eac" category="paragraph">Die Sicherheitsgruppe für den Konnektor erfordert sowohl ein- als auch ausgehende Regeln.</block>
   <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">Regeln für eingehende Anrufe</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
@@ -797,7 +789,6 @@
   <block id="a94c44d83136ca0aa23c397adb28b116" category="admonition">Die Quell-IP-Adresse ist der Connector-Host.</block>
   <block id="241b5fab8e737eaa79c543efe7307059" category="cell">API-Aufrufe und AutoSupport</block>
   <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">Outbound-Internet und ONTAP Cluster Management LIF</block>
-  <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">API-Aufrufe an Azure und ONTAP, Cloud Data Sense, zum Ransomware-Service und Senden von AutoSupport-Nachrichten an NetApp</block>
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">Wird für DNS Resolve von BlueXP verwendet</block>
   <block id="987e6a12f4054c7d2b4fb12b670fd3e2" category="summary">Wenn Sie verstehen, wie Cloud Volumes ONTAP standardmäßig konfiguriert ist, können Sie Ihre Systeme einrichten und verwalten. Dies gilt insbesondere, wenn Sie mit ONTAP vertraut sind, da sich das Standard-Setup für Cloud Volumes ONTAP von ONTAP unterscheidet.</block>
   <block id="f280b5a5c0eeaf41d31a8a2661b341cb" category="doc">Standardkonfiguration für Cloud Volumes ONTAP</block>
@@ -1787,11 +1778,6 @@
   <block id="17cecf34f6070ab2eecf2740c05f04fb" category="list-text">Registrieren der Funktion des Hochverfügbarkeits-Modus:</block>
   <block id="f2c8cae480fd1319bed5bc6dad61485e" category="list-text">Überprüfen Sie optional, ob die Funktion jetzt registriert ist:</block>
   <block id="3f8d6716204225738a12373603bece28" category="paragraph">Die Azure CLI sollte ein Ergebnis wie die folgenden zurückgeben:</block>
-  <block id="c1a944514f668a6530be7821e4a430f3" category="summary">Richten Sie das Netzwerk Ihrer Google Cloud-Plattform ein, damit Cloud Volumes ONTAP-Systeme ordnungsgemäß funktionieren können. Dazu gehört auch die Vernetzung von Connector und Cloud Volumes ONTAP.</block>
-  <block id="a74ee89365e6df5e260d1051917ad0ea" category="doc">Netzwerkanforderungen für Cloud Volumes ONTAP in GCP</block>
-  <block id="26f701fd34070cdff3f09a341ace7632" category="inline-link-macro">HA-Paare in GCP arbeiten</block>
-  <block id="16e04d05ebe78ce811365e6363616985" category="paragraph">Wenn Sie ein HA-Paar bereitstellen möchten, sollten Sie dies tun <block ref="34f7e91e8936b0b0eaed95f473b90e44" category="inline-link-macro-rx"></block>.</block>
-  <block id="394894d4a834735632bdc966f17ca917" category="paragraph">Die folgenden Anforderungen müssen in GCP erfüllt sein.</block>
   <block id="0b92442656d83f3067193055685902c8" category="list-text">Interner Lastausgleich</block>
   <block id="36cbcccdf7bf57aac5bc0aaa01526fb1" category="list-text">BlueXP erstellt automatisch vier interne Google Cloud Load Balancer (TCP/UDP), die den eingehenden Datenverkehr zum Cloud Volumes ONTAP HA-Paar verwalten. Am Ende ist keine Konfiguration erforderlich Diese Anforderung ist lediglich, Sie über den Netzwerkverkehr zu informieren und Sicherheitsbedenken abzumildern.</block>
   <block id="bed26a3b752abff1e6e50d64a46ef060" category="paragraph">Ein Load Balancer für das Cluster-Management eignet sich zum Management von Storage-VM (SVM), einer für NAS-Datenverkehr zu Node 1 und der letzte für NAS-Datenverkehr zu Node 2.</block>
@@ -1805,26 +1791,20 @@
   <block id="0777a377adfb71ee50970edc3940dc96" category="list-text">Eine UDP-Weiterleitungsregel</block>
   <block id="8141cbd2dd808b9e48e91eaf3d5f2fe1" category="list-text">Globaler Zugriff ist deaktiviert</block>
   <block id="83d4ff33554cb62b1f10057bae8d85ce" category="paragraph">Obwohl der globale Zugriff standardmäßig deaktiviert ist, wird die Aktivierung der IT-Bereitstellung unterstützt. Wir haben sie deaktiviert, da der Datenverkehr zwischen Regionen erheblich höhere Latenzen aufweisen wird. Wir wollten sicherstellen, dass Sie keine negativen Erfahrungen durch zufällige, überregionale Montierungen hatten. Wenn Sie diese Option aktivieren, passt sie sich Ihren geschäftlichen Anforderungen an.</block>
-  <block id="75f83e966c01c1de3b682a52f8d4c7c0" category="list-text">Eine oder mehrere Zonen für HA-Paare</block>
   <block id="0d5b8e06664cffcf9f498e7821c89481" category="list-text">Durch Implementierung einer HA-Konfiguration für mehrere oder in einer einzelnen Zone werden die Hochverfügbarkeit der Daten gewährleistet. Bei der Erstellung des HA-Paars werden Sie von BlueXP aufgefordert, mehrere Zonen oder eine einzelne Zone auszuwählen.</block>
   <block id="b998798af53f2f105151ceda08e634dd" category="list-text">Mehrere Zonen (empfohlen)</block>
   <block id="b7cc244050d3d3e8c009b5b563e1d7df" category="paragraph">Durch die Implementierung einer HA-Konfiguration über drei Zonen hinweg wird eine kontinuierliche Datenverfügbarkeit sichergestellt, wenn ein Ausfall innerhalb einer Zone auftritt. Beachten Sie, dass die Schreibleistung im Vergleich zu einer einzelnen Zone etwas geringer ist, aber sie ist minimal.</block>
   <block id="1421fc8092dbdb233072bc4ee14a9ce1" category="list-text">Einzelne Zone zu erreichen</block>
   <block id="91e1df513072689837977512c31be80c" category="paragraph">Wenn eine Cloud Volumes ONTAP HA-Konfiguration in einer einzelnen Zone implementiert wird, kommt eine Richtlinie zur Platzierung der Verteilung zum Einsatz. Diese Richtlinie sorgt dafür, dass eine HA-Konfiguration innerhalb der Zone vor einem Single Point of Failure geschützt ist, ohne dass zur Fehlereingrenzung separate Zonen erforderlich sind.</block>
   <block id="7a84ddecb590ceeb3544024ab7097add" category="paragraph">Dieses Implementierungsmodell senkt Ihre Kosten, da zwischen den Zonen keine Kosten für den Datenausgang anfallen.</block>
-  <block id="0a27741a79d0e9ca18ec583e983bfb93" category="list-text">Vier virtuelle Private Clouds für HA-Paare</block>
-  <block id="9aac39c2eff8d072fd62e0e718e5684b" category="list-text">Für eine HA-Konfiguration sind vier Virtual Private Clouds (VPCs) erforderlich. Es sind vier VPCs erforderlich, da für GCP jede Netzwerkschnittstelle in einem separaten VPC-Netzwerk gespeichert werden muss.</block>
   <block id="44b028753f7a7976b8be9d11b1afed32" category="paragraph">Bei der Erstellung des HA-Paars werden Sie von BlueXP aufgefordert, vier VPCs auszuwählen:</block>
   <block id="d05ee1603902a8831c88a7a4e2d05592" category="list-text">VPC-0 für eingehende Verbindungen zu den Daten und Nodes</block>
   <block id="420f5bde5fe8d88334d70c6e271fafb1" category="list-text">VPC-1, VPC-2 und VPC-3 für die interne Kommunikation zwischen den Nodes und dem HA-Mediator</block>
   <block id="59d7031e8dd126031d49f14da3eb9662" category="inline-image-macro">Ein Konzeptbild mit einem Cloud Volume HA-Paar und den für die Konfiguration erforderlichen vier VPCs</block>
   <block id="5f244177e38ddb1ab2243352007aaca2" category="paragraph"><block ref="5f244177e38ddb1ab2243352007aaca2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3d13cafcfa05e263c4df4bafb6f8f947" category="list-text">Subnetze für HA-Paare</block>
   <block id="8a8c42c41cee152d79d679a14f70eab6" category="list-text">Für jede VPC ist ein privates Subnetz erforderlich.</block>
   <block id="79dd843cdbd0a98276c26f29bded2257" category="paragraph">Wenn Sie den Connector in VPC-0 platzieren, müssen Sie einen privaten Google-Zugriff im Subnetz aktivieren, um auf die APIs zuzugreifen und Daten-Tiering zu ermöglichen.</block>
   <block id="879d9e5531b71e6c91d2bb1771c06d40" category="paragraph">Die Subnetze in diesen VPCs müssen über unterschiedliche CIDR-Bereiche verfügen. Sie können keine überlappenden CIDR-Bereiche haben.</block>
-  <block id="115b6c4bc1559957108cd2e500828c8d" category="list-text">Eine Virtual Private Cloud für Single-Node-Systeme</block>
-  <block id="50db7350c142ba7d29f00df81b4c786b" category="list-text">Für ein Single-Node-System ist eine VPC erforderlich.</block>
   <block id="b9ea9f76a11191d80f8fe1abc9437eb6" category="list-text">Gemeinsam genutzte VPCs</block>
   <block id="f3d03214bf75026b54f5b2c16fec0e81" category="list-text">Cloud Volumes ONTAP und der Connector werden in einer gemeinsamen Google Cloud VPC und auch in eigenständigen VPCs unterstützt.</block>
   <block id="d3a2a7fdaa8373f4a0dca1f16e49c9c1" category="paragraph">Bei einem Single-Node-System kann die VPC entweder eine gemeinsame VPC oder eine Standalone-VPC sein.</block>
@@ -1836,41 +1816,27 @@
   <block id="0d8050524ef140aadb3a681481890b39" category="list-text">Paketspiegelung in VPCs</block>
   <block id="4d6aebef0af2c2c1118b467bdf0dadf0" category="inline-link">Paketspiegelung</block>
   <block id="7c0126eb5fa57fb86ccb4cf44811856d" category="list-text"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> In der Google Cloud VPC, in der die Cloud Volumes ONTAP implementiert wird, muss deaktiviert werden. Cloud Volumes ONTAP kann nicht ordnungsgemäß ausgeführt werden, wenn die Paketspiegelung aktiviert ist.</block>
-  <block id="d3d79704bb54117545a4635e1d22fc65" category="list-text">Outbound-Internetzugang für Cloud Volumes ONTAP</block>
   <block id="99ac8cc27f368522d020a76c65551219" category="list-text">Für Cloud Volumes ONTAP ist ein Outbound-Internetzugang für NetApp AutoSupport erforderlich, der den Zustand Ihres Systems proaktiv überwacht und Meldungen an den technischen Support von NetApp sendet.</block>
   <block id="c44db905496bb7220714be5427afb035" category="paragraph">Wenn keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten verfügbar ist, konfiguriert BlueXP Ihre Cloud Volumes ONTAP-Systeme automatisch so, dass der Connector als Proxy-Server verwendet wird. Die einzige Anforderung besteht darin, sicherzustellen, dass die Firewall des Connectors _Inbound_-Verbindungen über Port 3128 zulässt. Nach der Bereitstellung des Connectors müssen Sie diesen Port öffnen.</block>
   <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">Wenn Sie strenge ausgehende Regeln für Cloud Volumes ONTAP festgelegt haben, müssen Sie auch sicherstellen, dass die Cloud Volumes ONTAP-Firewall _Outbound_-Verbindungen über Port 3128 zulässt.</block>
   <block id="4c896c50345c5252f4b0e8fc4bf10723" category="admonition">Wenn Sie ein HA-Paar verwenden, benötigt der HA Mediator keinen Outbound-Internetzugang.</block>
   <block id="af5123aa908861af9755bea4400d279c" category="list-text">Private IP-Adressen</block>
-  <block id="8c9d06136a351aef5233e159f1b086f5" category="list-text">BlueXP weist Cloud Volumes ONTAP in GCP die folgende Anzahl privater IP-Adressen zu:</block>
-  <block id="e7787f4da96c754ed6401b93cf7a96ee" category="list-text">* Einzelner Knoten*: 3 oder 4 private IP-Adressen</block>
   <block id="c0d1b864d00da3eb6415590dfa2621ab" category="paragraph">Sie können die Erstellung der Storage-VM (SVM)-Management-LIF überspringen, wenn Sie Cloud Volumes ONTAP mithilfe der API implementieren und folgende Flag angeben:</block>
   <block id="9389c2cd70872a229cd788537557d183" category="paragraph"><block ref="68829208e7a5528882bfbb0e23b76f1c" prefix="" category="inline-code"></block></block>
   <block id="2be40f62b7c4e1d13a18dcc030852bf8" category="paragraph">Ein LIF ist eine IP-Adresse, die einem physischen Port zugewiesen ist. Für Managementtools wie SnapCenter ist eine Storage-VM (SVM)-Management-LIF erforderlich.</block>
-  <block id="a4dcab9c1ee36b30447e9cfab646cbc8" category="list-text">*HA-Paar*: 14 oder 15 private IP-Adressen</block>
   <block id="0ac7ae25c356474957d53018f385f434" category="list-text">7 oder 8 private IP-Adressen für VPC-0</block>
   <block id="16dba371e7c3be679c75a860acf986a5" category="list-text">Zwei private IP-Adressen für VPC-1</block>
   <block id="3b36c3b05500e8c44c01c05c2c597b97" category="list-text">Zwei private IP-Adressen für VPC-2</block>
   <block id="75a392272a1bb675ed8f846182436d6e" category="list-text">Drei Private-IP-Adressen für VPC-3</block>
   <block id="4dfddd1829f7fb340bd9b36bff6e3130" category="list-text">Firewall-Regeln</block>
-  <block id="c3872c89a315822852621c448e41aac4" category="list-text">Sie müssen keine Firewall-Regeln erstellen, weil BlueXP das für Sie tut. Wenn Sie Ihre eigene verwenden müssen, beachten Sie die unten aufgeführten Firewall-Regeln.</block>
   <block id="2a361a1f21cbd928455b1bd06df94169" category="paragraph">Beachten Sie, dass für eine HA-Konfiguration zwei Gruppen von Firewall-Regeln erforderlich sind:</block>
-  <block id="01e18e5463e6c1fc9c05a5b8a728f3ff" category="list-text">Ein Regelsatz für HA-Komponenten in VPC-0. Diese Regeln ermöglichen den Datenzugriff auf Cloud Volumes ONTAP. <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>.</block>
-  <block id="204347da7430e0509c4b62949e49e5dc" category="list-text">Weiterer Regelsatz für HA-Komponenten in VPC-1, VPC-2 und VPC-3. Diese Regeln sind für die Kommunikation zwischen den HA-Komponenten ein- und ausgehender Anruf offen. <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>.</block>
-  <block id="d9352b05e7fd32136338aa8bf365e170" category="list-text">Verbindung von Cloud Volumes ONTAP zu Google Cloud Storage für Daten-Tiering</block>
   <block id="5e74b536fe3c8bd111e49f783c8e991c" category="inline-link">Google Cloud-Dokumentation: Privaten Google Access konfigurieren</block>
   <block id="9e0ae4847043d43d71330ce503e69ac8" category="list-text">Wenn kalte Daten in einen Google Cloud Storage Bucket verschoben werden sollen, muss das Subnetz, in dem Cloud Volumes ONTAP residiert, für privaten Google Zugriff konfiguriert sein (wenn Sie ein HA-Paar verwenden, ist dies das Subnetz in VPC-0). Anweisungen finden Sie unter<block ref="6db326f0ee07df97e25069fccf883deb" category="inline-link-rx"></block>.</block>
   <block id="465b92b3276cc18a4183d48ccf476d6a" category="inline-link-macro">Tiering von kalten Daten auf kostengünstigen Objekt-Storage</block>
   <block id="33e7d975fa9a0910415fa300d8bf304a" category="paragraph">Weitere Schritte zur Einrichtung von Daten-Tiering in BlueXP finden Sie unter <block ref="9ae9bcf59853ba48ce2658a41db24feb" category="inline-link-macro-rx"></block>.</block>
   <block id="df025646ed6854c0696237c0ac916446" category="list-text">Verbindungen zu ONTAP Systemen in anderen Netzwerken</block>
-  <block id="14725afebf967c0c497c447ebcaf1764" category="list-text">Zur Replizierung von Daten zwischen einem Cloud Volumes ONTAP System in GCP und ONTAP Systemen in anderen Netzwerken müssen Sie eine VPN-Verbindung zwischen der VPC und dem anderen Netzwerk herstellen, beispielsweise mit dem Unternehmensnetzwerk.</block>
   <block id="2fbb401eef4220b4a89cce3e59325dcb" category="inline-link">Google Cloud Dokumentation: Cloud VPN Übersicht</block>
   <block id="6d1472a8434e4945740fa177e609f886" category="paragraph">Anweisungen finden Sie unter<block ref="1bc8aad79f56acf8c242cfb981c11ee1" category="inline-link-rx"></block>.</block>
-  <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">Verbindung zu Zielnetzwerken</block>
-  <block id="e0ab516914623c72df4ff708af6cdd54" category="section-title">Firewall-Regeln für Cloud Volumes ONTAP</block>
-  <block id="e468ba21e4a82ddfaf9b8e28f74bb73b" category="paragraph">BlueXP erstellt GCP-Firewall-Regeln, die die ein- und ausgehenden Regeln enthalten, die Cloud Volumes ONTAP für den erfolgreichen Betrieb benötigt. Sie können sich zu Testzwecken auf die Ports beziehen oder wenn Sie lieber eigene Firewall-Regeln verwenden möchten.</block>
-  <block id="4907f0fb8777892173f7e34fa56bfcdb" category="paragraph">Die Firewall-Regeln für Cloud Volumes ONTAP erfordern sowohl ein- als auch ausgehende Regeln.</block>
-  <block id="bcf66fd73f27e271725271d68f4723a9" category="paragraph">Bei der Implementierung einer HA-Konfiguration handelt es sich um die Firewall-Regeln für Cloud Volumes ONTAP in VPC-0.</block>
   <block id="72d5371b4a8014dbf2df076044553ab6" category="paragraph">Wenn Sie eine Arbeitsumgebung erstellen, können Sie den Quellfilter für die vordefinierte Firewall-Richtlinie während der Bereitstellung auswählen:</block>
   <block id="62978cf670cdcd284392400fa0cb70a9" category="list-text">*Nur gewählte VPC*: Der Quellfilter für eingehenden Datenverkehr ist der Subnetz-Bereich des VPC für das Cloud Volumes ONTAP-System und der Subnetz-Bereich des VPC, in dem sich der Connector befindet. Dies ist die empfohlene Option.</block>
   <block id="ba2e1bf50371835f50d77c05a977d80c" category="list-text">*Alle VPCs*: Der Quellfilter für eingehenden Datenverkehr ist der IP-Bereich 0.0.0.0/0.</block>
@@ -1882,16 +1848,9 @@
   <block id="65ec67271f1ca7c8d6b82e17125410b7" category="cell">Alle LIFs auf einem Node</block>
   <block id="c0900faa4af93e0723408cba2ec46323" category="cell">Alle LIFs auf dem anderen Node</block>
   <block id="f484b5d85f303e1a759f409a83b3a0e8" category="cell">Kommunikation zwischen Clustern (nur Cloud Volumes ONTAP HA)</block>
-  <block id="9fda35946418ee004d3cdc93c12473b4" category="section-title">Firewall-Regeln für VPC-1, VPC-2 und VPC-3</block>
   <block id="4e9d1f4e3c452c7aba2d9cc51c690416" category="inline-xref">O. g. für Cloud Volumes ONTAP</block>
-  <block id="8ab03e4616af1a81bd7e097e2a865c29" category="paragraph">In GCP wird eine HA-Konfiguration über vier VPCs hinweg bereitgestellt. Die für die HA-Konfiguration in VPC-0 erforderlichen Firewall-Regeln sind <block ref="6696339384f87dfedda2136f4a028ff0" category="inline-xref-macro-rx"></block>.</block>
   <block id="639c4a9b76126cf4712751dee5546383" category="paragraph">Gleichzeitig ermöglichen die vordefinierten Firewall-Regeln, die BlueXP für Instanzen in VPC-1, VPC-2 und VPC-3 erstellt, die Ingress-Kommunikation über _all_ Protokolle und Ports. Diese Regeln ermöglichen die Kommunikation zwischen HA-Nodes.</block>
   <block id="e83b31d42852ca12480d330a3385214f" category="paragraph">Die Kommunikation zwischen den HA-Nodes und dem HA Mediator erfolgt über Port 3260 (iSCSI).</block>
-  <block id="fa6661c729382092acdf9b6930de105e" category="section-title">Firewall-Regeln für den Connector</block>
-  <block id="5ea521a799e1cf043cd101ec326044f6" category="paragraph">Die Firewall-Regeln für den Connector erfordern sowohl ein- als auch ausgehende Regeln.</block>
-  <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">Die vordefinierten Firewall-Regeln für den Connector öffnen den gesamten ausgehenden Datenverkehr. Wenn dies akzeptabel ist, befolgen Sie die grundlegenden Regeln für ausgehende Anrufe. Wenn Sie strengere Regeln benötigen, verwenden Sie die erweiterten Outbound-Regeln.</block>
-  <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">Die vordefinierten Firewall-Regeln für den Connector enthalten die folgenden ausgehenden Regeln.</block>
-  <block id="6dabf2a1195c84bdf3b7bf30e5ddf080" category="cell">API-Aufrufe bei GCP und ONTAP, Cloud Data Sense, zum Ransomware-Service und dem Senden von AutoSupport Nachrichten an NetApp</block>
   <block id="521c31e5e6d2868178e36a845afac351" category="summary">Eine Cloud Volumes ONTAP Hochverfügbarkeitskonfiguration (HA) bietet unterbrechungsfreien Betrieb und Fehlertoleranz. In AWS werden die Daten zwischen den beiden Nodes synchron gespiegelt.</block>
   <block id="39579c446d8c5e21ff1d2b6c3e65c086" category="section-title">HA-Komponenten</block>
   <block id="828fb65f829775430308146b1ce7cd2e" category="paragraph">In AWS umfassen die Cloud Volumes ONTAP HA-Konfigurationen die folgenden Komponenten:</block>
@@ -2809,7 +2768,6 @@
   <block id="c6239bda161ac0e2a3f3a7f04121192f" category="inline-link">AWS Dokumentation: Erstellen von IAM-Rollen</block>
   <block id="a617d64955af268e6cf6dcbbd1b9c7a2" category="list-text"><block ref="a617d64955af268e6cf6dcbbd1b9c7a2" category="inline-link-rx"></block></block>
   <block id="2f1e7d6affd61098f336e5b1777ec8e2" category="summary">BlueXP übernimmt die Einrichtung von Netzwerkkomponenten für Cloud Volumes ONTAP, z. B. IP-Adressen, Netzmasken und Routen. Sie müssen sicherstellen, dass Outbound-Internetzugang verfügbar ist, dass genügend private IP-Adressen verfügbar sind, dass die richtigen Verbindungen vorhanden sind und vieles mehr.</block>
-  <block id="716fe391ac4cd57434ca473a86d6a7da" category="paragraph">BlueXP (früher Cloud Manager) übernimmt die Einrichtung von Netzwerkkomponenten für Cloud Volumes ONTAP, z. B. IP-Adressen, Netmasken und Routen. Sie müssen sicherstellen, dass Outbound-Internetzugang verfügbar ist, dass genügend private IP-Adressen verfügbar sind, dass die richtigen Verbindungen vorhanden sind und vieles mehr.</block>
   <block id="a1a264e616e24563d4b8f8b5795ea403" category="section-title">Allgemeine Anforderungen</block>
   <block id="3091fa13c48831b4d7d6e8b6cb4b5bb1" category="paragraph">Die folgenden Anforderungen müssen in AWS erfüllt sein.</block>
   <block id="5908bdfb58aef23bebf7df36d49b9dfb" category="section-title">Outbound-Internetzugang für Cloud Volumes ONTAP Nodes</block>
@@ -4464,11 +4422,6 @@
   <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">Wenn Sie WORM aktivieren, wenn Sie eine Cloud Volumes ONTAP-Arbeitsumgebung erstellen, ist für jedes in BlueXP erstellte Volume WORM aktiviert. Allerdings können Sie mit der ONTAP CLI oder mit System Manager Volumes erstellen, in denen WORM deaktiviert ist. Diese Volumes werden NICHT mit DER WORM-Rate berechnet.</block>
   <block id="3101fb677e91832ce5fd2af7de4c1850" category="list-text">Wenn SIE WORM nicht aktivieren, wenn Sie eine Arbeitsumgebung erstellen, ist jedes mit BlueXP erstellte Volume WORM deaktiviert. FÜR diese Volumes werden die WORM-Rate nicht berechnet. ALLERDINGS können SIE MIT der ONTAP CLI oder mit System Manager WORM-fähige Volumes erstellen. Diese Volumes werden mit DER WORM-Rate berechnet.</block>
   <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">\https://*.api.bluexp.netapp.com</block>
-  <block id="e1095ff19466581c5274f67123c95036" category="paragraph">\https://api.bluexp.netapp.com</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">\https://*.cloudmanager.cloud.netapp.com</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
-  <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">Der Connector kontaktiert derzeit „cloudmanager.cloud.netapp.com", er beginnt jedoch mit der Kontaktaufnahme mit „api.bluexp.netapp.com" in einer kommenden Version.</block>
   <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HA Multi-Verfügbarkeitszone</block>
   <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">Ab ONTAP 9.10.1P3 verwendet BlueXP für NVRAM und die Core-Festplatte einen<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>, Die das Management von Schlüsseln mit verwalteten Festplatten ermöglicht. Bei niedrigeren Versionen wird der von Microsoft verwaltete Schlüssel anstelle des vom Kunden verwalteten Schlüssels verwendet.</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">Single Node</block>
@@ -4552,19 +4505,6 @@
   <block id="579a953172073c3fe33dc907abd6b3f8" category="paragraph">Cloud Manager erstellt Sicherheitsgruppen mit den ein- und ausgehenden Regeln, die Cloud Manager und Cloud Volumes ONTAP für den erfolgreichen Betrieb in der Cloud benötigen. Sie können sich zu Testzwecken auf die Ports beziehen oder wenn Sie Ihre eigenen Sicherheitsgruppen verwenden möchten.</block>
   <block id="f4b34b24cc464b0154bd81cd6d906233" category="paragraph">Die vordefinierte interne Sicherheitsgruppe für den Cloud Volumes ONTAP HA Mediator enthält die folgenden Regeln. Cloud Manager erstellt immer diese Sicherheitsgruppe. Sie haben nicht die Möglichkeit, Ihre eigene zu verwenden.</block>
   <block id="3f2a41d3e64efd3d137a5132f84eb8b6" category="paragraph">Die Anzahl der LIFs, die BlueXP für Cloud Volumes ONTAP zuweist, hängt davon ab, ob Sie ein Single Node-System oder ein HA-Paar implementieren. Ein LIF ist eine IP-Adresse, die einem physischen Port zugewiesen ist. Für Managementtools wie SnapCenter ist eine SVM-Management-LIF erforderlich.</block>
-  <block id="df290139b26527b2473b1e82a36386d4" category="paragraph">Richten Sie Ihr Netzwerk ein, damit der Connector Ressourcen und Prozesse innerhalb Ihrer Public Cloud-Umgebung managen kann. Abgesehen von einem virtuellen Netzwerk und einem Subnetz für den Connector müssen Sie sicherstellen, dass die folgenden Anforderungen erfüllt sind.</block>
-  <block id="2f03f8dd45cb031f8f3cce95fd4acefc" category="paragraph">Ein Connector erfordert eine Netzwerkverbindung zu der Art der Arbeitsumgebung, die Sie erstellen, und den Diensten, die Sie aktivieren möchten.</block>
-  <block id="3f92e0c134aea90b900c9d9fb8728adc" category="paragraph">Wenn Sie beispielsweise einen Konnektor in Ihrem Unternehmensnetzwerk installieren, müssen Sie eine VPN-Verbindung zum virtuellen Netzwerk einrichten, in dem Sie Cloud Volumes ONTAP starten.</block>
-  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">Wenn Ihr Unternehmen einen HTTP-Proxy für den gesamten ausgehenden Internet-Datenverkehr benötigt, informieren Sie sich über Ihren HTTP-Proxy:</block>
-  <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP-Adresse</block>
-  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">Anmeldedaten</block>
-  <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">HTTPS-Zertifikat</block>
-  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="section-title">Sicherheitsgruppe</block>
-  <block id="ae6252cb830dbd695650f78870fe4309" category="inline-link">Lokale Benutzeroberfläche</block>
-  <block id="4f85ea1fc2337ca87ea3957b6ed0f523" category="paragraph">Es gibt keinen eingehenden Datenverkehr zum Konnektor, es sei denn, Sie initiieren ihn oder wenn der Connector als Proxy für AutoSupport-Nachrichten verwendet wird. HTTP und HTTPS bieten den Zugriff auf<block ref="b66a5441ef03e9f48be36352f5f78769" category="inline-link-rx"></block>, Die Sie in seltenen Fällen verwenden. SSH ist nur erforderlich, wenn Sie eine Verbindung zum Host zur Fehlerbehebung herstellen müssen.</block>
-  <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">Einschränkung der IP-Adresse</block>
-  <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link">Erfahren Sie mehr über diese Einschränkung</block>
-  <block id="9b1f033bcac0595326d8acd1ef89e52c" category="paragraph">Es besteht ein möglicher Konflikt mit IP-Adressen im Bereich 172.<block ref="120cc620882c590412757bc531a4f583" category="inline-link-rx"></block>.</block>
   <block id="236afd214a59ab065a50ccb9cbbbe4c2" category="cell">9.12.0</block>
   <block id="97145bbcb02af5e728740b1d40bd2046" category="section-title">Bis 15. Dezember 2022</block>
   <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">Cloud Volumes ONTAP 9.12.0</block>
@@ -4628,4 +4568,36 @@
   <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="6d50c94851edb68865f91b19a7c8e802" category="inline-link">Weitere Informationen zum zonenredundanten Azure-Speicher für verwaltete Festplatten finden Sie in den Azure-Dokumentationen</block>
   <block id="d0dd1e24dc3eec7e346159d97577b2a5" category="list-text">Zwei Cloud Volumes ONTAP-Nodes werden in verschiedenen Verfügbarkeitszonen bereitgestellt. Verfügbarkeitszonen stellen sicher, dass sich die Nodes in unterschiedlichen Fehlerdomänen befinden.<block ref="ac08b397e7ae08c3f76d7057ac214476" category="inline-link-rx"></block>.</block>
+  <block id="806bf55e3fada643423a5e8b443a821f" category="summary">Richten Sie Ihr Google-Cloud-Netzwerk ein, damit Cloud Volumes ONTAP-Systeme ordnungsgemäß funktionieren können.</block>
+  <block id="b2a93ab6944b01da98f77474158de584" category="doc">Netzwerkanforderungen für Cloud Volumes ONTAP in Google Cloud</block>
+  <block id="589257f6242e3a6232a5f72f7867c4b6" category="inline-link-macro">Funktionsweise von HA-Paaren in Google Cloud</block>
+  <block id="c8e39b92d04aae2c3a6d3e6f428d480e" category="paragraph">Wenn Sie ein HA-Paar bereitstellen möchten, sollten Sie dies tun <block ref="135d51832239d75e9eff2c1e7574765f" category="inline-link-macro-rx"></block>.</block>
+  <block id="26cc43b1e094bf317e2d9013491cb9af" category="paragraph">In Google Cloud müssen die folgenden Anforderungen erfüllt sein:</block>
+  <block id="cd28e0a76ff845ef2e9e5eeced367a01" category="section-title">Spezifische Anforderungen für Single Node-Systeme</block>
+  <block id="d9358a4b713f2c5cc37fadb9fef3c574" category="paragraph">Wenn Sie ein Single Node-System implementieren möchten, stellen Sie sicher, dass Ihr Netzwerk die folgenden Anforderungen erfüllt.</block>
+  <block id="1ec1df3337524963212c8e27b42ab3cc" category="section-title">Eine VPC</block>
+  <block id="5bd17b13142e93319e9f09e96063763a" category="paragraph">Für ein System mit einem einzelnen Node ist eine Virtual Private Cloud (VPC) erforderlich.</block>
+  <block id="268f43c6ccc1a99cbd92114c3903e0f1" category="paragraph">BlueXP weist 3 oder 4 private IP-Adressen einem System mit einem Knoten in Google Cloud zu.</block>
+  <block id="fea70579987e879c99c2df3cebf39f70" category="section-title">Spezifischen Anforderungen für HA-Paare</block>
+  <block id="549263475571fab7c340abda30733212" category="paragraph">Wenn Sie ein HA-Paar bereitstellen möchten, stellen Sie sicher, dass Ihr Netzwerk die folgenden Anforderungen erfüllt.</block>
+  <block id="5dadc4e112da073feca16f4aff4ba237" category="section-title">Eine oder mehrere Zonen</block>
+  <block id="4c62b2e0648ccb7cc5ac07de5a4c67f4" category="section-title">Vier Virtuelle Private Clouds</block>
+  <block id="0fc9a4a783a2856e3a35ee9b12a2f357" category="paragraph">Für eine HA-Konfiguration sind vier Virtual Private Clouds (VPCs) erforderlich. Es sind vier VPCs erforderlich, da Google Cloud erfordert, dass sich jede Netzwerkschnittstelle in einem separaten VPC-Netzwerk befindet.</block>
+  <block id="74cd215a46d2bd96fc35dad7ef313283" category="section-title">Subnetze</block>
+  <block id="206f49c25e0bbd2da69d30f14f4f222d" category="paragraph">BlueXP weist 14 oder 15 private IP-Adressen einem HA-Paar in Google Cloud zu:</block>
+  <block id="974715540568df2f5efe3c40777931b7" category="section-title">Verbindung zu Google Cloud Storage für Daten-Tiering</block>
+  <block id="53c6f0799470bd2e67e7902192e11c7c" category="paragraph">Zur Replizierung von Daten zwischen einem Cloud Volumes ONTAP System in Google Cloud und ONTAP Systemen in anderen Netzwerken müssen Sie eine VPN-Verbindung zwischen der VPC und dem anderen Netzwerk herstellen, beispielsweise das Unternehmensnetzwerk.</block>
+  <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXP erstellt Google Cloud Firewall-Regeln, die die ein- und ausgehenden Regeln enthalten, die Cloud Volumes ONTAP für den erfolgreichen Betrieb benötigt. Sie können sich zu Testzwecken auf die Ports beziehen oder wenn Sie lieber eigene Firewall-Regeln verwenden möchten.</block>
+  <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">Die Firewall-Regeln für Cloud Volumes ONTAP erfordern sowohl ein- als auch ausgehende Regeln. Bei der Implementierung einer HA-Konfiguration handelt es sich um die Firewall-Regeln für Cloud Volumes ONTAP in VPC-0.</block>
+  <block id="cb97a2b297b246ea14d6c17e8e5ee28a" category="list-text">Ein Regelsatz für HA-Komponenten in VPC-0. Diese Regeln ermöglichen den Datenzugriff auf Cloud Volumes ONTAP.</block>
+  <block id="853d5f8d41b181e1e73157826ecc4287" category="inline-xref">VPC-2 und VPC-3,Mehr erfahren</block>
+  <block id="9cd85fea135b7ad7c981c3cc1f75a6ea" category="list-text">Weiterer Regelsatz für HA-Komponenten in VPC-1, VPC-2 und VPC-3. Diese Regeln sind für die Kommunikation zwischen den HA-Komponenten ein- und ausgehender Anruf offen. <block ref="8d9dee5ea3dbe6098c688583dd57c09d" category="inline-xref-macro-rx"></block>.</block>
+  <block id="ae2d87942e6697528344ccace68364e3" category="section-title">Regeln für VPC-1, VPC-2 und VPC-3</block>
+  <block id="5fb73c1af98e831dcfe0ce66f4582d3b" category="paragraph">In Google Cloud wird eine HA-Konfiguration über vier VPCs hinweg bereitgestellt. Die für die HA-Konfiguration in VPC-0 erforderlichen Firewall-Regeln sind <block ref="8216cabe940880477030118a8a765034" category="inline-xref-macro-rx"></block>.</block>
+  <block id="4fad8964dcacb8a6d329f6e2e57a2af9" category="paragraph">Wenn Sie noch keinen Connector erstellt haben, sollten Sie auch die Netzwerkanforderungen für den Connector prüfen.</block>
+  <block id="f63c987d15807845ae712461b133bad5" category="inline-link">Zeigen Sie die Netzwerkanforderungen für den Connector an</block>
+  <block id="fec3732f829761687c4a94dc2dcf4ef5" category="paragraph"><block ref="fec3732f829761687c4a94dc2dcf4ef5" category="inline-link-rx"></block></block>
+  <block id="0f5cc196efac5a9fadb7272e55c7d686" category="summary">Richten Sie Ihr Azure Netzwerk ein, um Cloud Volumes ONTAP Systeme ordnungsgemäß funktionieren zu können.</block>
+  <block id="323c8a1d29b771e63edf9d7a9968be4e" category="paragraph"><block ref="323c8a1d29b771e63edf9d7a9968be4e" category="inline-link-rx"></block></block>
+  <block id="f483cdf3bbc75344ed7ba476a346b3ae" category="paragraph"><block ref="f483cdf3bbc75344ed7ba476a346b3ae" category="inline-link-rx"></block></block>
 </blocks>

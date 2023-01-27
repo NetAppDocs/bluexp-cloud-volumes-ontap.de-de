@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-networking-azure.html 
 keywords: networking, network, requirements, connection, connections, vnet, security group, security groups, subnet, vpn, internet, proxy, HTTP, private, proxy server, routing, firewall, autosupport, connection, jump host, outbound, ports, blob, service endpoint 
-summary: Richten Sie Ihr Azure Netzwerk ein, um Cloud Volumes ONTAP Systeme ordnungsgemäß funktionieren zu können. Dazu gehört auch die Vernetzung von Connector und Cloud Volumes ONTAP. 
+summary: Richten Sie Ihr Azure Netzwerk ein, um Cloud Volumes ONTAP Systeme ordnungsgemäß funktionieren zu können. 
 ---
 = Netzwerkanforderungen für Cloud Volumes ONTAP in Azure
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Richten Sie Ihr Azure Netzwerk ein, um Cloud Volumes ONTAP Systeme ordn
 
 
 [role="lead"]
-Richten Sie Ihr Azure Netzwerk ein, um Cloud Volumes ONTAP Systeme ordnungsgemäß funktionieren zu können. Dazu gehört auch die Vernetzung von Connector und Cloud Volumes ONTAP.
+Richten Sie Ihr Azure Netzwerk ein, um Cloud Volumes ONTAP Systeme ordnungsgemäß funktionieren zu können.
 
 
 
@@ -433,135 +433,6 @@ NOTE: Die Quelle ist die Schnittstelle (IP-Adresse) auf dem Cloud Volumes ONTAP 
 
 == Anforderungen an den Steckverbinder
 
-Richten Sie Ihr Netzwerk ein, damit der Connector Ressourcen und Prozesse innerhalb Ihrer Public Cloud-Umgebung managen kann. Abgesehen von einem virtuellen Netzwerk und einem Subnetz für den Connector müssen Sie sicherstellen, dass die folgenden Anforderungen erfüllt sind.
+Wenn Sie noch keinen Connector erstellt haben, sollten Sie auch die Netzwerkanforderungen für den Connector prüfen.
 
-
-
-=== Verbindung zu Zielnetzwerken
-
-Ein Connector erfordert eine Netzwerkverbindung zu der Art der Arbeitsumgebung, die Sie erstellen, und den Diensten, die Sie aktivieren möchten.
-
-Wenn Sie beispielsweise einen Konnektor in Ihrem Unternehmensnetzwerk installieren, müssen Sie eine VPN-Verbindung zum virtuellen Netzwerk einrichten, in dem Sie Cloud Volumes ONTAP starten.
-
-
-
-=== Outbound-Internetzugang
-
-Für den Connector ist ein abgehender Internetzugang erforderlich, um Ressourcen und Prozesse in Ihrer Public Cloud-Umgebung zu managen.
-
-[cols="2*"]
-|===
-| Endpunkte | Zweck 
-
-
-| \https://support.netapp.com | Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden. 
-
-
- a| 
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
- a| 
-Um SaaS-Funktionen und -Services in BlueXP zur Verfügung zu stellen.
-
-
-NOTE: Der Connector kontaktiert derzeit „cloudmanager.cloud.netapp.com", er beginnt jedoch mit der Kontaktaufnahme mit „api.bluexp.netapp.com" in einer kommenden Version.
-
-
-
-| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | Aktualisierung des Connectors und seiner Docker Komponenten. 
-|===
-
-
-=== Proxy-Server
-
-Wenn Ihr Unternehmen einen HTTP-Proxy für den gesamten ausgehenden Internet-Datenverkehr benötigt, informieren Sie sich über Ihren HTTP-Proxy:
-
-* IP-Adresse
-* Anmeldedaten
-* HTTPS-Zertifikat
-
-
-
-
-=== Sicherheitsgruppe
-
-Es gibt keinen eingehenden Datenverkehr zum Konnektor, es sei denn, Sie initiieren ihn oder wenn der Connector als Proxy für AutoSupport-Nachrichten verwendet wird. HTTP und HTTPS bieten den Zugriff auf https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#the-local-user-interface["Lokale Benutzeroberfläche"], Die Sie in seltenen Fällen verwenden. SSH ist nur erforderlich, wenn Sie eine Verbindung zum Host zur Fehlerbehebung herstellen müssen.
-
-
-
-=== Einschränkung der IP-Adresse
-
-Es besteht ein möglicher Konflikt mit IP-Adressen im Bereich 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["Erfahren Sie mehr über diese Einschränkung"].
-
-
-
-=== Regeln für Sicherheitsgruppen
-
-Die Sicherheitsgruppe für den Konnektor erfordert sowohl ein- als auch ausgehende Regeln.
-
-
-
-==== Regeln für eingehende Anrufe
-
-[cols="3*"]
-|===
-| Port | Protokoll | Zweck 
-
-
-| 22 | SSH | Bietet SSH-Zugriff auf den Connector-Host 
-
-
-| 80 | HTTP | Bietet HTTP-Zugriff von Client-Webbrowsern auf die lokale Benutzeroberfläche 
-
-
-| 443 | HTTPS | Bietet HTTPS-Zugriff von Client-Webbrowsern auf die lokale Benutzeroberfläche 
-
-
-| TCP | 3128 | Ermöglicht Cloud Volumes ONTAP den Zugang zum Internet, um AutoSupport-Nachrichten an den NetApp Support zu senden. Sie müssen diesen Port nach der Bereitstellung des Connectors manuell öffnen. 
-|===
-
-
-==== Regeln für ausgehende Anrufe
-
-Die vordefinierte Sicherheitsgruppe für den Konnektor öffnet den gesamten ausgehenden Datenverkehr. Wenn dies akzeptabel ist, befolgen Sie die grundlegenden Regeln für ausgehende Anrufe. Wenn Sie strengere Regeln benötigen, verwenden Sie die erweiterten Outbound-Regeln.
-
-
-
-===== Grundlegende Regeln für ausgehende Anrufe
-
-Die vordefinierte Sicherheitsgruppe für den Connector enthält die folgenden ausgehenden Regeln.
-
-[cols="3*"]
-|===
-| Port | Protokoll | Zweck 
-
-
-| Alle | Alle TCP | Gesamter abgehender Datenverkehr 
-
-
-| Alle | Alle UDP-Protokolle | Gesamter abgehender Datenverkehr 
-|===
-
-
-===== Erweiterte Outbound-Regeln
-
-Wenn Sie starre Regeln für ausgehenden Datenverkehr benötigen, können Sie die folgenden Informationen verwenden, um nur die Ports zu öffnen, die für die ausgehende Kommunikation durch den Konnektor erforderlich sind.
-
-
-NOTE: Die Quell-IP-Adresse ist der Connector-Host.
-
-[cols="5*"]
-|===
-| Service | Port | Protokoll | Ziel | Zweck 
-
-
-| API-Aufrufe und AutoSupport | 443 | HTTPS | Outbound-Internet und ONTAP Cluster Management LIF | API-Aufrufe an Azure und ONTAP, Cloud Data Sense, zum Ransomware-Service und Senden von AutoSupport-Nachrichten an NetApp 
-
-
-| DNS | 53 | UDP | DNS | Wird für DNS Resolve von BlueXP verwendet 
-|===
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
