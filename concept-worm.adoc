@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-worm.html 
-keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage 
+keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage, tiering 
 summary: 'Sie können WORM-Storage (Write Once, Read Many) auf einem Cloud Volumes ONTAP System aktivieren, um Dateien für einen bestimmten Aufbewahrungszeitraum in unveränderter Form aufzubewahren. Cloud-WORM-Storage wird durch SnapLock Technologie unterstützt, d. h., WORM-Dateien sind auf Dateiebene gesichert.' 
 ---
 = WORM-Storage
@@ -81,9 +81,21 @@ Nachdem Sie WORM Storage auf einem Cloud Volumes ONTAP System aktiviert haben, m
 
 
 
+== WORM- und Daten-Tiering
+
+Wenn Sie ein neues Cloud Volumes ONTAP 9.8 System oder höher erstellen, können Sie sowohl Daten-Tiering als AUCH WORM Storage gemeinsam aktivieren. Wenn Sie Daten-Tiering mit WORM-Storage aktivieren, können Sie die Daten auf einen Objektspeicher in der Cloud verschieben.
+
+Sie sollten Folgendes über die Aktivierung von Daten-Tiering und WORM-Storage wissen:
+
+* Daten, die auf Objekt-Storage verschoben werden, enthalten nicht die ONTAP WORM-Funktion. Um die End-to-End-WORM-Fähigkeit sicherzustellen, müssen Sie die Bucket-Berechtigungen korrekt einrichten.
+* Die auf Objekt-Storage abgelegten Daten verfügen nicht über DIE WORM-Funktionalität, d. h., jeder mit vollem Zugriff auf Buckets und Container kann die durch ONTAP abgestuften Objekte löschen.
+* Ein Wechsel- oder Downgrade auf Cloud Volumes ONTAP 9.8 ist nach Aktivierung VON WORM und Tiering gesperrt.
+
+
+
+
 == Einschränkungen
 
 * WORM Storage in Cloud Volumes ONTAP wird als „vertrauenswürdiger Storage-Administrator“ eingesetzt. WORM-Dateien sind vor Änderungen oder Änderungen geschützt, aber können von einem Cluster-Administrator gelöscht werden, selbst wenn diese Volumes nicht ABGELAUFENE WORM-Daten enthalten.
 * Neben dem Modell eines vertrauenswürdigen Storage-Administrators arbeitet WORM Storage in Cloud Volumes ONTAP auch implizit unter einem Modell eines „vertrauenswürdigen Cloud-Administrators“. Ein Cloud-Administrator kann WORM-Daten vor dem Ablaufdatum löschen, indem er Cloud-Storage direkt vom Cloud-Provider entfernt oder bearbeitet.
-* Wenn WORM-Storage aktiviert ist, kann das Daten-Tiering zu Objekt-Storage nicht aktiviert werden.
 

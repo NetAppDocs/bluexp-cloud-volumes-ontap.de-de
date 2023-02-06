@@ -91,6 +91,10 @@ TIP: Wenn mehrere IAM-Benutzer im gleichen AWS-Konto arbeiten, muss jeder Benutz
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Erfahren Sie mehr über Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Weitere Informationen zu Cloud Backup"^]
++
+
+TIP: Wenn Sie WORM und Daten-Tiering nutzen möchten, müssen Sie Cloud Backup deaktivieren und eine Cloud Volumes ONTAP Arbeitsumgebung mit Version 9.8 oder höher bereitstellen.
+
 
 
 . *Standort & Konnektivität*: Geben Sie die Netzwerkinformationen ein, die Sie im aufgezeichnet haben link:task-planning-your-config.html#aws-network-information-worksheet["AWS Worksheet"].
@@ -169,15 +173,21 @@ link:concept-data-tiering.html["So funktioniert Daten-Tiering"].
 
 
 
-. *Schreibgeschwindigkeit & WURM*: Wählen Sie *Normal* oder *hohe* Schreibgeschwindigkeit, und aktivieren Sie auf Wunsch den Schreib-Speicher, den WORM-Speicher.
+. *Schreibgeschwindigkeit und WURM*:
++
+.. Wählen Sie bei Bedarf * Normal* oder *High* Schreibgeschwindigkeit.
 +
 link:concept-write-speed.html["Erfahren Sie mehr über Schreibgeschwindigkeit"].
 
+.. Aktivieren Sie auf Wunsch den WORM-Storage (Write Once, Read Many).
 +
-WORM kann nicht aktiviert werden, wenn Daten-Tiering aktiviert wurde.
+WORM kann nicht aktiviert werden, wenn Daten-Tiering für Cloud Volumes ONTAP-Versionen 9.7 und darunter aktiviert wurde. Ein Wechsel- oder Downgrade auf Cloud Volumes ONTAP 9.8 ist nach Aktivierung VON WORM und Tiering gesperrt.
 
 +
 link:concept-worm.html["Erfahren Sie mehr über WORM Storage"].
+
+.. Wenn Sie DEN WORM-Speicher aktivieren, wählen Sie den Aufbewahrungszeitraum aus.
+
 
 . *Create Volume*: Geben Sie Details für den neuen Datenträger ein oder klicken Sie auf *Skip*.
 +
@@ -321,6 +331,10 @@ TIP: Wenn mehrere IAM-Benutzer im gleichen AWS-Konto arbeiten, muss jeder Benutz
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Erfahren Sie mehr über Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Weitere Informationen zu Cloud Backup"^]
++
+
+TIP: Wenn Sie WORM und Daten-Tiering nutzen möchten, müssen Sie Cloud Backup deaktivieren und eine Cloud Volumes ONTAP Arbeitsumgebung mit Version 9.8 oder höher bereitstellen.
+
 
 
 . *HA-Bereitstellungsmodelle*: Wählen Sie eine HA-Konfiguration.
@@ -409,15 +423,21 @@ link:concept-data-tiering.html["So funktioniert Daten-Tiering"].
 
 
 
-. *Schreibgeschwindigkeit & WURM*: Wählen Sie *Normal* oder *hohe* Schreibgeschwindigkeit, und aktivieren Sie auf Wunsch den Schreib-Speicher, den WORM-Speicher.
+. *Schreibgeschwindigkeit und WURM*:
++
+.. Wählen Sie bei Bedarf * Normal* oder *High* Schreibgeschwindigkeit.
 +
 link:concept-write-speed.html["Erfahren Sie mehr über Schreibgeschwindigkeit"].
 
+.. Aktivieren Sie auf Wunsch den WORM-Storage (Write Once, Read Many).
 +
-WORM kann nicht aktiviert werden, wenn Daten-Tiering aktiviert wurde.
+WORM kann nicht aktiviert werden, wenn Daten-Tiering für Cloud Volumes ONTAP-Versionen 9.7 und darunter aktiviert wurde. Ein Wechsel- oder Downgrade auf Cloud Volumes ONTAP 9.8 ist nach Aktivierung VON WORM und Tiering gesperrt.
 
 +
 link:concept-worm.html["Erfahren Sie mehr über WORM Storage"].
+
+.. Wenn Sie DEN WORM-Speicher aktivieren, wählen Sie den Aufbewahrungszeitraum aus.
+
 
 . *Create Volume*: Geben Sie Details für den neuen Datenträger ein oder klicken Sie auf *Skip*.
 +

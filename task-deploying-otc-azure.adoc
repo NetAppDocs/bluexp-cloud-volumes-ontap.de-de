@@ -88,6 +88,10 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Erfahren Sie mehr über Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Weitere Informationen zu Cloud Backup"^]
++
+
+TIP: Wenn Sie WORM und Daten-Tiering nutzen möchten, müssen Sie Cloud Backup deaktivieren und eine Cloud Volumes ONTAP Arbeitsumgebung mit Version 9.8 oder höher bereitstellen.
+
 
 
 . *Standort*: Wählen Sie eine Region, eine Verfügbarkeitszone, vnet und ein Subnetz aus, und aktivieren Sie dann das Kontrollkästchen, um die Netzwerkverbindung zwischen dem Connector und dem Zielspeicherort zu bestätigen.
@@ -156,15 +160,24 @@ link:concept-data-tiering.html["Weitere Informationen zum Daten-Tiering"].
 
 
 
-. *Schreibgeschwindigkeit & WURM*: Wählen Sie *Normal* oder *hohe* Schreibgeschwindigkeit, und aktivieren Sie auf Wunsch den Schreib-Speicher, den WORM-Speicher.
+. *Schreibgeschwindigkeit und WURM*:
++
+.. Wählen Sie bei Bedarf * Normal* oder *High* Schreibgeschwindigkeit.
 +
 link:concept-write-speed.html["Erfahren Sie mehr über Schreibgeschwindigkeit"].
 
+.. Aktivieren Sie auf Wunsch den WORM-Storage (Write Once, Read Many).
 +
-WORM kann nicht aktiviert werden, wenn Daten-Tiering aktiviert wurde.
+Diese Option ist nur für bestimmte VM-Typen verfügbar. Informationen darüber, welche VM-Typen unterstützt werden, finden Sie unter link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Unterstützte Konfigurationen per Lizenz für HA-Paare"].
+
++
+WORM kann nicht aktiviert werden, wenn Daten-Tiering für Cloud Volumes ONTAP-Versionen 9.7 und darunter aktiviert wurde. Ein Wechsel- oder Downgrade auf Cloud Volumes ONTAP 9.8 ist nach Aktivierung VON WORM und Tiering gesperrt.
 
 +
 link:concept-worm.html["Erfahren Sie mehr über WORM Storage"].
+
+.. Wenn Sie DEN WORM-Speicher aktivieren, wählen Sie den Aufbewahrungszeitraum aus.
+
 
 . *Create Volume*: Geben Sie Details für den neuen Datenträger ein oder klicken Sie auf *Skip*.
 +
@@ -298,6 +311,10 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Erfahren Sie mehr über Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Weitere Informationen zu Cloud Backup"^]
++
+
+TIP: Wenn Sie WORM und Daten-Tiering nutzen möchten, müssen Sie Cloud Backup deaktivieren und eine Cloud Volumes ONTAP Arbeitsumgebung mit Version 9.8 oder höher bereitstellen.
+
 
 
 . * HA-Bereitstellungsmodelle*:
@@ -375,18 +392,24 @@ link:concept-data-tiering.html["Weitere Informationen zum Daten-Tiering"].
 
 
 
-. *Schreibgeschwindigkeit & WURM*: Wählen Sie *Normal* oder *hohe* Schreibgeschwindigkeit, und aktivieren Sie auf Wunsch den Schreib-Speicher, den WORM-Speicher.
+. *Schreibgeschwindigkeit und WURM*:
++
+.. Wählen Sie bei Bedarf * Normal* oder *High* Schreibgeschwindigkeit.
 +
 link:concept-write-speed.html["Erfahren Sie mehr über Schreibgeschwindigkeit"].
 
+.. Aktivieren Sie auf Wunsch den WORM-Storage (Write Once, Read Many).
 +
 Diese Option ist nur für bestimmte VM-Typen verfügbar. Informationen darüber, welche VM-Typen unterstützt werden, finden Sie unter link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Unterstützte Konfigurationen per Lizenz für HA-Paare"].
 
 +
-WORM kann nicht aktiviert werden, wenn Daten-Tiering aktiviert wurde.
+WORM kann nicht aktiviert werden, wenn Daten-Tiering für Cloud Volumes ONTAP-Versionen 9.7 und darunter aktiviert wurde. Ein Wechsel- oder Downgrade auf Cloud Volumes ONTAP 9.8 ist nach Aktivierung VON WORM und Tiering gesperrt.
 
 +
 link:concept-worm.html["Erfahren Sie mehr über WORM Storage"].
+
+.. Wenn Sie DEN WORM-Speicher aktivieren, wählen Sie den Aufbewahrungszeitraum aus.
+
 
 . *Sichere Kommunikation zu Storage & WORM*: Wählen Sie, ob eine HTTPS-Verbindung zu Azure-Speicherkonten aktiviert und, falls gewünscht, den WORM-Speicher (Write Once, Read Many) aktiviert werden soll.
 +

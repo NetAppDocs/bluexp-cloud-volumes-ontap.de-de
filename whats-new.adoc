@@ -20,6 +20,36 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 5 Februar 2023
+
+Die folgenden Änderungen wurden mit der Version 3.9.26 des Connectors eingeführt.
+
+
+
+=== Erstellung von Platzierungsgruppen in AWS
+
+Für die Erstellung von Platzierungsgruppen ist jetzt eine neue Konfigurationseinstellung mit AWS HA-Implementierung in einer Verfügbarkeitszone (AZ) verfügbar. Jetzt können Kunden ausgefallene Platzierungsgruppen umgehen und die erfolgreiche Implementierung von AWS HA-einzelnen AZ ermöglichen.
+
+Ausführliche Informationen zum Konfigurieren der Einstellung für die Erstellung von Platzierungsgruppen finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["Konfiguration der Erstellung von Platzierungsgruppen für AWS HA Single AZ"^].
+
+
+
+=== Aktualisierung der Konfiguration der privaten DNS-Zone
+
+Eine neue Konfigurationseinstellung ist jetzt verfügbar, sodass Sie bei der Verwendung von Azure Private Links vermeiden können, eine Verbindung zwischen einer privaten DNS-Zone und einem virtuellen Netzwerk zu erstellen. Die Erstellung ist standardmäßig aktiviert.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["Stellen Sie BlueXP Einzelheiten zu Ihrem Azure Private DNS zur Verfügung"^]
+
+
+
+=== WORM-Storage und Daten-Tiering
+
+Sie können jetzt bei der Erstellung eines Cloud Volumes ONTAP 9.8 Systems oder höher sowohl Daten-Tiering als AUCH WORM-Storage gemeinsam aktivieren. Wenn Sie Daten-Tiering mit WORM-Storage aktivieren, können Sie die Daten auf einen Objektspeicher in der Cloud verschieben.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["Erfahren Sie mehr über WORM Storage."^]
+
+
+
 == Januar 2023
 
 Die folgenden Änderungen wurden mit der Version 3.9.25 des Connectors eingeführt.
