@@ -23,7 +23,7 @@ Wenn Sie Cloud Volumes ONTAP in Google Cloud implementieren, können Sie entwede
 Für Cloud Volumes ONTAP sind verschiedene Lizenzierungsoptionen verfügbar. Jede Option ermöglicht Ihnen, ein Nutzungsmodell auszuwählen, das Ihren Anforderungen entspricht.
 
 * link:concept-licensing.html["Informieren Sie sich über Lizenzoptionen für Cloud Volumes ONTAP"]
-* link:task-set-up-licensing-gcp.html["Erfahren Sie, wie Sie eine Lizenzierung einrichten"]
+* link:task-set-up-licensing-google.html["Erfahren Sie, wie Sie eine Lizenzierung einrichten"]
 
 
 
