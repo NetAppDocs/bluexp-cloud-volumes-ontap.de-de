@@ -215,6 +215,9 @@ Beachten Sie, dass für eine HA-Konfiguration zwei Gruppen von Firewall-Regeln e
 
 
 
+TIP: Sie suchen Informationen über den Connector? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Zeigen Sie Firewall-Regeln für den Connector an"^]
+
+
 
 ==== Regeln für eingehende Anrufe
 
@@ -461,4 +464,6 @@ Die Kommunikation zwischen den HA-Nodes und dem HA Mediator erfolgt über Port 3
 
 Wenn Sie noch keinen Connector erstellt haben, sollten Sie auch die Netzwerkanforderungen für den Connector prüfen.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Firewall-Regeln in Google Cloud"^]
+

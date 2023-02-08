@@ -156,17 +156,14 @@ Bei BlueXP treten Verbindungsprobleme auf, wenn Sie versuchen, ein zweites Cloud
 
 
 
-=== Sicherheitsgruppen
-
-Sie müssen keine Sicherheitsgruppen erstellen, weil BlueXP das für Sie tut. Wenn Sie Ihre eigene Verwendung benötigen, lesen Sie die unten aufgeführten Sicherheitsgruppenregeln.
-
-
-
 === Regeln für Sicherheitsgruppen
 
 BlueXP erstellt Azure-Sicherheitsgruppen mit den ein- und ausgehenden Regeln, die für den erfolgreichen Betrieb von Cloud Volumes ONTAP erforderlich sind. Sie können die Ports zu Testzwecken oder zur Verwendung eigener Sicherheitsgruppen verwenden.
 
 Die Sicherheitsgruppe für Cloud Volumes ONTAP erfordert sowohl eingehende als auch ausgehende Regeln.
+
+
+TIP: Sie suchen Informationen über den Connector? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Zeigen Sie die Sicherheitsgruppenregeln für den Konnektor an"^]
 
 
 
@@ -435,4 +432,6 @@ NOTE: Die Quelle ist die Schnittstelle (IP-Adresse) auf dem Cloud Volumes ONTAP 
 
 Wenn Sie noch keinen Connector erstellt haben, sollten Sie auch die Netzwerkanforderungen für den Connector prüfen.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Für Sicherheitsgruppen gibt es in Azure Regeln"^]
+
