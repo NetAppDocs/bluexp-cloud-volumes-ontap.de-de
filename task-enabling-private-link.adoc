@@ -30,7 +30,9 @@ Bei beiden Konfigurationen schränkt BlueXP den Netzwerkzugriff für Verbindunge
 
 == Deaktivieren Sie Azure Private Links, und verwenden Sie stattdessen Service-Endpunkte
 
-Falls in Ihrem Unternehmen erforderlich, können Sie eine Einstellung in BlueXP ändern, sodass Cloud Volumes ONTAP für die Verwendung von Service-Endpunkten anstelle eines Azure Private Links konfiguriert wird. Das Ändern dieser Einstellung gilt für neue von Ihnen erstellte Cloud Volumes ONTAP Systeme.
+Falls in Ihrem Unternehmen erforderlich, können Sie eine Einstellung in BlueXP ändern, sodass Cloud Volumes ONTAP für die Verwendung von Service-Endpunkten anstelle eines Azure Private Links konfiguriert wird. Das Ändern dieser Einstellung gilt für neue von Ihnen erstellte Cloud Volumes ONTAP Systeme. Service-Endpunkte werden nur in unterstützt link:https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure Region-Paare"^] Zwischen Stecker und Cloud Volumes ONTAP VNets.
+
+Der Connector sollte in derselben Azure-Region wie die Cloud Volumes ONTAP-Systeme, die er verwaltet, oder in der implementiert werden https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure Region Paar"^] Für die Cloud Volumes ONTAP Systeme.
 
 .Schritte
 . Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Verbindungseinstellungen*.
@@ -43,7 +45,13 @@ Falls in Ihrem Unternehmen erforderlich, können Sie eine Einstellung in BlueXP 
 
 == Arbeiten Sie mit Azure Private Links
 
-In den meisten Fällen müssen Sie nichts tun, um Azure Private Links mit Cloud Volumes ONTAP einzurichten. BlueXP managt Azure Private Links für Sie. Aber wenn Sie Azure Private DNS verwenden, dann müssen Sie eine Konfigurationsdatei bearbeiten. Sie sollten auch eine Anforderung für den Connector-Standort in Azure kennen.
+In den meisten Fällen müssen Sie nichts tun, um Azure Private Links mit Cloud Volumes ONTAP einzurichten. BlueXP managt Azure Private Links für Sie. Wenn Sie jedoch eine bestehende Azure Private DNS-Zone verwenden, müssen Sie eine Konfigurationsdatei bearbeiten.
+
+
+
+=== Anforderung für benutzerdefiniertes DNS
+
+Wenn Sie optional mit benutzerdefinierten DNS arbeiten, müssen Sie von Ihren benutzerdefinierten DNS-Servern aus einen bedingten Forwarder zur Azure Private DNS Zone erstellen. Weitere Informationen finden Sie unter link:https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns#on-premises-workloads-using-a-dns-forwarder["Die Dokumentation von Azure über einen DNS-Forwarder"^].
 
 
 
@@ -58,10 +66,7 @@ Das Beispiel zeigt den Client-Zugriff über einen privaten Link innerhalb dessel
 image:diagram_azure_private_link.png["Ein Konzept-Image, das den Datenzugriff auf Cloud Volumes ONTAP sowie über einen privaten Endpunkt und eine private Verbindung zum Storage-Konto zeigt"]
 
 
-
-=== Connector-Position in Azure
-
-Der Connector sollte in derselben Azure-Region wie die Cloud Volumes ONTAP-Systeme, die er verwaltet, oder in der implementiert werden https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure Region Paar"^] Für die Cloud Volumes ONTAP Systeme. Diese Anforderung stellt sicher, dass eine Azure Private Link-Verbindung zwischen Cloud Volumes ONTAP und den zugehörigen Storage-Konten verwendet wird.
+NOTE: Wenn die Connector- und Cloud Volumes ONTAP-Systeme in verschiedenen VNets bereitgestellt werden, müssen Sie vnet Peering zwischen dem vnet einrichten, in dem der Connector bereitgestellt wird, und dem vnet, in dem die Cloud Volumes ONTAP-Systeme bereitgestellt werden.
 
 
 
@@ -111,7 +116,9 @@ Sie können dieses Standardverhalten ändern, indem Sie Rollback aktivieren, wen
 
 Wenn Sie Rollback aktivieren, stoppt BlueXP die Aktion und führt alle Ressourcen zurück, die im Rahmen der Aktion erstellt wurden.
 
-Das Aktivieren von Rollback wird nur über die API unterstützt.
+Sie können Rollback über die API oder durch Aktualisierung der Datei App.conf aktivieren.
+
+*Rollback über die API aktivieren*
 
 .Schritt
 . Verwenden Sie die `PUT /occm/config` API-Aufruf mit folgender Anfraentext:
@@ -119,5 +126,16 @@ Das Aktivieren von Rollback wird nur über die API unterstützt.
 [source, json]
 ----
 { "rollbackOnAzurePrivateLinkFailure": true }
+----
+
+
+*Rollback durch Aktualisierung von App.conf* aktivieren
+
+.Schritt
+. Verwenden Sie die `PUT /occm/config` API-Aufruf mit folgender Anfraentext:
++
+[source, json]
+----
+{ "rollbackOnAzurePrivateLinkFailure": false }
 ----
 
