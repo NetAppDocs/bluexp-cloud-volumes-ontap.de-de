@@ -509,7 +509,6 @@
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp bietet Unterstützung für BlueXP auf verschiedene Weise. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledge Base-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung umfasst technischen Remote-Support über Web-Ticketing.</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Holen Sie sich Hilfe</block>
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp bietet Unterstützung für BlueXP und seine Cloud-Services auf unterschiedliche Weise. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledge Base-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung umfasst technischen Remote-Support über Web-Ticketing.</block>
-  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">Self-Support</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Diese Optionen sind kostenlos verfügbar, 24 Stunden am Tag, 7 Tage die Woche:</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Wissensdatenbank</block>
   <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
@@ -521,14 +520,11 @@
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">Die BlueXP-Dokumentation, die Sie gerade anzeigen.</block>
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">Mailto:ng-cloudmanager-feedback@netapp.com[Feedback email]</block>
   <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">Wir wissen Ihre Vorschläge zu schätzen. Senden Sie uns Ihr Feedback, um BlueXP zu verbessern.</block>
-  <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp Support</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Zusätzlich zu den oben genannten Self-Support-Optionen können Sie gemeinsam mit einem NetApp Support-Experten eventuelle Probleme nach der Aktivierung des Supports beheben.</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">Erfahren Sie, wie Sie sich für Support registrieren</block>
   <block id="1012a287397c66025d7748edf06a36e2" category="paragraph">Um die * Case erstellen*-Fähigkeit zu verwenden, müssen Sie zuerst eine einmalige Registrierung Ihrer BlueXP Account ID-Seriennummer (dh 960xxxx) mit NetApp <block ref="3349e4b3d05f646f2f1421bee7c2ad26" category="inline-link-macro-rx"></block>.</block>
   <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">Klicken Sie in BlueXP auf *Hilfe &gt; Support*.</block>
-  <block id="f5052c65917d7341726235d4d4941461" category="list-text">Wählen Sie eine der verfügbaren Optionen unter Technical Support:</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">Klicken Sie auf *Rufen Sie uns an*, wenn Sie mit jemandem am Telefon sprechen möchten. Sie werden zu einer Seite auf netapp.com weitergeleitet, auf der die Telefonnummern aufgeführt sind, die Sie anrufen können.</block>
-  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">Klicken Sie auf *Case erstellen*, um ein Ticket mit einem NetApp Support-Experten zu öffnen:</block>
   <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">*NetApp Support Site Account*: Wählen Sie das entsprechende NSS-Konto für die Person aus, die den Support-Case eröffnet. Diese Person ist der primäre Ansprechpartner bei NetApp, der Sie sich zusätzlich zu den unten aufgeführten zusätzlichen E-Mails mit anderen Kunden in Verbindung setzen kann.</block>
   <block id="d950fb930d7f7e6bfdda1b91b4639a02" category="paragraph">Wenn Ihr NSS-Konto nicht angezeigt wird, können Sie im Support-Bereich von BlueXP zur Registerkarte *NSS Management* navigieren, um es dort hinzuzufügen.</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service*: Wählen Sie den Dienst aus, mit dem das Problem verknüpft ist. Beispiel: BlueXP, wenn es sich um ein Problem des technischen Supports mit Workflows oder Funktionen im Service handelt.</block>
@@ -4397,7 +4393,6 @@
   <block id="a75a698e7d0ed400565763b148a6d0db" category="list-text">HA-Systeme verwenden Shared Managed Disks mit Premium-SSDs, die beide eine hohe Performance für I/O-intensive Workloads mit höheren Kosten bieten. HA-Implementierungen, die vor der Version 9.12.1 erstellt wurden, verwenden Premium-Blobs auf Seite.</block>
   <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="section-title">S3</block>
   <block id="cc5f50b3903dc30a3a3545bb58fcdd14" category="paragraph">Cloud Volumes ONTAP unterstützt S3 als Option für horizontal skalierbaren Storage. Über das S3-Protokoll können Sie den S3-Client-Zugriff auf Objekte konfigurieren, die in einem Bucket in einer Storage-VM (SVM) enthalten sind.</block>
-  <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>.</block>
   <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="cell">9.12.1</block>
   <block id="708ffc372ba6f36174a7930961b956ab" category="section-title">Bis 8. Dezember 2022</block>
   <block id="5e1976febada1fa49b700760dd574954" category="paragraph">Ähnlich wie eine Standard-Region von AWS können Sie Cloud Manager in verwenden<block ref="5d288b71381e3fb57ca0bda26da6a1f9" category="inline-link-rx"></block> Umgebung zum Implementieren von Cloud Volumes ONTAP, die Funktionen der Enterprise-Klasse für Ihren Cloud Storage bietet. AWS C2S ist eine geschlossene Region speziell für die USA Intelligence Community; die Anweisungen auf dieser Seite gelten nur für Benutzer der Region AWS C2S.</block>
@@ -4643,4 +4638,10 @@
   <block id="85fa376f75ded218650eec5453f272cf" category="paragraph">Sie können Rollback über die API oder durch Aktualisierung der Datei App.conf aktivieren.</block>
   <block id="631d5d58329754fe0bb44ea77f068c95" category="paragraph">*Rollback über die API aktivieren*</block>
   <block id="07c460b15c5d7df22ee3bebc2fd32aaa" category="paragraph">*Rollback durch Aktualisierung von App.conf* aktivieren</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Nutzen Sie Self-Support-Optionen</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Erstellen Sie einen Fall mit dem NetApp Support</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Wählen Sie auf der Seite *Ressourcen* eine der verfügbaren Optionen unter Technischer Support:</block>
+  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">Klicken Sie auf *Fall erstellen*, um ein Ticket bei einem NetApp Support Spezialisten zu öffnen:</block>
+  <block id="5db69347f06a9f63ed1f4c90e8b874e5" category="inline-link-macro">Funktionsweise von S3-Multi-Protokoll</block>
+  <block id="e48cc3153e7d667d87986f8e162ea872" category="paragraph"><block ref="8674fe872330e1769235c43fb746c3f7" category="inline-link-macro-rx"></block>.<block ref="5b24747aa1a4fd51dbcea213f97833c7" category="inline-link-macro-rx"></block>.</block>
 </blocks>
