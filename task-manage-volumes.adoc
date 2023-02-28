@@ -120,7 +120,7 @@ NOTE: BlueXP verschiebt das Volume in ein vorhandenes Aggregat, das den ausgewä
 
 Standardmäßig wird ein Volume automatisch auf eine Maximalgröße erweitert, wenn es sich um keinen Speicherplatz handelt. Der Standardwert ist 1,000. Mit dieser Einstellung kann das Volume auf das 11-fache seiner Größe erweitert werden. Dieser Wert kann in den Einstellungen eines Connectors konfiguriert werden.
 
-Wenn Sie die Größe Ihres Volumens ändern müssen, können Sie es durch https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP System Manager"^]. Berücksichtigen Sie unbedingt die Kapazitätsgrenzen Ihres Systems, wenn Sie die Größe der Volumes ändern. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Entnehmen.
+Wenn Sie die Größe Ihres Volumens ändern müssen, können Sie es durch link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP System Manager"^]. Berücksichtigen Sie unbedingt die Kapazitätsgrenzen Ihres Systems, wenn Sie die Größe der Volumes ändern. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Entnehmen.
 
 
 
@@ -161,14 +161,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-** Um Azure AD-Domänendienste als AD-Server für Cloud Volumes ONTAP zu konfigurieren, geben Sie in diesem Feld *OU=AADDC-Computer* oder *OU=AADDC-Benutzer* ein.https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure-Dokumentation: Erstellen Sie eine Organisationseinheit (Organisationseinheit, OU) in einer von Azure AD-Domänendiensten gemanagten Domäne"^]
+** Um Azure AD-Domänendienste als AD-Server für Cloud Volumes ONTAP zu konfigurieren, geben Sie in diesem Feld *OU=AADDC-Computer* oder *OU=AADDC-Benutzer* ein.link:https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure-Dokumentation: Erstellen Sie eine Organisationseinheit (Organisationseinheit, OU) in einer von Azure AD-Domänendiensten gemanagten Domäne"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-** Um von Google verwaltete Microsoft AD als AD-Server für Cloud Volumes ONTAP zu konfigurieren, geben Sie in diesem Feld *OU=Computer,OU=Cloud* ein.https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud Documentation: Organizational Units in Google Managed Microsoft AD"^]
+** Um von Google verwaltete Microsoft AD als AD-Server für Cloud Volumes ONTAP zu konfigurieren, geben Sie in diesem Feld *OU=Computer,OU=Cloud* ein.link:https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud Documentation: Organizational Units in Google Managed Microsoft AD"^]
 
 
 endif::gcp[]
@@ -197,7 +197,7 @@ Sie können ein Volume in System Manager verschieben, indem Sie ein Volume und d
 In den meisten Fällen können Sie mit System Manager Volumes verschieben.
 
 +
-Anweisungen hierzu finden Sie im http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 Volume Move Express Guide"^].
+Anweisungen hierzu finden Sie im link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 Volume Move Express Guide"^].
 
 
 
@@ -208,14 +208,14 @@ Anweisungen hierzu finden Sie im http://docs.netapp.com/ontap-9/topic/com.netapp
 In BlueXP wird möglicherweise eine Meldung „Aktion erforderlich“ angezeigt, die besagt, dass das Verschieben eines Volumes erforderlich ist, um Kapazitätsprobleme zu vermeiden, aber Sie müssen das Problem selbst beheben. In diesem Fall müssen Sie herausfinden, wie das Problem behoben werden kann, und dann ein oder mehrere Volumes verschieben.
 
 
-TIP: BlueXP zeigt diese „Aktion erforderlich“-Meldungen an, wenn ein Aggregat 90 % der verwendeten Kapazität erreicht hat. Wenn Daten-Tiering aktiviert ist, werden die Meldungen angezeigt, wenn ein Aggregat eine zu 80 % genutzte Kapazität erreicht hat. Standardmäßig werden 10 % freier Speicherplatz für das Daten-Tiering reserviert. link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["Erfahren Sie mehr über das freie Speicherplatzverhältnis für Daten-Tiering"].
+TIP: BlueXP zeigt diese „Aktion erforderlich“-Meldungen an, wenn ein Aggregat 90 % der verwendeten Kapazität erreicht hat. Wenn Daten-Tiering aktiviert ist, werden die Meldungen angezeigt, wenn ein Aggregat eine zu 80 % genutzte Kapazität erreicht hat. Standardmäßig werden 10 % freier Speicherplatz für das Daten-Tiering reserviert. link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["Erfahren Sie mehr über das freie Speicherplatzverhältnis für Daten-Tiering"^].
 
 .Schritte
-. <<Erkennen der Behebung von Kapazitätsproblemen,Identifizieren, wie das Problem behoben werden kann>>.
+. <<Erkennen der Behebung von Kapazitätsproblemen>>.
 . Verschieben Sie Volumes basierend auf Ihrer Analyse, um Kapazitätsprobleme zu vermeiden:
 +
-** <<Verschieben Sie Volumes in ein anderes System, um Kapazitätsprobleme zu vermeiden,Volumes werden in ein anderes System verschoben>>.
-** <<Verschieben Sie Volumes in ein anderes Aggregat, um Kapazitätsprobleme zu vermeiden,Verschieben Sie Volumes zu einem anderen Aggregat auf demselben System>>.
+** <<Verschieben Sie Volumes in ein anderes System, um Kapazitätsprobleme zu vermeiden>>.
+** <<Verschieben Sie Volumes in ein anderes Aggregat, um Kapazitätsprobleme zu vermeiden>>.
 
 
 
@@ -273,20 +273,24 @@ Sie können ein oder mehrere Volumes in ein anderes Cloud Volumes ONTAP System v
 .Über diese Aufgabe
 Sie können die folgenden Schritte in dieser Aufgabe ausführen, um die folgende Meldung "Aktion erforderlich" zu korrigieren:
 
- Moving a volume is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you because the system has reached the disk limit.
+[]
+====
+Das Verschieben eines Volumes ist notwendig, um Kapazitätsprobleme zu vermeiden. BlueXP kann diese Aktion jedoch nicht für Sie ausführen, da das System die Festplattengrenze erreicht hat.
+
+====
 .Schritte
 . Identifizieren Sie ein Cloud Volumes ONTAP System mit verfügbarer Kapazität, oder implementieren Sie ein neues System.
 . Ziehen Sie die Quellarbeitsumgebung per Drag & Drop in die Zielarbeitsumgebung, um eine einmalige Datenreplizierung des Volumes durchzuführen.
 +
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Replizierung von Daten zwischen Systemen"^].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Replizierung von Daten zwischen Systemen"^].
 
 . Wechseln Sie zur Seite "Replication Status", und brechen Sie die SnapMirror Beziehung ab, um das replizierte Volume von einem Datensicherungsvolume in ein Lese-/Schreibvolume zu konvertieren.
 +
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["Managen von Plänen und Beziehungen zur Datenreplizierung"^].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["Managen von Plänen und Beziehungen zur Datenreplizierung"^].
 
 . Konfigurieren Sie das Volume für den Datenzugriff.
 +
-Informationen über die Konfiguration eines Ziel-Volume für den Datenzugriff finden Sie unter http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["ONTAP 9 Express Guide für die Disaster Recovery von Volumes"^].
+Informationen über die Konfiguration eines Ziel-Volume für den Datenzugriff finden Sie unter link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["ONTAP 9 Express Guide für die Disaster Recovery von Volumes"^].
 
 . Löschen Sie das ursprüngliche Volume.
 +
@@ -303,7 +307,11 @@ Sie können ein oder mehrere Volumes in ein anderes Aggregat verschieben, um Kap
 .Über diese Aufgabe
 Sie können die folgenden Schritte in dieser Aufgabe ausführen, um die folgende Meldung "Aktion erforderlich" zu korrigieren:
 
- Moving two or more volumes is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you.
+[]
+====
+Das Verschieben von zwei oder mehr Volumes ist notwendig, um Kapazitätsprobleme zu vermeiden, BlueXP kann diese Aktion jedoch nicht für Sie durchführen.
+
+====
 .Schritte
 . Überprüfen Sie, ob ein vorhandenes Aggregat über die verfügbare Kapazität für die Volumes verfügt, die Sie verschieben müssen:
 +
@@ -327,7 +335,7 @@ Weitere Informationen finden Sie unter link:task-create-aggregates.html["Aggrega
 . Verwenden Sie System Manager oder die CLI, um die Volumes in das Aggregat zu verschieben.
 . In den meisten Fällen können Sie mit System Manager Volumes verschieben.
 +
-Anweisungen hierzu finden Sie im http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 Volume Move Express Guide"^].
+Anweisungen hierzu finden Sie im link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 Volume Move Express Guide"^].
 
 
 
