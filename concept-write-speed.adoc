@@ -96,7 +96,7 @@ ifdef::gcp[]
 
 Wenn Sie ein Single-Node-System verwenden, unterstützt Cloud Volumes ONTAP bei allen Maschinentypen eine hohe Schreibgeschwindigkeit.
 
-Cloud Volumes ONTAP unterstützt nicht hohe Schreibgeschwindigkeit mit HA-Paaren in Google Cloud.
+Wenn Sie ein HA-Paar verwenden, unterstützt Cloud Volumes ONTAP für mehrere VM-Typen, beginnend mit Version 9.13.0, eine hohe Schreibgeschwindigkeit. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html#supported-configurations-by-license["Versionshinweise zu Cloud Volumes ONTAP"^] Um die VM-Typen anzuzeigen, die eine hohe Schreibgeschwindigkeit unterstützen.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Erfahren Sie mehr über die von Cloud Volumes ONTAP unterstützten Google Cloud-Maschinentypen"^].
 

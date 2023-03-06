@@ -30,6 +30,7 @@ Ab Version BlueXP 3.9.5 ist die Erstellung des logischen Speicherberichtes auf d
 ** FlexCache
 ** FlexClone
 ** ISCSI
+** Mandantenfähiges Verschlüsselungsmanagement (MTEKM) ab Cloud Volumes ONTAP 9.12.1 GA
 ** NetApp Volume Encryption (nur für BYOL oder registrierte PAYGO Systeme)
 ** NFS
 

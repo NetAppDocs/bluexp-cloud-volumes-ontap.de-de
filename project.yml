@@ -104,6 +104,18 @@ sidebar:
         url: "/task-set-up-licensing-google.html"
       - title: Starten Sie Cloud Volumes ONTAP in Google Cloud
         url: "/task-deploying-gcp.html"
+      - title: Bildüberprüfung Der Google Cloud Platform
+        entries:
+        - title: Überblick
+          url: "/concept-gcp-image-verification.html"
+        - title: Konvertieren Sie das Bild in das Raw-Format auf GCP
+          url: "/task-gcp-convert-image-raw.html"
+        - title: Überprüfung der Bildsignatur
+          entries:
+          - title: Verifizieren von GCP signierten Bildern
+            url: "/concept-gcp-verify-signed-image.html"
+          - title: Überprüfen Sie Inhalte mit OpenSSL
+            url: "/task-verify-openssl-gcp.html"
   - title: Verwenden Sie Cloud Volumes ONTAP
     entries:
     - title: Lizenzmanagement
