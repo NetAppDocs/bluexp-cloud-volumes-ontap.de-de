@@ -18,10 +18,10 @@ Erste Schritte mit Cloud Volumes ONTAP in AWS
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Einen Konnektor erstellen
 [role="quick-margin-para"]
-Wenn Sie keine haben https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Stecker"^] Dennoch muss ein Kontoadministrator einen erstellen. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Erfahren Sie, wie Sie in AWS einen Connector erstellen können"^].
+Wenn Sie keine haben https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Stecker"^] Dennoch muss ein Kontoadministrator einen erstellen. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Erfahren Sie, wie Sie in AWS einen Connector erstellen können"^]
 
 [role="quick-margin-para"]
-Wenn Sie Ihre erste Cloud Volumes ONTAP-Arbeitsumgebung erstellen, werden Sie von BlueXP (früher Cloud Manager) aufgefordert, einen Connector bereitzustellen, falls noch nicht vorhanden ist.
+Wenn Sie Cloud Volumes ONTAP in einem Subnetz bereitstellen möchten, in dem kein Internetzugang verfügbar ist, müssen Sie den Connector manuell installieren und auf die BlueXP Benutzeroberfläche zugreifen, die auf diesem Connector ausgeführt wird. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Erfahren Sie, wie Sie den Connector manuell an einem Ort ohne Internetzugang installieren"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Planen Sie Ihre Konfiguration
 [role="quick-margin-para"]
@@ -30,9 +30,9 @@ BlueXP bietet vorkonfigurierte Pakete, die Ihren Workload-Anforderungen entsprec
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Richten Sie Ihr Netzwerk ein
 [role="quick-margin-list"]
 . Stellen Sie sicher, dass Ihre VPC und Subnetze die Konnektivität zwischen dem Connector und Cloud Volumes ONTAP unterstützen.
-. Aktivieren Sie den Outbound-Internetzugang über die Ziel-VPC, damit der Connector und der Cloud Volumes ONTAP mehrere Endpunkte kontaktieren können.
+. Outbound-Internetzugang über die Ziel-VPC für NetApp AutoSupport aktivieren
 +
-Dieser Schritt ist wichtig, da der Connector Cloud Volumes ONTAP nicht ohne Outbound-Internetzugang verwalten kann. Wenn Sie die ausgehende Verbindung begrenzen müssen, lesen Sie die Liste der Endpunkte für link:reference-networking-aws.html["Anschluss und Cloud Volumes ONTAP"].
+Dieser Schritt ist nicht erforderlich, wenn Sie Cloud Volumes ONTAP an einem Ort bereitstellen, an dem kein Internetzugang verfügbar ist.
 
 . Richten Sie einen VPC-Endpunkt für den S3-Dienst ein.
 +
