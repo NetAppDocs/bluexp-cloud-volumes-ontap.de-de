@@ -41,6 +41,11 @@ Der Connector sollte in derselben Azure-Region wie die Cloud Volumes ONTAP-Syste
 . Klicken Sie Auf *Speichern*.
 
 
+.Nachdem Sie fertig sind
+Wenn Sie Azure Private Links deaktiviert haben und der Connector einen Proxyserver verwendet, müssen Sie direkten API-Datenverkehr aktivieren.
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["Erfahren Sie, wie Sie direkten API-Datenverkehr auf dem Connector aktivieren"^]
+
 
 
 == Arbeiten Sie mit Azure Private Links

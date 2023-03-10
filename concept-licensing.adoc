@@ -137,7 +137,7 @@ Sie bezahlen nach Kapazität für jede Art von Cloud Volumes ONTAP-Konfiguration
 +
 Single Node oder HA, berechnet für primäre und sekundäre Volumes dieselbe Kapazität
 
-* Bietet unbegrenzte Volume-Backups mit Cloud Backup, aber nur für Cloud Volumes ONTAP-Systeme, die mit dem Professional-Paket bereitgestellt werden
+* Umfasst unbegrenzte Volume-Backups mit Cloud-Backup, aber nur für Cloud Volumes ONTAP Systeme, die das Professional-Paket verwenden
 * Fügen Sie die Cloud-Datenservices von NetApp zu zusätzlichen Kosten hinzu
 
 

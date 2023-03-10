@@ -96,10 +96,10 @@ BlueXP erstellt das Speicherkonto mit den folgenden Einstellungen:
 
 
 --
-Storage-Zugriffstufen:: Die Standard-Storage-Zugriffs-Tier für Tiered Daten in Azure ist die _Hot_-Tier. Der Hot Tier eignet sich ideal für häufig genutzte Daten.
+Storage-Zugriffstufen:: Die Standard-Storage-Zugriffs-Tier für Tiered Daten in Azure ist die _Hot_-Tier. Die Tier mit häufig benötigten Daten ist ideal für Daten in der Kapazitäts-Tier.
 +
 --
-Wenn Sie nicht auf die inaktiven Daten zugreifen möchten, können Sie Ihre Storage-Kosten durch Wechsel zum „_cool_ Storage Tier“ senken. Wenn Sie die Storage-Tier ändern, beginnen inaktive Daten im Storage-Tier. Diese werden auf den „coolen Storage“ verschoben, sofern nach 30 Tagen nicht mehr auf die Daten zugegriffen wird.
+Wenn Sie nicht planen, auf die inaktiven Daten in der Kapazitäts-Tier zuzugreifen, können Sie Ihre Speicherkosten senken, indem Sie auf die Storage-Tier _cool_ wechseln. Wenn Sie den Speicher-Tier zu kühlen ändern, werden inaktive Kapazitäts-Tier-Daten direkt in den kühlen Speicher-Tier verschoben.
 
 Die Zugriffskosten sind höher, wenn Sie auf die Daten zugreifen. Berücksichtigen Sie diese also vor einem Wechsel des Storage-Tiers. https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["Weitere Informationen zu Azure Blob Storage-Zugriffsklassen"^].
 
@@ -137,7 +137,7 @@ Wenn BlueXP den Bucket erstellt, verwendet er die folgenden Standardeinstellunge
 
 
 --
-Speicherklassen:: Die Standard-Storage-Klasse für Tiered Daten ist die Klasse _Standard Storage_. Wenn nur selten auf die Daten zugegriffen wird, können Sie Ihre Storage-Kosten senken, indem Sie zu _Nearline Storage_ oder _Coldline Storage_ wechseln. Wenn Sie die Speicherklasse ändern, beginnen inaktive Daten in der Klasse Standard-Speicher und wechseln zu der von Ihnen ausgewählten Speicherklasse, wenn nach 30 Tagen kein Zugriff auf die Daten erfolgt.
+Speicherklassen:: Die Standard-Storage-Klasse für Tiered Daten ist die Klasse _Standard Storage_. Wenn nur selten auf die Daten zugegriffen wird, können Sie Ihre Storage-Kosten senken, indem Sie zu _Nearline Storage_ oder _Coldline Storage_ wechseln. Wenn Sie die Storage-Klasse ändern, werden inaktive Daten direkt in die von Ihnen ausgewählte Klasse verschoben.
 +
 --
 Die Zugriffskosten sind höher, wenn Sie auf die Daten zugreifen. Berücksichtigen Sie dies also vor einem Wechsel der Storage-Klasse. https://cloud.google.com/storage/docs/storage-classes["Erfahren Sie mehr über Storage-Klassen für Google Cloud Storage"^].
