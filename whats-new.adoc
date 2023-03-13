@@ -26,6 +26,14 @@ Die folgenden Änderungen wurden mit der Version 3.9.27 des Connectors eingefüh
 
 
 
+=== Cloud Volumes ONTAP 9.13.0
+
+BlueXP kann jetzt Cloud Volumes ONTAP 9.13.0 in AWS, Azure und Google Cloud implementieren und managen.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
+
+
+
 === Unterstützung für 16 tib und 32 TIB in Azure
 
 Cloud Volumes ONTAP unterstützt jetzt 16 tib und 32 tib Festplatten für Hochverfügbarkeitsimplementierungen auf verwalteten Festplatten in Azure.

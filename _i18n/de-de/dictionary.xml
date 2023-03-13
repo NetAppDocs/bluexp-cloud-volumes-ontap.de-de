@@ -4757,4 +4757,7 @@
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Die Standard-Storage-Zugriffs-Tier für Tiered Daten in Azure ist die _Hot_-Tier. Die Tier mit häufig benötigten Daten ist ideal für Daten in der Kapazitäts-Tier.</block>
   <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">Wenn Sie nicht planen, auf die inaktiven Daten in der Kapazitäts-Tier zuzugreifen, können Sie Ihre Speicherkosten senken, indem Sie auf die Storage-Tier _cool_ wechseln. Wenn Sie den Speicher-Tier zu kühlen ändern, werden inaktive Kapazitäts-Tier-Daten direkt in den kühlen Speicher-Tier verschoben.</block>
   <block id="3e06c5fbfb4be981b82d7b6b33bb900f" category="list-text">Die Standard-Storage-Klasse für Tiered Daten ist die Klasse _Standard Storage_. Wenn nur selten auf die Daten zugegriffen wird, können Sie Ihre Storage-Kosten senken, indem Sie zu _Nearline Storage_ oder _Coldline Storage_ wechseln. Wenn Sie die Storage-Klasse ändern, werden inaktive Daten direkt in die von Ihnen ausgewählte Klasse verschoben.</block>
+  <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
+  <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">BlueXP kann jetzt Cloud Volumes ONTAP 9.13.0 in AWS, Azure und Google Cloud implementieren und managen.</block>
+  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>.</block>
 </blocks>
