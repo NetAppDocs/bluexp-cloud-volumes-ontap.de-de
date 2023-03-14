@@ -31,5 +31,9 @@ Bevor Sie die Schreibgeschwindigkeit ändern, sollten Sie dies tun link:concept-
 +
 Wenn Sie „hoch“ wählen, müssen Sie die „Ich verstehe...“-Aussage lesen und bestätigen, indem Sie das Kästchen aktivieren.
 
++
+
+NOTE: Die Option *High* Schreibgeschwindigkeit wird ab Version 9.13.0 von Cloud Volumes ONTAP HA-Paaren in Google Cloud unterstützt.
+
 . Klicken Sie auf *Speichern*, überprüfen Sie die Bestätigungsmeldung und klicken Sie dann auf *Weiter*.
 

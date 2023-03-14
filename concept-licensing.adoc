@@ -199,6 +199,7 @@ Ihre Lizenz wird immer zuerst berechnet, aber in diesen Fällen wird Ihnen der S
 
 
 * Wenn Sie über einen jährlichen Vertrag eines Marktes verfügen, werden _alle Cloud Volumes ONTAP Systeme, die Sie implementieren, mit diesem Vertrag in Rechnung gestellt. Es ist nicht möglich, einen jährlichen Marktvertrag mit BYOL zu kombinieren.
+* In China werden nur Single-Node-Systeme mit BYOL unterstützt.
 
 
 
