@@ -20,6 +20,23 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 13 März 2023
+
+
+
+=== Unterstützung der Region China
+
+Ab Cloud Volumes ONTAP 9.12.1 GA wird die Unterstützung für China-Regionen jetzt wie folgt in Azure unterstützt.
+
+* Cloud Volumes ONTAP wird in China Nord 3 unterstützt.
+* Systeme mit Single Node werden unterstützt.
+* Lizenzen, die direkt von NetApp erworben wurden, werden unterstützt.
+
+
+Informationen zur regionalen Verfügbarkeit finden Sie unter link:https://bluexp.netapp.com/cloud-volumes-global-regions["Karten für globale Regionen für Cloud Volumes ONTAP"^].
+
+
+
 == 5 März 2023
 
 Die folgenden Änderungen wurden mit der Version 3.9.27 des Connectors eingeführt.
