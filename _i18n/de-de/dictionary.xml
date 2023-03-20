@@ -71,10 +71,8 @@
   <block id="5031fdddd713681aa180d7bfa60b1f72" category="list-text">Stellen Sie sicher, dass die Netzwerksicherheitsgruppenregeln für Cloud Volumes ONTAP es dem Load Balancer ermöglichen, TCP-Sonden für die in Schritt 4 erstellten Gesundheitssonden zu senden. Beachten Sie, dass dies standardmäßig zulässig ist.</block>
   <block id="b4fdd997b1f33e0d4c6964444c2bf399" category="open-title">SMB</block>
   <block id="c09d6988bf61135b41e7b195d446e2b9" category="paragraph">Die für SMB-Daten verwendeten IP-Adressen werden im Load Balancer zugewiesen, sodass die IP-Adressen bei einem Failover-Ereignis auf den anderen Node migriert werden können.</block>
-  <block id="da253cd0d6c8d87b61a60f7e67560913" category="list-text">Eine IP-Adresse für eine iSCSI-LIF auf Knoten 1</block>
   <block id="5aa1fc4c5c5e3c602f89524b94fcaf47" category="list-text">Eine IP-Adresse für eine iSCSI-LIF auf Knoten 2</block>
   <block id="d31b2ca2df7d7ec89a597cf3ff166e6d" category="paragraph">Die iSCSI LIFs sind für die DNS- und SMB-Kommunikation erforderlich. Dazu wird ein iSCSI-LIF verwendet, da bei einem Failover keine Migration durchgeführt wird.</block>
-  <block id="ccc2da4a96a5d07ea0b03ab18f4ed608" category="list-text">Erstellen Sie die erforderliche Anzahl von Frontend-IP-Konfigurationen:</block>
   <block id="a094ded8d387643804f456ad69ef9c4e" category="section-title">Erstellung einer Storage-VM und logischer Schnittstellen</block>
   <block id="3ad6e3f460248126da5c801e403088c1" category="paragraph">Nachdem Sie in Azure IP-Adressen zugewiesen haben, können Sie eine neue Storage-VM auf einem Single Node-System oder auf einem HA-Paar erstellen.</block>
   <block id="5683cfda0c67cd1651e904160b0a5460" category="paragraph">Wie Sie eine Storage-VM und LIFs auf einem einzelnen Node-System erstellen, hängt vom verwendeten Storage-Protokoll ab.</block>
@@ -94,7 +92,6 @@
   <block id="622931dd0b6724a34dfe5a4f99b9a820" category="list-text">Verwenden Sie den folgenden Befehl, um eine NAS-LIF auf Knoten 1 zu erstellen.</block>
   <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">Verwenden Sie den folgenden Befehl, um eine NAS-LIF auf Knoten 2 zu erstellen.</block>
   <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">NAS-Daten-LIFs erstellen:</block>
-  <block id="477dc9bfd99f5e3ed09c8dbdc76a2c7c" category="list-text">ISCSI LIFs erstellen, um die Kommunikation zwischen DNS und SMB zu ermöglichen:</block>
   <block id="9a34c8001fb2a94f36b91cd1711ee39f" category="paragraph">Nachdem Sie eine Storage VM auf einem HA-Paar erstellt haben, warten Sie am besten 12 Stunden, bevor Sie Storage auf dieser SVM bereitstellen. Ab Version Cloud Volumes ONTAP 9.10.1 scannt BlueXP die Einstellungen für den Load Balancer eines HA-Paars in einem 12-Stunden-Intervall. Wenn neue SVMs vorhanden sind, aktiviert BlueXP eine Einstellung für kürzere ungeplante Failover.</block>
   <block id="2d136412703a915f2b3b47846e42252a" category="summary">Managen Sie Aggregate selbst, indem Sie Festplatten hinzufügen, Informationen über die Aggregate anzeigen und sie löschen.</block>
   <block id="ae271afdca3c7d6785a9aefa74e6c80e" category="doc">Kapazitätseinstellungen auf einem Konnektor verwalten</block>
@@ -4775,4 +4772,19 @@
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">Lizenzen, die direkt von NetApp erworben wurden, werden unterstützt.</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">Karten für globale Regionen für Cloud Volumes ONTAP</block>
   <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">Informationen zur regionalen Verfügbarkeit finden Sie unter <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>.</block>
+  <block id="8a83d5aff252fbe923fc5b8ce4cab9f9" category="paragraph">Die iSCSI LIFs sind für die DNS-Kommunikation erforderlich. Dazu wird ein iSCSI-LIF verwendet, da bei einem Failover keine Migration durchgeführt wird.</block>
+  <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">Sie müssen die folgenden IP-Adressen im Load Balancer erstellen:</block>
+  <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">Eine IP-Adresse für eine iSCSI-LIF auf Node 1 in der jeweiligen NIC0 jeder VM</block>
+  <block id="6f2174023153761cdb987311021eaf2b" category="list-text">Erstellen Sie nur für die Daten und SVM-LIFs die erforderliche Anzahl von Frontend-IP-Konfigurationen:</block>
+  <block id="37dd90c0b5c3c64f5ce58ece1a549527" category="admonition">Eine Frontend-IP sollte nur unter der NIC0 für jede entsprechende SVM angelegt werden. Weitere Informationen zum Hinzufügen der IP-Adresse zum SVM NIC0 finden Sie unter „Schritt 7 [Hyperlink]“.</block>
+  <block id="b31c05988fa937699345307f0d088b5e" category="list-text">Fügen Sie für iSCSI LIFs die IP-Adresse für NIC0 hinzu.</block>
+  <block id="d8268f30cad7ca754b650b30d5a9fb20" category="list-text">Klicken Sie unter Einstellungen auf *IP-Konfigurationen*.</block>
+  <block id="f14404f1eb77db8c34dfa687da4e9969" category="inline-image-macro">Ein Screenshot der Seite mit den IP-Konfigurationen im Azure-Portal</block>
+  <block id="d3f503b2101b1859a2272746e61a2bca" category="paragraph"><block ref="d3f503b2101b1859a2272746e61a2bca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d8292c375cfd1e8785887fa2307c216e" category="list-text">Geben Sie einen Namen für die IP-Konfiguration ein, wählen Sie dynamisch aus, und klicken Sie dann auf *OK*.</block>
+  <block id="d139a8131606839195ad605bafe04b07" category="inline-image-macro">Ein Screenshot zum Fenster „IP-Konfiguration hinzufügen“</block>
+  <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">Klicken Sie auf den Namen der gerade erstellten IP-Konfiguration, ändern Sie die Zuweisung zu statisch und klicken Sie auf *Speichern*.</block>
+  <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">Geben Sie den folgenden Befehl ein, um auf den erweiterten Modus zuzugreifen.</block>
+  <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">ISCSI LIFs erstellen, um DNS-Kommunikation bereitzustellen:</block>
 </blocks>
