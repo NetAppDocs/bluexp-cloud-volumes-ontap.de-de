@@ -267,17 +267,14 @@ Die vordefinierte externe Sicherheitsgruppe für den Cloud Volumes ONTAP HA Medi
 
 === Regeln für eingehende Anrufe
 
-Die Quelle für eingehende Regeln ist 0.0.0.0/0.
+Die vordefinierte Sicherheitsgruppe für den HA-Mediator umfasst die folgende eingehende Regel.
 
-[cols="20,20,60"]
+[cols="20,20,20,40"]
 |===
-| Protokoll | Port | Zweck 
+| Protokoll | Port | Quelle | Zweck 
 
 
-| SSH | 22 | SSH-Verbindungen zum HA-Vermittler 
-
-
-| TCP | 3000 | RESTful API-Zugriff über den Connector 
+| TCP | 3000 | CIDR des Connectors | RESTful API-Zugriff über den Connector 
 |===
 
 
@@ -312,13 +309,13 @@ Wenn Sie starre Regeln für ausgehenden Datenverkehr benötigen, können Sie die
 | Protokoll | Port | Ziel | Zweck 
 
 
-| HTTP | 80 | Anschluss-IP-Adresse | Lade Upgrades für den Mediator herunter 
+| HTTP | 80 | IP-Adresse des Connectors auf der AWS EC2 Instanz | Lade Upgrades für den Mediator herunter 
 
 
-| HTTPS | 443 | AWS API-Services | Unterstützung bei Storage Failover 
+| HTTPS | 443 | ec2.amazonaws.com | Unterstützung bei Storage Failover 
 
 
-| UDP | 53 | AWS API-Services | Unterstützung bei Storage Failover 
+| UDP | 53 | ec2.amazonaws.com | Unterstützung bei Storage Failover 
 |===
 
 NOTE: Anstatt die Ports 443 und 53 zu öffnen, können Sie einen VPC-Endpunkt des Zielsubnetzen zum AWS EC2 Service erstellen.
