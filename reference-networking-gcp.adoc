@@ -413,6 +413,9 @@ NOTE: Die Quelle ist die Schnittstelle (IP-Adresse) auf dem Cloud Volumes ONTAP 
 | Cluster | Gesamter Datenverkehr | Gesamter Datenverkehr | Alle LIFs auf einem Node | Alle LIFs auf dem anderen Node | Kommunikation zwischen Clustern (nur Cloud Volumes ONTAP HA) 
 
 
+| Konfigurations-Backups | HTTP | 80 | Node Management-LIF | \Http://<connector-IP-address>/occm/offboxconfig | Senden Sie Konfigurationssicherungen an den Connector. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["Informationen zu Backup-Dateien für die Konfiguration"^]. 
+
+
 | DHCP | UDP | 68 | Node Management-LIF | DHCP | DHCP-Client für die erstmalige Einrichtung 
 
 
