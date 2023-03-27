@@ -102,9 +102,9 @@ Die Subnetze in diesen VPCs müssen über unterschiedliche CIDR-Bereiche verfüg
 
 ==== Private IP-Adressen
 
-BlueXP weist Cloud Volumes ONTAP in GCP automatisch die erforderliche Anzahl privater IP-Adressen zu. Sie müssen sicherstellen, dass in Ihrem Netzwerk genügend private Adressen verfügbar sind.
+BlueXP weist Cloud Volumes ONTAP in Google Cloud automatisch die erforderliche Anzahl privater IP-Adressen zu. Sie müssen sicherstellen, dass in Ihrem Netzwerk genügend private Adressen verfügbar sind.
 
-Die Anzahl der LIFs, die Cloud Manager für Cloud Volumes ONTAP zuweist, hängt davon ab, ob Sie ein einzelnes Node-System oder ein HA-Paar implementieren. Ein LIF ist eine IP-Adresse, die einem physischen Port zugewiesen ist. Für Managementtools wie SnapCenter ist eine SVM-Management-LIF erforderlich.
+Die Anzahl der LIFs, die BlueXP für Cloud Volumes ONTAP zuweist, hängt davon ab, ob Sie ein Single Node-System oder ein HA-Paar implementieren. Ein LIF ist eine IP-Adresse, die einem physischen Port zugewiesen ist. Für Managementtools wie SnapCenter ist eine SVM-Management-LIF erforderlich.
 
 * *Single Node* BlueXP weist 4 IP-Adressen einem System mit einem einzigen Knoten zu:
 +
