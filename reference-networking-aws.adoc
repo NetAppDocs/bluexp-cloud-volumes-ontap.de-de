@@ -64,19 +64,32 @@ Die Anzahl der LIFs, die BlueXP für Cloud Volumes ONTAP zuweist, hängt davon a
 
 ==== IP-Adressen für ein Single Node-System
 
-BlueXP weist einem System mit einem Knoten 6 IP-Adressen zu:
+BlueXP weist einem System mit einem einzelnen Node 6 IP-Adressen zu.
 
-* Cluster-Management-LIF
-* Node Management-LIF
-* Intercluster-LIF
-* LIF auf NAS-Daten
-* ISCSI-Daten-LIF
-* Storage-VM-Management-LIF
-+
-Ein Storage-VM-Management-LIF wird mit Managementtools wie SnapCenter verwendet.
+Die folgende Tabelle enthält Details zu den LIFs, die mit jeder privaten IP-Adresse verknüpft sind.
+
+[cols="20,40"]
+|===
+| LIF | Zweck 
 
 
+| Cluster-Management | Administrative Verwaltung des gesamten Clusters (HA-Paar). 
 
+
+| Node-Management | Administrationsmanagement eines Node 
+
+
+| Intercluster | Cluster-übergreifende Kommunikation, Backup und Replizierung 
+
+
+| NAS-Daten | Client-Zugriff über NAS-Protokolle. 
+
+
+| ISCSI-Daten | Client-Zugriff über das iSCSI-Protokoll. Wird vom System auch für andere wichtige Netzwerk-Workflows eingesetzt. Dieses LIF ist erforderlich und sollte nicht gelöscht werden. 
+
+
+| Storage-VM-Management | Ein Storage-VM-Management-LIF wird mit Managementtools wie SnapCenter verwendet. 
+|===
 
 
 ==== IP-Adressen für HA-Paare
@@ -139,7 +152,7 @@ Die folgenden Tabellen enthalten Details zu den LIFs, die mit den einzelnen priv
 | Intercluster | Eth0 | Node 1 und Node 2 | Cluster-übergreifende Kommunikation, Backup und Replizierung 
 
 
-| ISCSI-Daten | Eth0 | Node 1 und Node 2 | Client-Zugriff über das iSCSI-Protokoll. Diese LIF managt zudem die Migration von Floating IP-Adressen zwischen Nodes. 
+| ISCSI-Daten | Eth0 | Node 1 und Node 2 | Client-Zugriff über das iSCSI-Protokoll. Diese LIFs managen zudem die Migration von fließenden IP-Adressen zwischen Nodes. Diese LIFs sind erforderlich und sollten nicht gelöscht werden. 
 
 
 | Cluster-Konnektivität | Eth1 | Node 1 und Node 2 | Ermöglicht die Kommunikation der Nodes und das Verschieben von Daten innerhalb des Clusters. 
