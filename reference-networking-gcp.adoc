@@ -124,16 +124,16 @@ Sie können die Erstellung der Storage-VM (SVM)-Management-LIF überspringen, we
 
 
 
-* *HA-Paar* BlueXP weist 14 IP-Adressen einem HA-Paar zu:
+* *HA-Paar* BlueXP weist 12-13 IP-Adressen einem HA-Paar zu:
 +
 ** LIFs für das Management von 2 Nodes (e0a)
+** 1 LIF zum Cluster-Management (e0a)
 ** 2 iSCSI LIFs (e0a)
 +
 
 NOTE: Ein iSCSI LIF bietet Client-Zugriff über das iSCSI-Protokoll und wird vom System für andere wichtige Netzwerk-Workflows verwendet. Diese LIFs sind erforderlich und sollten nicht gelöscht werden.
 
-** 2 NAS LIFs (e0a)
-** 2 Cluster-logische Schnittstellen (e0a)
+** 1 oder 2 NAS LIFs (e0a)
 ** 2 logische Cluster-Schnittstellen (e0b)
 ** 2 HA Interconnect IP-Adressen (e0c)
 ** 2 RSM iSCSI IP-Adressen (e0d)
