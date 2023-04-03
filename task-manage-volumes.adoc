@@ -25,28 +25,29 @@ Sie können Volumes an neue Storage-Anforderungen anpassen. Sie können Volumes 
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
 . Doppelklicken Sie auf der Leinwand-Seite auf die Cloud Volumes ONTAP-Arbeitsumgebung, auf der Sie Volumes verwalten möchten.
-. Managen Sie Ihre Volumes:
+. Klicken Sie in der Arbeitsumgebung auf die Registerkarte *Volumes*.
++
+image:screenshot_manage_vol_button.png["Ein Screenshot der Schaltfläche Volume verwalten unter der Registerkarte Volumes."]
+
+. Navigieren Sie auf der Registerkarte Volumes zum gewünschten Volume-Titel, und klicken Sie dann auf *Volume verwalten*, um auf das rechte Bedienfeld Volumes verwalten zuzugreifen.
 +
 [cols="30,70"]
 |===
 | Aufgabe | Aktion 
 
 
-| Anzeigen von Informationen zu einem Volume | Wählen Sie ein Volume aus, und klicken Sie dann auf *Info*. 
+| Anzeigen von Informationen zu einem Volume | Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *View Volume Details*. 
 
 
-| Bearbeiten eines Volumes (nur Volumes mit Lese-/Schreibzugriff)  a| 
-.. Wählen Sie ein Volume aus, und klicken Sie dann auf *Bearbeiten*.
-.. Ändern Sie die Snapshot-Richtlinie des Volumes, die NFS-Protokollversion, die NFS-Zugriffskontrollliste (Exportrichtlinie) oder die Freigabeberechtigungen und klicken Sie dann auf *Update*.
+| Rufen Sie den NFS-Mount-Befehl ab  a| 
+.. Klicken Sie unter Volume Actions im Fenster Manage Volumes auf *Mount Command*.
+.. Klicken Sie Auf *Kopieren*.
 
-
-
-NOTE: Wenn Sie benutzerdefinierte Snapshot-Richtlinien benötigen, können Sie diese mit System Manager erstellen.
 
 
 
 | Klonen Sie ein Volume  a| 
-.. Wählen Sie ein Volume aus, und klicken Sie dann auf *Clone*.
+.. Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *Clone the Volume*.
 .. Ändern Sie den Klonnamen nach Bedarf, und klicken Sie dann auf *Clone*.
 
 
@@ -56,37 +57,49 @@ Weitere Informationen zu FlexClone Volumes finden Sie im http://docs.netapp.com/
 
 
 
-| Wiederherstellen von Daten aus einer Snapshot Kopie auf einem neuen Volume  a| 
-.. Wählen Sie ein Volume aus, und klicken Sie dann auf *Wiederherstellen aus Snapshot Kopie*.
-.. Wählen Sie eine Snapshot Kopie aus, geben Sie einen Namen für das neue Volume ein und klicken Sie dann auf *Wiederherstellen*.
+| Bearbeiten von Volume-Tags (nur Datenträger mit Lese-/Schreibzugriff)  a| 
+.. Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *Edit Volume Tags*, um das Volume-Tag zu ändern, das dem ausgewählten Volume zugewiesen ist.
+.. Geben Sie den Schlüssel und den Wert für das Volume-Tag in die entsprechenden Felder ein.
+.. Um weitere Tags hinzuzufügen, klicken Sie auf *Neues Tag hinzufügen*.
+.. Klicken Sie Auf *Speichern*.
+
+
+
+
+| Bearbeiten eines Volumes (nur Volumes mit Lese-/Schreibzugriff)  a| 
+.. Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *Edit Volume settings*
+.. Ändern Sie die Snapshot-Richtlinie des Volumes, die NFS-Protokollversion, die NFS-Zugriffssteuerungsliste (Exportrichtlinie) oder die Freigabeberechtigungen, und klicken Sie dann auf *Apply*.
+
+
+
+NOTE: Wenn Sie benutzerdefinierte Snapshot-Richtlinien benötigen, können Sie diese mit System Manager erstellen.
+
+
+
+| Löschen Sie ein Volume  a| 
+.. Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *Delete the Volume*.
+.. Geben Sie im Fenster Volume löschen den Namen des Volumes ein, das Sie löschen möchten.
+.. Klicken Sie zur Bestätigung erneut auf *Löschen*.
 
 
 
 
 | Erstellen Sie bei Bedarf eine Snapshot Kopie  a| 
-.. Wählen Sie ein Volume aus, und klicken Sie dann auf *Snapshot Kopie erstellen*.
+.. Klicken Sie im Bereich Volumes verwalten unter Schutzaktionen auf *Snapshot-Kopie erstellen*.
 .. Ändern Sie ggf. den Namen und klicken Sie dann auf *Erstellen*.
 
 
 
 
-| Rufen Sie den NFS-Mount-Befehl ab  a| 
-.. Wählen Sie ein Volume aus, und klicken Sie dann auf *Mount Command*.
-.. Klicken Sie Auf *Kopieren*.
-
-
-
-
-| Zeigen Sie die Ziel-IQN für ein iSCSI-Volume an  a| 
-.. Wählen Sie ein Volume aus, und klicken Sie dann auf *Ziel-IQN*.
-.. Klicken Sie Auf *Kopieren*.
-.. link:task-connect-lun.html["Verwenden Sie den IQN, um von den Hosts eine Verbindung zur LUN herzustellen"].
+| Wiederherstellen von Daten aus einer Snapshot Kopie auf einem neuen Volume  a| 
+.. Klicken Sie im Bereich Volumes verwalten unter Schutzaktionen auf *aus Snapshot-Kopie wiederherstellen*.
+.. Wählen Sie eine Snapshot Kopie aus, geben Sie einen Namen für das neue Volume ein und klicken Sie dann auf *Wiederherstellen*.
 
 
 
 
 | Ändern Sie den zugrunde liegenden Festplattentyp  a| 
-.. Wählen Sie ein Volume aus, und klicken Sie dann auf *Festplattentyp und Tiering Policy*.
+.. Klicken Sie unter Erweiterte Aktionen im Bereich Volumes verwalten auf *Datenträgertyp ändern*.
 .. Wählen Sie den Laufwerkstyp aus und klicken Sie dann auf *Ändern*.
 
 
@@ -96,8 +109,7 @@ NOTE: BlueXP verschiebt das Volume in ein vorhandenes Aggregat, das den ausgewä
 
 
 | Ändern Sie die Tiering Policy  a| 
-.. Wählen Sie ein Volume aus, und klicken Sie dann auf *Festplattentyp und Tiering Policy*.
-.. Klicken Sie Auf *Richtlinie Bearbeiten*.
+.. Klicken Sie unter Erweiterte Aktionen im Bereich Volumes verwalten auf *Tiering-Richtlinie ändern*.
 .. Wählen Sie eine andere Richtlinie aus und klicken Sie auf *Ändern*.
 
 
@@ -108,6 +120,7 @@ NOTE: BlueXP verschiebt das Volume in ein vorhandenes Aggregat, das den ausgewä
 
 | Löschen Sie ein Volume  a| 
 .. Wählen Sie ein Volume aus, und klicken Sie dann auf *Löschen*.
+.. Geben Sie den Namen des Volumes in das Dialogfeld ein.
 .. Klicken Sie zur Bestätigung erneut auf *Löschen*.
 
 
@@ -129,7 +142,8 @@ Wenn Sie die Größe Ihres Volumens ändern müssen, können Sie es durch link:h
 Wenn Sie Ihre DNS-Server oder Active Directory-Domain ändern, müssen Sie den CIFS-Server in Cloud Volumes ONTAP ändern, damit er weiterhin Storage für Clients bereitstellen kann.
 
 .Schritte
-. Klicken Sie in der Arbeitsumgebung auf das Menü-Symbol und dann auf *Erweitert > CIFS-Setup*.
+. Klicken Sie in der Arbeitsumgebung auf der Registerkarte Übersicht auf die Registerkarte Funktion im rechten Fensterbereich.
+. Klicken Sie im Feld CIFS-Setup auf das Symbol *Bleistift*, um das CIFS-Setup-Fenster anzuzeigen.
 . Geben Sie die Einstellungen für den CIFS-Server an:
 +
 [cols="30,70"]
@@ -137,13 +151,19 @@ Wenn Sie Ihre DNS-Server oder Active Directory-Domain ändern, müssen Sie den C
 | Aufgabe | Aktion 
 
 
-| Primäre und sekundäre DNS-IP-Adresse | Die IP-Adressen der DNS-Server, die die Namensauflösung für den CIFS-Server bereitstellen. Die aufgeführten DNS-Server müssen die Servicestandortdatensätze (SRV) enthalten, die zum Auffinden der Active Directory LDAP-Server und Domänencontroller für die Domain, der der CIFS-Server beitreten wird, erforderlich sind. Ifdef::gcp[] Wenn Sie Google Managed Active Directory konfigurieren, kann AD standardmäßig mit der IP-Adresse 169.254.169.254 aufgerufen werden. Endif::gcp[] 
+| Storage VM (SVM) auswählen | Durch Auswahl der SVM (Storage Virtual Machine) des Cloud Volume ONTAP werden die konfigurierten CIFS-Informationen angezeigt. 
 
 
 | Active Directory-Domäne, der Sie beitreten möchten | Der FQDN der Active Directory (AD)-Domain, der der CIFS-Server beitreten soll. 
 
 
 | Anmeldeinformationen, die zur Aufnahme in die Domäne autorisiert sind | Der Name und das Kennwort eines Windows-Kontos mit ausreichenden Berechtigungen zum Hinzufügen von Computern zur angegebenen Organisationseinheit (OU) innerhalb der AD-Domäne. 
+
+
+| Primäre und sekundäre DNS-IP-Adresse | Die IP-Adressen der DNS-Server, die die Namensauflösung für den CIFS-Server bereitstellen. Die aufgeführten DNS-Server müssen die Servicestandortdatensätze (SRV) enthalten, die zum Auffinden der Active Directory LDAP-Server und Domänencontroller für die Domain, der der CIFS-Server beitreten wird, erforderlich sind. Ifdef::gcp[] Wenn Sie Google Managed Active Directory konfigurieren, kann AD standardmäßig mit der IP-Adresse 169.254.169.254 aufgerufen werden. Endif::gcp[] 
+
+
+| DNS-Domäne | Die DNS-Domain für die Cloud Volumes ONTAP Storage Virtual Machine (SVM). In den meisten Fällen entspricht die Domäne der AD-Domäne. 
 
 
 | CIFS-Server-BIOS-Name | Ein CIFS-Servername, der in der AD-Domain eindeutig ist. 
@@ -173,11 +193,8 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-
-
-| DNS-Domäne | Die DNS-Domain für die Cloud Volumes ONTAP Storage Virtual Machine (SVM). In den meisten Fällen entspricht die Domäne der AD-Domäne. 
 |===
-. Klicken Sie Auf *Speichern*.
+. Klicken Sie Auf *Set*.
 
 
 .Ergebnis
@@ -233,15 +250,14 @@ Die erweiterten Informationen sollten beispielsweise Folgendes enthalten: Aggreg
 
 . Identifizieren Sie ein oder mehrere Volumes, die aus dem Aggregat verschoben werden sollen:
 +
-.. Klicken Sie in der Arbeitsumgebung auf das Menüsymbol und dann auf *Erweitert > Erweiterte Zuweisung*.
-.. Wählen Sie das Aggregat aus und klicken Sie dann auf *Info*.
-.. Erweitern Sie die Liste der Volumes.
-+
-image:screenshot_aggr_volumes.gif["Screenshot: Zeigt die Liste der Volumes in einem Aggregat im Dialogfeld \"Aggregatinformationen\" an."]
-
-.. Überprüfen Sie die Größe jedes Volumes, und wählen Sie ein oder mehrere Volumes aus, die aus dem Aggregat verschoben werden sollen.
+.. Klicken Sie in der Arbeitsumgebung auf die Registerkarte *Aggregate*.
+.. Navigieren Sie zur gewünschten Aggregat-Kachel, und klicken Sie dann auf *... (Ellipsensymbol) > Aggregatdetails anzeigen*.
+.. Überprüfen Sie auf der Registerkarte „Übersicht“ des Bildschirms „Aggregatdetails“ die Größe jedes Volumes, und wählen Sie ein oder mehrere Volumes aus dem Aggregat aus.
 +
 Sie sollten Volumes auswählen, die groß genug sind, um Speicherplatz im Aggregat freizugeben, damit Sie in Zukunft zusätzliche Kapazitätsprobleme vermeiden können.
+
++
+image:screenshot_aggr_volume_overview.png["Screenshot: Zeigt die Liste der Volumes in einem Aggregat im Dialogfeld \"Aggregatinformationen\" an."]
 
 
 
@@ -315,16 +331,17 @@ Das Verschieben von zwei oder mehr Volumes ist notwendig, um Kapazitätsprobleme
 .Schritte
 . Überprüfen Sie, ob ein vorhandenes Aggregat über die verfügbare Kapazität für die Volumes verfügt, die Sie verschieben müssen:
 +
-.. Klicken Sie in der Arbeitsumgebung auf das Menüsymbol und dann auf *Erweitert > Erweiterte Zuweisung*.
-.. Wählen Sie jedes Aggregat aus, klicken Sie auf *Info* und sehen Sie dann die verfügbare Kapazität (Aggregatskapazität minus genutzte Aggregatskapazität).
+.. Klicken Sie in der Arbeitsumgebung auf die Registerkarte *Aggregate*.
+.. Navigieren Sie zur gewünschten Aggregat-Kachel, und klicken Sie dann auf *... (Ellipsensymbol) > Aggregatdetails anzeigen*.
+.. Zeigen Sie unter der Kachel „Aggregat“ die verfügbare Kapazität an (bereitgestellte Größe minus genutzte Aggregatkapazität).
 +
-image:screenshot_aggr_capacity.gif["Screenshot: Zeigt die Gesamtgesamtkapazität und die genutzte Gesamtkapazität an, die im Dialogfeld \"Aggregatinformationen\" verfügbar sind."]
+image:screenshot_aggr_capacity.png["Screenshot: Zeigt die Gesamtgesamtkapazität und die genutzte Gesamtkapazität an, die im Dialogfeld \"Aggregatinformationen\" verfügbar sind."]
 
 
 
 . Fügen Sie bei Bedarf Festplatten zu einem vorhandenen Aggregat hinzu:
 +
-.. Wählen Sie das Aggregat aus und klicken Sie dann auf *Add Disks*.
+.. Wählen Sie das Aggregat aus und klicken Sie dann auf *... (Ellipsensymbol) > Datenträger hinzufügen*.
 .. Wählen Sie die Anzahl der hinzuzufügenden Festplatten aus, und klicken Sie dann auf *Hinzufügen*.
 
 
@@ -356,3 +373,14 @@ Ein älteres Benennungsschema wird verwendet, wenn das Daten-Tiering auf einem A
 * Die Option _-Tiering-Richtlinie_ wurde bei der Verschiebung des Volumes angegeben, um die Tiering-Richtlinie zu ändern.
 * Die Option _-Generate-Destination-key_ wurde für die Verschiebung des Volumes angegeben.
 
+
+
+
+== Zeigen Sie FlexGroup Volumes an
+
+FlexGroup Volumes, die über CLI oder System Manager erstellt wurden, können direkt über die Registerkarte Volumes in BlueXP angezeigt werden. Wie bei FlexVol Volumes angegeben, bietet BlueXP über eine dedizierte Volume-Kachel detaillierte Informationen zu den erstellten FleGroup Volumes. Unter der Kachel „Volumes“ können Sie jede FlexGroup Volume-Gruppe über den Mauszeiger über das Symbol halten. Darüber hinaus können Sie FlexGroup-Volumes in der Listenansicht Volumes in der Spalte Volume-Stil identifizieren und sortieren.
+
+image:screenshot_show_flexgroup_vol.png["Ein Screenshot, in dem das FlexGroup-Volume-Symbol angezeigt wird, zeigt den Mauszeiger über den Text unter der Kachel „Volumes“."]
+
+
+NOTE: Derzeit können Sie vorhandene FlexGroup Volumes nur unter BlueXP anzeigen. Die Möglichkeit zum Erstellen von FlexGroup Volumes in BlueXP ist nicht verfügbar, aber für eine zukünftige Version geplant.

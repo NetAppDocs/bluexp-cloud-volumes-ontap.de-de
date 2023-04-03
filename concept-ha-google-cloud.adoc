@@ -141,9 +141,9 @@ Clients sollten über die Daten-IP-Adresse des Node, auf dem sich das Volume bef
 
 TIP: Wenn Sie ein Volume zwischen Nodes in einem HA-Paar verschieben, sollten Sie das Volume mithilfe der IP-Adresse des anderen Node neu mounten. Andernfalls kann die Performance beeinträchtigt werden. Wenn Clients NFSv4-Verweise oder Ordnerumleitung für CIFS unterstützen, können Sie diese Funktionen auf den Cloud Volumes ONTAP Systemen aktivieren, um ein erneutes Mounten des Volumes zu vermeiden. Weitere Informationen finden Sie in der ONTAP Dokumentation.
 
-Sie können ganz einfach die richtige IP-Adresse von BlueXP erkennen:
+Sie können die richtige IP-Adresse einfach über die Option „_Mount Command_“ im Bereich „Volumes verwalten“ in BlueXP identifizieren.
 
-image:screenshot_mount.gif["Screenshot: Zeigt den Mount-Befehl an, der verfügbar ist, wenn Sie ein Volume auswählen."]
+image:screenshot_mount_option.png["Screenshot: Zeigt den Mount-Befehl an, der verfügbar ist, wenn Sie ein Volume auswählen."]
 
 
 

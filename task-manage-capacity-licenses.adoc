@@ -40,32 +40,37 @@ Auf der Digital Wallet werden die verbrauchte Gesamtkapazität Ihres Kontos und 
 
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Digital Wallet* aus.
-. Zeigen Sie bei Auswahl von *kapazitätsbasierten Lizenzen* die Paketübersicht an, in der Sie die verbrauchte Kapazität, die gesamte lizenzierte Kapazität und die gesamte PAYGO-Gesamtkapazität angezeigt werden.
+. Wenn *Capacity Based Licenses* ausgewählt ist, sehen Sie sich die Paketübersicht an, in der Sie die verbrauchte Kapazität, die gesamte vorab gebuchte Kapazität und die gesamte PAYGO-Kapazität sehen.
 +
 ** _Verbrauchte Gesamtkapazität_ ist die insgesamt bereitgestellte Kapazität aller Cloud Volumes ONTAP Systeme in Ihrem NetApp Konto. Die Abrechnung basiert auf der bereitgestellten Größe eines jeden Volumes, unabhängig vom lokalen, genutzten, gespeicherten oder effektiven Speicherplatz innerhalb des Volumes.
-** _Total lizensiert_ ist die gesamte lizenzierte Kapazität (BYOL), die Sie von NetApp gekauft haben.
+** _Gesamte vorab gebuchte Kapazität_ ist die gesamte lizenzierte Kapazität (BYOL oder Marketplace Contract), die Sie von NetApp erworben haben.
 ** _Total PAYGO_ ist die insgesamt bereitgestellte Kapazität anhand von Cloud-Marketplace-Abonnements. Das Aufladen über PAYGO erfolgt nur, wenn die verbrauchte Kapazität über der lizenzierten Kapazität liegt oder wenn in Digital Wallet keine BYOL-Lizenz verfügbar ist.
 +
-Hier ist ein Beispiel für ein Konto, das 2000 tib verbrauchte Kapazität besitzt:
+Hier ist ein Beispiel für eine Zusammenfassung der Cloud Volumes ONTAP-Pakete in Digital Wallet:
 
 +
-image:screenshot_capacity-based-licenses.png["Ein Screenshot mit der Menge der bereitgestellten Kapazität im Vergleich zur lizenzierten Kapazität für das Paket mit Professional und Essentials"]
+image:screenshot_capacity-based-licenses.png["Ein Screenshot aus der Übersicht der Cloud Volumes ONTAP-Pakete zeigt in Digital Wallet die gesamte verbrauchte Kapazität, die gesamte vorab gebuchte Kapazität (BYOL- und Marketplace-Verträge) und die gesamte PAYGO- bzw. bereitgestellte Kapazität."]
 
 
 
 . Zeigen Sie unter der Zusammenfassung die verbrauchte Kapazität für jedes Ihrer Lizenzierungspakete an.
 +
-** _Verbrauchte Kapazität_ zeigt Ihnen die Gesamtkapazität der Volumes für dieses Paket an. Wenn Sie weitere Informationen zu einem bestimmten Paket wünschen, bewegen Sie den Mauszeiger über die QuickInfo.
+** _Verbrauchte Kapazität_ zeigt die Kapazität der Volumes für dieses Paket an. Wenn Sie weitere Informationen zu einem bestimmten Paket wünschen, bewegen Sie den Mauszeiger über die QuickInfo.
 +
 Um die Kapazitäten besser zu verstehen, die für das Essentials-Paket angezeigt werden, sollten Sie mit der Funktionsweise des Ladevorgangs vertraut sein. link:concept-licensing.html#notes-about-charging["Erfahren Sie mehr über das Laden des Essentials-Pakets"].
 
-** _BYOL_ zeigt Ihnen die lizenzierte Kapazität, die Sie von NetApp erworben haben.
-** _PAYGO_ zeigt Ihnen die insgesamt verbrauchte Kapazität nach Lizenzverbrauchsmodell.
+** _Recommited Capacity_ ist die von Ihnen bei NetApp erworbene lizenzierte Kapazität (BYOL oder Marketplace Contract).
++
+*** _BYOL_ zeigt die von Ihnen für diesen Pakettyp bei NetApp erworbene lizenzierte Kapazität an.
+*** _Marketplace Contracts_ zeigt die lizenzierte Kapazität an, die Sie mit einem Marketplace-Vertrag für diesen Pakettyp erworben haben.
+
+
+** _PAYGO_ zeigt Ihnen die verbrauchte Kapazität nach Lizenzmodell.
 +
 Hier ein Beispiel für ein Konto mit mehreren Lizenzierungspaketen:
 
 +
-image:screenshot-digital-wallet-packages.png["Ein Screenshot, der die verbrauchte Kapazität für die professionellen, optimierten und wichtigen Pakete anzeigt."]
+image:screenshot-digital-wallet-packages.png["Ein Screenshot mit der verbrauchten Kapazität, der vorab gebuchten Kapazität und PAYGO bzw. der bereitgestellten Kapazität für die wesentlichen Funktionen und Professional Packages."]
 
 
 

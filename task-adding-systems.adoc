@@ -29,7 +29,7 @@ Sie müssen das Kennwort für das Cloud Volumes ONTAP Admin-Benutzerkonto kennen
 
 ifdef::aws[]
 
-+image:screenshot_discover.gif["Ein Screenshot, der einen Link zeigt, um ein vorhandenes Cloud Volumes ONTAP System zu entdecken."]
++image:screenshot_discover_redesign.png["Ein Screenshot, der einen Link zeigt, um ein vorhandenes Cloud Volumes ONTAP System zu entdecken."]
 
 endif::aws[]
 

@@ -28,7 +28,11 @@ Wenn einem Aggregat nicht mehr genügend Platz vorhanden ist, können Sie Volume
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
 . Doppelklicken Sie auf der leinwand-Seite auf die Cloud Volumes ONTAP Arbeitsumgebung, auf der Sie Aggregate verwalten möchten.
-. Klicken Sie auf das Menü-Symbol und dann auf *Erweitert > Erweiterte Zuweisung*.
+. Klicken Sie in der Arbeitsumgebung auf die Registerkarte *Aggregate*.
+. Navigieren Sie auf der Registerkarte Aggregate zum gewünschten Titel, und klicken Sie dann auf *... (Ellipsensymbol)*.
++
+image:screenshot_aggr_menu_options.png["Ein Screenshot der Optionen im Menü „Aggregate“."]
+
 . Verwalten Sie Ihre Aggregate:
 +
 [cols="30,70"]
@@ -36,14 +40,14 @@ Wenn einem Aggregat nicht mehr genügend Platz vorhanden ist, können Sie Volume
 | Aufgabe | Aktion 
 
 
-| Anzeigen von Informationen zu einem Aggregat | Wählen Sie ein Aggregat aus und klicken Sie auf *Info*. 
+| Anzeigen von Informationen zu einem Aggregat | Unter dem ... (Ellipsensymbol), klicken Sie auf *Aggregatdetails anzeigen*. 
 
 
-| Erstellen Sie ein Volume auf einem bestimmten Aggregat | Wählen Sie ein Aggregat aus und klicken Sie auf *Create Volume*. 
+| Erstellen Sie ein Volume auf einem bestimmten Aggregat | Unter dem ... (Ellipsensymbol), klicken Sie auf *Volume hinzufügen*. 
 
 
 | Hinzufügen von Festplatten zu einem Aggregat  a| 
-.. Wählen Sie ein Aggregat aus und klicken Sie auf *Add Disks*.
+.. Unter dem ... (Ellipsensymbol), klicken Sie auf *Datenträger hinzufügen*.
 .. Wählen Sie die Anzahl der Festplatten aus, die Sie hinzufügen möchten, und klicken Sie auf *Hinzufügen*.
 +
 
@@ -56,8 +60,8 @@ ifdef::aws[]
 
 
 | Erhöhen Sie die Kapazität eines Aggregats, das Amazon EBS Elastic Volumes unterstützt  a| 
-.. Wählen Sie ein Aggregat aus und klicken Sie auf *Kapazität erhöhen*.
-.. Geben Sie die zusätzliche Kapazität ein, die Sie hinzufügen möchten, und klicken Sie dann auf *Hinzufügen*.
+.. Unter dem ... (Ellipsensymbol), klicken Sie auf *Kapazität erhöhen*.
+.. Geben Sie die zusätzliche Kapazität ein, die Sie hinzufügen möchten, und klicken Sie dann auf *Erhöhen*.
 +
 Beachten Sie, dass Sie die Kapazität des Aggregats um mindestens 256 gib oder 10 % der Aggregatgröße erhöhen müssen.
 
@@ -71,7 +75,7 @@ endif::aws[]
 
 
 | Löschen Sie ein Aggregat  a| 
-.. Wählen Sie ein Aggregat aus, das keine Volumes enthält, und klicken Sie auf *Löschen*.
+.. Wählen Sie eine Aggregat-Kachel, die keine Volumes enthält Klicken Sie auf *... (Ellipsensymbol) > Löschen*.
 .. Klicken Sie zur Bestätigung erneut auf *Löschen*.
 
 

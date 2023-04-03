@@ -169,10 +169,10 @@ link:task-create-aggregates.html["Lesen Sie, wie Aggregate erstellt werden"].
 
 * Identifizieren Sie Aggregate mit aktivierten Elastic Volumes
 +
-Wenn Sie die Seite „Advanced Allocation“ aufrufen, können Sie ermitteln, ob die Funktion Elastic Volumes auf einem Aggregat aktiviert ist. Im folgenden Beispiel sind Elastic Volumes aktiviert, während aggr1 nicht unterstützt wird.
+Wenn Sie die Seite „Advanced Allocation“ aufrufen, können Sie ermitteln, ob die Funktion Elastic Volumes auf einem Aggregat aktiviert ist. Im folgenden Beispiel ist für aggr1 Elastic Volumes aktiviert.
 
 +
-image:screenshot-elastic-volumes-enabled.png["Ein Screenshot mit zwei Aggregaten, in denen ein Feld mit aktiviertem Text „Elastic Volumes“ angezeigt wird."]
+image:screenshot_elastic_volume_enabled.png["Screenshot, der zwei Aggregate zeigt, bei denen ein Feld mit aktiviertem Text Elastic Volumes vorhanden ist."]
 
 * Hinzufügen von Kapazität zu einem Aggregat
 +

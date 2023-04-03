@@ -25,7 +25,9 @@ Beachten Sie Folgendes:
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
 . Doppelklicken Sie auf der Leinwand-Seite auf die Cloud Volumes ONTAP-Arbeitsumgebung, auf der Sie Volumes verwalten möchten.
-. Wählen Sie ein Volume aus, und klicken Sie dann auf *Ziel-IQN*.
+. Klicken Sie in der Arbeitsumgebung auf die Registerkarte *Volumes*.
+. Navigieren Sie auf der Registerkarte Volumes zum gewünschten Volume-Titel, und klicken Sie dann auf *Volume verwalten*, um auf das rechte Bedienfeld Volumes verwalten zuzugreifen.
+. Klicken Sie auf *Target IQN*.
 . Klicken Sie auf *Kopieren*, um den IQN-Namen zu kopieren.
 . Richten Sie eine iSCSI-Verbindung vom Host zur LUN ein.
 +

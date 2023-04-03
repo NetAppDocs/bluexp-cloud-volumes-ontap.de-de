@@ -33,7 +33,11 @@ Um die AWS-Kosten zu verfolgen, weist BlueXP Cloud Volumes ONTAP-Instanzen ein T
 
 
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
-. Wählen Sie auf der Seite „Arbeitsfläche“ eine Cloud Volumes ONTAP-Arbeitsumgebung aus und klicken Sie dann auf *Kosten*.
+. Wählen Sie auf der Seite Bildschirm eine Cloud Volumes ONTAP-Arbeitsumgebung aus.
+. Klicken Sie auf das Menüsymbol und dann auf *Kostenbericht anzeigen*.
++
+image:screenshot_view_cost_report.png["Screenshot: Zeigt die Menüoption Kostenbericht anzeigen."]
+
 +
 Auf der Kostenseite werden die Kosten für die aktuelle und die vorherigen Monate angezeigt sowie Ihre jährlichen NetApp Einsparungen angezeigt, wenn Sie die kostensparenden Funktionen von NetApp auf den Volumes aktiviert haben.
 

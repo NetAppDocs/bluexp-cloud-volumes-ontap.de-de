@@ -22,8 +22,7 @@ CAUTION: Alle Festplatten und Aggregate müssen direkt aus BlueXP erstellt und g
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
 . Doppelklicken Sie auf der Seite Arbeitsfläche auf den Namen der Cloud Volumes ONTAP-Instanz, auf der Sie Aggregate verwalten möchten.
-. Klicken Sie auf das Menüsymbol und dann auf *Erweitert > Erweiterte Zuweisung*.
-. Klicken Sie auf *Add Aggregate* und geben Sie dann Details für das Aggregat an.
+. Klicken Sie auf der Registerkarte Aggregate auf *Add Aggregate* und geben Sie dann Details für das Aggregat an.
 +
 [role="tabbed-block"]
 ====

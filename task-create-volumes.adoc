@@ -60,21 +60,18 @@ Die Auswahl eines bestimmten Aggregats ist nur dann empfehlenswert, wenn Sie Ver
 ====
 .Alle Aggregate
 --
-Klicken Sie auf der Registerkarte Volumes auf *Volume hinzufügen* > *Neues Volume*.
+Navigieren Sie auf der Registerkarte Übersicht zur Kachel Volumes, und klicken Sie auf *Volume hinzufügen*.image:screenshot_add_volume_button.png["Ein Screenshot der Schaltfläche „Volume hinzufügen“ auf der Registerkarte „Übersicht“."]
 
 --
 .Spezifische Aggregate
 --
-.. Klicken Sie auf das Menüsymbol und dann auf *Erweitert > Erweiterte Zuweisung*.
-.. Klicken Sie auf das Menü für ein Aggregat.
-.. Klicken Sie auf *Create Volume*.
-
+Navigieren Sie auf der Registerkarte Aggregate zur gewünschten Aggregat-Kachel. Klicken Sie auf das Menüsymbol und dann auf *Volume hinzufügen*.image:screenshot_add_volume_button_agg.png["Ein Screenshot der Schaltfläche „Volume hinzufügen“ unter der Registerkarte „Aggregate“."]
 
 --
 ====
 . Befolgen Sie die Schritte im Assistenten, um das Volume zu erstellen.
 +
-.. *Details, Schutz und Tags*: Geben Sie grundlegende Details zum Volume ein und wählen Sie eine Snapshot-Richtlinie aus.
+.. *Volumes, Details, Protection und Tags*: Geben Sie grundlegende Details zum Volume ein und wählen Sie eine Snapshot-Richtlinie aus.
 +
 Einige der Felder auf dieser Seite sind selbsterklärend. In der folgenden Liste werden die Felder beschrieben, für die Sie möglicherweise Hinweise benötigen:
 
@@ -84,10 +81,16 @@ Einige der Felder auf dieser Seite sind selbsterklärend. In der folgenden Liste
 | Feld | Beschreibung 
 
 
+| Volume-Name | Der identifizierbare Name, den Sie für das neue Volume eingeben können. 
+
+
 | Volume-Größe | Die maximale Größe, die Sie eingeben können, hängt weitgehend davon ab, ob Sie Thin Provisioning aktivieren, wodurch Sie ein Volume erstellen können, das größer ist als der derzeit verfügbare physische Storage. 
 
 
 | Tags | Tags, die Sie einem Volume hinzufügen, werden dem zugeordnet https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["Applikationsvorlagen-Service"^], Die Ihnen helfen, die Verwaltung Ihrer Ressourcen zu organisieren und zu vereinfachen. 
+
+
+| Storage-VM (SVM) | Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihren Kunden Storage und Datenservices zur Verfügung stellt. Sie können dies als SVM oder vServer wissen. Cloud Volumes ONTAP ist standardmäßig mit einer Storage-VM konfiguriert, aber einige Konfigurationen unterstützen zusätzliche Storage-VMs. Sie können die Storage-VM für das neue Volume angeben. 
 
 
 | Snapshot-Richtlinie | Eine Snapshot Kopierrichtlinie gibt die Häufigkeit und Anzahl der automatisch erstellten NetApp Snapshot Kopien an. Bei einer NetApp Snapshot Kopie handelt es sich um ein zeitpunktgenaues Filesystem Image, das keine Performance-Einbußen aufweist und minimalen Storage erfordert. Sie können die Standardrichtlinie oder keine auswählen. Sie können keine für transiente Daten auswählen, z. B. tempdb für Microsoft SQL Server. 
@@ -231,27 +234,25 @@ NOTE: NFS- oder CIFS-Volumes können nur mit Vorlagen erstellt werden.
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
 . Klicken Sie auf der Seite Arbeitsfläche auf den Namen des Cloud Volumes ONTAP-Systems, auf dem Sie ein Volume bereitstellen möchten.
-. Klicken Sie Auf image:screenshot_gallery_options.gif["Ein Symbol mit drei seitlichen Punkten."] > *Volumen Aus Vorlage Hinzufügen*.
+. Navigieren Sie zur Registerkarte Volumes und klicken Sie auf *Volume hinzufügen* > *Neues Volume aus Vorlage*.
 +
-image:screenshot_template_add_vol_cvo.png["Ein Screenshot, der zeigt, wie ein neues Volume aus einer Vorlage hinzugefügt wird."]
+image:screenshot_add_volume_template.png["Ein Screenshot, der zeigt, wie ein neues Volume aus einer Vorlage hinzugefügt wird."]
 
 . Wählen Sie auf der Seite _Vorlage auswählen_ die Vorlage aus, die Sie zum Erstellen des Volumes verwenden möchten, und klicken Sie auf *Weiter*.
 +
 image:screenshot_select_template_cvo.png["Ein Screenshot der verfügbaren Anwendungsvorlagen."]
 
 +
-Die Seite _Define Parameters_ wird angezeigt.
+Die Seite _Editor_ wird angezeigt.
 
 +
 image:screenshot_define_cvo_vol_from_template.png["Ein Screenshot mit einer leeren Vorlage, die Sie ausfüllen müssen, um ein Volume zu erstellen."]
 
-+
-
-NOTE: Klicken Sie auf das Kontrollkästchen *schreibgeschützte Parameter anzeigen*, um alle Felder anzuzeigen, die von der Vorlage gesperrt wurden, wenn Sie die Werte für diese Parameter anzeigen möchten. Standardmäßig werden diese vordefinierten Felder ausgeblendet. Es werden nur die Felder angezeigt, die Sie ausfüllen müssen.
-
-. Im Bereich _context_ wird die Arbeitsumgebung mit dem Namen der Arbeitsumgebung ausgefüllt, mit der Sie begonnen haben. Sie müssen die *Speicher-VM* auswählen, wo das Volume erstellt wird.
-. Fügen Sie Werte für alle Parameter hinzu, die nicht hartcodiert sind. Siehe <<create a volume,Erstellen eines Volumes>> Sie finden Details zu allen Parametern, die Sie zur Implementierung eines Cloud Volumes ONTAP Volume abschließen müssen.
-. Wenn Sie keine weiteren Aktionen definieren müssen (z. B. Cloud-Backup konfigurieren), klicken Sie auf *Vorlage ausführen*.
+. Geben Sie über dem _Action_-Feld einen Namen für die Vorlage ein.
+. Unter _context_ wird die Arbeitsumgebung mit dem Namen der Arbeitsumgebung, mit der Sie begonnen haben, ausgefüllt. Wählen Sie die *Speicher-VM* aus, auf der das Volume erstellt werden soll.
+. Fügen Sie Werte für alle Parameter hinzu, die nicht hartcodiert sind. Siehe <<create a volume,Erstellen eines Volumes>> Bietet Details zu allen Parametern, die erforderlich sind, um die Implementierung eines Cloud Volumes ONTAP Volumes abzuschließen.
+. Klicken Sie auf *Apply*, um die konfigurierten Parameter in der ausgewählten Aktion zu speichern.
+. Wenn keine weiteren Aktionen definiert werden müssen (z. B. Konfiguration von Cloud Backup), klicken Sie auf *Vorlage speichern*.
 +
 Wenn es andere Aktionen gibt, klicken Sie im linken Fensterbereich auf die Aktion, um die erforderlichen Parameter anzuzeigen.
 
@@ -259,9 +260,9 @@ Wenn es andere Aktionen gibt, klicken Sie im linken Fensterbereich auf die Aktio
 image:screenshot_template_select_next_action.png["Ein Screenshot, in dem die Auswahl weiterer Aktionen angezeigt wird, die abgeschlossen werden müssen."]
 
 +
-Wenn zum Beispiel die Aktion Cloud Backup aktivieren erfordert, dass Sie eine Backup-Richtlinie auswählen, können Sie dies jetzt tun.
+Wenn Sie beispielsweise für die Aktion Cloud Backup auf Volume aktivieren eine Backup-Richtlinie auswählen müssen, können Sie dies jetzt tun.
 
-. Klicken Sie Auf *Ausführungsvorlage*.
+. Sobald die Konfiguration für die Vorlagenaktionen abgeschlossen ist, klicken Sie auf *Vorlage speichern*.
 
 
 .Ergebnis
@@ -280,8 +281,11 @@ Standardmäßig erstellt BlueXP Volumes auf dem ersten Knoten einer HA-Konfigura
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
 . Doppelklicken Sie auf der Übersichtsseite auf den Namen der Cloud Volumes ONTAP Arbeitsumgebung, in der Sie Aggregate verwalten möchten.
-. Klicken Sie auf das Menü-Symbol und dann auf *Erweitert > Erweiterte Zuweisung*.
-. Klicken Sie auf *Aggregat hinzufügen* und erstellen Sie dann das Aggregat.
+. Klicken Sie auf der Registerkarte Aggregate auf *Add Aggregate*.
+. Erstellen Sie im _Add Aggregate_ -Bildschirm das Aggregat.
++
+image:screenshot_add_aggregate_cvo.png["Ein Screenshot, der den Fortschritt des Hinzufügens eines Aggregats zeigt."]
+
 . Wählen Sie für Home Node den zweiten Node im HA-Paar aus.
 . Nachdem BlueXP das Aggregat erstellt hat, wählen Sie es aus und klicken Sie dann auf *Create Volume*.
 . Geben Sie Details für den neuen Volume ein und klicken Sie dann auf *Erstellen*.

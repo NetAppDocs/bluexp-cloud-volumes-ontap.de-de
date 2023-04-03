@@ -36,6 +36,9 @@ Der Connector sollte in derselben Azure-Region wie die Cloud Volumes ONTAP-Syste
 
 .Schritte
 . Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Verbindungseinstellungen*.
++
+image:screenshot_settings_icon.png["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
+
 . Klicken Sie unter *Azure* auf *Azure Private Link verwenden*.
 . Deaktivieren Sie *Private Link-Verbindung zwischen Cloud Volumes ONTAP und Speicherkonten*.
 . Klicken Sie Auf *Speichern*.
@@ -136,11 +139,14 @@ Sie können Rollback über die API oder durch Aktualisierung der Datei App.conf 
 
 *Rollback durch Aktualisierung von App.conf* aktivieren
 
-.Schritt
-. Verwenden Sie die `PUT /occm/config` API-Aufruf mit folgender Anfraentext:
+.Schritte
+. SSH auf dem Connector-Host und melden Sie sich an.
+. Navigieren Sie zum folgenden Verzeichnis: /Opt/Application/netapp/cloudmanager/docker_occm/Data
+. Bearbeiten Sie App.conf, indem Sie den folgenden Parameter und Wert hinzufügen:
 +
-[source, json]
-----
-{ "rollbackOnAzurePrivateLinkFailure": false }
-----
+ "rollback-on-private-link-failure": true
+. Speichern Sie die Datei und melden Sie sich vom Connector ab.
++
+Ein Neustart ist nicht erforderlich.
+
 

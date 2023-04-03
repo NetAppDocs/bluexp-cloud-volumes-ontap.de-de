@@ -27,13 +27,12 @@ Durch das Entfernen einer Arbeitsumgebung aus BlueXP können Sie Folgendes tun:
 
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Tools*.
+. Doppelklicken Sie auf der Seite Arbeitsfläche auf die Arbeitsumgebung, die Sie entfernen möchten.
+. Klicken Sie oben rechts auf der BlueXP-Konsole auf das Ellipsensymbol und wählen Sie *aus Workspace entfernen* aus.
 +
-image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
+image:screenshot_settings_remove.png["Ein Screenshot, der die Option „aus Workspace entfernen“ oben rechts in der BlueXP Konsole zeigt."]
 
-. Klicken Sie auf der Seite Extras auf *Starten*.
-. Wählen Sie die Cloud Volumes ONTAP Arbeitsumgebung aus, die Sie entfernen möchten.
-. Klicken Sie auf der Seite „Prüfen und genehmigen“ auf *Los*.
+. Klicken Sie im Fenster aus dem Arbeitsbereich überprüfen auf *Entfernen*.
 
 
 .Ergebnis

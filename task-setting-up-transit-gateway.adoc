@@ -75,10 +75,10 @@ image:screenshot_transit_gateway3.png["Ein Screenshot der AWS Konsole, in dem di
 
 . Volumes werden mithilfe der Floating IP-Adresse an Clients gemountet.
 +
-Die richtige IP-Adresse finden Sie in BlueXP, indem Sie ein Volume auswählen und auf *Mount Command* klicken.
+Die richtige IP-Adresse finden Sie in BlueXP über die Option *Mount Command* im Bereich Volumes verwalten in BlueXP.
 
 +
-image:screenshot_mount.gif["Screenshot: Zeigt den Mount-Befehl an, der verfügbar ist, wenn Sie ein Volume auswählen."]
+image:screenshot_mount_option.png["Screenshot: Zeigt den Mount-Befehl an, der verfügbar ist, wenn Sie ein Volume auswählen."]
 
 . Wenn Sie ein NFS-Volume mounten, konfigurieren Sie die Exportrichtlinie entsprechend dem Subnetz der Client-VPC.
 +

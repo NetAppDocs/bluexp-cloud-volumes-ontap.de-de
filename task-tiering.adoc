@@ -200,13 +200,11 @@ BlueXP erstellt bei der Erstellung des Systems einen Objektspeicher für kalte D
 .Schritte
 . <<Anforderungen,Stellen Sie sicher, dass Sie alle Anforderungen erfüllt haben>>.
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
-. Doppelklicken Sie auf der Seite Arbeitsfläche auf den Namen der Cloud Volumes ONTAP-Instanz.
+. Wählen Sie auf der Seite Arbeitsfläche den Namen der Cloud Volumes ONTAP-Instanz aus.
 . Klicken Sie auf das Menüsymbol und wählen Sie *Kapazitätsabteilung aktivieren*.
 +
-image:screenshot_enable_capacity_tiering.gif["Ein Screenshot der Option „Capacity Tiering aktivieren“, die über das Menü „Arbeitsumgebung“ verfügbar ist, wenn ein Problem aufgetreten ist, als BlueXP versuchte, das Daten-Tiering zu aktivieren."]
 
-+
-Diese Option wird nur angezeigt, wenn das Daten-Tiering nicht aktiviert werden konnte, wenn BlueXP das System erstellt hat.
+NOTE: Diese Option wird nur angezeigt, wenn das Daten-Tiering nicht aktiviert werden konnte, wenn BlueXP das System erstellt hat.
 
 +
 In Google Cloud muss ein Servicekonto an Cloud Volumes ONTAP angehängt werden, bevor diese Option angezeigt wird. <<Anforderungen,Stellen Sie sicher, dass Sie alle Anforderungen erfüllt haben>>.
@@ -232,10 +230,10 @@ Wenn Sie Daten-Tiering auf einem vorhandenen Volume aktivieren möchten, müssen
 
 .Schritte zur Bestätigung, ob Tiering auf einem Aggregat aktiviert ist
 . Öffnen Sie die Arbeitsumgebung in BlueXP.
-. Klicken Sie auf das Menü-Symbol, klicken Sie auf *Erweitert* und dann auf *Erweiterte Zuweisung*.
-. Überprüfen Sie, ob das Tiering auf dem Aggregat aktiviert oder deaktiviert ist.
+. Klicken Sie auf die Registerkarte Aggregate.
+. Navigieren Sie zu der gewünschten Kachel und überprüfen Sie, ob das Tiering auf dem Aggregat aktiviert oder deaktiviert ist.
 +
-image:screenshot_aggr_tiering.gif["Ein Screenshot mit Informationen zu einem Aggregat in BlueXP, das den Tiering-Status enthält."]
+image:screenshot_aggregate_tiering_enabled.png["Ein Screenshot mit Informationen zu einem Aggregat in BlueXP, das den Tiering-Status enthält."]
 
 
 
@@ -255,7 +253,7 @@ Sie können jetzt Daten-Tiering auf neuen und vorhandenen Volumes aktivieren, wi
 Cloud Volumes ONTAP kann inaktive Daten auf Volumes mit Lese- und Schreibvorgängen auf kostengünstigen Objekt-Storage verschieben und so den Performance-Tier für häufig abgerufene Daten freisetzen.
 
 .Schritte
-. Erstellen Sie in der Arbeitsumgebung ein neues Volume, oder ändern Sie den Tier eines vorhandenen Volumes:
+. Erstellen Sie auf der Registerkarte Volumes in der Arbeitsumgebung ein neues Volume oder ändern Sie die Ebene eines vorhandenen Volumes:
 +
 [cols="30,70"]
 |===
@@ -265,7 +263,7 @@ Cloud Volumes ONTAP kann inaktive Daten auf Volumes mit Lese- und Schreibvorgän
 | Erstellen Sie ein neues Volume | Klicken Sie Auf *Neues Volume Hinzufügen*. 
 
 
-| Ändern Sie ein vorhandenes Volume | Wählen Sie das Volume aus und klicken Sie auf *Disk Type & Tiering Policy*. 
+| Ändern Sie ein vorhandenes Volume | Wählen Sie die gewünschte Volume-Kachel aus, klicken Sie auf *Volume verwalten*, um auf das rechte Panel Volumes verwalten zuzugreifen, und klicken Sie dann im rechten Bereich auf *Erweiterte Aktionen* und *Tiering-Policy ändern*. 
 |===
 . Wählen Sie eine Tiering-Richtlinie aus.
 +
@@ -275,7 +273,7 @@ Eine Beschreibung dieser Richtlinien finden Sie unter link:concept-data-tiering.
 *Beispiel*
 
 +
-image:screenshot_tiered_storage.gif["Screenshot, der das Symbol zur Aktivierung von Tiering zu Objektspeicher zeigt."]
+image:screenshot_volumes_change_tiering_policy.png["Screenshot, der die verfügbaren Optionen zum Ändern der Tiering-Richtlinie für ein Volume zeigt"]
 
 +
 BlueXP erstellt ein neues Aggregat für das Volume, wenn es bereits ein Data Tiering-fähiges Aggregat gibt.
@@ -334,7 +332,7 @@ Das Verhältnis ist wichtig für Disaster-Recovery-Szenarien, da die Daten vom O
 .Schritte
 . Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol *Einstellungen* und wählen Sie *Verbindungseinstellungen*.
 +
-image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
+image:screenshot_settings_icon.png["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
 . Klicken Sie unter *Kapazität* auf *Kapazitätsschwellenwerte für Aggregat - kostenloses Platzverhältnis für Daten-Tiering*.
 . Ändern Sie das Verhältnis des freien Speicherplatzes entsprechend Ihren Anforderungen und klicken Sie auf *Speichern*.
@@ -344,7 +342,7 @@ image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellun
 
 == Ändern des Kühlzeitraums für die automatische Tiering-Richtlinie
 
-Wenn Sie das Daten-Tiering auf einem Cloud Volumes ONTAP Volume mithilfe der Tiering-Richtlinie „_Auto_“ aktiviert haben, können Sie den standardmäßigen Kühlzeitraum je nach Ihren Geschäftsanforderungen anpassen. Diese Aktion wird nur über die API unterstützt.
+Wenn Sie das Daten-Tiering auf einem Cloud Volumes ONTAP Volume mithilfe der Tiering-Richtlinie „_Auto_“ aktiviert haben, können Sie den standardmäßigen Kühlzeitraum je nach Ihren Geschäftsanforderungen anpassen. Diese Aktion wird nur über die API und CLI unterstützt.
 
 Der Kühlzeitraum ist die Anzahl der Tage, die Benutzerdaten in einem Volume inaktiv bleiben müssen, bevor sie als „kalt“ eingestuft und in einen Objekt-Storage verschoben werden.
 

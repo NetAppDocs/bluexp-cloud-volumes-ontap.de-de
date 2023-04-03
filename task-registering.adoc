@@ -26,11 +26,10 @@ TIP: Ein System, das nicht für den Support registriert ist, erhält weiterhin d
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Erfahren Sie, wie Sie Konten der NetApp Support Site hinzufügen"^].
 
-. Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*
 . Doppelklicken Sie auf der Seite Arbeitsfläche auf den Namen des Systems, das Sie registrieren möchten.
-. Klicken Sie auf das Menü-Symbol und dann auf *Support-Registrierung*:
+. Klicken Sie auf der Registerkarte Übersicht auf das Bedienfeld Funktionen und dann auf das Bleistiftsymbol neben *Support-Registrierung*.
 +
-image:screenshot_menu_registration.gif["Screenshot: Zeigt die im Menüsymbol für ein Cloud Volumes ONTAP System ausgewählte Support-Registrierungsoption an."]
+image:screenshot_features_support_registration_2.png["Screenshot: Zeigt die Option Support-Registrierung im Funktionsbereich eines Cloud Volumes ONTAP-Systems."]
 
 . Wählen Sie ein NetApp Support Site Konto aus und klicken Sie auf *Registrieren*.
 
