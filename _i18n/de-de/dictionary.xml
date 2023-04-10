@@ -347,7 +347,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">Bekannte Einschränkungen</block>
   <block id="06c86f2b2f40c7b5ae916f820dace6f3" category="inline-link">Wechseln Sie zu den Versionshinweisen zu Cloud Volumes ONTAP</block>
   <block id="970e80f52bfaf06fb0516cbd1132f19b" category="paragraph">Diese Einschränkungen gelten insbesondere für das Cloud Volumes ONTAP Management in BlueXP (ehemals Cloud Manager). Um Einschränkungen an der Cloud Volumes ONTAP Software selbst anzuzeigen,<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
-  <block id="cc536ef595b8b8d98efa4ac1fce2305e" category="paragraph">Cloud Volumes ONTAP unterstützt zwar FlexGroup-Volumes, aber BlueXP nicht. Wenn Sie ein FlexGroup-Volume aus dem System Manager oder aus der CLI erstellen, sollten Sie den Kapazitätsmanagement-Modus von BlueXP auf manuell einstellen. Der automatische Modus funktioniert möglicherweise nicht ordnungsgemäß mit FlexGroup-Volumes.</block>
   <block id="53a519b7a61b6af057f2717112606b16" category="inline-link">S3 Configuration Power Guide</block>
   <block id="a719d497acfd7c92ff4bf9224e1de3d0" category="paragraph">Während Cloud Volumes ONTAP bei einigen Cloud-Providern S3 als Option für horizontal skalierbaren Storage unterstützt, bietet BlueXP für diese Funktion keine Managementfunktionen. Als Best Practice empfiehlt sich die Konfiguration des S3-Client-Zugriffs über Cloud Volumes ONTAP mithilfe der CLI. Weitere Informationen finden Sie im<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>.</block>
   <block id="aa73f4eb582c3e0e9bca433f741e8a12" category="inline-link-macro">Weitere Informationen zur Cloud Volumes ONTAP-Unterstützung für S3 und andere Client-Protokolle</block>
@@ -4084,7 +4083,6 @@
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">Was kommt als Nächstes?</block>
   <block id="f3d9abb903127694db460aa9c7f4d7be" category="paragraph-title">Einschränkung</block>
   <block id="6b2eadbbc64d8760da4136e28da230c2" category="list-text">*Wählen Sie einen Standort*: Wählen Sie *Amazon Web Services* und *Cloud Volumes ONTAP HA*.</block>
-  <block id="7945e794f4dd8b21c15eebff5d67a416" category="section-title">BlueXP unterstützt keine FlexGroup Volumes</block>
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXP unterstützt S3 nicht mit Cloud Volumes ONTAP</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP unterstützt keine Disaster Recovery für Storage VMs</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">Was Sie benötigen</block>
@@ -4865,4 +4863,7 @@
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">Bis 4. April 2023</block>
   <block id="ebef32c1ba0aec7a39eb2ce8370a97d5" category="paragraph">Ab Cloud Volumes ONTAP 9.12.1 GA werden China-Regionen jetzt wie folgt in AWS unterstützt.</block>
+  <block id="88e0131339701d1e970c1ab7a5495d25" category="section-title">BlueXP unterstützt nicht die Erstellung von FlexGroup Volumes</block>
+  <block id="fff40ddae0362c17ba575430d4cdd727" category="paragraph">Cloud Volumes ONTAP unterstützt zwar FlexGroup Volumes, doch BlueXP unterstützt derzeit nicht die Erstellung von FlexGroup Volumes. Wenn Sie ein FlexGroup-Volume aus dem System Manager oder aus der CLI erstellen, sollten Sie den Kapazitätsmanagement-Modus von BlueXP auf manuell einstellen. Der automatische Modus funktioniert möglicherweise nicht ordnungsgemäß mit FlexGroup-Volumes.</block>
+  <block id="be5e56e337ebbc7d99062048ba94693e" category="admonition">Die Möglichkeit zum Erstellen von FlexGroup Volumes in BlueXP ist für eine zukünftige Version geplant.</block>
 </blocks>

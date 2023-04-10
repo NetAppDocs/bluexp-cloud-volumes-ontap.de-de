@@ -20,9 +20,12 @@ Diese Einschränkungen gelten insbesondere für das Cloud Volumes ONTAP Manageme
 
 
 
-== BlueXP unterstützt keine FlexGroup Volumes
+== BlueXP unterstützt nicht die Erstellung von FlexGroup Volumes
 
-Cloud Volumes ONTAP unterstützt zwar FlexGroup-Volumes, aber BlueXP nicht. Wenn Sie ein FlexGroup-Volume aus dem System Manager oder aus der CLI erstellen, sollten Sie den Kapazitätsmanagement-Modus von BlueXP auf manuell einstellen. Der automatische Modus funktioniert möglicherweise nicht ordnungsgemäß mit FlexGroup-Volumes.
+Cloud Volumes ONTAP unterstützt zwar FlexGroup Volumes, doch BlueXP unterstützt derzeit nicht die Erstellung von FlexGroup Volumes. Wenn Sie ein FlexGroup-Volume aus dem System Manager oder aus der CLI erstellen, sollten Sie den Kapazitätsmanagement-Modus von BlueXP auf manuell einstellen. Der automatische Modus funktioniert möglicherweise nicht ordnungsgemäß mit FlexGroup-Volumes.
+
+
+NOTE: Die Möglichkeit zum Erstellen von FlexGroup Volumes in BlueXP ist für eine zukünftige Version geplant.
 
 
 
