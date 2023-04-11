@@ -20,7 +20,7 @@ Ein _Keystone Flex Subscription_ ist ein von NetApp angebotene „Pay-as-you-gro
 
 Mit der _Digitalbörse_ können Sie Lizenzen für Cloud Volumes ONTAP von einem einzigen Ort aus verwalten. Sie können neue Lizenzen hinzufügen und vorhandene Lizenzen aktualisieren.
 
-link:concept-licensing.html["Weitere Informationen zu Cloud Volumes ONTAP Lizenzen"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Weitere Informationen zu Cloud Volumes ONTAP Lizenzen"].
 
 
 

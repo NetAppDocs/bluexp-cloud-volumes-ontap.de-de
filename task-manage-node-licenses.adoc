@@ -24,7 +24,7 @@ _Node-basierte Lizenzen_ sind das Lizenzmodell der vorherigen Generation (und f�
 
 Mit der _Digitalbörse_ können Sie Lizenzen für Cloud Volumes ONTAP von einem einzigen Ort aus verwalten. Sie können neue Lizenzen hinzufügen und vorhandene Lizenzen aktualisieren.
 
-link:concept-licensing.html["Weitere Informationen zu Cloud Volumes ONTAP Lizenzen"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Weitere Informationen zu Cloud Volumes ONTAP Lizenzen"].
 
 
 
@@ -228,6 +228,6 @@ https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.ht
 
 . Beenden Sie das Cloud Volumes ONTAP System, das Sie nicht mehr benötigen, indem Sie die ursprüngliche Arbeitsumgebung löschen .
 +
-link:task-deleting-working-env.html["Erfahren Sie, wie Sie eine Cloud Volumes ONTAP-Arbeitsumgebung löschen"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deleting-working-env.html["Erfahren Sie, wie Sie eine Cloud Volumes ONTAP-Arbeitsumgebung löschen"].
 
 

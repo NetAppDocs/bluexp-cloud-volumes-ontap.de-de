@@ -20,7 +20,7 @@ _Kapazitätsbasierte Lizenzen_ ermöglichen es Ihnen, Cloud Volumes ONTAP pro ti
 
 Mit der _Digitalbörse_ können Sie Lizenzen für Cloud Volumes ONTAP von einem einzigen Ort aus verwalten. Sie können neue Lizenzen hinzufügen und vorhandene Lizenzen aktualisieren.
 
-link:concept-licensing.html["Weitere Informationen zu Cloud Volumes ONTAP Lizenzen"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Weitere Informationen zu Cloud Volumes ONTAP Lizenzen"].
 
 
 
@@ -57,7 +57,7 @@ image:screenshot_capacity-based-licenses.png["Ein Screenshot aus der Übersicht 
 +
 ** _Verbrauchte Kapazität_ zeigt die Kapazität der Volumes für dieses Paket an. Wenn Sie weitere Informationen zu einem bestimmten Paket wünschen, bewegen Sie den Mauszeiger über die QuickInfo.
 +
-Um die Kapazitäten besser zu verstehen, die für das Essentials-Paket angezeigt werden, sollten Sie mit der Funktionsweise des Ladevorgangs vertraut sein. link:concept-licensing.html#notes-about-charging["Erfahren Sie mehr über das Laden des Essentials-Pakets"].
+Um die Kapazitäten besser zu verstehen, die für das Essentials-Paket angezeigt werden, sollten Sie mit der Funktionsweise des Ladevorgangs vertraut sein. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#notes-about-charging["Erfahren Sie mehr über das Laden des Essentials-Pakets"].
 
 ** _Recommited Capacity_ ist die von Ihnen bei NetApp erworbene lizenzierte Kapazität (BYOL oder Marketplace Contract).
 +
