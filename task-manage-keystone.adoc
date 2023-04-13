@@ -29,8 +29,8 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 Bevor Sie Keystone Flex Abonnements in BlueXP verwenden und verwalten können, müssen Sie sich an NetApp wenden, um Ihr BlueXP Benutzerkonto mit Ihren Keystone Flex Abonnements zu autorisieren.
 
 .Schritte
-. Wählen Sie im linken Navigationsmenü die Option *Digital Wallet* aus.
-. Klicken Sie Auf *Keystone Flex Abonnement*.
+. Wählen Sie im Navigationsmenü BlueXP die Option *Governance > Digital Wallet* aus.
+. Wählen Sie *Keystone*.
 . Wenn Sie die Seite *Willkommen bei NetApp Keystone* sehen, senden Sie eine E-Mail an die auf der Seite angegebene Adresse.
 +
 Ein Vertreter von NetApp verarbeitet Ihre Anfrage, indem er Ihr Benutzerkonto für den Zugriff auf die Abonnements autorisiert.
@@ -51,8 +51,8 @@ Verknüpfen Sie die Abonnements, die Sie mit Cloud Volumes ONTAP verwenden möch
 Nachdem NetApp Ihren Account autorisiert hat, müssen Sie die Keystone Flex Abonnements für die Verwendung mit Cloud Volumes ONTAP verknüpfen. Mit dieser Aktion können Benutzer das Abonnement als Lademethode für neue Cloud Volumes ONTAP-Systeme auswählen.
 
 .Schritte
-. Wählen Sie im linken Navigationsmenü die Option *Digital Wallet* aus.
-. Klicken Sie Auf *Keystone Flex Abonnement*.
+. Wählen Sie im Navigationsmenü BlueXP die Option *Governance > Digital Wallet* aus.
+. Wählen Sie *Keystone*.
 . Klicken Sie für das Abonnement, das Sie verknüpfen möchten, auf image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] Und wählen Sie *Link*.
 +
 image:screenshot-keystone-link.png["Ein Screenshot, der die Link-Option für ein Abonnement zeigt."]
@@ -69,8 +69,8 @@ Das Abonnement ist nun mit Ihrem BlueXP-Konto verknüpft und kann bei der Erstel
 Wenn Sie die Kapazität für ein Abonnement anpassen müssen, können Sie eine Anfrage direkt über die BlueXP-Schnittstelle senden.
 
 .Schritte
-. Wählen Sie im linken Navigationsmenü die Option *Digital Wallet* aus.
-. Klicken Sie Auf *Keystone Flex Abonnement*.
+. Wählen Sie im Navigationsmenü BlueXP die Option *Governance > Digital Wallet* aus.
+. Wählen Sie *Keystone*.
 . Klicken Sie für das Abonnement, das Sie an die Kapazität anpassen möchten, auf image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] Und wählen Sie *Details anzeigen und bearbeiten*.
 . Geben Sie die angeforderte engagierte Kapazität für ein oder mehrere Abonnements ein.
 +
@@ -89,8 +89,8 @@ Ihre Anfrage erstellt ein Ticket im NetApp System zur Verarbeitung.
 Wenn Sie kein Keystone Flex Abonnement mehr für neue Cloud Volumes ONTAP-Systeme verwenden möchten, können Sie die Verknüpfung des Abonnements aufheben. Beachten Sie, dass Sie die Verknüpfung eines Abonnements, das nicht mit einem vorhandenen Cloud Volumes ONTAP-Abonnement verbunden ist, nur aufheben können.
 
 .Schritte
-. Wählen Sie im linken Navigationsmenü die Option *Digital Wallet* aus.
-. Klicken Sie Auf *Keystone Flex Abonnement*.
+. Wählen Sie im Navigationsmenü BlueXP die Option *Governance > Digital Wallet* aus.
+. Wählen Sie *Keystone*.
 . Klicken Sie für das Abonnement, das Sie aufheben möchten, auf image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] Und wählen Sie *Link aufheben*.
 
 

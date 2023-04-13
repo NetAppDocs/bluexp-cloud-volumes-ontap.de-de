@@ -893,7 +893,6 @@
   <block id="e71139eb9146e38a7b8cdb5f435f8ed1" category="paragraph">Wenn BlueXP die Lizenz nicht hinzufügen kann, müssen Sie sie manuell zum Digital Wallet selbst hinzufügen. Wenn der Connector z. B. an einem Standort installiert ist, der keinen Internetzugang hat, müssen Sie die Lizenzen selbst hinzufügen. <block ref="2b377ff52574668221716136185f8476" category="inline-xref-macro-rx"></block>.</block>
   <block id="03021ab228ad1d1c921bbf536e2913a4" category="section-title">Zeigen Sie die verbrauchte Kapazität in Ihrem Konto an</block>
   <block id="e54d493645f297f788982c1215f721bf" category="paragraph">Auf der Digital Wallet werden die verbrauchte Gesamtkapazität Ihres Kontos und die verbrauchte Kapazität nach Lizenzpaket angezeigt. Dadurch können Sie nachvollziehen, wie Sie belastet sind und ob Sie zusätzliche Kapazität erwerben müssen.</block>
-  <block id="c0d3ce4ea1bcde455d433b9182cdde33" category="list-text">Wählen Sie im linken Navigationsmenü die Option *Digital Wallet* aus.</block>
   <block id="29f9c9781f75b695cb6c7c93910280cd" category="list-text">_Verbrauchte Gesamtkapazität_ ist die insgesamt bereitgestellte Kapazität aller Cloud Volumes ONTAP Systeme in Ihrem NetApp Konto. Die Abrechnung basiert auf der bereitgestellten Größe eines jeden Volumes, unabhängig vom lokalen, genutzten, gespeicherten oder effektiven Speicherplatz innerhalb des Volumes.</block>
   <block id="4cca90046112da5c5d3a703dafebbb7e" category="list-text">_Total PAYGO_ ist die insgesamt bereitgestellte Kapazität anhand von Cloud-Marketplace-Abonnements. Das Aufladen über PAYGO erfolgt nur, wenn die verbrauchte Kapazität über der lizenzierten Kapazität liegt oder wenn in Digital Wallet keine BYOL-Lizenz verfügbar ist.</block>
   <block id="ea7c202c277e5ccf92e08be29b4a64e9" category="list-text">Zeigen Sie unter der Zusammenfassung die verbrauchte Kapazität für jedes Ihrer Lizenzierungspakete an.</block>
@@ -2583,7 +2582,6 @@
   <block id="144db5f18aa0a48a9fe63c8b55bd0275" category="paragraph">Ein _Keystone Flex Subscription_ ist ein von NetApp angebotene „Pay-as-you-grow“-Storage-Service.</block>
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">Autorisieren Sie Ihr Konto</block>
   <block id="5187c95ccaa9cce754eff51fdf83a80b" category="paragraph">Bevor Sie Keystone Flex Abonnements in BlueXP verwenden und verwalten können, müssen Sie sich an NetApp wenden, um Ihr BlueXP Benutzerkonto mit Ihren Keystone Flex Abonnements zu autorisieren.</block>
-  <block id="34050b9fba3323c4ec7fb2d89aa95a36" category="list-text">Klicken Sie Auf *Keystone Flex Abonnement*.</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">Wenn Sie die Seite *Willkommen bei NetApp Keystone* sehen, senden Sie eine E-Mail an die auf der Seite angegebene Adresse.</block>
   <block id="16692c26ca4528e651bbb36d93c465c7" category="paragraph">Ein Vertreter von NetApp verarbeitet Ihre Anfrage, indem er Ihr Benutzerkonto für den Zugriff auf die Abonnements autorisiert.</block>
   <block id="ed53b278164ebd0a6b2a2a8f63581c09" category="list-text">Kehren Sie zum *Keystone Flex Abonnement* zurück, um Ihre Abonnements anzuzeigen.</block>
@@ -4695,7 +4693,6 @@
   <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">Wenn Sie eine Node-basierte PAYGO-Lizenz verwenden, können Sie optional eine andere Lizenz und einen anderen Maschinentyp auswählen, indem Sie auf das Bleistiftsymbol neben *Lizenztyp* klicken.</block>
   <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">Wählen Sie einen Maschinentyp, aktivieren Sie das Kontrollkästchen, um zu bestätigen, dass Sie die Auswirkungen der Änderung verstehen, und klicken Sie dann auf *Ändern*.</block>
-  <block id="1bb49759ca91107ea85449bc0249ce13" category="list-text">Wenn *Capacity Based Licenses* ausgewählt ist, sehen Sie sich die Paketübersicht an, in der Sie die verbrauchte Kapazität, die gesamte vorab gebuchte Kapazität und die gesamte PAYGO-Kapazität sehen.</block>
   <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_Gesamte vorab gebuchte Kapazität_ ist die gesamte lizenzierte Kapazität (BYOL oder Marketplace Contract), die Sie von NetApp erworben haben.</block>
   <block id="6805f1cb53971ab8cf6263bd093c5d20" category="paragraph">Hier ist ein Beispiel für eine Zusammenfassung der Cloud Volumes ONTAP-Pakete in Digital Wallet:</block>
   <block id="e9132fa20985cf4b3d5004a6a371ecab" category="inline-image-macro">Ein Screenshot aus der Übersicht der Cloud Volumes ONTAP-Pakete zeigt in Digital Wallet die gesamte verbrauchte Kapazität, die gesamte vorab gebuchte Kapazität (BYOL- und Marketplace-Verträge) und die gesamte PAYGO- bzw. bereitgestellte Kapazität.</block>
@@ -4868,4 +4865,8 @@
   <block id="78f9ca50556d02ff8700efd01af0d528" category="paragraph"><block ref="78f9ca50556d02ff8700efd01af0d528" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9cc2b6cdaf0b50459353a2d67c0baa80" category="section-title">Kürzere Implementierungszeit</block>
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">Wir haben die zur Implementierung einer Cloud Volumes ONTAP-Arbeitsumgebung in Microsoft Azure oder in Google Cloud benötigte Zeit bei aktivierter normaler Schreibgeschwindigkeit reduziert. Die Implementierungszeit ist im Durchschnitt jetzt 3-4 Minuten kürzer.</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">Wählen Sie im Navigationsmenü BlueXP die Option *Governance &gt; Digital Wallet* aus.</block>
+  <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">Lassen Sie auf der Registerkarte *Cloud Volumes ONTAP* *Capacity Based Licenses* ausgewählt.</block>
+  <block id="2bd469c6a2a1a44818909050205d416b" category="list-text">Sehen Sie sich die Paketübersicht an, in der Sie die verbrauchte Kapazität, die gesamte vorab gebuchte Kapazität und die gesamte PAYGO-Kapazität anzeigen lassen.</block>
+  <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">Wählen Sie *Keystone*.</block>
 </blocks>
