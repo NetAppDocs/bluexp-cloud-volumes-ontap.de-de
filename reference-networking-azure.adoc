@@ -435,6 +435,6 @@ NOTE: Die Quelle ist die Schnittstelle (IP-Adresse) auf dem Cloud Volumes ONTAP 
 
 Wenn Sie noch keinen Connector erstellt haben, sollten Sie auch die Netzwerkanforderungen für den Connector prüfen.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Für Sicherheitsgruppen gibt es in Azure Regeln"^]
 

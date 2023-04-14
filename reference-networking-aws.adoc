@@ -281,6 +281,6 @@ image:diagram_ha_networking.png["Konzeptionelles Image mit Komponenten in einer 
 
 Wenn Sie noch keinen Connector erstellt haben, sollten Sie auch die Netzwerkanforderungen für den Connector prüfen.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Sicherheitsgruppenregeln in AWS"^]
 

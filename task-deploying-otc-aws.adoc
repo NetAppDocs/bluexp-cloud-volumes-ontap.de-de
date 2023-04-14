@@ -25,7 +25,7 @@ Um eine Arbeitsumgebung zu schaffen, benötigen Sie Folgendes.
 [[licensing]]
 * Ein Anschluss, der betriebsbereit ist.
 +
-** Sie sollten ein haben https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Anschluss, der Ihrem Arbeitsbereich zugeordnet ist"^].
+** Sie sollten ein haben https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Anschluss, der Ihrem Arbeitsbereich zugeordnet ist"^].
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Sie sollten darauf vorbereitet sein, den Konnektor jederzeit in Betrieb zu nehmen"^].
 
 
@@ -56,7 +56,7 @@ Unmittelbar nach der Erstellung der Arbeitsumgebung startet BlueXP eine Testinst
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
 . [[Subscribe]]Klicken Sie auf der Bildschirmseite auf *Arbeitsumgebung hinzufügen* und folgen Sie den Anweisungen.
 . *Wählen Sie einen Standort*: Wählen Sie *Amazon Web Services* und *Cloud Volumes ONTAP Single Node*.
-. Wenn Sie dazu aufgefordert werden, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Einen Konnektor erstellen"^].
+. Wenn Sie dazu aufgefordert werden, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Einen Konnektor erstellen"^].
 . *Details und Anmeldeinformationen*: Optional können Sie die AWS-Anmeldeinformationen und das Abonnement ändern, einen Namen der Arbeitsumgebung eingeben, bei Bedarf Tags hinzufügen und dann ein Passwort eingeben.
 +
 Einige der Felder auf dieser Seite sind selbsterklärend. In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise Hilfe benötigen:

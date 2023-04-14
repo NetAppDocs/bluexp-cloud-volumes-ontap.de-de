@@ -25,7 +25,7 @@ Um eine Arbeitsumgebung zu schaffen, benötigen Sie Folgendes.
 [[licensing]]
 * Ein Anschluss, der betriebsbereit ist.
 +
-** Sie sollten ein haben https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Anschluss, der Ihrem Arbeitsbereich zugeordnet ist"^].
+** Sie sollten ein haben https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Anschluss, der Ihrem Arbeitsbereich zugeordnet ist"^].
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Sie sollten darauf vorbereitet sein, den Konnektor jederzeit in Betrieb zu nehmen"^].
 ** Das mit dem Connector verbundene Servicekonto https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Sollte über die erforderlichen Berechtigungen verfügen"^]
 
@@ -59,7 +59,7 @@ Schaffen Sie eine Arbeitsumgebung in BlueXP, um Cloud Volumes ONTAP in Google Cl
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
 . [[Subscribe]]Klicken Sie auf der Bildschirmseite auf *Arbeitsumgebung hinzufügen* und folgen Sie den Anweisungen.
 . *Wählen Sie einen Standort*: Wählen Sie *Google Cloud* und *Cloud Volumes ONTAP*.
-. Wenn Sie dazu aufgefordert werden, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Einen Konnektor erstellen"^].
+. Wenn Sie dazu aufgefordert werden, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Einen Konnektor erstellen"^].
 . *Details & Anmeldeinformationen*: Wählen Sie ein Projekt aus, geben Sie einen Cluster-Namen an, wählen Sie optional ein Servicekonto aus, fügen Sie optional Labels hinzu und geben Sie dann Anmeldeinformationen an.
 +
 In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise Hilfe benötigen:
@@ -88,7 +88,7 @@ Wählen Sie das Projekt aus, in dem Cloud Volumes ONTAP gespeichert werden soll.
 Wenn in der Dropdown-Liste keine weiteren Projekte angezeigt werden, haben Sie das BlueXP-Servicekonto noch nicht mit anderen Projekten verknüpft. Rufen Sie die Google Cloud-Konsole auf, öffnen Sie den IAM-Service und wählen Sie das Projekt aus. Fügen Sie dem Projekt das Servicekonto mit der Rolle BlueXP hinzu. Sie müssen diesen Schritt für jedes Projekt wiederholen.
 
 
-NOTE: Dies ist das Servicekonto, das Sie für BlueXP eingerichtet haben. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["Wie auf dieser Seite beschrieben"^].
+NOTE: Dies ist das Servicekonto, das Sie für BlueXP eingerichtet haben. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["Wie auf dieser Seite beschrieben"^].
 
 Klicken Sie auf *Abonnement hinzufügen*, um die ausgewählten Anmeldeinformationen einem Abonnement zuzuordnen.
 
@@ -314,7 +314,7 @@ Wählen Sie das Projekt aus, in dem Cloud Volumes ONTAP gespeichert werden soll.
 Wenn in der Dropdown-Liste keine weiteren Projekte angezeigt werden, haben Sie das BlueXP-Servicekonto noch nicht mit anderen Projekten verknüpft. Rufen Sie die Google Cloud-Konsole auf, öffnen Sie den IAM-Service und wählen Sie das Projekt aus. Fügen Sie dem Projekt das Servicekonto mit der Rolle BlueXP hinzu. Sie müssen diesen Schritt für jedes Projekt wiederholen.
 
 
-NOTE: Dies ist das Servicekonto, das Sie für BlueXP eingerichtet haben. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["Wie auf dieser Seite beschrieben"^].
+NOTE: Dies ist das Servicekonto, das Sie für BlueXP eingerichtet haben. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["Wie auf dieser Seite beschrieben"^].
 
 Klicken Sie auf *Abonnement hinzufügen*, um die ausgewählten Anmeldeinformationen einem Abonnement zuzuordnen.
 
