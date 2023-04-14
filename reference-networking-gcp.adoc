@@ -184,7 +184,7 @@ Bei einem HA-Paar sind vier VPCs erforderlich. Alle diese VPCs können entweder 
 
 Mit einer gemeinsam genutzten VPC können Sie virtuelle Netzwerke über mehrere Projekte hinweg konfigurieren und zentral managen. Sie können freigegebene VPC-Netzwerke im_Host-Projekt_ einrichten und die Instanzen von Connector und Cloud Volumes ONTAP Virtual Machine in einem _Service-Projekt_ implementieren. https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud-Dokumentation: Gemeinsame VPC-Übersicht"^].
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#shared-vpc-permissions["Erforderliche gemeinsame VPC-Berechtigungen für die Connector-Implementierung prüfen"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Erforderliche gemeinsame VPC-Berechtigungen für die Connector-Implementierung prüfen"^]
 
 
 
