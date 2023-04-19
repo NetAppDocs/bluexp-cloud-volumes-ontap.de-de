@@ -36,7 +36,7 @@ Sie sollten sich darauf vorbereiten, indem Sie eine Konfiguration auswählen und
 
 * Kenntnisse über die erforderlichen Voraussetzungen zur Einrichtung der Lizenzierung für Cloud Volumes ONTAP.
 +
-link:task-set-up-licensing-gcp.html["Erfahren Sie, wie Sie eine Lizenzierung einrichten"].
+link:task-set-up-licensing-google.html["Erfahren Sie, wie Sie eine Lizenzierung einrichten"].
 
 * Es sollten Google Cloud APIs sein https://cloud.google.com/apis/docs/getting-started#enabling_apis["In Ihrem Projekt aktiviert"^]:
 +
@@ -132,7 +132,7 @@ Wenn Sie BlueXP die Firewall-Richtlinie für Sie generieren lassen, müssen Sie 
 . *Charging Methods and NSS Account*: Geben Sie an, welche Ladungsoption Sie mit diesem System verwenden möchten, und geben Sie dann ein NetApp Support Site Konto an.
 +
 ** link:concept-licensing.html["Informieren Sie sich über Lizenzoptionen für Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-gcp.html["Erfahren Sie, wie Sie eine Lizenzierung einrichten"].
+** link:task-set-up-licensing-google.html["Erfahren Sie, wie Sie eine Lizenzierung einrichten"].
 
 
 . *Vorkonfigurierte Pakete*: Wählen Sie eines der Pakete, um schnell ein Cloud Volumes ONTAP System bereitzustellen, oder klicken Sie auf *eigene Konfiguration erstellen*.
@@ -362,7 +362,7 @@ Wenn Sie BlueXP die Firewall-Richtlinie für Sie generieren lassen, müssen Sie 
 . *Charging Methods and NSS Account*: Geben Sie an, welche Ladungsoption Sie mit diesem System verwenden möchten, und geben Sie dann ein NetApp Support Site Konto an.
 +
 ** link:concept-licensing.html["Informieren Sie sich über Lizenzoptionen für Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-gcp.html["Erfahren Sie, wie Sie eine Lizenzierung einrichten"].
+** link:task-set-up-licensing-google.html["Erfahren Sie, wie Sie eine Lizenzierung einrichten"].
 
 
 . *Vorkonfigurierte Pakete*: Wählen Sie eines der Pakete, um schnell ein Cloud Volumes ONTAP System bereitzustellen, oder klicken Sie auf *eigene Konfiguration erstellen*.

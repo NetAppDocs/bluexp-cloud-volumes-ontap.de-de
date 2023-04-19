@@ -33,9 +33,6 @@ Sie können mehrere Lizenzen für ein Cloud Volumes ONTAP BYOL-System erwerben, 
 
 Die Anzahl der Lizenzen, die Sie für ein Single Node-System oder ein HA-Paar erwerben können, ist unbegrenzt.
 
-
-NOTE: Einige Ihrer lokalen ONTAP Storage-Systeme enthalten möglicherweise eine kostenlose Cloud Volumes ONTAP Lizenz. Sie können mit der Lizenz ein neues Cloud Volumes ONTAP System erstellen oder die Lizenz auf ein bestehendes Cloud Volumes ONTAP System anwenden, um die Kapazität zu erweitern. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-managing-ontap.html#viewing-unused-cloud-volumes-ontap-licenses["Überprüfen Sie, ob Sie über verfügbare Lizenzen verfügen"^].
-
 Beachten Sie, dass die Festplattenbeschränkungen verhindern können, dass Sie durch die Verwendung von Festplatten allein das Kapazitätslimit nicht erreichen. Sie können die Festplattengrenze um überschreiten link:concept-data-tiering.html["tiering inaktiver Daten in Objektspeicher"]. Weitere Informationen zu Festplattenlimits finden Sie unter https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Speichergrenzwerte in den Versionshinweisen zu Cloud Volumes ONTAP"^].
 
 

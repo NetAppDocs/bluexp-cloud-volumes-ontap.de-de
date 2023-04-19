@@ -3089,8 +3089,6 @@
   <block id="fef06ca11f3dec6f0be51962fd93388c" category="section-title">Byol-Systemlizenzen</block>
   <block id="f9402b876a835ea0ecd00da4d201433a" category="paragraph">Eine Node-basierte Lizenz bietet bis zu 368 tib Kapazität für ein einzelnes Node- oder HA-Paar.</block>
   <block id="7bf9d9c18215351b0d16f4f9343c9700" category="paragraph">Sie können mehrere Lizenzen für ein Cloud Volumes ONTAP BYOL-System erwerben, um mehr als 368 tib Kapazität zuzuweisen. Beispielsweise können Sie zwei Lizenzen erwerben, um Cloud Volumes ONTAP bis zu 736 tib Kapazität zuzuweisen. Alternativ können Sie vier Lizenzen erwerben, um bis zu 1.4 PiB zu erhalten.</block>
-  <block id="c695cd123d8c1b69b12f443c42ad98f9" category="inline-link">Überprüfen Sie, ob Sie über verfügbare Lizenzen verfügen</block>
-  <block id="d5777fa0c0510a8e0af55b024f765d10" category="admonition">Einige Ihrer lokalen ONTAP Storage-Systeme enthalten möglicherweise eine kostenlose Cloud Volumes ONTAP Lizenz. Sie können mit der Lizenz ein neues Cloud Volumes ONTAP System erstellen oder die Lizenz auf ein bestehendes Cloud Volumes ONTAP System anwenden, um die Kapazität zu erweitern.<block ref="e219f91c05893e1e7e9c773a8103d487" category="inline-link-rx"></block>.</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link-macro">tiering inaktiver Daten in Objektspeicher</block>
   <block id="255a885478279e7778252b0fbb8e555b" category="inline-link">Speichergrenzwerte in den Versionshinweisen zu Cloud Volumes ONTAP</block>
   <block id="b64442e22e4baecde15d6214c922aa65" category="paragraph">Beachten Sie, dass die Festplattenbeschränkungen verhindern können, dass Sie durch die Verwendung von Festplatten allein das Kapazitätslimit nicht erreichen. Sie können die Festplattengrenze um überschreiten <block ref="c80d06c6bbd06cbbb7b267be96c5b90c" category="inline-link-macro-rx"></block>. Weitere Informationen zu Festplattenlimits finden Sie unter<block ref="02f1a1c120ffb5f37ea9d7c14b5f1158" category="inline-link-rx"></block>.</block>
@@ -3792,7 +3790,6 @@
   <block id="eef256fe1f25b0dfdcc3971d7f0a9974" category="summary">Sie können Cloud Volumes ONTAP in einer Einzel-System-Konfiguration oder als HA-Paar in der Google Cloud Platform starten.</block>
   <block id="9e1dbaa97d16ff9bc20f90cb1663f522" category="inline-link">Sollte über die erforderlichen Berechtigungen verfügen</block>
   <block id="acbe60cca2f08e7905a3283a0c9d7b09" category="list-text">Das mit dem Connector verbundene Servicekonto<block ref="9efb82dd4baa51f3442d848d3fff4260" category="inline-link-rx"></block></block>
-  <block id="1093810fe4a9e55d156722b8332da3cd" category="paragraph"><block ref="9b79239dba046d18af2dfc2ca929db17" category="inline-link-macro-rx"></block>.</block>
   <block id="fb387d3403e9d0f4168631a5c1e65d3d" category="inline-link">In Ihrem Projekt aktiviert</block>
   <block id="3f7dd317abe229076594c229e96f375d" category="list-text">Es sollten Google Cloud APIs sein<block ref="2bf1d71c4d11fe94040400dbdd9bbe2e" category="inline-link-rx"></block>:</block>
   <block id="02468344d7eb024c93087ede43938890" category="list-text">*Wählen Sie einen Standort*: Wählen Sie *Google Cloud* und *Cloud Volumes ONTAP*.</block>
@@ -4871,4 +4868,5 @@
   <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">Erfahren Sie mehr über das Management Node-basierter Lizenzen</block>
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>.</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">Managen Sie Node-basierte Lizenzen in der Digital Wallet, um sicherzustellen, dass für jedes Cloud Volumes ONTAP System eine gültige Lizenz mit der erforderlichen Kapazität vorhanden ist.</block>
+  <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>.</block>
 </blocks>
