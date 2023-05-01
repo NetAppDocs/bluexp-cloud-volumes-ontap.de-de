@@ -88,7 +88,7 @@ Konten mit Storage-Systemen:: Storage-Konten werden für gemanagte, festplattenb
 Eine HA-Konfiguration sorgt für eine hohe Verfügbarkeit Ihrer Daten wie folgt:
 
 * Das Recovery Point Objective (RPO) beträgt 0 Sekunden. Ihre Daten sind transaktionskonsistent und ohne Datenverlust.
-* Das Recovery Time Objective (RTO) beträgt 60 Sekunden. Im Falle eines Ausfalls sollten die Daten in maximal 60 Sekunden verfügbar sein.
+* Die Recovery-Zeitvorgabe (RTO) beträgt 120 Sekunden. Bei einem Ausfall sollten die Daten in maximal 120 Sekunden verfügbar sein.
 
 
 

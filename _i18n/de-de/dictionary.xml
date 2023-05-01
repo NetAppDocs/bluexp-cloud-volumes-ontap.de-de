@@ -1794,7 +1794,6 @@
   <block id="cd5ddfb19671526301ef6b32141e2e79" category="section-title">RPO und RTO</block>
   <block id="723596a60ea78fba91bcc7acb47cb786" category="paragraph">Eine HA-Konfiguration sorgt für eine hohe Verfügbarkeit Ihrer Daten wie folgt:</block>
   <block id="f04b83c6c15bc920bde6b3bda82d692e" category="list-text">Das Recovery Point Objective (RPO) beträgt 0 Sekunden. Ihre Daten sind transaktionskonsistent und ohne Datenverlust.</block>
-  <block id="9a761447afd0b14671defde47da1673b" category="list-text">Das Recovery Time Objective (RTO) beträgt 60 Sekunden. Im Falle eines Ausfalls sollten die Daten in maximal 60 Sekunden verfügbar sein.</block>
   <block id="218815dee60a5e42cd50732e4ad90420" category="section-title">Ha-Bereitstellungsmodelle</block>
   <block id="a2efc5fc54fd68c09324deea01c6bc06" category="paragraph">Sie können die Hochverfügbarkeit Ihrer Daten sicherstellen, indem Sie eine HA-Konfiguration über mehrere Verfügbarkeitszonen (AZS) oder in einer einzigen AZ bereitstellen. Sie sollten weitere Details zu jeder Konfiguration durchgehen, um zu entscheiden, welche für Ihre Anforderungen am besten geeignet ist.</block>
   <block id="bc2a46f921494df9fc5f911909c03874" category="section-title">Mehrere Verfügbarkeitszonen</block>
@@ -2012,8 +2011,6 @@
   <block id="48c4b347a69acc97f71ef6775bf6260d" category="list-text">Für Debian ist der Standard-Cloud-Benutzer<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block>. Google Cloud erstellt und fügt eine Bescheinigung für die ein<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> Benutzer, wenn SSH-Zugriff über die Google Cloud-Konsole oder die gcloudbasierte Befehlszeile angefordert wird. Sie können angeben<block ref="d338b3f0f405eb5e51c8cc1e5ca66f02" prefix=" " category="inline-code"></block> Um Root-Rechte zu erhalten.</block>
   <block id="b9c7a6d43bec359b40ab04efb944c7c4" category="list-text">Das Recovery Point Objective (RPO) beträgt 0 Sekunden.</block>
   <block id="bf7c76034279e30c18d14dc7990ee330" category="paragraph">Ihre Daten sind transaktionskonsistent und ohne Datenverlust.</block>
-  <block id="856d7ffe64733ea6b89924ff6410d489" category="list-text">Das Recovery Time Objective (RTO) beträgt 60 Sekunden.</block>
-  <block id="a440b74cbaeb3025f8a909b3dd0782ed" category="paragraph">Im Falle eines Ausfalls sollten die Daten in maximal 60 Sekunden verfügbar sein.</block>
   <block id="8bf571523805ed82609d8283f739355b" category="paragraph">Durch Implementierung einer HA-Konfiguration in mehreren Zonen oder in einer einzelnen Zone werden die Hochverfügbarkeit der Daten gewährleistet.</block>
   <block id="6bf98e65a399f1401fd22fb5e31efc11" category="paragraph">Im Gegensatz zu einem ONTAP Cluster ist die Storage-Lösung in einem Cloud Volumes ONTAP HA-Paar in GCP nicht zwischen den Nodes gemeinsam genutzt. Stattdessen werden die Daten synchron zwischen den Nodes gespiegelt, sodass sie im Falle eines Ausfalls verfügbar sind.</block>
   <block id="a7f1ed3502c297566d12e3e3732abf11" category="paragraph">Sie können ein HA-Paar als Aktiv/Aktiv-Konfiguration verwenden, in der beide Nodes Daten an Clients bereitstellen, oder als Aktiv/Passiv-Konfiguration, bei der der passive Node nur dann auf Datenanforderungen reagiert, wenn er Storage für den aktiven Node übernommen hat.</block>
@@ -4869,4 +4866,7 @@
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>.</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">Managen Sie Node-basierte Lizenzen in der Digital Wallet, um sicherzustellen, dass für jedes Cloud Volumes ONTAP System eine gültige Lizenz mit der erforderlichen Kapazität vorhanden ist.</block>
   <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>.</block>
+  <block id="ed40352f9ed490b733344d4ac872054a" category="list-text">Die Recovery-Zeitvorgabe (RTO) beträgt 120 Sekunden. Bei einem Ausfall sollten die Daten in maximal 120 Sekunden verfügbar sein.</block>
+  <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">Die Recovery-Zeitvorgabe (RTO) beträgt 120 Sekunden.</block>
+  <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">Bei einem Ausfall sollten die Daten in maximal 120 Sekunden verfügbar sein.</block>
 </blocks>
