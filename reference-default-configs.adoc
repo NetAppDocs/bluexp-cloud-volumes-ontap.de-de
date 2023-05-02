@@ -153,6 +153,10 @@ ifdef::aws[]
 
 
 * Ein EBS-Snapshot für jede Boot- und Root-Festplatte
++
+
+NOTE: Snapshots werden beim Neustart automatisch erstellt.
+
 * Bei HA-Paaren ist ein EBS-Volume für die Mediator-Instanz, das ca. 8 gib beträgt
 * Wenn Sie die Datenverschlüsselung in AWS mithilfe des KMS (Key Management Service) aktivieren, werden sowohl Boot- als auch Root-Festplatten für Cloud Volumes ONTAP verschlüsselt. Dazu gehört die Boot-Festplatte für die Instanz des Mediators in einem HA-Paar. Die Laufwerke werden über das CMK verschlüsselt, das Sie bei der Erstellung der Arbeitsumgebung auswählen.
 
@@ -193,6 +197,10 @@ Wenn die für Cloud Volumes ONTAP ausgewählte virtuelle Maschine Ultra SSDs unt
 * Zwei 1024 gib Standard-HDD-Festplatten für das Speichern von Cores (eine pro Node)
 * Zwei 512 gib Premium-SSD-Festplatten für NVRAM (eine pro Node)
 * Ein Azure Snapshot für jedes Boot- und Root-Laufwerk
++
+
+NOTE: Snapshots werden beim Neustart automatisch erstellt.
+
 * Jede Festplatte ist standardmäßig in Azure verschlüsselt.
 
 
@@ -202,6 +210,10 @@ Wenn die für Cloud Volumes ONTAP ausgewählte virtuelle Maschine Ultra SSDs unt
 * Zwei 1024 gib Standard-HDD-Festplatten für das Speichern von Cores (eine pro Node)
 * Zwei 512 gib Premium-SSD-Festplatten für NVRAM (eine pro Node)
 * Ein Azure Snapshot für jedes Boot- und Root-Laufwerk
++
+
+NOTE: Snapshots werden beim Neustart automatisch erstellt.
+
 * Jede Festplatte ist standardmäßig in Azure verschlüsselt.
 
 
@@ -218,6 +230,10 @@ ifdef::gcp[]
 * Eine persistente SSD-Festplatte mit 500 gib für NVRAM
 * Eine persistente Platte mit 315 gib Standard zum Speichern von Kernen
 * Snapshots für Boot- und Root-Daten
++
+
+NOTE: Snapshots werden beim Neustart automatisch erstellt.
+
 * Boot- und Root-Festplatten sind standardmäßig verschlüsselt.
 
 
@@ -232,6 +248,10 @@ ifdef::gcp[]
 * Eine persistente 10 gib-Standardfestplatte für Mediator-Daten
 * Eine persistente 10 gib Standard-Festplatte für den Mediator: Boot-Daten
 * Snapshots für Boot- und Root-Daten
++
+
+NOTE: Snapshots werden beim Neustart automatisch erstellt.
+
 * Boot- und Root-Festplatten sind standardmäßig verschlüsselt.
 
 

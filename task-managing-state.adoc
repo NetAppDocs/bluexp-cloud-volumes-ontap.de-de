@@ -83,4 +83,8 @@ image:screenshot_turn_off_redesign.png["Screenshot: Zeigt das Symbol zum Ausscha
 +
 Es kann bis zu einigen Minuten dauern, bis das System gestoppt wird. Sie können Systeme zu einem späteren Zeitpunkt von der Seite "Arbeitsumgebung" aus neu starten.
 
++
+
+NOTE: Snapshots werden beim Neustart automatisch erstellt.
+
 
