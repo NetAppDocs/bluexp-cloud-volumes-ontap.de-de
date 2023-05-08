@@ -79,6 +79,73 @@ image:screenshot-digital-wallet-packages.png["Ein Screenshot mit der verbrauchte
 
 
 
+== Nutzungsberichte herunterladen
+
+Account-Administratoren können vier Nutzungsberichte aus dem Digital Wallet von BlueXP herunterladen. Diese Nutzungsberichte enthalten Kapazitätsdetails zu Ihren Abonnements und geben an, wie Sie für die Ressourcen in Ihren Cloud Volumes ONTAP Abonnements in Rechnung gestellt werden. Die herunterladbaren Berichte erfassen Daten zu einem bestimmten Zeitpunkt und können problemlos mit anderen geteilt werden.
+
+image:screenshot-digital-wallet-usage-report.png["In dem Screenshot wird die Seite „kapazitätsbasierte Cloud Volumes ONTAP-Lizenzen“ des Digital Wallet angezeigt, und die Schaltfläche „Nutzungsbericht“ wird hervorgehoben."]
+
+Die folgenden Berichte stehen zum Download zur Verfügung. Die angegebenen Kapazitätswerte werden in tib angezeigt.
+
+* *High-Level-Nutzung*: Dieser Bericht zeigt Ihnen genau, was sich in der "Cloud Volumes ONTAP-Paketübersicht"-Karte in der digitalen Brieftasche befindet. Sie enthält folgende Informationen:
++
+** Insgesamt verbrauchte Kapazität
+** Gesamte vorab gebuchte Kapazität
+** Gesamte BYOL-Kapazität
+** Gesamtmarkt Verträge Kapazität
+** Gesamte PAYGO-Kapazität
+
+
+* *Cloud Volumes ONTAP-Paketverwendung*: Dieser Bericht zeigt Ihnen genau, was sich auf den Paketkarten in der digitalen Brieftasche befindet. Es enthält die folgenden Informationen für jedes Paket außer dem optimierten I/O-Paket:
++
+** Insgesamt verbrauchte Kapazität
+** Gesamte vorab gebuchte Kapazität
+** Gesamte BYOL-Kapazität
+** Gesamtmarkt Verträge Kapazität
+** Gesamte PAYGO-Kapazität
+
+
+* *Nutzung von Storage-VMs*: Dieser Bericht zeigt, wie die geladene Kapazität auf Cloud Volumes ONTAP Systeme und Storage Virtual Machines (SVMs) aufgeteilt wird. Diese Informationen sind auf keinem Bildschirm in der Digital Wallet verfügbar. Sie enthält folgende Informationen:
++
+** Arbeitsumgebungs-ID (wird als UUID angezeigt)
+** Cloud
+** NetApp Konto-ID
+** Konfiguration der Arbeitsumgebung
+** SVM-Name
+** Bereitgestellte Kapazität
+** Zusammenfassung der geladenen Kapazität
+** Abrechnungszeitraum für Marktplatz
+** Cloud Volumes ONTAP Paket oder Feature
+** Abonnementname des SaaS Marketplace wird berechnet
+** Abonnement-ID des SaaS Marketplace wird berechnet
+
+
+* *Volumennutzung*: Dieser Bericht zeigt, wie die berechnete Kapazität nach Volumen in einer Arbeitsumgebung aufgeschlüsselt wird. Diese Informationen sind auf keinem Bildschirm in der Digital Wallet verfügbar. Sie enthält folgende Informationen:
++
+** Arbeitsumgebungs-ID (wird als UUID angezeigt)
+** SVN Name
+** Volume-ID
+** Volume-Typ
+** Auf Volume bereitgestellte Kapazität
++
+
+NOTE: FlexClone Volumes sind nicht in diesem Bericht enthalten, da für diese Volume-Typen keine Kosten anfallen.
+
+
+
+
+
+.Schritte
+. Wählen Sie im Navigationsmenü BlueXP die Option *Governance > Digital Wallet* aus.
+. Lassen Sie auf der Registerkarte *Cloud Volumes ONTAP* *Capacity Based Licenses* ausgewählt und klicken Sie auf *Nutzungsbericht*.
++
+Der Nutzungsbericht wird heruntergeladen.
+
+. Öffnen Sie die heruntergeladene Datei, um auf die Berichte zuzugreifen.
+
+
+
+
 == Fügen Sie gekaufte Lizenzen zu Ihrem Konto hinzu
 
 Wenn Ihre erworbenen Lizenzen auf der digitalen Geldbörse nicht angezeigt werden, müssen Sie die Lizenzen zu BlueXP hinzufügen, damit die Kapazität für Cloud Volumes ONTAP verfügbar ist.

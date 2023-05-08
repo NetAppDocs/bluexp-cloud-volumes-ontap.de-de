@@ -4870,4 +4870,55 @@
   <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">Die Recovery-Zeitvorgabe (RTO) beträgt 120 Sekunden.</block>
   <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">Bei einem Ausfall sollten die Daten in maximal 120 Sekunden verfügbar sein.</block>
   <block id="51f3f3385ba782f2b8752155e908cf60" category="admonition">Snapshots werden beim Neustart automatisch erstellt.</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">7 Mai 2023</block>
+  <block id="3b9e0ca0be1cb4ee263fc0a386a705bc" category="paragraph">Die folgenden Änderungen wurden mit der Version 3.9.29 des Connectors eingeführt.</block>
+  <block id="ef33a11b5d2090c4cf0e98ca1b79cc2d" category="section-title">Katar unterstützt jetzt in Google Cloud</block>
+  <block id="357b47742b71d8fe5b5936de05c522ec" category="paragraph">Die Region Katar wird jetzt in Google Cloud für Cloud Volumes ONTAP und dem Connector für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.</block>
+  <block id="c8dc4f54d280ddaf5974f6c903e2152f" category="section-title">Schweden Zentralregion jetzt in Azure unterstützt</block>
+  <block id="787bf3f02b45f65c827e46d88d4e7b24" category="paragraph">Die Zentralregion Schweden wird jetzt in Azure für Cloud Volumes ONTAP und der Connector für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.</block>
+  <block id="d38001cc976e394cf57ce77223bee1a1" category="section-title">Unterstützung für Implementierungen von HA-Multi-Availability-Zonen in Azure Australia East</block>
+  <block id="bef0df4f898713881ef2098a621a3745" category="paragraph">Die Region Australien/Osten in Azure unterstützt jetzt HA-Implementierungen für mehrere Verfügbarkeitszonen für Cloud Volumes ONTAP 9.12.1 GA und höher.</block>
+  <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">Aufladeaufschlüsselung</block>
+  <block id="300bba824d9f2e68a0c89aef6da5fb8a" category="paragraph">Jetzt finden Sie heraus, für welche Gebühren Sie zahlen, wenn Sie kapazitätsbasierte Lizenzen abonniert haben. Die folgenden Nutzungsberichte können aus dem Digital Wallet in BlueXP heruntergeladen werden. Die Nutzungsberichte enthalten Kapazitätsdetails zu Ihren Abonnements und geben an, wie Sie für die Ressourcen in Ihren Cloud Volumes ONTAP Abonnements in Rechnung gestellt werden. Die herunterladbaren Berichte können leicht mit anderen geteilt werden.</block>
+  <block id="ed54fb55b53f11e61f612ff99520f4bc" category="list-text">Verwendung des Cloud Volumes ONTAP-Pakets</block>
+  <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">Allgemeine Nutzung</block>
+  <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">Verwendung von Storage VMs</block>
+  <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">Volumennutzung</block>
+  <block id="6ddb4c081e1822f2c34768a65c03eb8b" category="paragraph">Weitere Informationen finden Sie unter <block ref="ebcf101f07f46d44ff28084ad0f8bce3" category="inline-link-macro-rx"></block>.</block>
+  <block id="eaf72ee058835b38b417b55e2fb1c0af" category="section-title">Wenn Sie ohne Marketplace-Abonnement auf BlueXP zugreifen, wird jetzt eine Benachrichtigung angezeigt</block>
+  <block id="5cc1493ad28334fdb28f7ed57f0e1d41" category="paragraph">Sobald Sie ohne Marketplace-Abonnement auf Cloud Volumes ONTAP in BlueXP zugreifen, wird jetzt eine Benachrichtigung angezeigt. Die Benachrichtigung besagt, dass „ein Marketplace-Abonnement für diese Arbeitsumgebung erforderlich ist, um die Cloud Volumes ONTAP-Bedingungen zu erfüllen.“</block>
+  <block id="d845f71cd5cacb5fdb671f6530007953" category="paragraph"><block ref="b614243ef1614b3040beb4428349cfdf" category="inline-link-rx"></block>.</block>
+  <block id="37532cd27e3c53471b1caed0ba1f90ed" category="section-title">Nutzungsberichte herunterladen</block>
+  <block id="819d4e1e06bcd4bb3249b60d928ccacc" category="paragraph">Account-Administratoren können vier Nutzungsberichte aus dem Digital Wallet von BlueXP herunterladen. Diese Nutzungsberichte enthalten Kapazitätsdetails zu Ihren Abonnements und geben an, wie Sie für die Ressourcen in Ihren Cloud Volumes ONTAP Abonnements in Rechnung gestellt werden. Die herunterladbaren Berichte erfassen Daten zu einem bestimmten Zeitpunkt und können problemlos mit anderen geteilt werden.</block>
+  <block id="c2b73e18a5b530a547ba48a8177d13c3" category="inline-image-macro">In dem Screenshot wird die Seite „kapazitätsbasierte Cloud Volumes ONTAP-Lizenzen“ des Digital Wallet angezeigt, und die Schaltfläche „Nutzungsbericht“ wird hervorgehoben.</block>
+  <block id="a1a4a48254cf8eb8962fbd995f5e7ea8" category="paragraph"><block ref="a1a4a48254cf8eb8962fbd995f5e7ea8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d11dcbec58d47bd13de1dcccfbd640ff" category="paragraph">Die folgenden Berichte stehen zum Download zur Verfügung. Die angegebenen Kapazitätswerte werden in tib angezeigt.</block>
+  <block id="ad73e4897304c80496a4f15e033cefa7" category="list-text">*High-Level-Nutzung*: Dieser Bericht zeigt Ihnen genau, was sich in der "Cloud Volumes ONTAP-Paketübersicht"-Karte in der digitalen Brieftasche befindet. Sie enthält folgende Informationen:</block>
+  <block id="c596c9291f76a11af1aefc235c262de6" category="list-text">Insgesamt verbrauchte Kapazität</block>
+  <block id="8dd7541d6c4e83402d88448119068a02" category="list-text">Gesamte vorab gebuchte Kapazität</block>
+  <block id="b01a146aed01aa8af61e034befc116ce" category="list-text">Gesamte BYOL-Kapazität</block>
+  <block id="109323142d354af9ccc7eb636b1dcbce" category="list-text">Gesamtmarkt Verträge Kapazität</block>
+  <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">Gesamte PAYGO-Kapazität</block>
+  <block id="76101a2de96d735db21249323914bc6c" category="list-text">*Cloud Volumes ONTAP-Paketverwendung*: Dieser Bericht zeigt Ihnen genau, was sich auf den Paketkarten in der digitalen Brieftasche befindet. Es enthält die folgenden Informationen für jedes Paket außer dem optimierten I/O-Paket:</block>
+  <block id="c01bbdbe6721d80a74779e943243486b" category="list-text">*Nutzung von Storage-VMs*: Dieser Bericht zeigt, wie die geladene Kapazität auf Cloud Volumes ONTAP Systeme und Storage Virtual Machines (SVMs) aufgeteilt wird. Diese Informationen sind auf keinem Bildschirm in der Digital Wallet verfügbar. Sie enthält folgende Informationen:</block>
+  <block id="b16bfcaa9b0651f05b8e8894a2aebb31" category="list-text">Arbeitsumgebungs-ID (wird als UUID angezeigt)</block>
+  <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">Cloud</block>
+  <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">NetApp Konto-ID</block>
+  <block id="bbfa34e8af02138b821f784c8962669b" category="list-text">Konfiguration der Arbeitsumgebung</block>
+  <block id="203c4205822c007d08ecafe163b02ea2" category="list-text">SVM-Name</block>
+  <block id="b567847dd629376ac84ed4958fd61687" category="list-text">Bereitgestellte Kapazität</block>
+  <block id="a09b8df9fd0007770b0a8c10f9a17d81" category="list-text">Zusammenfassung der geladenen Kapazität</block>
+  <block id="671095c17b0e9e0deda06cff2fa103e6" category="list-text">Abrechnungszeitraum für Marktplatz</block>
+  <block id="d38764d5edf26bd9b744840cd2ea3c17" category="list-text">Cloud Volumes ONTAP Paket oder Feature</block>
+  <block id="a016fcdfd1d7159ffd537d78d4b68f74" category="list-text">Abonnementname des SaaS Marketplace wird berechnet</block>
+  <block id="fe6ac599d13d94a0ee0800482bec7e41" category="list-text">Abonnement-ID des SaaS Marketplace wird berechnet</block>
+  <block id="33e97335db88f16611400cab965f95af" category="list-text">*Volumennutzung*: Dieser Bericht zeigt, wie die berechnete Kapazität nach Volumen in einer Arbeitsumgebung aufgeschlüsselt wird. Diese Informationen sind auf keinem Bildschirm in der Digital Wallet verfügbar. Sie enthält folgende Informationen:</block>
+  <block id="3edb9123c69629ec86469d96d3feb0aa" category="list-text">SVN Name</block>
+  <block id="cccc95b62282240886ee975a3f122adb" category="list-text">Volume-ID</block>
+  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="list-text">Volume-Typ</block>
+  <block id="3756f66a273f440893f16ee968ce3450" category="list-text">Auf Volume bereitgestellte Kapazität</block>
+  <block id="8b3da2ed858ee5c956acde26c9ef7dd0" category="admonition">FlexClone Volumes sind nicht in diesem Bericht enthalten, da für diese Volume-Typen keine Kosten anfallen.</block>
+  <block id="a4bad4f350632a2078a6d795984ee60f" category="list-text">Lassen Sie auf der Registerkarte *Cloud Volumes ONTAP* *Capacity Based Licenses* ausgewählt und klicken Sie auf *Nutzungsbericht*.</block>
+  <block id="23e918e9f1c9f1bb5769dcc236489de2" category="paragraph">Der Nutzungsbericht wird heruntergeladen.</block>
+  <block id="05655bb3cbd3604d6c71a1db823ad94f" category="list-text">Öffnen Sie die heruntergeladene Datei, um auf die Berichte zuzugreifen.</block>
 </blocks>
