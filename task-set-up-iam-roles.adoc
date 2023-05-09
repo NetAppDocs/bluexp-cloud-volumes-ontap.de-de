@@ -236,6 +236,7 @@ Wenn Sie Cloud Backup für Ihre Cloud Volumes ONTAP Systeme verwenden möchten, 
 ====
 ** Ha Mediator
 +
+--
 [source, json]
 ----
 {
@@ -251,12 +252,15 @@ Wenn Sie Cloud Backup für Ihre Cloud Volumes ONTAP Systeme verwenden möchten, 
 				"ec2:DescribeVpcs",
 				"ec2:ReplaceRoute",
 				"ec2:UnassignPrivateIpAddresses"
+                "sts:AssumeRole"
+                "ec2:DescribeSubnets"
 			],
 			"Resource": "*"
 		}
 	]
 }
 ----
+--
 
 
 . Erstellen Sie eine IAM-Rolle, und hängen Sie die von Ihnen erstellten Richtlinien an die Rolle an.
