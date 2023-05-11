@@ -73,7 +73,7 @@ In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise
 | Name der Arbeitsumgebung | BlueXP verwendet den Namen der Arbeitsumgebung, um sowohl das Cloud Volumes ONTAP System als auch die Google Cloud VM Instanz zu benennen. Der Name wird auch als Präfix für die vordefinierte Sicherheitsgruppe verwendet, wenn Sie diese Option auswählen. 
 
 
-| Name Des Servicekontos | Wenn Sie Vorhaben zu verwenden link:concept-data-tiering.html["Daten-Tiering"] Oder https://["Backup und Recovery"^] Mit Cloud Volumes ONTAP müssen Sie dann *Dienstkonto* aktivieren und ein Servicekonto auswählen, das über die vordefinierte Rolle Speicheradministrator verfügt. link:task-creating-gcp-service-account.html["Erfahren Sie, wie Sie ein Servicekonto erstellen"]. 
+| Name Des Servicekontos | Wenn Sie Vorhaben zu verwenden link:concept-data-tiering.html["Daten-Tiering"] Oder https://["BlueXP Backup und Recovery"^] Mit Cloud Volumes ONTAP müssen Sie dann *Dienstkonto* aktivieren und ein Servicekonto auswählen, das über die vordefinierte Rolle Speicheradministrator verfügt. link:task-creating-gcp-service-account.html["Erfahren Sie, wie Sie ein Servicekonto erstellen"]. 
 
 
 | Etiketten Hinzufügen | Etiketten sind Metadaten für Ihre Google Cloud-Ressourcen. BlueXP fügt die Etiketten zum Cloud Volumes ONTAP-System und den dem System zugeordneten Google-Cloud-Ressourcen hinzu. Sie können bis zu vier Etiketten von der Benutzeroberfläche hinzufügen, wenn Sie eine Arbeitsumgebung erstellen, und dann können Sie weitere hinzufügen, nachdem sie erstellt wurde. Beachten Sie, dass Sie durch die API beim Erstellen einer Arbeitsumgebung nicht auf vier Labels beschränkt werden. Informationen zu Etiketten finden Sie unter https://["Google Cloud-Dokumentation: Ressourcen Zur Kennzeichnung"^]. 
@@ -299,7 +299,7 @@ In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise
 | Name der Arbeitsumgebung | BlueXP verwendet den Namen der Arbeitsumgebung, um sowohl das Cloud Volumes ONTAP System als auch die Google Cloud VM Instanz zu benennen. Der Name wird auch als Präfix für die vordefinierte Sicherheitsgruppe verwendet, wenn Sie diese Option auswählen. 
 
 
-| Name Des Servicekontos | Wenn Sie die verwenden möchten link:concept-data-tiering.html["Daten-Tiering"] Oder https://["Backup und Recovery"^] Services. Sie müssen den Schalter *Service-Konto* aktivieren und dann das Servicekonto auswählen, das die vordefinierte Rolle Storage-Admin hat. 
+| Name Des Servicekontos | Wenn Sie die verwenden möchten link:concept-data-tiering.html["BlueXP Tiering"] Oder https://["BlueXP Backup und Recovery"^] Services. Sie müssen den Schalter *Service-Konto* aktivieren und dann das Servicekonto auswählen, das die vordefinierte Rolle Storage-Admin hat. 
 
 
 | Etiketten Hinzufügen | Etiketten sind Metadaten für Ihre Google Cloud-Ressourcen. BlueXP fügt die Etiketten zum Cloud Volumes ONTAP-System und den dem System zugeordneten Google-Cloud-Ressourcen hinzu. Sie können bis zu vier Etiketten von der Benutzeroberfläche hinzufügen, wenn Sie eine Arbeitsumgebung erstellen, und dann können Sie weitere hinzufügen, nachdem sie erstellt wurde. Beachten Sie, dass Sie durch die API beim Erstellen einer Arbeitsumgebung nicht auf vier Labels beschränkt werden. Informationen zu Etiketten finden Sie unter https://["Google Cloud-Dokumentation: Ressourcen Zur Kennzeichnung"^]. 
