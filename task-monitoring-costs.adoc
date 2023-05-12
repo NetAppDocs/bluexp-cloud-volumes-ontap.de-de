@@ -24,9 +24,9 @@ BlueXP aktualisiert die Kosten, wenn Sie die Seite aktualisieren. Die endgültig
 +
 .. Stellen Sie sicher, dass die IAM-Richtlinie, die BlueXP Berechtigungen bereitstellt, die erforderlichen Berechtigungen enthält.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Zeigen Sie die erforderlichen Berechtigungen an"^]
+https://["Zeigen Sie die erforderlichen Berechtigungen an"^]
 
-.. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["Aktivieren Sie das Tag *WorkingEnvironment ID*"^].
+.. https://["Aktivieren Sie das Tag *WorkingEnvironment ID*"^].
 +
 Um die AWS-Kosten zu verfolgen, weist BlueXP Cloud Volumes ONTAP-Instanzen ein Tag der Kostenzuteilung zu. Nachdem Sie Ihre erste Arbeitsumgebung erstellt haben, aktivieren Sie das Tag *WorkingEnvironment ID*. Benutzerdefinierte Tags werden erst in den AWS Abrechnungsberichten angezeigt, wenn Sie sie in der Konsole „Rechnungsstellung“ und „Kostenmanagement“ aktivieren.
 

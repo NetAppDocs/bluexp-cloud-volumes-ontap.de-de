@@ -23,7 +23,7 @@ Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihre
 
 == Unterstützte Anzahl von Storage-VMs
 
-Bestimmte Konfigurationen unterstützen mehrere Storage-VMs. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Um zu überprüfen, wie viele Storage VMs für Ihre Cloud Volumes ONTAP-Version unterstützt werden.
+Bestimmte Konfigurationen unterstützen mehrere Storage-VMs. Wechseln Sie zum https://["Versionshinweise zu Cloud Volumes ONTAP"^] Um zu überprüfen, wie viele Storage VMs für Ihre Cloud Volumes ONTAP-Version unterstützt werden.
 
 
 
@@ -62,6 +62,6 @@ image:screenshot_svm.gif["Screenshot: Zeigt das Feld SVM-Name und das Bearbeitun
 
 BlueXP bietet keine Unterstützung für die Einrichtung oder Orchestrierung von Storage VM Disaster Recovery. Sie müssen System Manager oder die CLI verwenden.
 
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["Express Guide zur Vorbereitung des SVM-Disaster Recovery"^]
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM Disaster Recovery Express Guide"^]
+* https://["Express Guide zur Vorbereitung des SVM-Disaster Recovery"^]
+* https://["SVM Disaster Recovery Express Guide"^]
 

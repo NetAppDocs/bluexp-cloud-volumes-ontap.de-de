@@ -23,7 +23,7 @@ Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihre
 
 == Unterstützte Anzahl von Storage-VMs
 
-In Google Cloud werden ab Version 9.11.1 mehrere Storage-VMs mit spezifischen Cloud Volumes ONTAP Konfigurationen unterstützt. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Um zu überprüfen, wie viele Storage VMs für Ihre Cloud Volumes ONTAP-Version unterstützt werden.
+In Google Cloud werden ab Version 9.11.1 mehrere Storage-VMs mit spezifischen Cloud Volumes ONTAP Konfigurationen unterstützt. Wechseln Sie zum https://["Versionshinweise zu Cloud Volumes ONTAP"^] Um zu überprüfen, wie viele Storage VMs für Ihre Cloud Volumes ONTAP-Version unterstützt werden.
 
 Alle anderen Cloud Volumes ONTAP Konfigurationen unterstützen eine Storage-VM mit Datenbereitstellung und eine Ziel-Storage-VM für die Disaster Recovery. Sie können die Ziel-Storage-VM für Datenzugriff aktivieren, wenn es einen Ausfall auf der Quell-Storage-VM gibt.
 
@@ -48,7 +48,7 @@ image:screenshot-gcp-add-ip-range.png["Ein Screenshot der Google Cloud Konsole, 
 Sie benötigen eine IP-Adresse für eine Daten-LIF und eine andere optionale IP-Adresse, wenn Sie eine Management-LIF auf der Storage-VM erstellen möchten.
 
 +
-https://cloud.google.com/vpc/docs/configure-alias-ip-ranges#adding_alias_ip_ranges_to_an_existing_instance["Google Cloud Dokumentation: Hinzufügen von Alias-IP-Bereichen zu einer bestehenden Instanz"^]
+https://["Google Cloud Dokumentation: Hinzufügen von Alias-IP-Bereichen zu einer bestehenden Instanz"^]
 
 . Erstellen Sie die Storage-VM und eine Route zur Storage-VM.
 +
@@ -106,7 +106,7 @@ Sie müssen die BlueXP API verwenden, um eine Speicher-VM auf einem Cloud Volume
 Beachten Sie, dass BlueXP die erforderlichen IP-Adressen in Google Cloud zuweist und die Storage VM mit einer Daten-LIF für SMB/NFS-Zugriff und einer iSCSI LIF für ausgehende SMB-Kommunikation erstellt.
 
 .Erforderliche Google Cloud Berechtigungen
-Für den Connector sind bestimmte Berechtigungen erforderlich, um Storage-VMs für Cloud Volumes ONTAP HA-Paare zu erstellen und zu managen. Die erforderlichen Berechtigungen sind in enthalten https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Die von NetApp bereitgestellten Richtlinien"].
+Für den Connector sind bestimmte Berechtigungen erforderlich, um Storage-VMs für Cloud Volumes ONTAP HA-Paare zu erstellen und zu managen. Die erforderlichen Berechtigungen sind in enthalten https://["Die von NetApp bereitgestellten Richtlinien"].
 
 .Schritte
 . Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM zu erstellen:

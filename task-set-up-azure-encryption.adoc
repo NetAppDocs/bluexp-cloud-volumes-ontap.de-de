@@ -14,13 +14,13 @@ summary: Daten werden auf Cloud Volumes ONTAP in Azure automatisch verschlüssel
 
 
 [role="lead"]
-Die Daten werden auf Cloud Volumes ONTAP in Azure automatisch verschlüsselt https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption"] Mit einem von Microsoft gemanagten Schlüssel Aber Sie können Ihren eigenen Verschlüsselungsschlüssel verwenden, indem Sie die Schritte auf dieser Seite befolgen.
+Die Daten werden auf Cloud Volumes ONTAP in Azure automatisch verschlüsselt https://["Azure Storage Service Encryption"] Mit einem von Microsoft gemanagten Schlüssel Aber Sie können Ihren eigenen Verschlüsselungsschlüssel verwenden, indem Sie die Schritte auf dieser Seite befolgen.
 
 
 
 == Übersicht über die Datenverschlüsselung
 
-Cloud Volumes ONTAP-Daten werden in Azure automatisch verschlüsselt https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption"^]. Bei der Standardimplementierung wird ein von Microsoft verwalteter Schlüssel verwendet. Es ist keine Einrichtung erforderlich.
+Cloud Volumes ONTAP-Daten werden in Azure automatisch verschlüsselt https://["Azure Storage Service Encryption"^]. Bei der Standardimplementierung wird ein von Microsoft verwalteter Schlüssel verwendet. Es ist keine Einrichtung erforderlich.
 
 Wenn Sie einen vom Kunden gemanagten Schlüssel mit Cloud Volumes ONTAP verwenden möchten, müssen Sie folgende Schritte ausführen:
 
@@ -54,7 +54,7 @@ Azure HA, eine einzelne Verfügbarkeitszone::
 --
 * Alle Azure-Storage-Konten für Cloud Volumes ONTAP werden mit einem vom Kunden gemanagten Schlüssel verschlüsselt.^1^
 * Neue Storage-Konten (z. B. beim Hinzufügen von Festplatten oder Aggregaten) verwenden ebenfalls den gleichen Schlüssel.^1^
-* Ab ONTAP 9.10.1P3 verwendet BlueXP für NVRAM und die Core-Festplatte einen https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["Festplattenverschlüsselungssatz"^], Die das Management von Schlüsseln mit verwalteten Festplatten ermöglicht. Bei niedrigeren Versionen wird der von Microsoft verwaltete Schlüssel anstelle des vom Kunden verwalteten Schlüssels verwendet.
+* Ab ONTAP 9.10.1P3 verwendet BlueXP für NVRAM und die Core-Festplatte einen https://["Festplattenverschlüsselungssatz"^], Die das Management von Schlüsseln mit verwalteten Festplatten ermöglicht. Bei niedrigeren Versionen wird der von Microsoft verwaltete Schlüssel anstelle des vom Kunden verwalteten Schlüssels verwendet.
 
 
 --
@@ -62,7 +62,7 @@ Single Node::
 +
 --
 * Alle Azure-Storage-Konten für Cloud Volumes ONTAP werden über einen vom Kunden gemanagten Schlüssel verschlüsselt. ^1^
-* Für Root-, Boot- und Datenfestplatten verwendet BlueXP einen https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["Festplattenverschlüsselungssatz"^], Die das Management von Schlüsseln mit verwalteten Festplatten ermöglicht.
+* Für Root-, Boot- und Datenfestplatten verwendet BlueXP einen https://["Festplattenverschlüsselungssatz"^], Die das Management von Schlüsseln mit verwalteten Festplatten ermöglicht.
 * Neue Festplatten verwenden ebenfalls denselben Festplattenverschlüsselungssatz.
 * Ab ONTAP 9.9.1P7 verwendet BlueXP für NVRAM und die Kernfestplatte einen Festplattenverschlüsselungssatz, der das Management von Schlüsseln mit verwalteten Laufwerken ermöglicht. Bei niedrigeren Versionen wird der von Microsoft verwaltete Schlüssel anstelle des vom Kunden verwalteten Schlüssels verwendet.
 
@@ -81,7 +81,7 @@ Single Node::
 Der Schlüsselspeicher muss in demselben Azure Abonnement und derselben Region liegen, in der Sie das Cloud Volumes ONTAP System erstellen möchten.
 
 .Schritte
-. https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["Erstellen Sie einen Schlüsselspeicher in Ihrem Azure-Abonnement"^].
+. https://["Erstellen Sie einen Schlüsselspeicher in Ihrem Azure-Abonnement"^].
 +
 Beachten Sie die folgenden Anforderungen für den Schlüsselspeicher:
 
@@ -96,7 +96,7 @@ Beachten Sie die folgenden Anforderungen für den Schlüsselspeicher:
 
 
 
-. https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["Einen Schlüssel im Schlüsselspeicher erzeugen"^].
+. https://["Einen Schlüssel im Schlüsselspeicher erzeugen"^].
 +
 Beachten Sie die folgenden Anforderungen für den Schlüssel:
 
@@ -126,7 +126,7 @@ Wenn Sie einen vom Kunden verwalteten Schlüssel mit einem Cloud Volumes ONTAP-S
 "Microsoft.KeyVault/vaults/accessPolicies/write"
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Zeigen Sie die aktuelle Liste der Berechtigungen an"^]
+https://["Zeigen Sie die aktuelle Liste der Berechtigungen an"^]
 
 
 NOTE: Für HA-Paare in einer einzelnen Zone sind keine Berechtigungen erforderlich.
@@ -143,7 +143,7 @@ Für Single Node: `GET /azure/vsa/metadata/vaults`
 Notieren Sie sich den *Namen* und die *resourceGroup*. Im nächsten Schritt müssen Sie diese Werte angeben.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["Weitere Informationen zu diesem API-Aufruf"^].
+https://["Weitere Informationen zu diesem API-Aufruf"^].
 
 . Rufen Sie die Liste der Schlüssel im Tresor mithilfe des folgenden BlueXP API-Aufrufs ab.
 +
@@ -156,7 +156,7 @@ Für Single Node: `GET /azure/vsa/metadata/keys-vault`
 Notieren Sie sich den *Keyname*. Im nächsten Schritt müssen Sie diesen Wert (zusammen mit dem Vault-Namen) angeben.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["Weitere Informationen zu diesem API-Aufruf"^].
+https://["Weitere Informationen zu diesem API-Aufruf"^].
 
 . Erstellen Sie ein Cloud Volumes ONTAP-System mithilfe des folgenden BlueXP-API-Aufrufs.
 +
@@ -177,7 +177,7 @@ Der Text der Anforderung muss die folgenden Felder enthalten:
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-haworking-environments["Weitere Informationen zu diesem API-Aufruf"^].
+https://["Weitere Informationen zu diesem API-Aufruf"^].
 
 .. System mit einem einzelnen Node:
 +
@@ -196,7 +196,7 @@ Der Text der Anforderung muss die folgenden Felder enthalten:
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-vsaworking-environments["Weitere Informationen zu diesem API-Aufruf"^].
+https://["Weitere Informationen zu diesem API-Aufruf"^].
 
 
 

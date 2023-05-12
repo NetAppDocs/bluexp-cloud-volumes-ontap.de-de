@@ -53,7 +53,7 @@ image:screenshot_manage_vol_button.png["Ein Screenshot der Schaltfläche Volume 
 
 Bei diesem Prozess wird ein FlexClone Volume erstellt. Ein FlexClone Volume ist eine beschreibbare Point-in-Time-Kopie, die platzsparend ist, da es einen geringen Speicherplatz für Metadaten verbraucht und dann nur noch zusätzlichen Speicherplatz verbraucht, wenn Daten geändert oder hinzugefügt werden.
 
-Weitere Informationen zu FlexClone Volumes finden Sie im http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["ONTAP 9 Leitfaden für das Management von logischem Storage"^].
+Weitere Informationen zu FlexClone Volumes finden Sie im http://["ONTAP 9 Leitfaden für das Management von logischem Storage"^].
 
 
 
@@ -133,7 +133,7 @@ NOTE: BlueXP verschiebt das Volume in ein vorhandenes Aggregat, das den ausgewä
 
 Standardmäßig wird ein Volume automatisch auf eine Maximalgröße erweitert, wenn es sich um keinen Speicherplatz handelt. Der Standardwert ist 1,000. Mit dieser Einstellung kann das Volume auf das 11-fache seiner Größe erweitert werden. Dieser Wert kann in den Einstellungen eines Connectors konfiguriert werden.
 
-Wenn Sie die Größe Ihres Volumens ändern müssen, können Sie es durch link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP System Manager"^]. Berücksichtigen Sie unbedingt die Kapazitätsgrenzen Ihres Systems, wenn Sie die Größe der Volumes ändern. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Entnehmen.
+Wenn Sie die Größe Ihres Volumens ändern müssen, können Sie es durch link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP System Manager"^]. Berücksichtigen Sie unbedingt die Kapazitätsgrenzen Ihres Systems, wenn Sie die Größe der Volumes ändern. Wechseln Sie zum https://["Versionshinweise zu Cloud Volumes ONTAP"^] Entnehmen.
 
 
 

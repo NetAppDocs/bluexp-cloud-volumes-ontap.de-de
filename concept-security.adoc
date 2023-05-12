@@ -52,7 +52,7 @@ Sie können NetApp Verschlüsselungslösungen mit nativer Verschlüsselung vom C
 
 === NetApp Verschlüsselungslösungen (NVE und NAE)
 
-Cloud Volumes ONTAP unterstützt https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption (NVE) und NetApp Aggregate Encryption (NAE)"^]. NVE und NAE sind softwarebasierte Lösungen, mit denen die Verschlüsselung von Volumes im Ruhezustand (FIPS) 140-2-konform unterstützt wird. Sowohl NVE als auch NAE nutzen 256-Bit-Verschlüsselung nach AES.
+Cloud Volumes ONTAP unterstützt https://["NetApp Volume Encryption (NVE) und NetApp Aggregate Encryption (NAE)"^]. NVE und NAE sind softwarebasierte Lösungen, mit denen die Verschlüsselung von Volumes im Ruhezustand (FIPS) 140-2-konform unterstützt wird. Sowohl NVE als auch NAE nutzen 256-Bit-Verschlüsselung nach AES.
 
 * NVE verschlüsselt Daten im Ruhezustand nach einem Volume pro Zeit. Jedes Daten-Volume verfügt über einen eigenen eindeutigen Verschlüsselungsschlüssel.
 * NAE ist eine Erweiterung von NVE, denn es verschlüsselt Daten für jedes Volume, und die Volumes teilen sich einen Schlüssel im gesamten Aggregat. NAE ermöglicht außerdem die Deduplizierung allgemeiner Blöcke aller Volumes im Aggregat.
@@ -78,7 +78,7 @@ ifdef::aws[]
 
 === AWS Key Management Service
 
-Wenn Sie ein Cloud Volumes ONTAP System in AWS starten, können Sie die Datenverschlüsselung über das aktivieren http://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS KMS (Key Management Service)"^]. BlueXP fordert Datenschlüssel mit einem Kundenstammschlüssel (CMK) an.
+Wenn Sie ein Cloud Volumes ONTAP System in AWS starten, können Sie die Datenverschlüsselung über das aktivieren http://["AWS KMS (Key Management Service)"^]. BlueXP fordert Datenschlüssel mit einem Kundenstammschlüssel (CMK) an.
 
 
 TIP: Sie können die AWS Datenverschlüsselungsmethode nicht ändern, nachdem Sie ein Cloud Volumes ONTAP System erstellt haben.
@@ -93,7 +93,7 @@ ifdef::azure[]
 
 === Azure Storage Service Encryption
 
-Die Daten werden auf Cloud Volumes ONTAP in Azure automatisch verschlüsselt https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption"^] Mit einem von Microsoft gemanagten Schlüssel
+Die Daten werden auf Cloud Volumes ONTAP in Azure automatisch verschlüsselt https://["Azure Storage Service Encryption"^] Mit einem von Microsoft gemanagten Schlüssel
 
 Sie können Ihre eigenen Schlüssel verwenden. link:task-set-up-azure-encryption.html["Erfahren Sie, wie Sie Cloud Volumes ONTAP einrichten und einen vom Kunden gemanagten Schlüssel in Azure verwenden"].
 
@@ -105,7 +105,7 @@ ifdef::gcp[]
 
 === Google Cloud Platform-Standardverschlüsselung
 
-https://cloud.google.com/security/encryption-at-rest/["Google Cloud-Plattform Verschlüsselung von Daten im Ruhezustand"^] Ist standardmäßig für Cloud Volumes ONTAP aktiviert. Es ist keine Einrichtung erforderlich.
+https://["Google Cloud-Plattform Verschlüsselung von Daten im Ruhezustand"^] Ist standardmäßig für Cloud Volumes ONTAP aktiviert. Es ist keine Einrichtung erforderlich.
 
 Während Google Cloud Storage Ihre Daten immer verschlüsselt, bevor sie auf die Festplatte geschrieben werden, können Sie mit BlueXP APIs ein Cloud Volumes ONTAP-System erstellen, das _vom Kunden verwaltete Verschlüsselungsschlüssel_ verwendet. Diese Schlüssel werden in GCP mithilfe des Cloud Key Management Service generiert und gemanagt. link:task-setting-up-gcp-encryption.html["Weitere Informationen ."].
 
@@ -119,9 +119,9 @@ Sie können integrierte Virenschutzfunktionen auf ONTAP Systemen verwenden, um D
 
 ONTAP Virus Scanning, genannt _Vscan_, kombiniert erstklassige Antivirensoftware von Drittanbietern mit ONTAP-Funktionen, die Ihnen die Flexibilität geben, die Sie benötigen, um zu kontrollieren, welche Dateien gescannt werden und wann.
 
-Informationen zu den von Vscan unterstützten Herstellern, Software und Versionen finden Sie im http://mysupport.netapp.com/matrix["NetApp Interoperabilitätsmatrix"^].
+Informationen zu den von Vscan unterstützten Herstellern, Software und Versionen finden Sie im http://["NetApp Interoperabilitätsmatrix"^].
 
-Informationen zum Konfigurieren und Managen der Antivirenfunktionen auf ONTAP-Systemen finden Sie im http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["ONTAP 9 Antivirus Configuration Guide"^].
+Informationen zum Konfigurieren und Managen der Antivirenfunktionen auf ONTAP-Systemen finden Sie im http://["ONTAP 9 Antivirus Configuration Guide"^].
 
 
 

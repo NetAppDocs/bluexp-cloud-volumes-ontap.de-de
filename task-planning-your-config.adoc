@@ -30,9 +30,9 @@ Für Cloud Volumes ONTAP sind verschiedene Lizenzierungsoptionen verfügbar. Jed
 
 == Wählen Sie eine unterstützte Region aus
 
-Cloud Volumes ONTAP wird in den meisten AWS Regionen unterstützt. https://cloud.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^].
+Cloud Volumes ONTAP wird in den meisten AWS Regionen unterstützt. https://["Hier finden Sie die vollständige Liste der unterstützten Regionen"^].
 
-Neuere AWS Regionen müssen aktiviert sein, bevor Ressourcen in diesen Regionen erstellt und gemanagt werden können. https://docs.aws.amazon.com/general/latest/gr/rande-manage.html["Erfahren Sie, wie Sie eine Region aktivieren"^].
+Neuere AWS Regionen müssen aktiviert sein, bevor Ressourcen in diesen Regionen erstellt und gemanagt werden können. https://["Erfahren Sie, wie Sie eine Region aktivieren"^].
 
 
 
@@ -40,7 +40,7 @@ Neuere AWS Regionen müssen aktiviert sein, bevor Ressourcen in diesen Regionen 
 
 Cloud Volumes ONTAP unterstützt je nach gewähltem Lizenztyp mehrere Instanztypen.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["Unterstützte Konfigurationen für Cloud Volumes ONTAP in AWS"^]
+https://["Unterstützte Konfigurationen für Cloud Volumes ONTAP in AWS"^]
 
 
 
@@ -48,7 +48,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws
 
 Die Rohkapazitätsgrenze für ein Cloud Volumes ONTAP System ist an die Lizenz gebunden. Zusätzliche Beschränkungen wirken sich auf die Größe von Aggregaten und Volumes aus. Sie sollten sich dieser Grenzen bei der Planung Ihrer Konfiguration bewusst sein.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["Storage-Grenzen für Cloud Volumes ONTAP in AWS"^]
+https://["Storage-Grenzen für Cloud Volumes ONTAP in AWS"^]
 
 
 
@@ -63,19 +63,19 @@ Instanztyp::
 * Wenn mehrere Benutzer gleichzeitig auf das System schreiben, wählen Sie einen Instanztyp aus, der über genügend CPUs verfügt, um die Anforderungen zu verwalten.
 * Wenn Sie eine Anwendung haben, die hauptsächlich liest, dann wählen Sie ein System mit genügend RAM.
 +
-** https://aws.amazon.com/ec2/instance-types/["AWS Dokumentation: Amazon EC2 Instanztypen"^]
-** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS Dokumentation: Für Amazon EBS optimierte Instanzen"^]
+** https://["AWS Dokumentation: Amazon EC2 Instanztypen"^]
+** https://["AWS Dokumentation: Für Amazon EBS optimierte Instanzen"^]
 
 
 
 
 --
-EBS-Festplattentyp:: Auf höherer Ebene unterscheiden sich die EBS-Festplattentypen wie folgt. Weitere Informationen zu den Anwendungsfällen für EBS-Festplatten finden Sie unter http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS Dokumentation: EBS Volume-Typen"^].
+EBS-Festplattentyp:: Auf höherer Ebene unterscheiden sich die EBS-Festplattentypen wie folgt. Weitere Informationen zu den Anwendungsfällen für EBS-Festplatten finden Sie unter http://["AWS Dokumentation: EBS Volume-Typen"^].
 +
 --
 * _General Purpose SSD (gp3)_ Festplatten sind die kostengünstigsten SSDs, die ein ausgewogenes Verhältnis zwischen Kosten und Performance für ein breites Spektrum an Workloads bieten. Die Performance wird hinsichtlich IOPS und Durchsatz definiert. gp3-Festplatten werden von Cloud Volumes ONTAP 9.7 und höher unterstützt.
 +
-Wenn Sie eine gp3-Festplatte auswählen, füllt BlueXP die Standard-IOPS- und Durchsatzwerte, die eine Performance liefern, die einer gp2-Festplatte entspricht, die auf der ausgewählten Festplattengröße basiert. Sie können die Werte erhöhen, um eine bessere Leistung zu einem höheren Preis zu erhalten, aber wir unterstützen keine niedrigeren Werte, weil es zu einer minderwertigen Leistung führen kann. Kurz gesagt: Halten Sie bei den Standardwerten an, oder erhöhen Sie sie. Senken Sie Ihre Storage-Kosten nicht. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["Erfahren Sie mehr über gp3-Festplatten und deren Leistung"^].
+Wenn Sie eine gp3-Festplatte auswählen, füllt BlueXP die Standard-IOPS- und Durchsatzwerte, die eine Performance liefern, die einer gp2-Festplatte entspricht, die auf der ausgewählten Festplattengröße basiert. Sie können die Werte erhöhen, um eine bessere Leistung zu einem höheren Preis zu erhalten, aber wir unterstützen keine niedrigeren Werte, weil es zu einer minderwertigen Leistung führen kann. Kurz gesagt: Halten Sie bei den Standardwerten an, oder erhöhen Sie sie. Senken Sie Ihre Storage-Kosten nicht. https://["Erfahren Sie mehr über gp3-Festplatten und deren Leistung"^].
 
 +
 Beachten Sie, dass Cloud Volumes ONTAP die Funktion Amazon EBS Elastic Volumes mit gp3-Festplatten unterstützt. link:concept-aws-elastic-volumes.html["Weitere Informationen zur Unterstützung von Elastic Volumes"].
@@ -101,7 +101,7 @@ EBS-Festplattengröße:: Wenn Sie eine Konfiguration wählen, die das nicht unte
 * Am Ende sollten Sie die Festplattengröße wählen, die Ihnen die _dauerhafte Performance_ bietet, die Sie benötigen.
 * Auch wenn Sie größere Festplatten wählen (zum Beispiel sechs 4-tib-Festplatten), erhalten Sie möglicherweise nicht alle IOPS, da die EC2 Instanz ihr Bandbreitenlimit erreichen kann.
 +
-Weitere Informationen zur Performance der EBS Festplatten finden Sie in http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS Dokumentation: EBS Volume-Typen"^].
+Weitere Informationen zur Performance der EBS Festplatten finden Sie in http://["AWS Dokumentation: EBS Volume-Typen"^].
 
 +
 Wie bereits erwähnt, wird die Auswahl einer Festplattengröße mit Cloud Volumes ONTAP-Konfigurationen, die die Elastic Volumes-Funktion von Amazon EBS unterstützen, nicht unterstützt. link:concept-aws-elastic-volumes.html["Weitere Informationen zur Unterstützung von Elastic Volumes"].
@@ -120,7 +120,7 @@ Neben dem Storage für Benutzerdaten erwirbt BlueXP auch Cloud-Storage für Clou
 link:reference-default-configs.html#aws["Zeigen Sie die Standardfestplatten für Cloud Volumes ONTAP-Systemdaten in AWS an"].
 
 
-TIP: Für den Connector ist außerdem eine Systemfestplatte erforderlich. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Zeigen Sie Details zur Standardkonfiguration des Connectors an"^].
+TIP: Für den Connector ist außerdem eine Systemfestplatte erforderlich. https://["Zeigen Sie Details zur Standardkonfiguration des Connectors an"^].
 
 
 

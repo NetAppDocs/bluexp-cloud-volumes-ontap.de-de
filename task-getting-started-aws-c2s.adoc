@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-getting-started-aws-c2s.html 
-keywords: commercial cloud services, c2s, secret region, aws secret region, cloud manager 
-summary: 'Ähnlich wie bei einer standardmäßigen AWS Region können Sie BlueXP (früher Cloud Manager) in der AWS Commercial Cloud Services Umgebung (C2S) verwenden, um Cloud Volumes ONTAP zu implementieren, das Funktionen der Enterprise-Klasse für Ihren Cloud Storage bietet. AWS C2S ist eine geschlossene Region speziell für die USA Intelligence Community; die Anweisungen auf dieser Seite gelten nur für Benutzer der Region AWS C2S.' 
+keywords: commercial cloud services, c2s, secret region, aws secret region, cloud manager, BlueXP 
+summary: 'Ähnlich wie eine Standard-AWS-Region können Sie BlueXP in der AWS C2S-Umgebung (Commercial Cloud Services) einsetzen, um Cloud Volumes ONTAP zu implementieren. Damit profitieren Sie von Funktionen der Enterprise-Klasse für Ihren Cloud-Storage. AWS C2S ist eine geschlossene Region speziell für die USA Intelligence Community; die Anweisungen auf dieser Seite gelten nur für Benutzer der Region AWS C2S.' 
 ---
 = Erste Schritte mit Cloud Volumes ONTAP in der AWS C2S Umgebung
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Ähnlich wie bei einer standardmäßigen AWS Region können Sie BlueXP
 
 
 [role="lead"]
-Ähnlich wie eine Standard-Region von AWS können Sie Cloud Manager in verwenden https://aws.amazon.com/federal/us-intelligence-community/["AWS: Kommerzielle Cloud-Services (C2S)"] Umgebung zum Implementieren von Cloud Volumes ONTAP, die Funktionen der Enterprise-Klasse für Ihren Cloud Storage bietet. AWS C2S ist eine geschlossene Region speziell für die USA Intelligence Community; die Anweisungen auf dieser Seite gelten nur für Benutzer der Region AWS C2S.
+Ähnlich wie eine Standard-Region von AWS können Sie Cloud Manager in verwenden https://["AWS: Kommerzielle Cloud-Services (C2S)"] Umgebung zum Implementieren von Cloud Volumes ONTAP, die Funktionen der Enterprise-Klasse für Ihren Cloud Storage bietet. AWS C2S ist eine geschlossene Region speziell für die USA Intelligence Community; die Anweisungen auf dieser Seite gelten nur für Benutzer der Region AWS C2S.
 
 
 
@@ -366,7 +366,7 @@ Beachten Sie beim Konfigurieren der Instanz Folgendes:
 
 . Richten Sie Cloud Manager von einem Host aus ein, der eine Verbindung zur Connector-Instanz hat:
 +
-.. Öffnen Sie einen Webbrowser, und geben Sie die folgende URL ein: http://ipaddress[]
+.. Öffnen Sie einen Webbrowser, und geben Sie die folgende URL ein: http://[]
 .. Geben Sie einen Proxy-Server für die Verbindung zu AWS-Services an.
 .. Laden Sie das Zertifikat, das Sie in Schritt 1 erhalten haben, hoch.
 .. Führen Sie die Schritte im Setup-Assistenten aus, um Cloud Manager einzurichten.

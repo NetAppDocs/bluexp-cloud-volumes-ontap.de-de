@@ -40,7 +40,7 @@ Wenn keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten 
 
 Wenn Sie strenge ausgehende Regeln für Cloud Volumes ONTAP definiert haben, müssen Sie auch sicherstellen, dass die Cloud Volumes ONTAP-Sicherheitsgruppe _Outbound_-Verbindungen über Port 3128 zulässt.
 
-Nachdem Sie bestätigt haben, dass der ausgehende Internetzugang verfügbar ist, können Sie AutoSupport testen, um sicherzustellen, dass er Nachrichten senden kann. Anweisungen finden Sie unter https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP Dokumentation: Einrichten von AutoSupport"^].
+Nachdem Sie bestätigt haben, dass der ausgehende Internetzugang verfügbar ist, können Sie AutoSupport testen, um sicherzustellen, dass er Nachrichten senden kann. Anweisungen finden Sie unter https://["ONTAP Dokumentation: Einrichten von AutoSupport"^].
 
 Wenn Sie von BlueXP darüber informiert werden, dass AutoSupport-Meldungen nicht gesendet werden können, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Fehler bei der AutoSupport Konfiguration beheben"].
 
@@ -50,7 +50,7 @@ Wenn Sie von BlueXP darüber informiert werden, dass AutoSupport-Meldungen nicht
 
 Die HA-Mediatorinstanz muss über eine ausgehende Verbindung zum AWS EC2-Service verfügen, damit sie beim Storage-Failover unterstützt werden kann. Um die Verbindung bereitzustellen, können Sie eine öffentliche IP-Adresse hinzufügen, einen Proxyserver angeben oder eine manuelle Option verwenden.
 
-Die manuelle Option kann ein NAT-Gateway oder ein VPC-Endpunkt der Schnittstelle vom Ziel-Subnetz zum AWS EC2-Dienst sein. Details zu VPC-Endpunkten finden Sie unter http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["AWS Dokumentation: Interface VPC Endpunkte (AWS PrivateLink)"^].
+Die manuelle Option kann ein NAT-Gateway oder ein VPC-Endpunkt der Schnittstelle vom Ziel-Subnetz zum AWS EC2-Dienst sein. Details zu VPC-Endpunkten finden Sie unter http://["AWS Dokumentation: Interface VPC Endpunkte (AWS PrivateLink)"^].
 
 
 
@@ -176,23 +176,23 @@ TIP: Wenn eine Implementierung in mehreren Verfügbarkeitszonen erstellt wird, w
 Sie müssen keine Sicherheitsgruppen erstellen, weil BlueXP das für Sie tut. Wenn Sie Ihr eigenes verwenden müssen, lesen Sie link:reference-security-groups.html["Regeln für Sicherheitsgruppen"].
 
 
-TIP: Sie suchen Informationen über den Connector? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Zeigen Sie die Sicherheitsgruppenregeln für den Konnektor an"^]
+TIP: Sie suchen Informationen über den Connector? https://["Zeigen Sie die Sicherheitsgruppenregeln für den Konnektor an"^]
 
 
 
 === Verbindung für Daten-Tiering
 
-Wenn Sie EBS als Performance-Tier und AWS S3 als Kapazitäts-Tier verwenden möchten, müssen Sie sicherstellen, dass Cloud Volumes ONTAP eine Verbindung zu S3 hat. Die beste Möglichkeit, diese Verbindung bereitzustellen, besteht darin, einen VPC-Endpunkt für den S3-Dienst zu erstellen. Anweisungen hierzu finden Sie unter https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS Dokumentation: Erstellen eines Gateway-Endpunkts"^].
+Wenn Sie EBS als Performance-Tier und AWS S3 als Kapazitäts-Tier verwenden möchten, müssen Sie sicherstellen, dass Cloud Volumes ONTAP eine Verbindung zu S3 hat. Die beste Möglichkeit, diese Verbindung bereitzustellen, besteht darin, einen VPC-Endpunkt für den S3-Dienst zu erstellen. Anweisungen hierzu finden Sie unter https://["AWS Dokumentation: Erstellen eines Gateway-Endpunkts"^].
 
 Wenn Sie den VPC-Endpunkt erstellen, wählen Sie die Region, den VPC und die Routing-Tabelle aus, die der Cloud Volumes ONTAP Instanz entspricht. Sie müssen auch die Sicherheitsgruppe ändern, um eine ausgehende HTTPS-Regel hinzuzufügen, die Datenverkehr zum S3-Endpunkt ermöglicht. Andernfalls kann Cloud Volumes ONTAP keine Verbindung zum S3-Service herstellen.
 
-Informationen zu Problemen finden Sie unter https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS Support Knowledge Center: Warum kann ich mich nicht über einen Gateway VPC Endpunkt mit einem S3-Bucket verbinden?"^]
+Informationen zu Problemen finden Sie unter https://["AWS Support Knowledge Center: Warum kann ich mich nicht über einen Gateway VPC Endpunkt mit einem S3-Bucket verbinden?"^]
 
 
 
 === Verbindungen zu ONTAP Systemen
 
-Um Daten zwischen einem Cloud Volumes ONTAP System in AWS und ONTAP Systemen in anderen Netzwerken zu replizieren, müssen Sie eine VPN-Verbindung zwischen der AWS VPC und dem anderen Netzwerk herstellen, beispielsweise das Unternehmensnetzwerk. Anweisungen hierzu finden Sie unter https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/SetUpVPNConnections.html["AWS Dokumentation: Einrichten einer AWS VPN-Verbindung"^].
+Um Daten zwischen einem Cloud Volumes ONTAP System in AWS und ONTAP Systemen in anderen Netzwerken zu replizieren, müssen Sie eine VPN-Verbindung zwischen der AWS VPC und dem anderen Netzwerk herstellen, beispielsweise das Unternehmensnetzwerk. Anweisungen hierzu finden Sie unter https://["AWS Dokumentation: Einrichten einer AWS VPN-Verbindung"^].
 
 
 
@@ -202,7 +202,7 @@ Wenn Sie CIFS-Storage bereitstellen möchten, müssen Sie DNS und Active Directo
 
 Der DNS-Server muss Namensauflösungsdienste für die Active Directory-Umgebung bereitstellen. Sie können DHCP-Optionssätze so konfigurieren, dass sie den Standard-EC2-DNS-Server verwenden, der nicht der von der Active Directory-Umgebung verwendete DNS-Server sein darf.
 
-Anweisungen finden Sie unter https://aws-quickstart.github.io/quickstart-microsoft-activedirectory/["AWS Dokumentation: Active Directory Domain Services in der AWS Cloud: Quick Start Reference Deployment"^].
+Anweisungen finden Sie unter https://["AWS Dokumentation: Active Directory Domain Services in der AWS Cloud: Quick Start Reference Deployment"^].
 
 
 
@@ -254,7 +254,7 @@ Wenn Sie nur eine Routingtabelle für die Subnetze in Ihrem VPC (der Hauptroutin
 
 Sie können beispielsweise zwei Subnetze haben, die mit verschiedenen Routing-Tabellen verknüpft sind. Wenn Sie Routing-Tabelle A auswählen, jedoch nicht Route-Tabelle B, können Clients in der mit Routing-Tabelle A verknüpften Subnetz auf das HA-Paar zugreifen, die Clients im Subnetz der Routing-Tabelle B können jedoch nicht.
 
-Weitere Informationen zu Routingtabellen finden Sie unter http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS Documentation: Routingtabellen"^].
+Weitere Informationen zu Routingtabellen finden Sie unter http://["AWS Documentation: Routingtabellen"^].
 
 --
 Anbindung an NetApp Management Tools:: Für den Einsatz von NetApp Management Tools mit HA-Konfigurationen in mehreren Verfügbarkeitszonen stehen zwei Verbindungsoptionen zur Verfügung:
@@ -281,6 +281,6 @@ image:diagram_ha_networking.png["Konzeptionelles Image mit Komponenten in einer 
 
 Wenn Sie noch keinen Connector erstellt haben, sollten Sie auch die Netzwerkanforderungen für den Connector prüfen.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Sicherheitsgruppenregeln in AWS"^]
+* https://["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
+* https://["Sicherheitsgruppenregeln in AWS"^]
 

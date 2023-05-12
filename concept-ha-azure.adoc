@@ -31,7 +31,7 @@ image:diagram_ha_azure.png["Ein Konzept-Image, das einen Load Balancer für das 
 Beachten Sie Folgendes zu den Azure Komponenten, die BlueXP für Sie implementiert:
 
 Azure Standard Load Balancer:: Der Load Balancer managt den eingehenden Datenverkehr zum Cloud Volumes ONTAP HA-Paar.
-Verfügbarkeitsgruppe:: Das Azure Availability Set ist eine logische Gruppierung der Cloud Volumes ONTAP Nodes. Das Verfügbarkeitsset stellt sicher, dass sich die Knoten in unterschiedlichen Fehler- und Updatedomänen befinden, um Redundanz und Verfügbarkeit zu gewährleisten. https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["Weitere Informationen zur Verfügbarkeit finden Sie in der Azure Dokumentation"^].
+Verfügbarkeitsgruppe:: Das Azure Availability Set ist eine logische Gruppierung der Cloud Volumes ONTAP Nodes. Das Verfügbarkeitsset stellt sicher, dass sich die Knoten in unterschiedlichen Fehler- und Updatedomänen befinden, um Redundanz und Verfügbarkeit zu gewährleisten. https://["Weitere Informationen zur Verfügbarkeit finden Sie in der Azure Dokumentation"^].
 Festplatten:: Die Kundendaten werden auf den Blobs für Premium Storage Seite gespeichert. Jeder Node hat Zugriff auf den Storage des anderen Nodes. Für ist auch zusätzlicher Speicher erforderlich link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["Boot-, Root- und Core-Daten"].
 Konten mit Storage-Systemen::
 +
@@ -39,7 +39,7 @@ Konten mit Storage-Systemen::
 * Für verwaltete Festplatten ist ein Speicherkonto erforderlich.
 * Für die Blobs auf Premium Storage-Seite sind mindestens ein Storage-Konto erforderlich, da das Kapazitätslimit pro Storage-Konto erreicht wird.
 +
-https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Azure Dokumentation: Skalierbarkeit und Performance von Azure Storage-Konten"^].
+https://["Azure Dokumentation: Skalierbarkeit und Performance von Azure Storage-Konten"^].
 
 * Für das Daten-Tiering zu Azure Blob Storage ist ein Storage-Konto erforderlich.
 * Ab Cloud Volumes ONTAP 9.7 sind die Storage-Konten, die BlueXP für HA-Paare erstellt, allgemeine v2 Storage-Konten.
@@ -60,7 +60,7 @@ image:diagram_ha_azure_saz_lrs.png["Ein konzeptionelles Image, das einen Load Ba
 Beachten Sie Folgendes zu den Azure Komponenten, die BlueXP für Sie implementiert:
 
 Azure Standard Load Balancer:: Der Load Balancer managt den eingehenden Datenverkehr zum Cloud Volumes ONTAP HA-Paar.
-Verfügbarkeitsgruppe:: Das Azure Availability Set ist eine logische Gruppierung der Cloud Volumes ONTAP Nodes. Das Verfügbarkeitsset stellt sicher, dass sich die Knoten in unterschiedlichen Fehler- und Updatedomänen befinden, um Redundanz und Verfügbarkeit zu gewährleisten. https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["Weitere Informationen zur Verfügbarkeit finden Sie in der Azure Dokumentation"^].
+Verfügbarkeitsgruppe:: Das Azure Availability Set ist eine logische Gruppierung der Cloud Volumes ONTAP Nodes. Das Verfügbarkeitsset stellt sicher, dass sich die Knoten in unterschiedlichen Fehler- und Updatedomänen befinden, um Redundanz und Verfügbarkeit zu gewährleisten. https://["Weitere Informationen zur Verfügbarkeit finden Sie in der Azure Dokumentation"^].
 Festplatten:: Kundendaten befinden sich auf lokal redundanten, von LRS (Storage) gemanagten Festplatten. Jeder Node hat Zugriff auf den Storage des anderen Nodes. Für ist auch zusätzlicher Speicher erforderlich link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["Boot-, Root-, Partner-Root-, Core- und NVRAM-Daten"].
 Konten mit Storage-Systemen:: Storage-Konten werden für gemanagte, festplattenbasierte Implementierungen verwendet, um Diagnoseprotokolle und das Tiering an Blob-Storage zu verarbeiten.
 
@@ -76,7 +76,7 @@ image:diagram_ha_azure_maz.png["Ein Konzept-Image, das einen Load Balancer für 
 Beachten Sie Folgendes zu den Azure Komponenten, die BlueXP für Sie implementiert:
 
 Azure Standard Load Balancer:: Der Load Balancer managt den eingehenden Datenverkehr zum Cloud Volumes ONTAP HA-Paar.
-Verfügbarkeitszonen:: Zwei Cloud Volumes ONTAP-Nodes werden in verschiedenen Verfügbarkeitszonen bereitgestellt. Verfügbarkeitszonen stellen sicher, dass sich die Nodes in unterschiedlichen Fehlerdomänen befinden. https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["Weitere Informationen zum zonenredundanten Azure-Speicher für verwaltete Festplatten finden Sie in den Azure-Dokumentationen"^].
+Verfügbarkeitszonen:: Zwei Cloud Volumes ONTAP-Nodes werden in verschiedenen Verfügbarkeitszonen bereitgestellt. Verfügbarkeitszonen stellen sicher, dass sich die Nodes in unterschiedlichen Fehlerdomänen befinden. https://["Weitere Informationen zum zonenredundanten Azure-Speicher für verwaltete Festplatten finden Sie in den Azure-Dokumentationen"^].
 Festplatten:: Kundendaten befinden sich auf zonenredundanten Storage-Laufwerken (ZRS), die von gemanagt werden. Jeder Node hat Zugriff auf den Storage des anderen Nodes. Für ist auch zusätzlicher Speicher erforderlich link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["Boot-, Root-, Partner-Root- und Kerndaten"].
 Konten mit Storage-Systemen:: Storage-Konten werden für gemanagte, festplattenbasierte Implementierungen verwendet, um Diagnoseprotokolle und das Tiering an Blob-Storage zu verarbeiten.
 
@@ -102,7 +102,7 @@ Bei NAS-Konfigurationen werden Daten-IP-Adressen bei Ausfällen automatisch zwis
 Für iSCSI verwendet Cloud Volumes ONTAP Multipath I/O (MPIO) und Asymmetric Logical Unit Access (ALUA), um das Pfad-Failover zwischen den Aktiv- und Nicht-optimierten Pfaden zu managen.
 
 
-NOTE: Informationen darüber, welche spezifischen Host-Konfigurationen ALUA unterstützen, finden Sie im http://mysupport.netapp.com/matrix["NetApp Interoperabilitäts-Matrix-Tool"^] Sowie das Installations- und Setup-Handbuch für Host Utilities für Ihr Host-Betriebssystem.
+NOTE: Informationen darüber, welche spezifischen Host-Konfigurationen ALUA unterstützen, finden Sie im http://["NetApp Interoperabilitäts-Matrix-Tool"^] Sowie das Installations- und Setup-Handbuch für Host Utilities für Ihr Host-Betriebssystem.
 
 Storage-Übernahme, -Resynchronisierung und -Rückgabe sind standardmäßig automatisch erfolgt. Es ist keine Benutzeraktion erforderlich.
 

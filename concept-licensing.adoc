@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-licensing.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, cloud backup, digital wallet 
 summary: Für Cloud Volumes ONTAP sind verschiedene Lizenzierungsoptionen verfügbar. Mit jeder Option können Sie eine Konfiguration wählen, die Ihren Anforderungen entspricht. 
 ---
 = Cloud Volumes ONTAP Lizenzierung
@@ -23,7 +23,7 @@ Für Cloud Volumes ONTAP sind verschiedene Lizenzierungsoptionen verfügbar. Jed
 Die folgenden Lizenzierungsoptionen stehen für Neukunden zur Verfügung.
 
 Kapazitätsbasierte Lizenzierung:: Bezahlen Sie für mehrere Cloud Volumes ONTAP Systeme Ihres NetApp Kontos durch bereitgestellte Kapazität. Mit der Möglichkeit, zusätzliche Cloud-Datenservices zu erwerben
-Keystone Flex Abonnement:: Ein abonnementbasierter Service mit Bezahlung nach Bedarf für eine nahtlose Hybrid Cloud-Nutzung für HA-Paare
+Keystone Abonnement:: Ein abonnementbasierter Service mit Bezahlung nach Bedarf für eine nahtlose Hybrid Cloud-Nutzung für HA-Paare
 
 
 Das vorherige Node-Lizenzmodell bleibt bestehenden Kunden, die bereits eine Lizenz erworben haben oder über ein aktives Marketplace-Abonnement verfügen, verfügbar.
@@ -137,7 +137,7 @@ Sie bezahlen nach Kapazität für jede Art von Cloud Volumes ONTAP-Konfiguration
 +
 Single Node oder HA, berechnet für primäre und sekundäre Volumes dieselbe Kapazität
 
-* Umfasst unbegrenzte Volume-Backups mit Cloud-Backup, aber nur für Cloud Volumes ONTAP Systeme, die das Professional-Paket verwenden
+* Umfasst unbegrenzte Volume-Backups mit BlueXP Backup und Recovery, aber nur für Cloud Volumes ONTAP Systeme, die das Professional Paket verwenden
 * Fügen Sie die Cloud-Datenservices von NetApp zu zusätzlichen Kosten hinzu
 
 
@@ -166,7 +166,7 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-https://cloud.netapp.com/cloud-volumes-edge-cache["Erfahren Sie mehr darüber, wie Cloud Volumes Edge Cache Sie dabei unterstützen kann"^]
+https://["Erfahren Sie mehr darüber, wie Cloud Volumes Edge Cache Sie dabei unterstützen kann"^]
 
 
 
@@ -214,13 +214,13 @@ link:task-manage-capacity-licenses.html["Erfahren Sie, wie Sie Lademethoden änd
 
 === Preisgestaltung
 
-Weitere Informationen zur Preisgestaltung finden Sie unter https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP Website"^].
+Weitere Informationen zur Preisgestaltung finden Sie unter https://["NetApp BlueXP Website"^].
 
 
 
 === Testversionen
 
-Eine kostenlose 30-Tage-Testversion steht Ihnen über das Pay-as-you-go-Abonnement im Markt Ihres Cloud-Providers zur Verfügung. Die kostenlose Testversion umfasst Cloud Volumes ONTAP und Cloud Backup. Die Testversion beginnt, wenn Sie das Angebot auf dem Markt abonnieren.
+Eine kostenlose 30-Tage-Testversion steht Ihnen über das Pay-as-you-go-Abonnement im Markt Ihres Cloud-Providers zur Verfügung. Die kostenlose Testversion beinhaltet Backup und Recovery von Cloud Volumes ONTAP und BlueXP. Die Testversion beginnt, wenn Sie das Angebot auf dem Markt abonnieren.
 
 Es gibt keine Instanz- oder Kapazitätsbeschränkungen. Sie können Cloud Volumes ONTAP Systeme beliebig viele bereitstellen und so viel Kapazität wie nötig zuweisen, wobei 30 Tage lang kostenlos zur Verfügung stehen. Die kostenlose Testversion wird nach 30 Tagen automatisch in ein kostenpflichtiges stündliches Abonnement konvertiert.
 
@@ -269,7 +269,7 @@ Das sind insgesamt sechs Systeme. Sie hätten dann Platz für weitere 14 Systeme
 
 Wenn eine große Implementierung mehr als 20 Systeme erfordert, wenden Sie sich an Ihren Ansprechpartner oder Ihr Vertriebsteam.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["Weitere Informationen über NetApp Accounts"^].
+https://["Weitere Informationen über NetApp Accounts"^].
 
 
 
@@ -299,7 +299,7 @@ Wenn Sie Ihre BYOL-Kapazität überschreiten oder Ihre Lizenz abgelaufen ist, we
 
 Bei dem Essentials-Paket werden die Bereitstellungstyp (HA oder Single Node) und der Volume-Typ (primär oder sekundär) abgerechnet. Beispielsweise hat _Essentials HA_ andere Preise als _Essentials Secondary HA_.
 
-Wenn Sie eine Essentials-Lizenz von NetApp (BYOL) erworben haben und die lizenzierte Kapazität für diese Implementierung und diesen Volume-Typ überschreiten, fallen für die Digital Wallet höhere Gebühren an (wenn Sie eine Lizenz besitzen). Dies geschieht, weil wir zuerst die verfügbare Kapazität nutzen, die Sie bereits als Prepaid-Kapazität gekauft haben, bevor wir die Rechnung gegen den Markt berechnen. Die Abrechnung auf dem Marktplatz würde Ihre monatliche Rechnung mit Kosten ergänzen.
+Wenn Sie eine Essentials-Lizenz von NetApp (BYOL) erworben haben und die lizenzierte Kapazität für diese Implementierung und diesen Volume-Typ überschreiten, berechnet das Digital Wallet von BlueXP mehr als eine günstigere Essentials-Lizenz (sofern vorhanden). Dies geschieht, weil wir zuerst die verfügbare Kapazität nutzen, die Sie bereits als Prepaid-Kapazität gekauft haben, bevor wir die Rechnung gegen den Markt berechnen. Die Abrechnung auf dem Marktplatz würde Ihre monatliche Rechnung mit Kosten ergänzen.
 
 Hier ein Beispiel Nehmen wir an, Sie haben die folgenden Lizenzen für das Essentials-Paket:
 
@@ -307,9 +307,9 @@ Hier ein Beispiel Nehmen wir an, Sie haben die folgenden Lizenzen für das Essen
 * Eine 500 tib _Essentials Single Node_-Lizenz, die nur über 100 tib Speicherkapazität verfügt
 
 
-Weitere 50 tib werden auf einem HA-Paar mit sekundären Volumes bereitgestellt. Statt die 50 tib an PAYGO zu laden, berechnet das Digital Wallet die 50 tib Überlastung gegen die _Essentials Single Node_-Lizenz. Diese Lizenz ist teurer als _Essentials Secondary HA_, aber sie ist günstiger als der PAYGO-Preis.
+Weitere 50 tib werden auf einem HA-Paar mit sekundären Volumes bereitgestellt. Das Digital Wallet von BlueXP berechnet nicht den 50 tib großen PAYGO-Service für die _Essentials Single Node_ Lizenz, sondern den 50 tib zusätzlichen Aufpreis. Diese Lizenz ist teurer als _Essentials Secondary HA_, aber sie ist günstiger als der PAYGO-Preis.
 
-In der Digital Wallet werden 50 tib für die _Essentials Single Node_-Lizenz berechnet.
+In der Digital Wallet von BlueXP werden die 50 tib Daten mit der _Essentials Single Node_ Lizenz verrechnet angezeigt.
 
 
 
@@ -362,21 +362,21 @@ endif::gcp[]
 
 
 
-== Keystone Flex Abonnement
+== Keystone Abonnement
 
 Dieser auf einem Abonnement basierende Pay-as-you-grow-Service bietet eine nahtlose Hybrid-Cloud-Lösung für all jene, die Betriebskosten von Anfang an oder im Leasing bevorzugen.
 
-Die Abrechnung basiert auf der Größe der zugesagt Kapazität für ein oder mehrere Cloud Volumes ONTAP HA-Paare in Ihrem Keystone Flex Abonnement.
+Die Abrechnung basiert auf der Größe der gebuchten Kapazität für ein oder mehrere Cloud Volumes ONTAP HA-Paare in Ihrer Keystone Subscription.
 
-Die bereitgestellte Kapazität für jedes Volume wird regelmäßig aggregiert und mit der zugewiesenen Kapazität auf Ihrem Keystone Flex Subscription verglichen. Dabei werden für das Keystone Flex Subscription alle Überalungen als Burst berechnet.
+Die bereitgestellte Kapazität für jedes Volume wird aggregiert und regelmäßig mit der gebuchten Kapazität in Ihrem Keystone Abonnement verglichen. Etwaige Überkapazitäten werden als Burst-Kapazität in Ihrem Keystone Abonnement abgerechnet.
 
-https://www.netapp.com/services/subscriptions/keystone/flex-subscription/["Weitere Informationen zu Keystone Flex Abonnements"^].
+https://["Weitere Informationen zu NetApp Keystone Abonnements"^].
 
 
 
 === Unterstützte Konfigurationen
 
-Keystone Flex Abonnements werden mit HA-Paaren unterstützt. Diese Lizenzoption wird derzeit bei Systemen mit einzelnen Nodes nicht unterstützt.
+Keystone Abonnements werden von HA-Paaren unterstützt. Diese Lizenzoption wird derzeit bei Systemen mit einzelnen Nodes nicht unterstützt.
 
 
 
@@ -388,7 +388,7 @@ Jedes einzelne Cloud Volumes ONTAP System unterstützt Kapazitäten von bis zu 2
 
 === Erste Schritte
 
-Erfahren Sie mehr zum Einstieg in ein Keystone Flex Abonnement:
+So starten Sie mit einem Keystone Abonnement:
 
 ifdef::aws[]
 
@@ -427,7 +427,7 @@ Node-basierte Lizenzierung ist weiterhin für Bestandskunden verfügbar:
 
 == Lizenzkonvertierungen
 
-Das Konvertieren eines vorhandenen Cloud Volumes ONTAP-Systems in eine andere Lizenzmethode wird nicht unterstützt. Die drei aktuellen Lizenzmethoden sind kapazitätsbasierte Lizenzierung, Keystone Flex-Abonnements und Node-basierte Lizenzierung. Beispielsweise kann ein System nicht von der Node-basierten Lizenzierung in die kapazitätsbasierte Lizenzierung konvertiert werden (und umgekehrt).
+Das Konvertieren eines vorhandenen Cloud Volumes ONTAP-Systems in eine andere Lizenzmethode wird nicht unterstützt. Die drei aktuellen Lizenzierungsmethoden sind kapazitätsbasierte Lizenzierung, Keystone Abonnements und Node-basierte Lizenzierung. Beispielsweise kann ein System nicht von der Node-basierten Lizenzierung in die kapazitätsbasierte Lizenzierung konvertiert werden (und umgekehrt).
 
 Wenn Sie auf eine andere Lizenzmethode wechseln möchten, können Sie eine Lizenz erwerben, ein neues Cloud Volumes ONTAP System mit dieser Lizenz implementieren und die Daten anschließend auf dieses neue System replizieren.
 

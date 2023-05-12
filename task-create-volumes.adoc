@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-create-volumes.html 
-keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates 
+keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates, cloud backup 
 summary: Falls Sie nach dem Start des Cloud Volumes ONTAP-Systems mehr Speicherplatz benötigen, können Sie aus BlueXP neue FlexVol Volumes für NFS, CIFS oder iSCSI erstellen. 
 ---
 = FlexVol Volumes erstellen
@@ -87,7 +87,7 @@ Einige der Felder auf dieser Seite sind selbsterklärend. In der folgenden Liste
 | Volume-Größe | Die maximale Größe, die Sie eingeben können, hängt weitgehend davon ab, ob Sie Thin Provisioning aktivieren, wodurch Sie ein Volume erstellen können, das größer ist als der derzeit verfügbare physische Storage. 
 
 
-| Tags | Tags, die Sie einem Volume hinzufügen, werden dem zugeordnet https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["Applikationsvorlagen-Service"^], Die Ihnen helfen, die Verwaltung Ihrer Ressourcen zu organisieren und zu vereinfachen. 
+| Tags | Tags, die Sie einem Volume hinzufügen, werden dem zugeordnet https://["Applikationsvorlagen-Service"^], Die Ihnen helfen, die Verwaltung Ihrer Ressourcen zu organisieren und zu vereinfachen. 
 
 
 | Storage-VM (SVM) | Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihren Kunden Storage und Datenservices zur Verfügung stellt. Sie können dies als SVM oder vServer wissen. Cloud Volumes ONTAP ist standardmäßig mit einer Storage-VM konfiguriert, aber einige Konfigurationen unterstützen zusätzliche Storage-VMs. Sie können die Storage-VM für das neue Volume angeben. 
@@ -145,20 +145,20 @@ endif::aws[]
 
 ifdef::azure[]
 
-*** Um Azure AD-Domänendienste als AD-Server für Cloud Volumes ONTAP zu konfigurieren, geben Sie in diesem Feld *OU=AADDC-Computer* oder *OU=AADDC-Benutzer* ein.https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure-Dokumentation: Erstellen Sie eine Organisationseinheit (Organisationseinheit, OU) in einer von Azure AD-Domänendiensten gemanagten Domäne"^]
+*** Um Azure AD-Domänendienste als AD-Server für Cloud Volumes ONTAP zu konfigurieren, geben Sie in diesem Feld *OU=AADDC-Computer* oder *OU=AADDC-Benutzer* ein.https://["Azure-Dokumentation: Erstellen Sie eine Organisationseinheit (Organisationseinheit, OU) in einer von Azure AD-Domänendiensten gemanagten Domäne"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-*** Um von Google verwaltete Microsoft AD als AD-Server für Cloud Volumes ONTAP zu konfigurieren, geben Sie in diesem Feld *OU=Computer,OU=Cloud* ein.https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud Documentation: Organizational Units in Google Managed Microsoft AD"^]
+*** Um von Google verwaltete Microsoft AD als AD-Server für Cloud Volumes ONTAP zu konfigurieren, geben Sie in diesem Feld *OU=Computer,OU=Cloud* ein.https://["Google Cloud Documentation: Organizational Units in Google Managed Microsoft AD"^]
 
 
 endif::gcp[]
 
 DNS-Domäne:: Die DNS-Domain für die Cloud Volumes ONTAP Storage Virtual Machine (SVM). In den meisten Fällen entspricht die Domäne der AD-Domäne.
-NTP-Server:: Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP Automation Dokumentation"^] Entsprechende Details.
+NTP-Server:: Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://["BlueXP Automation Dokumentation"^] Entsprechende Details.
 +
 --
 Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers konfigurieren können. Er ist nicht konfigurierbar, nachdem Sie den CIFS-Server erstellt haben.
@@ -252,7 +252,7 @@ image:screenshot_define_cvo_vol_from_template.png["Ein Screenshot mit einer leer
 . Unter _context_ wird die Arbeitsumgebung mit dem Namen der Arbeitsumgebung, mit der Sie begonnen haben, ausgefüllt. Wählen Sie die *Speicher-VM* aus, auf der das Volume erstellt werden soll.
 . Fügen Sie Werte für alle Parameter hinzu, die nicht hartcodiert sind. Siehe <<create a volume,Erstellen eines Volumes>> Bietet Details zu allen Parametern, die erforderlich sind, um die Implementierung eines Cloud Volumes ONTAP Volumes abzuschließen.
 . Klicken Sie auf *Apply*, um die konfigurierten Parameter in der ausgewählten Aktion zu speichern.
-. Wenn keine weiteren Aktionen definiert werden müssen (z. B. Konfiguration von Cloud Backup), klicken Sie auf *Vorlage speichern*.
+. Wenn keine weiteren Aktionen definiert werden müssen (z. B. Konfiguration von BlueXP Backup und Recovery), klicken Sie auf *Vorlage speichern*.
 +
 Wenn es andere Aktionen gibt, klicken Sie im linken Fensterbereich auf die Aktion, um die erforderlichen Parameter anzuzeigen.
 
@@ -270,7 +270,7 @@ Cloud Volumes ONTAP stellt das Volume bereit und zeigt eine Seite an, sodass der
 
 image:screenshot_template_creating_resource_cvo.png["Ein Screenshot zeigt den Fortschritt der Erstellung Ihres neuen Volumes aus der Vorlage."]
 
-Außerdem werden, wenn sekundäre Aktionen in der Vorlage implementiert werden, z. B. wenn Sie Cloud Backup für das Volume aktivieren, diese Aktion ausgeführt.
+Wenn außerdem eine sekundäre Aktion in der Vorlage implementiert wird, beispielsweise durch die Aktivierung von BlueXP Backup und Recovery auf dem Volume, wird ebenfalls ausgeführt.
 
 
 

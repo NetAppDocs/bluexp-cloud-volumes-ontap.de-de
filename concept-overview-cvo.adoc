@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-overview-cvo.html 
-keywords: what is cloud volumes ontap, cloud volumes ontap features, features, cloud volumes ontap overview, overview of cloud volumes ontap 
+keywords: what is cloud volumes ontap, cloud volumes ontap features, features, cloud volumes ontap overview, overview of cloud volumes ontap, cloud backup, cloud data sense 
 summary: Mit Cloud Volumes ONTAP können Sie Ihre Cloud Storage-Kosten und -Performance optimieren und gleichzeitig die Datensicherung, -Sicherheit und -Compliance verbessern. 
 ---
 = Weitere Informationen zu Cloud Volumes ONTAP
@@ -31,10 +31,10 @@ Zuverlässigkeit der Enterprise-Klasse und unterbrechungsfreien Betrieb bei Ausf
 Cloud Volumes ONTAP nutzt SnapMirror, die branchenführende Replizierungstechnologie von NetApp, um On-Premises-Daten in der Cloud zu replizieren, sodass einfach sekundäre Kopien für diverse Anwendungsfälle verfügbar sind.
 
 +
-Die Integration von Cloud Volumes ONTAP in Cloud Backup bietet darüber hinaus Backup- und Restore-Funktionen zu Sicherungsmöglichkeiten und zur Langzeitarchivierung Ihrer Cloud-Daten.
+Cloud Volumes ONTAP lässt sich auch in BlueXP Backup und Recovery integrieren, um Backup- und Restore-Funktionen zum Schutz und zur langfristigen Archivierung Ihrer Cloud-Daten zu bieten.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Weitere Informationen zu Cloud Backup"^]
+https://["Erfahren Sie mehr über Backup und Recovery von BlueXP"^]
 
 * Daten-Tiering
 +
@@ -45,7 +45,7 @@ Wechseln Sie nach Bedarf zwischen hochperformanten Storage Pools, ohne Applikati
 Konsistenz von NetApp Snapshot Kopien mit NetApp SnapCenter sicherstellen.
 
 +
-https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html["Weitere Informationen zu SnapCenter"^]
+https://["Weitere Informationen zu SnapCenter"^]
 
 * Datensicherheit
 +
@@ -53,16 +53,16 @@ Cloud Volumes ONTAP unterstützt die Datenverschlüsselung und bietet Schutz vor
 
 * Kontrolloptionen für die Einhaltung des Datenschutzes
 +
-Integration in Cloud Data Sense unterstützt Sie dabei, den Datenkontext zu verstehen und sensible Daten zu identifizieren.
+Die Integration in die BlueXP Klassifizierung erleichtert Ihnen das Verständnis des Datenkontexts und die Identifizierung sensibler Daten.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Erfahren Sie mehr über Cloud Data Sense"^]
+https://["Weitere Informationen zur BlueXP Klassifizierung"^]
 
 
 
 
 NOTE: Lizenzen für ONTAP Funktionen sind im Lieferumfang von Cloud Volumes ONTAP enthalten.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Anzeigen der unterstützten Cloud Volumes ONTAP Konfigurationen"^]
+https://["Anzeigen der unterstützten Cloud Volumes ONTAP Konfigurationen"^]
 
-https://cloud.netapp.com/ontap-cloud["Erfahren Sie mehr über Cloud Volumes ONTAP"^]
+https://["Erfahren Sie mehr über Cloud Volumes ONTAP"^]

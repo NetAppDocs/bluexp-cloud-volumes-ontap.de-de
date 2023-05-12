@@ -361,4 +361,4 @@ Die vordefinierte Sicherheitsgruppe enthält die folgenden ausgehenden Regeln.
 
 == Regeln für den Konnektor
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Zeigen Sie die Sicherheitsgruppenregeln für den Konnektor an"^]
+https://["Zeigen Sie die Sicherheitsgruppenregeln für den Konnektor an"^]

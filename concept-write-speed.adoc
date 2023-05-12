@@ -72,7 +72,7 @@ Wenn Sie ein Single-Node-System verwenden, unterstützt Cloud Volumes ONTAP bei 
 
 Ab Version 9.8 unterstützt Cloud Volumes ONTAP bei fast allen unterstützten EC2-Instanztypen eine hohe Schreibgeschwindigkeit mit HA-Paaren, ausgenommen m5.xlarge und r5.xlarge.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["Erfahren Sie mehr über die von Cloud Volumes ONTAP unterstützten Amazon EC2 Instanzen"^].
+https://["Erfahren Sie mehr über die von Cloud Volumes ONTAP unterstützten Amazon EC2 Instanzen"^].
 
 endif::aws[]
 
@@ -84,7 +84,7 @@ ifdef::azure[]
 
 Wenn Sie ein Single-Node-System verwenden, unterstützt Cloud Volumes ONTAP für alle VM-Typen eine hohe Schreibgeschwindigkeit.
 
-Wenn Sie ein HA-Paar verwenden, unterstützt Cloud Volumes ONTAP mit mehreren VM-Typen eine hohe Schreibgeschwindigkeit, beginnend mit Version 9.8. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Versionshinweise zu Cloud Volumes ONTAP"^] Um die VM-Typen anzuzeigen, die eine hohe Schreibgeschwindigkeit unterstützen.
+Wenn Sie ein HA-Paar verwenden, unterstützt Cloud Volumes ONTAP mit mehreren VM-Typen eine hohe Schreibgeschwindigkeit, beginnend mit Version 9.8. Wechseln Sie zum https://["Versionshinweise zu Cloud Volumes ONTAP"^] Um die VM-Typen anzuzeigen, die eine hohe Schreibgeschwindigkeit unterstützen.
 
 endif::azure[]
 
@@ -96,9 +96,9 @@ ifdef::gcp[]
 
 Wenn Sie ein Single-Node-System verwenden, unterstützt Cloud Volumes ONTAP bei allen Maschinentypen eine hohe Schreibgeschwindigkeit.
 
-Wenn Sie ein HA-Paar verwenden, unterstützt Cloud Volumes ONTAP für mehrere VM-Typen, beginnend mit Version 9.13.0, eine hohe Schreibgeschwindigkeit. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html#supported-configurations-by-license["Versionshinweise zu Cloud Volumes ONTAP"^] Um die VM-Typen anzuzeigen, die eine hohe Schreibgeschwindigkeit unterstützen.
+Wenn Sie ein HA-Paar verwenden, unterstützt Cloud Volumes ONTAP für mehrere VM-Typen, beginnend mit Version 9.13.0, eine hohe Schreibgeschwindigkeit. Wechseln Sie zum https://["Versionshinweise zu Cloud Volumes ONTAP"^] Um die VM-Typen anzuzeigen, die eine hohe Schreibgeschwindigkeit unterstützen.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Erfahren Sie mehr über die von Cloud Volumes ONTAP unterstützten Google Cloud-Maschinentypen"^].
+https://["Erfahren Sie mehr über die von Cloud Volumes ONTAP unterstützten Google Cloud-Maschinentypen"^].
 
 endif::gcp[]
 
@@ -142,7 +142,7 @@ Zum Prüfen der NV-Fehler-Einstellungen:: `vol show -volume <vol-name> -fields n
 Um die Option „NV-Fehler“ zu deaktivieren:: `vol modify -volume <vol-name> -nvfail off`
 
 
-Wenn ein Datenverlust auftritt, sollte ein NFS- oder iSCSI-Volume mit aktiviertem NVFAIL die Bereitstellung von Daten beenden (es gibt keine Auswirkungen auf CIFS, was ein statusfreies Protokoll ist). Weitere Informationen finden Sie unter https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-mgmt-dr/GUID-40D04B8A-01F7-4E87-8161-E30BD80F5B7F.html["Auswirkungen von NV-Fehler auf den Zugriff auf NFS-Volumes oder LUNs"^].
+Wenn ein Datenverlust auftritt, sollte ein NFS- oder iSCSI-Volume mit aktiviertem NVFAIL die Bereitstellung von Daten beenden (es gibt keine Auswirkungen auf CIFS, was ein statusfreies Protokoll ist). Weitere Informationen finden Sie unter https://["Auswirkungen von NV-Fehler auf den Zugriff auf NFS-Volumes oder LUNs"^].
 
 Um den Status „NV-Fehler“ zu überprüfen:: `vol show -fields in-nvfailed-state`
 

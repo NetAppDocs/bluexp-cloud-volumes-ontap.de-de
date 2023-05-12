@@ -30,7 +30,7 @@ Für Cloud Volumes ONTAP sind verschiedene Lizenzierungsoptionen verfügbar. Jed
 
 == Wählen Sie eine unterstützte Region aus
 
-Cloud Volumes ONTAP wird in den meisten Google Cloud Regionen unterstützt. https://cloud.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^].
+Cloud Volumes ONTAP wird in den meisten Google Cloud Regionen unterstützt. https://["Hier finden Sie die vollständige Liste der unterstützten Regionen"^].
 
 
 
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP wird in den meisten Google Cloud Regionen unterstützt. http
 
 Je nach gewähltem Lizenztyp unterstützt Cloud Volumes ONTAP mehrere Maschinentypen.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Unterstützte Konfigurationen für Cloud Volumes ONTAP in GCP"^]
+https://["Unterstützte Konfigurationen für Cloud Volumes ONTAP in GCP"^]
 
 
 
@@ -46,7 +46,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 
 Die Rohkapazitätsgrenze für ein Cloud Volumes ONTAP System ist an die Lizenz gebunden. Zusätzliche Beschränkungen wirken sich auf die Größe von Aggregaten und Volumes aus. Sie sollten sich dieser Grenzen bei der Planung Ihrer Konfiguration bewusst sein.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html["Storage-Grenzen für Cloud Volumes ONTAP in GCP ein"^]
+https://["Storage-Grenzen für Cloud Volumes ONTAP in GCP ein"^]
 
 
 
@@ -54,13 +54,13 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.
 
 Mit der Dimensionierung Ihres Cloud Volumes ONTAP Systems können Sie die Anforderungen an Performance und Kapazität erfüllen. Bei der Auswahl von Maschinentyp, Festplattentyp und Festplattengröße sind einige wichtige Punkte zu beachten:
 
-Maschinentyp:: Sehen Sie sich die unterstützten Maschinentypen im an http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Und dann lesen Sie die Details von Google zu jedem unterstützten Maschinentyp durch. Passen Sie Ihre Workload-Anforderungen an die Anzahl an vCPUs und Speicher für den Maschinentyp an. Beachten Sie, dass jeder CPU-Kern die Netzwerk-Performance steigert.
+Maschinentyp:: Sehen Sie sich die unterstützten Maschinentypen im an http://["Versionshinweise zu Cloud Volumes ONTAP"^] Und dann lesen Sie die Details von Google zu jedem unterstützten Maschinentyp durch. Passen Sie Ihre Workload-Anforderungen an die Anzahl an vCPUs und Speicher für den Maschinentyp an. Beachten Sie, dass jeder CPU-Kern die Netzwerk-Performance steigert.
 +
 --
 Weitere Informationen finden Sie im Folgenden:
 
-* https://cloud.google.com/compute/docs/machine-types#n1_machine_types["Google Cloud-Dokumentation: N1 Standard-Maschinentypen"^]
-* https://cloud.google.com/docs/compare/data-centers/networking#performance["Google Cloud Dokumentation: Performance"^]
+* https://["Google Cloud-Dokumentation: N1 Standard-Maschinentypen"^]
+* https://["Google Cloud Dokumentation: Performance"^]
 
 
 --
@@ -71,7 +71,7 @@ GCP-Festplattentyp:: Bei der Erstellung von Volumes für Cloud Volumes ONTAP mü
 * _Zonal Balance persistente Festplatten_: Diese SSDs sorgen durch niedrigere IOPS pro GB für ein ausgewogenes Verhältnis zwischen Performance und Kosten.
 * _Zonal Standard persistente Festplatten_ : Standard persistente Festplatten sind wirtschaftlich und können sequenzielle Lese-/Schreibvorgänge verarbeiten.
 +
-Weitere Informationen finden Sie unter https://cloud.google.com/compute/docs/disks/#pdspecs["Google Cloud-Dokumentation: Zonal Persistent Disks (Standard und SSD)"^].
+Weitere Informationen finden Sie unter https://["Google Cloud-Dokumentation: Zonal Persistent Disks (Standard und SSD)"^].
 
 
 
@@ -86,8 +86,8 @@ GCP-Festplattengröße:: Sie müssen bei der Implementierung eines Cloud Volumes
 Weitere Informationen finden Sie im Folgenden:
 
 +
-** https://cloud.google.com/compute/docs/disks/#pdspecs["Google Cloud-Dokumentation: Zonal Persistent Disks (Standard und SSD)"^]
-** https://cloud.google.com/compute/docs/disks/performance["Google Cloud-Dokumentation: Optimierung von Persistent Disk und lokaler SSD-Performance"^]
+** https://["Google Cloud-Dokumentation: Zonal Persistent Disks (Standard und SSD)"^]
+** https://["Google Cloud-Dokumentation: Optimierung von Persistent Disk und lokaler SSD-Performance"^]
 
 
 
@@ -102,14 +102,14 @@ Weitere Informationen finden Sie im Folgenden:
 Neben dem Storage für Benutzerdaten erwirbt BlueXP auch Cloud-Storage für Cloud Volumes ONTAP Systemdaten (Boot-Daten, Root-Daten, Core-Daten und NVRAM). Für die Planung können Sie diese Details überprüfen, bevor Sie Cloud Volumes ONTAP implementieren.
 
 * link:reference-default-configs.html#google-cloud-single-node["Zeigen Sie die Standardfestplatten für Cloud Volumes ONTAP-Systemdaten in Google Cloud an"].
-* https://cloud.google.com/compute/quotas["Google Cloud Docs: Ressourcenkontingente"^]
+* https://["Google Cloud Docs: Ressourcenkontingente"^]
 +
 Google Cloud Compute Engine setzt Quoten für die Ressourcenauslastung durch. Damit sollten Sie vor der Implementierung von Cloud Volumes ONTAP sicherstellen, dass Sie das Limit nicht erreicht haben.
 
 
 
 
-TIP: Für den Connector ist außerdem eine Systemfestplatte erforderlich. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Zeigen Sie Details zur Standardkonfiguration des Connectors an"^].
+TIP: Für den Connector ist außerdem eine Systemfestplatte erforderlich. https://["Zeigen Sie Details zur Standardkonfiguration des Connectors an"^].
 
 
 

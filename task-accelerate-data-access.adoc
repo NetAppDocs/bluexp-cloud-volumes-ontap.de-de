@@ -20,8 +20,8 @@ FlexCache Volumes beschleunigen den Zugriff auf Daten oder verlagern den Datenve
 
 BlueXP bietet derzeit kein Management von FlexCache Volumes, aber Sie können ONTAP FlexCache-Volumes mithilfe der Befehlszeilenschnittstelle oder des ONTAP System Managers erstellen und managen:
 
-* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-fc-mgmt/home.html["FlexCache Volumes für schnelleren Datenzugriff – Power Guide"^]
-* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["FlexCache Volumes werden in System Manager erstellt"^]
+* http://["FlexCache Volumes für schnelleren Datenzugriff – Power Guide"^]
+* http://["FlexCache Volumes werden in System Manager erstellt"^]
 
 
 Ab Version 3.7.2 generiert BlueXP eine FlexCache-Lizenz für alle neuen Cloud Volumes ONTAP-Systeme. Die Lizenz umfasst ein Nutzungslimit von 500 gib.

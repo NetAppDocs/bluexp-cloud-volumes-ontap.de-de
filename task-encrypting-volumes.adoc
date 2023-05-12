@@ -36,7 +36,7 @@ Cloud Volumes ONTAP unterstützt kein Onboard-Verschlüsselungsmanagement.
 .Was Sie benötigen
 Ihr Cloud Volumes ONTAP System sollte beim NetApp Support registriert sein. Auf jedem Cloud Volumes ONTAP System, das beim NetApp Support registriert ist, wird automatisch eine Lizenz für NetApp Volume Encryption installiert.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Hinzufügen von Konten für die NetApp Support Site zu BlueXP"^]
+* https://["Hinzufügen von Konten für die NetApp Support Site zu BlueXP"^]
 * link:task-registering.html["Registrieren von Pay-as-you-go-Systemen"]
 
 
@@ -44,7 +44,7 @@ Ihr Cloud Volumes ONTAP System sollte beim NetApp Support registriert sein. Auf 
 NOTE: BlueXP installiert die NVE-Lizenz nicht auf Systemen, die sich in der Region China befinden.
 
 .Schritte
-. Überprüfen Sie die Liste der unterstützten Schlüsselmanager im http://mysupport.netapp.com/matrix["NetApp Interoperabilitäts-Matrix-Tool"^].
+. Überprüfen Sie die Liste der unterstützten Schlüsselmanager im http://["NetApp Interoperabilitäts-Matrix-Tool"^].
 +
 
 TIP: Suchen Sie nach der *Key Manager*-Lösung.
@@ -55,7 +55,7 @@ TIP: Suchen Sie nach der *Key Manager*-Lösung.
 ifdef::aws[]
 
 +
-** AWS, https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-external-key-management-overview-concept.html["Die entsprechenden Anweisungen finden Sie in der ONTAP-Dokumentation"^]
+** AWS, https://["Die entsprechenden Anweisungen finden Sie in der ONTAP-Dokumentation"^]
 
 
 
