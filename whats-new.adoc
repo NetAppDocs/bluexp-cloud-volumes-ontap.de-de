@@ -822,7 +822,7 @@ Ein Keystone Subscription ist ein nutzungsbasierter Abonnementservice, der eine 
 Eine Keystone Subscription wird von allen neuen Cloud Volumes ONTAP Versionen unterstützt, die Sie über BlueXP implementieren können.
 
 * https://["Weitere Informationen zu NetApp Keystone Abonnements"^].
-* link:task-manage-keystone.html["Erste Schritte mit Keystone Abonnements in BlueXP"].
+* link:task-manage-keystone.html["Erste Schritte mit Keystone Abonnements in BlueXP"^].
 
 
 

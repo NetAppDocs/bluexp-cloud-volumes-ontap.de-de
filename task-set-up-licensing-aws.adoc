@@ -152,7 +152,7 @@ link:task-deploying-otc-aws.html["Sehen Sie sich Schritt-für-Schritt-Anleitunge
 
 == Keystone Abonnement
 
-Ein Keystone Abonnement ist ein nutzungsbasierter Abonnementservice. link:concept-licensing.html#keystone-subscription["Weitere Informationen zu NetApp Keystone Abonnements"].
+Ein Keystone Abonnement ist ein nutzungsbasierter Abonnementservice. link:concept-licensing.html#keystone-subscription["Weitere Informationen zu NetApp Keystone Abonnements"^].
 
 .Schritte
 . Wenn Sie noch kein Abonnement haben, https://["Kontakt zu NetApp"^]

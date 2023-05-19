@@ -43,25 +43,4 @@ image:screenshot_replicate_volume_svm.gif["Ein Screenshot zeigt die Möglichkeit
 
 == Ändern Sie den Namen der Standard-Storage-VM
 
-BlueXP benennt automatisch die einzelne Storage-VM, die sie für Cloud Volumes ONTAP erstellt. Sie können den Namen der Storage VM ändern, wenn Sie strenge Namensstandards haben. Beispielsweise möchte der Name Ihnen entsprechen, wie Sie die Storage-VMs für Ihre ONTAP Cluster benennen.
-
-Wenn Sie zusätzliche Storage-VMs für Cloud Volumes ONTAP erstellt haben, können Sie die Storage-VMs nicht aus BlueXP umbenennen. Sie müssen dies direkt von Cloud Volumes ONTAP mit System Manager oder der CLI ausführen.
-
-.Schritte
-. Klicken Sie in der Arbeitsumgebung auf das Menü-Symbol und dann auf *Information*.
-. Klicken Sie rechts neben dem Namen der Storage-VM auf das Bearbeiten-Symbol.
-+
-image:screenshot_svm.gif["Screenshot: Zeigt das Feld SVM-Name und das Bearbeitungssymbol an, auf das Sie klicken müssen, um den SVM-Namen zu ändern."]
-
-. Ändern Sie im Dialogfeld SVM-Name ändern den Namen und klicken Sie dann auf *Speichern*.
-
-
-
-
-== Managen von Storage VMs für Disaster Recovery
-
-BlueXP bietet keine Unterstützung für die Einrichtung oder Orchestrierung von Storage VM Disaster Recovery. Sie müssen System Manager oder die CLI verwenden.
-
-* https://["Express Guide zur Vorbereitung des SVM-Disaster Recovery"^]
-* https://["SVM Disaster Recovery Express Guide"^]
-
+BlueXP benennt automatisch die einzelne Storage-VM, die sie für Cloud Volumes ONTAP erstellt. Über System Manager, CLI oder API können Sie den Namen der Storage VM ändern, wenn Sie strenge Namensstandards haben. Beispielsweise möchte der Name Ihnen entsprechen, wie Sie die Storage-VMs für Ihre ONTAP Cluster benennen.

@@ -370,7 +370,7 @@ Die Abrechnung basiert auf der Größe der gebuchten Kapazität für ein oder me
 
 Die bereitgestellte Kapazität für jedes Volume wird aggregiert und regelmäßig mit der gebuchten Kapazität in Ihrem Keystone Abonnement verglichen. Etwaige Überkapazitäten werden als Burst-Kapazität in Ihrem Keystone Abonnement abgerechnet.
 
-https://[][Weitere Informationen zu NetApp Keystone-Abonnements^].
+https://["Weitere Informationen zu NetApp Keystone Abonnements"^].
 
 
 

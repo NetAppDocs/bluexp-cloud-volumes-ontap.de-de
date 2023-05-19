@@ -14,7 +14,7 @@ summary: Managen Sie Ihre Node-basierten Lizenzen aus dem BlueXP Digital Wallet,
 
 
 [role="lead"]
-5a91158751eaabe4d195cd633fa37db6
+Managen Sie Node-basierte Lizenzen in der BlueXP Digital Wallet, um sicherzustellen, dass für jedes Cloud Volumes ONTAP System eine gültige Lizenz mit der erforderlichen Kapazität vorhanden ist.
 
 _Node-basierte Lizenzen_ sind das Lizenzmodell der vorherigen Generation (und für neue Kunden nicht verfügbar):
 
