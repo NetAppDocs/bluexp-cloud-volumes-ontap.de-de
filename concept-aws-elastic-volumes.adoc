@@ -37,7 +37,7 @@ Beachten Sie, dass die Kapazitätsgrenzen des Systems insgesamt unverändert ble
 
 
 
-https://["Weitere Informationen zu Elastic Volumes von AWS"^]
+https://aws.amazon.com/ebs/features/["Weitere Informationen zu Elastic Volumes von AWS"^]
 
 
 
@@ -69,7 +69,7 @@ Ab Version 3.9.19 erfordert der Connector die folgenden Berechtigungen, um die F
 * ec2:ModifyVolume
 
 
-Diese Berechtigungen sind in enthalten https://["Die von NetApp bereitgestellten Richtlinien"^]
+Diese Berechtigungen sind in enthalten https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Die von NetApp bereitgestellten Richtlinien"^]
 
 
 
@@ -186,6 +186,6 @@ link:task-manage-aggregates.html["Erfahren Sie, wie Sie die Aggregatskapazität 
 Wenn das Ziel-Cloud Volumes ONTAP-System elastische Volumes unterstützt, wird ein Ziel-Volume auf einem Aggregat mit aktivierten elastischen Volumes platziert, sofern Sie eine gp3- oder io1-Festplatte wählen.
 
 +
-https://["Hier erfahren Sie, wie Sie Datenreplizierung einrichten"^]
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Hier erfahren Sie, wie Sie Datenreplizierung einrichten"^]
 
 

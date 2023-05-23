@@ -25,7 +25,7 @@ Um zusätzliche Datenspeicher-VMs zu erstellen, müssen Sie IP-Adressen in AWS z
 
 == Unterstützte Anzahl von Storage-VMs
 
-Ab Version 9.7 werden mehrere Storage-VMs mit spezifischen Cloud Volumes ONTAP Konfigurationen unterstützt. Wechseln Sie zum https://["Versionshinweise zu Cloud Volumes ONTAP"^] Um zu überprüfen, wie viele Storage VMs für Ihre Cloud Volumes ONTAP-Version unterstützt werden.
+Ab Version 9.7 werden mehrere Storage-VMs mit spezifischen Cloud Volumes ONTAP Konfigurationen unterstützt. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Um zu überprüfen, wie viele Storage VMs für Ihre Cloud Volumes ONTAP-Version unterstützt werden.
 
 Alle anderen Cloud Volumes ONTAP Konfigurationen unterstützen eine Storage-VM mit Datenbereitstellung und eine Ziel-Storage-VM für die Disaster Recovery. Sie können die Ziel-Storage-VM für Datenzugriff aktivieren, wenn es einen Ausfall auf der Quell-Storage-VM gibt.
 
@@ -36,7 +36,7 @@ Alle anderen Cloud Volumes ONTAP Konfigurationen unterstützen eine Storage-VM m
 Jede EC2-Instanz unterstützt eine maximale Anzahl privater IPv4-Adressen pro Netzwerkschnittstelle. Sie müssen das Limit überprüfen, bevor Sie der neuen Storage VM IP-Adressen in AWS zuweisen.
 
 .Schritte
-. Geh die https://["Abschnitt „Speicherbegrenzungen“ in den Versionshinweisen zu Cloud Volumes ONTAP"^].
+. Geh die https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["Abschnitt „Speicherbegrenzungen“ in den Versionshinweisen zu Cloud Volumes ONTAP"^].
 . Geben Sie für Ihren Instanztyp die maximale Anzahl an IP-Adressen pro Schnittstelle an.
 . Notieren Sie sich diese Zahl, da Sie sie im nächsten Abschnitt beim Zuweisen von IP-Adressen in AWS benötigen.
 

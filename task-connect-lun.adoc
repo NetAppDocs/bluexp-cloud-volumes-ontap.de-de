@@ -31,9 +31,9 @@ Beachten Sie Folgendes:
 . Klicken Sie auf *Kopieren*, um den IQN-Namen zu kopieren.
 . Richten Sie eine iSCSI-Verbindung vom Host zur LUN ein.
 +
-** http://["ONTAP 9 iSCSI Express-Konfiguration für Red hat Enterprise Linux: Starten der iSCSI-Sitzungen mit dem Ziel"^]
-** http://["ONTAP 9 iSCSI Express-Konfiguration für Windows: Starten von iSCSI-Sitzungen mit dem Ziel"^]
-** https://["ONTAP SAN-Host-Konfiguration"^]
+** http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-iscsi-rhel-cg/GUID-15E8C226-BED5-46D0-BAED-379EA4311340.html["ONTAP 9 iSCSI Express-Konfiguration für Red hat Enterprise Linux: Starten der iSCSI-Sitzungen mit dem Ziel"^]
+** http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-iscsi-cpg/GUID-857453EC-90E9-4AB6-B543-83827CF374BF.html["ONTAP 9 iSCSI Express-Konfiguration für Windows: Starten von iSCSI-Sitzungen mit dem Ziel"^]
+** https://docs.netapp.com/us-en/ontap-sanhost/["ONTAP SAN-Host-Konfiguration"^]
 
 
 

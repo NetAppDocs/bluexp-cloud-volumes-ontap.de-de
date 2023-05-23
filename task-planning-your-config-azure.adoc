@@ -30,7 +30,7 @@ Für Cloud Volumes ONTAP sind verschiedene Lizenzierungsoptionen verfügbar. Jed
 
 == Wählen Sie eine unterstützte Region aus
 
-Cloud Volumes ONTAP wird in den meisten Microsoft Azure Regionen unterstützt. https://["Hier finden Sie die vollständige Liste der unterstützten Regionen"^].
+Cloud Volumes ONTAP wird in den meisten Microsoft Azure Regionen unterstützt. https://cloud.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^].
 
 
 
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP wird in den meisten Microsoft Azure Regionen unterstützt. h
 
 Cloud Volumes ONTAP unterstützt je nach Lizenztyp mehrere VM-Typen.
 
-https://["Unterstützte Konfigurationen für Cloud Volumes ONTAP in Azure"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen für Cloud Volumes ONTAP in Azure"^]
 
 
 
@@ -46,7 +46,7 @@ https://["Unterstützte Konfigurationen für Cloud Volumes ONTAP in Azure"^]
 
 Die Rohkapazitätsgrenze für ein Cloud Volumes ONTAP System ist an die Lizenz gebunden. Zusätzliche Beschränkungen wirken sich auf die Größe von Aggregaten und Volumes aus. Sie sollten sich dieser Grenzen bei der Planung Ihrer Konfiguration bewusst sein.
 
-https://["Storage-Grenzen für Cloud Volumes ONTAP in Azure"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Storage-Grenzen für Cloud Volumes ONTAP in Azure"^]
 
 
 
@@ -54,11 +54,11 @@ https://["Storage-Grenzen für Cloud Volumes ONTAP in Azure"^]
 
 Mit der Dimensionierung Ihres Cloud Volumes ONTAP Systems können Sie die Anforderungen an Performance und Kapazität erfüllen. Bei der Auswahl von VM-Typ, Festplattentyp und Festplattengröße sind einige wichtige Punkte zu beachten:
 
-Typ der virtuellen Maschine:: Sehen Sie sich die unterstützten Typen von Virtual Machines in an http://["Versionshinweise zu Cloud Volumes ONTAP"^] Und überprüfen Sie anschließend Details zu jedem unterstützten VM-Typ. Beachten Sie, dass jeder VM-Typ eine bestimmte Anzahl an Datenfestplatten unterstützt.
+Typ der virtuellen Maschine:: Sehen Sie sich die unterstützten Typen von Virtual Machines in an http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Und überprüfen Sie anschließend Details zu jedem unterstützten VM-Typ. Beachten Sie, dass jeder VM-Typ eine bestimmte Anzahl an Datenfestplatten unterstützt.
 +
 --
-* https://["Azure-Dokumentation: Allgemeine Größe virtueller Maschinen"^]
-* https://["Azure-Dokumentation: Für den Speicher optimierte Größen virtueller Maschinen"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv2-series["Azure-Dokumentation: Allgemeine Größe virtueller Maschinen"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-memory#dsv2-series-11-15["Azure-Dokumentation: Für den Speicher optimierte Größen virtueller Maschinen"^]
 
 
 --
@@ -72,7 +72,7 @@ Systeme mit einem Node können drei Typen von Azure Managed Disks verwenden:
 * _Standard HDD Managed Disks_ sind eine gute Wahl, wenn Sie keine hohen IOPS benötigen und Ihre Kosten senken möchten.
 
 
-Weitere Details zu den Anwendungsfällen für diese Festplatten finden Sie unter https://["Microsoft Azure-Dokumentation: Welche Festplattentypen sind in Azure verfügbar?"^].
+Weitere Details zu den Anwendungsfällen für diese Festplatten finden Sie unter https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure-Dokumentation: Welche Festplattentypen sind in Azure verfügbar?"^].
 
 --
 Azure-Festplattentyp mit HA-Paaren:: HA-Systeme verwenden Shared Managed Disks mit Premium-SSDs, die beide eine hohe Performance für I/O-intensive Workloads mit höheren Kosten bieten. HA-Implementierungen, die vor der Version 9.12.1 erstellt wurden, verwenden Premium-Blobs auf Seite.
@@ -90,8 +90,8 @@ Es gibt keine Performance-Unterschiede zwischen den Festplattengrößen für Sta
 
 Unter Azure finden Sie IOPS und Durchsatz nach Festplattengröße:
 
-* https://["Microsoft Azure: Preisgestaltung für Managed Disks"^]
-* https://["Microsoft Azure: Page Blobs Pricing"^]
+* https://azure.microsoft.com/en-us/pricing/details/managed-disks/["Microsoft Azure: Preisgestaltung für Managed Disks"^]
+* https://azure.microsoft.com/en-us/pricing/details/storage/page-blobs/["Microsoft Azure: Page Blobs Pricing"^]
 
 
 --
@@ -106,7 +106,7 @@ Neben dem Storage für Benutzerdaten erwirbt BlueXP auch Cloud-Storage für Clou
 link:reference-default-configs.html#azure-single-node["Zeigen Sie die Standardfestplatten für Cloud Volumes ONTAP-Systemdaten in Azure an"].
 
 
-TIP: Für den Connector ist außerdem eine Systemfestplatte erforderlich. https://["Zeigen Sie Details zur Standardkonfiguration des Connectors an"^].
+TIP: Für den Connector ist außerdem eine Systemfestplatte erforderlich. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Zeigen Sie Details zur Standardkonfiguration des Connectors an"^].
 
 
 

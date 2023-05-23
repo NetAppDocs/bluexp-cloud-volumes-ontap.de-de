@@ -14,7 +14,7 @@ summary: Konvertieren Sie ein exportiertes Bild in das Format Disk.RAW über die
 
 
 [role="lead"]
-Das Image, das zur Bereitstellung neuer Instanzen, Upgrades oder zur Verwendung in vorhandenen Images verwendet wird, wird über mit den Clients geteilt https://["Die NetApp Support Site (NSS)"^]. Der signierte Digest und die Zertifikate können über das NSS-Portal heruntergeladen werden. Laden Sie unbedingt die Digest und Zertifikate für die rechte Version herunter, die dem von NetApp Support geteilten Image entspricht. 9.13.0 Bilder verfügen beispielsweise über einen 9.13.0 signierten Digest und Zertifikate, die auf NSS verfügbar sind.
+Das Image, das zur Bereitstellung neuer Instanzen, Upgrades oder zur Verwendung in vorhandenen Images verwendet wird, wird über mit den Clients geteilt https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["Die NetApp Support Site (NSS)"^]. Der signierte Digest und die Zertifikate können über das NSS-Portal heruntergeladen werden. Laden Sie unbedingt die Digest und Zertifikate für die rechte Version herunter, die dem von NetApp Support geteilten Image entspricht. 9.13.0 Bilder verfügen beispielsweise über einen 9.13.0 signierten Digest und Zertifikate, die auf NSS verfügbar sind.
 
 
 
@@ -37,7 +37,7 @@ Um das Image zu überprüfen, muss es in ein Disk.RAW-Format konvertiert und ans
 
 == Verwenden Sie die Google Cloud-Befehlszeile, um Google Cloud-Bild zu exportieren
 
-Die bevorzugte Methode zum Exportieren eines Bildes in Cloud Storage ist die Verwendung von https://["Exportbefehl für gcloudCompute-Bilder"^]. Dieser Befehl nimmt das bereitgestellte Image und konvertiert es in eine Disk.RAW-Datei, die tarred und gzipped wird. Die generierte Datei wird unter der Ziel-URL gespeichert und kann zur Überprüfung heruntergeladen werden.
+Die bevorzugte Methode zum Exportieren eines Bildes in Cloud Storage ist die Verwendung von https://cloud.google.com/sdk/gcloud/reference/compute/images/export["Exportbefehl für gcloudCompute-Bilder"^]. Dieser Befehl nimmt das bereitgestellte Image und konvertiert es in eine Disk.RAW-Datei, die tarred und gzipped wird. Die generierte Datei wird unter der Ziel-URL gespeichert und kann zur Überprüfung heruntergeladen werden.
 
 Der Benutzer/das Konto muss über Berechtigungen verfügen, um auf den gewünschten Bucket zuzugreifen und in diesen zu schreiben, das Bild zu exportieren und Cloud-Builds (die von Google zum Exportieren des Bildes verwendet werden) zu erstellen, um diesen Vorgang auszuführen.
 
@@ -146,4 +146,4 @@ total 1565036
 $ tar -xf CVO_GCP_Signed_Digest.tar.gz
 ----
 
-NOTE: Siehe https://["Google Cloud-Dokument beim Exportieren eines Bildes"^] Weitere Informationen zum Exportieren von Bildern über Google Cloud.
+NOTE: Siehe https://cloud.google.com/compute/docs/images/export-image#console["Google Cloud-Dokument beim Exportieren eines Bildes"^] Weitere Informationen zum Exportieren von Bildern über Google Cloud.

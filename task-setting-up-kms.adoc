@@ -22,14 +22,14 @@ Wenn Sie die Amazon Verschlüsselung mit Cloud Volumes ONTAP verwenden möchten,
 Bei CMK kann es sich um ein von AWS gemanagtes CMK oder um ein vom Kunden gemanagtes CMK handeln. Sie kann sich im selben AWS Konto wie BlueXP und Cloud Volumes ONTAP oder in einem anderen AWS Konto befinden.
 
 +
-https://["AWS Dokumentation: Customer Master Keys (CMKs)"^]
+https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys["AWS Dokumentation: Customer Master Keys (CMKs)"^]
 
 . Ändern Sie die Schlüsselrichtlinie für jedes CMK, indem Sie die IAM-Rolle hinzufügen, die BlueXP Berechtigungen als _Key-Benutzer_ bereitstellt.
 +
 Wenn Sie die IAM-Rolle als Schlüsselbenutzer hinzufügen, erhalten Sie BlueXP Berechtigungen zur Verwendung des CMK mit Cloud Volumes ONTAP.
 
 +
-https://["AWS Dokumentation: Schlüssel bearbeiten"^]
+https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS Dokumentation: Schlüssel bearbeiten"^]
 
 . Wenn sich das CMK in einem anderen AWS Konto befindet, führen Sie folgende Schritte aus:
 +
@@ -96,7 +96,7 @@ Die folgende Richtlinie enthält die Berechtigungen, die BlueXP zur Verwendung d
 }
 ----
 +
-Weitere Details zu diesem Prozess finden Sie unter https://["AWS Dokumentation: Benutzer in anderen Konten können einen KMS-Schlüssel verwenden"^].
+Weitere Details zu diesem Prozess finden Sie unter https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["AWS Dokumentation: Benutzer in anderen Konten können einen KMS-Schlüssel verwenden"^].
 
 
 
@@ -108,6 +108,6 @@ Dieser Schritt ist erforderlich, wenn Sie Daten-Tiering auf Cloud Volumes ONTAP 
 Sie müssen diesen Schritt durchführen _nach_ Sie implementieren Cloud Volumes ONTAP, da die IAM-Rolle beim Erstellen einer Arbeitsumgebung erstellt wird. (Natürlich haben Sie die Möglichkeit, eine vorhandene Cloud Volumes ONTAP IAM-Rolle zu verwenden, sodass Sie diesen Schritt zuvor ausführen können.)
 
 +
-https://["AWS Dokumentation: Schlüssel bearbeiten"^]
+https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS Dokumentation: Schlüssel bearbeiten"^]
 
 

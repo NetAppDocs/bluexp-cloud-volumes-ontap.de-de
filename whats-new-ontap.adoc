@@ -16,4 +16,4 @@ summary: Die Versionshinweise für Cloud Volumes ONTAP enthalten versionsspezifi
 [role="lead"]
 Die Versionshinweise für Cloud Volumes ONTAP enthalten versionsspezifische Informationen. Neu in dieser Version, unterstützte Konfigurationen, Storage-Einschränkungen und alle bekannten Einschränkungen oder Probleme, die sich auf die Produktfunktionen auswirken können.
 
-https://["Wechseln Sie zu den Versionshinweisen zu Cloud Volumes ONTAP"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Wechseln Sie zu den Versionshinweisen zu Cloud Volumes ONTAP"^]

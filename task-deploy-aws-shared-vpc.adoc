@@ -16,7 +16,7 @@ summary: Ab Version 9.11.1 werden Cloud Volumes ONTAP HA-Paare in AWS mit VPC-Sh
 [role="lead"]
 Ab Version 9.11.1 werden Cloud Volumes ONTAP HA-Paare in AWS mit VPC-Sharing unterstützt. Die VPC-Freigabe ermöglicht Ihrem Unternehmen, Subnetze mit anderen AWS Konten gemeinsam zu nutzen. Um diese Konfiguration zu verwenden, müssen Sie Ihre AWS-Umgebung einrichten und dann das HA-Paar mithilfe der API implementieren.
 
-Mit https://["VPC-Sharing"^], Eine Cloud Volumes ONTAP HA-Konfiguration ist auf zwei Konten verteilt:
+Mit https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-a-new-approach-to-multiple-accounts-and-vpc-management/["VPC-Sharing"^], Eine Cloud Volumes ONTAP HA-Konfiguration ist auf zwei Konten verteilt:
 
 * Das VPC-Owner-Konto, zu dem das Netzwerk gehört (VPC, Subnetze, Routing-Tabellen und Cloud Volumes ONTAP-Sicherheitsgruppe)
 * Das Teilnehmerkonto, bei dem die EC2 Instanzen in gemeinsam genutzten Subnetzen implementiert werden (dazu gehören die zwei HA-Nodes und der Mediator)
@@ -38,7 +38,7 @@ Beim Erstellen der Arbeitsumgebung von Cloud Volumes ONTAP erstellt BlueXP autom
 Dieser Schritt ist erforderlich, um das HA-Paar in gemeinsam genutzten Subnetzen zu implementieren.
 
 +
-https://["AWS Dokumentation: Ein Subnetz gemeinsam nutzen"^]
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet["AWS Dokumentation: Ein Subnetz gemeinsam nutzen"^]
 
 . Erstellen Sie im VPC-Owner-Konto eine Sicherheitsgruppe für Cloud Volumes ONTAP.
 +
@@ -82,7 +82,7 @@ Beispiel:
 }
 ----
 +
-https://["Erfahren Sie mehr über die Cloud Volumes ONTAP-API"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/overview.html["Erfahren Sie mehr über die Cloud Volumes ONTAP-API"^]
 
 
 

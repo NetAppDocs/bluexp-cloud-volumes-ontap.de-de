@@ -56,10 +56,10 @@ Lokaler NVMe-Storage:: Einige EC2-Instanztypen sind lokaler NVMe-Storage, der al
 
 *Verwandte Links*
 
-* http://["AWS Dokumentation: EBS Volume-Typen"^]
+* http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS Dokumentation: EBS Volume-Typen"^]
 * link:task-planning-your-config.html["Lesen Sie, wie Sie Festplattentypen und Festplattengrößen für Ihre Systeme in AWS auswählen"]
-* https://["Prüfen von Storage-Limits für Cloud Volumes ONTAP in AWS"^]
-* http://["Unterstützte Konfigurationen für Cloud Volumes ONTAP in AWS prüfen"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["Prüfen von Storage-Limits für Cloud Volumes ONTAP in AWS"^]
+* http://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["Unterstützte Konfigurationen für Cloud Volumes ONTAP in AWS prüfen"^]
 
 
 endif::aws[]
@@ -99,10 +99,10 @@ HA-Paare:: HA-Paare verwenden zwei Festplattenarten, die eine hohe Performance f
 
 *Verwandte Links*
 
-* https://["Microsoft Azure-Dokumentation: Verwaltete Festplattentypen in Azure"^]
-* https://["Microsoft Azure-Dokumentation: Übersicht über die Blobs der Azure-Seite"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure-Dokumentation: Verwaltete Festplattentypen in Azure"^]
+* https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure-Dokumentation: Übersicht über die Blobs der Azure-Seite"^]
 * link:task-planning-your-config-azure.html["Erfahren Sie, wie Sie Festplattentypen und Festplattengrößen für Ihre Systeme in Azure auswählen"]
-* https://["Prüfen Sie Storage-Limits für Cloud Volumes ONTAP in Azure"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Prüfen Sie Storage-Limits für Cloud Volumes ONTAP in Azure"^]
 
 
 endif::azure[]
@@ -119,8 +119,8 @@ Der Festplattentyp kann entweder _Zonal SSD persistente Festplatten_, _Zonal Bal
 
 *Verwandte Links*
 
-* https://["Google Cloud-Dokumentation: Storage-Optionen"^]
-* https://["Überprüfen Sie die Storage-Limits für Cloud Volumes ONTAP in Google Cloud"^]
+* https://cloud.google.com/compute/docs/disks/["Google Cloud-Dokumentation: Storage-Optionen"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html["Überprüfen Sie die Storage-Limits für Cloud Volumes ONTAP in Google Cloud"^]
 
 
 endif::gcp[]

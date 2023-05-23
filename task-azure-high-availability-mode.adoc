@@ -30,7 +30,7 @@ Beachten Sie Folgendes:
 Ein Azure-Benutzer mit „Owner“-Berechtigungen kann die Funktion über die Azure-CLI aktivieren.
 
 .Schritte
-. https://["Greifen Sie über das Azure-Portal auf die Azure Cloud Shell zu"^]
+. https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart["Greifen Sie über das Azure-Portal auf die Azure Cloud Shell zu"^]
 . Registrieren der Funktion des Hochverfügbarkeits-Modus:
 +
 [source, azurecli]

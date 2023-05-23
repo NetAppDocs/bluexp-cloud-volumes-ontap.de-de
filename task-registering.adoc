@@ -24,7 +24,7 @@ TIP: Ein System, das nicht für den Support registriert ist, erhält weiterhin d
 .Schritte
 . Wenn Sie noch kein NetApp Support Site Konto bei BlueXP hinzugefügt haben, gehen Sie zu *Account Settings* und fügen Sie es jetzt hinzu.
 +
-https://["Erfahren Sie, wie Sie Konten der NetApp Support Site hinzufügen"^].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Erfahren Sie, wie Sie Konten der NetApp Support Site hinzufügen"^].
 
 . Doppelklicken Sie auf der Seite Arbeitsfläche auf den Namen des Systems, das Sie registrieren möchten.
 . Klicken Sie auf der Registerkarte Übersicht auf das Bedienfeld Funktionen und dann auf das Bleistiftsymbol neben *Support-Registrierung*.

@@ -98,9 +98,9 @@ image:screenshot_advanced_view.png["Ein Screenshot einer Cloud Volumes ONTAP Arb
 
 == Hilfe bei der Verwendung von System Manager
 
-Wenn Sie Hilfe bei der Verwendung von System Manager mit Cloud Volumes ONTAP benötigen, finden Sie unter https://["ONTAP-Dokumentation"^] Schritt-für-Schritt-Anleitungen. Hier sind einige Links, die helfen könnten:
+Wenn Sie Hilfe bei der Verwendung von System Manager mit Cloud Volumes ONTAP benötigen, finden Sie unter https://docs.netapp.com/us-en/ontap/index.html["ONTAP-Dokumentation"^] Schritt-für-Schritt-Anleitungen. Hier sind einige Links, die helfen könnten:
 
-* https://["Volume- und LUN-Management"^]
-* https://["Netzwerkmanagement"^]
-* https://["Datensicherung"^]
+* https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["Volume- und LUN-Management"^]
+* https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["Netzwerkmanagement"^]
+* https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["Datensicherung"^]
 

@@ -24,7 +24,7 @@ _Node-basierte Lizenzen_ sind das Lizenzmodell der vorherigen Generation (und f�
 
 Mit der _BlueXP Digital Wallet_ können Sie Lizenzen für Cloud Volumes ONTAP von einem einzigen Standort aus managen. Sie können neue Lizenzen hinzufügen und vorhandene Lizenzen aktualisieren.
 
-https://["Weitere Informationen zu Cloud Volumes ONTAP Lizenzen"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Weitere Informationen zu Cloud Volumes ONTAP Lizenzen"].
 
 
 
@@ -107,7 +107,7 @@ BlueXP konvertiert die nicht zugewiesene Lizenz in den von Ihnen ausgewählten D
 In den meisten Fällen kann BlueXP Ihre Lizenzdatei automatisch über Ihren NetApp Support Site Account beziehen. Aber wenn es nicht kann, dann müssen Sie die Lizenzdatei manuell hochladen. Wenn Sie die Lizenzdatei nicht haben, können Sie sie von netapp.com beziehen.
 
 .Schritte
-. Wechseln Sie zum https://["NetApp Lizenzdatei-Generator"^] Und loggen Sie sich mit Ihren Anmeldedaten für die NetApp Support Site ein.
+. Wechseln Sie zum https://register.netapp.com/register/getlicensefile["NetApp Lizenzdatei-Generator"^] Und loggen Sie sich mit Ihren Anmeldedaten für die NetApp Support Site ein.
 . Geben Sie Ihr Passwort ein, wählen Sie Ihr Produkt aus, geben Sie die Seriennummer ein, bestätigen Sie, dass Sie die Datenschutzrichtlinie gelesen und akzeptiert haben, und klicken Sie dann auf *Absenden*.
 +
 *Beispiel*
@@ -224,10 +224,10 @@ Das Konvertieren eines Systems von der PAYGO-Lizenzierung pro Node in BYOL-by-No
 . Erstellen Sie eine neue Cloud Volumes ONTAP Arbeitsumgebung.
 . Richten Sie für jedes zu replizierende Volume eine einmalige Datenreplizierung zwischen den Systemen ein.
 +
-https://["Erfahren Sie, wie Daten zwischen Systemen repliziert werden"^]
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Erfahren Sie, wie Daten zwischen Systemen repliziert werden"^]
 
 . Beenden Sie das Cloud Volumes ONTAP System, das Sie nicht mehr benötigen, indem Sie die ursprüngliche Arbeitsumgebung löschen .
 +
-https://["Erfahren Sie, wie Sie eine Cloud Volumes ONTAP-Arbeitsumgebung löschen"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deleting-working-env.html["Erfahren Sie, wie Sie eine Cloud Volumes ONTAP-Arbeitsumgebung löschen"].
 
 

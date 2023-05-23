@@ -169,7 +169,7 @@ Das Upgrade eines HA-Paars erfolgt unterbrechungsfrei und die I/O wird unterbroc
 
 Automatisches Giveback muss auf einem Cloud Volumes ONTAP HA-Paar aktiviert sein (dies ist die Standardeinstellung). Wenn nicht, schlägt der Vorgang fehl.
 
-http://["ONTAP 9 Dokumentation: Befehle zur Konfiguration von automatischem Giveback"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["ONTAP 9 Dokumentation: Befehle zur Konfiguration von automatischem Giveback"^]
 
 
 
@@ -276,7 +276,7 @@ Sie können das Cloud Volumes ONTAP Software-Image auf dem Connector oder einem 
 In der NetApp Knowledge Base finden Sie Schritt-für-Schritt-Anleitungen:
 
 +
-https://["NetApp KB: So konfigurieren Sie BlueXP als HTTPS-Server, um Upgrade-Images zu hosten"^]
+https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["NetApp KB: So konfigurieren Sie BlueXP als HTTPS-Server, um Upgrade-Images zu hosten"^]
 
 
 
@@ -290,7 +290,7 @@ Wenn Sie eine VPN-Verbindung zum virtuellen Netzwerk haben, können Sie das Clou
 
 NOTE: Die vordefinierte Cloud Volumes ONTAP-Sicherheitsgruppe erlaubt standardmäßig ausgehende HTTP-Verbindungen.
 
-. Beziehen Sie das Software-Image von https://["Die NetApp Support Site"^].
+. Beziehen Sie das Software-Image von https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["Die NetApp Support Site"^].
 . Kopieren Sie das Software-Image in ein Verzeichnis auf dem Connector oder auf einem HTTP-Server, von dem die Datei bereitgestellt wird.
 +
 Es sind zwei Pfade verfügbar. Der richtige Pfad hängt von Ihrer Connector-Version ab.
@@ -338,6 +338,6 @@ Der Wert für _maxDownloadSessions_ kann 1 oder eine beliebige Ganzzahl größer
 
 Beachten Sie, dass 32 ein Beispielwert ist. Der Wert, den Sie verwenden sollten, hängt von Ihrer NAT-Konfiguration und der Anzahl der Sitzungen ab, die Sie gleichzeitig haben können.
 
-https://["Erfahren Sie mehr über den Aufruf der /occm/config API"^].
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["Erfahren Sie mehr über den Aufruf der /occm/config API"^].
 
 endif::gcp[]

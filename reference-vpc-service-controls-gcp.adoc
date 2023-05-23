@@ -16,7 +16,7 @@ summary: Wenn Sie sich für die Sperrung Ihrer Google-Umgebung durch VPC-Service
 [role="lead"]
 Wenn Sie sich für die Sperrung Ihrer Google Cloud-Umgebung mit VPC-Servicekontrollen entscheiden, sollten Sie verstehen, wie BlueXP und Cloud Volumes ONTAP mit den Google Cloud-APIs interagieren. Außerdem sollten Sie erfahren, wie Sie Ihre Service-Umgebung für die Bereitstellung von BlueXP und Cloud Volumes ONTAP konfigurieren.
 
-Mit den VPC-Service-Kontrollen können Sie den Zugriff auf von Google gemanagte Services außerhalb einer vertrauenswürdigen Umgebung steuern, den Datenzugriff von nicht vertrauenswürdigen Standorten aus blockieren und die Risiken bei nicht autorisierten Datentransfers minimieren. https://["Erfahren Sie mehr über Google Cloud VPC Service Controls"^].
+Mit den VPC-Service-Kontrollen können Sie den Zugriff auf von Google gemanagte Services außerhalb einer vertrauenswürdigen Umgebung steuern, den Datenzugriff von nicht vertrauenswürdigen Standorten aus blockieren und die Risiken bei nicht autorisierten Datentransfers minimieren. https://cloud.google.com/vpc-service-controls/docs["Erfahren Sie mehr über Google Cloud VPC Service Controls"^].
 
 
 
@@ -54,7 +54,7 @@ Im Folgenden sind Beispiele für Regeln aufgeführt, die für das Abrufen dieser
 
 == VPC-Service steuert Perimeterrichtlinien
 
-Richtlinien erlauben Ausnahmen von den VPC Service Controls-Regelsätzen. Weitere Informationen über Richtlinien finden Sie auf der https://["Dokumentation der GCP VPC Service Controls Policy"^].
+Richtlinien erlauben Ausnahmen von den VPC Service Controls-Regelsätzen. Weitere Informationen über Richtlinien finden Sie auf der https://cloud.google.com/vpc-service-controls/docs/ingress-egress-rules#policy-model["Dokumentation der GCP VPC Service Controls Policy"^].
 
 Um die Richtlinien festzulegen, die für BlueXP erforderlich sind, navigieren Sie zu Ihrem VPC Service Controls Perimeter in Ihrem Unternehmen und fügen Sie die folgenden Richtlinien hinzu. Die Felder sollten mit den Optionen übereinstimmen, die auf der Seite „VPC Service Controls Policy“ angegeben sind. Beachten Sie auch, dass *alle* Regeln erforderlich sind und die *ODER* Parameter im Regelsatz verwendet werden sollen.
 

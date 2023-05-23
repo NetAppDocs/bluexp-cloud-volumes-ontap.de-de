@@ -141,11 +141,11 @@ ifdef::aws[]
 
 === Anforderungen für das Tiering selten genutzter Daten in AWS S3
 
-Stellen Sie sicher, dass Cloud Volumes ONTAP eine Verbindung zu S3 hat. Die beste Möglichkeit, diese Verbindung bereitzustellen, besteht darin, einen VPC-Endpunkt für den S3-Dienst zu erstellen. Anweisungen hierzu finden Sie unter https://["AWS Dokumentation: Erstellen eines Gateway-Endpunkts"^].
+Stellen Sie sicher, dass Cloud Volumes ONTAP eine Verbindung zu S3 hat. Die beste Möglichkeit, diese Verbindung bereitzustellen, besteht darin, einen VPC-Endpunkt für den S3-Dienst zu erstellen. Anweisungen hierzu finden Sie unter https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS Dokumentation: Erstellen eines Gateway-Endpunkts"^].
 
 Wenn Sie den VPC-Endpunkt erstellen, wählen Sie die Region, den VPC und die Routing-Tabelle aus, die der Cloud Volumes ONTAP Instanz entspricht. Sie müssen auch die Sicherheitsgruppe ändern, um eine ausgehende HTTPS-Regel hinzuzufügen, die Datenverkehr zum S3-Endpunkt ermöglicht. Andernfalls kann Cloud Volumes ONTAP keine Verbindung zum S3-Service herstellen.
 
-Informationen zu Problemen finden Sie unter https://["AWS Support Knowledge Center: Warum kann ich mich nicht über einen Gateway VPC Endpunkt mit einem S3-Bucket verbinden?"^].
+Informationen zu Problemen finden Sie unter https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS Support Knowledge Center: Warum kann ich mich nicht über einen Gateway VPC Endpunkt mit einem S3-Bucket verbinden?"^].
 
 endif::aws[]
 
@@ -162,7 +162,7 @@ Sie müssen keine Verbindung zwischen der Performance- und der Kapazitäts-Tier 
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-Die Berechtigungen sind standardmäßig in die benutzerdefinierte Rolle enthalten. https://["Zeigen Sie die Azure-Berechtigung für den Connector an"^]
+Die Berechtigungen sind standardmäßig in die benutzerdefinierte Rolle enthalten. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Zeigen Sie die Azure-Berechtigung für den Connector an"^]
 
 endif::azure[]
 
@@ -172,7 +172,7 @@ ifdef::gcp[]
 
 === Anforderungen für das Tiering selten genutzter Daten in einen Google Cloud Storage Bucket
 
-* Das Subnetz, in dem Cloud Volumes ONTAP residiert, muss für privaten Google-Zugriff konfiguriert werden. Anweisungen finden Sie unter https://["Google Cloud Documentation: Configuring Private Google Access"^].
+* Das Subnetz, in dem Cloud Volumes ONTAP residiert, muss für privaten Google-Zugriff konfiguriert werden. Anweisungen finden Sie unter https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud Documentation: Configuring Private Google Access"^].
 * Ein Servicekonto muss mit Cloud Volumes ONTAP verbunden sein.
 +
 link:task-creating-gcp-service-account.html["Erfahren Sie, wie Sie dieses Servicekonto einrichten"].
@@ -297,7 +297,7 @@ Cloud Volumes ONTAP kann Daten von einem Daten-Protection-Volume auf eine Kapazi
 image:screenshot_replication_tiering.gif["Screenshot, der die S3-Tiering-Option beim Replizieren eines Volumes zeigt."]
 
 +
-Unterstützung bei der Datenreplizierung finden Sie unter https://["Replizierung von Daten in die und aus der Cloud"^].
+Unterstützung bei der Datenreplizierung finden Sie unter https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Replizierung von Daten in die und aus der Cloud"^].
 
 
 

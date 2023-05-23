@@ -33,7 +33,7 @@ Sie können mehrere Lizenzen für ein Cloud Volumes ONTAP BYOL-System erwerben, 
 
 Die Anzahl der Lizenzen, die Sie für ein Single Node-System oder ein HA-Paar erwerben können, ist unbegrenzt.
 
-Beachten Sie, dass die Festplattenbeschränkungen verhindern können, dass Sie durch die Verwendung von Festplatten allein das Kapazitätslimit nicht erreichen. Sie können die Festplattengrenze um überschreiten link:concept-data-tiering.html["tiering inaktiver Daten in Objektspeicher"]. Weitere Informationen zu Festplattenlimits finden Sie unter https://["Speichergrenzwerte in den Versionshinweisen zu Cloud Volumes ONTAP"^].
+Beachten Sie, dass die Festplattenbeschränkungen verhindern können, dass Sie durch die Verwendung von Festplatten allein das Kapazitätslimit nicht erreichen. Sie können die Festplattengrenze um überschreiten link:concept-data-tiering.html["tiering inaktiver Daten in Objektspeicher"]. Weitere Informationen zu Festplattenlimits finden Sie unter https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Speichergrenzwerte in den Versionshinweisen zu Cloud Volumes ONTAP"^].
 
 
 
@@ -41,7 +41,7 @@ Beachten Sie, dass die Festplattenbeschränkungen verhindern können, dass Sie d
 
 Wenn Sie ein Node-basiertes BYOL-System erstellen, werden Sie von BlueXP zur Seriennummer Ihrer Lizenz und zum NetApp Support Site Konto aufgefordert. BlueXP nutzt das Konto, um die Lizenzdatei von NetApp herunterzuladen und auf dem Cloud Volumes ONTAP System zu installieren.
 
-https://["Erfahren Sie, wie Sie BlueXP um NetApp Support Site Konten erweitern"^].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Erfahren Sie, wie Sie BlueXP um NetApp Support Site Konten erweitern"^].
 
 Wenn BlueXP über die sichere Internetverbindung nicht auf die Lizenzdatei zugreifen kann, können Sie dies auch tun link:task-manage-node-licenses.html["Holen Sie sich die Datei selbst ein und laden Sie die Datei anschließend manuell auf BlueXP hoch"].
 

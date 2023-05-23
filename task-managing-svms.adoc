@@ -23,7 +23,7 @@ Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihre
 
 == Unterstützte Anzahl von Storage-VMs
 
-Bestimmte Konfigurationen unterstützen mehrere Storage-VMs. Wechseln Sie zum https://["Versionshinweise zu Cloud Volumes ONTAP"^] Um zu überprüfen, wie viele Storage VMs für Ihre Cloud Volumes ONTAP-Version unterstützt werden.
+Bestimmte Konfigurationen unterstützen mehrere Storage-VMs. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Um zu überprüfen, wie viele Storage VMs für Ihre Cloud Volumes ONTAP-Version unterstützt werden.
 
 
 

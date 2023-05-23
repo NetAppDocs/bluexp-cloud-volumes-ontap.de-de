@@ -63,7 +63,7 @@ Sie sollten das folgende Ladeverhalten mit Cloud Volumes ONTAP 9.10.1 und höher
 * Wenn SIE WORM nicht aktivieren, wenn Sie eine Arbeitsumgebung erstellen, ist jedes mit BlueXP erstellte Volume WORM deaktiviert. FÜR diese Volumes werden die WORM-Rate nicht berechnet.
 
 
-https://["Informieren Sie sich über die Preisgestaltung für WORM Storage"^]
+https://cloud.netapp.com/pricing["Informieren Sie sich über die Preisgestaltung für WORM Storage"^]
 
 
 
@@ -71,7 +71,7 @@ https://["Informieren Sie sich über die Preisgestaltung für WORM Storage"^]
 
 Sie können eine Applikation verwenden, um Dateien über NFS oder CIFS in WORM zu übergeben, oder die ONTAP CLI verwenden, um Dateien automatisch in WORM zu übertragen. Sie können auch eine WORM-Datei verwenden, die Daten speichert, die inkrementell geschrieben werden, z. B. Protokollinformationen.
 
-Nachdem Sie WORM Storage auf einem Cloud Volumes ONTAP System aktiviert haben, müssen Sie die ONTAP CLI für das gesamte Management von WORM Storage verwenden. Anweisungen finden Sie unter http://["ONTAP-Dokumentation"^].
+Nachdem Sie WORM Storage auf einem Cloud Volumes ONTAP System aktiviert haben, müssen Sie die ONTAP CLI für das gesamte Management von WORM Storage verwenden. Anweisungen finden Sie unter http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-arch-con/home.html["ONTAP-Dokumentation"^].
 
 
 

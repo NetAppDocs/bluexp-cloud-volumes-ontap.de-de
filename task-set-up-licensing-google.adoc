@@ -64,8 +64,8 @@ In den folgenden Abschnitten werden die ersten Schritte mit jedem dieser Nutzung
 Bezahlen Sie vorab, indem Sie eine Lizenz (BYOL) von NetApp erwerben und Cloud Volumes ONTAP Systeme bei jedem Cloud-Provider implementieren.
 
 .Schritte
-. https://["Wenden Sie sich an den NetApp Sales, um eine Lizenz zu erhalten"^]
-. https://["Fügen Sie Ihr Konto für die NetApp Support Website zu BlueXP hinzu"^]
+. https://cloud.netapp.com/contact-cds["Wenden Sie sich an den NetApp Sales, um eine Lizenz zu erhalten"^]
+. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["Fügen Sie Ihr Konto für die NetApp Support Website zu BlueXP hinzu"^]
 +
 BlueXP fragt den NetApp Lizenzierungsservice automatisch ab, um Details zu den Lizenzen zu erhalten, die mit Ihrem NetApp Support Site Konto verknüpft sind. Sollte es keine Fehler geben, fügt BlueXP die Lizenzen automatisch zum Digital Wallet hinzu.
 
@@ -112,7 +112,7 @@ image:screenshot-professional.png["Ein Screenshot der Option „Professional“ 
 link:task-deploying-gcp.html["Sehen Sie sich Schritt-für-Schritt-Anleitungen an, um Cloud Volumes ONTAP in Google Cloud zu starten"].
 
 
-TIP: Sie können die mit Ihren Konten verbundenen Google Cloud Marketplace-Abonnements über die Seite Einstellungen > Anmeldeinformationen verwalten. https://["So managen Sie Ihre Google Cloud-Anmeldedaten und -Abonnements"^]
+TIP: Sie können die mit Ihren Konten verbundenen Google Cloud Marketplace-Abonnements über die Seite Einstellungen > Anmeldeinformationen verwalten. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["So managen Sie Ihre Google Cloud-Anmeldedaten und -Abonnements"^]
 
 
 
@@ -149,7 +149,7 @@ link:task-deploying-gcp.html["Sehen Sie sich Schritt-für-Schritt-Anleitungen an
 Ein Keystone Abonnement ist ein nutzungsbasierter Abonnementservice. link:concept-licensing.html#keystone-subscription["Weitere Informationen zu NetApp Keystone Abonnements"].
 
 .Schritte
-. Wenn Sie noch kein Abonnement haben, https://["Kontakt zu NetApp"^]
+. Wenn Sie noch kein Abonnement haben, https://www.netapp.com/forms/keystone-sales-contact/["Kontakt zu NetApp"^]
 . Mailto:ng-keystone-success@netapp.com[NetApp kontaktieren]: Wir autorisieren Ihr BlueXP Benutzerkonto für eine oder mehrere Keystone Abonnements.
 . Nachdem NetApp den Account autorisiert hat, link:task-manage-keystone.html#link-a-subscription["Verknüpfen Sie Ihre Abonnements für die Verwendung mit Cloud Volumes ONTAP"].
 . Klicken Sie auf der Seite Arbeitsfläche auf *Arbeitsumgebung hinzufügen* und folgen Sie den Schritten in BlueXP.

@@ -19,7 +19,7 @@ Sie können zwischen verschiedenen Maschinentypen wählen, wenn Sie Cloud Volume
 .Über diese Aufgabe
 * Automatisches Giveback muss auf einem Cloud Volumes ONTAP HA-Paar aktiviert sein (dies ist die Standardeinstellung). Wenn nicht, schlägt der Vorgang fehl.
 +
-http://["ONTAP 9 Dokumentation: Befehle zur Konfiguration von automatischem Giveback"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["ONTAP 9 Dokumentation: Befehle zur Konfiguration von automatischem Giveback"^]
 
 * Eine Änderung des Maschinentyps kann sich auf die Google Cloud-Servicegebühren auswirken.
 * Der Vorgang startet Cloud Volumes ONTAP neu.

@@ -16,7 +16,7 @@ summary: Möglicherweise müssen Sie die Konfiguration von Cloud Volumes ONTAP-S
 [role="lead"]
 Mit BlueXP können Sie eine normale oder hohe Schreibgeschwindigkeit für Cloud Volumes ONTAP auswählen. Die standardmäßige Schreibgeschwindigkeit ist normal. Wenn für Ihren Workload eine hohe Schreib-Performance erforderlich ist, kann die hohe Schreibgeschwindigkeit geändert werden.
 
-Eine hohe Schreibgeschwindigkeit wird bei allen Arten von Single-Node-Systemen und einigen HA-Paar-Konfigurationen unterstützt. Zeigen Sie unterstützte Konfigurationen in an https://["Versionshinweise zu Cloud Volumes ONTAP"^]
+Eine hohe Schreibgeschwindigkeit wird bei allen Arten von Single-Node-Systemen und einigen HA-Paar-Konfigurationen unterstützt. Zeigen Sie unterstützte Konfigurationen in an https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Versionshinweise zu Cloud Volumes ONTAP"^]
 
 Bevor Sie die Schreibgeschwindigkeit ändern, sollten Sie dies tun link:concept-write-speed.html["Die Unterschiede zwischen den normalen und den hohen Einstellungen verstehen"].
 

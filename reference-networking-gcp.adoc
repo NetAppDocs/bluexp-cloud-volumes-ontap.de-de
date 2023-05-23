@@ -182,15 +182,15 @@ Bei einem Single-Node-System kann die VPC entweder eine gemeinsame VPC oder eine
 
 Bei einem HA-Paar sind vier VPCs erforderlich. Alle diese VPCs können entweder gemeinsam genutzt oder eigenständig genutzt werden. So könnte es sich beispielsweise um eine gemeinsam genutzte VPC-0, während VPC-1, VPC-2 und VPC-3 eigenständige VPCs sein könnten.
 
-Mit einer gemeinsam genutzten VPC können Sie virtuelle Netzwerke über mehrere Projekte hinweg konfigurieren und zentral managen. Sie können freigegebene VPC-Netzwerke im_Host-Projekt_ einrichten und die Instanzen von Connector und Cloud Volumes ONTAP Virtual Machine in einem _Service-Projekt_ implementieren. https://["Google Cloud-Dokumentation: Gemeinsame VPC-Übersicht"^].
+Mit einer gemeinsam genutzten VPC können Sie virtuelle Netzwerke über mehrere Projekte hinweg konfigurieren und zentral managen. Sie können freigegebene VPC-Netzwerke im_Host-Projekt_ einrichten und die Instanzen von Connector und Cloud Volumes ONTAP Virtual Machine in einem _Service-Projekt_ implementieren. https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud-Dokumentation: Gemeinsame VPC-Übersicht"^].
 
-https://["Erforderliche gemeinsame VPC-Berechtigungen für die Connector-Implementierung prüfen"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Erforderliche gemeinsame VPC-Berechtigungen für die Connector-Implementierung prüfen"^]
 
 
 
 === Paketspiegelung in VPCs
 
-https://["Paketspiegelung"^] In der Google Cloud VPC, in der die Cloud Volumes ONTAP implementiert wird, muss deaktiviert werden. Cloud Volumes ONTAP kann nicht ordnungsgemäß ausgeführt werden, wenn die Paketspiegelung aktiviert ist.
+https://cloud.google.com/vpc/docs/packet-mirroring["Paketspiegelung"^] In der Google Cloud VPC, in der die Cloud Volumes ONTAP implementiert wird, muss deaktiviert werden. Cloud Volumes ONTAP kann nicht ordnungsgemäß ausgeführt werden, wenn die Paketspiegelung aktiviert ist.
 
 
 
@@ -208,7 +208,7 @@ Wenn keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten 
 
 Wenn Sie strenge ausgehende Regeln für Cloud Volumes ONTAP festgelegt haben, müssen Sie auch sicherstellen, dass die Cloud Volumes ONTAP-Firewall _Outbound_-Verbindungen über Port 3128 zulässt.
 
-Nachdem Sie bestätigt haben, dass der ausgehende Internetzugang verfügbar ist, können Sie AutoSupport testen, um sicherzustellen, dass er Nachrichten senden kann. Anweisungen finden Sie unter https://["ONTAP Dokumentation: Einrichten von AutoSupport"^].
+Nachdem Sie bestätigt haben, dass der ausgehende Internetzugang verfügbar ist, können Sie AutoSupport testen, um sicherzustellen, dass er Nachrichten senden kann. Anweisungen finden Sie unter https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP Dokumentation: Einrichten von AutoSupport"^].
 
 
 TIP: Wenn Sie ein HA-Paar verwenden, benötigt der HA Mediator keinen Outbound-Internetzugang.
@@ -227,7 +227,7 @@ Beachten Sie, dass für eine HA-Konfiguration zwei Gruppen von Firewall-Regeln e
 --
 
 
-Wenn kalte Daten in einen Google Cloud Storage Bucket verschoben werden sollen, muss das Subnetz, in dem Cloud Volumes ONTAP residiert, für privaten Google Zugriff konfiguriert sein (wenn Sie ein HA-Paar verwenden, ist dies das Subnetz in VPC-0). Anweisungen finden Sie unter https://["Google Cloud-Dokumentation: Privaten Google Access konfigurieren"^].
+Wenn kalte Daten in einen Google Cloud Storage Bucket verschoben werden sollen, muss das Subnetz, in dem Cloud Volumes ONTAP residiert, für privaten Google Zugriff konfiguriert sein (wenn Sie ein HA-Paar verwenden, ist dies das Subnetz in VPC-0). Anweisungen finden Sie unter https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud-Dokumentation: Privaten Google Access konfigurieren"^].
 
 Weitere Schritte zur Einrichtung von Daten-Tiering in BlueXP finden Sie unter link:task-tiering.html["Tiering von kalten Daten auf kostengünstigen Objekt-Storage"].
 
@@ -237,7 +237,7 @@ Weitere Schritte zur Einrichtung von Daten-Tiering in BlueXP finden Sie unter li
 
 Zur Replizierung von Daten zwischen einem Cloud Volumes ONTAP System in Google Cloud und ONTAP Systemen in anderen Netzwerken müssen Sie eine VPN-Verbindung zwischen der VPC und dem anderen Netzwerk herstellen, beispielsweise das Unternehmensnetzwerk.
 
-Anweisungen finden Sie unter https://["Google Cloud Dokumentation: Cloud VPN Übersicht"^].
+Anweisungen finden Sie unter https://cloud.google.com/vpn/docs/concepts/overview["Google Cloud Dokumentation: Cloud VPN Übersicht"^].
 
 
 
@@ -254,7 +254,7 @@ Beachten Sie, dass für eine HA-Konfiguration zwei Gruppen von Firewall-Regeln e
 
 
 
-TIP: Sie suchen Informationen über den Connector? https://["Zeigen Sie Firewall-Regeln für den Connector an"^]
+TIP: Sie suchen Informationen über den Connector? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Zeigen Sie Firewall-Regeln für den Connector an"^]
 
 
 
@@ -266,7 +266,7 @@ Wenn Sie eine Arbeitsumgebung erstellen, können Sie den Quellfilter für die vo
 * *Alle VPCs*: Der Quellfilter für eingehenden Datenverkehr ist der IP-Bereich 0.0.0.0/0.
 
 
-Wenn Sie Ihre eigene Firewallrichtlinie verwenden, stellen Sie sicher, dass Sie alle Netzwerke hinzufügen, die zur Kommunikation mit Cloud Volumes ONTAP erforderlich sind, aber auch sicherstellen, dass beide Adressbereiche hinzugefügt werden, damit der interne Google Load Balancer korrekt funktioniert. Dies sind die Adressen 130.211.0.0/22 und 35.191.0.0/16. Weitere Informationen finden Sie unter https://["Google Cloud Dokumentation: Load Balancer Firewall Rules"^].
+Wenn Sie Ihre eigene Firewallrichtlinie verwenden, stellen Sie sicher, dass Sie alle Netzwerke hinzufügen, die zur Kommunikation mit Cloud Volumes ONTAP erforderlich sind, aber auch sicherstellen, dass beide Adressbereiche hinzugefügt werden, damit der interne Google Load Balancer korrekt funktioniert. Dies sind die Adressen 130.211.0.0/22 und 35.191.0.0/16. Weitere Informationen finden Sie unter https://cloud.google.com/load-balancing/docs/tcp#firewall_rules["Google Cloud Dokumentation: Load Balancer Firewall Rules"^].
 
 [cols="10,10,80"]
 |===
@@ -509,6 +509,6 @@ NOTE: Um eine hohe Schreibgeschwindigkeit für neue Implementierungen des Google
 
 Wenn Sie noch keinen Connector erstellt haben, sollten Sie auch die Netzwerkanforderungen für den Connector prüfen.
 
-* https://["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
-* https://["Firewall-Regeln in Google Cloud"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Firewall-Regeln in Google Cloud"^]
 

@@ -50,4 +50,4 @@ link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-mult
 
 NVMe-TCP wird für Cloud-Provider unterstützt, wenn Sie Cloud Volumes ONTAP Version 9.12.1 oder höher verwenden. BlueXP bietet keine Managementfunktionen für NVMe-TCP.
 
-Weitere Informationen zum Konfigurieren von NVMe über ONTAP finden Sie unter https://["Konfigurieren Sie eine Storage-VM für NVMe"^].
+Weitere Informationen zum Konfigurieren von NVMe über ONTAP finden Sie unter https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html["Konfigurieren Sie eine Storage-VM für NVMe"^].
