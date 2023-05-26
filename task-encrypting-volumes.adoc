@@ -21,6 +21,10 @@ Cloud Volumes ONTAP unterstützt NetApp Volume Encryption (NVE) und NetApp Aggre
 
 Sowohl NVE als auch NAE werden von einem externen Schlüsselmanager unterstützt.
 
+ifdef::aws[]
+
+endif::aws[]
+
 ifdef::azure[]
 
 endif::azure[]
@@ -29,49 +33,14 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-Neue Aggregate haben standardmäßig NAE aktiviert, nachdem Sie einen externen Schlüsselmanager eingerichtet haben. Für neue Volumes, die nicht Teil eines NAE-Aggregats sind, ist NVE standardmäßig aktiviert (bei vorhandenen Aggregaten, die vor dem Einrichten eines externen Schlüsselmanagers erstellt wurden).
-
-Cloud Volumes ONTAP unterstützt kein Onboard-Verschlüsselungsmanagement.
-
-.Was Sie benötigen
-Ihr Cloud Volumes ONTAP System sollte beim NetApp Support registriert sein. Auf jedem Cloud Volumes ONTAP System, das beim NetApp Support registriert ist, wird automatisch eine Lizenz für NetApp Volume Encryption installiert.
-
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Hinzufügen von Konten für die NetApp Support Site zu BlueXP"^]
-* link:task-registering.html["Registrieren von Pay-as-you-go-Systemen"]
-
-
-
-NOTE: BlueXP installiert die NVE-Lizenz nicht auf Systemen, die sich in der Region China befinden.
-
-.Schritte
-. Überprüfen Sie die Liste der unterstützten Schlüsselmanager im http://mysupport.netapp.com/matrix["NetApp Interoperabilitäts-Matrix-Tool"^].
-+
-
-TIP: Suchen Sie nach der *Key Manager*-Lösung.
-
-. link:task-connecting-to-otc.html["Stellen Sie eine Verbindung zur Cloud Volumes ONTAP-CLI her"^].
-. Externes Verschlüsselungsmanagement konfigurieren.
-+
 ifdef::aws[]
-
-+
-** AWS, https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-external-key-management-overview-concept.html["Die entsprechenden Anweisungen finden Sie in der ONTAP-Dokumentation"^]
-
-
-
 
 endif::aws[]
 
 ifdef::azure[]
 
-* Azure: link:task-azure-key-vault.html["Azure Key Vault (AKV)"]
-
-
 endif::azure[]
 
 ifdef::gcp[]
-
-* Google Cloud: link:task-google-key-manager.html["Google Cloud Key Management Service"]
-
 
 endif::gcp[]
