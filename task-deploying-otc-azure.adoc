@@ -22,8 +22,8 @@ Um eine Arbeitsumgebung zu schaffen, benötigen Sie Folgendes.
 [[licensing]]
 * Ein Anschluss, der betriebsbereit ist.
 +
-** Sie sollten ein haben https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Anschluss, der Ihrem Arbeitsbereich zugeordnet ist"^].
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Sie sollten darauf vorbereitet sein, den Konnektor jederzeit in Betrieb zu nehmen"^].
+** Sie sollten ein haben https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Anschluss, der Ihrem Arbeitsbereich zugeordnet ist"^].
+** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Sie sollten darauf vorbereitet sein, den Konnektor jederzeit in Betrieb zu nehmen"^].
 
 
 * Ein Verständnis der zu verwendenden Konfiguration.
@@ -57,7 +57,7 @@ Wenn Sie ein Cloud Volumes ONTAP-System mit einem Node in Azure starten möchten
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
 . [[Subscribe]]Klicken Sie auf der Bildschirmseite auf *Arbeitsumgebung hinzufügen* und folgen Sie den Anweisungen.
 . *Wählen Sie einen Standort*: Wählen Sie *Microsoft Azure* und *Cloud Volumes ONTAP Single Node*.
-. Wenn Sie dazu aufgefordert werden, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Einen Konnektor erstellen"^].
+. Wenn Sie dazu aufgefordert werden, https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Einen Konnektor erstellen"^].
 . *Details und Anmeldeinformationen*: Optional können Sie die Azure-Anmeldedaten und das Abonnement ändern, einen Clusternamen angeben, bei Bedarf Tags hinzufügen und dann Anmeldedaten angeben.
 +
 In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise Hilfe benötigen:
@@ -77,7 +77,7 @@ In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise
 | Benutzername und Passwort | Dies sind die Anmeldeinformationen für das Cloud Volumes ONTAP Cluster-Administratorkonto. Sie können diese Anmeldedaten für die Verbindung mit Cloud Volumes ONTAP über System Manager oder dessen CLI verwenden. Behalten Sie den Standardbenutzernamen „_admin_“ bei, oder ändern Sie ihn in einen benutzerdefinierten Benutzernamen. 
 
 
-| [[Video]]Anmeldeinformationen bearbeiten | Sie können verschiedene Azure Zugangsdaten und ein anderes Azure Abonnement für dieses Cloud Volumes ONTAP System wählen. Sie müssen ein Azure Marketplace Abonnement mit dem ausgewählten Azure Abonnement verknüpfen, um ein Pay-as-you-go Cloud Volumes ONTAP System zu implementieren. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["Hier erfahren Sie, wie Sie Anmeldedaten hinzufügen"^]. 
+| [[Video]]Anmeldeinformationen bearbeiten | Sie können verschiedene Azure Zugangsdaten und ein anderes Azure Abonnement für dieses Cloud Volumes ONTAP System wählen. Sie müssen ein Azure Marketplace Abonnement mit dem ausgewählten Azure Abonnement verknüpfen, um ein Pay-as-you-go Cloud Volumes ONTAP System zu implementieren. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Hier erfahren Sie, wie Sie Anmeldedaten hinzufügen"^]. 
 |===
 +
 Im folgenden Video wird gezeigt, wie Sie ein Marketplace-Abonnement zu einem Azure-Abonnement verknüpfen:
@@ -86,8 +86,8 @@ Im folgenden Video wird gezeigt, wie Sie ein Marketplace-Abonnement zu einem Azu
 video::video_subscribing_azure.mp4[width=848,height=480]
 . *Dienste*: Lassen Sie die Dienste aktiviert oder deaktivieren Sie die einzelnen Dienste, die Sie nicht mit Cloud Volumes ONTAP verwenden möchten.
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Weitere Informationen zur BlueXP Klassifizierung"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Erfahren Sie mehr über Backup und Recovery von BlueXP"^]
+** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Weitere Informationen zur BlueXP Klassifizierung"^]
+** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Erfahren Sie mehr über Backup und Recovery von BlueXP"^]
 +
 
 TIP: Wenn SIE WORM und Daten-Tiering nutzen möchten, müssen Sie BlueXP Backup und Recovery deaktivieren und eine Cloud Volumes ONTAP Arbeitsumgebung mit Version 9.8 oder höher implementieren.
@@ -112,7 +112,7 @@ In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise
 Erstellen Sie eine neue Ressourcengruppe für Cloud Volumes ONTAP, oder verwenden Sie eine vorhandene Ressourcengruppe. Als Best Practice empfiehlt es sich, eine neue, dedizierte Ressourcengruppe für Cloud Volumes ONTAP zu verwenden. Es ist zwar möglich, Cloud Volumes ONTAP in einer vorhandenen, gemeinsam genutzten Ressourcengruppe bereitzustellen, jedoch wird dies aufgrund des Risikos eines Datenverlusts nicht empfohlen. Weitere Informationen finden Sie in der oben stehenden Warnung.
 
 
-TIP: Wenn im Azure Konto, das Sie verwenden, der angezeigt wird https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Erforderliche Berechtigungen"^], BlueXP entfernt Cloud Volumes ONTAP-Ressourcen aus einer Ressourcengruppe, bei Ausfall oder Löschung der Bereitstellung.
+TIP: Wenn im Azure Konto, das Sie verwenden, der angezeigt wird https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Erforderliche Berechtigungen"^], BlueXP entfernt Cloud Volumes ONTAP-Ressourcen aus einer Ressourcengruppe, bei Ausfall oder Löschung der Bereitstellung.
 
 
 
@@ -240,7 +240,9 @@ image:screenshot_cot_vol.gif["Screenshot: Zeigt die Seite Volume, die für eine 
 | DNS-Domäne | Die DNS-Domain für die Cloud Volumes ONTAP Storage Virtual Machine (SVM). In den meisten Fällen entspricht die Domäne der AD-Domäne. 
 
 
-| NTP-Server | Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP Automation Dokumentation"^] Entsprechende Details. Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers konfigurieren können. Er ist nicht konfigurierbar, nachdem Sie den CIFS-Server erstellt haben. 
+| NTP-Server | Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP Automation Dokumentation"^] Entsprechende Details.
+
+Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers konfigurieren können. Er ist nicht konfigurierbar, nachdem Sie den CIFS-Server erstellt haben. 
 |===
 . *Nutzungsprofil, Festplattentyp und Tiering-Richtlinie*: Wählen Sie aus, ob Sie Funktionen für die Storage-Effizienz aktivieren und gegebenenfalls die Volume Tiering-Richtlinie ändern möchten.
 +
@@ -280,7 +282,7 @@ Wenn Sie ein Cloud Volumes ONTAP HA-Paar in Azure starten möchten, müssen Sie 
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
 . [[Subscribe]]Klicken Sie auf der Bildschirmseite auf *Arbeitsumgebung hinzufügen* und folgen Sie den Anweisungen.
-. Wenn Sie dazu aufgefordert werden, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Einen Konnektor erstellen"^].
+. Wenn Sie dazu aufgefordert werden, https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Einen Konnektor erstellen"^].
 . *Details und Anmeldeinformationen*: Optional können Sie die Azure-Anmeldedaten und das Abonnement ändern, einen Clusternamen angeben, bei Bedarf Tags hinzufügen und dann Anmeldedaten angeben.
 +
 In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise Hilfe benötigen:
@@ -300,7 +302,7 @@ In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise
 | Benutzername und Passwort | Dies sind die Anmeldeinformationen für das Cloud Volumes ONTAP Cluster-Administratorkonto. Sie können diese Anmeldedaten für die Verbindung mit Cloud Volumes ONTAP über System Manager oder dessen CLI verwenden. Behalten Sie den Standardbenutzernamen „_admin_“ bei, oder ändern Sie ihn in einen benutzerdefinierten Benutzernamen. 
 
 
-| [[Video]]Anmeldeinformationen bearbeiten | Sie können verschiedene Azure Zugangsdaten und ein anderes Azure Abonnement für dieses Cloud Volumes ONTAP System wählen. Sie müssen ein Azure Marketplace Abonnement mit dem ausgewählten Azure Abonnement verknüpfen, um ein Pay-as-you-go Cloud Volumes ONTAP System zu implementieren. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["Hier erfahren Sie, wie Sie Anmeldedaten hinzufügen"^]. 
+| [[Video]]Anmeldeinformationen bearbeiten | Sie können verschiedene Azure Zugangsdaten und ein anderes Azure Abonnement für dieses Cloud Volumes ONTAP System wählen. Sie müssen ein Azure Marketplace Abonnement mit dem ausgewählten Azure Abonnement verknüpfen, um ein Pay-as-you-go Cloud Volumes ONTAP System zu implementieren. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Hier erfahren Sie, wie Sie Anmeldedaten hinzufügen"^]. 
 |===
 +
 Im folgenden Video wird gezeigt, wie Sie ein Marketplace-Abonnement zu einem Azure-Abonnement verknüpfen:
@@ -309,8 +311,8 @@ Im folgenden Video wird gezeigt, wie Sie ein Marketplace-Abonnement zu einem Azu
 video::video_subscribing_azure.mp4[width=848,height=480]
 . *Dienste*: Lassen Sie die Dienste aktiviert oder deaktivieren Sie die einzelnen Dienste, die Sie nicht mit Cloud Volumes ONTAP verwenden möchten.
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Weitere Informationen zur BlueXP Klassifizierung"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Erfahren Sie mehr über Backup und Recovery von BlueXP"^]
+** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Weitere Informationen zur BlueXP Klassifizierung"^]
+** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Erfahren Sie mehr über Backup und Recovery von BlueXP"^]
 +
 
 TIP: Wenn SIE WORM und Daten-Tiering nutzen möchten, müssen Sie BlueXP Backup und Recovery deaktivieren und eine Cloud Volumes ONTAP Arbeitsumgebung mit Version 9.8 oder höher implementieren.
@@ -345,7 +347,7 @@ Erstellen Sie eine neue Ressourcengruppe für Cloud Volumes ONTAP, oder verwende
 Sie müssen für jedes Cloud Volumes ONTAP HA-Paar, das Sie in Azure implementieren, eine dedizierte Ressourcengruppe verwenden. Es wird nur ein HA-Paar in einer Ressourcengruppe unterstützt. Bei BlueXP treten Verbindungsprobleme auf, wenn Sie versuchen, ein zweites Cloud Volumes ONTAP HA-Paar in einer Azure Ressourcengruppe bereitzustellen.
 
 
-TIP: Wenn im Azure Konto, das Sie verwenden, der angezeigt wird https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Erforderliche Berechtigungen"^], BlueXP entfernt Cloud Volumes ONTAP-Ressourcen aus einer Ressourcengruppe, bei Ausfall oder Löschung der Bereitstellung.
+TIP: Wenn im Azure Konto, das Sie verwenden, der angezeigt wird https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Erforderliche Berechtigungen"^], BlueXP entfernt Cloud Volumes ONTAP-Ressourcen aus einer Ressourcengruppe, bei Ausfall oder Löschung der Bereitstellung.
 
 
 
@@ -485,7 +487,9 @@ image:screenshot_cot_vol.gif["Screenshot: Zeigt die Seite Volume, die für eine 
 | DNS-Domäne | Die DNS-Domain für die Cloud Volumes ONTAP Storage Virtual Machine (SVM). In den meisten Fällen entspricht die Domäne der AD-Domäne. 
 
 
-| NTP-Server | Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP Automation Dokumentation"^] Entsprechende Details. Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers konfigurieren können. Er ist nicht konfigurierbar, nachdem Sie den CIFS-Server erstellt haben. 
+| NTP-Server | Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP Automation Dokumentation"^] Entsprechende Details.
+
+Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers konfigurieren können. Er ist nicht konfigurierbar, nachdem Sie den CIFS-Server erstellt haben. 
 |===
 . *Nutzungsprofil, Festplattentyp und Tiering-Richtlinie*: Wählen Sie aus, ob Sie Funktionen für die Storage-Effizienz aktivieren und gegebenenfalls die Volume Tiering-Richtlinie ändern möchten.
 +

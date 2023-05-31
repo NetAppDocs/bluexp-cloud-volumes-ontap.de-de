@@ -21,7 +21,7 @@ Sie können eine Arbeitsumgebung innerhalb eines Azure-Abonnements von einer Res
 .Schritte
 . Entfernen Sie die Arbeitsumgebung aus *Canvas*.
 +
-Informationen zum Entfernen einer Arbeitsumgebung finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-removing.html["Entfernen von Cloud Volumes ONTAP Arbeitsumgebungen"].
+Informationen zum Entfernen einer Arbeitsumgebung finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-removing.html["Entfernen von Cloud Volumes ONTAP Arbeitsumgebungen"].
 
 . Führen Sie die Verschiebung der Ressourcengruppe in der Azure-Konsole aus.
 +

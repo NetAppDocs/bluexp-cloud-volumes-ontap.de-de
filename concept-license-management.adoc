@@ -21,7 +21,7 @@ TIP: Eine Node-basierte Lizenz ist das BYOL-Modell der vorherigen Generation fü
 
 link:concept-licensing.html["Erfahren Sie mehr über Cloud Volumes ONTAP Lizenzoptionen"].
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["Erfahren Sie mehr über das Management Node-basierter Lizenzen"^].
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Erfahren Sie mehr über das Management Node-basierter Lizenzen"^].
 
 
 
@@ -41,7 +41,7 @@ Beachten Sie, dass die Festplattenbeschränkungen verhindern können, dass Sie d
 
 Wenn Sie ein Node-basiertes BYOL-System erstellen, werden Sie von BlueXP zur Seriennummer Ihrer Lizenz und zum NetApp Support Site Konto aufgefordert. BlueXP nutzt das Konto, um die Lizenzdatei von NetApp herunterzuladen und auf dem Cloud Volumes ONTAP System zu installieren.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Erfahren Sie, wie Sie BlueXP um NetApp Support Site Konten erweitern"^].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Erfahren Sie, wie Sie BlueXP um NetApp Support Site Konten erweitern"^].
 
 Wenn BlueXP über die sichere Internetverbindung nicht auf die Lizenzdatei zugreifen kann, können Sie dies auch tun link:task-manage-node-licenses.html["Holen Sie sich die Datei selbst ein und laden Sie die Datei anschließend manuell auf BlueXP hoch"].
 

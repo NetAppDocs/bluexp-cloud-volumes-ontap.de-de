@@ -298,11 +298,11 @@ Das Verschieben eines Volumes ist notwendig, um Kapazitätsprobleme zu vermeiden
 . Identifizieren Sie ein Cloud Volumes ONTAP System mit verfügbarer Kapazität, oder implementieren Sie ein neues System.
 . Ziehen Sie die Quellarbeitsumgebung per Drag & Drop in die Zielarbeitsumgebung, um eine einmalige Datenreplizierung des Volumes durchzuführen.
 +
-Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Replizierung von Daten zwischen Systemen"^].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Replizierung von Daten zwischen Systemen"^].
 
 . Wechseln Sie zur Seite "Replication Status", und brechen Sie die SnapMirror Beziehung ab, um das replizierte Volume von einem Datensicherungsvolume in ein Lese-/Schreibvolume zu konvertieren.
 +
-Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["Managen von Plänen und Beziehungen zur Datenreplizierung"^].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["Managen von Plänen und Beziehungen zur Datenreplizierung"^].
 
 . Konfigurieren Sie das Volume für den Datenzugriff.
 +

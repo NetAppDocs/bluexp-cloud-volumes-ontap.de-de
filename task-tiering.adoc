@@ -162,7 +162,7 @@ Sie müssen keine Verbindung zwischen der Performance- und der Kapazitäts-Tier 
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-Die Berechtigungen sind standardmäßig in die benutzerdefinierte Rolle enthalten. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Zeigen Sie die Azure-Berechtigung für den Connector an"^]
+Die Berechtigungen sind standardmäßig in die benutzerdefinierte Rolle enthalten. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Zeigen Sie die Azure-Berechtigung für den Connector an"^]
 
 endif::azure[]
 
@@ -297,7 +297,7 @@ Cloud Volumes ONTAP kann Daten von einem Daten-Protection-Volume auf eine Kapazi
 image:screenshot_replication_tiering.gif["Screenshot, der die S3-Tiering-Option beim Replizieren eines Volumes zeigt."]
 
 +
-Unterstützung bei der Datenreplizierung finden Sie unter https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Replizierung von Daten in die und aus der Cloud"^].
+Unterstützung bei der Datenreplizierung finden Sie unter https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Replizierung von Daten in die und aus der Cloud"^].
 
 
 

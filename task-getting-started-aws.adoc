@@ -18,10 +18,10 @@ Erste Schritte mit Cloud Volumes ONTAP in AWS
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Einen Konnektor erstellen
 [role="quick-margin-para"]
-Wenn Sie keine haben https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Stecker"^] Dennoch muss ein Kontoadministrator einen erstellen. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Erfahren Sie, wie Sie in AWS einen Connector erstellen können"^]
+Wenn Sie keine haben https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Stecker"^] Dennoch muss ein Kontoadministrator einen erstellen. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["Erfahren Sie, wie Sie in AWS einen Connector erstellen können"^]
 
 [role="quick-margin-para"]
-Wenn Sie Cloud Volumes ONTAP in einem Subnetz bereitstellen möchten, in dem kein Internetzugang verfügbar ist, müssen Sie den Connector manuell installieren und auf die BlueXP Benutzeroberfläche zugreifen, die auf diesem Connector ausgeführt wird. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Erfahren Sie, wie Sie den Connector manuell an einem Ort ohne Internetzugang installieren"^]
+Wenn Sie Cloud Volumes ONTAP in einem Subnetz bereitstellen möchten, in dem kein Internetzugang verfügbar ist, müssen Sie den Connector manuell installieren und auf die BlueXP Benutzeroberfläche zugreifen, die auf diesem Connector ausgeführt wird. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Erfahren Sie, wie Sie den Connector manuell an einem Ort ohne Internetzugang installieren"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Planen Sie Ihre Konfiguration
 [role="quick-margin-para"]
@@ -52,8 +52,8 @@ Wenn Sie Amazon Verschlüsselung mit Cloud Volumes ONTAP verwenden möchten, mü
 Klicken Sie auf *Arbeitsumgebung hinzufügen*, wählen Sie den Systemtyp aus, den Sie bereitstellen möchten, und führen Sie die Schritte im Assistenten aus. link:task-deploying-otc-aws.html["Lesen Sie Schritt-für-Schritt-Anleitungen"].
 
 .Weiterführende Links
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Connectors von BlueXP"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-aws.html["Einführen eines Connectors über den AWS Marketplace"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Installieren der Connector-Software auf einem Linux-Host"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Was BlueXP mit AWS-Berechtigungen macht"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Connectors von BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws.html["Einführen eines Connectors über den AWS Marketplace"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installieren der Connector-Software auf einem Linux-Host"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Was BlueXP mit AWS-Berechtigungen macht"^]
 

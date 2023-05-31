@@ -24,7 +24,7 @@ BlueXP aktualisiert die Kosten, wenn Sie die Seite aktualisieren. Die endgültig
 +
 .. Stellen Sie sicher, dass die IAM-Richtlinie, die BlueXP Berechtigungen bereitstellt, die erforderlichen Berechtigungen enthält.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Zeigen Sie die erforderlichen Berechtigungen an"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Zeigen Sie die erforderlichen Berechtigungen an"^]
 
 .. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["Aktivieren Sie das Tag *WorkingEnvironment ID*"^].
 +

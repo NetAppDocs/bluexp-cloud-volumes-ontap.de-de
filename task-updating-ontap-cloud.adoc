@@ -342,6 +342,6 @@ Der Wert für _maxDownloadSessions_ kann 1 oder eine beliebige Ganzzahl größer
 
 Beachten Sie, dass 32 ein Beispielwert ist. Der Wert, den Sie verwenden sollten, hängt von Ihrer NAT-Konfiguration und der Anzahl der Sitzungen ab, die Sie gleichzeitig haben können.
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["Erfahren Sie mehr über den Aufruf der /occm/config API"^].
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig["Erfahren Sie mehr über den Aufruf der /occm/config API"^].
 
 endif::gcp[]

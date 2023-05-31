@@ -19,7 +19,7 @@ Während Google Cloud Storage Ihre Daten immer verschlüsselt, bevor sie auf die
 .Schritte
 . Stellen Sie sicher, dass das Servicekonto BlueXP Connector im Projekt, in dem der Schlüssel gespeichert ist, über die entsprechenden Berechtigungen auf Projektebene verfügt.
 +
-Die Berechtigungen werden im bereitgestellt https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Standardmäßig sind die Berechtigungen für das Connector-Dienstkonto festgelegt"^], Kann aber nicht angewendet werden, wenn Sie ein alternatives Projekt für den Cloud Key Management Service verwenden.
+Die Berechtigungen werden im bereitgestellt https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Standardmäßig sind die Berechtigungen für das Connector-Dienstkonto festgelegt"^], Kann aber nicht angewendet werden, wenn Sie ein alternatives Projekt für den Cloud Key Management Service verwenden.
 
 +
 Folgende Berechtigungen stehen zur Auswahl:
@@ -62,4 +62,4 @@ Weitere Informationen finden Sie unter https://cloud.google.com/storage/docs/enc
 ----
 
 
-Siehe https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP Automation Dokumentation"^] Weitere Informationen zur Verwendung des Parameters „GcpEncryption“.
+Siehe https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP Automation Dokumentation"^] Weitere Informationen zur Verwendung des Parameters „GcpEncryption“.

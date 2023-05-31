@@ -24,13 +24,13 @@ Ressourcen, die von anderen Services wie Backups für BlueXP Backup und Recovery
 NOTE: Wenn BlueXP Cloud Volumes ONTAP bei Ihrem Cloud-Provider implementiert, ermöglicht es Ihnen, die Beendigung des Arbeitsabfalls zu gewährleisten. Diese Option verhindert versehentliches Beenden.
 
 .Schritte
-. Wenn Sie das Backup und Recovery von BlueXP in der Arbeitsumgebung aktiviert haben, stellen Sie fest, ob die gesicherten Daten noch erforderlich sind, und legen Sie dann fest https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-backups["Löschen Sie die Backups, falls erforderlich"^].
+. Wenn Sie das Backup und Recovery von BlueXP in der Arbeitsumgebung aktiviert haben, stellen Sie fest, ob die gesicherten Daten noch erforderlich sind, und legen Sie dann fest https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backups-ontap.html#deleting-backups["Löschen Sie die Backups, falls erforderlich"^].
 +
 BlueXP Backup und Recovery sind unabhängig von Cloud Volumes ONTAP. BlueXP Backup und Recovery löscht Backups nicht automatisch, wenn Sie ein Cloud Volumes ONTAP System löschen. Es gibt derzeit keine Unterstützung in der Benutzeroberfläche, um die Backups nach dem Löschen des Systems zu löschen.
 
 . Wenn Sie die BlueXP Klassifizierung in dieser Arbeitsumgebung aktiviert haben und keine anderen Arbeitsumgebungen diesen Service verwenden, müssen Sie die Instanz für den Service löschen.
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#the-cloud-data-sense-instance["Erfahren Sie mehr über die BlueXP Klassifizierungsinstanz"^].
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#the-cloud-data-sense-instance["Erfahren Sie mehr über die BlueXP Klassifizierungsinstanz"^].
 
 . Löschen Sie die Cloud Volumes ONTAP-Arbeitsumgebung.
 +

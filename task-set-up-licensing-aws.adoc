@@ -68,7 +68,7 @@ Bezahlen Sie vorab, indem Sie eine Lizenz (BYOL) von NetApp erwerben und Cloud V
 
 .Schritte
 . https://cloud.netapp.com/contact-cds["Wenden Sie sich an den NetApp Sales, um eine Lizenz zu erhalten"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["Fügen Sie Ihr Konto für die NetApp Support Website zu BlueXP hinzu"^]
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["Fügen Sie Ihr Konto für die NetApp Support Website zu BlueXP hinzu"^]
 +
 BlueXP fragt den NetApp Lizenzierungsservice automatisch ab, um Details zu den Lizenzen zu erhalten, die mit Ihrem NetApp Support Site Konto verknüpft sind. Sollte es keine Fehler geben, fügt BlueXP die Lizenzen automatisch zum Digital Wallet hinzu.
 
@@ -121,7 +121,7 @@ image:screenshot-professional.png["Ein Screenshot der Option „Professional“ 
 link:task-deploying-otc-aws.html["Sehen Sie sich Schritt-für-Schritt-Anleitungen zum Starten von Cloud Volumes ONTAP in AWS an"].
 
 
-TIP: Sie können die mit Ihren AWS-Konten verbundenen AWS Marketplace-Abonnements über die Seite „Einstellungen“ > „Anmeldeinformationen“ managen. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Managen Sie Ihre AWS-Konten und -Abonnements"^]
+TIP: Sie können die mit Ihren AWS-Konten verbundenen AWS Marketplace-Abonnements über die Seite „Einstellungen“ > „Anmeldeinformationen“ managen. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Managen Sie Ihre AWS-Konten und -Abonnements"^]
 
 
 

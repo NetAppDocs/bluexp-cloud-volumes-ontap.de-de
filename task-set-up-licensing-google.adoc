@@ -65,7 +65,7 @@ Bezahlen Sie vorab, indem Sie eine Lizenz (BYOL) von NetApp erwerben und Cloud V
 
 .Schritte
 . https://cloud.netapp.com/contact-cds["Wenden Sie sich an den NetApp Sales, um eine Lizenz zu erhalten"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["Fügen Sie Ihr Konto für die NetApp Support Website zu BlueXP hinzu"^]
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["Fügen Sie Ihr Konto für die NetApp Support Website zu BlueXP hinzu"^]
 +
 BlueXP fragt den NetApp Lizenzierungsservice automatisch ab, um Details zu den Lizenzen zu erhalten, die mit Ihrem NetApp Support Site Konto verknüpft sind. Sollte es keine Fehler geben, fügt BlueXP die Lizenzen automatisch zum Digital Wallet hinzu.
 
@@ -112,7 +112,7 @@ image:screenshot-professional.png["Ein Screenshot der Option „Professional“ 
 link:task-deploying-gcp.html["Sehen Sie sich Schritt-für-Schritt-Anleitungen an, um Cloud Volumes ONTAP in Google Cloud zu starten"].
 
 
-TIP: Sie können die mit Ihren Konten verbundenen Google Cloud Marketplace-Abonnements über die Seite Einstellungen > Anmeldeinformationen verwalten. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["So managen Sie Ihre Google Cloud-Anmeldedaten und -Abonnements"^]
+TIP: Sie können die mit Ihren Konten verbundenen Google Cloud Marketplace-Abonnements über die Seite Einstellungen > Anmeldeinformationen verwalten. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["So managen Sie Ihre Google Cloud-Anmeldedaten und -Abonnements"^]
 
 
 

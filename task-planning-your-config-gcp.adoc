@@ -109,7 +109,7 @@ Google Cloud Compute Engine setzt Quoten für die Ressourcenauslastung durch. Da
 
 
 
-TIP: Für den Connector ist außerdem eine Systemfestplatte erforderlich. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Zeigen Sie Details zur Standardkonfiguration des Connectors an"^].
+TIP: Für den Connector ist außerdem eine Systemfestplatte erforderlich. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["Zeigen Sie Details zur Standardkonfiguration des Connectors an"^].
 
 
 

@@ -120,7 +120,7 @@ Neben dem Storage für Benutzerdaten erwirbt BlueXP auch Cloud-Storage für Clou
 link:reference-default-configs.html#aws["Zeigen Sie die Standardfestplatten für Cloud Volumes ONTAP-Systemdaten in AWS an"].
 
 
-TIP: Für den Connector ist außerdem eine Systemfestplatte erforderlich. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Zeigen Sie Details zur Standardkonfiguration des Connectors an"^].
+TIP: Für den Connector ist außerdem eine Systemfestplatte erforderlich. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["Zeigen Sie Details zur Standardkonfiguration des Connectors an"^].
 
 
 
