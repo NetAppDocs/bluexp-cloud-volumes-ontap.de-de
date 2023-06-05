@@ -195,22 +195,10 @@ endif::gcp[]
 
 === Aktivieren des Daten-Tiering nach der Implementierung der Anforderungen
 
-BlueXP erstellt bei der Erstellung des Systems einen Objektspeicher für kalte Daten, solange keine Verbindungs- oder Berechtigungsprobleme auftreten. Wenn Sie die oben aufgeführten Anforderungen erst nach dem Erstellen des Systems implementiert haben, müssen Sie Tiering manuell aktivieren, wodurch der Objektspeicher erstellt wird.
+BlueXP erstellt bei der Erstellung des Systems einen Objektspeicher für kalte Daten, solange keine Verbindungs- oder Berechtigungsprobleme auftreten. Wenn Sie die oben aufgeführten Anforderungen erst nach dem Erstellen des Systems implementiert haben, müssen Sie Tiering manuell über die API oder den System Manager aktivieren, der den Objektspeicher erstellt.
 
-.Schritte
-. <<Anforderungen,Stellen Sie sicher, dass Sie alle Anforderungen erfüllt haben>>.
-. Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
-. Wählen Sie auf der Seite Arbeitsfläche den Namen der Cloud Volumes ONTAP-Instanz aus.
-. Klicken Sie auf das Menüsymbol und wählen Sie *Kapazitätsabteilung aktivieren*.
-+
 
-NOTE: Diese Option wird nur angezeigt, wenn das Daten-Tiering nicht aktiviert werden konnte, wenn BlueXP das System erstellt hat.
-
-+
-In Google Cloud muss ein Servicekonto an Cloud Volumes ONTAP angehängt werden, bevor diese Option angezeigt wird. <<Anforderungen,Stellen Sie sicher, dass Sie alle Anforderungen erfüllt haben>>.
-
-. Klicken Sie auf *Aktivieren*, damit BlueXP den Objektspeicher erstellen kann, den dieses Cloud Volumes ONTAP-System für Tiered-Daten verwendet.
-
+NOTE: Tiering über die BlueXP Benutzeroberfläche wird in einer zukünftigen Cloud Volumes ONTAP Version möglich sein.
 
 
 

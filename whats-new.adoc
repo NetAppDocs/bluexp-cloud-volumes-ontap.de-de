@@ -20,6 +20,20 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 4 Juni 2023
+
+Die folgende Änderung wurde mit der Version 3.9.30 des Connectors eingeführt.
+
+
+
+=== Aktualisierung der Cloud Volumes ONTAP-Upgrade-Versionsauswahl
+
+Auf der Seite Upgrade Cloud Volumes ONTAP können Sie jetzt wählen, ob Sie ein Upgrade auf die neueste verfügbare Version von Cloud Volumes ONTAP oder eine ältere Version durchführen möchten.
+
+Weitere Informationen zum Upgrade von Cloud Volumes ONTAP über BlueXP finden Sie unter https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Upgrade von Cloud Volumes ONTAP"^].
+
+
+
 == 7 Mai 2023
 
 Die folgenden Änderungen wurden mit der Version 3.9.29 des Connectors eingeführt.
