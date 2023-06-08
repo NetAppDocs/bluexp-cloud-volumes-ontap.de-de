@@ -35,6 +35,9 @@ TIP: BlueXP ändert den Knoten nacheinander ordnungsgemäß, indem es Takeover u
 
 
 
+.Referenz
+Eine Liste der unterstützten Instanztypen in AWS finden Sie unter link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["Unterstützte EC2 Instanzen"^].
+
 .Schritte
 . Wählen Sie auf der Seite Arbeitsfläche die Arbeitsumgebung aus.
 . Klicken Sie auf der Registerkarte Übersicht auf das Bedienfeld Funktionen und dann auf das Bleistiftsymbol neben *Instanztyp*.
