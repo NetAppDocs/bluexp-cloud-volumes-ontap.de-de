@@ -3845,7 +3845,6 @@
   <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">Wichtiger Hinweis</block>
   <block id="fdee261787c8d28a1d5af5c07b8580d6" category="list-text">Ab ONTAP 9.9.1P7 verwendet BlueXP für NVRAM und die Kernfestplatte einen Festplattenverschlüsselungssatz, der das Management von Schlüsseln mit verwalteten Laufwerken ermöglicht. Bei niedrigeren Versionen wird der von Microsoft verwaltete Schlüssel anstelle des vom Kunden verwalteten Schlüssels verwendet.</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">*Azure Festplattenverschlüsselung für Volume Encryption* (für Single Node-Systeme oder HA-Paare in mehreren Zonen)</block>
-  <block id="6337ff9e523cd4d0c21d00ce582cb8ca" category="admonition">Für HA-Paare in einer einzelnen Zone sind keine Berechtigungen erforderlich.</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">Erforderliche Google Cloud Berechtigungen</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Was ist Flash Cache?</block>
   <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Einen Konnektor erstellen</block>
@@ -4942,4 +4941,32 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="9eecbfaf12c4b441b4b80b15e69b1763" category="paragraph"><block ref="861512b606f6337e516b8d3562c115c3" category="inline-link-macro-rx"></block>.</block>
   <block id="ce8df63e83de2ff4c9315aacad840c85" category="inline-link-macro">Unterstützte EC2 Instanzen</block>
   <block id="eb8249aa4fe7f904487ee8ca24dce280" category="paragraph">Eine Liste der unterstützten Instanztypen in AWS finden Sie unter <block ref="ab5d2be79e0f4831293646ade5590437" category="inline-link-macro-rx"></block>.</block>
+  <block id="21d684c5497d7c44f38249fb9317e2ff" category="section-title">Erstellen Sie eine vom Benutzer zugewiesene verwaltete Identität</block>
+  <block id="c1d9d82ae4f42fc1db168e7b745f9697" category="paragraph">Sie haben die Möglichkeit, eine Ressource zu erstellen, die als benutzerzugewiesene verwaltete Identität bezeichnet wird. Auf diese Weise können Sie Ihre Storage-Konten verschlüsseln, wenn Sie eine Cloud Volumes ONTAP-Arbeitsumgebung erstellen. Wir empfehlen, diese Ressource zu erstellen, bevor Sie einen Schlüsseltresor erstellen und einen Schlüssel erzeugen.</block>
+  <block id="2da2bdad0a1c89d70cb7a7586bf14758" category="paragraph">Die Ressource hat die folgende ID:<block ref="0169e4e7c078e2230c21c551eaf35e56" prefix=" " category="inline-code"></block>.</block>
+  <block id="2f37b99340ba454bd7f13c34ebaf9799" category="list-text">Gehen Sie in Azure zu Azure Services und wählen Sie *verwaltete Identitäten* aus.</block>
+  <block id="f2a42a68e067e481d094b018459ef895" category="list-text">Klicken Sie Auf *Erstellen*.</block>
+  <block id="0de11488ec479f7728a12eaa20900087" category="list-text">Geben Sie folgende Informationen an:</block>
+  <block id="eb6b5e1059f0c14240e0b29450c64244" category="list-text">*Abonnement*: Wählen Sie ein Abonnement. Wir empfehlen, dasselbe Abonnement wie das Connector-Abonnement zu wählen.</block>
+  <block id="10a805425ce15433762da2005f065657" category="list-text">*Ressourcengruppe*: Verwenden Sie eine vorhandene Ressourcengruppe oder erstellen Sie eine neue.</block>
+  <block id="da2433e2c4da1ae4d4ccf813bec559d8" category="list-text">*Region*: Wählen Sie optional die gleiche Region wie der Connector.</block>
+  <block id="5b75c82ea3a972e4af28cf4cebb17b30" category="list-text">*Name*: Geben Sie einen Namen für die Ressource ein.</block>
+  <block id="a5224fbb5f2e884564b316411dcf1c8b" category="list-text">Optional können Sie Tags hinzufügen.</block>
+  <block id="8a719e3e1b73b371d427de036115d5ca" category="inline-xref">Eine vom Benutzer zugewiesene verwaltete Identität wurde erstellt</block>
+  <block id="6290500d5abf30b274cc1c7ddf30e546" category="paragraph">Wenn Sie <block ref="33573eb5764d0fad6438d3a347eee31f" category="inline-xref-macro-rx"></block>, Beim Erstellen des Schlüsseltresors sollten Sie auch eine Zugangsrichtlinie für den Schlüsseltresor erstellen.</block>
+  <block id="4fe37dc4f545dffb56459397b5344d4c" category="list-text">Die folgende Option sollte aktiviert sein, wenn Sie eine vom Benutzer zugewiesene verwaltete Identität erstellt haben:</block>
+  <block id="7761893631ec0e57ca5b1847392a89d1" category="list-text">*Vault-Zugangsrichtlinie*</block>
+  <block id="6b549cac54fb4417d571d2ff5fe2226a" category="list-text">Wenn Sie die Vault-Zugriffsrichtlinie ausgewählt haben, klicken Sie auf Erstellen, um eine Zugriffsrichtlinie für den Schlüsseltresor zu erstellen. Falls nicht, fahren sie mit Schritt 3 fort.</block>
+  <block id="05d7a493e761863b43bc21c5b24707a8" category="list-text">Wählen Sie die folgenden Berechtigungen aus:</block>
+  <block id="b5eda0a74558a342cf659187f06f746f" category="list-text">Get</block>
+  <block id="10ae9fc7d453b0dd525d0edf2ede7961" category="list-text">Liste</block>
+  <block id="9a2d8ce3ffdcdf2123bddd94d79ef200" category="list-text">Entschlüsseln</block>
+  <block id="53c82eba31f6d416f331de9162ebe997" category="list-text">Verschlüsseln</block>
+  <block id="64d6d5cd6bec2e7026a301304363a0f2" category="list-text">Taste zum Auspacken</block>
+  <block id="2733a028e38aa84f7ea84735ac7988a6" category="list-text">Umbruch-Taste</block>
+  <block id="e8418d1d706cd73548f9f16f1d55ad6e" category="list-text">Verifizieren</block>
+  <block id="04b29480233f4def5c875875b6bdc3b1" category="list-text">signieren</block>
+  <block id="dfbbb3ca890c5e816afc33a0f5d49ec2" category="list-text">Wählen Sie die vom Benutzer zugewiesene verwaltete Identität (Ressource) als Prinzipal aus.</block>
+  <block id="0882685275009e45f6167bce4081e668" category="list-text">Überprüfen und erstellen Sie die Zugriffsrichtlinie.</block>
+  <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">Nehmen Sie die auf<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> Feld, wenn Sie diese Ressource für die Verschlüsselung von Speicherkontos erstellt haben.</block>
 </blocks>

@@ -76,9 +76,34 @@ Single Node::
 
 
 
+== Erstellen Sie eine vom Benutzer zugewiesene verwaltete Identität
+
+Sie haben die Möglichkeit, eine Ressource zu erstellen, die als benutzerzugewiesene verwaltete Identität bezeichnet wird. Auf diese Weise können Sie Ihre Storage-Konten verschlüsseln, wenn Sie eine Cloud Volumes ONTAP-Arbeitsumgebung erstellen. Wir empfehlen, diese Ressource zu erstellen, bevor Sie einen Schlüsseltresor erstellen und einen Schlüssel erzeugen.
+
+Die Ressource hat die folgende ID: `userassignedidentity`.
+
+.Schritte
+. Gehen Sie in Azure zu Azure Services und wählen Sie *verwaltete Identitäten* aus.
+. Klicken Sie Auf *Erstellen*.
+. Geben Sie folgende Informationen an:
++
+** *Abonnement*: Wählen Sie ein Abonnement. Wir empfehlen, dasselbe Abonnement wie das Connector-Abonnement zu wählen.
+** *Ressourcengruppe*: Verwenden Sie eine vorhandene Ressourcengruppe oder erstellen Sie eine neue.
+** *Region*: Wählen Sie optional die gleiche Region wie der Connector.
+** *Name*: Geben Sie einen Namen für die Ressource ein.
+
+
+. Optional können Sie Tags hinzufügen.
+. Klicken Sie Auf *Erstellen*.
+
+
+
+
 == Erstellen eines Schlüsselgewölbes und Generieren eines Schlüssels
 
 Der Schlüsselspeicher muss in demselben Azure Abonnement und derselben Region liegen, in der Sie das Cloud Volumes ONTAP System erstellen möchten.
+
+Wenn Sie <<Erstellen Sie eine vom Benutzer zugewiesene verwaltete Identität,Eine vom Benutzer zugewiesene verwaltete Identität wurde erstellt>>, Beim Erstellen des Schlüsseltresors sollten Sie auch eine Zugangsrichtlinie für den Schlüsseltresor erstellen.
 
 .Schritte
 . https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["Erstellen Sie einen Schlüsselspeicher in Ihrem Azure-Abonnement"^].
@@ -94,6 +119,29 @@ Beachten Sie die folgenden Anforderungen für den Schlüsselspeicher:
 *** *Azure Festplattenverschlüsselung für Volume Encryption* (für Single Node-Systeme oder HA-Paare in mehreren Zonen)
 
 
+** Die folgende Option sollte aktiviert sein, wenn Sie eine vom Benutzer zugewiesene verwaltete Identität erstellt haben:
++
+*** *Vault-Zugangsrichtlinie*
+
+
+
+
+. Wenn Sie die Vault-Zugriffsrichtlinie ausgewählt haben, klicken Sie auf Erstellen, um eine Zugriffsrichtlinie für den Schlüsseltresor zu erstellen. Falls nicht, fahren sie mit Schritt 3 fort.
++
+.. Wählen Sie die folgenden Berechtigungen aus:
++
+*** Get
+*** Liste
+*** Entschlüsseln
+*** Verschlüsseln
+*** Taste zum Auspacken
+*** Umbruch-Taste
+*** Verifizieren
+*** signieren
+
+
+.. Wählen Sie die vom Benutzer zugewiesene verwaltete Identität (Ressource) als Prinzipal aus.
+.. Überprüfen und erstellen Sie die Zugriffsrichtlinie.
 
 
 . https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["Einen Schlüssel im Schlüsselspeicher erzeugen"^].
@@ -118,18 +166,15 @@ Wenn Sie einen vom Kunden verwalteten Schlüssel mit einem Cloud Volumes ONTAP-S
 
 [source, json]
 ----
-"Microsoft.Compute/diskEncryptionSets/read"
+"Microsoft.Compute/diskEncryptionSets/read",
 "Microsoft.Compute/diskEncryptionSets/write",
 "Microsoft.Compute/diskEncryptionSets/delete"
 "Microsoft.KeyVault/vaults/deploy/action",
 "Microsoft.KeyVault/vaults/read",
-"Microsoft.KeyVault/vaults/accessPolicies/write"
+"Microsoft.KeyVault/vaults/accessPolicies/write",
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Zeigen Sie die aktuelle Liste der Berechtigungen an"^]
-
-
-NOTE: Für HA-Paare in einer einzelnen Zone sind keine Berechtigungen erforderlich.
 
 .Schritte
 . Nutzen Sie den folgenden BlueXP API-Aufruf, um die Liste der Schlüsselvaults in Ihrem Azure-Abonnement zu erhalten.
@@ -172,10 +217,13 @@ Der Text der Anforderung muss die folgenden Felder enthalten:
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: Nehmen Sie die auf `"userAssignedIdentity": " userAssignedIdentityId"` Feld, wenn Sie diese Ressource für die Verschlüsselung von Speicherkontos erstellt haben.
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-haworking-environments["Weitere Informationen zu diesem API-Aufruf"^].
 
@@ -191,10 +239,13 @@ Der Text der Anforderung muss die folgenden Felder enthalten:
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: Nehmen Sie die auf `"userAssignedIdentity": " userAssignedIdentityId"` Feld, wenn Sie diese Ressource für die Verschlüsselung von Speicherkontos erstellt haben.
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-vsaworking-environments["Weitere Informationen zu diesem API-Aufruf"^].
 
