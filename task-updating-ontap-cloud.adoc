@@ -49,7 +49,13 @@ Die Cloud Volumes ONTAP Version, auf die Sie ein Upgrade durchführen können, h
 | Aktuelle Version | Versionen, auf die Sie direkt aktualisieren können 
 
 
-| 9.12.1 | 9.13.0 
+| 9.13.0 | 9.13.1 
+
+
+.2+| 9.12.1 | 9.13.1 
+
+
+| 9.13.0 
 
 
 | 9.12.0 | 9.12.1 
@@ -119,6 +125,15 @@ Beachten Sie Folgendes:
 * In einigen Fällen müssen Sie möglicherweise ein paar Mal ein Upgrade durchführen, um Ihre Zielversion zu erreichen.
 +
 Wenn Sie beispielsweise Version 9.8 verwenden und auf 9.10.1 aktualisieren möchten, müssen Sie zuerst auf Version 9.9.1 und dann auf 9.10.1 aktualisieren.
+
+* Für Patch (P)-Versionen können Sie von einer Version auf eine beliebige P-Version der nächsten Version aktualisieren.
++
+Hier ein paar Beispiele:
+
++
+** 9.13.0 > 9,13,1P15
+** 9.12.1 > 9,13,1P2
+
 
 
 
@@ -321,6 +336,7 @@ Wenn Sie das Software-Image auf den Connector in dem oben gezeigten Pfad kopiert
 
 NOTE: In der URL muss *image-file-Name* dem Format "cot.image.9.13.1P2.tgz" folgen.
 
+. Klicken Sie zur Bestätigung auf *Weiter*.
 
 
 .Ergebnis
