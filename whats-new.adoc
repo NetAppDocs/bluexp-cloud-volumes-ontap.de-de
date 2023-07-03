@@ -20,6 +20,28 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 2 Juli 2023
+
+Die folgenden Änderungen wurden mit der Version 3.9.31 des Connectors eingeführt.
+
+
+
+=== Unterstützung für HA-Implementierungen mit mehreren Verfügbarkeitszonen in Azure
+
+Der japanische Osten und Korea Zentral in Azure unterstützen jetzt HA-Implementierungen mit mehreren Verfügbarkeitszonen für Cloud Volumes ONTAP 9.12.1 GA und höher.
+
+Eine Liste aller Regionen, die mehrere Verfügbarkeitszonen unterstützen, finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].
+
+
+
+=== Unterstützung für autonomen Ransomware-Schutz
+
+Autonomous Ransomware Protection (ARP) wird jetzt auf Cloud Volumes ONTAP unterstützt. ARP-Unterstützung ist auf Cloud Volumes ONTAP Version 9.12.1 und höher verfügbar.
+
+Weitere Informationen über ARP with Cloud Volumes ONTAP finden Sie unter https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["Autonomer Schutz Durch Ransomware"].
+
+
+
 == 26 Juni 2023
 
 Die folgende Änderung wurde mit der Version 3.9.30 des Connectors eingeführt.

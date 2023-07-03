@@ -285,7 +285,7 @@ Es gibt eine Mindestgebühr von 4 tib für jede Daten-Serving-Storage-VM mit min
 
 Wenn Sie noch keine Volumes bereitgestellt haben, gilt die Mindestgebühr nicht.
 
-Die Mindestkapazitätsgebühr von 4 tib gilt nicht für Storage-VMs, die nur sekundäre (Datensicherungs-) Volumes enthalten. Wenn Sie beispielsweise eine Storage-VM mit 1 tib sekundären Daten haben, werden Sie nur für die 1 tib Daten berechnet.
+Für das Essentials-Paket gilt die Mindestkapazitätsgebühr von 4 tib nicht für Storage-VMs, die nur sekundäre Volumes (Datensicherung) enthalten. Wenn Sie beispielsweise eine Storage-VM mit 1 tib sekundären Daten haben, werden Sie nur für die 1 tib Daten berechnet. Bei allen anderen nicht-Essentials-Pakettypen (optimiert, Professional und Edge Cache) gilt unabhängig vom Volume-Typ die Mindestkapazitätsladung von 4 tib.
 
 
 
