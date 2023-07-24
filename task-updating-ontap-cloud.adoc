@@ -176,7 +176,9 @@ Bevor Sie ein Upgrade durchführen, müssen Sie überprüfen, ob die Systeme ber
 
 Wenn Sie ein Single-Node-System aktualisieren, stellt der Upgrade-Prozess das System für bis zu 25 Minuten offline, während dieser I/O-Unterbrechung ausgeführt wird.
 
-Das Upgrade eines HA-Paars erfolgt unterbrechungsfrei und die I/O wird unterbrochen. Während dieses unterbrechungsfreien Upgrade-Prozesses wird jeder Node entsprechend aktualisiert, um den I/O-Datenverkehr für die Clients weiterhin bereitzustellen.
+In vielen Fällen erfolgt das Upgrade eines HA-Paars unterbrechungsfrei und die I/O-Vorgänge werden unterbrechungsfrei ausgeführt. Während dieses unterbrechungsfreien Upgrade-Prozesses wird jeder Node entsprechend aktualisiert, um den I/O-Datenverkehr für die Clients weiterhin bereitzustellen.
+
+Sitzungsorientierte Protokolle können während der Upgrades in bestimmten Bereichen negative Auswirkungen auf Clients und Anwendungen haben. Weitere Informationen https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html["Weitere Informationen finden Sie in der ONTAP-Dokumentation"^]
 
 
 
