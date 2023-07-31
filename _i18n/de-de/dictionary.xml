@@ -3565,7 +3565,6 @@
   <block id="4f0678a9e095858a4fa747c1c08210ee" category="paragraph">Standardmäßig aktiviert BlueXP jetzt eine private Azure-Link-Verbindung zwischen Cloud Volumes ONTAP und den zugehörigen Speicherkonten. Ein Private Link sichert Verbindungen zwischen Endpunkten in Azure.</block>
   <block id="8f7830ddfb4c3be4f076516f4856d257" category="inline-link">Erfahren Sie mehr über Azure Private Links</block>
   <block id="b159a32bd5237dec9c6c28e81628f28a" category="list-text"><block ref="b159a32bd5237dec9c6c28e81628f28a" category="inline-link-rx"></block></block>
-  <block id="a2f09fc910f91b45be16b1d3da056377" category="list-text"><block ref="a2f09fc910f91b45be16b1d3da056377" category="inline-link-macro-rx"></block></block>
   <block id="eef256fe1f25b0dfdcc3971d7f0a9974" category="summary">Sie können Cloud Volumes ONTAP in einer Einzel-System-Konfiguration oder als HA-Paar in der Google Cloud Platform starten.</block>
   <block id="9e1dbaa97d16ff9bc20f90cb1663f522" category="inline-link">Sollte über die erforderlichen Berechtigungen verfügen</block>
   <block id="fb387d3403e9d0f4168631a5c1e65d3d" category="inline-link">In Ihrem Projekt aktiviert</block>
@@ -4585,7 +4584,6 @@
   <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">Gesamte PAYGO-Kapazität</block>
   <block id="76101a2de96d735db21249323914bc6c" category="list-text">*Cloud Volumes ONTAP-Paketverwendung*: Dieser Bericht zeigt Ihnen genau, was sich auf den Paketkarten in der digitalen Brieftasche befindet. Es enthält die folgenden Informationen für jedes Paket außer dem optimierten I/O-Paket:</block>
   <block id="c01bbdbe6721d80a74779e943243486b" category="list-text">*Nutzung von Storage-VMs*: Dieser Bericht zeigt, wie die geladene Kapazität auf Cloud Volumes ONTAP Systeme und Storage Virtual Machines (SVMs) aufgeteilt wird. Diese Informationen sind auf keinem Bildschirm in der Digital Wallet verfügbar. Sie enthält folgende Informationen:</block>
-  <block id="b16bfcaa9b0651f05b8e8894a2aebb31" category="list-text">Arbeitsumgebungs-ID (wird als UUID angezeigt)</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">Cloud</block>
   <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">NetApp Konto-ID</block>
   <block id="bbfa34e8af02138b821f784c8962669b" category="list-text">Konfiguration der Arbeitsumgebung</block>
@@ -4740,7 +4738,6 @@ Informationen zum Erstellen einer Erteilung finden Sie unter <block ref="2e58dbc
 Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers konfigurieren können. Er ist nicht konfigurierbar, nachdem Sie den CIFS-Server erstellt haben.</block>
   <block id="dabcd93c47c69ecf7688c43957686bb7" category="cell">Wenn Sie die verwenden möchten <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> Oder<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> Services. Sie müssen den Schalter *Service-Konto* aktivieren und dann das Servicekonto auswählen, das die vordefinierte Rolle Storage-Admin hat.</block>
   <block id="5355322e972163adefa502954b34d25c" category="paragraph">Im folgenden Video wird gezeigt, wie Sie Ihrem Google Cloud-Projekt ein Pay-as-you-go Marketplace-Abonnement zuordnen.  Sie können auch die Schritte befolgen, um sich im anzumelden<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> Abschnitt.</block>
-  <block id="5f3d5b090fa9d570cead4124db6f3d69" category="admonition">_Flash Cache_, hohe Schreibgeschwindigkeit und eine höhere maximale Übertragungseinheit (MTU) von 8,896 Byte sind über die Option *High* Write Speed mit den Instanztypen n2-Standard-16, n2-Standard-32, n2-Standard-48 und n2-Standard-64 verfügbar. Darüber hinaus erfordert die höhere MTU von 8,896 die Auswahl von VPC-1, VPC-2 und VPC-3 für die Implementierung. _Flash Cache_, hohe Schreibgeschwindigkeit und eine MTU von 8,896 sind Feature-abhängig und können innerhalb einer konfigurierten Instanz nicht einzeln deaktiviert werden. Weitere Informationen zu VPC-1, VPC-2 und VPC-3 finden Sie unter<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>.</block>
   <block id="200bfa431a059f9cb12bdce777845a7e" category="admonition">Für den Connector ist außerdem eine Systemfestplatte erforderlich.<block ref="d20acabc118cd0226229fe484509d871" category="inline-link-rx"></block>.</block>
   <block id="f4e04685569a1b4c66fdec145eb96e7a" category="paragraph">Wenn Sie keine haben<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> Dennoch muss ein Kontoadministrator einen erstellen.<block ref="5b9d2e73755e0f28771296de88f8a39a" category="inline-link-rx"></block></block>
   <block id="3e15a93b8abafd714d90153ac66e4e82" category="paragraph">Wenn Sie Cloud Volumes ONTAP in einem Subnetz bereitstellen möchten, in dem kein Internetzugang verfügbar ist, müssen Sie den Connector manuell installieren und auf die BlueXP Benutzeroberfläche zugreifen, die auf diesem Connector ausgeführt wird.<block ref="dfc982bbe2dfabd644ac809e4b468ae7" category="inline-link-rx"></block></block>
@@ -5005,4 +5002,32 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">Ändern Sie die Spalten, die in der Tabelle angezeigt werden, indem Sie auswählen <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> Und wählen Sie dann die Spalten, die Sie anzeigen möchten.</block>
   <block id="348552521b849746260fe8d296d34c15" category="list-text">Managen Sie einen bestehenden Fall, indem Sie auswählen <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> Und eine der verfügbaren Optionen auswählen:</block>
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Fall schließen*: Geben Sie Einzelheiten darüber an, warum Sie den Fall schließen und wählen Sie *Fall schließen*.</block>
+  <block id="80f98bfa8cbe0d66021e6448047c1b5c" category="list-text">*Flash Cache, Schreibgeschwindigkeit und WORM*:</block>
+  <block id="b67eda3e3db596eb1c104f55326e3754" category="list-text">Aktivieren Sie *Flash Cache*, falls gewünscht.</block>
+  <block id="5f33cf47c262adc4871d3556fcd8c00f" category="admonition">Ab Cloud Volumes ONTAP 9.13.1 wird _Flash Cache_ auf den Instanztypen n2-Standard-16, n2-Standard-32, n2-Standard-48 und n2-Standard-64 unterstützt. Sie können Flash Cache nach der Bereitstellung nicht deaktivieren.</block>
+  <block id="504ca6d1f97a8949483d99d521a7a500" category="admonition">Über die Option *High* Write Speed stehen eine hohe Schreibgeschwindigkeit und eine höhere maximale Übertragungseinheit (MTU) von 8,896 Byte zur Verfügung. Darüber hinaus erfordert die höhere MTU von 8,896 die Auswahl von VPC-1, VPC-2 und VPC-3 für die Implementierung. Weitere Informationen zu VPC-1, VPC-2 und VPC-3 finden Sie unter<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>.</block>
+  <block id="e4cfc04d9c35d908faed204900862e80" category="admonition">Hohe Schreibgeschwindigkeit und eine höhere maximale Übertragungseinheit (MTU) von 8,896 Byte sind über die Option *High* Write Speed mit den Instanztypen n2-Standard-16, n2-Standard-32, n2-Standard-48 und n2-Standard-64 verfügbar. Darüber hinaus erfordert die höhere MTU von 8,896 die Auswahl von VPC-1, VPC-2 und VPC-3 für die Implementierung. Hohe Schreibgeschwindigkeit und eine MTU von 8,896 sind funktionsabhängig und können nicht einzeln innerhalb einer konfigurierten Instanz deaktiviert werden. Weitere Informationen zu VPC-1, VPC-2 und VPC-3 finden Sie unter<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>.</block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">30 Juli 2023</block>
+  <block id="4325a8ea9cec7ffa18f3ee74d15997fe" category="paragraph">Die folgenden Änderungen wurden mit der Version 3.9.32 des Connectors eingeführt.</block>
+  <block id="7741410e87d6144c42e8ca73837c3707" category="section-title">Flash Cache und Unterstützung für High-Write-Geschwindigkeit in Google Cloud</block>
+  <block id="4f90c73c3d52d1bd4329e9961707db5c" category="paragraph">Flash Cache und hohe Schreibgeschwindigkeit können separat in Google Cloud für Cloud Volumes ONTAP 9.13.1 und höher aktiviert werden. Bei allen unterstützten Instanztypen ist eine hohe Schreibgeschwindigkeit verfügbar. Flash Cache wird in den folgenden Instanztypen unterstützt:</block>
+  <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">n2-Standard-16</block>
+  <block id="8f66358785ed8f4d9a356630a4ee515c" category="list-text">n2-Standard-32</block>
+  <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">n2-Standard-48</block>
+  <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">n2-Standard-64</block>
+  <block id="0891ba6a1f7a37c01cb3698c692751bc" category="paragraph">Diese Funktionen können einzeln oder gemeinsam auf Single Node-Implementierungen und Hochverfügbarkeitspaaren eingesetzt werden.</block>
+  <block id="1e69916eaa563a1da0ccff3715e2342d" category="paragraph"><block ref="1e69916eaa563a1da0ccff3715e2342d" category="inline-link-macro-rx"></block></block>
+  <block id="ee4272223579f1299444d14f2d185eb5" category="section-title">Verbesserte Nutzungsberichte</block>
+  <block id="ec123c8f161f9dfe4383b8db1d8883c4" category="paragraph">Verschiedene Verbesserungen der angezeigten Informationen in den Nutzungsberichten sind jetzt verfügbar. Die folgenden Verbesserungen an den Nutzungsberichten:</block>
+  <block id="4c63050f1e33aa32db50cc80b682e805" category="list-text">Die tib-Einheit ist jetzt im Namen der Spalten enthalten.</block>
+  <block id="fc7fa4a44c2c9442201bf8725e6237b7" category="list-text">Das neue Feld „Node(s)“ für die Seriennummern ist jetzt enthalten.</block>
+  <block id="68d761e353cd9d529997fa49bfe51f92" category="list-text">Der Bericht zur Auslastung von Storage-VMs enthält jetzt eine neue Spalte „Workload-Typ“.</block>
+  <block id="26f51c309f5237522421f24bf4df04e0" category="list-text">Namen der Arbeitsumgebung, die jetzt in Berichten zu Storage-VMs und Volume-Nutzung enthalten sind</block>
+  <block id="fa3abcbc43662c93139af3f3f6421a6f" category="list-text">Volume-Typ „File“ ist jetzt mit „Primary (Read/Write)“ beschriftet.</block>
+  <block id="b259e22e76e27ad956b503941804b4c6" category="list-text">Volume-Typ „sekundär“ ist jetzt mit der Bezeichnung „sekundär (DP)“ gekennzeichnet.</block>
+  <block id="a8c4bf4701c4d99d778be1176c8c8616" category="paragraph">Weitere Informationen zu Nutzungsberichten finden Sie unter <block ref="b9c4007084372a89d5df93919658aa73" category="inline-link-macro-rx"></block>.</block>
+  <block id="c2282365523aa8fbb305c5432e90d5d7" category="paragraph"><block ref="6f9b2ccd962907ef2c43f6fa9517a053" category="inline-link-macro-rx"></block>.</block>
+  <block id="5e167ef814cd8fe02fd01be002ffa235" category="list-text"><block ref="5e167ef814cd8fe02fd01be002ffa235" category="inline-link-macro-rx"></block></block>
+  <block id="4a9ebfe4f0e3302083955176f47a9519" category="list-text">Arbeitsumgebungs-ID und -Name (wird als UUID angezeigt)</block>
+  <block id="427af860f9733f0c5427a1408195bb2b" category="list-text">Workload-Typ</block>
 </blocks>
