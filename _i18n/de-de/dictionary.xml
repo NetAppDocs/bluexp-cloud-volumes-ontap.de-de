@@ -195,21 +195,7 @@
   <block id="a5058cd0a38eec60b5f0bd65c76814ee" category="paragraph">Sie müssen das Servicekonto später auswählen, wenn Sie eine Cloud Volumes ONTAP Arbeitsumgebung erstellen.</block>
   <block id="280ee264bbde91d0e35a15c5c017570d" category="inline-image-macro">Ein Screenshot der Seite Details and Credentials, auf der Sie ein Dienstkonto für Cloud Volumes ONTAP aktivieren können.</block>
   <block id="391642837451179291d9fd13ff003fec" category="paragraph"><block ref="391642837451179291d9fd13ff003fec" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="421ebcf45d96fab9a6689c09c19a1270" category="summary">Mit BlueXP können Sie sich die Kosten für die Ausführung von Cloud Volumes ONTAP in AWS anzeigen lassen. Außerdem erfahren Sie, wie viel Geld Sie durch den Einsatz von NetApp Funktionen zur Senkung der Storage-Kosten gespart haben.</block>
-  <block id="0131f05be010a429416bcb6f853b54f6" category="doc">Überwachung der AWS-Ressourcenkosten</block>
-  <block id="5ff00bdddc3139a1154c3432ef4a3e73" category="paragraph">Mit BlueXP können Sie sich die Ressourcenkosten anzeigen lassen, die für die Ausführung von Cloud Volumes ONTAP in AWS anfallen. Außerdem erfahren Sie, wie viel Geld Sie durch den Einsatz von NetApp Funktionen zur Senkung der Storage-Kosten gespart haben.</block>
-  <block id="947d50be7096c3e69f02ed24b2251b02" category="paragraph">BlueXP aktualisiert die Kosten, wenn Sie die Seite aktualisieren. Die endgültigen Kostendetails finden Sie in AWS.</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">Schritt</block>
-  <block id="cd5e8c25d1aad520d5f38aad580ccac4" category="list-text">Stellen Sie sicher, dass BlueXP Kosteninformationen von AWS beziehen kann:</block>
-  <block id="fa1a1d63af1876462d8a89bb1c81da2a" category="list-text">Stellen Sie sicher, dass die IAM-Richtlinie, die BlueXP Berechtigungen bereitstellt, die erforderlichen Berechtigungen enthält.</block>
-  <block id="d0cc9b5d406e02bdbb6a1a9848e6af5f" category="inline-link">Zeigen Sie die erforderlichen Berechtigungen an</block>
-  <block id="de4e4bb6bc85c14c6a8601fd20afdca3" category="inline-link">Aktivieren Sie das Tag *WorkingEnvironment ID*</block>
-  <block id="ee0050b628db7de40e04e661d528d91f" category="list-text"><block ref="541edff71c56eae6d36d5f7a463cfcca" category="inline-link-rx"></block>.</block>
-  <block id="5137e20086fbd2e10511433ace3ac154" category="paragraph">Um die AWS-Kosten zu verfolgen, weist BlueXP Cloud Volumes ONTAP-Instanzen ein Tag der Kostenzuteilung zu. Nachdem Sie Ihre erste Arbeitsumgebung erstellt haben, aktivieren Sie das Tag *WorkingEnvironment ID*. Benutzerdefinierte Tags werden erst in den AWS Abrechnungsberichten angezeigt, wenn Sie sie in der Konsole „Rechnungsstellung“ und „Kostenmanagement“ aktivieren.</block>
-  <block id="9dfa1bfa6d369f6aee8b4ba09ac15642" category="paragraph">Auf der Kostenseite werden die Kosten für die aktuelle und die vorherigen Monate angezeigt sowie Ihre jährlichen NetApp Einsparungen angezeigt, wenn Sie die kostensparenden Funktionen von NetApp auf den Volumes aktiviert haben.</block>
-  <block id="c58c67877e90861ec92c90c10b7ad7f4" category="paragraph">Das folgende Bild zeigt eine Beispiel-Kostenseite:</block>
-  <block id="37423695a33e814084966c17d451584a" category="inline-image-macro">Screenshot: Zeigt die Kosten pro Monat für eine Cloud Volumes ONTAP Instanz.</block>
-  <block id="c3d678c4df92877db53bd1f6e44ec524" category="paragraph"><block ref="c3d678c4df92877db53bd1f6e44ec524" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ca4d0f89ef6c18d7fa7fae7290d98cb" category="summary">Mit Cloud Volumes ONTAP können Sie Ihre Cloud Storage-Kosten und -Performance optimieren und gleichzeitig die Datensicherung, -Sicherheit und -Compliance verbessern.</block>
   <block id="1a523ba4ece9125275b92ebb41e3cf23" category="doc">Cloud Volumes ONTAP-Dokumentation</block>
   <block id="47a9dec41b05cb9452bf85a6b7a24260" category="summary">Erste Schritte mit Cloud Volumes ONTAP für AWS</block>
@@ -3631,15 +3617,11 @@
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Rechtliche Hinweise</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Rechtliche Hinweise ermöglichen den Zugriff auf Copyright-Erklärungen, Marken, Patente und mehr.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Urheberrecht</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marken</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, das NETAPP Logo und die auf der NetApp Markenseite aufgeführten Marken sind Marken von NetApp Inc. Andere Firmen- und Produktnamen können Marken der jeweiligen Eigentümer sein.</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Patente</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Eine aktuelle Liste der NetApp Patente finden Sie unter:</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Datenschutzrichtlinie</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open Source</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">Hinweis für BlueXP</block>
@@ -4402,10 +4384,6 @@
   <block id="055fb099b650eb50b3be2ee6aaa5edaa" category="inline-image-macro">Screenshot: Zeigt die Option Support-Registrierung im Funktionsbereich eines Cloud Volumes ONTAP-Systems.</block>
   <block id="683ad9be450b1e4aaffcdcab8b33b0c4" category="paragraph"><block ref="683ad9be450b1e4aaffcdcab8b33b0c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fc2c97abb2fb8e3c019de4850d91d264" category="list-text">Wählen Sie auf der Seite Bildschirm eine Cloud Volumes ONTAP-Arbeitsumgebung aus.</block>
-  <block id="6ba9fc3c166e3d53b824216485ae89ee" category="list-text">Klicken Sie auf das Menüsymbol und dann auf *Kostenbericht anzeigen*.</block>
-  <block id="e657448bf5ab3960e8e1fc068d83deee" category="inline-image-macro">Screenshot: Zeigt die Menüoption Kostenbericht anzeigen.</block>
-  <block id="4881300462ed76e4f5ebaf3070d5e7d9" category="paragraph"><block ref="4881300462ed76e4f5ebaf3070d5e7d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6200e275553fcb2d81141061804129aa" category="list-text">Doppelklicken Sie auf der Seite Bildschirm auf den Namen des Systems, das Sie für den Ransomware-Schutz konfigurieren.</block>
   <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">Klicken Sie auf der Registerkarte Übersicht auf das Bedienfeld Funktionen und dann auf das Bleistiftsymbol neben *Ransomware-Schutz*.</block>
   <block id="e44870bfe38bf3731499fca3154b9528" category="inline-image-macro">Ein Screenshot, der die Einstellung Ransomware-Schutz unter dem Funktionsbereich oben rechts auf der Seite Übersicht zeigt, wenn Sie eine Arbeitsumgebung anzeigen.</block>
@@ -4772,7 +4750,6 @@ Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers ko
   <block id="a83ee83b3849362150d7c85a1be1dc34" category="paragraph"><block ref="4cff09ac69609cc9da2148aed42c5230" category="inline-link-rx"></block>.</block>
   <block id="2ffa17dd74caa90edaf33636b3e374b1" category="paragraph"><block ref="792ba555e1629fb9b0b5e00711256a74" category="inline-link-rx"></block>.</block>
   <block id="7881621c3d4c91216ebe58ee1cdc87e0" category="paragraph"><block ref="52c47b6a301b0fb242044f1b14c5f663" category="inline-link-rx"></block>.</block>
-  <block id="feb88be5e52ce4e986f7ef4bfbaf1288" category="paragraph"><block ref="feb88be5e52ce4e986f7ef4bfbaf1288" category="inline-link-rx"></block></block>
   <block id="3965802fcf5e10ce9592a0a18652be93" category="paragraph">Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können.<block ref="844cb231ba4a790d05c855a31c806f9e" category="inline-link-rx"></block>.</block>
   <block id="0da43a7e3c6cfdde29516fa9349ef93a" category="paragraph">Wenn Sie keine haben<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> Dennoch muss ein Kontoadministrator einen erstellen.<block ref="f726618e636b13d16a9541b596528791" category="inline-link-rx"></block></block>
   <block id="170e894372aa99f8bb588bbbfc2f83a2" category="paragraph">Für Cloud Volumes ONTAP ist ein Google Cloud-Servicekonto aus zwei Gründen erforderlich. Die erste lautet, wenn Sie aktivieren <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> Tiering selten genutzter Daten auf kostengünstigen Objekt-Storage in Google Cloud. Die zweite lautet, wenn Sie den aktivieren<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> Um Volumes auf kostengünstigen Objekt-Storage zu sichern.</block>
@@ -5030,4 +5007,12 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="5e167ef814cd8fe02fd01be002ffa235" category="list-text"><block ref="5e167ef814cd8fe02fd01be002ffa235" category="inline-link-macro-rx"></block></block>
   <block id="4a9ebfe4f0e3302083955176f47a9519" category="list-text">Arbeitsumgebungs-ID und -Name (wird als UUID angezeigt)</block>
   <block id="427af860f9733f0c5427a1408195bb2b" category="list-text">Workload-Typ</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
 </blocks>
