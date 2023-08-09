@@ -193,4 +193,4 @@ TIP: Wenn Sie ein Volume zwischen Nodes in einem HA-Paar verschieben, sollten Si
 
 Sie können die richtige IP-Adresse einfach über die Option „_Mount Command_“ im Bereich „Volumes verwalten“ in BlueXP identifizieren.
 
-image:screenshot_mount_option.png["Screenshot: Zeigt den Mount-Befehl an, der verfügbar ist, wenn Sie ein Volume auswählen."]
+image::screenshot_mount_option.png[400]

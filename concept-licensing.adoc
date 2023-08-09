@@ -31,6 +31,9 @@ Das vorherige Node-Lizenzmodell bleibt bestehenden Kunden, die bereits eine Lize
 In den folgenden Abschnitten werden die einzelnen Optionen näher beschrieben.
 
 
+NOTE: Ohne Lizenz ist kein Support für die Nutzung lizenzierter Funktionen verfügbar.
+
+
 
 == Kapazitätsbasierte Lizenzierung
 

@@ -24,7 +24,7 @@ Kontoadministratorrechte sind erforderlich, um Verbindungseinstellungen zu ände
 .Schritte
 . Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Verbindungseinstellungen*.
 +
-image:screenshot_settings_connector_button.png["Ein Screenshot der Option Connector Settings unter dem Symbol Settings."]
+image::screenshot_settings_connector_button.png[Schaltfläche „Screenshot-Einstellungen“]
 
 . Ändern Sie unter *Capacity* eine der folgenden Einstellungen:
 +

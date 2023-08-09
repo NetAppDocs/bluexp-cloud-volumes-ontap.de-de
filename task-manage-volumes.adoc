@@ -257,7 +257,7 @@ Die erweiterten Informationen sollten beispielsweise Folgendes enthalten: Aggreg
 Sie sollten Volumes auswählen, die groß genug sind, um Speicherplatz im Aggregat freizugeben, damit Sie in Zukunft zusätzliche Kapazitätsprobleme vermeiden können.
 
 +
-image:screenshot_aggr_volume_overview.png["Screenshot: Zeigt die Liste der Volumes in einem Aggregat im Dialogfeld \"Aggregatinformationen\" an."]
+image::screenshot_aggr_volume_overview.png[Screenshot Aggr Volume – Übersicht]
 
 
 
@@ -335,7 +335,7 @@ Das Verschieben von zwei oder mehr Volumes ist notwendig, um Kapazitätsprobleme
 .. Navigieren Sie zur gewünschten Aggregat-Kachel, und klicken Sie dann auf *... (Ellipsensymbol) > Aggregatdetails anzeigen*.
 .. Zeigen Sie unter der Kachel „Aggregat“ die verfügbare Kapazität an (bereitgestellte Größe minus genutzte Aggregatkapazität).
 +
-image:screenshot_aggr_capacity.png["Screenshot: Zeigt die Gesamtgesamtkapazität und die genutzte Gesamtkapazität an, die im Dialogfeld \"Aggregatinformationen\" verfügbar sind."]
+image::screenshot_aggr_capacity.png[Screenshot Aggr Kapazität]
 
 
 
@@ -380,7 +380,7 @@ Ein älteres Benennungsschema wird verwendet, wenn das Daten-Tiering auf einem A
 
 FlexGroup Volumes, die über CLI oder System Manager erstellt wurden, können direkt über die Registerkarte Volumes in BlueXP angezeigt werden. Wie bei FlexVol Volumes angegeben, bietet BlueXP über eine dedizierte Volume-Kachel detaillierte Informationen zu den erstellten FleGroup Volumes. Unter der Kachel „Volumes“ können Sie jede FlexGroup Volume-Gruppe über den Mauszeiger über das Symbol halten. Darüber hinaus können Sie FlexGroup-Volumes in der Listenansicht Volumes in der Spalte Volume-Stil identifizieren und sortieren.
 
-image:screenshot_show_flexgroup_vol.png["Ein Screenshot, in dem das FlexGroup-Volume-Symbol angezeigt wird, zeigt den Mauszeiger über den Text unter der Kachel „Volumes“."]
+image::screenshot_show_flexgroup_vol.png[Screenshot zeigt FlexGroup Vol]
 
 
 NOTE: Derzeit können Sie vorhandene FlexGroup Volumes nur unter BlueXP anzeigen. Die Möglichkeit zum Erstellen von FlexGroup Volumes in BlueXP ist nicht verfügbar, aber für eine zukünftige Version geplant.

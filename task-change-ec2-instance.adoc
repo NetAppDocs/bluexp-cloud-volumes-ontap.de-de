@@ -42,7 +42,7 @@ Eine Liste der unterstützten Instanztypen in AWS finden Sie unter link:https://
 . Wählen Sie auf der Seite Arbeitsfläche die Arbeitsumgebung aus.
 . Klicken Sie auf der Registerkarte Übersicht auf das Bedienfeld Funktionen und dann auf das Bleistiftsymbol neben *Instanztyp*.
 +
-image:screenshot_features_instance_type.png["Ein Screenshot, in dem die Instanztyp-Einstellung unter dem Bereich „Funktionen“ angezeigt wird, das oben rechts auf der Seite „Übersicht“ angezeigt wird, wenn eine Arbeitsumgebung angezeigt wird."]
+image::screenshot_features_instance_type.png[400]
 
 +
 .. Wenn Sie eine Node-basierte PAYGO-Lizenz verwenden, können Sie optional einen anderen Lizenz- und Instanztyp auswählen, indem Sie auf das Bleistiftsymbol neben *Lizenztyp* klicken.

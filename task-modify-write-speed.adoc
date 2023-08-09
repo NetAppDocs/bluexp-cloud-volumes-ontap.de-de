@@ -29,7 +29,7 @@ Bevor Sie die Schreibgeschwindigkeit ändern, sollten Sie dies tun link:concept-
 . Doppelklicken Sie auf der Seite Arbeitsfläche auf den Namen des Systems, das Sie für die Schreibgeschwindigkeit konfigurieren.
 . Klicken Sie auf der Registerkarte Übersicht auf das Bedienfeld Funktionen und dann auf das Bleistiftsymbol neben *Schreibgeschwindigkeit*.
 +
-image:screenshot_features_write_speed.png["Ein Screenshot, in dem die Einstellung Schreibgeschwindigkeit unter dem Bereich Funktionen angezeigt wird, das oben rechts auf der Seite Übersicht angezeigt wird, wenn eine Arbeitsumgebung angezeigt wird."]
+image::screenshot_features_write_speed.png[400]
 
 . Wählen Sie *normal* oder *hoch*.
 +

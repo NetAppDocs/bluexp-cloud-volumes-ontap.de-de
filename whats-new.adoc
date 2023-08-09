@@ -90,7 +90,7 @@ Eine Liste aller Regionen, die mehrere Verfügbarkeitszonen unterstützen, finde
 
 Autonomous Ransomware Protection (ARP) wird jetzt auf Cloud Volumes ONTAP unterstützt. ARP-Unterstützung ist auf Cloud Volumes ONTAP Version 9.12.1 und höher verfügbar.
 
-Weitere Informationen über ARP with Cloud Volumes ONTAP finden Sie unter https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["Autonomer Schutz Durch Ransomware"].
+Weitere Informationen über ARP with Cloud Volumes ONTAP finden Sie unter https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["Autonomer Schutz Durch Ransomware"^].
 
 
 

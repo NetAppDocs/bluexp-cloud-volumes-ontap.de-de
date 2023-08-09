@@ -38,7 +38,7 @@ Snapshots werden automatisch nur beim manuellen Herunterfahren erstellt, wie im 
 . Doppelklicken Sie auf der Seite Arbeitsfläche auf die gewünschte Arbeitsumgebung.
 . Klicken Sie auf der Registerkarte Übersicht auf das Bedienfeld Funktionen und dann auf das Bleistiftsymbol neben *geplante Ausfallzeit*.
 +
-image:screenshot_schedule_downtime.png["Screenshot: Zeigt das Symbol, mit dem die Seite zum automatischen Herunterfahren geladen wird."]
+image::screenshot_schedule_downtime.png[400]
 
 . Geben Sie den Zeitplan für das Herunterfahren an:
 +
