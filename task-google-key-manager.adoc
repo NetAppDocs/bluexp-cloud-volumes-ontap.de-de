@@ -11,6 +11,7 @@ summary: Nutzen Sie den Key Management Service von Google für Ihren Drittanbiet
 :imagesdir: ../media/
 
 
+[role="lead"]
 Verwenden Sie können link:https://cloud.google.com/kms/docs["Der Verschlüsselungsmanagement-Service (Cloud KMS) der Google Cloud-Plattform"^] Zum Schutz Ihrer ONTAP Verschlüsselungen in einer vom Google Cloud-Plattform bereitgestellten Applikation.
 
 Das Verschlüsselungsmanagement mit Cloud KMS kann über die CLI oder die ONTAP REST-API aktiviert werden.

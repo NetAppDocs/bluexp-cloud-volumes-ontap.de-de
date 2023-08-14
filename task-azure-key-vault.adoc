@@ -11,6 +11,7 @@ summary: Nutzen Sie Azure Key Vault für Ihren Verschlüsselungsmanagement-Servi
 :imagesdir: ./media/
 
 
+[role="lead"]
 Verwenden Sie können link:https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts["Azure Key Vault (AKV)"^] Um Ihre ONTAP Verschlüsselungen in einer von Azure implementierten Applikation zu schützen.
 
 AKV kann zum Schutz verwendet werden link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-netapp-volume-encryption-concept.html["NetApp Volume Encryption (NVE)-Schlüssel"^] Nur für Data SVMs.

@@ -24,7 +24,7 @@ ifdef::aws[]
 
 * Cloud Volumes ONTAP für AWS
 +
-https://www.netapp.com/us/media/tr-4383.pdf["NetApp Technical Report 4383: Performance Characterization of Cloud Volumes ONTAP in Amazon Web Services with Application Workloads"^]
+link:https://www.netapp.com/pdf.html?item=/media/9088-tr4383pdf.pdf["NetApp Technical Report 4383: Performance Characterization of Cloud Volumes ONTAP in Amazon Web Services with Application Workloads"^]
 
 
 
@@ -34,7 +34,7 @@ ifdef::azure[]
 
 * Cloud Volumes ONTAP für Microsoft Azure
 +
-https://www.netapp.com/us/media/tr-4671.pdf["Technischer Bericht von NetApp 4671: Performance-Charakterisierung von Cloud Volumes ONTAP in Azure mit Applikations-Workloads"^]
+link:https://www.netapp.com/pdf.html?item=/media/9089-tr-4671pdf.pdf["Technischer Bericht von NetApp 4671: Performance-Charakterisierung von Cloud Volumes ONTAP in Azure mit Applikations-Workloads"^]
 
 
 
@@ -44,7 +44,7 @@ ifdef::gcp[]
 
 * Cloud Volumes ONTAP für Google Cloud
 +
-https://www.netapp.com/us/media/tr-4816.pdf["Technischer Bericht 4816: Performance-Merkmale von Cloud Volumes ONTAP für Google Cloud"^]
+link:https://www.netapp.com/pdf.html?item=/media/9090-tr4816pdf.pdf["Technischer Bericht 4816: Performance-Merkmale von Cloud Volumes ONTAP für Google Cloud"^]
 
 
 

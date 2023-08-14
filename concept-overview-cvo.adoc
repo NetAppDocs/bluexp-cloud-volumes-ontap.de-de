@@ -34,7 +34,7 @@ Cloud Volumes ONTAP nutzt SnapMirror, die branchenführende Replizierungstechnol
 Cloud Volumes ONTAP lässt sich auch in BlueXP Backup und Recovery integrieren, um Backup- und Restore-Funktionen zum Schutz und zur langfristigen Archivierung Ihrer Cloud-Daten zu bieten.
 
 +
-https://docs.netapp.com/us-en/bluexp-backup-restore/concept-backup-to-cloud.html["Erfahren Sie mehr über Backup und Recovery von BlueXP"^]
+link:https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Erfahren Sie mehr über Backup und Recovery von BlueXP"^]
 
 * Daten-Tiering
 +

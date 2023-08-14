@@ -20,14 +20,13 @@ Ransomware-Angriffe können das Unternehmen Zeit, Ressourcen und Image-Schäden 
 
 == Schutz vor gängigen Ransomware-Dateiendungen
 
-[role="lead"]
 Die in BlueXP verfügbare Einstellung für den Schutz vor Ransomware ermöglicht Ihnen die Nutzung der ONTAP FPolicy Funktion zum Schutz vor gängigen Dateierweiterungen für Ransomware-Angriffe.
 
 .Schritte
 . Doppelklicken Sie auf der Seite Bildschirm auf den Namen des Systems, das Sie für den Ransomware-Schutz konfigurieren.
 . Klicken Sie auf der Registerkarte Übersicht auf das Bedienfeld Funktionen und dann auf das Bleistiftsymbol neben *Ransomware-Schutz*.
 +
-image::screenshot_features_ransomware.png[400]
+image::screenshot_features_ransomware.png[Ein Screenshot, der die Einstellung Ransomware-Schutz unter dem Funktionsbereich oben rechts auf der Seite Übersicht zeigt, wenn Sie eine Arbeitsumgebung anzeigen.]
 
 . Implementierung der NetApp Lösung für Ransomware:
 +
@@ -60,7 +59,6 @@ image:screenshot_ransomware_protection.gif["Ein Screenshot, der die Ransomware-S
 
 == Autonomer Schutz Durch Ransomware
 
-[role="lead"]
 Cloud Volumes ONTAP unterstützt die ARP-Funktion (Autonomous Ransomware Protection), die Workload-Analysen durchführt, um abnormale Aktivitäten, die auf einen Ransomware-Angriff hinweisen, proaktiv zu erkennen und zu warnen.
 
 Trennen Sie sich von den Schutzmaßnahmen für die Dateierweiterung, die im bereitgestellt werden https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["ransomware-Schutz-Einstellung"], Die ARP-Funktion verwendet Workload-Analyse, um den Benutzer auf mögliche Angriffe auf der Grundlage erkannt “abnorme Aktivität“ zu warnen. Die Ransomware-Schutzeinstellung und die ARP-Funktion können in Verbindung für einen umfassenden Schutz vor Ransomware verwendet werden.
@@ -74,4 +72,4 @@ Weitere Informationen zur Aktivierung von ARP mit ONTAP System Manager und CLI f
 
 NOTE: Ohne Lizenz ist kein Support für die Nutzung lizenzierter Funktionen verfügbar.
 
-image::screenshot_arp.png[Screenshot arp]
+image::screenshot_arp.png[Screenshot zeigt die Add-on-Lizenz für Autonomous Ransomware Protection.]
