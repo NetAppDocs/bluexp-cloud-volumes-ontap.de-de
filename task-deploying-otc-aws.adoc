@@ -101,7 +101,7 @@ TIP: Wenn SIE WORM und Daten-Tiering nutzen möchten, müssen Sie BlueXP Backup 
 
 
 
-. *Standort & Konnektivität*: Geben Sie die Netzwerkinformationen ein, die Sie im aufgezeichnet haben link:task-planning-your-config.html#aws-network-information-worksheet["AWS Worksheet"].
+. *Standort & Konnektivität*: Geben Sie die Netzwerkinformationen ein, die Sie im aufgezeichnet haben https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#collect-networking-information["AWS Worksheet"^].
 +
 In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise Hilfe benötigen:
 
@@ -260,7 +260,7 @@ Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers ko
 |===
 . *Nutzungsprofil, Disk Type und Tiering Policy*: Wählen Sie, ob Sie Funktionen für die Storage-Effizienz aktivieren und die Volume Tiering Policy bei Bedarf bearbeiten möchten.
 +
-Weitere Informationen finden Sie unter link:task-planning-your-config.html#choosing-a-volume-usage-profile["Allgemeines zu Volume-Nutzungsprofilen"] Und link:concept-data-tiering.html["Data Tiering - Übersicht"].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["Allgemeines zu Volume-Nutzungsprofilen"^] Und link:concept-data-tiering.html["Data Tiering - Übersicht"^].
 
 . *Überprüfen & Genehmigen*: Überprüfen und bestätigen Sie Ihre Auswahl.
 +
@@ -377,7 +377,7 @@ Wenn Sie BlueXP die Sicherheitsgruppe für Sie generieren lassen, müssen Sie fe
 . *Konnektivität und SSH Authentifizierung*: Wählen Sie Verbindungsmethoden für das HA-Paar und den Mediator.
 . *Schwebende IPs*: Wenn Sie mehrere AZS gewählt haben, geben Sie die fließenden IP-Adressen an.
 +
-Die IP-Adressen müssen für alle VPCs in der Region außerhalb des CIDR-Blocks liegen. Weitere Informationen finden Sie unter link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["AWS Netzwerkanforderungen für Cloud Volumes ONTAP HA in mehreren AZS"].
+Die IP-Adressen müssen für alle VPCs in der Region außerhalb des CIDR-Blocks liegen. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["AWS Netzwerkanforderungen für Cloud Volumes ONTAP HA in mehreren AZS"^].
 
 . *Routentabellen*: Wenn Sie mehrere AZS gewählt haben, wählen Sie die Routentabellen aus, die Routen zu den schwimmenden IP-Adressen enthalten sollen.
 +
@@ -518,7 +518,7 @@ Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers ko
 |===
 . *Nutzungsprofil, Disk Type und Tiering Policy*: Wählen Sie, ob Sie Funktionen für die Storage-Effizienz aktivieren und die Volume Tiering Policy bei Bedarf bearbeiten möchten.
 +
-Weitere Informationen finden Sie unter link:task-planning-your-config.html#choosing-a-volume-usage-profile["Allgemeines zu Volume-Nutzungsprofilen"] Und link:concept-data-tiering.html["Data Tiering - Übersicht"].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["Allgemeines zu Volume-Nutzungsprofilen"^] Und link:concept-data-tiering.html["Data Tiering - Übersicht"^].
 
 . *Überprüfen & Genehmigen*: Überprüfen und bestätigen Sie Ihre Auswahl.
 +

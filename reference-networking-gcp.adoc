@@ -220,8 +220,8 @@ Firewall-Regeln:: Sie müssen keine Firewall-Regeln erstellen, weil BlueXP das f
 --
 Beachten Sie, dass für eine HA-Konfiguration zwei Gruppen von Firewall-Regeln erforderlich sind:
 
-* Ein Regelsatz für HA-Komponenten in VPC-0. Diese Regeln ermöglichen den Datenzugriff auf Cloud Volumes ONTAP. <<Firewall rules for Cloud Volumes ONTAP,Weitere Informationen .>>.
-* Weiterer Regelsatz für HA-Komponenten in VPC-1, VPC-2 und VPC-3. Diese Regeln sind für die Kommunikation zwischen den HA-Komponenten ein- und ausgehender Anruf offen. <<Firewall rules for Cloud Volumes ONTAP,Weitere Informationen .>>.
+* Ein Regelsatz für HA-Komponenten in VPC-0. Diese Regeln ermöglichen den Datenzugriff auf Cloud Volumes ONTAP. <<Firewall-Regeln,Weitere Informationen .>>.
+* Weiterer Regelsatz für HA-Komponenten in VPC-1, VPC-2 und VPC-3. Diese Regeln sind für die Kommunikation zwischen den HA-Komponenten ein- und ausgehender Anruf offen. <<Firewall-Regeln,Weitere Informationen .>>.
 
 
 --
@@ -250,7 +250,7 @@ Die Firewall-Regeln für Cloud Volumes ONTAP erfordern sowohl ein- als auch ausg
 Beachten Sie, dass für eine HA-Konfiguration zwei Gruppen von Firewall-Regeln erforderlich sind:
 
 * Ein Regelsatz für HA-Komponenten in VPC-0. Diese Regeln ermöglichen den Datenzugriff auf Cloud Volumes ONTAP.
-* Weiterer Regelsatz für HA-Komponenten in VPC-1, VPC-2 und VPC-3. Diese Regeln sind für die Kommunikation zwischen den HA-Komponenten ein- und ausgehender Anruf offen. <<Rules for VPC-1,VPC-2 und VPC-3,Mehr erfahren>>.
+* Weiterer Regelsatz für HA-Komponenten in VPC-1, VPC-2 und VPC-3. Diese Regeln sind für die Kommunikation zwischen den HA-Komponenten ein- und ausgehender Anruf offen. <<rules-for-vpc,Weitere Informationen .>>.
 
 
 

@@ -20,7 +20,7 @@ Nachdem Sie sich für die Lizenzoption entschieden haben, die Sie mit Cloud Volu
 
 == Freimium
 
-Wählen Sie das Freimium-Angebot aus, um Cloud Volumes ONTAP mit bis zu 500 gib bereitgestellter Kapazität kostenlos zu nutzen. link:concept-licensing.html#freemium-offering["Erfahren Sie mehr über das Freemium Angebot"].
+Wählen Sie das Freimium-Angebot aus, um Cloud Volumes ONTAP mit bis zu 500 gib bereitgestellter Kapazität kostenlos zu nutzen. link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Erfahren Sie mehr über das Freemium Angebot"^].
 
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
@@ -28,7 +28,7 @@ Wählen Sie das Freimium-Angebot aus, um Cloud Volumes ONTAP mit bis zu 500 gib 
 +
 .. Klicken Sie auf der Seite *Details und Anmeldeinformationen* auf *Anmeldedaten bearbeiten > Abonnement hinzufügen* und befolgen Sie dann die Anweisungen, um das Pay-as-you-go-Angebot im Azure Marketplace zu abonnieren.
 +
-Sie werden über das Marketplace-Abonnement nicht belastet, es sei denn, Sie überschreiten 500 gib der bereitgestellten Kapazität. Zu dieser Zeit wird das System automatisch in das konvertiert link:concept-licensing.html#capacity-based-licensing-packages["Essentials-Paket"].
+Sie werden über das Marketplace-Abonnement nicht belastet, es sei denn, Sie überschreiten 500 gib der bereitgestellten Kapazität. Zu dieser Zeit wird das System automatisch in das konvertiert link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Essentials-Paket"^].
 
 +
 image:screenshot-azure-paygo-subscription.png["Einen Screenshot der PAYGO-Abonnementoption beim Erstellen einer Cloud Volumes ONTAP-Arbeitsumgebung."]

@@ -263,18 +263,18 @@ image::screenshot_aggr_volume_overview.png[Screenshot Aggr Volume – Übersicht
 
 . Wenn das System die Festplattengrenze nicht erreicht hat, sollten Sie die Volumes in ein vorhandenes Aggregat oder ein neues Aggregat auf demselben System verschieben.
 +
-Weitere Informationen finden Sie unter link:task-manage-volumes.html#moving-volumes-to-another-aggregate-to-avoid-capacity-issues["Verschieben von Volumes in ein anderes Aggregat, um Kapazitätsprobleme zu vermeiden"].
+Weitere Informationen finden Sie unter <<move-volumes-aggregate-capacity,Verschieben Sie Volumes in ein anderes Aggregat, um Kapazitätsprobleme zu vermeiden>>.
 
 . Wenn das System die Festplattengrenze erreicht hat, führen Sie einen der folgenden Schritte aus:
 +
 .. Löschen Sie nicht verwendete Volumes.
 .. Ordnen Sie Volumes neu an, um Speicherplatz auf einem Aggregat freizugeben.
 +
-Weitere Informationen finden Sie unter link:task-manage-volumes.html#moving-volumes-to-another-aggregate-to-avoid-capacity-issues["Verschieben von Volumes in ein anderes Aggregat, um Kapazitätsprobleme zu vermeiden"].
+Weitere Informationen finden Sie unter <<move-volumes-aggregate-capacity,Verschieben Sie Volumes in ein anderes Aggregat, um Kapazitätsprobleme zu vermeiden>>.
 
 .. Verschieben Sie zwei oder mehr Volumes auf ein anderes System mit Speicherplatz.
 +
-Weitere Informationen finden Sie unter link:task-manage-volumes.html#moving-volumes-to-another-system-to-avoid-capacity-issues["Verschieben von Volumes auf ein anderes System, um Kapazitätsprobleme zu vermeiden"].
+Weitere Informationen finden Sie unter <<move-volumes-aggregate-capacity,Verschieben Sie Volumes in ein anderes Aggregat, um Kapazitätsprobleme zu vermeiden>>.
 
 
 

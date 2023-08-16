@@ -88,7 +88,7 @@ Wenn Sie kein Transit-Gateway einrichten können, sind private IP-Adressen für 
 
 Bevor Sie eine HA-Konfiguration über mehrere Verfügbarkeitszonen hinweg bereitstellen, sollten Sie die Anforderungen für unverankerte IP-Adressen und Weiterleitungstabellen überprüfen. Sie müssen die unverankerten IP-Adressen angeben, wenn Sie die Konfiguration bereitstellen. Die privaten IP-Adressen werden automatisch von BlueXP erstellt.
 
-Weitere Informationen finden Sie unter link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["AWS Netzwerkanforderungen für Cloud Volumes ONTAP HA in mehreren AZS"].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["AWS Netzwerkanforderungen für Cloud Volumes ONTAP HA in mehreren AZS"^].
 
 
 

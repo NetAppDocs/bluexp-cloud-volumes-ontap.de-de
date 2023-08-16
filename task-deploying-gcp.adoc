@@ -127,7 +127,7 @@ Wenn Sie BlueXP die Firewall-Richtlinie für Sie generieren lassen, müssen Sie 
 
 
 
-| Vorhandene Firewallrichtlinie verwenden | Wenn Sie eine vorhandene Firewallrichtlinie verwenden, stellen Sie sicher, dass diese die erforderlichen Regeln enthält. link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["Informieren Sie sich über die Firewall-Regeln für Cloud Volumes ONTAP"]. 
+| Vorhandene Firewallrichtlinie verwenden | Wenn Sie eine vorhandene Firewallrichtlinie verwenden, stellen Sie sicher, dass diese die erforderlichen Regeln enthält. Link: https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#firewall-rules[Learn über Firewall-Regeln für Cloud Volumes ONTAP^]. 
 |===
 . *Charging Methods and NSS Account*: Geben Sie an, welche Ladungsoption Sie mit diesem System verwenden möchten, und geben Sie dann ein NetApp Support Site Konto an.
 +
@@ -152,7 +152,7 @@ Der Festplattentyp ist für das anfängliche Volume. Sie können einen anderen F
 Die Festplattengröße ist für alle Festplatten im ursprünglichen Aggregat und für alle zusätzlichen Aggregate bestimmt, die BlueXP erzeugt, wenn Sie die einfache Bereitstellungsoption verwenden. Mithilfe der erweiterten Zuweisungsoption können Sie Aggregate erstellen, die eine andere Festplattengröße verwenden.
 
 +
-Hilfe bei der Auswahl von Festplattentyp und -Größe finden Sie unter link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Dimensionierung Ihres Systems in Google Cloud"].
+Hilfe bei der Auswahl von Festplattentyp und -Größe finden Sie unter link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionieren Sie Ihr System in Google Cloud"].
 
 . *Flash Cache, Schreibgeschwindigkeit und WORM*:
 +
@@ -260,7 +260,7 @@ Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers ko
 |===
 . *Nutzungsprofil, Festplattentyp und Tiering-Richtlinie*: Wählen Sie aus, ob Sie Funktionen für die Storage-Effizienz aktivieren und gegebenenfalls die Volume Tiering-Richtlinie ändern möchten.
 +
-Weitere Informationen finden Sie unter link:task-planning-your-config-gcp.html#choosing-a-volume-usage-profile["Allgemeines zu Volume-Nutzungsprofilen"] Und link:concept-data-tiering.html["Data Tiering - Übersicht"].
+Weitere Informationen finden Sie unter link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Wählen Sie ein Volume-Auslastungsprofil aus"] Und link:concept-data-tiering.html["Data Tiering - Übersicht"].
 
 . *Überprüfen & Genehmigen*: Überprüfen und bestätigen Sie Ihre Auswahl.
 +
@@ -368,7 +368,7 @@ Wenn Sie BlueXP die Firewall-Richtlinie für Sie generieren lassen, müssen Sie 
 
 
 
-| Verwenden Sie vorhandene | Wenn Sie eine vorhandene Firewallrichtlinie verwenden, stellen Sie sicher, dass diese die erforderlichen Regeln enthält. link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["Informieren Sie sich über die Firewall-Regeln für Cloud Volumes ONTAP"]. 
+| Verwenden Sie vorhandene | Wenn Sie eine vorhandene Firewallrichtlinie verwenden, stellen Sie sicher, dass diese die erforderlichen Regeln enthält. link:reference-networking-gcp.html#firewall-rules["Informieren Sie sich über die Firewall-Regeln für Cloud Volumes ONTAP"]. 
 |===
 . *Charging Methods and NSS Account*: Geben Sie an, welche Ladungsoption Sie mit diesem System verwenden möchten, und geben Sie dann ein NetApp Support Site Konto an.
 +
@@ -393,7 +393,7 @@ Der Festplattentyp ist für das anfängliche Volume. Sie können einen anderen F
 Die Festplattengröße ist für alle Festplatten im ursprünglichen Aggregat und für alle zusätzlichen Aggregate bestimmt, die BlueXP erzeugt, wenn Sie die einfache Bereitstellungsoption verwenden. Mithilfe der erweiterten Zuweisungsoption können Sie Aggregate erstellen, die eine andere Festplattengröße verwenden.
 
 +
-Hilfe bei der Auswahl von Festplattentyp und -Größe finden Sie unter link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Dimensionierung Ihres Systems in Google Cloud"].
+Hilfe bei der Auswahl von Festplattentyp und -Größe finden Sie unter link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionieren Sie Ihr System in Google Cloud"].
 
 . *Flash Cache, Schreibgeschwindigkeit und WORM*:
 +
@@ -500,7 +500,7 @@ Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers ko
 |===
 . *Nutzungsprofil, Festplattentyp und Tiering-Richtlinie*: Wählen Sie aus, ob Sie Funktionen für die Storage-Effizienz aktivieren und gegebenenfalls die Volume Tiering-Richtlinie ändern möchten.
 +
-Weitere Informationen finden Sie unter link:task-planning-your-config-gcp.html#choosing-a-volume-usage-profile["Allgemeines zu Volume-Nutzungsprofilen"] Und link:concept-data-tiering.html["Data Tiering - Übersicht"].
+Weitere Informationen finden Sie unter link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Wählen Sie ein Volume-Auslastungsprofil aus"] Und link:concept-data-tiering.html["Data Tiering - Übersicht"].
 
 . *Überprüfen & Genehmigen*: Überprüfen und bestätigen Sie Ihre Auswahl.
 +
