@@ -347,7 +347,7 @@ image::screenshot_aggr_capacity.png[Screenshot Aggr Kapazität]
 
 . Wenn keine Aggregate über verfügbare Kapazität verfügen, erstellen Sie ein neues Aggregat.
 +
-Weitere Informationen finden Sie unter link:task-create-aggregates.html["Aggregate werden erstellt"].
+Weitere Informationen finden Sie unter link:task-create-aggregates.html["Aggregate werden erstellt"^].
 
 . Verwenden Sie System Manager oder die CLI, um die Volumes in das Aggregat zu verschieben.
 . In den meisten Fällen können Sie mit System Manager Volumes verschieben.
