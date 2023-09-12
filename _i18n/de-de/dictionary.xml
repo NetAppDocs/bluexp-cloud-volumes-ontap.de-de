@@ -5025,4 +5025,12 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="28495b8712e93ec4d83d5af5db51d535" category="paragraph">BlueXP ermöglicht das Management von FlexCache Volumes mit dem <block ref="06867f1eea47d22d6d5c52a51ce61294" category="inline-link-macro-rx"></block> Service:</block>
   <block id="06156010b52bde259c58b15866491a02" category="paragraph">Zudem können Sie mit der ONTAP CLI oder mit ONTAP System Manager FlexCache Volumes erstellen und managen:</block>
   <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP generiert eine FlexCache Lizenz für alle neuen Cloud Volumes ONTAP Systeme. Die Lizenz umfasst ein Nutzungslimit von 500 gib.</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 September 2023</block>
+  <block id="3e34162a2379c48e3eaf3f3857b029c0" category="paragraph">Die folgenden Änderungen wurden mit der Version 3.9.33 des Connectors eingeführt.</block>
+  <block id="e749c9d187d1531bb81af1a3c9eb73be" category="section-title">Unterstützung für VMs der Lsv3-Serie in Azure</block>
+  <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">Die Instanztypen L48s_v3 und L64s_v3 werden nun mit Cloud Volumes ONTAP in Azure unterstützt. Dies gilt für Single-Node- und Hochverfügbarkeitspaare-Implementierungen mit gemeinsam genutzten verwalteten Festplatten in einzelnen und mehreren Verfügbarkeitszonen, beginnend mit Version 9.13.1. Diese Instanztypen unterstützen Flash Cache.</block>
+  <block id="c2af1dd6b400531e930c62dad5095f7d" category="inline-link-macro">Zeigen Sie unterstützte Konfigurationen für Cloud Volumes ONTAP in Azure an</block>
+  <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">Storage-Limits für Cloud Volumes ONTAP in Azure anzeigen</block>
+  <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
+<block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
 </blocks>
