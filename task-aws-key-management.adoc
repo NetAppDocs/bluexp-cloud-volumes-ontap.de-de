@@ -12,7 +12,7 @@ summary: Nutzen Sie den Verschlüsselungsmanagement-Service von AWS für Ihren D
 
 
 [role="lead"]
-Verwenden Sie können link:https://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS Key Management Service (KMS)"^] Zum Schutz Ihrer ONTAP Verschlüsselungen in einer vom Google Cloud-Plattform bereitgestellten Applikation.
+Verwenden Sie können link:https://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS Key Management Service (KMS)"^] Zum Schutz Ihrer ONTAP Verschlüsselungen in einer über AWS bereitgestellten Applikation.
 
 Verschlüsselungsmanagement mit AWS KMS kann über die CLI oder die ONTAP REST-API aktiviert werden.
 
