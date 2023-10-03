@@ -1,0 +1,280 @@
+---
+sidebar: sidebar 
+permalink: task-segregate-snapmirror-azure.html 
+keywords: segregate, SnapMirror, SnapMirror traffic, SnapMirror replication, add, additional NIC, new NIC, intercluster LIF, non-routable subnet, subnet 
+summary: Mit Cloud Volumes ONTAP in Azure können Sie SnapMirror Replizierungsverkehr mithilfe eines anderen Netzwerks trennen, um die Sicherheit und Performance der Daten zu verbessern. 
+---
+= Trennen Sie SnapMirror Traffic in Azure
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Mit Cloud Volumes ONTAP in Azure können Sie den SnapMirror Replizierungsverkehr von Daten- und Managementverkehr trennen. Um den SnapMirror Replizierungsverkehr von Ihrem Datenverkehr zu trennen, fügen Sie eine neue Netzwerkschnittstellenkarte (NIC), eine zugeordnete Intercluster LIF und ein nicht routingfähiges Subnetz hinzu.
+
+
+
+== Allgemeines zur Trennung von SnapMirror Datenverkehr in Azure
+
+Standardmäßig konfiguriert BlueXP alle NICs und LIFs in einer Cloud Volumes ONTAP-Implementierung im selben Subnetz. In solchen Konfigurationen wird der Datenverkehr der SnapMirror Replizierung sowie der Daten- und Managementverkehr im gleichen Subnetz verarbeitet. Die Trennung von SnapMirror Traffic nutzt ein zusätzliches Subnetz, das nicht zu dem für Daten- und Managementdatenverkehr verwendeten Subnetz geleitet werden kann.
+
+.Abbildung 1
+Die folgenden Diagramme zeigen die Trennung des SnapMirror Replizierungsdatenverkehrs zwischen einer zusätzlichen NIC, einer zugeordneten Intercluster LIF und einem nicht routingfähigen Subnetz in einer Implementierung mit einem einzelnen Node. Eine HA-Paar-Implementierung unterscheidet sich geringfügig.
+
+image:diagram-segregate-snapmirror-traffic.png["In der Abbildung wird die Trennung des SnapMirror Replizierungsverkehrs in einer Single Node-Konfiguration dargestellt"]
+
+.Bevor Sie beginnen
+Gehen Sie die folgenden Überlegungen durch:
+
+* Es kann nur eine einzelne NIC zu einem einzelnen Cloud Volumes ONTAP-Knoten oder HA-Paar-Implementierung (VM-Instanz) für die SnapMirror-Traffic-Trennung hinzugefügt werden.
+* Um einen neuen NIC hinzuzufügen, muss der zu implementierende VM-Instanztyp über eine nicht verwendete NIC verfügen.
+* Die Quell- und Zielcluster müssen sich im gleichen virtuellen Netzwerk (vnet) befinden, jedoch nicht im selben Subnetz.
+
+
+
+
+== Schritt: Erstellen Sie eine zusätzliche NIC und verbinden Sie sie mit der Ziel-VM
+
+Dieser Abschnitt enthält Anweisungen zum Erstellen einer zusätzlichen NIC und zum Anhängen an die Ziel-VM. Die Ziel-VM ist das Single Node- oder HA-Paar-System in Cloud Volumes ONTAP in Azure, wo Sie Ihre zusätzliche NIC einrichten möchten.
+
+.Schritte
+. Beenden Sie den Node in der ONTAP CLI.
++
+[source, cli]
+----
+dest::> halt -node <dest_node-vm>
+----
+. Überprüfen Sie im Azure-Portal, ob der Status der VM (Node) angehalten lautet.
++
+[source, cli]
+----
+az vm get-instance-view --resource-group <dest-rg> --name <dest-vm> --query instanceView.statuses[1].displayStatus
+----
+. Beenden Sie den Node mithilfe der Bash-Umgebung in Azure Cloud Shell.
++
+.. Stoppen Sie den Node.
++
+[source, cli]
+----
+az vm stop --resource-group <dest_node-rg> --name <dest_node-vm>
+----
+.. Zuordnung des Knotens aufheben.
++
+[source, cli]
+----
+az vm deallocate --resource-group <dest_node-rg> --name <dest_node-vm>
+----
+
+
+. Konfigurieren Sie Regeln für Netzwerksicherheitsgruppen, damit die beiden Subnetze (Subnetz des Quell-Clusters und Subnetz des Zielclusteres) nicht routingfähig sind.
++
+.. Erstellen Sie die neue NIC auf der Ziel-VM.
+.. Suchen Sie nach der Subnetz-ID für das Subnetz des Quell-Clusters.
++
+[source, cli]
+----
+az network vnet subnet show -g <src_vnet-rg> -n <src_subnet> --vnet-name <vnet> --query id
+----
+.. Erstellen Sie die neue NIC auf der Ziel-VM mit der Subnetz-ID für das Quell-Cluster-Subnetz. Hier geben Sie den Namen für die neue NIC ein.
++
+[source, cli]
+----
+az network nic create -g <dest_node-rg> -n <dest_node-vm-nic-new> --subnet <id_from_prev_command> --accelerated-networking true
+----
+.. Speichern Sie die private IP-Adresse. Diese IP-Adresse, <new_added_nic_primary_addr>, wird verwendet, um eine Intercluster LIF in zu erstellen <<Step 2: Create a new IPspace,Broadcast-Domäne, Intercluster LIF für die neue NIC>>.
+
+
+. Verbinden Sie die neue NIC mit der VM.
++
+[source, cli]
+----
+az vm nic add -g <dest_node-rg> --vm-name <dest_node-vm> --nics <dest_node-vm-nic-new>
+----
+. Starten Sie die VM (Knoten).
++
+[source, cli]
+----
+az vm start --resource-group <dest_node-rg>  --name <dest_node-vm>
+----
+. Gehen Sie im Azure-Portal zu *Networking* und bestätigen Sie, dass die neue NIC, z.B. nic-New, existiert und beschleunigte Vernetzung aktiviert ist.
++
+[source, cli]
+----
+az network nic list --resource-group azure-59806175-60147103-azure-rg --query "[].{NIC: name, VM: virtualMachine.id}"
+----
+
+
+Wiederholen Sie bei HA-Paar-Implementierungen die Schritte für den Partner-Node.
+
+
+
+== Schritt 2: Erstellen Sie einen neuen IPspace, Broadcast-Domain und Intercluster LIF für die neue NIC
+
+Durch einen separaten IPspace für Intercluster-LIFs wird die logische Trennung zwischen den Netzwerkfunktionen für die Replizierung zwischen Clustern ermöglicht.
+
+Verwenden Sie die ONTAP-CLI für die folgenden Schritte.
+
+.Schritte
+. Erstellen Sie den neuen IPspace (New_ipspace).
++
+[source, cli]
+----
+dest::> network ipspace create -ipspace <new_ipspace>
+----
+. Erstellen Sie eine Broadcast-Domain auf dem neuen IPspace (New_ipspace) und fügen Sie den nic-New-Port hinzu.
++
+[source, cli]
+----
+dest::> network port show
+----
+. Für Systeme mit einem einzigen Node lautet der neu hinzugefügte Port _e0b_. Für HA-Paar-Implementierungen mit verwalteten Datenträgern lautet der neu hinzugefügte Port _e0d_. Für HA-Paar-Implementierungen mit Page Blobs ist der neu hinzugefügte Port _e0e_. Verwenden Sie den Node-Namen und nicht den VM-Namen. Suchen Sie den Node-Namen, indem Sie ausführen `node show`.
++
+[source, cli]
+----
+dest::> broadcast-domain create -broadcast-domain <new_bd> -mtu 1500 -ipspace <new_ipspace> -ports <dest_node-cot-vm:e0b>
+----
+. Erstellen Sie eine Intercluster LIF auf der neuen Broadcast-Domain (New_bd) und auf der neuen NIC (nic-New).
++
+[source, cli]
+----
+dest::> net int create -vserver <new_ipspace> -lif <new_dest_node-ic-lif> -service-policy default-intercluster -address <new_added_nic_primary_addr> -home-port <e0b> -home-node <node> -netmask <new_netmask_ip> -broadcast-domain <new_bd>
+----
+. Überprüfung der Erstellung der neuen Intercluster LIF
++
+[source, cli]
+----
+dest::> net int show
+----
+
+
+Wiederholen Sie bei HA-Paar-Implementierungen die Schritte für den Partner-Node.
+
+
+
+== Schritt 3: Überprüfen Sie Cluster-Peering zwischen den Quell- und Zielsystemen
+
+Dieser Abschnitt enthält Anweisungen zur Überprüfung von Peering zwischen Quell- und Zielsystemen.
+
+Verwenden Sie die ONTAP-CLI für die folgenden Schritte.
+
+.Schritte
+. Vergewissern Sie sich, dass die Intercluster LIF des Ziel-Clusters die Intercluster LIF des Quell-Clusters anpingen kann. Da der Ziel-Cluster diesen Befehl ausführt, ist die Ziel-IP-Adresse die Intercluster LIF IP-Adresse auf der Quelle.
++
+[source, cli]
+----
+dest::> ping -lif <new_dest_node-ic-lif> -vserver <new_ipspace> -destination <10.161.189.6>
+----
+. Vergewissern Sie sich, dass die Intercluster LIF des Quell-Clusters die Intercluster LIF des Ziel-Clusters anpingen kann. Das Ziel ist die IP-Adresse der neuen NIC, die auf dem Ziel erstellt wurde.
++
+[source, cli]
+----
+src::> ping -lif <src_node-ic-lif> -vserver <src_svm> -destination <10.161.189.18>
+----
+
+
+Wiederholen Sie bei HA-Paar-Implementierungen die Schritte für den Partner-Node.
+
+
+
+== Schritt 4: SVM-Peering zwischen Quell- und Zielsystem erstellen
+
+Dieser Abschnitt enthält Anweisungen zum Erstellen von SVM-Peering zwischen dem Quell- und Zielsystem.
+
+Verwenden Sie die ONTAP-CLI für die folgenden Schritte.
+
+.Schritte
+. Erstellen Sie Cluster-Peering auf dem Ziel mithilfe der Intercluster-Quell-IP-Adresse des `-peer-addrs`. Bei HA-Paaren sollten Sie die LIF-IP-Quelladresse für beide Nodes als auflisten `-peer-addrs`.
++
+[source, cli]
+----
+dest::> cluster peer create -peer-addrs <10.161.189.6> -ipspace <new_ipspace>
+----
+. Geben Sie die Passphrase ein und bestätigen Sie sie.
+. Erstellen Sie Cluster-Peering auf der Quelle mithilfe der LIF-IP-Adresse des Ziel-Clusters als `peer-addrs`. Bei HA-Paaren müssen die Ziel-Intercluster-LIF-IP-Adresse für beide Nodes als auflisten `-peer-addrs`.
++
+[source, cli]
+----
+src::> cluster peer create -peer-addrs <10.161.189.18>
+----
+. Geben Sie die Passphrase ein und bestätigen Sie sie.
+. Prüfen Sie, ob das Cluster Peering ist.
++
+[source, cli]
+----
+src::> cluster peer show
+----
++
+Erfolgreiches Peering zeigt *verfügbar* im Verfügbarkeitsfeld an.
+
+. SVM-Peering auf dem Ziel erstellen. Quell- und Ziel-SVMs sollten Daten-SVMs sein.
++
+[source, cli]
+----
+dest::> vserver peer create -vserver <dest_svm> -peer-vserver <src_svm> -peer-cluster <src_cluster> -applications snapmirror``
+----
+. SVM-Peering akzeptieren.
++
+[source, cli]
+----
+src::> vserver peer accept -vserver <src_svm> -peer-vserver <dest_svm>
+----
+. Prüfen Sie, ob die SVM einen Spitzeneinschlag hat.
++
+[source, cli]
+----
+dest::> vserver peer show
+----
++
+Peer-Status wird angezeigt *`peered`* Und Peering Anwendungen zeigt *`snapmirror`*.
+
+
+
+
+
+== Schritt 5: Erstellen einer SnapMirror Replizierungsbeziehung zwischen dem Quell- und Zielsystem
+
+Dieser Abschnitt enthält Anweisungen zum Erstellen einer SnapMirror Replizierungsbeziehung zwischen dem Quell- und Zielsystem.
+
+Verwenden Sie die ONTAP-CLI für die folgenden Schritte.
+
+.Schritte
+. Erstellung eines geschützten Volumes auf der Ziel-SVM
++
+[source, cli]
+----
+dest::> vol create -volume <new_dest_vol> -vserver <dest_svm> -type DP -size <10GB> -aggregate <aggr1>
+----
+. Erstellen Sie die SnapMirror Replizierungsbeziehung auf dem Ziel, das die SnapMirror Richtlinie und einen Zeitplan für die Replizierung umfasst.
++
+[source, cli]
+----
+dest::> snapmirror create -source-path src_svm:src_vol  -destination-path  dest_svm:new_dest_vol -vserver dest_svm -policy MirrorAllSnapshots -schedule 5min
+----
+. Initialisieren Sie die SnapMirror Replizierungsbeziehung auf dem Ziel.
++
+[source, cli]
+----
+dest::> snapmirror initialize -destination-path  <dest_svm:new_dest_vol>
+----
+. Überprüfen Sie in der ONTAP CLI den SnapMirror Beziehungsstatus, indem Sie den folgenden Befehl ausführen:
++
+[source, cli]
+----
+dest::> snapmirror show
+----
++
+Der Beziehungsstatus lautet `Snapmirrored` Und die Gesundheit der Beziehung ist `true`.
+
+. Optional: Führen Sie in der ONTAP-CLI den folgenden Befehl aus, um den Aktionsverlauf für die SnapMirror Beziehung anzuzeigen.
++
+[source, cli]
+----
+dest::> snapmirror show-history
+----
+
+
+Optional können Sie die Quell- und Ziel-Volumes mounten, eine Datei auf die Quelle schreiben und überprüfen, ob das Volume auf das Ziel repliziert wird.

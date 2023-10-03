@@ -3953,7 +3953,6 @@
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">Mit beiden Optionen sollten Sie dies tun <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>.</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">Version 9.10.0 und früher</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">Ein Edge-Node mit jeweils 3 TIBS Kapazität erworben</block>
-  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">Unterstützung für Cloud-Provider-Lösungen</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX für ONTAP</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Dateien</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service für Google Cloud</block>
@@ -4780,9 +4779,7 @@ Wenn eine Lizenz direkt über NetApp (BYOL) erworben wird, ist kein AWS Abonneme
   <block id="46f41748d329a2f863d5f787b783bcc5" category="section-title">Aktualisierung der Cloud Volumes ONTAP-Upgrade-Versionsauswahl</block>
   <block id="25c3dcdd6e2c69b30eba973a10e656d8" category="paragraph">Auf der Seite Upgrade Cloud Volumes ONTAP können Sie jetzt wählen, ob Sie ein Upgrade auf die neueste verfügbare Version von Cloud Volumes ONTAP oder eine ältere Version durchführen möchten.</block>
   <block id="91cf56905c9848b7dbc6e3d59504dcd3" category="paragraph">Weitere Informationen zum Upgrade von Cloud Volumes ONTAP über BlueXP finden Sie unter<block ref="9777e426a24de9582e7ed3fdb1795e0a" category="inline-link-rx"></block>.</block>
-  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">Für Ihr BlueXP Konto und für einzelne Cloud Volumes ONTAP Systeme ist eine Support-Registrierung erforderlich.</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">Durch das Registrieren beider Arten von Seriennummern können Kunden Funktionen wie das Öffnen von Support-Tickets und die automatische Erstellung von Support-Cases nutzen. Die Registrierung ist abgeschlossen, indem wie unten beschrieben Konten der NetApp Support Website (NSS) zu BlueXP hinzugefügt werden.</block>
-  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">Technischer Support zu den folgenden Cloud-Provider-Lösungen finden Sie im Abschnitt „Hilfe erhalten“ in der BlueXP Dokumentation zu diesem Produkt.</block>
   <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">Registrieren Sie Ihr BlueXP Konto für NetApp Support</block>
   <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">Um sich für den Support zu registrieren und die Supportberechtigung zu aktivieren, muss ein Benutzer in Ihrem BlueXP Konto ein NetApp Support Site Konto mit seinen BlueXP Anmeldedaten verknüpfen. Wie Sie sich für den NetApp Support registrieren, hängt davon ab, ob Sie bereits über einen NSS Account (NetApp Support Site) verfügen.</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Wählen Sie *NSS-Anmeldeinformationen hinzufügen* und folgen Sie der Eingabeaufforderung für die NetApp-Support-Website (NSS)-Authentifizierung.</block>
@@ -5033,4 +5030,73 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
   <block id="9d0048a7e2f292f2c49dc43d2698028b" category="paragraph">Verwenden Sie können <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> Zum Schutz Ihrer ONTAP Verschlüsselungen in einer über AWS bereitgestellten Applikation.</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">Für den Support von BlueXP und seinen Storage-Lösungen und Services ist eine Support-Registrierung erforderlich. Um wichtige Workflows für Cloud Volumes ONTAP Systeme zu ermöglichen, ist außerdem eine Support-Registrierung erforderlich.</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">Durch die Registrierung für den Support wird die NetApp-Unterstützung für einen Fileservice eines Cloud-Providers nicht aktiviert. Technischen Support zu Fileservices von Cloud-Providern, zu seiner Infrastruktur oder zu beliebigen Lösungen, die den Service verwenden, finden Sie im Abschnitt „Hilfe erhalten“ in der BlueXP Dokumentation zu diesem Produkt.</block>
+  <block id="f316f0dfd566f9d842d2d368b7e3ecbb" category="cell">9.14.0</block>
+  <block id="303aacd2fb75405c16e06a32d73c9c79" category="summary">Mit Cloud Volumes ONTAP in Azure können Sie SnapMirror Replizierungsverkehr mithilfe eines anderen Netzwerks trennen, um die Sicherheit und Performance der Daten zu verbessern.</block>
+  <block id="21621fa11949957e26b3e8faa6ac858e" category="doc">Trennen Sie SnapMirror Traffic in Azure</block>
+  <block id="0f8fc7abeaf93224876aeb20cc640a67" category="paragraph">Mit Cloud Volumes ONTAP in Azure können Sie den SnapMirror Replizierungsverkehr von Daten- und Managementverkehr trennen. Um den SnapMirror Replizierungsverkehr von Ihrem Datenverkehr zu trennen, fügen Sie eine neue Netzwerkschnittstellenkarte (NIC), eine zugeordnete Intercluster LIF und ein nicht routingfähiges Subnetz hinzu.</block>
+  <block id="9ca833fb1a50865ff88e9da267c0f41f" category="section-title">Allgemeines zur Trennung von SnapMirror Datenverkehr in Azure</block>
+  <block id="4750291421c319d60eddb36242a2a88e" category="paragraph">Standardmäßig konfiguriert BlueXP alle NICs und LIFs in einer Cloud Volumes ONTAP-Implementierung im selben Subnetz. In solchen Konfigurationen wird der Datenverkehr der SnapMirror Replizierung sowie der Daten- und Managementverkehr im gleichen Subnetz verarbeitet. Die Trennung von SnapMirror Traffic nutzt ein zusätzliches Subnetz, das nicht zu dem für Daten- und Managementdatenverkehr verwendeten Subnetz geleitet werden kann.</block>
+  <block id="60806a484aa67dd4b1f9835cf1de9551" category="paragraph-title">Abbildung 1</block>
+  <block id="d631a4c5f16e24d65bf4b95667c74ab1" category="paragraph">Die folgenden Diagramme zeigen die Trennung des SnapMirror Replizierungsdatenverkehrs zwischen einer zusätzlichen NIC, einer zugeordneten Intercluster LIF und einem nicht routingfähigen Subnetz in einer Implementierung mit einem einzelnen Node. Eine HA-Paar-Implementierung unterscheidet sich geringfügig.</block>
+  <block id="f7142f8300db32ac533cebbf28b1a65c" category="inline-image-macro">In der Abbildung wird die Trennung des SnapMirror Replizierungsverkehrs in einer Single Node-Konfiguration dargestellt</block>
+  <block id="40126e16e9279ba224718054c8599d19" category="paragraph"><block ref="40126e16e9279ba224718054c8599d19" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2d713c56af0861a0b0bed91ef8da2e18" category="paragraph">Gehen Sie die folgenden Überlegungen durch:</block>
+  <block id="97d737a59c7e796eb8610dce5b0f817a" category="list-text">Es kann nur eine einzelne NIC zu einem einzelnen Cloud Volumes ONTAP-Knoten oder HA-Paar-Implementierung (VM-Instanz) für die SnapMirror-Traffic-Trennung hinzugefügt werden.</block>
+  <block id="933fe3c7f865ac41ceae93a6e0cb11be" category="list-text">Um einen neuen NIC hinzuzufügen, muss der zu implementierende VM-Instanztyp über eine nicht verwendete NIC verfügen.</block>
+  <block id="e6f791d5fe8a01a86623cb53cef66120" category="list-text">Die Quell- und Zielcluster müssen sich im gleichen virtuellen Netzwerk (vnet) befinden, jedoch nicht im selben Subnetz.</block>
+  <block id="c61486c21b19c2bf3cf6e82a2a1a645b" category="section-title">Schritt: Erstellen Sie eine zusätzliche NIC und verbinden Sie sie mit der Ziel-VM</block>
+  <block id="d1348b7908ab7ffc3e987964d5d681f0" category="paragraph">Dieser Abschnitt enthält Anweisungen zum Erstellen einer zusätzlichen NIC und zum Anhängen an die Ziel-VM. Die Ziel-VM ist das Single Node- oder HA-Paar-System in Cloud Volumes ONTAP in Azure, wo Sie Ihre zusätzliche NIC einrichten möchten.</block>
+  <block id="faa6897ed3f655c419813b3c65575b23" category="list-text">Beenden Sie den Node in der ONTAP CLI.</block>
+  <block id="0a35d6e7621851d0057f60bd59de0033" category="list-text">Überprüfen Sie im Azure-Portal, ob der Status der VM (Node) angehalten lautet.</block>
+  <block id="4e4710d224030f7e39ce8b2750fbb740" category="list-text">Beenden Sie den Node mithilfe der Bash-Umgebung in Azure Cloud Shell.</block>
+  <block id="c5d8f32ad4d62afd3c9e40fef3d1cbd0" category="list-text">Stoppen Sie den Node.</block>
+  <block id="8f19990e7da7dad0679229805c3df746" category="list-text">Zuordnung des Knotens aufheben.</block>
+  <block id="9fc7f10dbf9f36fb02a3ff55eb91940d" category="list-text">Konfigurieren Sie Regeln für Netzwerksicherheitsgruppen, damit die beiden Subnetze (Subnetz des Quell-Clusters und Subnetz des Zielclusteres) nicht routingfähig sind.</block>
+  <block id="bd7492db1a0b8c1b34be6a58c6374a50" category="list-text">Erstellen Sie die neue NIC auf der Ziel-VM.</block>
+  <block id="a6b97c800c08f0f47cf048c9cd043899" category="list-text">Suchen Sie nach der Subnetz-ID für das Subnetz des Quell-Clusters.</block>
+  <block id="5a90251e4d045fbd97e56cd055766b1e" category="list-text">Erstellen Sie die neue NIC auf der Ziel-VM mit der Subnetz-ID für das Quell-Cluster-Subnetz. Hier geben Sie den Namen für die neue NIC ein.</block>
+  <block id="5fd584f186e30730537d22a78bb11616" category="inline-xref">Broadcast-Domäne, Intercluster LIF für die neue NIC</block>
+  <block id="d863813a11392f8ccc266be047976b56" category="list-text">Speichern Sie die private IP-Adresse. Diese IP-Adresse, &lt;new_added_nic_primary_addr&gt;, wird verwendet, um eine Intercluster LIF in zu erstellen <block ref="13642ed959fde49bda6806fad0d107cf" category="inline-xref-macro-rx"></block>.</block>
+  <block id="c720b471b5c9a398d1674113fb61ccb3" category="list-text">Verbinden Sie die neue NIC mit der VM.</block>
+  <block id="04144942b75846f169eab289baa03332" category="list-text">Starten Sie die VM (Knoten).</block>
+  <block id="891b715fb21f166e1ddefb85f1ada848" category="list-text">Gehen Sie im Azure-Portal zu *Networking* und bestätigen Sie, dass die neue NIC, z.B. nic-New, existiert und beschleunigte Vernetzung aktiviert ist.</block>
+  <block id="0b2645871b4d5e300b856a5676815053" category="paragraph">Wiederholen Sie bei HA-Paar-Implementierungen die Schritte für den Partner-Node.</block>
+  <block id="75ca82ebaa2ab2a348dab6de8af96db1" category="section-title">Schritt 2: Erstellen Sie einen neuen IPspace, Broadcast-Domain und Intercluster LIF für die neue NIC</block>
+  <block id="f81ad401f01ac6ccee4552cee262ea96" category="paragraph">Durch einen separaten IPspace für Intercluster-LIFs wird die logische Trennung zwischen den Netzwerkfunktionen für die Replizierung zwischen Clustern ermöglicht.</block>
+  <block id="bf5db4b0d890ae0f47f0666b4786c11e" category="paragraph">Verwenden Sie die ONTAP-CLI für die folgenden Schritte.</block>
+  <block id="5caa556e7511fbc031e556f35273b4b5" category="list-text">Erstellen Sie den neuen IPspace (New_ipspace).</block>
+  <block id="c3e846d4c68310f0bbaebfe81b1b016c" category="list-text">Erstellen Sie eine Broadcast-Domain auf dem neuen IPspace (New_ipspace) und fügen Sie den nic-New-Port hinzu.</block>
+  <block id="ec7cd635bbff7496ce854419fbac424d" category="list-text">Für Systeme mit einem einzigen Node lautet der neu hinzugefügte Port _e0b_. Für HA-Paar-Implementierungen mit verwalteten Datenträgern lautet der neu hinzugefügte Port _e0d_. Für HA-Paar-Implementierungen mit Page Blobs ist der neu hinzugefügte Port _e0e_. Verwenden Sie den Node-Namen und nicht den VM-Namen. Suchen Sie den Node-Namen, indem Sie ausführen<block ref="9cd5e832790132a87592f2958fc2b1a6" prefix=" " category="inline-code"></block>.</block>
+  <block id="9defaa4e7d0a35e22135ad0e2f58e852" category="list-text">Erstellen Sie eine Intercluster LIF auf der neuen Broadcast-Domain (New_bd) und auf der neuen NIC (nic-New).</block>
+  <block id="be0a702fb4057bb2e91bdd1cc96da2e4" category="list-text">Überprüfung der Erstellung der neuen Intercluster LIF</block>
+  <block id="2aea6959bcbac1fa4b42120415127f49" category="section-title">Schritt 3: Überprüfen Sie Cluster-Peering zwischen den Quell- und Zielsystemen</block>
+  <block id="daaed44d8f29e01bf2b9136c812dba11" category="paragraph">Dieser Abschnitt enthält Anweisungen zur Überprüfung von Peering zwischen Quell- und Zielsystemen.</block>
+  <block id="7bd80217b21e266e5b946de878bcd116" category="list-text">Vergewissern Sie sich, dass die Intercluster LIF des Ziel-Clusters die Intercluster LIF des Quell-Clusters anpingen kann. Da der Ziel-Cluster diesen Befehl ausführt, ist die Ziel-IP-Adresse die Intercluster LIF IP-Adresse auf der Quelle.</block>
+  <block id="b10932f9d1b350d60dc8e6ca4ee93b51" category="list-text">Vergewissern Sie sich, dass die Intercluster LIF des Quell-Clusters die Intercluster LIF des Ziel-Clusters anpingen kann. Das Ziel ist die IP-Adresse der neuen NIC, die auf dem Ziel erstellt wurde.</block>
+  <block id="93abe604e120de65d22caed1aaada374" category="section-title">Schritt 4: SVM-Peering zwischen Quell- und Zielsystem erstellen</block>
+  <block id="75dd127515b5a2b5c961b90596de57ac" category="paragraph">Dieser Abschnitt enthält Anweisungen zum Erstellen von SVM-Peering zwischen dem Quell- und Zielsystem.</block>
+  <block id="8f3afc07cdf026cecf587706e3f50a9e" category="list-text">Erstellen Sie Cluster-Peering auf dem Ziel mithilfe der Intercluster-Quell-IP-Adresse des<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>. Bei HA-Paaren sollten Sie die LIF-IP-Quelladresse für beide Nodes als auflisten<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>.</block>
+  <block id="bddd18b8263487594b76ea4fec379386" category="list-text">Geben Sie die Passphrase ein und bestätigen Sie sie.</block>
+  <block id="124c978c2ba222186c71a76388ee00be" category="list-text">Erstellen Sie Cluster-Peering auf der Quelle mithilfe der LIF-IP-Adresse des Ziel-Clusters als<block ref="2c00dca3dca5747b8a2b8745956d98a1" prefix=" " category="inline-code"></block>. Bei HA-Paaren müssen die Ziel-Intercluster-LIF-IP-Adresse für beide Nodes als auflisten<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>.</block>
+  <block id="a3e35c96ecf9655b55a3dcde79058fa0" category="list-text">Prüfen Sie, ob das Cluster Peering ist.</block>
+  <block id="5db4c569041073c27e73bd49c013f30a" category="paragraph">Erfolgreiches Peering zeigt *verfügbar* im Verfügbarkeitsfeld an.</block>
+  <block id="6321e930bee04054fa8c00750098f3ea" category="list-text">SVM-Peering auf dem Ziel erstellen. Quell- und Ziel-SVMs sollten Daten-SVMs sein.</block>
+  <block id="91a3470d875fd7cbe36145c7f10cd29a" category="list-text">SVM-Peering akzeptieren.</block>
+  <block id="3116cb0ef49131786df2af89745dc321" category="list-text">Prüfen Sie, ob die SVM einen Spitzeneinschlag hat.</block>
+  <block id="766b57929d5f2d18ec41dd1965fea420" category="paragraph">Peer-Status wird angezeigt <block ref="20df74dd9059112f4ef8506d8ece8b43" prefix="*" category="inline-code"></block>* Und Peering Anwendungen zeigt <block ref="775e6dfb98cc0aadf603bb1ada48a066" prefix="*" category="inline-code"></block>*.</block>
+  <block id="ddf01b8bab877738e14ace0c08658ed2" category="section-title">Schritt 5: Erstellen einer SnapMirror Replizierungsbeziehung zwischen dem Quell- und Zielsystem</block>
+  <block id="93afe55f4bcb481fc116c93fb5cbd23e" category="paragraph">Dieser Abschnitt enthält Anweisungen zum Erstellen einer SnapMirror Replizierungsbeziehung zwischen dem Quell- und Zielsystem.</block>
+  <block id="1b596d323c1c9ba86accf6e5bd9c3acf" category="list-text">Erstellung eines geschützten Volumes auf der Ziel-SVM</block>
+  <block id="136a01ceb51816607d063508b0344e22" category="list-text">Erstellen Sie die SnapMirror Replizierungsbeziehung auf dem Ziel, das die SnapMirror Richtlinie und einen Zeitplan für die Replizierung umfasst.</block>
+  <block id="5ca85e0710f1c97ab63385105a12e084" category="list-text">Initialisieren Sie die SnapMirror Replizierungsbeziehung auf dem Ziel.</block>
+  <block id="0bcfd2e8ebb39d8c8a0cba2af13462c1" category="list-text">Überprüfen Sie in der ONTAP CLI den SnapMirror Beziehungsstatus, indem Sie den folgenden Befehl ausführen:</block>
+  <block id="3c6eca06b6c8daa748eff1365143a924" category="paragraph">Der Beziehungsstatus lautet<block ref="d34e79870b17da17e894ddc837954dcc" prefix=" " category="inline-code"></block> Und die Gesundheit der Beziehung ist<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>.</block>
+  <block id="6016f20f177613d8d26c5d9473f64718" category="list-text">Optional: Führen Sie in der ONTAP-CLI den folgenden Befehl aus, um den Aktionsverlauf für die SnapMirror Beziehung anzuzeigen.</block>
+  <block id="9bc0846f66e4a0d0a36a210fa3342991" category="paragraph">Optional können Sie die Quell- und Ziel-Volumes mounten, eine Datei auf die Quelle schreiben und überprüfen, ob das Volume auf das Ziel repliziert wird.</block>
+  <block id="c9abaf2f2285d7432a5d5112e315cb83" category="list-text">9.14.0 GA</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Unterstützung für Fileservices von Cloud-Providern</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Technischen Support zu Fileservices von Cloud-Providern, zu seiner Infrastruktur oder zu beliebigen Lösungen, die den Service verwenden, finden Sie im Abschnitt „Hilfe erhalten“ in der BlueXP Dokumentation zu diesem Produkt.</block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Wenn Sie technischen Support für BlueXP und seine Storage-Lösungen und -Services erhalten möchten, nutzen Sie die unten beschriebenen Support-Optionen.</block>
 </blocks>
