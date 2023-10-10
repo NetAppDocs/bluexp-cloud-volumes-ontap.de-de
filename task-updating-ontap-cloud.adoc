@@ -163,6 +163,31 @@ BlueXP aktualisiert die Mediator-Instanz auch bei Bedarf während des Cloud Volu
 
 
 
+=== Upgrades in AWS mit EC2-Instanztypen c4, m4 und R4
+
+Cloud Volumes ONTAP unterstützt die EC2-Instanztypen c4, m4 und R4 nicht mehr. Mit diesen Instanztypen können Sie vorhandene Implementierungen auf Cloud Volumes ONTAP Version 9.8-9.12.1 aktualisieren. Bevor Sie ein Upgrade durchführen, empfehlen wir Ihnen, dass Sie <<Ändern Sie den Instanztyp,Ändern Sie den Instanztyp>>. Wenn Sie den Instanztyp nicht ändern können, müssen Sie dies tun <<Erweiterte Netzwerkfunktionen aktivieren,Erweiterte Netzwerkfunktionen aktivieren>> Vor dem Upgrade. Lesen Sie die folgenden Abschnitte, um mehr über das Ändern des Instanztyps und das Aktivieren von verbesserten Netzwerkfunktionen zu erfahren.
+
+In Cloud Volumes ONTAP mit Versionen 9.13.0 und höher können keine Upgrades mit den EC2-Instanztypen c4, m4 und R4 durchgeführt werden. In diesem Fall müssen Sie die Anzahl der Festplatten reduzieren und dann <<Ändern Sie den Instanztyp,Ändern Sie den Instanztyp>> Alternativ können Sie eine neue HA-Paar-Konfiguration mit den EC2-Instanztypen c5, m5 und R5 implementieren und die Daten migrieren.
+
+
+
+==== Ändern Sie den Instanztyp
+
+die Instanztypen c4, m4 und R4 EC2 ermöglichen mehr Festplatten pro Node als die Instanztypen c5, m5 und R5 EC2. Wenn die Anzahl der Festplatten pro Node bei der c4-, m4- oder R4-EC2-Instanz unter der maximalen Festplattenanzahl pro Node bei Instanzen mit c5-, m5- und r5-Systemen liegt, können Sie den EC2-Instanztyp in c5, m5 oder r5 ändern.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html#disk-and-tiering-limits-by-ec2-instance["Überprüfen Sie die Festplatten- und Tiering-Limits durch EC2-Instanz"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Ändern des EC2 Instanztyps für Cloud Volumes ONTAP"^]
+
+Wenn Sie den Instanztyp nicht ändern können, führen Sie die Schritte unter aus <<Erweiterte Netzwerkfunktionen aktivieren>>.
+
+
+
+==== Erweiterte Netzwerkfunktionen aktivieren
+
+Um ein Upgrade auf Cloud Volumes ONTAP Version 9.8 und höher durchzuführen, müssen Sie _enhanced Networking_ auf dem Cluster aktivieren, auf dem der Instanztyp c4, m4 oder R4 ausgeführt wird. Informationen zum Aktivieren von ENA finden Sie in dem Artikel der Knowledge Base link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/How_to_enable_Enhanced_networking_like_SR-IOV_or_ENA_on_AWS_CVO_instances["Aktivieren von erweiterten Netzwerkfunktionen wie SR-IOV oder ENA auf AWS Cloud Volumes ONTAP Instanzen"^].
+
+
+
 == Upgrade wird vorbereitet
 
 Bevor Sie ein Upgrade durchführen, müssen Sie überprüfen, ob die Systeme bereit sind und alle erforderlichen Konfigurationsänderungen vornehmen.
