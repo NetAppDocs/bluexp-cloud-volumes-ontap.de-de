@@ -22,6 +22,9 @@ Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihre
 Um zusätzliche Storage VMs für Daten zu erstellen, müssen Sie IP-Adressen in Azure zuweisen und anschließend ONTAP Befehle ausführen, um die Storage-VM und Daten-LIFs zu erstellen.
 
 
+NOTE: Um weitere NIC-bezogene Aufgaben auszuführen, können Sie eine Rolle für den Netzwerkbeitrag oder eine benutzerdefinierte Rolle mit den entsprechenden Berechtigungen in Azure zuweisen. Weitere Informationen zu diesen NIC-bezogenen Berechtigungen finden Sie im https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#permissions["Microsoft Azure-Dokumentation"^].
+
+
 
 == Unterstützte Anzahl von Storage-VMs
 
