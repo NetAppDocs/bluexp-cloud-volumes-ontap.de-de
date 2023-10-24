@@ -20,6 +20,30 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 23 Oktober 2023
+
+Die folgenden Änderungen wurden mit der Version 3.9.34 des Connectors eingeführt.
+
+
+
+=== Unterstützung neuer Regionen für HA-Implementierungen mit mehreren Verfügbarkeitszonen in Azure
+
+Die folgenden Regionen in Azure unterstützen jetzt hochverfügbare Implementierungen mit mehreren Verfügbarkeitszonen für Cloud Volumes ONTAP 9.14.0 und höher:
+
+* Australien Ost
+* Ostasien
+* Frankreich, Mitte
+* Nordeuropa
+* Qatar Central
+* Schweden, Mitte
+* Westeuropa
+* West USA 2
+
+
+Eine Liste aller Regionen, die mehrere Verfügbarkeitszonen unterstützen, finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].
+
+
+
 == 6 Oktober 2023
 
 Die folgenden Änderungen wurden mit der Version 3.9.34 des Connectors eingeführt.
@@ -44,8 +68,8 @@ Die folgenden Änderungen wurden mit der Version 3.9.33 des Connectors eingefüh
 
 Die Instanztypen L48s_v3 und L64s_v3 werden nun mit Cloud Volumes ONTAP in Azure unterstützt. Dies gilt für Single-Node- und Hochverfügbarkeitspaare-Implementierungen mit gemeinsam genutzten verwalteten Festplatten in einzelnen und mehreren Verfügbarkeitszonen, beginnend mit Version 9.13.1. Diese Instanztypen unterstützen Flash Cache.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Zeigen Sie unterstützte Konfigurationen für Cloud Volumes ONTAP in Azure an"]
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Storage-Limits für Cloud Volumes ONTAP in Azure anzeigen"]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Zeigen Sie unterstützte Konfigurationen für Cloud Volumes ONTAP in Azure an"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Storage-Limits für Cloud Volumes ONTAP in Azure anzeigen"^]
 
 
 
@@ -67,7 +91,7 @@ Flash Cache und hohe Schreibgeschwindigkeit können separat in Google Cloud für
 
 Diese Funktionen können einzeln oder gemeinsam auf Single Node-Implementierungen und Hochverfügbarkeitspaaren eingesetzt werden.
 
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Starten Sie Cloud Volumes ONTAP in Google Cloud"]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Starten Sie Cloud Volumes ONTAP in Google Cloud"^]
 
 
 
