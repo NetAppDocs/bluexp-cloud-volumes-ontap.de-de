@@ -73,6 +73,17 @@ Das folgende Beispielbild zeigt die Routing-Tabelle für VPC 1. Sie umfasst eine
 +
 image:screenshot_transit_gateway3.png["Ein Screenshot der AWS Konsole, in dem die Routing-Tabelle für VPC 1 angezeigt wird. Sie umfasst eine Route zu den unverankerten IP-Adressen und zu VPC 2, wo sich der Client befindet."]
 
+. Aktualisieren Sie die Einstellungen der Sicherheitsgruppen auf Alle Daten für die VPC.
++
+.. Klicken Sie unter Virtual Private Cloud auf *Subnetze*.
+.. Klicken Sie auf die Registerkarte *Route table* und wählen Sie die gewünschte Umgebung für eine der fließenden IP-Adressen für ein HA-Paar aus.
+.. Klicken Sie auf *Sicherheitsgruppen*.
+.. Wählen Sie *Inbound Rules Bearbeiten*.
+.. Klicken Sie auf *Regel hinzufügen*.
+.. Wählen Sie unter Typ *All Traffic* aus, und wählen Sie dann die VPC-IP-Adresse aus.
+.. Klicken Sie auf *Regeln speichern*, um die Änderungen anzuwenden.
+
+
 . Volumes werden mithilfe der Floating IP-Adresse an Clients gemountet.
 +
 Die richtige IP-Adresse finden Sie in BlueXP über die Option *Mount Command* im Bereich Volumes verwalten in BlueXP.
