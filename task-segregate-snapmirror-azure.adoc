@@ -32,7 +32,7 @@ Gehen Sie die folgenden Überlegungen durch:
 
 * Es kann nur eine einzelne NIC zu einem einzelnen Cloud Volumes ONTAP-Knoten oder HA-Paar-Implementierung (VM-Instanz) für die SnapMirror-Traffic-Trennung hinzugefügt werden.
 * Um einen neuen NIC hinzuzufügen, muss der zu implementierende VM-Instanztyp über eine nicht verwendete NIC verfügen.
-* Die Quell- und Zielcluster müssen sich im gleichen virtuellen Netzwerk (vnet) befinden, jedoch nicht im selben Subnetz.
+* Die Quell- und Ziel-Cluster sollten Zugriff auf dasselbe virtuelle Netzwerk (vnet) haben. Ziel-Cluster ist ein Cloud Volumes ONTAP System in Azure. Beim Quell-Cluster kann es sich um ein Cloud Volumes ONTAP System in Azure oder um ein ONTAP System handeln.
 
 
 
@@ -238,6 +238,8 @@ Peer-Status wird angezeigt *`peered`* Und Peering Anwendungen zeigt *`snapmirror
 == Schritt 5: Erstellen einer SnapMirror Replizierungsbeziehung zwischen dem Quell- und Zielsystem
 
 Dieser Abschnitt enthält Anweisungen zum Erstellen einer SnapMirror Replizierungsbeziehung zwischen dem Quell- und Zielsystem.
+
+Um eine vorhandene SnapMirror Replizierungsbeziehung zu verschieben, müssen Sie zuerst die bestehende SnapMirror Replizierungsbeziehung trennen, bevor Sie eine neue SnapMirror Replizierungsbeziehung erstellen.
 
 Verwenden Sie die ONTAP-CLI für die folgenden Schritte.
 

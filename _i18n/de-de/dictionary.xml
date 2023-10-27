@@ -5041,7 +5041,6 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="2d713c56af0861a0b0bed91ef8da2e18" category="paragraph">Gehen Sie die folgenden Überlegungen durch:</block>
   <block id="97d737a59c7e796eb8610dce5b0f817a" category="list-text">Es kann nur eine einzelne NIC zu einem einzelnen Cloud Volumes ONTAP-Knoten oder HA-Paar-Implementierung (VM-Instanz) für die SnapMirror-Traffic-Trennung hinzugefügt werden.</block>
   <block id="933fe3c7f865ac41ceae93a6e0cb11be" category="list-text">Um einen neuen NIC hinzuzufügen, muss der zu implementierende VM-Instanztyp über eine nicht verwendete NIC verfügen.</block>
-  <block id="e6f791d5fe8a01a86623cb53cef66120" category="list-text">Die Quell- und Zielcluster müssen sich im gleichen virtuellen Netzwerk (vnet) befinden, jedoch nicht im selben Subnetz.</block>
   <block id="c61486c21b19c2bf3cf6e82a2a1a645b" category="section-title">Schritt: Erstellen Sie eine zusätzliche NIC und verbinden Sie sie mit der Ziel-VM</block>
   <block id="d1348b7908ab7ffc3e987964d5d681f0" category="paragraph">Dieser Abschnitt enthält Anweisungen zum Erstellen einer zusätzlichen NIC und zum Anhängen an die Ziel-VM. Die Ziel-VM ist das Single Node- oder HA-Paar-System in Cloud Volumes ONTAP in Azure, wo Sie Ihre zusätzliche NIC einrichten möchten.</block>
   <block id="faa6897ed3f655c419813b3c65575b23" category="list-text">Beenden Sie den Node in der ONTAP CLI.</block>
@@ -5142,4 +5141,6 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="0444b867f0aca3029a2b9ea7cd093316" category="list-text">Klicken Sie auf *Regel hinzufügen*.</block>
   <block id="39eb101f969fe671b016bf47de2d6d12" category="list-text">Wählen Sie unter Typ *All Traffic* aus, und wählen Sie dann die VPC-IP-Adresse aus.</block>
   <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">Klicken Sie auf *Regeln speichern*, um die Änderungen anzuwenden.</block>
+  <block id="2fd1ee72a12db129de96b6606fbce188" category="list-text">Die Quell- und Ziel-Cluster sollten Zugriff auf dasselbe virtuelle Netzwerk (vnet) haben. Ziel-Cluster ist ein Cloud Volumes ONTAP System in Azure. Beim Quell-Cluster kann es sich um ein Cloud Volumes ONTAP System in Azure oder um ein ONTAP System handeln.</block>
+  <block id="53dbdce3b901c59c8d3bbdae0e91364c" category="paragraph">Um eine vorhandene SnapMirror Replizierungsbeziehung zu verschieben, müssen Sie zuerst die bestehende SnapMirror Replizierungsbeziehung trennen, bevor Sie eine neue SnapMirror Replizierungsbeziehung erstellen.</block>
 </blocks>
