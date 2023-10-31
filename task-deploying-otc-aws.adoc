@@ -86,7 +86,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["
 Im folgenden Video wird gezeigt, wie Sie ein Pay-as-you-go Marketplace Abonnement mit Ihren AWS Zugangsdaten verknüpfen:
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.Abonnieren Sie BlueXP über den AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
 TIP: Wenn mehrere IAM-Benutzer im gleichen AWS-Konto arbeiten, muss jeder Benutzer sich anmelden. Wenn der erste Benutzer sich abonniert hat, informiert der AWS Marketplace die nachfolgenden Benutzer, dass sie bereits abonniert sind, wie in der Abbildung unten dargestellt. Während für das AWS _Account_ ein Abonnement erfolgt, muss sich jeder IAM-Benutzer mit diesem Abonnement verknüpfen. Wenn Sie die unten angezeigte Meldung sehen, klicken Sie auf den Link *click here*, um zur BlueXP-Website zu gelangen und den Vorgang abzuschließen.image:screenshot_aws_marketplace.gif["Ein Screenshot, der die Abonnementseite für BlueXP für Cloud Volumes ONTAP anzeigt, wenn das AWS-Konto bereits über ein Abonnement verfügt, aber ein bestimmter IAM-Benutzer nicht."]
@@ -334,7 +335,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["
 Im folgenden Video wird gezeigt, wie Sie ein Pay-as-you-go Marketplace Abonnement mit Ihren AWS Zugangsdaten verknüpfen:
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.Abonnieren Sie BlueXP über den AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
 TIP: Wenn mehrere IAM-Benutzer im gleichen AWS-Konto arbeiten, muss jeder Benutzer sich anmelden. Wenn der erste Benutzer sich abonniert hat, informiert der AWS Marketplace die nachfolgenden Benutzer, dass sie bereits abonniert sind, wie in der Abbildung unten dargestellt. Während für das AWS _Account_ ein Abonnement erfolgt, muss sich jeder IAM-Benutzer mit diesem Abonnement verknüpfen. Wenn Sie die unten angezeigte Meldung sehen, klicken Sie auf den Link *click here*, um zur BlueXP-Website zu gelangen und den Vorgang abzuschließen.image:screenshot_aws_marketplace.gif["Ein Screenshot, der die Abonnementseite für BlueXP für Cloud Volumes ONTAP anzeigt, wenn das AWS-Konto bereits über ein Abonnement verfügt, aber ein bestimmter IAM-Benutzer nicht."]
