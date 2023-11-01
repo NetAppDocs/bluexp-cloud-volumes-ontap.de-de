@@ -20,6 +20,20 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== November 2023
+
+Die folgenden Änderungen wurden mit der Version 3.9.34 des Connectors eingeführt.
+
+
+
+=== Saudi-Arabien Region jetzt in Google Cloud unterstützt
+
+Die Region Saudi-Arabien wird jetzt in Google Cloud für Cloud Volumes ONTAP und dem Connector für Cloud Volumes ONTAP 9.12.1 GA und später unterstützt.
+
+Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Google Cloud"^].
+
+
+
 == 23 Oktober 2023
 
 Die folgenden Änderungen wurden mit der Version 3.9.34 des Connectors eingeführt.
@@ -28,7 +42,7 @@ Die folgenden Änderungen wurden mit der Version 3.9.34 des Connectors eingefüh
 
 === Unterstützung neuer Regionen für HA-Implementierungen mit mehreren Verfügbarkeitszonen in Azure
 
-Die folgenden Regionen in Azure unterstützen jetzt hochverfügbare Implementierungen mit mehreren Verfügbarkeitszonen für Cloud Volumes ONTAP 9.14.0 und höher:
+Die folgenden Regionen in Azure unterstützen jetzt hochverfügbare Implementierungen mit mehreren Verfügbarkeitszonen für Cloud Volumes ONTAP 9.12.1 GA und höher:
 
 * Australien Ost
 * Ostasien
