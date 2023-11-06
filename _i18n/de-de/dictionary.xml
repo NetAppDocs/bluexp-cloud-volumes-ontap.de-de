@@ -3855,7 +3855,6 @@
   <block id="93859a51c20050a8828b46a6420dc7c9" category="paragraph">Siehe <block ref="c8a7e79f678b1faddb103e58db2edb75" category="inline-link-macro-rx"></block> Weitere Informationen zu diesen Attributen.</block>
   <block id="1bc2e57bef99a91ef2d8ab0cdb177768" category="list-text">Jede Festplatte ist standardmäßig in Azure verschlüsselt.</block>
   <block id="b80fdfea42d505d96700af73261164a3" category="list-title">HA-Paare mit Seite Blob</block>
-  <block id="c30ce062be1c5d4265f67a2654690b8f" category="list-title">HA-Paare in mehreren Verfügbarkeitszonen</block>
   <block id="ab3aec14eab62514bc5eb01d67673c8b" category="list-text">Zwei Blobs für 512 gib Premium Storage für das Root-Volume (eine pro Node)</block>
   <block id="5a07b5de49d43760a69fb7c4fea757e9" category="inline-link-macro">Unterstützte Konfigurationen per Lizenz für HA-Paare</block>
   <block id="de8cf25f68f35d1a6c91688973a7593e" category="list-text">*Sichere Kommunikation zu Storage &amp; WORM*: Wählen Sie, ob eine HTTPS-Verbindung zu Azure-Speicherkonten aktiviert und, falls gewünscht, den WORM-Speicher (Write Once, Read Many) aktiviert werden soll.</block>
@@ -5156,4 +5155,5 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Die folgenden Regionen in Azure unterstützen jetzt hochverfügbare Implementierungen mit mehreren Verfügbarkeitszonen für Cloud Volumes ONTAP 9.12.1 GA und höher:</block>
   <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">Der Ladevorgang basiert auf zwei Kostenkomponenten: Speicher und Nutzung (I/O).</block>
   <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">Es fallen keine I/O-Kosten für Datenreplizierung (SnapMirror), Backups (SnapVault) oder NDMP an.</block>
+  <block id="0b8c1e660d75aa2bec12f002f097dcab" category="list-title">HA-Paare mit gemeinsam genutzten verwalteten Festplatten in mehreren Verfügbarkeitszonen</block>
 </blocks>
