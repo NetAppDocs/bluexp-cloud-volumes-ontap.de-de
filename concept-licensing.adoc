@@ -75,9 +75,9 @@ Alle anderen Systeme mit einer bereitgestellten Kapazität von weniger als 500 g
 Sie bezahlen für bereitgestellte Kapazität und I/O-Vorgänge separat.
 
 * Cloud Volumes ONTAP Single Node oder HA
-* Der Ladevorgang basiert auf zwei Kostenkomponenten: Storage und Nutzung (I/O)
+* Der Ladevorgang basiert auf zwei Kostenkomponenten: Speicher und Nutzung (I/O).
 +
-Sie werden nicht für I/O-Vorgänge in Verbindung mit Datenreplizierung (SnapMirror) oder NDMP berechnet.
+Es fallen keine I/O-Kosten für Datenreplizierung (SnapMirror), Backups (SnapVault) oder NDMP an.
 
 
 
