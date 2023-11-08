@@ -5009,7 +5009,6 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="06156010b52bde259c58b15866491a02" category="paragraph">Zudem können Sie mit der ONTAP CLI oder mit ONTAP System Manager FlexCache Volumes erstellen und managen:</block>
   <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP generiert eine FlexCache Lizenz für alle neuen Cloud Volumes ONTAP Systeme. Die Lizenz umfasst ein Nutzungslimit von 500 gib.</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 September 2023</block>
-  <block id="3e34162a2379c48e3eaf3f3857b029c0" category="paragraph">Die folgenden Änderungen wurden mit der Version 3.9.33 des Connectors eingeführt.</block>
   <block id="e749c9d187d1531bb81af1a3c9eb73be" category="section-title">Unterstützung für VMs der Lsv3-Serie in Azure</block>
   <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">Die Instanztypen L48s_v3 und L64s_v3 werden nun mit Cloud Volumes ONTAP in Azure unterstützt. Dies gilt für Single-Node- und Hochverfügbarkeitspaare-Implementierungen mit gemeinsam genutzten verwalteten Festplatten in einzelnen und mehreren Verfügbarkeitszonen, beginnend mit Version 9.13.1. Diese Instanztypen unterstützen Flash Cache.</block>
   <block id="c2af1dd6b400531e930c62dad5095f7d" category="inline-link-macro">Zeigen Sie unterstützte Konfigurationen für Cloud Volumes ONTAP in Azure an</block>
@@ -5084,7 +5083,6 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Technischen Support zu Fileservices von Cloud-Providern, zu seiner Infrastruktur oder zu beliebigen Lösungen, die den Service verwenden, finden Sie im Abschnitt „Hilfe erhalten“ in der BlueXP Dokumentation zu diesem Produkt.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Wenn Sie technischen Support für BlueXP und seine Storage-Lösungen und -Services erhalten möchten, nutzen Sie die unten beschriebenen Support-Optionen.</block>
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">6 Oktober 2023</block>
-  <block id="5612c729ea34f27969af31fd815184e0" category="paragraph">Die folgenden Änderungen wurden mit der Version 3.9.34 des Connectors eingeführt.</block>
   <block id="44d133359b344c4542acdebe6209e101" category="section-title">Cloud Volumes ONTAP 9.14.0</block>
   <block id="c5fa627d231c9a8813c9a2421d86136f" category="paragraph">BlueXP kann jetzt die Cloud Volumes ONTAP 9.14.0 General Availability Version in AWS, Azure und Google Cloud implementieren und managen.</block>
   <block id="b74a118169165fd9778df58b68c1bf8b" category="section-title">Upgrades in AWS mit EC2-Instanztypen c4, m4 und R4</block>
@@ -5160,4 +5158,12 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">Vergewissern Sie sich, dass alle LIFs an den Home Ports angeschlossen sind</block>
   <block id="4a0d5f4ccd3c4d2acc213b54daf63f9e" category="inline-link-macro">Vergewissern Sie sich, dass alle LIFs an den Home Ports angeschlossen sind</block>
   <block id="0754aed90b1b7e3ecf810f88321b76f5" category="paragraph">Vor dem Upgrade müssen sich alle LIFs auf Home Ports befinden. Weitere Informationen finden Sie in der ONTAP-Dokumentation unter <block ref="e645c13326fab640068fe44ceb8154ff" category="inline-link-macro-rx"></block>.</block>
+  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">Bis 8. November 2023</block>
+  <block id="8e40e7e4940e30b2ce260ff97ad74d25" category="paragraph">Die folgende Änderung wurde mit der Version 3.9.35 des Connectors eingeführt.</block>
+  <block id="bbb4cf526641d95bbb8ab8bada56fa79" category="section-title">Die Region Tel Aviv wird jetzt in AWS unterstützt</block>
+  <block id="04afad264aa486baec91a1ade145665a" category="paragraph">Die Region Tel Aviv wird jetzt in AWS für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.</block>
+  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">Karte der globalen Regionen unter AWS</block>
+  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Eine Liste aller Regionen finden Sie im<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
+  <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">Die folgende Änderung wurde mit der Version 3.9.34 des Connectors eingeführt.</block>
+  <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">Die folgende Änderung wurde mit der Version 3.9.33 des Connectors eingeführt.</block>
 </blocks>
