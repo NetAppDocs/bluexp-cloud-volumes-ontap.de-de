@@ -196,6 +196,7 @@ Bevor Sie ein Upgrade durchführen, müssen Sie überprüfen, ob die Systeme ber
 * <<Überprüfen Sie, ob das automatische Giveback weiterhin aktiviert ist>>
 * <<Unterbrechen Sie die SnapMirror Übertragung>>
 * <<Vergewissern Sie sich, dass die Aggregate online sind>>
+* <<Vergewissern Sie sich, dass alle LIFs an den Home Ports angeschlossen sind>>
 
 
 
@@ -263,6 +264,12 @@ image:screenshots_aggregate_details_state.png["Screenshot: Zeigt das Feld Status
 
 
 
+
+
+
+=== Vergewissern Sie sich, dass alle LIFs an den Home Ports angeschlossen sind
+
+Vor dem Upgrade müssen sich alle LIFs auf Home Ports befinden. Weitere Informationen finden Sie in der ONTAP-Dokumentation unter link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["Vergewissern Sie sich, dass alle LIFs an den Home Ports angeschlossen sind"].
 
 
 
