@@ -18,10 +18,7 @@ Senken Sie Ihre Storage-Kosten, indem Sie das automatisierte Tiering inaktiver D
 
 image:diagram_data_tiering.png["Dieses Konzept zeigt heiße Daten, die auf EBS Storage laufen, und inaktive Daten, die auf S3 Storage laufen."]
 
-Data Tiering wird durch FabricPool Technologie unterstützt.
-
-
-NOTE: Sie müssen keine Funktionslizenz installieren, um Daten-Tiering (FabricPool) zu aktivieren.
+Data Tiering wird durch FabricPool Technologie unterstützt. Cloud Volumes ONTAP bietet Daten-Tiering für alle Cloud Volumes ONTAP Cluster. Bei Aktivierung von Daten-Tiering fallen Gebühren für das Tiering von Daten in Objekt-Storage an. Weitere Informationen zu den Kosten für Objekt-Storage finden Sie in der Dokumentation Ihres Cloud-Providers.
 
 ifdef::aws[]
 

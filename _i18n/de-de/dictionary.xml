@@ -958,8 +958,6 @@
   <block id="c1b0fccfdff9ac3307a1dde73fefce36" category="paragraph">Senken Sie Ihre Storage-Kosten, indem Sie das automatisierte Tiering inaktiver Daten auf kostengünstigen Objekt-Storage ermöglichen. Aktive Daten bleiben auf hochperformanten SSDs oder HDDs, während inaktive Daten in kostengünstigen Objekt-Storage verschoben werden. Dadurch können Sie Speicherplatz auf Ihrem primären Storage zurückgewinnen und den sekundären Storage verkleinern.</block>
   <block id="4a399275f88e7ce2505e96b9b7f521b9" category="inline-image-macro">Dieses Konzept zeigt heiße Daten, die auf EBS Storage laufen, und inaktive Daten, die auf S3 Storage laufen.</block>
   <block id="3d3b4afad1ee8976c0e2861a36e95c05" category="paragraph"><block ref="3d3b4afad1ee8976c0e2861a36e95c05" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="89f3aa2399b6fb2684acf4e64a1b95ad" category="paragraph">Data Tiering wird durch FabricPool Technologie unterstützt.</block>
-  <block id="79a1ac94d3a1278dbc40ff2a430fa52a" category="admonition">Sie müssen keine Funktionslizenz installieren, um Daten-Tiering (FabricPool) zu aktivieren.</block>
   <block id="e452e8c25e7bc8d94f88ce5a25cbbf4a" category="section-title">Daten-Tiering in AWS</block>
   <block id="d6a11de1ddf26c52daac1219f9ab237d" category="paragraph">Wenn Sie Daten-Tiering in AWS aktivieren, verwendet Cloud Volumes ONTAP EBS als Performance-Tier für häufig benötigte Daten und AWS S3 als Kapazitäts-Tier für inaktive Daten.</block>
   <block id="9a817efc11f456e69cd659f0afd9447b" category="list-text">Performance-Tier</block>
@@ -5166,4 +5164,5 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Eine Liste aller Regionen finden Sie im<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">Die folgende Änderung wurde mit der Version 3.9.34 des Connectors eingeführt.</block>
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">Die folgende Änderung wurde mit der Version 3.9.33 des Connectors eingeführt.</block>
+  <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">Data Tiering wird durch FabricPool Technologie unterstützt. Cloud Volumes ONTAP bietet Daten-Tiering für alle Cloud Volumes ONTAP Cluster. Bei Aktivierung von Daten-Tiering fallen Gebühren für das Tiering von Daten in Objekt-Storage an. Weitere Informationen zu den Kosten für Objekt-Storage finden Sie in der Dokumentation Ihres Cloud-Providers.</block>
 </blocks>
