@@ -5166,6 +5166,6 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">Die folgende Änderung wurde mit der Version 3.9.33 des Connectors eingeführt.</block>
   <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">Data Tiering wird durch FabricPool Technologie unterstützt. Cloud Volumes ONTAP bietet Daten-Tiering für alle Cloud Volumes ONTAP Cluster. Bei Aktivierung von Daten-Tiering fallen Gebühren für das Tiering von Daten in Objekt-Storage an. Weitere Informationen zu den Kosten für Objekt-Storage finden Sie in der Dokumentation Ihres Cloud-Providers.</block>
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">Bis 10. November 2023</block>
-  <block id="1e8bf13d2a6124785fff6ed75b8efe5d" category="section-title">Deutschland Region jetzt in Google Cloud unterstützt</block>
-  <block id="1eb6caf052a1ca736597d3e01c5333f9" category="paragraph">Deutschland wird jetzt in Google Cloud für Cloud Volumes ONTAP und dem Connector für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.</block>
+  <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">Berlin Region jetzt in Google Cloud unterstützt</block>
+  <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">Die Region Berlin wird jetzt in Google Cloud für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.</block>
 </blocks>

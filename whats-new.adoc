@@ -26,9 +26,9 @@ Die folgende Änderung wurde mit der Version 3.9.35 des Connectors eingeführt.
 
 
 
-=== Deutschland Region jetzt in Google Cloud unterstützt
+=== Berlin Region jetzt in Google Cloud unterstützt
 
-Deutschland wird jetzt in Google Cloud für Cloud Volumes ONTAP und dem Connector für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.
+Die Region Berlin wird jetzt in Google Cloud für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.
 
 Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Google Cloud"^].
 
