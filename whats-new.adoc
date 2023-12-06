@@ -20,6 +20,42 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== Bis 5. Dezember 2023
+
+Folgende Änderungen wurden eingeführt.
+
+
+
+=== Neue regionale Unterstützung in Azure
+
+
+
+==== Unterstützung einer einzelnen Verfügbarkeitszone
+
+Die folgenden Regionen unterstützen jetzt hochverfügbare Einzelverfügbarkeitszonen-Implementierungen in Azure für Cloud Volumes ONTAP 9.12.1 GA und höher:
+
+* Tel Aviv
+* Mailand
+
+
+
+
+==== Unterstützung mehrerer Verfügbarkeitszonen
+
+Die folgenden Regionen unterstützen jetzt hochverfügbare Implementierungen mit mehreren Verfügbarkeitszonen in Azure für Cloud Volumes ONTAP 9.12.1 GA und höher:
+
+* Zentralindien
+* Norwegen Osten
+* Schweiz Nord
+* Südafrika, Norden
+* Vereinigte Arabische Emirate Nord
+* China Nord 3
+
+
+Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].
+
+
+
 == Bis 10. November 2023
 
 Die folgende Änderung wurde mit der Version 3.9.35 des Connectors eingeführt.
