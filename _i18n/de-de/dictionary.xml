@@ -757,14 +757,6 @@
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">Wenn Sie eine neue Version Ihres Schlüssels erstellen, verwendet Cloud Volumes ONTAP automatisch die neueste Schlüsselversion.</block>
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">Verschlüsselte Daten</block>
   <block id="145da5369fc47bfb6b1cd09c08d698b0" category="paragraph">Nachdem Sie eine Cloud Volumes ONTAP Arbeitsumgebung erstellt haben, in der ein vom Kunden gemanagter Schlüssel verwendet wird, werden Cloud Volumes ONTAP Daten wie folgt verschlüsselt.</block>
-  <block id="1223a21ec0a7e82e77ac43bd74628f1e" category="list-text">Azure HA, eine einzelne Verfügbarkeitszone</block>
-  <block id="dcd61ff34229ba534213e8501446885a" category="list-text">Alle Azure-Storage-Konten für Cloud Volumes ONTAP werden mit einem vom Kunden gemanagten Schlüssel verschlüsselt.^1^</block>
-  <block id="08408518b6366a9a8bb69802d83d5e3c" category="list-text">Neue Storage-Konten (z. B. beim Hinzufügen von Festplatten oder Aggregaten) verwenden ebenfalls den gleichen Schlüssel.^1^</block>
-  <block id="2301d2b9fcb3fe6f26482aff37ea2c54" category="inline-link">Festplattenverschlüsselungssatz</block>
-  <block id="9dca67fbd1fac23e7aff5774ec0afa2a" category="list-text">Alle Azure-Storage-Konten für Cloud Volumes ONTAP werden über einen vom Kunden gemanagten Schlüssel verschlüsselt. ^1^</block>
-  <block id="648dd7242e5228e0d91d90eaf1e79ebd" category="list-text">Für Root-, Boot- und Datenfestplatten verwendet BlueXP einen<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>, Die das Management von Schlüsseln mit verwalteten Festplatten ermöglicht.</block>
-  <block id="5dab396463f2f277886102bf78fe661b" category="list-text">Neue Festplatten verwenden ebenfalls denselben Festplattenverschlüsselungssatz.</block>
-  <block id="8b213ded385c637758f8c3705eb6386a" category="list-title">Fußnote</block>
   <block id="8764c9ec9f17252b7df37e1710ec9e5a" category="section-title">Erstellen eines Schlüsselgewölbes und Generieren eines Schlüssels</block>
   <block id="d01b7a4314685f64d972ad7a1fad92aa" category="paragraph">Der Schlüsselspeicher muss in demselben Azure Abonnement und derselben Region liegen, in der Sie das Cloud Volumes ONTAP System erstellen möchten.</block>
   <block id="0355ddb77a5b72eb0604153dc1393f12" category="inline-link">Erstellen Sie einen Schlüsselspeicher in Ihrem Azure-Abonnement</block>
@@ -3755,7 +3747,6 @@
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP unterstützt keine Disaster Recovery für Storage VMs</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">Was Sie benötigen</block>
   <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">Wichtiger Hinweis</block>
-  <block id="fdee261787c8d28a1d5af5c07b8580d6" category="list-text">Ab ONTAP 9.9.1P7 verwendet BlueXP für NVRAM und die Kernfestplatte einen Festplattenverschlüsselungssatz, der das Management von Schlüsseln mit verwalteten Laufwerken ermöglicht. Bei niedrigeren Versionen wird der von Microsoft verwaltete Schlüssel anstelle des vom Kunden verwalteten Schlüssels verwendet.</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">*Azure Festplattenverschlüsselung für Volume Encryption* (für Single Node-Systeme oder HA-Paare in mehreren Zonen)</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">Erforderliche Google Cloud Berechtigungen</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Was ist Flash Cache?</block>
@@ -3824,10 +3815,7 @@
   <block id="0514cef4c1e1a5949a3acc085ee50110" category="list-text">Ab ONTAP 9.10.1 KÖNNEN WORM Volumes und nicht-WORM-Volumes auf demselben Aggregat vorhanden sein.</block>
   <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">Wenn Sie WORM aktivieren, wenn Sie eine Cloud Volumes ONTAP-Arbeitsumgebung erstellen, ist für jedes in BlueXP erstellte Volume WORM aktiviert. Allerdings können Sie mit der ONTAP CLI oder mit System Manager Volumes erstellen, in denen WORM deaktiviert ist. Diese Volumes werden NICHT mit DER WORM-Rate berechnet.</block>
   <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
-  <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HA Multi-Verfügbarkeitszone</block>
-  <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">Ab ONTAP 9.10.1P3 verwendet BlueXP für NVRAM und die Core-Festplatte einen<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>, Die das Management von Schlüsseln mit verwalteten Festplatten ermöglicht. Bei niedrigeren Versionen wird der von Microsoft verwaltete Schlüssel anstelle des vom Kunden verwalteten Schlüssels verwendet.</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">Single Node</block>
-  <block id="41668006fb357f569acf8441fc16a00c" category="list-text">Wenn Sie Ihre Speicherkonten während ihrer Erstellung verschlüsseln möchten, müssen Sie in der CVO-Erstellungsanforderung die ID der Ressource erstellen und angeben. Dies gilt für alle Implementierungsarten. Wenn Sie es nicht bereitstellen, werden die Speicherkonten immer noch verschlüsselt, aber BlueXP erstellt zuerst die Speicherkonten mit von Microsoft administrierter Verschlüsselungsmethode und aktualisiert dann die Speicherkonten, um den vom Kunden verwalteten Schlüssel zu verwenden.</block>
   <block id="d83f214fdb8074463fb047c3669d0f00" category="list-text">HA-Paare verwenden zwei Festplattenarten, die eine hohe Performance für I/O-intensive Workloads zu höheren Kosten bieten:</block>
   <block id="de017bcc9ee62a910294463646126cd7" category="list-text">_Premium Seite Blobs_ mit einer maximalen Festplattengröße von 8 tib</block>
   <block id="2e40430d8621fa0117dad7bd5bd6ce3d" category="list-text">_Gemanagte Festplatten_ mit einer maximalen Festplattengröße von 32 tib</block>
@@ -3906,7 +3894,6 @@
   <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">Cloud Volumes ONTAP 9.12.0</block>
   <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">BlueXP kann jetzt Cloud Volumes ONTAP 9.12.0 in AWS und Google Cloud implementieren und verwalten.</block>
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">BlueXP kann jetzt Cloud Volumes ONTAP 9.12.1 implementieren und verwalten, was auch Unterstützung für neue Funktionen und zusätzliche Regionen von Cloud-Providern umfasst.</block>
-  <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">Für Root-, Boot-, NVRAM-, Core- und Datenfestplatten verwendet BlueXP einen Festplattenverschlüsselungssatz, der das Management von Verschlüsselungsschlüsseln mit verwalteten Laufwerken ermöglicht.</block>
   <block id="3c757e219167079b631dfcb5b1d0c339" category="paragraph">Die folgenden Änderungen wurden mit der Version 3.9.25 des Connectors eingeführt.</block>
   <block id="234213185a1ffd45429411672de5d3e7" category="section-title">Lizenzierungspakete in Google Cloud verfügbar</block>
   <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">Optimierte und kapazitätsbasierte Edge Cache Lizenzpakete stehen für Cloud Volumes ONTAP im Google Cloud Marketplace als Pay-as-you-go-Angebot oder als Jahresvertrag zur Verfügung.</block>
@@ -5164,7 +5151,6 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Eine Liste aller Regionen finden Sie im<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">Die folgende Änderung wurde mit der Version 3.9.34 des Connectors eingeführt.</block>
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">Die folgende Änderung wurde mit der Version 3.9.33 des Connectors eingeführt.</block>
-  <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">Data Tiering wird durch FabricPool Technologie unterstützt. Cloud Volumes ONTAP bietet Daten-Tiering für alle Cloud Volumes ONTAP Cluster. Bei Aktivierung von Daten-Tiering fallen Gebühren für das Tiering von Daten in Objekt-Storage an. Weitere Informationen zu den Kosten für Objekt-Storage finden Sie in der Dokumentation Ihres Cloud-Providers.</block>
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">Bis 10. November 2023</block>
   <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">Berlin Region jetzt in Google Cloud unterstützt</block>
   <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">Die Region Berlin wird jetzt in Google Cloud für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.</block>
@@ -5189,4 +5175,17 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1</block>
   <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">BlueXP kann jetzt Cloud Volumes ONTAP 9.14.1 in AWS, Azure und Google Cloud implementieren und managen.</block>
   <block id="d544ab02530940d46c43ea00a73d59d3" category="cell">9.14.1</block>
+  <block id="ed6589af51fe478933944c16eab4377f" category="paragraph">Data Tiering wird durch FabricPool Technologie unterstützt. Cloud Volumes ONTAP bietet Daten-Tiering für alle Cloud Volumes ONTAP Cluster ohne zusätzliche Lizenz. Bei Aktivierung von Daten-Tiering fallen Gebühren für das Tiering von Daten in Objekt-Storage an. Weitere Informationen zu den Kosten für Objekt-Storage finden Sie in der Dokumentation Ihres Cloud-Providers.</block>
+  <block id="52325e36bf5c9eb022c54f20d2f9d58d" category="paragraph">BlueXP verwendet einen Satz Festplattenverschlüsselung, der das Management von Verschlüsselungen mit gemanagten Festplatten und nicht mit Page-Blobs ermöglicht. Neue Festplatten verwenden ebenfalls denselben Festplattenverschlüsselungssatz. Bei niedrigeren Versionen wird der von Microsoft verwaltete Schlüssel anstelle des vom Kunden verwalteten Schlüssels verwendet.</block>
+  <block id="8168565911ffa4b4f24fddac74a372bd" category="cell">Systemfestplatten, die für die Schlüsselverschlüsselung verwendet werden</block>
+  <block id="d7819c407fe0bef64dea0f538ea5059d" category="cell">Datenfestplatten, die für die Verschlüsselung des Schlüssels verwendet werden</block>
+  <block id="d070b5d05592da755547896113c3e9ef" category="list-text">Booten</block>
+  <block id="83168e6cb289d732cc78427b51f93153" category="list-text">Kern</block>
+  <block id="e3f3f58b597fba6fefb596c5ce76d468" category="list-text">NVRAM</block>
+  <block id="fa03eb688ad8aa1db593d33dabd89bad" category="list-text">Stamm</block>
+  <block id="f6068daa29dbb05a7ead1e3b5a48bbee" category="list-text">Daten</block>
+  <block id="9f9a7e011920aed7b91c7f5809cef3df" category="paragraph">Azure HA, eine einzelne Verfügbarkeitszone mit Page-Blobs</block>
+  <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">Azure HA, eine einzelne Verfügbarkeitszone mit gemeinsam genutzten verwalteten Festplatten</block>
+  <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA mehrere Verfügbarkeitszonen mit gemeinsam genutzten gemanagten Festplatten</block>
+  <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">Alle Azure-Storage-Konten für Cloud Volumes ONTAP werden über einen vom Kunden gemanagten Schlüssel verschlüsselt. Wenn Sie Ihre Speicherkonten während ihrer Erstellung verschlüsseln möchten, müssen Sie in der CVO-Erstellungsanforderung die ID der Ressource erstellen und angeben. Dies gilt für alle Implementierungsarten. Wenn Sie es nicht bereitstellen, werden die Speicherkonten immer noch verschlüsselt, aber BlueXP erstellt zuerst die Speicherkonten mit von Microsoft administrierter Verschlüsselungsmethode und aktualisiert dann die Speicherkonten, um den vom Kunden verwalteten Schlüssel zu verwenden.</block>
 </blocks>

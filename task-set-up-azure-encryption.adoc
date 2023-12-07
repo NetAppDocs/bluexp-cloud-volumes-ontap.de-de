@@ -38,41 +38,69 @@ Wenn Sie eine neue Version Ihres Schlüssels erstellen, verwendet Cloud Volumes 
 
 === Verschlüsselte Daten
 
+BlueXP verwendet einen Satz Festplattenverschlüsselung, der das Management von Verschlüsselungen mit gemanagten Festplatten und nicht mit Page-Blobs ermöglicht. Neue Festplatten verwenden ebenfalls denselben Festplattenverschlüsselungssatz. Bei niedrigeren Versionen wird der von Microsoft verwaltete Schlüssel anstelle des vom Kunden verwalteten Schlüssels verwendet.
+
 Nachdem Sie eine Cloud Volumes ONTAP Arbeitsumgebung erstellt haben, in der ein vom Kunden gemanagter Schlüssel verwendet wird, werden Cloud Volumes ONTAP Daten wie folgt verschlüsselt.
 
-Azure HA Multi-Verfügbarkeitszone::
-+
---
-* Alle Azure-Storage-Konten für Cloud Volumes ONTAP werden mit einem vom Kunden gemanagten Schlüssel verschlüsselt.^1^
-* Für Root-, Boot-, NVRAM-, Core- und Datenfestplatten verwendet BlueXP einen Festplattenverschlüsselungssatz, der das Management von Verschlüsselungsschlüsseln mit verwalteten Laufwerken ermöglicht.
-* Neue Festplatten verwenden ebenfalls denselben Festplattenverschlüsselungssatz.
+[cols="2a,2a,2a"]
+|===
+| Cloud Volumes ONTAP-Konfiguration | Systemfestplatten, die für die Schlüsselverschlüsselung verwendet werden | Datenfestplatten, die für die Verschlüsselung des Schlüssels verwendet werden 
 
 
---
-Azure HA, eine einzelne Verfügbarkeitszone::
-+
---
-* Alle Azure-Storage-Konten für Cloud Volumes ONTAP werden mit einem vom Kunden gemanagten Schlüssel verschlüsselt.^1^
-* Neue Storage-Konten (z. B. beim Hinzufügen von Festplatten oder Aggregaten) verwenden ebenfalls den gleichen Schlüssel.^1^
-* Ab ONTAP 9.10.1P3 verwendet BlueXP für NVRAM und die Core-Festplatte einen https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["Festplattenverschlüsselungssatz"^], Die das Management von Schlüsseln mit verwalteten Festplatten ermöglicht. Bei niedrigeren Versionen wird der von Microsoft verwaltete Schlüssel anstelle des vom Kunden verwalteten Schlüssels verwendet.
+ a| 
+Single Node
+ a| 
+* Booten
+* Kern
+* NVRAM
+
+ a| 
+* Stamm
+* Daten
 
 
---
-Single Node::
-+
---
-* Alle Azure-Storage-Konten für Cloud Volumes ONTAP werden über einen vom Kunden gemanagten Schlüssel verschlüsselt. ^1^
-* Für Root-, Boot- und Datenfestplatten verwendet BlueXP einen https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["Festplattenverschlüsselungssatz"^], Die das Management von Schlüsseln mit verwalteten Festplatten ermöglicht.
-* Neue Festplatten verwenden ebenfalls denselben Festplattenverschlüsselungssatz.
-* Ab ONTAP 9.9.1P7 verwendet BlueXP für NVRAM und die Kernfestplatte einen Festplattenverschlüsselungssatz, der das Management von Schlüsseln mit verwalteten Laufwerken ermöglicht. Bei niedrigeren Versionen wird der von Microsoft verwaltete Schlüssel anstelle des vom Kunden verwalteten Schlüssels verwendet.
 
 
---
+ a| 
+Azure HA, eine einzelne Verfügbarkeitszone mit Page-Blobs
+ a| 
+* Booten
+* Kern
+* NVRAM
+
+ a| 
+Keine
 
 
-.Fußnote
-. Wenn Sie Ihre Speicherkonten während ihrer Erstellung verschlüsseln möchten, müssen Sie in der CVO-Erstellungsanforderung die ID der Ressource erstellen und angeben. Dies gilt für alle Implementierungsarten. Wenn Sie es nicht bereitstellen, werden die Speicherkonten immer noch verschlüsselt, aber BlueXP erstellt zuerst die Speicherkonten mit von Microsoft administrierter Verschlüsselungsmethode und aktualisiert dann die Speicherkonten, um den vom Kunden verwalteten Schlüssel zu verwenden.
 
+ a| 
+Azure HA, eine einzelne Verfügbarkeitszone mit gemeinsam genutzten verwalteten Festplatten
+ a| 
+* Booten
+* Kern
+* NVRAM
+
+ a| 
+* Stamm
+* Daten
+
+
+
+
+ a| 
+Azure HA mehrere Verfügbarkeitszonen mit gemeinsam genutzten gemanagten Festplatten
+ a| 
+* Booten
+* Kern
+* NVRAM
+
+ a| 
+* Stamm
+* Daten
+
+
+|===
+Alle Azure-Storage-Konten für Cloud Volumes ONTAP werden über einen vom Kunden gemanagten Schlüssel verschlüsselt. Wenn Sie Ihre Speicherkonten während ihrer Erstellung verschlüsseln möchten, müssen Sie in der CVO-Erstellungsanforderung die ID der Ressource erstellen und angeben. Dies gilt für alle Implementierungsarten. Wenn Sie es nicht bereitstellen, werden die Speicherkonten immer noch verschlüsselt, aber BlueXP erstellt zuerst die Speicherkonten mit von Microsoft administrierter Verschlüsselungsmethode und aktualisiert dann die Speicherkonten, um den vom Kunden verwalteten Schlüssel zu verwenden.
 
 
 
