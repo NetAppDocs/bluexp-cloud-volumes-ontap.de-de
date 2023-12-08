@@ -277,6 +277,8 @@ image:screenshots_aggregate_details_state.png["Screenshot: Zeigt das Feld Status
 
 Vor dem Upgrade müssen sich alle LIFs auf Home Ports befinden. Weitere Informationen finden Sie in der ONTAP-Dokumentation unter link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["Vergewissern Sie sich, dass alle LIFs an den Home Ports angeschlossen sind"].
 
+Wenn ein Upgrade-Fehler auftritt, lesen Sie die link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["Knowledge Base Artikel „Cloud Volumes ONTAP Upgrade fehlschlägt fehl“"].
+
 
 
 == Upgrade von Cloud Volumes ONTAP
