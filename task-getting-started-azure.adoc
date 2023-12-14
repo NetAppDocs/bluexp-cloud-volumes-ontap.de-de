@@ -45,7 +45,7 @@ Klicken Sie auf *Arbeitsumgebung hinzufügen*, wählen Sie den Systemtyp aus, de
 
 .Weiterführende Links
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Erstellen eines Connectors von BlueXP"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure.html["Erstellen eines Connectors über den Azure Marketplace"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html["Erstellen eines Connectors über den Azure Marketplace"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installieren der Connector-Software auf einem Linux-Host"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Was BlueXP mit Berechtigungen macht"^]
 

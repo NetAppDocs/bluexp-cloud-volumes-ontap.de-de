@@ -3709,7 +3709,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp Community</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">Blog der BlueXP-Website</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Cloud-Webinare</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Alle BlueXP-Dokumentationen</block>
   <block id="e29d7c0b36af68edd13ebac84f15b44b" category="sidebar">Cloud-Provider</block>
   <block id="46aef2e5080a5347df1ce7546e1be1df" category="sidebar">Alle Cloud-Provider</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="sidebar">Amazon Web Services</block>
@@ -4730,7 +4729,6 @@ Wenn eine Lizenz direkt über NetApp (BYOL) erworben wird, ist kein AWS Abonneme
   <block id="111605ffc2720ee271322511d8e418e9" category="list-text">Wenn Sie kein NSS-Konto in BlueXP registriert haben,<block ref="fa1dd20a91aad716fe7b27583a904c1e" category="inline-link-rx"></block> Und dann wird die Active IQ Digital Advisor-Benutzeroberfläche angezeigt.</block>
   <block id="f9a3a3f013c1705985786496412a0de0" category="paragraph">Wenn Sie keine haben<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> Dennoch muss ein Kontoadministrator einen erstellen.<block ref="de51f8f797fd6bb6357ef338b87ca66d" category="inline-link-rx"></block></block>
   <block id="de6c35943505135e58a4af4389b1768d" category="list-text"><block ref="de6c35943505135e58a4af4389b1768d" category="inline-link-rx"></block></block>
-  <block id="8529c592033773e796216d83dbb6e52a" category="list-text"><block ref="8529c592033773e796216d83dbb6e52a" category="inline-link-rx"></block></block>
   <block id="9ae78035ef81aaff6187ef9a11cd1f03" category="list-text"><block ref="9ae78035ef81aaff6187ef9a11cd1f03" category="inline-link-rx"></block></block>
   <block id="08922f23ed9079ed0750935efad792c1" category="admonition">Sie suchen Informationen über den Connector?<block ref="a05739e7bce05bd7a830b46920675255" category="inline-link-rx"></block></block>
   <block id="081496cbc3abd2aa45670e7415b9b307" category="list-text"><block ref="081496cbc3abd2aa45670e7415b9b307" category="inline-link-rx"></block></block>
@@ -5190,4 +5188,5 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">Alle Azure-Storage-Konten für Cloud Volumes ONTAP werden über einen vom Kunden gemanagten Schlüssel verschlüsselt. Wenn Sie Ihre Speicherkonten während ihrer Erstellung verschlüsseln möchten, müssen Sie in der CVO-Erstellungsanforderung die ID der Ressource erstellen und angeben. Dies gilt für alle Implementierungsarten. Wenn Sie es nicht bereitstellen, werden die Speicherkonten immer noch verschlüsselt, aber BlueXP erstellt zuerst die Speicherkonten mit von Microsoft administrierter Verschlüsselungsmethode und aktualisiert dann die Speicherkonten, um den vom Kunden verwalteten Schlüssel zu verwenden.</block>
   <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">Knowledge Base Artikel „Cloud Volumes ONTAP Upgrade fehlschlägt fehl“</block>
   <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">Wenn ein Upgrade-Fehler auftritt, lesen Sie die <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>.</block>
+  <block id="9239af3d88d2e7788330e1bb0d8cd044" category="list-text"><block ref="9239af3d88d2e7788330e1bb0d8cd044" category="inline-link-rx"></block></block>
 </blocks>
