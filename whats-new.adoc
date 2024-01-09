@@ -20,6 +20,24 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 8 Januar 2024
+
+
+
+=== Neue VMs für Azure: Mehrere Verfügbarkeitszonen
+
+Ab Cloud Volumes ONTAP 9.13.1 unterstützen die folgenden VM-Typen Azure mehrere Verfügbarkeitszonen für neue und bestehende Implementierungen von Hochverfügbarkeitspaaren:
+
+* L16s_v3
+* L32s_v3
+* L48s_v3
+* L64s_v3
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^]
+
+
+
 == Bis 6. Dezember 2023
 
 
