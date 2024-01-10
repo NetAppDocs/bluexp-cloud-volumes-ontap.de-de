@@ -243,7 +243,7 @@ Anweisungen finden Sie unter https://cloud.google.com/vpn/docs/concepts/overview
 
 === Firewall-Regeln
 
-BlueXP erstellt Google Cloud Firewall-Regeln, die die ein- und ausgehenden Regeln enthalten, die Cloud Volumes ONTAP für den erfolgreichen Betrieb benötigt. Sie können sich zu Testzwecken auf die Ports beziehen oder wenn Sie lieber eigene Firewall-Regeln verwenden möchten.
+BlueXP erstellt Google Cloud Firewall-Regeln, die die ein- und ausgehenden Regeln enthalten, die Cloud Volumes ONTAP für den erfolgreichen Betrieb benötigt. Sie können zu Testzwecken auf die Ports verweisen oder Ihre eigenen Firewall-Regeln verwenden.
 
 Die Firewall-Regeln für Cloud Volumes ONTAP erfordern sowohl ein- als auch ausgehende Regeln. Bei der Implementierung einer HA-Konfiguration handelt es sich um die Firewall-Regeln für Cloud Volumes ONTAP in VPC-0.
 
