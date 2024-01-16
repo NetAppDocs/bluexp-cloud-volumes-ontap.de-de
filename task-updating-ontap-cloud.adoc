@@ -135,15 +135,20 @@ Beachten Sie Folgendes:
 +
 Wenn Sie beispielsweise Version 9.8 verwenden und auf 9.10.1 aktualisieren möchten, müssen Sie zuerst auf Version 9.9.1 und dann auf 9.10.1 aktualisieren.
 
-* Für Patch (P)-Versionen können Sie von einer Version auf eine beliebige P-Version der nächsten Version aktualisieren.
-+
+
+
+
+
+=== Patch-Versionen
+
+Ab Januar 2024 sind Patch-Upgrades nur in BlueXP verfügbar, wenn es sich um ein Patch-Release für die drei neuesten Versionen von Cloud Volumes ONTAP handelt. Wir verwenden die neueste GA-Version, um zu bestimmen, welche drei neuesten Versionen in BlueXP angezeigt werden. Wenn beispielsweise die aktuelle GA-Version 9.13.1 lautet, werden Patches für 9.11.1-9.13.1 in BlueXP angezeigt. Wenn Sie ein Upgrade auf ein Patch-Release für Versionen 9.11.1 oder niedriger durchführen möchten, müssen Sie das manuelle Upgrade-Verfahren von verwenden <<Upgrade von einem Image, das über eine URL verfügbar ist,ONTAP-Image wird heruntergeladen>>.
+
+Als allgemeine Regel für Patch (P)-Versionen können Sie von einer Version auf eine beliebige P-Version der aktuellen oder der nächsten Version upgraden.
+
 Hier ein paar Beispiele:
 
-+
-** 9.13.0 > 9,13,1P15
-** 9.12.1 > 9,13,1P2
-
-
+* 9.13.0 > 9,13,1P15
+* 9.12.1 > 9,13,1P2
 
 
 
