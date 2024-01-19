@@ -307,9 +307,10 @@ Wenn Sie Ihre BYOL-Kapazität überschreiten oder Ihre Lizenz abgelaufen ist, we
 
 ==== Essentials-Paket
 
-Bei dem Essentials-Paket werden die Bereitstellungstyp (HA oder Single Node) und der Volume-Typ (primär oder sekundär) abgerechnet. Beispielsweise hat _Essentials HA_ andere Preise als _Essentials Secondary HA_.
+Bei dem Essentials-Paket werden die Bereitstellungstyp (HA oder Single Node) und der Volume-Typ (primär oder sekundär) abgerechnet. Die Preise von „hoch“ bis „niedrig“ werden in der folgenden Reihenfolge angezeigt: _Essentials Primary HA_, _Essentials Primary Single Node_, _Essentials Secondary HA_ und _Essentials Secondary Single Node_. Wenn Sie einen Marketplace-Vertrag erwerben oder ein privates Angebot annehmen, sind die Kapazitätsgebühren für jede Bereitstellung oder jeden Volume-Typ gleich.
 
-Wenn Sie eine Essentials-Lizenz von NetApp (BYOL) erworben haben und die lizenzierte Kapazität für diese Implementierung und diesen Volume-Typ überschreiten, berechnet das Digital Wallet von BlueXP mehr als eine günstigere Essentials-Lizenz (sofern vorhanden). Dies geschieht, weil wir zuerst die verfügbare Kapazität nutzen, die Sie bereits als Prepaid-Kapazität gekauft haben, bevor wir die Rechnung gegen den Markt berechnen. Die Abrechnung auf dem Marktplatz würde Ihre monatliche Rechnung mit Kosten ergänzen.
+.BYOL
+Wenn Sie eine Essentials-Lizenz von NetApp (BYOL) erworben haben und die lizenzierte Kapazität für diese Implementierung und diesen Volume-Typ überschreiten, berechnet das Digital Wallet von BlueXP mehr als eine günstigere Essentials-Lizenz (sofern vorhanden). Dies geschieht, weil wir zuerst die verfügbare Kapazität nutzen, die Sie bereits als Prepaid-Kapazität gekauft haben, bevor wir die Rechnung gegen den Markt berechnen. Wenn mit Ihrer BYOL-Lizenz keine verfügbare Kapazität verfügbar ist, wird die überschrittene Kapazität zu dem jeweiligen On-Demand-Stundensatz (PAYGO) in Rechnung gestellt und rechnet dann mit Kosten für Ihre monatliche Rechnung.
 
 Hier ein Beispiel Nehmen wir an, Sie haben die folgenden Lizenzen für das Essentials-Paket:
 
@@ -317,9 +318,24 @@ Hier ein Beispiel Nehmen wir an, Sie haben die folgenden Lizenzen für das Essen
 * Eine 500 tib _Essentials Single Node_-Lizenz, die nur über 100 tib Speicherkapazität verfügt
 
 
-Weitere 50 tib werden auf einem HA-Paar mit sekundären Volumes bereitgestellt. Das Digital Wallet von BlueXP berechnet nicht den 50 tib großen PAYGO-Service für die _Essentials Single Node_ Lizenz, sondern den 50 tib zusätzlichen Aufpreis. Diese Lizenz ist teurer als _Essentials Secondary HA_, aber sie ist günstiger als der PAYGO-Preis.
+Weitere 50 tib werden auf einem HA-Paar mit sekundären Volumes bereitgestellt. Das Digital Wallet von BlueXP berechnet nicht den 50 tib großen PAYGO-Service für die _Essentials Single Node_ Lizenz, sondern den 50 tib zusätzlichen Aufpreis. Diese Lizenz ist teurer als _Essentials Secondary HA_, aber sie nutzt eine Lizenz, die Sie bereits erworben haben, und es werden keine Kosten zu Ihrer monatlichen Rechnung hinzugefügt.
 
 In der Digital Wallet von BlueXP werden die 50 tib Daten mit der _Essentials Single Node_ Lizenz verrechnet angezeigt.
+
+Hier ein weiteres Beispiel. Nehmen wir an, Sie haben die folgenden Lizenzen für das Essentials-Paket:
+
+* Eine 500 tib _Essentials sekundäre HA_ Lizenz, die 500 tib an engagierter Kapazität hat
+* Eine 500 tib _Essentials Single Node_-Lizenz, die nur über 100 tib Speicherkapazität verfügt
+
+
+Weitere 100 tib werden auf einem HA-Paar mit primären Volumes bereitgestellt. Für die erworbene Lizenz ist keine _Essentials Primary HA_ gebuchte Kapazität vorhanden. Die _Essentials Primary HA_-Lizenz ist höher als die _Essentials Primary Single Node_- und _Essentials Secondary HA_-Lizenzen.
+
+In diesem Beispiel berechnet das Digital Wallet von BlueXP über den Marktpreis für die zusätzlichen 100 tib. Die Mehrkosten werden auf Ihrer monatlichen Rechnung angezeigt.
+
+.Marketplace-Verträge oder private Angebote
+Wenn Sie eine Essentials-Lizenz im Rahmen eines Marketplace-Vertrags oder eines privaten Angebots erworben haben, gilt die BYOL-Logik nicht, und Sie müssen den genauen Lizenztyp für die Nutzung haben. Der Lizenztyp umfasst den Volume-Typ (primär oder sekundär) und den Bereitstellungstyp (HA oder Single Node).
+
+Angenommen, Sie implementieren eine Cloud Volumes ONTAP Instanz mit der Essentials-Lizenz. Anschließend werden Lese- und Schreib-Volumes (primärer Single Node) und schreibgeschützte Volumes (sekundärer Single Node) bereitgestellt. Ihr Marketplace-Vertrag oder Ihr privates Angebot muss Kapazität für _Essentials Single Node_ und _Essentials Secondary Single Node_ enthalten, um die bereitgestellte Kapazität abzudecken. Bereitgestellte Kapazität, die nicht Bestandteil Ihres Marketplace-Vertrags oder Ihres privaten Angebots ist, wird zu den On-Demand-Stundensätzen (PAYGO) abgerechnet und addiert Ihre monatliche Rechnung.
 
 
 
