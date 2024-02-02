@@ -190,7 +190,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-goog
 
 === Paketspiegelung in VPCs
 
-https://cloud.google.com/vpc/docs/packet-mirroring["Paketspiegelung"^] In der Google Cloud VPC, in der die Cloud Volumes ONTAP implementiert wird, muss deaktiviert werden. Cloud Volumes ONTAP kann nicht ordnungsgemäß ausgeführt werden, wenn die Paketspiegelung aktiviert ist.
+https://cloud.google.com/vpc/docs/packet-mirroring["Paketspiegelung"^] Muss im Google Cloud-Subnetz, in dem Sie Cloud Volumes ONTAP bereitstellen, deaktiviert sein. Cloud Volumes ONTAP kann nicht ordnungsgemäß ausgeführt werden, wenn die Paketspiegelung aktiviert ist.
 
 
 
