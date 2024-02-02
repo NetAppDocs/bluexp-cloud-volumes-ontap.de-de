@@ -20,6 +20,26 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 2 Februar 2024
+
+
+
+=== Unterstützung für VMs der Edv5-Serie in Azure
+
+Cloud Volumes ONTAP unterstützt ab Version 9.14.1 jetzt die folgenden VMs der Edv5 Serie mit gemeinsam genutzten verwalteten Datenträgern in einer einzelnen oder mehreren Verfügbarkeitszonen.
+
+* E4ds_v5
+* E8ds_v5
+* E20s_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^]
+
+
+
 == 16 Januar 2024
 
 
