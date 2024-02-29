@@ -52,6 +52,22 @@ NOTE: Die Speicher- und Netzwerkauslastung wird in binären Gigabyte (GB) berech
 
 Die folgenden kapazitätsbasierten Pakete stehen für Cloud Volumes ONTAP zur Verfügung.
 
+Eine Liste der unterstützten VM-Typen mit den folgenden kapazitätsbasierten Paketen finden Sie unter:
+
+ifdef::azure[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^]
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Unterstützte Konfigurationen in Google Cloud"^]
+
+
+endif::gcp[]
+
 
 
 ==== Freimium
@@ -94,23 +110,6 @@ endif::azure[]
 ifdef::gcp[]
 
 * Verfügbar im Google Cloud Marketplace als Pay-as-you-go-Angebot oder als Jahresvertrag
-
-
-endif::gcp[]
-
-* Unterstützt bei ausgewählten VM-Typen:
-
-
-ifdef::azure[]
-
-* Für Azure: E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3, E8ds_v4, E4ds_v5 und E8ds_v5
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Für Google Cloud: n2-Standard-4, n2-Standard-8
 
 
 endif::gcp[]
