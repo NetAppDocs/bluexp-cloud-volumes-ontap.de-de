@@ -5234,4 +5234,8 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="7ea0c0fa41faeaaeec6f14b1d795d6fc" category="paragraph">Eine Liste der unterstützten VM-Typen mit den folgenden kapazitätsbasierten Paketen finden Sie unter:</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="inline-link-macro">Unterstützte Konfigurationen in Google Cloud</block>
   <block id="d8643ec11a6eaa26d934c76df70f05f3" category="list-text"><block ref="d8643ec11a6eaa26d934c76df70f05f3" category="inline-link-macro-rx"></block></block>
+  <block id="592997dde366d5775e7e052816854f74" category="section-title">5 März 2024</block>
+  <block id="cf8f238c2116738b5ed3bacdbd527d14" category="section-title">Cloud Volumes ONTAP 9.14.1 GA</block>
+  <block id="fc0f9e3eef3a6eff3efe2fe7cf358466" category="paragraph">BlueXP kann jetzt Cloud Volumes ONTAP 9.14.1 General Availability Release in AWS, Azure und Google Cloud implementieren und managen.</block>
+  <block id="f8a262ce588acd29f7f91c585af357ea" category="list-text">9.14.1 GA</block>
 </blocks>
