@@ -20,6 +20,18 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 8 März 2024
+
+
+
+=== Unterstützung für Amazon Instant Metadata Service v2
+
+In AWS unterstützen Cloud Volumes ONTAP, der Mediator und der Connector nun den Amazon Instant Metadata Service v2 (IMDSv2) für alle Funktionen. IMDSv2 bietet einen verbesserten Schutz vor Schwachstellen. Bisher wurde nur IMDSv1 unterstützt.
+
+Falls von Ihren Sicherheitsrichtlinien gefordert, können Sie Ihre EC2-Instanzen für die Verwendung von IMDSv2 konfigurieren. Anweisungen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["BlueXP Installations- und Administrationsdokumentation für das Management vorhandener Connectors"^].
+
+
+
 == 5 März 2024
 
 
