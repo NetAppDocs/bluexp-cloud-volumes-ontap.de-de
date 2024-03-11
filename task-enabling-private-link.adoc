@@ -35,7 +35,7 @@ Falls in Ihrem Unternehmen erforderlich, können Sie eine Einstellung in BlueXP 
 Der Connector sollte in derselben Azure-Region wie die Cloud Volumes ONTAP-Systeme, die er verwaltet, oder in der implementiert werden https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure Region Paar"^] Für die Cloud Volumes ONTAP Systeme.
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Verbindungseinstellungen*.
+. Klicken Sie oben rechts in der BlueXP Konsole auf das Symbol Einstellungen und wählen Sie *Cloud Volumes ONTAP-Einstellungen* aus.
 +
 image:screenshot_settings_icon.png["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 

@@ -97,8 +97,6 @@
   <block id="ae271afdca3c7d6785a9aefa74e6c80e" category="doc">Kapazitätseinstellungen auf einem Konnektor verwalten</block>
   <block id="b62aaf3fb48f9f8f103dc68c41211be5" category="paragraph">Jeder Connector hat Einstellungen, die bestimmen, wie er die Aggregatskapazität für Cloud Volumes ONTAP verwaltet.</block>
   <block id="4edc935aeaaf3923beb2e4249e6c56f3" category="paragraph">Diese Einstellungen betreffen alle Cloud Volumes ONTAP-Systeme, die von einem Connector verwaltet werden. Wenn Sie einen anderen Konnektor haben, kann er anders konfiguriert werden.</block>
-  <block id="4f85ddd6337c9d7a3f7f9955945eece1" category="paragraph">Kontoadministratorrechte sind erforderlich, um Verbindungseinstellungen zu ändern.</block>
-  <block id="190d3f654701a58653384f20c47c8ecf" category="list-text">Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Verbindungseinstellungen*.</block>
   <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">Ändern Sie unter *Capacity* eine der folgenden Einstellungen:</block>
   <block id="35e1526d677f2c5c412538ff39eaacd5" category="list-text">Kapazitätsmanagement -Modus</block>
   <block id="270bb1237f850224c48374b974319501" category="list-text">Legen Sie fest, ob BlueXP Sie über Entscheidungen zur Storage-Kapazität benachrichtigt oder ob BlueXP die Kapazitätsanforderungen automatisch managt.</block>
@@ -2127,7 +2125,6 @@
   <block id="15772334d40a5e0ec433c7a427e96777" category="paragraph">So können Sie beispielsweise weniger als 10 % freien Speicherplatz auswählen, um sicherzustellen, dass Sie die erworbene Kapazität nutzen. BlueXP kann dann zusätzliche Festplatten für Sie erwerben, wenn zusätzliche Kapazität benötigt wird (bis zur Obergrenze des Festplattenaggregats).</block>
   <block id="e62da289d1df9b17e78658d0c7639034" category="admonition">Wenn nicht genügend Speicherplatz zur Verfügung steht, können die Daten mit Cloud Volumes ONTAP nicht verschoben werden. Möglicherweise kommt es zu Performance-Einbußen. Jede Änderung sollte mit Vorsicht vorgenommen werden. Wenn Sie sich nicht sicher sind, wenden Sie sich an den NetApp Support.</block>
   <block id="2aa3b7e505c0c56df0a2f60f7d4f87cc" category="paragraph">Das Verhältnis ist wichtig für Disaster-Recovery-Szenarien, da die Daten vom Objektspeicher gelesen werden, verschiebt Cloud Volumes ONTAP die Daten auf SSDs/HDDs, um eine bessere Performance zu bieten. Wenn nicht genügend Speicherplatz vorhanden ist, dann kann Cloud Volumes ONTAP die Daten nicht verschieben. Wenn Sie das Verhältnis ändern, können Sie Ihre geschäftlichen Anforderungen erfüllen.</block>
-  <block id="2b891711a30d74a376864ff361ead016" category="list-text">Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol *Einstellungen* und wählen Sie *Verbindungseinstellungen*.</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird.</block>
   <block id="804f26a0bc44f8e04d1fb697d33eb4d8" category="list-text">Klicken Sie unter *Kapazität* auf *Kapazitätsschwellenwerte für Aggregat - kostenloses Platzverhältnis für Daten-Tiering*.</block>
   <block id="c389556b61d8e54624252a2563fdfc17" category="list-text">Ändern Sie das Verhältnis des freien Speicherplatzes entsprechend Ihren Anforderungen und klicken Sie auf *Speichern*.</block>
@@ -4881,7 +4878,6 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="e40eb63a3506950ad93ba909dcf25c90" category="image-alt">Screenshot Aggr Kapazität</block>
   <block id="ca7b4e21c879a84e19f4057cd971879d" category="image-alt">Screenshot zeigt FlexGroup Vol</block>
   <block id="18d8042386b79e2c279fd162df0205c8" category="image-alt">400</block>
-  <block id="b26d26fe2543d5473bc9e47f43ccf1a0" category="image-alt">Schaltfläche „Screenshot-Einstellungen“</block>
   <block id="84ad21dcd6ff9e0e4d117b5b3950020e" category="admonition">Ohne Lizenz ist kein Support für die Nutzung lizenzierter Funktionen verfügbar.</block>
   <block id="3799dfe1ae4f409b181ad79e377574c6" category="paragraph">Ransomware-Angriffe können das Unternehmen Zeit, Ressourcen und Image-Schäden kosten. Mit BlueXP können Sie zwei NetApp Lösungen für Ransomware implementieren: Schutz vor gängigen Ransomware-Dateierweiterungen und Autonomer Ransomware-Schutz (ARP). Diese Lösungen bieten effektive Tools für Transparenz, Erkennung und Behebung von Problemen.</block>
   <block id="78cc5cdbd5abab66548d6b3a595b1c6c" category="section-title">Schutz vor gängigen Ransomware-Dateiendungen</block>
@@ -5243,4 +5239,8 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">In AWS unterstützen Cloud Volumes ONTAP, der Mediator und der Connector nun den Amazon Instant Metadata Service v2 (IMDSv2) für alle Funktionen. IMDSv2 bietet einen verbesserten Schutz vor Schwachstellen. Bisher wurde nur IMDSv1 unterstützt.</block>
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">BlueXP Installations- und Administrationsdokumentation für das Management vorhandener Connectors</block>
   <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">Falls von Ihren Sicherheitsrichtlinien gefordert, können Sie Ihre EC2-Instanzen für die Verwendung von IMDSv2 konfigurieren. Anweisungen finden Sie unter <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>.</block>
+  <block id="4954156ba208adf3ff1ee232d2f1d15f" category="list-text">Klicken Sie oben rechts in der BlueXP Konsole auf das Symbol Einstellungen und wählen Sie *Cloud Volumes ONTAP-Einstellungen* aus.</block>
+  <block id="6f0bb9f0803011314813e6aad3d926bf" category="list-text">Klicken Sie oben rechts auf der BlueXP-Konsole auf das Symbol *Einstellungen* und wählen Sie *Cloud Volumes ONTAP-Einstellungen* aus.</block>
+  <block id="d4b0cdcc1cd5c09a803de195e4f82296" category="paragraph">Zum Ändern der Cloud Volumes ONTAP-Einstellungen sind Administratorrechte erforderlich.</block>
+  <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">Ein Screenshot der Option Cloud Volumes ONTAP-Einstellungen unter dem Symbol Einstellungen.</block>
 </blocks>

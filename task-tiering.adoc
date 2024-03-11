@@ -318,7 +318,7 @@ CAUTION: Wenn nicht genügend Speicherplatz zur Verfügung steht, können die Da
 Das Verhältnis ist wichtig für Disaster-Recovery-Szenarien, da die Daten vom Objektspeicher gelesen werden, verschiebt Cloud Volumes ONTAP die Daten auf SSDs/HDDs, um eine bessere Performance zu bieten. Wenn nicht genügend Speicherplatz vorhanden ist, dann kann Cloud Volumes ONTAP die Daten nicht verschieben. Wenn Sie das Verhältnis ändern, können Sie Ihre geschäftlichen Anforderungen erfüllen.
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol *Einstellungen* und wählen Sie *Verbindungseinstellungen*.
+. Klicken Sie oben rechts auf der BlueXP-Konsole auf das Symbol *Einstellungen* und wählen Sie *Cloud Volumes ONTAP-Einstellungen* aus.
 +
 image:screenshot_settings_icon.png["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
