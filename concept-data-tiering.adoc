@@ -134,9 +134,12 @@ Wenn BlueXP den Bucket erstellt, verwendet er die folgenden Standardeinstellunge
 
 
 --
-Speicherklassen:: Die Standard-Storage-Klasse für Tiered Daten ist die Klasse _Standard Storage_. Wenn nur selten auf die Daten zugegriffen wird, können Sie Ihre Storage-Kosten senken, indem Sie zu _Nearline Storage_ oder _Coldline Storage_ wechseln. Wenn Sie die Storage-Klasse ändern, werden inaktive Daten direkt in die von Ihnen ausgewählte Klasse verschoben.
+Speicherklassen:: Die Standard-Storage-Klasse für Tiered Daten ist die Klasse _Standard Storage_. Wenn nur selten auf die Daten zugegriffen wird, können Sie Ihre Storage-Kosten senken, indem Sie zu _Nearline Storage_ oder _Coldline Storage_ wechseln. Wenn Sie die Storage-Klasse ändern, werden nachfolgende inaktive Daten direkt in die von Ihnen ausgewählte Klasse verschoben.
 +
 --
+
+NOTE: Alle vorhandenen inaktiven Daten behalten die Standardspeicherklasse bei, wenn Sie die Speicherklasse ändern. Um die Speicherklasse für vorhandene inaktive Daten zu ändern, müssen Sie die Bezeichnung manuell vornehmen.
+
 Die Zugriffskosten sind höher, wenn Sie auf die Daten zugreifen. Berücksichtigen Sie dies also vor einem Wechsel der Storage-Klasse. https://cloud.google.com/storage/docs/storage-classes["Erfahren Sie mehr über Storage-Klassen für Google Cloud Storage"^].
 
 Sie können eine Speicherebene auswählen, wenn Sie die Arbeitsumgebung erstellen, und sie kann jederzeit danach geändert werden. Informationen zum Ändern der Speicherklasse finden Sie unter link:task-tiering.html["Tiering inaktiver Daten in kostengünstigen Objektspeicher"].

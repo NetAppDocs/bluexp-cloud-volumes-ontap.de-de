@@ -44,7 +44,7 @@ Beispielsweise könnten Sie eine einzelne 20-tib-Lizenz erwerben, vier Cloud Vol
 Kapazitätsbasierte Lizenzierung ist in Form eines _package_ erhältlich. Bei der Implementierung eines Cloud Volumes ONTAP Systems haben Sie die Möglichkeit, je nach Ihren geschäftlichen Anforderungen aus mehreren Lizenzierungspaketen auszuwählen.
 
 
-NOTE: Die Speicher- und Netzwerkauslastung wird in binären Gigabyte (GB) berechnet, wobei 1 GB 2^30 Byte beträgt. Diese Maßeinheit wird auch als Gibibyte (gib) bezeichnet. Ebenso ist 1 TB 2^40 Byte, d. h. 1024 GB.
+NOTE: Während die tatsächliche Nutzung und Nutzungsmessung für die in BlueXP gemanagten Produkte und Services immer in gib und tib berechnet werden, werden die Begriffe GB/gib und TB/tib synonym verwendet. Dies spiegelt sich in den Angeboten, Preisangeboten, Listenbeschreibungen und anderen Begleitdokumenten des Cloud Marketplace wider.
 
 
 

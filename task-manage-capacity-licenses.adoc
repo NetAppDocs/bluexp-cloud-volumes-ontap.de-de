@@ -20,6 +20,9 @@ _Kapazitätsbasierte Lizenzen_ ermöglichen es Ihnen, Cloud Volumes ONTAP pro ti
 
 Mit der _BlueXP Digital Wallet_ können Sie Lizenzen für Cloud Volumes ONTAP von einem einzigen Standort aus managen. Sie können neue Lizenzen hinzufügen und vorhandene Lizenzen aktualisieren.
 
+
+NOTE: Während die tatsächliche Nutzung und Nutzungsmessung für die in BlueXP gemanagten Produkte und Services immer in gib und tib berechnet werden, werden die Begriffe GB/gib und TB/tib synonym verwendet. Dies spiegelt sich in den Angeboten, Preisangeboten, Listenbeschreibungen und anderen Begleitdokumenten des Cloud Marketplace wider
+
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Weitere Informationen zu Cloud Volumes ONTAP Lizenzen"].
 
 
