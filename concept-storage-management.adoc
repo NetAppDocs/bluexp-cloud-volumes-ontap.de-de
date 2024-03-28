@@ -99,28 +99,28 @@ Dieses Verhalten wird durch den _Capacity Management Mode_ auf einem Connector b
 
 === Automatisches Kapazitätsmanagement
 
-Der Kapazitätsmanagement-Modus ist standardmäßig auf automatisch eingestellt. In diesem Modus kauft BlueXP automatisch neue Festplatten für Cloud Volumes ONTAP-Instanzen, wenn mehr Kapazität benötigt wird, löscht nicht verwendete Festplatten-Sammlungen (Aggregate), verschiebt Volumes zwischen Aggregaten bei Bedarf und versucht, Festplatten nicht ordnungsgemäß zurückzusetzen.
+Der Kapazitätsmanagement-Modus ist standardmäßig auf automatisch eingestellt. In diesem Modus überprüft BlueXP das Verhältnis des freien Speicherplatzes alle 15 Minuten, um zu ermitteln, ob das Verhältnis des freien Speicherplatzes unter den angegebenen Schwellenwert fällt. Falls mehr Kapazität erforderlich ist, initiiert BlueXP automatisch die Anschaffung neuer Festplatten, löscht ungenutzte Festplattensammlungen (Aggregate), verschiebt Volumes zwischen Aggregaten und versucht einen Festplattenausfall zu verhindern.
 
 Die folgenden Beispiele veranschaulichen die Funktionsweise dieses Modus:
 
 * Wenn ein Aggregat die Kapazitätsgrenze erreicht und mehr Festplatten zur Verfügung stehen, kauft BlueXP automatisch neue Festplatten für das Aggregat, sodass die Volumen weiter wachsen können.
 +
-BlueXP überprüft das Verhältnis von freiem Speicherplatz alle 15 Minuten, um festzustellen, ob zusätzliche Festplatten gekauft werden müssen.
-
-
-
 ifdef::aws[]
 
-+ im Fall eines Aggregats in AWS, das Elastic Volumes unterstützt, erhöht BlueXP auch die Größe der Festplatten in einer RAID-Gruppe. link:concept-aws-elastic-volumes.html["Erfahren Sie mehr über den Support für Elastic Volumes"].
+
+
+Im Falle eines Aggregats in AWS, das Elastic Volumes unterstützt, vergrößert BlueXP auch die Festplatten einer RAID-Gruppe. link:concept-aws-elastic-volumes.html["Erfahren Sie mehr über den Support für Elastic Volumes"].
 
 endif::aws[]
 
-* Wenn ein Aggregat den Kapazitätsschwellenwert erreicht und keine zusätzlichen Festplatten unterstützt, verschiebt BlueXP automatisch ein Volume von diesem Aggregat zu einem Aggregat mit verfügbarer Kapazität oder zu einem neuen Aggregat.
++
+* Wenn ein Aggregat die Kapazitätsgrenze erreicht und keine zusätzlichen Festplatten unterstützt, verschiebt BlueXP automatisch ein Volume von diesem Aggregat zu einem Aggregat mit verfügbarer Kapazität oder zu einem neuen Aggregat.
+
 +
 Wenn BlueXP ein neues Aggregat für das Volume erstellt, wählt es eine Festplattengröße aus, die der Größe des Volumes entspricht.
 
 +
-Beachten Sie, dass jetzt freier Speicherplatz auf dem ursprünglichen Aggregat verfügbar ist. Vorhandene Volumes oder neue Volumes können diesen Speicherplatz nutzen. Der Speicherplatz kann in diesem Szenario nicht an die Vorteile der Cloud zurückgegeben werden.
+Beachten Sie, dass jetzt freier Speicherplatz auf dem ursprünglichen Aggregat verfügbar ist. Vorhandene Volumes oder neue Volumes können diesen Speicherplatz nutzen. In diesem Szenario kann der Speicherplatz nicht wieder an den Cloud-Provider übergeben werden.
 
 * Wenn ein Aggregat mehr als 12 Stunden lang keine Volumes enthält, löscht es BlueXP.
 

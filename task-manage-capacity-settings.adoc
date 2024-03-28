@@ -34,12 +34,15 @@ Kapazitätsmanagement -Modus:: Legen Sie fest, ob BlueXP Sie über Entscheidunge
 link:concept-storage-management.html#capacity-management["Erfahren Sie, wie der Capacity Management-Modus funktioniert"].
 
 --
-Schwellenwert Für Aggregatkapazität – Verhältnis Für Freien Speicherplatz:: Löst eine Benachrichtigung aus, wenn das Verhältnis des freien Speicherplatzes auf einem Aggregat unter den angegebenen Schwellenwert fällt.
+Schwellenwert Für Aggregatkapazität – Verhältnis Für Freien Speicherplatz:: Dieses Verhältnis ist ein wichtiger Parameter bei Entscheidungen zum Kapazitätsmanagement. Daher ist es unerlässlich, die Auswirkungen zu verstehen, unabhängig davon, ob Sie sich in einem automatischen oder manuellen Modus für das Kapazitätsmanagement befinden. Es wird empfohlen, diese Grenze unter Berücksichtigung Ihrer spezifischen Storage-Anforderungen und des voraussichtlichen Wachstums festzulegen, um die Ressourcenauslastung und die Kosten in Einklang zu bringen.
 +
 --
-Das Verhältnis des freien Speicherplatzes berechnet sich wie folgt:
+Wenn im manuellen Modus das Verhältnis des freien Speicherplatzes auf einem Aggregat unter den angegebenen Schwellenwert fällt, löst es eine Benachrichtigung aus, die Sie darauf hinweist, dass Sie Maßnahmen ergreifen sollten, um das Verhältnis des niedrigen freien Speicherplatzes zu beheben. Es ist wichtig, diese Benachrichtigungen zu überwachen und die aggregierte Kapazität manuell zu managen, um Serviceunterbrechungen zu vermeiden und eine optimale Performance sicherzustellen.
 
+Das Verhältnis des freien Speicherplatzes berechnet sich wie folgt:
 (Gesamtkapazität – genutzte Gesamtkapazität im Aggregat) / Gesamtkapazität des Aggregats
+
+Siehe link:concept-storage-management.html#automatic-capacity-management["Automatisches Kapazitätsmanagement"] Um zu erfahren, wird die Kapazität jetzt automatisch in Cloud Volumes ONTAP gemanagt.
 
 --
 Aggregierte Kapazitätsschwellenwerte – Verhältnis des freien Speicherplatzes für Daten-Tiering:: Definiert, wie viel freier Speicherplatz auf der Performance-Tier (Festplatten) benötigt wird, wenn Daten-Tiering auf eine Kapazitäts-Tier (Objekt-Storage) erfolgt.
