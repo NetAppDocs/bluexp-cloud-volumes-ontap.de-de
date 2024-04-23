@@ -2517,8 +2517,6 @@
   <block id="108a74a6cbb575c986177039e07dc411" category="list-text">Befolgen Sie die Schritte im Assistenten, um das Volume zu erstellen.</block>
   <block id="3b0e375a08fe94a129cba31916c9d2dc" category="paragraph">Einige der Felder auf dieser Seite sind selbsterklärend. In der folgenden Liste werden die Felder beschrieben, für die Sie möglicherweise Hinweise benötigen:</block>
   <block id="191fac23c2b2ea4e948178972521292f" category="cell">Volume-Größe</block>
-  <block id="189f63f277cd73395561651753563065" category="cell">Tags</block>
-  <block id="d7ab5fe4cd7b86ba1ce9a35dbe34ee4b" category="inline-link">Applikationsvorlagen-Service</block>
   <block id="8df799ab4a27609ef1087c249676bbc5" category="list-text">*Protokoll*: Wählen Sie ein Protokoll für das Volume (NFS, CIFS oder iSCSI) und geben Sie dann die erforderlichen Informationen.</block>
   <block id="d358fb5d50198914ec98e41f454def16" category="paragraph">Wenn Sie CIFS auswählen und ein Server nicht eingerichtet ist, werden Sie von BlueXP aufgefordert, eine CIFS-Verbindung einzurichten, nachdem Sie auf *Weiter* klicken.</block>
   <block id="e1a274ec8eecfec4a5a3c7954eb80e0b" category="paragraph">In den folgenden Abschnitten werden die Felder beschrieben, für die Sie ggf. Hilfestellung benötigen. Die Beschreibungen sind nach Protokoll geordnet.</block>
@@ -2550,23 +2548,6 @@
   <block id="1fd2dba2020c106a2c49da0e6ad7e868" category="paragraph">ONTAP umfasst mehrere Storage-Effizienzfunktionen, mit denen Sie die benötigte Storage-Gesamtmenge reduzieren können. NetApp Storage-Effizienzfunktionen bieten folgende Vorteile:</block>
   <block id="eb5c6869b3fc04254530622723507f79" category="list-text">*Review*: Überprüfen Sie die Details über die Lautstärke und klicken Sie dann auf *Hinzufügen*.</block>
   <block id="9d9d2570117ac3c4800440bedeb14f61" category="paragraph">BlueXP erstellt das Volume auf dem Cloud Volumes ONTAP System.</block>
-  <block id="2fd8ed01b53ab930ba045f6316aa8fbf" category="section-title">Erstellen Sie ein Volume anhand einer Vorlage</block>
-  <block id="027921a6306ed2c54f25607de975d377" category="paragraph">Wenn Ihr Unternehmen Cloud Volumes ONTAP Volume-Vorlagen erstellt hat, damit Sie Volumes implementieren können, die für die Workload-Anforderungen bestimmter Applikationen optimiert sind, befolgen Sie diese Schritte in diesem Abschnitt.</block>
-  <block id="bc41c927b050313fabe4e7bfa9c82224" category="paragraph">Die Vorlage sollte Ihnen die Arbeit erleichtern, da bestimmte Volume-Parameter bereits in der Vorlage definiert werden, z. B. Festplattentyp,-Größe, Protokoll, Snapshot-Richtlinie, Cloud-Provider, Und vieles mehr. Wenn ein Parameter bereits vordefiniert ist, können Sie einfach zum nächsten Volume-Parameter springen.</block>
-  <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">NFS- oder CIFS-Volumes können nur mit Vorlagen erstellt werden.</block>
-  <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">Klicken Sie auf der Seite Arbeitsfläche auf den Namen des Cloud Volumes ONTAP-Systems, auf dem Sie ein Volume bereitstellen möchten.</block>
-  <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">Ein Screenshot, der zeigt, wie ein neues Volume aus einer Vorlage hinzugefügt wird.</block>
-  <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">Wählen Sie auf der Seite _Vorlage auswählen_ die Vorlage aus, die Sie zum Erstellen des Volumes verwenden möchten, und klicken Sie auf *Weiter*.</block>
-  <block id="41fdbb8293e553892079d0e7ad8a9ad9" category="inline-image-macro">Ein Screenshot der verfügbaren Anwendungsvorlagen.</block>
-  <block id="f2a6f7bb83d518b8832e241b44419c17" category="paragraph"><block ref="f2a6f7bb83d518b8832e241b44419c17" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="19f5b7f92268b2f8e63e4083819666c9" category="inline-image-macro">Ein Screenshot mit einer leeren Vorlage, die Sie ausfüllen müssen, um ein Volume zu erstellen.</block>
-  <block id="f9fb39421cb5c84a9897e58b19c84510" category="paragraph"><block ref="f9fb39421cb5c84a9897e58b19c84510" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="db382d688e4cb3e09b6e7a743ce00edb" category="paragraph">Wenn es andere Aktionen gibt, klicken Sie im linken Fensterbereich auf die Aktion, um die erforderlichen Parameter anzuzeigen.</block>
-  <block id="a31e4f2aa7f454321015e4c5b02bae97" category="inline-image-macro">Ein Screenshot, in dem die Auswahl weiterer Aktionen angezeigt wird, die abgeschlossen werden müssen.</block>
-  <block id="0fdf861b8e72c9acd6caea0924545667" category="paragraph"><block ref="0fdf861b8e72c9acd6caea0924545667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f97c61e27cbf22f850ec5f0412358f0b" category="paragraph">Cloud Volumes ONTAP stellt das Volume bereit und zeigt eine Seite an, sodass der Fortschritt angezeigt wird.</block>
-  <block id="40136e65ff57723941fc2af2bf21d54a" category="inline-image-macro">Ein Screenshot zeigt den Fortschritt der Erstellung Ihres neuen Volumes aus der Vorlage.</block>
-  <block id="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="paragraph"><block ref="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="841221afb195f2b9f58a8b1dc6a57132" category="section-title">Erstellung eines Volumes auf dem zweiten Node in einer HA-Konfiguration</block>
   <block id="06d1a78e29ba350cf4a2e2603b5838a3" category="paragraph">Standardmäßig erstellt BlueXP Volumes auf dem ersten Knoten einer HA-Konfiguration. Wenn Sie eine Aktiv/Aktiv-Konfiguration benötigen, in der beide Nodes Daten für Clients bereitstellen, müssen Sie Aggregate und Volumes auf dem zweiten Node erstellen.</block>
   <block id="60a2834a97bdfe49641e5ed1d42e4116" category="list-text">Doppelklicken Sie auf der Übersichtsseite auf den Namen der Cloud Volumes ONTAP Arbeitsumgebung, in der Sie Aggregate verwalten möchten.</block>
@@ -3313,7 +3294,6 @@
   <block id="f13e5738aeb376300b20ef726f2fe2e3" category="section-title">Verbesserte Volume-Erstellung</block>
   <block id="9f6be88742d739e1a17345387ce1fbb2" category="paragraph">Es wurden einige Verbesserungen bei der Volume-Erstellung vorgenommen:</block>
   <block id="c393c88c641a6c18da56fffa85b9c78c" category="list-text">Der Create Volume Wizard hat zur Erleichterung der Anwendung neu gestaltet.</block>
-  <block id="6b7e7cce69c13d91130e2e673b1da322" category="list-text">Tags, die Sie einem Volume hinzufügen, werden jetzt dem Dienst Anwendungsvorlagen zugeordnet, der Ihnen dabei helfen kann, die Verwaltung Ihrer Ressourcen zu organisieren und zu vereinfachen.</block>
   <block id="69582189d37c402edf59b0f133df7c09" category="list-text">Sie können jetzt eine benutzerdefinierte Exportrichtlinie für NFS auswählen.</block>
   <block id="7ab20d098d6605f542bfe595351b4d64" category="inline-image-macro">Ein Screenshot, der die Protokollseite beim Erstellen eines neuen Volumes zeigt.</block>
   <block id="7aece74ebc88a7e88e14656ceaecf9cf" category="paragraph"><block ref="7aece74ebc88a7e88e14656ceaecf9cf" category="inline-image-macro-rx" type="image"></block></block>
@@ -4321,19 +4301,10 @@
   <block id="d3c83108d2d70bd2eb22fbd1bb485f2f" category="paragraph">Navigieren Sie auf der Registerkarte Übersicht zur Kachel Volumes, und klicken Sie auf *Volume hinzufügen*.<block ref="d66b0ca71189f0ddd53cd4b3e65bbf57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d67d87305db3f29260c81473dd44e3f1" category="inline-image-macro">Ein Screenshot der Schaltfläche „Volume hinzufügen“ unter der Registerkarte „Aggregate“.</block>
   <block id="13f1658d880a29010b36402880b7742d" category="paragraph">Navigieren Sie auf der Registerkarte Aggregate zur gewünschten Aggregat-Kachel. Klicken Sie auf das Menüsymbol und dann auf *Volume hinzufügen*.<block ref="90511a2a61b219fe659f6c6204d0e9f4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5359c0cc8b61614ec08d953783fef7e9" category="list-text">*Volumes, Details, Protection und Tags*: Geben Sie grundlegende Details zum Volume ein und wählen Sie eine Snapshot-Richtlinie aus.</block>
   <block id="5a33fdd3ad048388d676b3cfe62a76b4" category="cell">Volume-Name</block>
   <block id="da791c0c870c83e87ff0b50e41446b5f" category="cell">Der identifizierbare Name, den Sie für das neue Volume eingeben können.</block>
   <block id="8bc5e99f50f67c6de120548d75821d83" category="cell">Storage-VM (SVM)</block>
   <block id="360a6a454911fe3432462fbd11f3588c" category="cell">Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihren Kunden Storage und Datenservices zur Verfügung stellt. Sie können dies als SVM oder vServer wissen. Cloud Volumes ONTAP ist standardmäßig mit einer Storage-VM konfiguriert, aber einige Konfigurationen unterstützen zusätzliche Storage-VMs. Sie können die Storage-VM für das neue Volume angeben.</block>
-  <block id="83153603fdc3097c323cd6a9c354a74c" category="list-text">Navigieren Sie zur Registerkarte Volumes und klicken Sie auf *Volume hinzufügen* &gt; *Neues Volume aus Vorlage*.</block>
-  <block id="d5b72c940ba2727afcbba5dd037893f5" category="paragraph"><block ref="d5b72c940ba2727afcbba5dd037893f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ac2c13cd2f76af0753933c8630446e5f" category="paragraph">Die Seite _Editor_ wird angezeigt.</block>
-  <block id="18a9b2315ac5b98381d542571ba28299" category="list-text">Geben Sie über dem _Action_-Feld einen Namen für die Vorlage ein.</block>
-  <block id="74f7c9266baa87f8e4aceef158811143" category="list-text">Unter _context_ wird die Arbeitsumgebung mit dem Namen der Arbeitsumgebung, mit der Sie begonnen haben, ausgefüllt. Wählen Sie die *Speicher-VM* aus, auf der das Volume erstellt werden soll.</block>
-  <block id="746037c3b6a0eec6bb1e41959d51e07e" category="list-text">Klicken Sie auf *Apply*, um die konfigurierten Parameter in der ausgewählten Aktion zu speichern.</block>
-  <block id="be2645489c0ae0149fc30f6dc8d80bbb" category="paragraph">Wenn Sie beispielsweise für die Aktion Cloud Backup auf Volume aktivieren eine Backup-Richtlinie auswählen müssen, können Sie dies jetzt tun.</block>
-  <block id="f0131c80c45b00e70cb9a1d8c9e3448a" category="list-text">Sobald die Konfiguration für die Vorlagenaktionen abgeschlossen ist, klicken Sie auf *Vorlage speichern*.</block>
   <block id="bc321d6d3a5b549e1c0961440ef815f4" category="list-text">Klicken Sie auf der Registerkarte Aggregate auf *Add Aggregate*.</block>
   <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">Erstellen Sie im _Add Aggregate_ -Bildschirm das Aggregat.</block>
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">Ein Screenshot, der den Fortschritt des Hinzufügens eines Aggregats zeigt.</block>
@@ -4354,10 +4325,6 @@
   <block id="8f56224592abe10774e5575500874b11" category="cell">Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *View Volume Details*.</block>
   <block id="d4c98b540182b809e992d8b4a580423e" category="list-text">Klicken Sie unter Volume Actions im Fenster Manage Volumes auf *Mount Command*.</block>
   <block id="98c56e9d0291f443f1ed942549039cc3" category="list-text">Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *Clone the Volume*.</block>
-  <block id="c36ae8709c4f5551dcd33c1fa09b1144" category="cell">Bearbeiten von Volume-Tags (nur Datenträger mit Lese-/Schreibzugriff)</block>
-  <block id="0c76e6ded4e12f0dc0b2564def628aae" category="list-text">Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *Edit Volume Tags*, um das Volume-Tag zu ändern, das dem ausgewählten Volume zugewiesen ist.</block>
-  <block id="186ac335ead3bdabcd70b18a0e6f40ed" category="list-text">Geben Sie den Schlüssel und den Wert für das Volume-Tag in die entsprechenden Felder ein.</block>
-  <block id="cf92c264f59ad57e63ae663106047d25" category="list-text">Um weitere Tags hinzuzufügen, klicken Sie auf *Neues Tag hinzufügen*.</block>
   <block id="29f680a1731a2250d73a33aede73a2eb" category="list-text">Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *Edit Volume settings*</block>
   <block id="ac11ccea860c1468f49807407e073557" category="list-text">Ändern Sie die Snapshot-Richtlinie des Volumes, die NFS-Protokollversion, die NFS-Zugriffssteuerungsliste (Exportrichtlinie) oder die Freigabeberechtigungen, und klicken Sie dann auf *Apply*.</block>
   <block id="6271604d64ad8f6bcdad901be64df292" category="list-text">Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *Delete the Volume*.</block>
@@ -4487,8 +4454,6 @@
   <block id="b7553c7fbdeaddba3cf075caca1654ea" category="paragraph">Erweitern Sie das Digital Wallet von BlueXP um eine Node-basierte Lizenz, sodass Sie bei der Erstellung eines neuen Cloud Volumes ONTAP Systems die Lizenz auswählen können. Die Digital Wallet identifiziert diese Lizenzen als _unassigned_.</block>
   <block id="5fd0d116f88accf7d18b80d146d87953" category="paragraph">BlueXP erweitert das Digital Wallet um die Lizenz. Die Lizenz wird erst dann als nicht zugewiesen identifiziert, wenn Sie sie einem neuen Cloud Volumes ONTAP-System zuordnen. Danach wird die Lizenz auf die Registerkarte *BYOL* im Digital Wallet verschoben.</block>
   <block id="637413a6c4ca962adade95ae4bcc1109" category="paragraph">Wenn Sie eine nicht zugewiesene Node-basierte Lizenz für Cloud Volumes ONTAP verwenden, können Sie die Lizenz austauschen. Konvertieren Sie sie in eine BlueXP Backup- und Recovery-Lizenz, eine BlueXP Klassifizierungslizenz oder eine BlueXP Tiering Lizenz.</block>
-  <block id="84494b1e674f56df077cb2b7eca2b569" category="list-text">Wenn keine weiteren Aktionen definiert werden müssen (z. B. Konfiguration von BlueXP Backup und Recovery), klicken Sie auf *Vorlage speichern*.</block>
-  <block id="3cb732600caeb6ed3e89ade08544187b" category="paragraph">Wenn außerdem eine sekundäre Aktion in der Vorlage implementiert wird, beispielsweise durch die Aktivierung von BlueXP Backup und Recovery auf dem Volume, wird ebenfalls ausgeführt.</block>
   <block id="726d1cad4d0527532460d1a853919ebc" category="inline-link">Weitere Informationen zur BlueXP Klassifizierung</block>
   <block id="723a81a7ee0b42134a46c1aaa0d99371" category="inline-link">Erfahren Sie mehr über Backup und Recovery von BlueXP</block>
   <block id="fc0a70bcada485a87b25779f9232cd77" category="summary">Für Cloud Volumes ONTAP ist ein Google Cloud-Servicekonto aus zwei Gründen erforderlich. Die erste ist, wenn Sie Daten-Tiering aktivieren, um kalte Daten auf kostengünstigen Objektspeicher in Google Cloud zu verschieben. Der zweite Punkt ist, wenn Sie Backup und Recovery von BlueXP ermöglichen, um Volumes auf kostengünstigen Objekt-Storage zu sichern.</block>
@@ -4614,7 +4579,6 @@ Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers ko
   <block id="f9f4082179938e25ee1e3141d4b4b61d" category="paragraph"><block ref="f9f4082179938e25ee1e3141d4b4b61d" category="inline-link-rx"></block></block>
   <block id="882d5f98206dd8157654127073c920f2" category="paragraph"><block ref="882d5f98206dd8157654127073c920f2" category="inline-link-rx"></block></block>
   <block id="f870932f389b07a18c35e61ebc668c91" category="paragraph"><block ref="161ab28684c427e4961f0c360c1dbce7" category="inline-link-rx"></block>.</block>
-  <block id="63c9832895bcd0b024988b034d19fa69" category="cell">Tags, die Sie einem Volume hinzufügen, werden dem zugeordnet<block ref="b6951a270b848f0d80ace1368ae797fd" category="inline-link-rx"></block>, Die Ihnen helfen, die Verwaltung Ihrer Ressourcen zu organisieren und zu vereinfachen.</block>
   <block id="ccd8fe0f54baad6a01a1827625b8a699" category="list-text">Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> Entsprechende Details.</block>
   <block id="781a31b225d61ebbabe5dd84830d307a" category="list-text">Sie sollten ein haben<block ref="531433bd83668140eff1dc8bd40e140e" category="inline-link-rx"></block>.</block>
   <block id="0a878535ad1a6e2ef955aba255e762cd" category="list-text">Wenn Sie dazu aufgefordert werden,<block ref="b03d5bfc016d24f5269c25486d5c5105" category="inline-link-rx"></block>.</block>
@@ -4887,13 +4851,11 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="c865f6da9bcfc07ba082737620200b41" category="paragraph">Sie werden über das Marketplace-Abonnement nicht belastet, es sei denn, Sie überschreiten 500 gib der bereitgestellten Kapazität. Zu dieser Zeit wird das System automatisch in das konvertiert <block ref="ec72849d6ddd1aa67c619efd7a434388" category="inline-link-macro-rx"></block>.</block>
   <block id="a8f0efbc9639c258065d01ea6552a320" category="list-text">Geben Sie Details für ein neues Volume an, und BlueXP kann die zugrunde liegenden Datenaggregate für Sie verarbeiten. <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
   <block id="f2354151259450918b28c0dd2ce20606" category="list-text">Erstellen Sie ein Volume auf einem Datenaggregat Ihrer Wahl. <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
-  <block id="b9269bf669334245761162ed1b5f67fc" category="list-text">Erstellen Sie ein Volume aus einer Vorlage, um das Volume gemäß den Workload-Anforderungen bestimmter Applikationen, wie z. B. Datenbanken oder Streaming-Services, zu optimieren. <block ref="2e0c3dc13b95af01c6b2fc43579657db" category="inline-xref-macro-rx"></block></block>
   <block id="6acfe5d47cf8e7d4ce1ddef9604984d8" category="list-text">Erstellung eines Volumes auf dem zweiten Node in einer HA-Konfiguration <block ref="8d20c8ec5d13d4f8ec83a1bb8e2e1e5d" category="inline-xref-macro-rx"></block></block>
   <block id="765aadd821cf82bcd286359e2eb25476" category="list-text">Wenn Sie ein iSCSI-Volume erstellen, erstellt BlueXP automatisch eine LUN für Sie. Wir haben es einfach gemacht, indem wir nur eine LUN pro Volumen erstellen, so gibt es keine Verwaltung beteiligt. Nachdem Sie das Volume erstellt haben, <block ref="9b65fd4fba31c27fb58a4653a54defad" category="inline-link-macro-rx"></block>.</block>
   <block id="34b51cb01d3605c2b908600c2b516152" category="list-text"><block ref="34b51cb01d3605c2b908600c2b516152" category="inline-link-macro-rx"></block></block>
   <block id="2a79e18dae8df0be0a0d70d12cf4bfec" category="list-text"><block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block></block>
   <block id="14c10e4dfdbfa7bb1944c39086904d79" category="list-text"><block ref="14c10e4dfdbfa7bb1944c39086904d79" category="inline-link-macro-rx"></block></block>
-  <block id="ff89f21886369313040dff71f31e89db" category="list-text">Fügen Sie Werte für alle Parameter hinzu, die nicht hartcodiert sind. Siehe <block ref="8a193d900c598af224bec0dcf7cbba7e" category="inline-xref-macro-rx"></block> Bietet Details zu allen Parametern, die erforderlich sind, um die Implementierung eines Cloud Volumes ONTAP Volumes abzuschließen.</block>
   <block id="f784e2eca8423af6d4b6e02cd9dc17b6" category="list-text">Ein Regelsatz für HA-Komponenten in VPC-0. Diese Regeln ermöglichen den Datenzugriff auf Cloud Volumes ONTAP. <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>.</block>
   <block id="29642aeaa8aff442388842cc2c36f19d" category="list-text">Weiterer Regelsatz für HA-Komponenten in VPC-1, VPC-2 und VPC-3. Diese Regeln sind für die Kommunikation zwischen den HA-Komponenten ein- und ausgehender Anruf offen. <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>.</block>
   <block id="b0082432bdd8f260c6c2bf11437fb1b7" category="list-text">Weiterer Regelsatz für HA-Komponenten in VPC-1, VPC-2 und VPC-3. Diese Regeln sind für die Kommunikation zwischen den HA-Komponenten ein- und ausgehender Anruf offen. <block ref="07ead3ac53ea1b122b25bf61bd233110" category="inline-xref-macro-rx"></block>.</block>
@@ -5273,4 +5235,7 @@ Beachten Sie, dass jetzt freier Speicherplatz auf dem ursprünglichen Aggregat v
   <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">Kanada Mitte</block>
   <block id="0b745a8416b0a8e3b89e7e01ba13af65" category="section-title">Johannesburg Region jetzt in Google Cloud unterstützt</block>
   <block id="ec826289e3407edb59d3c5ed0aca5c74" category="paragraph">Der Region Johannesburg <block ref="6d1d2d77b70fb38d060e5653977838a2" prefix="(" category="inline-code"></block> Wird jetzt in Google Cloud für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.</block>
+  <block id="ee94ea94211470599a81d49f8c4b586f" category="section-title">Volume-Vorlagen und -Tags werden nicht mehr unterstützt</block>
+  <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">Sie können kein Volume mehr aus einer Vorlage erstellen oder die Tags eines Volumes bearbeiten. Diese Aktionen wurden mit dem BlueXP Korrekturservice verknüpft, der nicht mehr verfügbar ist.</block>
+  <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">*Details, Schutz und Tags*: Geben Sie grundlegende Details zum Volume ein und wählen Sie eine Snapshot-Richtlinie aus.</block>
 </blocks>

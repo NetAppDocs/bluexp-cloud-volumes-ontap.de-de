@@ -59,15 +59,6 @@ Weitere Informationen zu FlexClone Volumes finden Sie im http://docs.netapp.com/
 
 
 
-| Bearbeiten von Volume-Tags (nur Datenträger mit Lese-/Schreibzugriff)  a| 
-.. Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *Edit Volume Tags*, um das Volume-Tag zu ändern, das dem ausgewählten Volume zugewiesen ist.
-.. Geben Sie den Schlüssel und den Wert für das Volume-Tag in die entsprechenden Felder ein.
-.. Um weitere Tags hinzuzufügen, klicken Sie auf *Neues Tag hinzufügen*.
-.. Klicken Sie Auf *Speichern*.
-
-
-
-
 | Bearbeiten eines Volumes (nur Volumes mit Lese-/Schreibzugriff)  a| 
 .. Klicken Sie unter Volume Actions im Bereich Manage Volumes auf *Edit Volume settings*
 .. Ändern Sie die Snapshot-Richtlinie des Volumes, die NFS-Protokollversion, die NFS-Zugriffssteuerungsliste (Exportrichtlinie) oder die Freigabeberechtigungen, und klicken Sie dann auf *Apply*.

@@ -48,6 +48,12 @@ Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-
 
 
 
+=== Volume-Vorlagen und -Tags werden nicht mehr unterstützt
+
+Sie können kein Volume mehr aus einer Vorlage erstellen oder die Tags eines Volumes bearbeiten. Diese Aktionen wurden mit dem BlueXP Korrekturservice verknüpft, der nicht mehr verfügbar ist.
+
+
+
 == 8 März 2024
 
 
@@ -1145,7 +1151,6 @@ image:screenshot-cvo-user-name.png["Ein Screenshot der Seite Details und Anmelde
 Es wurden einige Verbesserungen bei der Volume-Erstellung vorgenommen:
 
 * Der Create Volume Wizard hat zur Erleichterung der Anwendung neu gestaltet.
-* Tags, die Sie einem Volume hinzufügen, werden jetzt dem Dienst Anwendungsvorlagen zugeordnet, der Ihnen dabei helfen kann, die Verwaltung Ihrer Ressourcen zu organisieren und zu vereinfachen.
 * Sie können jetzt eine benutzerdefinierte Exportrichtlinie für NFS auswählen.
 
 
