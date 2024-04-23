@@ -20,6 +20,34 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== Bis 23. April 2024
+
+
+
+=== Unterstützung neuer Regionen für Implementierungen mit mehreren Verfügbarkeitszonen in Azure
+
+Die folgenden Regionen unterstützen jetzt HA-Implementierungen mit mehreren Verfügbarkeitszonen in Azure für Cloud Volumes ONTAP 9.12.1 GA und höher:
+
+* Deutschland West Central
+* Polen, Mitte
+* USA, Westen 3
+* Israel, Mitte
+* Italien Nord
+* Kanada Mitte
+
+
+Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].
+
+
+
+=== Johannesburg Region jetzt in Google Cloud unterstützt
+
+Der Region Johannesburg (`africa-south1` Wird jetzt in Google Cloud für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.
+
+Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Google Cloud"^].
+
+
+
 == 8 März 2024
 
 
