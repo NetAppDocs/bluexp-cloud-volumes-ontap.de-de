@@ -52,8 +52,8 @@ Wenn Sie Amazon Verschlüsselung mit Cloud Volumes ONTAP verwenden möchten, mü
 Klicken Sie auf *Arbeitsumgebung hinzufügen*, wählen Sie den Systemtyp aus, den Sie bereitstellen möchten, und führen Sie die Schritte im Assistenten aus. link:task-deploying-otc-aws.html["Lesen Sie Schritt-für-Schritt-Anleitungen"].
 
 .Weiterführende Links
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Connectors von BlueXP"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws.html["Einführen eines Connectors über den AWS Marketplace"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installieren der Connector-Software auf einem Linux-Host"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Was BlueXP mit AWS-Berechtigungen macht"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html["Erstellen Sie einen Connector in AWS von BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html["Erstellen Sie einen Connector aus dem AWS Marketplace"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installieren und Einrichten eines Connectors auf dem Gelände"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["AWS-Berechtigungen für den Connector"^]
 
