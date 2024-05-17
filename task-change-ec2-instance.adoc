@@ -38,7 +38,7 @@ TIP: BlueXP ändert den Knoten nacheinander ordnungsgemäß, indem es Takeover u
 .Referenz
 Eine Liste der unterstützten Instanztypen in AWS finden Sie unter link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["Unterstützte EC2 Instanzen"^].
 
-Wenn Sie den Instanztyp nicht von den Instanzen c4, m4 oder R4 ändern können, lesen Sie den KB-Artikel link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Unable_to_change_the_instance_type_from_r4_to_r5_with_disk_count_error["Der Instanztyp kann nicht von r4 in r5 geändert werden, da die Anzahl der Festplatten fehlerhaft ist"^].
+Wenn Sie den Instanztyp nicht von den Instanzen c4, m4 oder R4 ändern können, lesen Sie den KB-Artikel link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Converting_an_AWS_Xen_CVO_instance_to_Nitro_(KVM)["Konvertieren einer AWS Xen CVO-Instanz in Nitro (KVM)"^].
 
 .Schritte
 . Wählen Sie auf der Seite Arbeitsfläche die Arbeitsumgebung aus.
