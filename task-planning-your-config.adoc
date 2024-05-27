@@ -36,6 +36,20 @@ Neuere AWS Regionen müssen aktiviert sein, bevor Ressourcen in diesen Regionen 
 
 
 
+=== Wählen Sie eine unterstützte lokale Zone aus
+
+Cloud Volumes ONTAP wird in einigen AWS lokalen Zonen unterstützt, einschließlich Singapur. Die Auswahl einer lokalen Zone ist optional.
+
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["Sehen Sie sich die vollständige Liste der lokalen Zonen an"^].
+Lokale Zonen müssen aktiviert sein, bevor Sie Ressourcen in diesen Zonen erstellen und verwalten können.
+
+link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["Erfahren Sie, wie Sie eine lokale Zone aktivieren"^].
+
+
+NOTE: Phoenix ist keine unterstützte lokale Zone.
+
+
+
 == Wählen Sie eine unterstützte Instanz aus
 
 Cloud Volumes ONTAP unterstützt je nach gewähltem Lizenztyp mehrere Instanztypen.

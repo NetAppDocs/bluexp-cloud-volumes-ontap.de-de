@@ -70,13 +70,13 @@ Eine HA-Konfiguration sorgt für eine hohe Verfügbarkeit Ihrer Daten wie folgt:
 
 == Ha-Bereitstellungsmodelle
 
-Sie können die Hochverfügbarkeit Ihrer Daten sicherstellen, indem Sie eine HA-Konfiguration über mehrere Verfügbarkeitszonen (AZS) oder in einer einzigen AZ bereitstellen. Sie sollten weitere Details zu jeder Konfiguration durchgehen, um zu entscheiden, welche für Ihre Anforderungen am besten geeignet ist.
+Sie können die Hochverfügbarkeit Ihrer Daten sicherstellen, indem Sie eine HA-Konfiguration über mehrere Verfügbarkeitszonen hinweg oder in einer einzelnen Verfügbarkeitszone (AZ) bereitstellen. Sie sollten weitere Details zu jeder Konfiguration durchgehen, um zu entscheiden, welche für Ihre Anforderungen am besten geeignet ist.
 
 
 
-=== Mehrere Verfügbarkeitszonen
+=== Verfügbarkeitszonen
 
-Durch die Implementierung einer HA-Konfiguration in mehreren Verfügbarkeitszonen (AZS) wird eine hohe Verfügbarkeit Ihrer Daten gewährleistet, wenn ein Ausfall bei einer AZ oder einer Instanz auftritt, die einen Cloud Volumes ONTAP Node ausführt. Sie sollten wissen, wie sich NAS-IP-Adressen auf den Datenzugriff und das Storage-Failover auswirken.
+Durch die Implementierung einer HA-Konfiguration in mehreren Verfügbarkeitszonen (AZS) werden Ihre Daten bei einem Ausfall mit einer Verfügbarkeitszone oder einer Instanz, auf der ein Cloud Volumes ONTAP-Node ausgeführt wird, Hochverfügbarkeit sichergestellt. Sie sollten wissen, wie sich NAS-IP-Adressen auf den Datenzugriff und das Storage-Failover auswirken.
 
 
 
@@ -86,7 +86,7 @@ Wenn eine HA-Konfiguration über mehrere Verfügbarkeitszonen verteilt ist, akti
 
 Wenn Sie kein Transit-Gateway einrichten können, sind private IP-Adressen für NAS-Clients außerhalb der VPC verfügbar. Diese IP-Adressen sind jedoch statisch und können nicht zwischen Nodes ein Failover ausführen.
 
-Bevor Sie eine HA-Konfiguration über mehrere Verfügbarkeitszonen hinweg bereitstellen, sollten Sie die Anforderungen für unverankerte IP-Adressen und Weiterleitungstabellen überprüfen. Sie müssen die unverankerten IP-Adressen angeben, wenn Sie die Konfiguration bereitstellen. Die privaten IP-Adressen werden automatisch von BlueXP erstellt.
+Sie sollten die Anforderungen für fließende IP-Adressen und Routingtabellen überprüfen, bevor Sie eine HA-Konfiguration über mehrere Verfügbarkeitszonen hinweg implementieren. Sie müssen die unverankerten IP-Adressen angeben, wenn Sie die Konfiguration bereitstellen. Die privaten IP-Adressen werden automatisch von BlueXP erstellt.
 
 Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["AWS Netzwerkanforderungen für Cloud Volumes ONTAP HA in mehreren AZS"^].
 
@@ -121,9 +121,9 @@ Sie können die richtige IP-Adresse von BlueXP leicht erkennen, indem Sie die La
 
 
 
-=== Single Availability Zone
+=== Einzelne Verfügbarkeitszone
 
-Durch die Implementierung einer HA-Konfiguration in einer einzelnen Verfügbarkeitszone (AZ) kann eine hohe Verfügbarkeit Ihrer Daten sichergestellt werden, wenn eine Instanz, auf der ein Cloud Volumes ONTAP Node ausgeführt wird, ausfällt. Alle Daten sind nativ von außerhalb des VPC zugänglich.
+Die Implementierung einer HA-Konfiguration in einer einzelnen Verfügbarkeitszone (AZ) kann die Hochverfügbarkeit Ihrer Daten gewährleisten, wenn eine Instanz, auf der ein Cloud Volumes ONTAP Node ausgeführt wird, ausfällt. Alle Daten sind nativ von außerhalb des VPC zugänglich.
 
 
 NOTE: BlueXP erstellt eine https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS Spread-Platzierungsgruppe"^] Und startet die beiden HA-Nodes in dieser Platzierungsgruppe. Die Platzierungsgruppe verringert das Risiko gleichzeitiger Ausfälle, indem sie die Instanzen auf unterschiedliche zugrunde liegende Hardware verteilt. Diese Funktion verbessert die Redundanz aus Sicht des Computing und nicht aus Sicht des Festplattenausfalls.
@@ -148,6 +148,51 @@ Für iSCSI verwendet Cloud Volumes ONTAP Multipath I/O (MPIO) und Asymmetric Log
 NOTE: Informationen darüber, welche spezifischen Host-Konfigurationen ALUA unterstützen, finden Sie im http://mysupport.netapp.com/matrix["NetApp Interoperabilitäts-Matrix-Tool"^] Sowie das Installations- und Setup-Handbuch für Host Utilities für Ihr Host-Betriebssystem.
 
 Bei NAS-Konfigurationen können die Daten-IP-Adressen zwischen HA-Nodes migriert werden, wenn Fehler auftreten. Dadurch wird der Client-Zugriff auf Storage gewährleistet.
+
+
+
+=== AWS lokale Zonen
+
+AWS Local Zones sind eine Infrastrukturimplementierung, bei der Storage, Computing, Datenbanken und andere ausgewählte AWS Services in der Nähe von großen Städten und Branchenbereichen liegen. Mit AWS Local Zones bringen Sie AWS Services näher und verbessern so die Latenz Ihrer Workloads und pflegen Datenbanken lokal.
+
+Sie können eine einzelne AZ- oder mehrere AZ-Konfiguration in AWS Local Zones implementieren.
+
+
+
+==== Beispielkonfigurationen für die AWS Local Zone
+
+Im Folgenden sind Beispielkonfigurationen aufgeführt:
+
+* Einzelne Verfügbarkeitszone: Beide Clusterknoten und der Mediator befinden sich in derselben lokalen Zone.
+* Verfügbarkeitszonen
+In Konfigurationen mit mehreren Verfügbarkeitszonen gibt es drei Instanzen, zwei Nodes und einen Mediator. Eine der drei Instanzen muss sich in einer separaten Zone befinden. Sie können wählen, wie Sie dies einrichten.
++
+Hier sind drei Beispielkonfigurationen:
+
++
+** Jeder Clusterknoten befindet sich in einer anderen lokalen Zone und der Mediator befindet sich in einer öffentlichen Verfügbarkeitszone.
+** Ein Clusterknoten in einer lokalen Zone, der Mediator in einer lokalen Zone und der zweite Clusterknoten befinden sich in einer Verfügbarkeitszone.
+** Jeder Clusterknoten und der Mediator befinden sich in separaten lokalen Zonen.
+
+
+
+
+
+
+==== Unterstützte Festplatten- und Instanztypen
+
+Der einzige unterstützte Festplattentyp ist GP2.
+
+Die folgenden EC2 Instanztypen mit den Größen xlarge bis 4xlarge werden derzeit unterstützt:
+
+* M5
+* C5
+* C5d
+* R5
+* R5d
+
+
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["In AWS finden Sie die neuesten und vollständigen Details zu unterstützten EC2-Instanztypen in lokalen Zonen"^].
 
 
 
