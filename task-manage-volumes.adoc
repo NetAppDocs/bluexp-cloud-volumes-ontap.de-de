@@ -258,7 +258,7 @@ Die erweiterten Informationen sollten beispielsweise Folgendes enthalten: Aggreg
 . Identifizieren Sie ein oder mehrere Volumes, die aus dem Aggregat verschoben werden sollen:
 +
 .. Klicken Sie in der Arbeitsumgebung auf die Registerkarte *Aggregate*.
-.. Navigieren Sie zur gewünschten Aggregat-Kachel, und klicken Sie dann auf *... (Ellipsensymbol) > Aggregatdetails anzeigen*.
+.. Navigieren Sie zur gewünschten Aggregat-Kachel, und klicken Sie dann auf *... (Ellipsen-Symbol) > Aggregatdetails anzeigen*.
 .. Überprüfen Sie auf der Registerkarte „Übersicht“ des Bildschirms „Aggregatdetails“ die Größe jedes Volumes, und wählen Sie ein oder mehrere Volumes aus dem Aggregat aus.
 +
 Sie sollten Volumes auswählen, die groß genug sind, um Speicherplatz im Aggregat freizugeben, damit Sie in Zukunft zusätzliche Kapazitätsprobleme vermeiden können.
@@ -339,7 +339,7 @@ Das Verschieben von zwei oder mehr Volumes ist notwendig, um Kapazitätsprobleme
 . Überprüfen Sie, ob ein vorhandenes Aggregat über die verfügbare Kapazität für die Volumes verfügt, die Sie verschieben müssen:
 +
 .. Klicken Sie in der Arbeitsumgebung auf die Registerkarte *Aggregate*.
-.. Navigieren Sie zur gewünschten Aggregat-Kachel, und klicken Sie dann auf *... (Ellipsensymbol) > Aggregatdetails anzeigen*.
+.. Navigieren Sie zur gewünschten Aggregat-Kachel, und klicken Sie dann auf *... (Ellipsen-Symbol) > Aggregatdetails anzeigen*.
 .. Zeigen Sie unter der Kachel „Aggregat“ die verfügbare Kapazität an (bereitgestellte Größe minus genutzte Aggregatkapazität).
 +
 image::screenshot_aggr_capacity.png[Screenshot Aggr Kapazität]
@@ -348,7 +348,7 @@ image::screenshot_aggr_capacity.png[Screenshot Aggr Kapazität]
 
 . Fügen Sie bei Bedarf Festplatten zu einem vorhandenen Aggregat hinzu:
 +
-.. Wählen Sie das Aggregat aus und klicken Sie dann auf *... (Ellipsensymbol) > Datenträger hinzufügen*.
+.. Wählen Sie das Aggregat aus und klicken Sie dann auf *... (Ellipsen-Symbol) > Datenträger hinzufügen*.
 .. Wählen Sie die Anzahl der hinzuzufügenden Festplatten aus, und klicken Sie dann auf *Hinzufügen*.
 
 
