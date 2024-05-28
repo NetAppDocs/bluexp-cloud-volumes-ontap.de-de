@@ -147,17 +147,21 @@ ifdef::aws[]
 
 * Drei Festplatten pro Node für Boot-, Root- und Core-Daten:
 +
-** 45 gib io1 Festplatte für Boot-Daten
+** 47 gib io1-Festplatte für Boot-Daten
 ** 140 gib gp3-Festplatte für Stammdaten
 ** 540 gib gp2-Festplatte für Core-Daten
 
+
+* Bei HA-Paaren sind zwei st1-EBS-Volumes für die Mediator-Instanz, die ca. 8 gib und 4 gib betragen, sowie eine zusätzliche gp3-Festplatte mit 140 gib in jedem Node, die eine Kopie der Root-Daten des anderen Node enthalten soll.
++
+
+NOTE: In einigen Zonen kann der verfügbare EBS-Festplattentyp nur gp2 sein.
 
 * Ein EBS-Snapshot für jede Boot- und Root-Festplatte
 +
 
 NOTE: Snapshots werden beim Neustart automatisch erstellt.
 
-* Bei HA-Paaren ist ein EBS-Volume für die Mediator-Instanz, das ca. 8 gib beträgt
 * Wenn Sie die Datenverschlüsselung in AWS mithilfe des KMS (Key Management Service) aktivieren, werden sowohl Boot- als auch Root-Festplatten für Cloud Volumes ONTAP verschlüsselt. Dazu gehört die Boot-Festplatte für die Instanz des Mediators in einem HA-Paar. Die Laufwerke werden über das CMK verschlüsselt, das Sie bei der Erstellung der Arbeitsumgebung auswählen.
 
 

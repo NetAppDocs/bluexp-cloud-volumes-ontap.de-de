@@ -681,11 +681,9 @@
   <block id="e5288c9c9df3485512af1ad66920a6f4" category="section-title">Interne Festplatten für Systemdaten</block>
   <block id="9f3e8e28b8288d2d66ebc481e1f389d6" category="paragraph">Neben dem Speicher für Benutzerdaten kauft BlueXP auch Cloud-Speicher für Systemdaten ein.</block>
   <block id="6fa32f5b70701d0a688b6541beb74a09" category="list-text">Drei Festplatten pro Node für Boot-, Root- und Core-Daten:</block>
-  <block id="0916ca1fe06d26f579d29ce41bba24aa" category="list-text">45 gib io1 Festplatte für Boot-Daten</block>
   <block id="98e2070bab7b3b5d7d8df93c31a0d604" category="list-text">140 gib gp3-Festplatte für Stammdaten</block>
   <block id="465787191a1ad58255cf080d2465757a" category="list-text">540 gib gp2-Festplatte für Core-Daten</block>
   <block id="8cf431bb515ae46f1fb5484e8bb27744" category="list-text">Ein EBS-Snapshot für jede Boot- und Root-Festplatte</block>
-  <block id="0d9e99df90b8b75f4e0d96d0d4445a8c" category="list-text">Bei HA-Paaren ist ein EBS-Volume für die Mediator-Instanz, das ca. 8 gib beträgt</block>
   <block id="8d4073fa4a8e186f65d9241d17413d18" category="list-text">Wenn Sie die Datenverschlüsselung in AWS mithilfe des KMS (Key Management Service) aktivieren, werden sowohl Boot- als auch Root-Festplatten für Cloud Volumes ONTAP verschlüsselt. Dazu gehört die Boot-Festplatte für die Instanz des Mediators in einem HA-Paar. Die Laufwerke werden über das CMK verschlüsselt, das Sie bei der Erstellung der Arbeitsumgebung auswählen.</block>
   <block id="5170b265fcdfa9d59388a2d953d0277b" category="admonition">In AWS befindet sich NVRAM auf der Boot-Festplatte.</block>
   <block id="5639612d2f12168c8a83a7d9f034340d" category="section-title">Azure (Single Node)</block>
@@ -1561,9 +1559,7 @@
   <block id="698f8a0a0a3a85268f0cd5c4cea8ba28" category="list-text">Eine Mediatorinstanz, die einen Kommunikationskanal zwischen den Nodes bereitstellt, um die Storage-Übernahme und die Giveback-Prozesse zu unterstützen.</block>
   <block id="cf7f72fb2e3e5a9df104130ba81c194e" category="section-title">Mediator</block>
   <block id="fa8a1c8a7fb2a9d0529dc6ce8d75f99e" category="paragraph">Hier einige wichtige Details zur Mediator-Instanz in AWS:</block>
-  <block id="ec078029075995846064f8135ac001c7" category="list-text">t2-Mikro</block>
   <block id="2d4aef30a49a581a6ed89ce840054235" category="list-text">Festplatten</block>
-  <block id="2928ec952c28834c42708b6033983463" category="list-text">Eine magnetische EBS-Festplatte, die etwa 8 gib beträgt.</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="list-text">Betriebssystem</block>
   <block id="e49af72440176f7b22d853a9c2b29440" category="list-text">Debian 11</block>
   <block id="e57bd12603acfd3bc113dc88ee5c10d3" category="admonition">Für Cloud Volumes ONTAP 9.10.0 und früher wurde Debian 10 auf dem Mediator installiert.</block>
@@ -5282,4 +5278,9 @@ In Konfigurationen mit mehreren Verfügbarkeitszonen gibt es drei Instanzen, zwe
   <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Unterstützung von Amazon Web Services Local Zones</block>
   <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">Für Cloud Volumes ONTAP HA-Implementierungen ist jetzt Unterstützung für AWS Local Zones verfügbar. AWS Local Zones sind eine Infrastrukturimplementierung, bei der Storage, Computing, Datenbanken und andere ausgewählte AWS Services in der Nähe von großen Städten und Branchenbereichen liegen.</block>
   <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">Weitere Informationen zu AWS Local Zones mit HA-Implementierungen finden Sie unter <block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>.</block>
+  <block id="d4d3c7dc9c12800024fafcb2bb41c04f" category="list-text">47 gib io1-Festplatte für Boot-Daten</block>
+  <block id="f4be35522ac705cbe795ea064998a28b" category="list-text">Bei HA-Paaren sind zwei st1-EBS-Volumes für die Mediator-Instanz, die ca. 8 gib und 4 gib betragen, sowie eine zusätzliche gp3-Festplatte mit 140 gib in jedem Node, die eine Kopie der Root-Daten des anderen Node enthalten soll.</block>
+  <block id="10e3d4119b538d4a3b1943da285229fc" category="admonition">In einigen Zonen kann der verfügbare EBS-Festplattentyp nur gp2 sein.</block>
+  <block id="0c14d315376234aa666bf4213aa88aec" category="list-text">t3-Micro</block>
+  <block id="5dde3a7c362c6b03a35cf3c0b3374d14" category="list-text">Zwei st1-Festplatten mit 8 gib und 4 gib</block>
 </blocks>

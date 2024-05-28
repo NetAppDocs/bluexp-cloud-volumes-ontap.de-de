@@ -32,8 +32,8 @@ In AWS umfassen die Cloud Volumes ONTAP HA-Konfigurationen die folgenden Kompone
 
 Hier einige wichtige Details zur Mediator-Instanz in AWS:
 
-Instanztyp:: t2-Mikro
-Festplatten:: Eine magnetische EBS-Festplatte, die etwa 8 gib beträgt.
+Instanztyp:: t3-Micro
+Festplatten:: Zwei st1-Festplatten mit 8 gib und 4 gib
 Betriebssystem:: Debian 11
 +
 --
