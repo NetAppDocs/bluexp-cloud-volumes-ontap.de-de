@@ -311,7 +311,7 @@ Einige AWS lokale Zonen sind verfügbar.
 Bevor Sie AWS Local Zones verwenden können, müssen Sie lokale Zonen aktivieren und in Ihrem AWS-Konto ein Subnetz in der lokalen Zone erstellen. Folgen Sie den Schritten *in einer AWS Local Zone* und *Extend Your Amazon VPC to the Local Zone* im link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["AWS Tutorial „erste Schritte mit der Bereitstellung von Anwendungen mit niedriger Latenz mit AWS Local Zones"^].
 
 +
-Wenn Sie eine Connector-Version 3.9.36 oder niedriger ausführen, müssen Sie die folgende Berechtigung zur AWS-Connector-Rolle in der AWS EC2-Konsole hinzufügen: DescribeAvailability Zones.
+Wenn Sie eine Connector-Version 3.9.36 oder niedriger ausführen, müssen Sie die folgende Berechtigung zur AWS Connector-Rolle in der AWS EC2-Konsole hinzufügen: DescribeAvailability Zones.
 
 . *Details und Anmeldeinformationen*: Optional können Sie die AWS-Anmeldeinformationen und das Abonnement ändern, einen Namen der Arbeitsumgebung eingeben, bei Bedarf Tags hinzufügen und dann ein Passwort eingeben.
 +

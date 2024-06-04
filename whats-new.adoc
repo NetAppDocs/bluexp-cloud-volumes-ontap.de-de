@@ -28,6 +28,9 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 Für Cloud Volumes ONTAP HA-Implementierungen ist jetzt Unterstützung für AWS Local Zones verfügbar. AWS Local Zones sind eine Infrastrukturimplementierung, bei der Storage, Computing, Datenbanken und andere ausgewählte AWS Services in der Nähe von großen Städten und Branchenbereichen liegen.
 
+
+NOTE: AWS Local Zones werden beim Einsatz von BlueXP im Standardmodus unterstützt. Derzeit werden AWS Lokale Zonen nicht unterstützt, wenn BlueXP im eingeschränkten Modus oder im privaten Modus verwendet wird.
+
 Weitere Informationen zu AWS Local Zones mit HA-Implementierungen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWS lokale Zonen"^].
 
 

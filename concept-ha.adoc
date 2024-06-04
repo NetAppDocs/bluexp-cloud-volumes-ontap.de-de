@@ -158,6 +158,9 @@ AWS Local Zones sind eine Infrastrukturimplementierung, bei der Storage, Computi
 Sie können eine einzelne AZ- oder mehrere AZ-Konfiguration in AWS Local Zones implementieren.
 
 
+NOTE: AWS Local Zones werden beim Einsatz von BlueXP im Standardmodus unterstützt. Derzeit werden AWS Lokale Zonen nicht unterstützt, wenn BlueXP im eingeschränkten Modus oder im privaten Modus verwendet wird.
+
+
 
 ==== Beispielkonfigurationen für die AWS Local Zone
 
