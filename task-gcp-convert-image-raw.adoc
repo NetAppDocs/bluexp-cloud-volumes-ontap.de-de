@@ -43,7 +43,7 @@ Der Benutzer/das Konto muss über Berechtigungen verfügen, um auf den gewünsch
 
 *Export Google Cloud Bild mit gcloud*
 
-.Klicken Sie auf, um das Skript anzuzeigen
+.Klicken Sie zum Anzeigen auf
 [%collapsible]
 ====
 [source]

@@ -22,7 +22,7 @@ NOTE: Die OpenSSL-Befehle zur Validierung des Images sind mit Linux, Mac OS und 
 .Schritte
 . Überprüfen Sie das Zertifikat mit OpenSSL.
 +
-.Klicken Sie auf, um das Skript anzuzeigen
+.Klicken Sie zum Anzeigen auf
 [%collapsible]
 ====
 [listing]
@@ -133,7 +133,7 @@ Certificate-GCP-CVO-20230119-0XXXXX.pem: OK
 . Extrahieren Sie den öffentlichen Schlüssel mit OpenSSL aus dem Zertifikat.
 . Entschlüsseln Sie die Signatur mit dem extrahierten öffentlichen Schlüssel und überprüfen Sie den Inhalt der heruntergeladenen Datei Disk.RAW.
 +
-.Klicken Sie auf, um das Skript anzuzeigen
+.Klicken Sie zum Anzeigen auf
 [%collapsible]
 ====
 [listing]

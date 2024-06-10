@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: reference-image-verification-links.html 
+keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, reference, Python, OpenSSL, 
+summary: Referenz-Links Azure-Image-Verifizierung 
+---
+= Weitere Informationen zur Azure-Image-Verifizierung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Weitere Informationen zur Azure-Image-Verifizierung finden Sie unter den folgenden Links. Die unten stehenden Links führen Sie zu Websites, die nicht von NetApp stammen.
+
+
+
+== Quellen
+
+* https://pagefault.blog/2019/04/22/how-to-sign-and-verify-using-openssl/["Page Fault Blog: Wie signieren und überprüfen Sie mit OpenSSL"^]
+* https://docs.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-machine-marketplace-image["Erstellen Sie mit Azure Marketplace Image ein VM-Image für Ihre Azure Stack Edge Pro GPU im Microsoft Learn"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/scripts/copy-managed-disks-vhd-to-storage-account["Exportieren/Kopieren einer verwalteten Festplatte in ein Storage-Konto mithilfe der Azure CLI in Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/azure/cloud-shell/quickstart["Azure Cloud Shell Quickstart – Bash Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["So installieren Sie die Azure CLI von Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/storage/blob/copy?view=azure-cli-latest#az-storage-blob-copy-start["az Storage Blob copy – Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli["Anmelden mit Azure CLI – Anmeldung und Authentifizierung – Microsoft Learn"^]
+

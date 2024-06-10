@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: concept-azure-file-sig-verify.html 
+keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, 
+summary: Informationen zur Überprüfung einer exportierten VHD-Dateisignatur über das Cloud Volumes ONTAP-Tool für die Digest-Datei. 
+---
+= Überprüfung der Dateisignatur
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bei der Azure-Image-Verifizierung wird mithilfe der Hash-Funktion ein Digest aus der VHD-Datei mit den führenden 1 MB und dem endenden 512B-Striping generiert. Um die Signaturverfahren anzupassen, wird SHA256 zum Hash verwendet. Sie müssen die führenden 1MB und die letzten 512B aus der VHD-Datei entfernen und dann den verbleibenden Teil der VHD-Datei überprüfen.
+
+
+
+== Zusammenfassung des Dateisignaturüberprüfungs-Workflows
+
+Im Folgenden finden Sie eine Übersicht über den Prozess zur Überprüfung der Dateisignatur.
+
+image::graphic_azure_check_signature.png[Signatur der Azur-Grafik-Prüfung]
+
+* Laden Sie die Datei Azure Image Digest von der herunter https://mysupport.netapp.com/site/["NetApp Support Website"^] Und extrahieren Sie die Digest-Datei(.SIG), die Zertifikatdatei des öffentlichen Schlüssels(.pem) und die Zertifikatdatei der Kette(.pem).
++
+Siehe https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Azure Image Digest Datei herunterladen"^] Finden Sie weitere Informationen.
+
+* Überprüfen Sie die Vertrauenskette.
+* Extrahieren Sie den öffentlichen Schlüssel(.Pub) aus dem öffentlichen Schlüsselzertifikat(.pem).
+* Der extrahierte öffentliche Schlüssel wird verwendet, um die Digest-Datei zu entschlüsseln. Das Ergebnis wird dann mit einem neuen unverschlüsselten Digest der aus der Image-Datei erstellten temporären Datei mit führenden 1MB und enden 512 Bytes entfernt verglichen.
++
+Dieser Schritt wird durch den folgenden Befehl openssl erreicht.
+
++
+** Die allgemeine CLI-Anweisung wird wie folgt angezeigt:
++
+[listing]
+----
+openssl dgst -verify <public_key> -keyform <form> <hash_function>
+-signature <digest_file> -binary <temporary_file>
+----
+** OpenSSL CLI-Tool gibt eine "Verified OK"-Meldung, wenn beide Dateien übereinstimmen und "Verification Failure", wenn sie nicht übereinstimmen.
+
+
+

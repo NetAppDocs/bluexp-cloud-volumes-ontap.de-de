@@ -28,7 +28,7 @@ Im Folgenden finden Sie eine Übersicht über den Workflow zur Verifizierung von
 ** Zertifikat mit dem öffentlichen Schlüssel (.pem)
 ** Zertifikatskette (.pem)
 +
-image:screenshot_cloud_volumes_ontap_tar.gz.png["Ein Bild, das die NSS-Seite mit den heruntergeladenen Digest-Dateien tar.gz anzeigt"]
+image::screenshot_cloud_volumes_ontap_tar.gz.png[Screenshot Cloud Volumes ONTAP tar.gz]
 
 
 
@@ -40,7 +40,7 @@ image:screenshot_cloud_volumes_ontap_tar.gz.png["Ein Bild, das die NSS-Seite mit
 ** Erstellen Sie einen Digest der heruntergeladenen Datei Disk.RAW
 ** Vergleichen Sie die beiden Digest-Dateien zur Validierung
 +
-image:graphic_azure_check_signature.png["Ein Bild, das den Überprüfungsprozess der Bildsignatur anzeigt"]
+image::graphic_azure_check_signature.png[Signatur der Azur-Grafik-Prüfung]
 
 
 
