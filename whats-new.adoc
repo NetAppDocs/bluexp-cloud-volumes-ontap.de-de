@@ -89,7 +89,7 @@ Sie können kein Volume mehr aus einer Vorlage erstellen oder die Tags eines Vol
 
 In AWS unterstützen Cloud Volumes ONTAP, der Mediator und der Connector nun den Amazon Instant Metadata Service v2 (IMDSv2) für alle Funktionen. IMDSv2 bietet einen verbesserten Schutz vor Schwachstellen. Bisher wurde nur IMDSv1 unterstützt.
 
-Falls von Ihren Sicherheitsrichtlinien gefordert, können Sie Ihre EC2-Instanzen für die Verwendung von IMDSv2 konfigurieren. Anweisungen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["BlueXP Installations- und Administrationsdokumentation für das Management vorhandener Connectors"^].
+Falls von Ihren Sicherheitsrichtlinien gefordert, können Sie Ihre EC2-Instanzen für die Verwendung von IMDSv2 konfigurieren. Anweisungen finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["BlueXP Installations- und Administrationsdokumentation für das Management vorhandener Connectors"^].
 
 
 
@@ -566,7 +566,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes
 Cloud Volumes ONTAP wird jetzt in allen Cloud-Umgebungen unterstützt, die vollständig vom Internet isoliert sind. In diesen Umgebungen wird nur Node-basierte Lizenzierung (BYOL) unterstützt. Kapazitätsbasierte Lizenzierung wird nicht unterstützt. Um zu beginnen, installieren Sie die Connector Software manuell, melden Sie sich bei der BlueXP Konsole an, die auf dem Connector ausgeführt wird, fügen Sie Ihre BYOL-Lizenz zur BlueXP Digital Wallet hinzu und implementieren Sie dann Cloud Volumes ONTAP.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Installieren Sie den Connector an einem Ort ohne Internetzugang"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["Greifen Sie über den Connector auf die BlueXP Konsole zu"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["Greifen Sie über den Connector auf die BlueXP Konsole zu"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Fügen Sie eine nicht zugewiesene Lizenz hinzu"^]
 
 
