@@ -24,8 +24,8 @@ Cloud Volumes ONTAP-Daten werden in Azure automatisch verschlüsselt https://azu
 
 Wenn Sie einen vom Kunden gemanagten Schlüssel mit Cloud Volumes ONTAP verwenden möchten, müssen Sie folgende Schritte ausführen:
 
-. Aus Azure erstellen Sie einen Schlüsselspeicher und generieren Sie anschließend einen Schlüssel in diesem Vault
-. Verwenden Sie für BlueXP die API, um eine Cloud Volumes ONTAP-Arbeitsumgebung zu erstellen, in der der Schlüssel zum Einsatz kommt
+. Aus Azure erstellen Sie einen Schlüsselspeicher und generieren Sie anschließend einen Schlüssel in diesem Vault.
+. Verwenden Sie für BlueXP die API, um eine Cloud Volumes ONTAP-Arbeitsumgebung zu erstellen, in der der Schlüssel zum Einsatz kommt.
 
 
 
@@ -144,7 +144,11 @@ Beachten Sie die folgenden Anforderungen für den Schlüsselspeicher:
 +
 *** *Soft-delete* (diese Option ist standardmäßig aktiviert, muss aber nicht_ deaktiviert sein)
 *** *Schutz löschen*
-*** *Azure Festplattenverschlüsselung für Volume Encryption* (für Single Node-Systeme oder HA-Paare in mehreren Zonen)
+*** *Azure Festplattenverschlüsselung für Volume-Verschlüsselung* (für Systeme mit einem Node, HA-Paare in mehreren Zonen und HA-Single-AZ-Implementierungen)
++
+
+NOTE: Die Verwendung der vom Kunden gemanagten Azure Verschlüsselungsschlüssel ist abhängig davon, dass die Azure Disk Encryption für den Schlüsselspeicher aktiviert ist.
+
 
 
 ** Die folgende Option sollte aktiviert sein, wenn Sie eine vom Benutzer zugewiesene verwaltete Identität erstellt haben:

@@ -726,8 +726,6 @@
   <block id="56d8602584b412c6fa4268dd3cbf0ccb" category="section-title">Übersicht über die Datenverschlüsselung</block>
   <block id="a9048454eade4a62fb2113428b74129f" category="paragraph">Cloud Volumes ONTAP-Daten werden in Azure automatisch verschlüsselt<block ref="7c6c7ca9180a9433e704ac02b33a8ed3" category="inline-link-rx"></block>. Bei der Standardimplementierung wird ein von Microsoft verwalteter Schlüssel verwendet. Es ist keine Einrichtung erforderlich.</block>
   <block id="15a37269c447b60002a307d0f82d2bd4" category="paragraph">Wenn Sie einen vom Kunden gemanagten Schlüssel mit Cloud Volumes ONTAP verwenden möchten, müssen Sie folgende Schritte ausführen:</block>
-  <block id="82d5594584c34cedea52f390f69b9b89" category="list-text">Aus Azure erstellen Sie einen Schlüsselspeicher und generieren Sie anschließend einen Schlüssel in diesem Vault</block>
-  <block id="ec0c586d512637babfaca236d1a1cc87" category="list-text">Verwenden Sie für BlueXP die API, um eine Cloud Volumes ONTAP-Arbeitsumgebung zu erstellen, in der der Schlüssel zum Einsatz kommt</block>
   <block id="7c198fa2e871a635fde91e3430fc340b" category="section-title">Rotation von Schlüsseln</block>
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">Wenn Sie eine neue Version Ihres Schlüssels erstellen, verwendet Cloud Volumes ONTAP automatisch die neueste Schlüsselversion.</block>
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">Verschlüsselte Daten</block>
@@ -3633,7 +3631,6 @@
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXP unterstützt S3 nicht mit Cloud Volumes ONTAP</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP unterstützt keine Disaster Recovery für Storage VMs</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">Was Sie benötigen</block>
-  <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">*Azure Festplattenverschlüsselung für Volume Encryption* (für Single Node-Systeme oder HA-Paare in mehreren Zonen)</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">Erforderliche Google Cloud Berechtigungen</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Was ist Flash Cache?</block>
   <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Einen Konnektor erstellen</block>
@@ -5399,4 +5396,6 @@ Andernfalls wird „Überprüfungsfehler“ angezeigt.</block>
   <block id="c803b37d9c2a34c73d0b86de8cae9ac8" category="paragraph"><block ref="c803b37d9c2a34c73d0b86de8cae9ac8" category="inline-link-rx"></block></block>
   <block id="bbe2b5062d2c900ca465f9eb12592a92" category="paragraph">Falls von Ihren Sicherheitsrichtlinien gefordert, können Sie Ihre EC2-Instanzen für die Verwendung von IMDSv2 konfigurieren. Anweisungen finden Sie unter<block ref="a1765820625d1912b35ab79a3305fdea" category="inline-link-rx"></block>.</block>
   <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
+  <block id="312fcba055a7ab6b8314cb541c1f1b4f" category="list-text">*Azure Festplattenverschlüsselung für Volume-Verschlüsselung* (für Systeme mit einem Node, HA-Paare in mehreren Zonen und HA-Single-AZ-Implementierungen)</block>
+  <block id="4b63d3239df3134d1faedabb0e8eb859" category="admonition">Die Verwendung der vom Kunden gemanagten Azure Verschlüsselungsschlüssel ist abhängig davon, dass die Azure Disk Encryption für den Schlüsselspeicher aktiviert ist.</block>
 </blocks>
