@@ -54,7 +54,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azur
 
 Mit der Dimensionierung Ihres Cloud Volumes ONTAP Systems können Sie die Anforderungen an Performance und Kapazität erfüllen. Bei der Auswahl von VM-Typ, Festplattentyp und Festplattengröße sind einige wichtige Punkte zu beachten:
 
-Typ der virtuellen Maschine:: Sehen Sie sich die unterstützten Typen von Virtual Machines in an http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Und überprüfen Sie anschließend Details zu jedem unterstützten VM-Typ. Beachten Sie, dass jeder VM-Typ eine bestimmte Anzahl an Datenfestplatten unterstützt.
+Typ der virtuellen Maschine:: Sehen Sie sich die unterstützten Typen von Virtual Machines in an https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Und überprüfen Sie anschließend Details zu jedem unterstützten VM-Typ. Beachten Sie, dass jeder VM-Typ eine bestimmte Anzahl an Datenfestplatten unterstützt.
 +
 --
 * https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv2-series["Azure-Dokumentation: Allgemeine Größe virtueller Maschinen"^]
