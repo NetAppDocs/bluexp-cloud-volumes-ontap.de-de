@@ -205,7 +205,6 @@ Die folgenden Regionen unterstützen jetzt hochverfügbare Implementierungen mit
 * Schweiz Nord
 * Südafrika, Norden
 * Vereinigte Arabische Emirate Nord
-* China Nord 3
 
 
 Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].
