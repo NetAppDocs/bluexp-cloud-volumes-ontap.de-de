@@ -960,9 +960,7 @@ Wenn BlueXP den Mediator für ein HA-Paar aktualisiert, überprüft er nun, ob e
 
 === Registerkarte K8s wurde entfernt
 
-Die Registerkarte K8s wurde in einer früheren Version veraltet und wurde jetzt entfernt. Wenn Sie Kubernetes mit Cloud Volumes ONTAP verwenden möchten, können Sie Managed-Kubernetes-Cluster als Arbeitsumgebung für erweitertes Datenmanagement auf den Canvas hinzufügen.
-
-https://docs.netapp.com/us-en/bluexp-kubernetes/concept-kubernetes.html["Erfahren Sie mehr über das Management von Kubernetes-Daten in BlueXP"^]
+Die Registerkarte „K8s“ wurde in einer vorherigen Version veraltet und wurde jetzt entfernt.
 
 
 

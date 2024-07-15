@@ -3117,8 +3117,6 @@
   <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">Verbesserung der Mediator-Upgrades</block>
   <block id="17cc55e2cfcef39231025dad282b0760" category="paragraph">Wenn BlueXP den Mediator für ein HA-Paar aktualisiert, überprüft er nun, ob ein neues Mediator-Image verfügbar ist, bevor die Boot-Festplatte gelöscht wird. Durch diese Änderung wird sichergestellt, dass der Mediator weiterhin erfolgreich arbeiten kann, wenn das Upgrade nicht erfolgreich durchgeführt wird.</block>
   <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">Registerkarte K8s wurde entfernt</block>
-  <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">Die Registerkarte K8s wurde in einer früheren Version veraltet und wurde jetzt entfernt. Wenn Sie Kubernetes mit Cloud Volumes ONTAP verwenden möchten, können Sie Managed-Kubernetes-Cluster als Arbeitsumgebung für erweitertes Datenmanagement auf den Canvas hinzufügen.</block>
-  <block id="998eb27e3e05260958103da3d27eb4ac" category="inline-link">Erfahren Sie mehr über das Management von Kubernetes-Daten in BlueXP</block>
   <block id="7475abfb4039c00bb03fd05d6d792b3d" category="section-title">Jahresvertrag in Azure</block>
   <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">Die Essentials- und Professional-Pakete sind ab sofort im Rahmen eines Jahres in Azure erhältlich. Sie können sich an Ihren NetApp Ansprechpartner wenden, um einen Jahresvertrag zu abschließen. Der Vertrag ist als Privatangebot im Azure Marketplace erhältlich.</block>
   <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">Weitere Informationen zur Lizenzierung</block>
@@ -4477,7 +4475,6 @@ Wenn eine Lizenz direkt über NetApp (BYOL) erworben wird, ist kein AWS Abonneme
   <block id="8ade4dc1ca161da57728a6bf29be1db9" category="paragraph">Stellen Sie sicher, dass Sie diese Berechtigungen für jeden Satz von AWS Zugangsdaten bereitstellen, den Sie BlueXP hinzugefügt haben.<block ref="64ae4f789cd26cb4c9b5096ed42d2482" category="inline-link-rx"></block>.</block>
   <block id="ac1bc6f2b2358438076867200e537370" category="paragraph"><block ref="7abbb63a2cd3cab475ace2a577aa3de3" category="inline-link-rx"></block>.</block>
   <block id="07e4a4acdb333fe3d7b8dac1958d6459" category="list-text"><block ref="07e4a4acdb333fe3d7b8dac1958d6459" category="inline-link-rx"></block></block>
-  <block id="755c513b451157c807794bf1213fd1f9" category="paragraph"><block ref="755c513b451157c807794bf1213fd1f9" category="inline-link-rx"></block></block>
   <block id="73f030bd359abb41dc1089c470531542" category="paragraph"><block ref="37698926d26a2683d3b5c90c9b2406a6" category="inline-link-rx"></block>.</block>
   <block id="2e56aeba3c1fc24d42b0f15df12a08f9" category="paragraph"><block ref="5d4901194aa2380bf45bcc72c63f2763" category="inline-link-rx"></block>.</block>
   <block id="7abee0635d8cb81d3ae89fd8d82a442a" category="paragraph"><block ref="7abee0635d8cb81d3ae89fd8d82a442a" category="inline-image-macro-rx" type="image"></block></block>
@@ -5424,4 +5421,5 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="543cc078f66d581004934cfaa8988453" category="list-text">*ONTAP-Version*: Stellen Sie sicher, dass die ONTAP-Version Ihres Cloud Volumes ONTAP-Systems FlexCache mit verschlüsselten Volumes unterstützt. Weitere Informationen finden Sie in der aktuellsten<block ref="9ec4657ceea5a1d054b2b0fa2482a129" category="inline-link-rx"></block> Version oder der Kompatibilitätsmatrix.</block>
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">*Netzwerkkonfiguration*: Stellen Sie sicher, dass die Netzwerkkonfiguration eine nahtlose Kommunikation zwischen dem Ursprungs-Volume und dem FlexCache-Volume ermöglicht. Dazu gehören das richtige Routing und die DNS-Auflösung in einer Cloud-Umgebung.</block>
   <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">Erstellen Sie ein FlexCache-Volume auf Ihrem Cloud Volumes ONTAP-System mit einem verschlüsselten Quell-Volume. Detaillierte Schritte und weitere Überlegungen finden Sie in den folgenden Abschnitten:</block>
+  <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">Die Registerkarte „K8s“ wurde in einer vorherigen Version veraltet und wurde jetzt entfernt.</block>
 </blocks>
