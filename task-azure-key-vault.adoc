@@ -31,6 +31,7 @@ Bei Verwendung von AKV ist zu beachten, dass standardmäßig eine LIF der Daten-
 .Einschränkungen
 * AKV kann nur auf einer Daten-SVM konfiguriert werden
 * NAE kann nicht mit AKV verwendet werden. NAE erfordert einen extern unterstützten KMIP-Server.
+* Cloud Volumes ONTAP-Knoten fragen AKV alle 15 Minuten ab, um die Zugänglichkeit und Verfügbarkeit der Schlüssel zu bestätigen. Dieser Abfragezeitraum ist nicht konfigurierbar, und nach vier aufeinanderfolgenden Fehlern beim Abfrageversuch (insgesamt 1 Stunde) werden die Volumes offline gestellt.
 
 
 

@@ -215,22 +215,6 @@ TIP: Wenn Sie ein HA-Paar verwenden, benötigt der HA Mediator keinen Outbound-I
 
 Wenn Sie von BlueXP darüber informiert werden, dass AutoSupport-Meldungen nicht gesendet werden können, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Fehler bei der AutoSupport Konfiguration beheben"].
 
-Firewall-Regeln:: Sie müssen keine Firewall-Regeln erstellen, weil BlueXP das für Sie tut. Wenn Sie Ihre eigene verwenden müssen, beachten Sie die unten aufgeführten Firewall-Regeln.
-+
---
-Beachten Sie, dass für eine HA-Konfiguration zwei Gruppen von Firewall-Regeln erforderlich sind:
-
-* Ein Regelsatz für HA-Komponenten in VPC-0. Diese Regeln ermöglichen den Datenzugriff auf Cloud Volumes ONTAP. <<Firewall-Regeln,Weitere Informationen .>>.
-* Weiterer Regelsatz für HA-Komponenten in VPC-1, VPC-2 und VPC-3. Diese Regeln sind für die Kommunikation zwischen den HA-Komponenten ein- und ausgehender Anruf offen. <<Firewall-Regeln,Weitere Informationen .>>.
-
-
---
-
-
-Wenn kalte Daten in einen Google Cloud Storage Bucket verschoben werden sollen, muss das Subnetz, in dem Cloud Volumes ONTAP residiert, für privaten Google Zugriff konfiguriert sein (wenn Sie ein HA-Paar verwenden, ist dies das Subnetz in VPC-0). Anweisungen finden Sie unter https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud-Dokumentation: Privaten Google Access konfigurieren"^].
-
-Weitere Schritte zur Einrichtung von Daten-Tiering in BlueXP finden Sie unter link:task-tiering.html["Tiering von kalten Daten auf kostengünstigen Objekt-Storage"].
-
 
 
 === Verbindungen zu ONTAP Systemen in anderen Netzwerken
