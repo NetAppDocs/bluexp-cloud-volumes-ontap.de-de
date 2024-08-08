@@ -52,7 +52,7 @@ Sie können NetApp Verschlüsselungslösungen mit nativer Verschlüsselung vom C
 
 === NetApp Verschlüsselungslösungen (NVE und NAE)
 
-Cloud Volumes ONTAP unterstützt https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption (NVE) und NetApp Aggregate Encryption (NAE)"^]. NVE und NAE sind softwarebasierte Lösungen, mit denen die Verschlüsselung von Volumes im Ruhezustand (FIPS) 140-2-konform unterstützt wird. Sowohl NVE als auch NAE nutzen 256-Bit-Verschlüsselung nach AES.
+Cloud Volumes ONTAP unterstützt https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption (NVE) und NetApp Aggregate Encryption (NAE)"^]. NVE und NAE sind softwarebasierte Lösungen, mit denen die Verschlüsselung von Volumes im Ruhezustand (FIPS) 140-2-konform unterstützt wird. Sowohl NVE als auch NAE nutzen 256-Bit-Verschlüsselung nach AES.
 
 * NVE verschlüsselt Daten im Ruhezustand nach einem Volume pro Zeit. Jedes Daten-Volume verfügt über einen eigenen eindeutigen Verschlüsselungsschlüssel.
 * NAE ist eine Erweiterung von NVE, denn es verschlüsselt Daten für jedes Volume, und die Volumes teilen sich einen Schlüssel im gesamten Aggregat. NAE ermöglicht außerdem die Deduplizierung allgemeiner Blöcke aller Volumes im Aggregat.
