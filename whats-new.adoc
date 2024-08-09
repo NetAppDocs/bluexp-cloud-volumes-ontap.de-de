@@ -20,6 +20,38 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 8 August 2024
+
+
+
+=== Veraltete Edge Cache-Lizenzpakete
+
+Kapazitätsbasierte Edge Cache-Lizenzierungspakete sind für zukünftige Cloud Volumes ONTAP Implementierungen nicht mehr verfügbar. Sie können jedoch die API verwenden, um diese Funktionalität in Anspruch zu nehmen.
+
+
+
+=== Unterstützte Mindestversion von ONTAP für Flash Cache auf Azure
+
+Die ONTAP-Mindestversion, die für die Konfiguration von Flash Cache auf Azure erforderlich ist, ist 9.13.1 GA. Es können nur ONTAP 9.13.1 GA und neuere Versionen zur Implementierung von Flash Cache auf Cloud Volumes ONTAP Systemen für Azure verwendet werden.
+
+Informationen zu unterstützten Konfigurationen finden Sie unter https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Unterstützte Konfigurationen in Azure"^].
+
+
+
+=== Kostenlose Testversionen für Marketplace-Abonnements sind veraltet
+
+Die automatische kostenlose 30-Tage-Testversion für Pay-as-you-go-Abonnements auf dem Marktplatz des Cloud-Providers wird in Cloud Volumes ONTAP nicht mehr verfügbar sein. Die Verrechnung für jede Art von Marketplace-Abonnement (PAYGO oder Jahresvertrag) wird ab der ersten Nutzung ohne einen kostenlosen Testzeitraum aktiviert.
+
+
+
+=== Canada West wird jetzt in AWS unterstützt
+
+Die Region Kanada West wird jetzt in AWS für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.
+
+Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter AWS"^].
+
+
+
 == 10 Juni 2024
 
 
@@ -100,6 +132,8 @@ Falls von Ihren Sicherheitsrichtlinien gefordert, können Sie Ihre EC2-Instanzen
 === Cloud Volumes ONTAP 9.14.1 GA
 
 BlueXP kann jetzt Cloud Volumes ONTAP 9.14.1 General Availability Release in AWS, Azure und Google Cloud implementieren und managen.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
 
 
 
