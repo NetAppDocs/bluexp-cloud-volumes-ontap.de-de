@@ -44,14 +44,6 @@ Die automatische kostenlose 30-Tage-Testversion für Pay-as-you-go-Abonnements a
 
 
 
-=== Canada West wird jetzt in AWS unterstützt
-
-Die Region Kanada West wird jetzt in AWS für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.
-
-Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter AWS"^].
-
-
-
 == 10 Juni 2024
 
 
