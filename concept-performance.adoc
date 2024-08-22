@@ -56,4 +56,4 @@ endif::gcp[]
 
 Cloud Volumes ONTAP-Nodes weisen eine hohe Auslastung (über 90 %) von den Monitoring-Tools Ihres Cloud-Providers auf. Dies liegt daran, dass ONTAP alle vCPUs, die der Virtual Machine zur Verfügung gestellt werden, so dass sie nach Bedarf verfügbar sind.
 
-Hilfe finden Sie im https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Monitoring_CPU_utilization_before_an_ONTAP_upgrade["NetApp Knowledgebase Artikel dazu, wie die ONTAP-CPU-Auslastung mit der CLI überwacht wird"^]
+Weitere Informationen finden Sie im https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Monitoring_CPU_utilization_before_an_ONTAP_upgrade["NetApp Knowledgebase Artikel dazu, wie die ONTAP-CPU-Auslastung mit der CLI überwacht wird"^]

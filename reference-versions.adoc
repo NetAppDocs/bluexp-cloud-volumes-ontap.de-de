@@ -16,7 +16,7 @@ summary: Mit BlueXP können Sie bei der Erstellung einer neuen Cloud Volumes ONT
 [role="lead"]
 Mit BlueXP können Sie bei der Erstellung einer neuen Cloud Volumes ONTAP-Arbeitsumgebung aus verschiedenen ONTAP-Versionen auswählen.
 
-Andere als die hier aufgeführten Cloud Volumes ONTAP-Versionen sind nicht für neue Implementierungen verfügbar. Informationen zum Upgrade finden Sie unter link:task-updating-ontap-cloud.html#supported-upgrade-paths["Unterstützte Upgrade-Pfade"].
+Andere als die hier aufgeführten Cloud Volumes ONTAP-Versionen sind nicht für neue Implementierungen verfügbar. Weitere Informationen zum Upgrade finden Sie unter link:task-updating-ontap-cloud.html#supported-upgrade-paths["Unterstützte Upgrade-Pfade"].
 
 ifdef::aws[]
 

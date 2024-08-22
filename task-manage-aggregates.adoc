@@ -23,7 +23,7 @@ CAUTION: Alle Festplatten und Aggregate müssen direkt aus BlueXP erstellt und g
 Wenn Sie ein Aggregat löschen möchten, müssen Sie zunächst die Volumes im Aggregat gelöscht haben.
 
 .Über diese Aufgabe
-Wenn einem Aggregat nicht mehr genügend Platz vorhanden ist, können Sie Volumes mit System Manager zu einem anderen Aggregat verschieben.
+Sollte ein Aggregat zu wenig Speicherplatz benötigen, können Sie mithilfe des ONTAP System Managers Volumes zu einem anderen Aggregat verschieben.
 
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.

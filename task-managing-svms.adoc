@@ -26,7 +26,7 @@ Bestimmte Konfigurationen unterstützen mehrere Storage-VMs. Wechseln Sie zum ht
 
 == Arbeiten Sie mit mehreren Storage VMs
 
-BlueXP unterstützt alle zusätzlichen Storage VMs, die Sie über System Manager oder die CLI erstellen.
+BlueXP  unterstützt alle zusätzlichen Storage VMs, die Sie über ONTAP System Manager oder die ONTAP CLI erstellen.
 
 Das folgende Bild zeigt beispielsweise, wie Sie beim Erstellen eines Volumes eine Storage-VM auswählen können.
 
@@ -40,4 +40,4 @@ image:screenshot_replicate_volume_svm.gif["Ein Screenshot zeigt die Möglichkeit
 
 == Ändern Sie den Namen der Standard-Storage-VM
 
-BlueXP benennt automatisch die einzelne Storage-VM, die sie für Cloud Volumes ONTAP erstellt. Über System Manager, CLI oder API können Sie den Namen der Storage VM ändern, wenn Sie strenge Namensstandards haben. Beispielsweise möchte der Name Ihnen entsprechen, wie Sie die Storage-VMs für Ihre ONTAP Cluster benennen.
+BlueXP benennt automatisch die einzelne Storage-VM, die sie für Cloud Volumes ONTAP erstellt. Über ONTAP System Manager, die ONTAP-CLI oder -API können Sie den Namen der Storage VM ändern, wenn Sie strenge Namensstandards haben. Beispielsweise möchte der Name Ihnen entsprechen, wie Sie die Storage-VMs für Ihre ONTAP Cluster benennen.

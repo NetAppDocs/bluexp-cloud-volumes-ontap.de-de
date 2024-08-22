@@ -145,7 +145,7 @@ Single Node oder HA, berechnet für primäre und sekundäre Volumes dieselbe Kap
 * Umfasst unbegrenzte Volume-Backups mit BlueXP Backup und Recovery, aber nur für Cloud Volumes ONTAP Systeme, die das Professional Paket verwenden.
 +
 
-NOTE: Für das Backup und Recovery von BlueXP ist ein PAYGO-Abonnement erforderlich, allerdings sind für die Nutzung dieses Services keine Gebühren anfallen. Weitere Informationen zum Einrichten der Lizenzierung für Backup und Recovery von BlueXP finden Sie unter https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["Lizenzierung für Backup und Recovery von BlueXP einrichten"^].
+NOTE: Für das Backup und Recovery von BlueXP ist ein PAYGO-Abonnement erforderlich, allerdings sind für die Nutzung dieses Services keine Gebühren anfallen. Weitere Informationen zum Einrichten der Lizenzierung für BlueXP  Backup und Recovery finden Sie unter https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["Lizenzierung für Backup und Recovery von BlueXP einrichten"^].
 
 * Fügen Sie die Cloud-Datenservices von NetApp zu zusätzlichen Kosten hinzu
 

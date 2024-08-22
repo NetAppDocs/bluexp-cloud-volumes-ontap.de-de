@@ -119,9 +119,9 @@ Sie können integrierte Virenschutzfunktionen auf ONTAP Systemen verwenden, um D
 
 ONTAP Virus Scanning, genannt _Vscan_, kombiniert erstklassige Antivirensoftware von Drittanbietern mit ONTAP-Funktionen, die Ihnen die Flexibilität geben, die Sie benötigen, um zu kontrollieren, welche Dateien gescannt werden und wann.
 
-Informationen zu den von Vscan unterstützten Herstellern, Software und Versionen finden Sie im http://mysupport.netapp.com/matrix["NetApp Interoperabilitätsmatrix"^].
+Informationen über die von Vscan unterstützten Hersteller, Software und Versionen finden Sie im http://mysupport.netapp.com/matrix["NetApp Interoperabilitätsmatrix"^].
 
-Informationen zum Konfigurieren und Managen der Antivirenfunktionen auf ONTAP-Systemen finden Sie im http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["ONTAP 9 Antivirus Configuration Guide"^].
+Informationen zum Konfigurieren und Verwalten der Antivirenfunktionen auf ONTAP-Systemen finden Sie im http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["ONTAP 9 Antivirus Configuration Guide"^].
 
 
 

@@ -96,7 +96,7 @@ Die folgende Richtlinie enthält die Berechtigungen, die BlueXP zur Verwendung d
 }
 ----
 +
-Weitere Details zu diesem Prozess finden Sie unter https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["AWS Dokumentation: Benutzer in anderen Konten können einen KMS-Schlüssel verwenden"^].
+Weitere Informationen zu diesem Prozess finden Sie im https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["AWS Dokumentation: Benutzer in anderen Konten können einen KMS-Schlüssel verwenden"^].
 
 
 

@@ -25,7 +25,7 @@ Wenn Sie Cloud Volumes ONTAP in einem Subnetz bereitstellen möchten, in dem kei
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Planen Sie Ihre Konfiguration
 [role="quick-margin-para"]
-BlueXP bietet vorkonfigurierte Pakete, die Ihren Workload-Anforderungen entsprechen, oder Sie können eine eigene Konfiguration erstellen. Wenn Sie sich für eine eigene Konfiguration entscheiden, sollten Sie sich mit den verfügbaren Optionen vertraut machen. link:task-planning-your-config-azure.html["Weitere Informationen ."].
+BlueXP bietet vorkonfigurierte Pakete, die Ihren Workload-Anforderungen entsprechen, oder Sie können eine eigene Konfiguration erstellen. Wenn Sie sich für eine eigene Konfiguration entscheiden, sollten Sie sich mit den verfügbaren Optionen vertraut machen. Weitere Informationen finden Sie unter link:task-planning-your-config-azure.html["Planen Sie Ihre Cloud Volumes ONTAP-Konfiguration in Azure"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Richten Sie Ihr Netzwerk ein
 [role="quick-margin-list"]

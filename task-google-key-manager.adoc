@@ -14,7 +14,7 @@ summary: Nutzen Sie den Key Management Service von Google für Ihren Drittanbiet
 [role="lead"]
 Verwenden Sie können link:https://cloud.google.com/kms/docs["Der Verschlüsselungsmanagement-Service (Cloud KMS) der Google Cloud-Plattform"^] Zum Schutz Ihrer ONTAP Verschlüsselungen in einer vom Google Cloud-Plattform bereitgestellten Applikation.
 
-Das Verschlüsselungsmanagement mit Cloud KMS kann über die CLI oder die ONTAP REST-API aktiviert werden.
+Verschlüsselungsmanagement mit Cloud KMS kann über die ONTAP-CLI oder die ONTAP REST-API aktiviert werden.
 
 Bei der Verwendung von Cloud KMS ist zu beachten, dass standardmäßig die LIF einer Daten-SVM verwendet wird, um mit dem Endpunkt des Cloud-Schlüsselmanagements zu kommunizieren. Zur Kommunikation mit den Authentifizierungsservices des Cloud-Providers wird ein Node-Managementnetzwerk verwendet (oauth2.googleapis.com). Wenn das Cluster-Netzwerk nicht korrekt konfiguriert ist, nutzt das Cluster den Verschlüsselungsmanagementservice nicht ordnungsgemäß.
 

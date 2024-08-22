@@ -183,7 +183,7 @@ Wenn Sie eine Arbeitsumgebung erstellen und eine vordefinierte Sicherheitsgruppe
 | 1000 Inbound_SSH | 22 TCP | Beliebige Art | SSH-Zugriff auf die IP-Adresse der Cluster Management LIF oder einer Node Management LIF 
 
 
-| 1001 Inbound_http | 80 TCP | Beliebige Art | HTTP-Zugriff auf die System Manager Webkonsole mit der IP-Adresse der Cluster-Management-LIF 
+| 1001 Inbound_http | 80 TCP | Beliebige Art | HTTP-Zugriff auf die Web-Konsole von ONTAP System Manager mithilfe der IP-Adresse der Cluster-Management-LIF 
 
 
 | 1002 Inbound_111_tcp | 111 TCP | Beliebige Art | Remote-Prozeduraufruf für NFS 
@@ -201,7 +201,7 @@ Wenn Sie eine Arbeitsumgebung erstellen und eine vordefinierte Sicherheitsgruppe
 | 1006 Inbound_161-162 _udp | 161-162 UDP | Beliebige Art | Einfaches Netzwerkverwaltungsprotokoll 
 
 
-| 1007 eingehend_443 | 443 TCP | Beliebige Art | Konnektivität mit dem Connector und HTTPS-Zugriff auf die System Manager Webkonsole unter Verwendung der IP-Adresse der Cluster-Management-LIF 
+| 1007 eingehend_443 | 443 TCP | Beliebige Art | Konnektivität mit dem Connector und HTTPS-Zugriff auf die ONTAP System Manager Webkonsole mithilfe der IP-Adresse der Cluster-Management-LIF 
 
 
 | 1008 eingehend_445 | 445 TCP | Beliebige Art | Microsoft SMB/CIFS über TCP mit NETBIOS-Framing 
@@ -269,7 +269,7 @@ NOTE: HA-Systeme weisen weniger eingehende Regeln als Systeme mit einzelnen Node
 | Priorität und Name | Port und Protokoll | Quelle und Ziel | Beschreibung 
 
 
-| 100 eingehend_443 | 443 beliebiges Protokoll | Beliebige Art | Konnektivität mit dem Connector und HTTPS-Zugriff auf die System Manager Webkonsole unter Verwendung der IP-Adresse der Cluster-Management-LIF 
+| 100 eingehend_443 | 443 beliebiges Protokoll | Beliebige Art | Konnektivität mit dem Connector und HTTPS-Zugriff auf die ONTAP System Manager Webkonsole mithilfe der IP-Adresse der Cluster-Management-LIF 
 
 
 | 101 Inbound_111_tcp | 111 beliebiges Protokoll | Beliebige Art | Remote-Prozeduraufruf für NFS 

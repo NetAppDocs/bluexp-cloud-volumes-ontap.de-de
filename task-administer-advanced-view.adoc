@@ -48,7 +48,7 @@ Richten Sie SAN-Initiatorgruppen und NFS-Clients ein.
 
 == Unterstützte Konfigurationen
 
-Das erweiterte Management wird über System Manager mit Cloud Volumes ONTAP 9.10.0 und höher in Standard-Cloud-Regionen unterstützt.
+Das erweiterte Management über ONTAP System Manager wird von Cloud Volumes ONTAP 9.10.0 und höher in standardmäßigen Cloud-Regionen unterstützt.
 
 Die Integration von System Manager wird in GovCloud Regionen oder Regionen ohne Outbound-Internetzugang nicht unterstützt.
 

@@ -40,10 +40,10 @@ Wenn Sie eine Arbeitsumgebung erstellen und eine vordefinierte Sicherheitsgruppe
 | Alle ICMP | Alle | Pingen der Instanz 
 
 
-| HTTP | 80 | HTTP-Zugriff auf die System Manager Webkonsole mit der IP-Adresse der Cluster-Management-LIF 
+| HTTP | 80 | HTTP-Zugriff auf die Web-Konsole von ONTAP System Manager mithilfe der IP-Adresse der Cluster-Management-LIF 
 
 
-| HTTPS | 443 | Konnektivität mit dem Connector und HTTPS-Zugriff auf die System Manager Webkonsole unter Verwendung der IP-Adresse der Cluster-Management-LIF 
+| HTTPS | 443 | Konnektivität mit dem Connector und HTTPS-Zugriff auf die ONTAP System Manager Webkonsole mithilfe der IP-Adresse der Cluster-Management-LIF 
 
 
 | SSH | 22 | SSH-Zugriff auf die IP-Adresse der Cluster Management LIF oder einer Node Management LIF 

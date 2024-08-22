@@ -79,7 +79,7 @@ In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise
 | Etiketten Hinzufügen | Etiketten sind Metadaten für Ihre Google Cloud-Ressourcen. BlueXP fügt die Etiketten zum Cloud Volumes ONTAP-System und den dem System zugeordneten Google-Cloud-Ressourcen hinzu. Sie können bis zu vier Etiketten von der Benutzeroberfläche hinzufügen, wenn Sie eine Arbeitsumgebung erstellen, und dann können Sie weitere hinzufügen, nachdem sie erstellt wurde. Beachten Sie, dass Sie durch die API beim Erstellen einer Arbeitsumgebung nicht auf vier Labels beschränkt werden. Informationen zu Etiketten finden Sie unter https://cloud.google.com/compute/docs/labeling-resources["Google Cloud-Dokumentation: Ressourcen Zur Kennzeichnung"^]. 
 
 
-| Benutzername und Passwort | Dies sind die Anmeldeinformationen für das Cloud Volumes ONTAP Cluster-Administratorkonto. Sie können diese Anmeldedaten für die Verbindung mit Cloud Volumes ONTAP über System Manager oder dessen CLI verwenden. Behalten Sie den Standardbenutzernamen „_admin_“ bei, oder ändern Sie ihn in einen benutzerdefinierten Benutzernamen. 
+| Benutzername und Passwort | Dies sind die Anmeldeinformationen für das Cloud Volumes ONTAP Cluster-Administratorkonto. Sie können diese Anmeldeinformationen verwenden, um sich über ONTAP System Manager oder die ONTAP-CLI mit Cloud Volumes ONTAP zu verbinden. Behalten Sie den Standardbenutzernamen „_admin_“ bei, oder ändern Sie ihn in einen benutzerdefinierten Benutzernamen. 
 
 
 | Projekt Bearbeiten  a| 
@@ -143,7 +143,7 @@ Wenn Sie eines der Pakete auswählen, müssen Sie nur ein Volume angeben und dan
 . *Lizenzierung*: Ändern Sie die Cloud Volumes ONTAP-Version nach Bedarf und wählen Sie einen Maschinentyp.
 +
 
-NOTE: Wenn für die ausgewählte Version eine neuere Version von Release Candidate, General Availability oder Patch Release verfügbar ist, aktualisiert BlueXP das System auf diese Version, wenn die Arbeitsumgebung erstellt wird. Das Update erfolgt beispielsweise, wenn Sie Cloud Volumes ONTAP 9.10.1 und 9.10.1 P4 auswählen. Das Update erfolgt nicht von einem Release zum anderen, z. B. von 9.6 bis 9.7.
+NOTE: Wenn für die ausgewählte Version eine neuere Version von Release Candidate, General Availability oder Patch Release verfügbar ist, aktualisiert BlueXP das System auf diese Version, wenn die Arbeitsumgebung erstellt wird. Das Update erfolgt beispielsweise, wenn Sie Cloud Volumes ONTAP 9.13.1 und 9.13.1 P4 auswählen. Das Update erfolgt nicht von einem Release zum anderen, z. B. von 9.13 bis 9.14.
 
 . *Zugrunde liegende Speicherressourcen*: Wählen Sie die Einstellungen für das anfängliche Aggregat: Einen Datenträgertyp und die Größe für jede Platte.
 +
@@ -153,7 +153,7 @@ Der Festplattentyp ist für das anfängliche Volume. Sie können einen anderen F
 Die Festplattengröße ist für alle Festplatten im ursprünglichen Aggregat und für alle zusätzlichen Aggregate bestimmt, die BlueXP erzeugt, wenn Sie die einfache Bereitstellungsoption verwenden. Mithilfe der erweiterten Zuweisungsoption können Sie Aggregate erstellen, die eine andere Festplattengröße verwenden.
 
 +
-Hilfe bei der Auswahl von Festplattentyp und -Größe finden Sie unter link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionieren Sie Ihr System in Google Cloud"^].
+Hilfe bei der Auswahl von Datenträgertyp und link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionieren Sie Ihr System in Google Cloud"^]-Größe finden Sie unter .
 
 . *Flash Cache, Schreibgeschwindigkeit und WORM*:
 +
@@ -168,7 +168,7 @@ link:concept-write-speed.html["Erfahren Sie mehr über Schreibgeschwindigkeit"].
 
 +
 
-NOTE: Über die Option *High* Write Speed stehen eine hohe Schreibgeschwindigkeit und eine höhere maximale Übertragungseinheit (MTU) von 8,896 Byte zur Verfügung. Darüber hinaus erfordert die höhere MTU von 8,896 die Auswahl von VPC-1, VPC-2 und VPC-3 für die Implementierung. Weitere Informationen zu VPC-1, VPC-2 und VPC-3 finden Sie unter https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["Regeln für VPC-1, VPC-2 und VPC-3"^].
+NOTE: Über die Option *High* Write Speed stehen eine hohe Schreibgeschwindigkeit und eine höhere maximale Übertragungseinheit (MTU) von 8,896 Byte zur Verfügung. Darüber hinaus erfordert die höhere MTU von 8,896 die Auswahl von VPC-1, VPC-2 und VPC-3 für die Implementierung. Weitere Informationen zu VPC-1, VPC-2 und VPC-3 finden Sie unter  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["Regeln für VPC-1, VPC-2 und VPC-3"^].
 
 .. Aktivieren Sie auf Wunsch den WORM-Storage (Write Once, Read Many).
 +
@@ -186,7 +186,7 @@ Beachten Sie Folgendes:
 
 +
 ** BlueXP legt das Servicekonto auf der Cloud Volumes ONTAP-Instanz fest. Dieses Servicekonto bietet Berechtigungen für Daten-Tiering zu einem Google Cloud Storage Bucket. Stellen Sie sicher, dass Sie das Connector-Dienstkonto als Benutzer des Tiering-Dienstkontos hinzufügen, andernfalls können Sie es nicht in BlueXP auswählen
-** Hilfe zum Hinzufügen eines Google Cloud-Kontos finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Einrichten und Hinzufügen von Google Cloud-Konten für Daten-Tiering mit 9.6"^].
+** Hilfe zum Hinzufügen eines Google Cloud-Kontos finden Sie unter  https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Einrichten und Hinzufügen von Google Cloud-Konten für Daten-Tiering mit 9.6"^].
 ** Sie können eine bestimmte Volume-Tiering-Richtlinie auswählen, wenn Sie ein Volume erstellen oder bearbeiten.
 ** Wenn Sie das Daten-Tiering deaktivieren, können Sie es bei nachfolgenden Aggregaten aktivieren. Sie müssen das System jedoch deaktivieren und ein Service-Konto über die Google Cloud Konsole hinzufügen.
 +
@@ -255,13 +255,11 @@ image:screenshot_cot_vol.gif["Screenshot: Zeigt die Seite Volume, die für eine 
 | DNS-Domäne | Die DNS-Domain für die Cloud Volumes ONTAP Storage Virtual Machine (SVM). In den meisten Fällen entspricht die Domäne der AD-Domäne. 
 
 
-| NTP-Server | Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP Automation Dokumentation"^] Entsprechende Details.
-
-Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers konfigurieren können. Er ist nicht konfigurierbar, nachdem Sie den CIFS-Server erstellt haben. 
+| NTP-Server | Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden.  https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP Automation Dokumentation"^]Weitere Informationen finden Sie im. Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers konfigurieren können. Er ist nicht konfigurierbar, nachdem Sie den CIFS-Server erstellt haben. 
 |===
 . *Nutzungsprofil, Festplattentyp und Tiering-Richtlinie*: Wählen Sie aus, ob Sie Funktionen für die Storage-Effizienz aktivieren und gegebenenfalls die Volume Tiering-Richtlinie ändern möchten.
 +
-Weitere Informationen finden Sie unter link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Wählen Sie ein Volume-Auslastungsprofil aus"^] Und link:concept-data-tiering.html["Data Tiering - Übersicht"^].
+Weitere Informationen finden Sie unter link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Wählen Sie ein Volume-Auslastungsprofil aus"^] und link:concept-data-tiering.html["Data Tiering - Übersicht"^].
 
 . *Überprüfen & Genehmigen*: Überprüfen und bestätigen Sie Ihre Auswahl.
 +
@@ -282,7 +280,7 @@ Weitere Hilfe finden Sie unter https://mysupport.netapp.com/site/products/all/de
 
 .Nachdem Sie fertig sind
 * Wenn Sie eine CIFS-Freigabe bereitgestellt haben, erteilen Sie Benutzern oder Gruppen Berechtigungen für die Dateien und Ordner, und überprüfen Sie, ob diese Benutzer auf die Freigabe zugreifen und eine Datei erstellen können.
-* Wenn Sie Kontingente auf Volumes anwenden möchten, verwenden Sie System Manager oder die CLI.
+* Wenn Sie Quoten auf Volumes anwenden möchten, verwenden Sie ONTAP System Manager oder die ONTAP CLI.
 +
 Mithilfe von Quotas können Sie den Speicherplatz und die Anzahl der von einem Benutzer, einer Gruppe oder qtree verwendeten Dateien einschränken oder nachverfolgen.
 
@@ -317,7 +315,7 @@ In der folgenden Tabelle werden Felder beschrieben, für die Sie möglicherweise
 | Etiketten Hinzufügen | Etiketten sind Metadaten für Ihre Google Cloud-Ressourcen. BlueXP fügt die Etiketten zum Cloud Volumes ONTAP-System und den dem System zugeordneten Google-Cloud-Ressourcen hinzu. Sie können bis zu vier Etiketten von der Benutzeroberfläche hinzufügen, wenn Sie eine Arbeitsumgebung erstellen, und dann können Sie weitere hinzufügen, nachdem sie erstellt wurde. Beachten Sie, dass Sie durch die API beim Erstellen einer Arbeitsumgebung nicht auf vier Labels beschränkt werden. Informationen zu Etiketten finden Sie unter https://cloud.google.com/compute/docs/labeling-resources["Google Cloud-Dokumentation: Ressourcen Zur Kennzeichnung"^]. 
 
 
-| Benutzername und Passwort | Dies sind die Anmeldeinformationen für das Cloud Volumes ONTAP Cluster-Administratorkonto. Sie können diese Anmeldedaten für die Verbindung mit Cloud Volumes ONTAP über System Manager oder dessen CLI verwenden. Behalten Sie den Standardbenutzernamen „_admin_“ bei, oder ändern Sie ihn in einen benutzerdefinierten Benutzernamen. 
+| Benutzername und Passwort | Dies sind die Anmeldeinformationen für das Cloud Volumes ONTAP Cluster-Administratorkonto. Sie können diese Anmeldeinformationen verwenden, um sich über ONTAP System Manager oder die ONTAP-CLI mit Cloud Volumes ONTAP zu verbinden. Behalten Sie den Standardbenutzernamen „_admin_“ bei, oder ändern Sie ihn in einen benutzerdefinierten Benutzernamen. 
 
 
 | Projekt Bearbeiten  a| 
@@ -385,7 +383,7 @@ Wenn Sie eines der Pakete auswählen, müssen Sie nur ein Volume angeben und dan
 . *Lizenzierung*: Ändern Sie die Cloud Volumes ONTAP-Version nach Bedarf und wählen Sie einen Maschinentyp.
 +
 
-NOTE: Wenn für die ausgewählte Version eine neuere Version von Release Candidate, General Availability oder Patch Release verfügbar ist, aktualisiert BlueXP das System auf diese Version, wenn die Arbeitsumgebung erstellt wird. Das Update erfolgt beispielsweise, wenn Sie Cloud Volumes ONTAP 9.10.1 und 9.10.1 P4 auswählen. Das Update erfolgt nicht von einem Release zum anderen, z. B. von 9.6 bis 9.7.
+NOTE: Wenn für die ausgewählte Version eine neuere Version von Release Candidate, General Availability oder Patch Release verfügbar ist, aktualisiert BlueXP das System auf diese Version, wenn die Arbeitsumgebung erstellt wird. Das Update erfolgt beispielsweise, wenn Sie Cloud Volumes ONTAP 9.13.1 und 9.13.1 P4 auswählen. Das Update erfolgt nicht von einem Release zum anderen, z. B. von 9.13 bis 9.14.
 
 . *Zugrunde liegende Speicherressourcen*: Wählen Sie die Einstellungen für das anfängliche Aggregat: Einen Datenträgertyp und die Größe für jede Platte.
 +
@@ -395,7 +393,7 @@ Der Festplattentyp ist für das anfängliche Volume. Sie können einen anderen F
 Die Festplattengröße ist für alle Festplatten im ursprünglichen Aggregat und für alle zusätzlichen Aggregate bestimmt, die BlueXP erzeugt, wenn Sie die einfache Bereitstellungsoption verwenden. Mithilfe der erweiterten Zuweisungsoption können Sie Aggregate erstellen, die eine andere Festplattengröße verwenden.
 
 +
-Hilfe bei der Auswahl von Festplattentyp und -Größe finden Sie unter link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionieren Sie Ihr System in Google Cloud"^].
+Hilfe bei der Auswahl von Datenträgertyp und link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionieren Sie Ihr System in Google Cloud"^]-Größe finden Sie unter .
 
 . *Flash Cache, Schreibgeschwindigkeit und WORM*:
 +
@@ -410,7 +408,7 @@ link:concept-write-speed.html["Erfahren Sie mehr über Schreibgeschwindigkeit"^]
 
 +
 
-NOTE: Hohe Schreibgeschwindigkeit und eine höhere maximale Übertragungseinheit (MTU) von 8,896 Byte sind über die Option *High* Write Speed mit den Instanztypen n2-Standard-16, n2-Standard-32, n2-Standard-48 und n2-Standard-64 verfügbar. Darüber hinaus erfordert die höhere MTU von 8,896 die Auswahl von VPC-1, VPC-2 und VPC-3 für die Implementierung. Hohe Schreibgeschwindigkeit und eine MTU von 8,896 sind funktionsabhängig und können nicht einzeln innerhalb einer konfigurierten Instanz deaktiviert werden. Weitere Informationen zu VPC-1, VPC-2 und VPC-3 finden Sie unter https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["Regeln für VPC-1, VPC-2 und VPC-3"^].
+NOTE: Hohe Schreibgeschwindigkeit und eine höhere maximale Übertragungseinheit (MTU) von 8,896 Byte sind über die Option *High* Write Speed mit den Instanztypen n2-Standard-16, n2-Standard-32, n2-Standard-48 und n2-Standard-64 verfügbar. Darüber hinaus erfordert die höhere MTU von 8,896 die Auswahl von VPC-1, VPC-2 und VPC-3 für die Implementierung. Hohe Schreibgeschwindigkeit und eine MTU von 8,896 sind funktionsabhängig und können nicht einzeln innerhalb einer konfigurierten Instanz deaktiviert werden. Weitere Informationen zu VPC-1, VPC-2 und VPC-3 finden Sie unter  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["Regeln für VPC-1, VPC-2 und VPC-3"^].
 
 .. Aktivieren Sie auf Wunsch den WORM-Storage (Write Once, Read Many).
 +
@@ -496,13 +494,11 @@ image:screenshot_cot_vol.gif["Screenshot: Zeigt die Seite Volume, die für eine 
 | DNS-Domäne | Die DNS-Domain für die Cloud Volumes ONTAP Storage Virtual Machine (SVM). In den meisten Fällen entspricht die Domäne der AD-Domäne. 
 
 
-| NTP-Server | Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP Automation Dokumentation"^] Entsprechende Details.
-
-Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers konfigurieren können. Er ist nicht konfigurierbar, nachdem Sie den CIFS-Server erstellt haben. 
+| NTP-Server | Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Weitere Informationen finden Sie im https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP Automation Dokumentation"^] . Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers konfigurieren können. Er ist nicht konfigurierbar, nachdem Sie den CIFS-Server erstellt haben. 
 |===
 . *Nutzungsprofil, Festplattentyp und Tiering-Richtlinie*: Wählen Sie aus, ob Sie Funktionen für die Storage-Effizienz aktivieren und gegebenenfalls die Volume Tiering-Richtlinie ändern möchten.
 +
-Weitere Informationen finden Sie unter link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Wählen Sie ein Volume-Auslastungsprofil aus"^] Und link:concept-data-tiering.html["Data Tiering - Übersicht"^].
+Weitere Informationen finden Sie unter link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Wählen Sie ein Volume-Auslastungsprofil aus"^] und link:concept-data-tiering.html["Data Tiering - Übersicht"^].
 
 . *Überprüfen & Genehmigen*: Überprüfen und bestätigen Sie Ihre Auswahl.
 +
@@ -523,7 +519,7 @@ Weitere Hilfe finden Sie unter https://mysupport.netapp.com/site/products/all/de
 
 .Nachdem Sie fertig sind
 * Wenn Sie eine CIFS-Freigabe bereitgestellt haben, erteilen Sie Benutzern oder Gruppen Berechtigungen für die Dateien und Ordner, und überprüfen Sie, ob diese Benutzer auf die Freigabe zugreifen und eine Datei erstellen können.
-* Wenn Sie Kontingente auf Volumes anwenden möchten, verwenden Sie System Manager oder die CLI.
+* Wenn Sie Quoten auf Volumes anwenden möchten, verwenden Sie ONTAP System Manager oder die ONTAP CLI.
 +
 Mithilfe von Quotas können Sie den Speicherplatz und die Anzahl der von einem Benutzer, einer Gruppe oder qtree verwendeten Dateien einschränken oder nachverfolgen.
 

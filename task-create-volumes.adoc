@@ -30,12 +30,12 @@ BlueXP bietet verschiedene Möglichkeiten zur Erstellung eines neuen Volumes:
 Ein paar Anmerkungen zur Volume-Bereitstellung:
 
 * Wenn Sie ein iSCSI-Volume erstellen, erstellt BlueXP automatisch eine LUN für Sie. Wir haben es einfach gemacht, indem wir nur eine LUN pro Volumen erstellen, so gibt es keine Verwaltung beteiligt. Nachdem Sie das Volume erstellt haben, link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["Verwenden Sie den IQN, um von den Hosts eine Verbindung zur LUN herzustellen"^].
-* Sie können weitere LUNs aus System Manager oder der CLI erstellen.
+* Sie können weitere LUNs über ONTAP System Manager oder die ONTAP CLI erstellen.
 
 
 ifdef::aws[]
 
-* Wenn Sie CIFS in AWS verwenden möchten, müssen Sie DNS und Active Directory eingerichtet haben. Weitere Informationen finden Sie unter link:reference-networking-aws.html["Netzwerkanforderungen für Cloud Volumes ONTAP für AWS"].
+* Wenn Sie CIFS in AWS verwenden möchten, müssen Sie DNS und Active Directory einrichten. Weitere Informationen finden Sie unter link:reference-networking-aws.html["Netzwerkanforderungen für Cloud Volumes ONTAP für AWS"].
 * Wenn Ihre Cloud Volumes ONTAP Konfiguration die Elastic Volumes Funktion von Amazon EBS unterstützt, könnten Sie dies möglicherweise tun link:concept-aws-elastic-volumes.html["Erfahren Sie mehr darüber, was bei der Erstellung eines Volumes passiert"].
 
 
@@ -154,7 +154,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS-Domäne:: Die DNS-Domain für die Cloud Volumes ONTAP Storage Virtual Machine (SVM). In den meisten Fällen entspricht die Domäne der AD-Domäne.
-NTP-Server:: Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP Automation Dokumentation"^] Entsprechende Details.
+NTP-Server:: Wählen Sie *Active Directory-Domäne verwenden* aus, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Weitere Informationen finden Sie im https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP Automation Dokumentation"^].
 +
 --
 Beachten Sie, dass Sie einen NTP-Server nur beim Erstellen eines CIFS-Servers konfigurieren können. Er ist nicht konfigurierbar, nachdem Sie den CIFS-Server erstellt haben.
@@ -251,4 +251,4 @@ endif::aws[]
 
 Wenn Sie eine CIFS-Freigabe bereitgestellt haben, erteilen Sie Benutzern oder Gruppen Berechtigungen für die Dateien und Ordner, und überprüfen Sie, ob diese Benutzer auf die Freigabe zugreifen und eine Datei erstellen können.
 
-Wenn Sie Kontingente auf Volumes anwenden möchten, müssen Sie System Manager oder die CLI verwenden. Mithilfe von Quotas können Sie den Speicherplatz und die Anzahl der von einem Benutzer, einer Gruppe oder qtree verwendeten Dateien einschränken oder nachverfolgen.
+Wenn Sie Kontingente auf Volumes anwenden möchten, müssen Sie ONTAP System Manager oder die ONTAP CLI verwenden. Mithilfe von Quotas können Sie den Speicherplatz und die Anzahl der von einem Benutzer, einer Gruppe oder qtree verwendeten Dateien einschränken oder nachverfolgen.

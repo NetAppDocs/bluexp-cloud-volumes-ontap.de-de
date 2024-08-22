@@ -64,7 +64,7 @@ image:screenshot_aws_e0a.gif["Ein Screenshot der AWS Konsole, der Port e0a auf e
 +
 Im vorherigen Abschnitt dieser Seite sollten Sie die maximale Anzahl der unterstützten IP-Adressen pro Schnittstelle angegeben haben.
 
-.. Optional: Rufen Sie die CLI für Cloud Volumes ONTAP auf und führen Sie *Network Interface show* aus, um zu bestätigen, dass jede dieser IP-Adressen verwendet wird.
+.. Optional: Rufen Sie die ONTAP-CLI für Cloud Volumes ONTAP auf und führen Sie *Network Interface show* aus, um zu bestätigen, dass jede dieser IP-Adressen verwendet wird.
 +
 Wenn keine IP-Adresse verwendet wird, können Sie sie zusammen mit der neuen Storage-VM verwenden.
 

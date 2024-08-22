@@ -37,7 +37,7 @@ Beachten Sie, dass die Kapazitätsgrenzen des Systems insgesamt unverändert ble
 
 
 
-https://aws.amazon.com/ebs/features/["Weitere Informationen zu Elastic Volumes von AWS"^]
+https://aws.amazon.com/ebs/features/["AWS Documentation: Weitere Informationen zu Elastic Volumes von AWS"^]
 
 
 

@@ -103,7 +103,7 @@ VPC-übergreifende Datenkommunikation ist kein Problem, da iSCSI keine Floating-
 Für iSCSI verwendet Cloud Volumes ONTAP Multipath I/O (MPIO) und Asymmetric Logical Unit Access (ALUA), um das Pfad-Failover zwischen den Aktiv- und Nicht-optimierten Pfaden zu managen.
 
 
-NOTE: Informationen darüber, welche spezifischen Host-Konfigurationen ALUA unterstützen, finden Sie im http://mysupport.netapp.com/matrix["NetApp Interoperabilitäts-Matrix-Tool"^] Sowie das Installations- und Setup-Handbuch für Host Utilities für Ihr Host-Betriebssystem.
+NOTE: Informationen darüber, welche spezifischen Host-Konfigurationen ALUA unterstützen, finden Sie im http://mysupport.netapp.com/matrix["NetApp Interoperabilitäts-Matrix-Tool"^] und im https://docs.netapp.com/us-en/ontap-sanhost/["Leitfaden für SAN-Hosts und Cloud-Clients"] für Ihr Host-Betriebssystem.
 
 
 
@@ -145,7 +145,7 @@ image:diagram_single_az.png["Konzeptionelles Image, das eine ONTAP HA-Konfigurat
 Für iSCSI verwendet Cloud Volumes ONTAP Multipath I/O (MPIO) und Asymmetric Logical Unit Access (ALUA), um das Pfad-Failover zwischen den Aktiv- und Nicht-optimierten Pfaden zu managen.
 
 
-NOTE: Informationen darüber, welche spezifischen Host-Konfigurationen ALUA unterstützen, finden Sie im http://mysupport.netapp.com/matrix["NetApp Interoperabilitäts-Matrix-Tool"^] Sowie das Installations- und Setup-Handbuch für Host Utilities für Ihr Host-Betriebssystem.
+NOTE: Informationen darüber, welche spezifischen Host-Konfigurationen ALUA unterstützen, finden Sie im http://mysupport.netapp.com/matrix["NetApp Interoperabilitäts-Matrix-Tool"^] und im https://docs.netapp.com/us-en/ontap-sanhost/["Leitfaden für SAN-Hosts und Cloud-Clients"] für Ihr Host-Betriebssystem.
 
 Bei NAS-Konfigurationen können die Daten-IP-Adressen zwischen HA-Nodes migriert werden, wenn Fehler auftreten. Dadurch wird der Client-Zugriff auf Storage gewährleistet.
 
@@ -195,7 +195,7 @@ Die folgenden EC2 Instanztypen mit den Größen xlarge bis 4xlarge werden derzei
 * R5d
 
 
-link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["In AWS finden Sie die neuesten und vollständigen Details zu unterstützten EC2-Instanztypen in lokalen Zonen"^].
+Die neuesten und vollständigen Details zum unterstützten finden Sie in der AWS-Dokumentationlink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2-Instanztypen in lokalen Zonen"^].
 
 
 
@@ -237,7 +237,7 @@ Weitere Informationen zur Performance von Cloud Volumes ONTAP finden Sie unter l
 Clients sollten über die Daten-IP-Adresse des Node, auf dem sich das Volume befindet, auf NFS- und CIFS-Volumes zugreifen. Wenn NAS-Clients über die IP-Adresse des Partner-Node auf ein Volume zugreifen, wird der Datenverkehr zwischen beiden Nodes geleitet, wodurch die Performance verringert wird.
 
 
-TIP: Wenn Sie ein Volume zwischen Nodes in einem HA-Paar verschieben, sollten Sie das Volume mithilfe der IP-Adresse des anderen Node neu mounten. Andernfalls kann die Performance beeinträchtigt werden. Wenn Clients NFSv4-Verweise oder Ordnerumleitung für CIFS unterstützen, können Sie diese Funktionen auf den Cloud Volumes ONTAP Systemen aktivieren, um ein erneutes Mounten des Volumes zu vermeiden. Weitere Informationen finden Sie in der ONTAP Dokumentation.
+TIP: Wenn Sie ein Volume zwischen Nodes in einem HA-Paar verschieben, sollten Sie das Volume mithilfe der IP-Adresse des anderen Node neu mounten. Andernfalls kann die Performance beeinträchtigt werden. Wenn Clients NFSv4-Verweise oder Ordnerumleitung für CIFS unterstützen, können Sie diese Funktionen auf den Cloud Volumes ONTAP Systemen aktivieren, um ein erneutes Mounten des Volumes zu vermeiden. Details hierzu finden Sie in der ONTAP-Dokumentation.
 
 Sie können die richtige IP-Adresse einfach über die Option „_Mount Command_“ im Bereich „Volumes verwalten“ in BlueXP identifizieren.
 

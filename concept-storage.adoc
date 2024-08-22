@@ -72,10 +72,11 @@ ifdef::azure[]
 
 In Azure kann ein Aggregat bis zu 12 Festplatten enthalten, die dieselbe Größe aufweisen. Der Festplattentyp und die maximale Festplattengröße hängen davon ab, ob Sie ein Single-Node-System oder ein HA-Paar verwenden:
 
-Systeme mit einzelnen Nodes:: Systeme mit einem Node können drei Typen von Azure Managed Disks verwenden:
+Systeme mit einzelnen Nodes:: Single-Node-Systeme können die folgenden Typen von Azure Managed Disks verwenden:
 +
 --
 * _Premium SSD Managed Disks_ bieten hohe Performance für I/O-intensive Workloads zu höheren Kosten.
+* _Premium SSD v2 Managed Disks_ bieten im Vergleich zu Premium SSD Managed Disks eine höhere Performance mit niedrigerer Latenz zu geringeren Kosten sowohl für einzelne Nodes als auch für HA-Paare.
 * _Standard SSD Managed Disks_ bieten konsistente Performance für Workloads, die niedrige IOPS erfordern.
 * _Standard HDD Managed Disks_ sind eine gute Wahl, wenn Sie keine hohen IOPS benötigen und Ihre Kosten senken möchten.
 +

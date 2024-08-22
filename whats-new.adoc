@@ -20,6 +20,18 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 22 August 2024
+
+
+
+=== Cloud Volumes ONTAP 9.15.1 GA
+
+BlueXP  kann jetzt die allgemeine Verfügbarkeitsversion von Cloud Volumes ONTAP 9.15.1 in AWS, Azure und Google Cloud implementieren und managen.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
+
+
+
 == 8 August 2024
 
 
@@ -32,7 +44,7 @@ Kapazitätsbasierte Edge Cache-Lizenzierungspakete sind für zukünftige Cloud V
 
 === Unterstützte Mindestversion von ONTAP für Flash Cache auf Azure
 
-Die ONTAP-Mindestversion, die für die Konfiguration von Flash Cache auf Azure erforderlich ist, ist 9.13.1 GA. Es können nur ONTAP 9.13.1 GA und neuere Versionen zur Implementierung von Flash Cache auf Cloud Volumes ONTAP Systemen für Azure verwendet werden.
+Die ONTAP-Mindestversion, die für die Konfiguration von Flash Cache auf Azure erforderlich ist, ist 9.13.1 GA. ONTAP 9.13.1 GA und höhere Versionen können Sie für die Bereitstellung von Flash Cache auf Cloud Volumes ONTAP Systemen für Azure nur verwenden.
 
 Informationen zu unterstützten Konfigurationen finden Sie unter https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Unterstützte Konfigurationen in Azure"^].
 
@@ -402,7 +414,7 @@ Eine Liste aller Regionen, die mehrere Verfügbarkeitszonen unterstützen, finde
 
 Autonomous Ransomware Protection (ARP) wird jetzt auf Cloud Volumes ONTAP unterstützt. ARP-Unterstützung ist auf Cloud Volumes ONTAP Version 9.12.1 und höher verfügbar.
 
-Weitere Informationen über ARP with Cloud Volumes ONTAP finden Sie unter https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["Autonomer Schutz Durch Ransomware"^].
+Weitere Informationen über ARP mit Cloud Volumes ONTAP finden Sie unter https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["Autonomer Schutz Durch Ransomware"^].
 
 
 
@@ -430,7 +442,7 @@ Die folgende Änderung wurde mit der Version 3.9.30 des Connectors eingeführt.
 
 Auf der Seite Upgrade Cloud Volumes ONTAP können Sie jetzt wählen, ob Sie ein Upgrade auf die neueste verfügbare Version von Cloud Volumes ONTAP oder eine ältere Version durchführen möchten.
 
-Weitere Informationen zum Upgrade von Cloud Volumes ONTAP über BlueXP finden Sie unter https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Upgrade von Cloud Volumes ONTAP"^].
+Weitere Informationen zum Upgrade von Cloud Volumes ONTAP über BlueXP  finden Sie unter https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Upgrade von Cloud Volumes ONTAP"^].
 
 
 
@@ -486,7 +498,7 @@ Ab Cloud Volumes ONTAP 9.12.1 GA werden China-Regionen jetzt wie folgt in AWS un
 * Lizenzen, die direkt von NetApp erworben wurden, werden unterstützt.
 
 
-Informationen zur regionalen Verfügbarkeit finden Sie unter link:https://bluexp.netapp.com/cloud-volumes-global-regions["Karten für globale Regionen für Cloud Volumes ONTAP"^].
+Informationen zur regionalen Verfügbarkeit finden Sie im link:https://bluexp.netapp.com/cloud-volumes-global-regions["Karten für globale Regionen für Cloud Volumes ONTAP"^].
 
 
 
@@ -526,7 +538,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/ma
 
 === FlexGroup Volumes können mit Cloud Volumes ONTAP angezeigt werden
 
-FlexGroup Volumes, die direkt über CLI oder System Manager erstellt wurden, sind nun über die neu gestaltete Volume-Kachel in BlueXP sichtbar. Ähnlich wie bei FlexVol Volumes bietet BlueXP über eine dedizierte Volume-Kachel detaillierte Informationen zu erstellten FlexGroup Volumes.
+FlexGroup Volumes, die direkt über ONTAP System Manager oder die ONTAP CLI erstellt wurden, sind nun über die neu gestaltete Volume-Kachel in BlueXP  sichtbar. Ähnlich wie bei FlexVol Volumes bietet BlueXP über eine dedizierte Volume-Kachel detaillierte Informationen zu erstellten FlexGroup Volumes.
 
 
 NOTE: Derzeit können Sie vorhandene FlexGroup Volumes nur unter BlueXP anzeigen. Die Möglichkeit zum Erstellen von FlexGroup Volumes in BlueXP ist nicht verfügbar, aber für eine zukünftige Version geplant.
@@ -550,7 +562,7 @@ Ab Cloud Volumes ONTAP 9.12.1 GA wird die Unterstützung für China-Regionen jet
 * Lizenzen, die direkt von NetApp erworben wurden, werden unterstützt.
 
 
-Informationen zur regionalen Verfügbarkeit finden Sie unter link:https://bluexp.netapp.com/cloud-volumes-global-regions["Karten für globale Regionen für Cloud Volumes ONTAP"^].
+Informationen zur regionalen Verfügbarkeit finden Sie im link:https://bluexp.netapp.com/cloud-volumes-global-regions["Karten für globale Regionen für Cloud Volumes ONTAP"^].
 
 
 
@@ -731,7 +743,7 @@ Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp
 
 NDMP-Copy ist jetzt für die Verwendung mit Cloud Volume ONTAP zertifiziert.
 
-Weitere Informationen zum Konfigurieren und Verwenden von NDMP finden Sie unter https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP-Konfiguration – Überblick"].
+Informationen zum Konfigurieren und Verwenden von NDMP finden Sie unter https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP-Konfiguration – Überblick"].
 
 
 

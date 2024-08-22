@@ -52,14 +52,14 @@ Klicken Sie in BlueXP auf den Service *Digital Advisor*.
 +
 image:screenshot_aiq_digital_advisor.png["Ein Screenshot der Digital Advisor Benutzeroberfläche in BlueXP."]
 
-* Wenn Sie kein NSS-Konto in BlueXP registriert haben, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["registrieren Sie jetzt ein NSS-Konto"^] Und dann wird die Digital Advisor-Benutzeroberfläche angezeigt.
+* Wenn Sie noch kein NSS-Konto in BlueXP  registriert haben, registrieren Sie jetzt ein NSS-Konto, und dann wird die Digital Advisor-Benutzeroberfläche angezeigt.  https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSS-Anmeldedaten managen, die mit einem BlueXP Konto verknüpft sind"]Anweisungen finden Sie unter.
 
 
 
-NOTE: Seit dem 3. Dezember 2021 nutzt NetApp eine neue Methode zur Registrierung von Zugangsdaten für NSS-Konten. https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Weitere Informationen finden Sie in diesem FAQ"]. Wenn Ihr NSS-Konto den alten Satz von Anmeldeinformationen verwendet, müssen Sie das Konto auf die neuen Anmeldedaten aktualisieren.
+NOTE: Seit dem 3. Dezember 2021 nutzt NetApp eine neue Methode zur Registrierung von Zugangsdaten für NSS-Konten. Weitere Informationen finden Sie unter https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Diesen FAQ"]. Wenn Ihr NSS-Konto den alten Satz von Anmeldeinformationen verwendet, müssen Sie das Konto auf die neuen Anmeldedaten aktualisieren.
 
 
 
 == Wie es weiter geht
 
-Siehe https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor Dokumentation"] Entsprechende Details.
+Weitere Informationen finden Sie im https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor Dokumentation"] .

@@ -42,7 +42,7 @@ Wenn im manuellen Modus das Verhältnis des freien Speicherplatzes auf einem Agg
 Das Verhältnis des freien Speicherplatzes berechnet sich wie folgt:
 (Gesamtkapazität – genutzte Gesamtkapazität im Aggregat) / Gesamtkapazität des Aggregats
 
-Siehe link:concept-storage-management.html#automatic-capacity-management["Automatisches Kapazitätsmanagement"] Um zu erfahren, wird die Kapazität jetzt automatisch in Cloud Volumes ONTAP gemanagt.
+link:concept-storage-management.html#automatic-capacity-management["Automatisches Kapazitätsmanagement"]Weitere Informationen zum automatischen Management der Kapazität in Cloud Volumes ONTAP finden Sie in.
 
 --
 Aggregierte Kapazitätsschwellenwerte – Verhältnis des freien Speicherplatzes für Daten-Tiering:: Definiert, wie viel freier Speicherplatz auf der Performance-Tier (Festplatten) benötigt wird, wenn Daten-Tiering auf eine Kapazitäts-Tier (Objekt-Storage) erfolgt.

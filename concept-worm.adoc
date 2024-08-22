@@ -58,8 +58,8 @@ Ab Cloud Volumes ONTAP 9.10.1 haben Sie die Möglichkeit, WORM auf Volume-Ebene 
 
 Wenn Sie eine neue Cloud Volumes ONTAP Arbeitsumgebung erstellen, werden Sie aufgefordert, WORM-Speicher zu aktivieren oder zu deaktivieren:
 
-* Wenn Sie WORM-Speicher beim Erstellen einer Arbeitsumgebung aktivieren, ist für jedes mit BlueXP erstellte Volume WORM aktiviert. Aber Sie können System Manager oder die CLI verwenden, um Volumes zu erstellen, bei denen WORM deaktiviert ist.
-* Wenn Sie WORM-Storage bei der Erstellung einer Arbeitsumgebung deaktivieren, ist jedes von Ihnen aus BlueXP, System Manager oder der CLI erstellte Volume WORM deaktiviert. Wenn SIE WORM in einer Cloud Volumes ONTAP-Arbeitsumgebung aktivieren möchten, die bei der Erstellung nicht aktiviert wurde, müssen Sie ein Support-Ticket mit dem NetApp Support erstellen.
+* Wenn Sie WORM-Speicher beim Erstellen einer Arbeitsumgebung aktivieren, ist für jedes mit BlueXP erstellte Volume WORM aktiviert. Aber Sie können ONTAP System Manager oder die ONTAP CLI verwenden, um Volumes zu erstellen, auf denen WORM deaktiviert ist.
+* Wenn Sie WORM-Storage beim Erstellen einer Arbeitsumgebung deaktivieren, ist jeder von Ihnen über BlueXP , ONTAP System Manager oder ONTAP erstellte Volume WORM deaktiviert. Wenn SIE WORM in einer Cloud Volumes ONTAP-Arbeitsumgebung aktivieren möchten, die bei der Erstellung nicht aktiviert wurde, müssen Sie ein Support-Ticket mit dem NetApp Support erstellen.
 
 
 Mit beiden Optionen sollten Sie dies tun <<Wird Geladen,Erfahren Sie, wie das Laden funktioniert>>.

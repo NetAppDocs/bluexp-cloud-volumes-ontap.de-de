@@ -141,11 +141,11 @@ ifdef::aws[]
 
 === Anforderungen für das Tiering selten genutzter Daten in AWS S3
 
-Stellen Sie sicher, dass Cloud Volumes ONTAP eine Verbindung zu S3 hat. Die beste Möglichkeit, diese Verbindung bereitzustellen, besteht darin, einen VPC-Endpunkt für den S3-Dienst zu erstellen. Anweisungen hierzu finden Sie unter https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS Dokumentation: Erstellen eines Gateway-Endpunkts"^].
+Stellen Sie sicher, dass Cloud Volumes ONTAP eine Verbindung zu S3 hat. Die beste Möglichkeit, diese Verbindung bereitzustellen, besteht darin, einen VPC-Endpunkt für den S3-Dienst zu erstellen. Anweisungen hierzu finden Sie im https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS Dokumentation: Erstellen eines Gateway-Endpunkts"^].
 
 Wenn Sie den VPC-Endpunkt erstellen, wählen Sie die Region, den VPC und die Routing-Tabelle aus, die der Cloud Volumes ONTAP Instanz entspricht. Sie müssen auch die Sicherheitsgruppe ändern, um eine ausgehende HTTPS-Regel hinzuzufügen, die Datenverkehr zum S3-Endpunkt ermöglicht. Andernfalls kann Cloud Volumes ONTAP keine Verbindung zum S3-Service herstellen.
 
-Informationen zu Problemen finden Sie unter https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS Support Knowledge Center: Warum kann ich mich nicht über einen Gateway VPC Endpunkt mit einem S3-Bucket verbinden?"^].
+Wenn Sie Probleme haben, lesen Sie https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS Support Knowledge Center: Warum kann ich mich nicht über einen Gateway VPC Endpunkt mit einem S3-Bucket verbinden?"^] .
 
 endif::aws[]
 
@@ -195,7 +195,7 @@ endif::gcp[]
 
 === Aktivieren des Daten-Tiering nach der Implementierung der Anforderungen
 
-BlueXP erstellt bei der Erstellung des Systems einen Objektspeicher für kalte Daten, solange keine Verbindungs- oder Berechtigungsprobleme auftreten. Wenn Sie die oben aufgeführten Anforderungen erst nach dem Erstellen des Systems implementiert haben, müssen Sie Tiering manuell über die API oder den System Manager aktivieren, der den Objektspeicher erstellt.
+BlueXP erstellt bei der Erstellung des Systems einen Objektspeicher für kalte Daten, solange keine Verbindungs- oder Berechtigungsprobleme auftreten. Wenn Sie die oben aufgeführten Anforderungen erst nach dem Erstellen des Systems implementiert haben, müssen Sie Tiering manuell über die API oder den ONTAP System Manager aktivieren, der den Objektspeicher erstellt.
 
 
 NOTE: Tiering über die BlueXP Benutzeroberfläche wird in einer zukünftigen Cloud Volumes ONTAP Version möglich sein.
@@ -212,7 +212,7 @@ Wenn Sie Daten-Tiering auf einem neuen Volume aktivieren, müssen Sie sich keine
 
 * *Vorhandene Bände*
 +
-Wenn Sie Daten-Tiering auf einem vorhandenen Volume aktivieren möchten, müssen Sie sicherstellen, dass das Daten-Tiering auf dem zugrunde liegenden Aggregat aktiviert ist. Wenn das Daten-Tiering auf dem vorhandenen Aggregat nicht aktiviert ist, müssen Sie mit System Manager ein vorhandenes Aggregat an den Objektspeicher anhängen.
+Wenn Sie Daten-Tiering auf einem vorhandenen Volume aktivieren möchten, müssen Sie sicherstellen, dass das Daten-Tiering auf dem zugrunde liegenden Aggregat aktiviert ist. Wenn Daten-Tiering auf dem vorhandenen Aggregat nicht aktiviert ist, müssen Sie ONTAP System Manager verwenden, um ein vorhandenes Aggregat an den Objektspeicher zu binden.
 
 
 
@@ -226,7 +226,7 @@ image:screenshot_aggregate_tiering_enabled.png["Ein Screenshot mit Informationen
 
 
 .Schritte zur Aktivierung des Tiering auf einem Aggregat
-. Klicken Sie im System Manager auf *Storage > Tiers*.
+. Klicken Sie im ONTAP System Manager auf *Speicher > Tiers*.
 . Klicken Sie auf das Aktionsmenü für das Aggregat und wählen Sie *Cloud Tiers anhängen*.
 . Wählen Sie den anzuhänden Cloud Tier aus und klicken Sie auf *Speichern*.
 
@@ -285,7 +285,7 @@ Cloud Volumes ONTAP kann Daten von einem Daten-Protection-Volume auf eine Kapazi
 image:screenshot_replication_tiering.gif["Screenshot, der die S3-Tiering-Option beim Replizieren eines Volumes zeigt."]
 
 +
-Unterstützung bei der Datenreplizierung finden Sie unter https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Replizierung von Daten in die und aus der Cloud"^].
+Informationen zur Datenreplikation finden Sie unter https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Replizierung von Daten in die und aus der Cloud"^].
 
 
 
@@ -330,7 +330,7 @@ image:screenshot_settings_icon.png["Ein Screenshot, in dem das Symbol Einstellun
 
 == Ändern des Kühlzeitraums für die automatische Tiering-Richtlinie
 
-Wenn Sie das Daten-Tiering auf einem Cloud Volumes ONTAP Volume mithilfe der Tiering-Richtlinie „_Auto_“ aktiviert haben, können Sie den standardmäßigen Kühlzeitraum je nach Ihren Geschäftsanforderungen anpassen. Diese Aktion wird nur über die API und CLI unterstützt.
+Wenn Sie das Daten-Tiering auf einem Cloud Volumes ONTAP Volume mithilfe der Tiering-Richtlinie „_Auto_“ aktiviert haben, können Sie den standardmäßigen Kühlzeitraum je nach Ihren Geschäftsanforderungen anpassen. Diese Aktion wird nur über die ONTAP-CLI und -API unterstützt.
 
 Der Kühlzeitraum ist die Anzahl der Tage, die Benutzerdaten in einem Volume inaktiv bleiben müssen, bevor sie als „kalt“ eingestuft und in einen Objekt-Storage verschoben werden.
 

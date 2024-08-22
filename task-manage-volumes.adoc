@@ -16,7 +16,7 @@ summary: Mit BlueXP können Sie Volumes und CIFS-Server verwalten. Außerdem wer
 [role="lead"]
 Mit BlueXP können Sie Volumes und CIFS-Server verwalten. Außerdem werden Sie aufgefordert, Volumes zu verschieben, um Kapazitätsprobleme zu vermeiden.
 
-Sie können Volumes in der BlueXP Standard View oder Advanced View managen. Die Standardansicht bietet eine begrenzte Auswahl an Optionen zum Ändern der Volumes. Die erweiterte Ansicht bietet ein erweitertes Management, wie Klonen, Ändern der Größe, Ändern von Einstellungen für Ransomware-Schutz, Analyse, Schutz und Aktivitätsverfolgung und Verschieben von Volumes über Tiers hinweg. Siehe link:task-administer-advanced-view.html["Cloud Volumes ONTAP mit der erweiterten Ansicht verwalten"].
+Sie können Volumes in der BlueXP Standard View oder Advanced View managen. Die Standardansicht bietet eine begrenzte Auswahl an Optionen zum Ändern der Volumes. Die erweiterte Ansicht bietet ein erweitertes Management, wie Klonen, Ändern der Größe, Ändern von Einstellungen für Ransomware-Schutz, Analyse, Schutz und Aktivitätsverfolgung und Verschieben von Volumes über Tiers hinweg. Weitere Informationen finden Sie unter link:task-administer-advanced-view.html["Cloud Volumes ONTAP mit der erweiterten Ansicht verwalten"].
 
 
 
@@ -65,7 +65,7 @@ Weitere Informationen zu FlexClone Volumes finden Sie im http://docs.netapp.com/
 
 
 
-NOTE: Wenn Sie benutzerdefinierte Snapshot-Richtlinien benötigen, können Sie diese mit System Manager erstellen.
+NOTE: Wenn Sie benutzerdefinierte Snapshot-Richtlinien benötigen, können Sie diese mit ONTAP System Manager erstellen.
 
 
 
@@ -129,7 +129,7 @@ Standardmäßig wird ein Volume automatisch auf eine Maximalgröße erweitert, w
 Wenn Sie die Größe Ihres Volumes ändern müssen, können Sie dies über die erweiterte Ansicht in BlueXP tun.
 
 .Schritte
-. Öffnen Sie die erweiterte Ansicht, um die Größe eines Volumes über System Manager zu ändern. Siehe link:task-administer-advanced-view.html#how-to-get-started["Erste Schritte"].
+. Öffnen Sie die erweiterte Ansicht, um die Größe eines Volumes über ONTAP System Manager zu ändern. Siehe link:task-administer-advanced-view.html#how-to-get-started["Erste Schritte"].
 . Wählen Sie im linken Navigationsmenü *Speicher > Volumes*.
 . Wählen Sie aus der Liste der Volumes das Volume aus, das Sie anpassen sollten.
 . Klicken Sie auf das Optionssymbol image:screenshot_gallery_options.gif["Kabob-Symbol"].
@@ -140,7 +140,7 @@ Wenn Sie die Größe Ihres Volumes ändern müssen, können Sie dies über die e
 
 image:screenshot-resize-volume.png["Der Bildschirm zeigt die geänderte Kapazität nach der Größe des Volumes an"]
 
-Berücksichtigen Sie unbedingt die Kapazitätsgrenzen Ihres Systems, wenn Sie die Größe der Volumes ändern. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Entnehmen.
+Berücksichtigen Sie unbedingt die Kapazitätsgrenzen Ihres Systems, wenn Sie die Größe der Volumes ändern.  https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^]Weitere Informationen finden Sie im.
 
 
 
@@ -213,10 +213,10 @@ Cloud Volumes ONTAP aktualisiert den CIFS-Server mit den Änderungen.
 
 Verschieben Sie Volumes, um die Kapazitätsauslastung, die Performance zu verbessern und Service Level Agreements zu erfüllen.
 
-Sie können ein Volume in System Manager verschieben, indem Sie ein Volume und das Zielaggregat auswählen, den Vorgang zur Volume-Verschiebung starten und optional den Auftrag zur Volume-Verschiebung überwachen. Bei Nutzung von System Manager wird die Verschiebung eines Volumes automatisch abgeschlossen.
+Sie können ein Volume in ONTAP System Manager verschieben, indem Sie ein Volume und das Zielaggregat auswählen, den Volume-Verschiebungsvorgang starten und optional den Volume-Verschiebungsauftrag überwachen. Bei Nutzung von System Manager wird die Verschiebung eines Volumes automatisch abgeschlossen.
 
 .Schritte
-. Verwenden Sie System Manager oder die CLI, um die Volumes in das Aggregat zu verschieben.
+. Verwenden Sie ONTAP System Manager oder die ONTAP CLI, um die Volumes in das Aggregat zu verschieben.
 +
 In den meisten Fällen können Sie mit System Manager Volumes verschieben.
 
@@ -313,7 +313,7 @@ Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp
 
 . Konfigurieren Sie das Volume für den Datenzugriff.
 +
-Informationen über die Konfiguration eines Ziel-Volume für den Datenzugriff finden Sie unter link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["ONTAP 9 Express Guide für die Disaster Recovery von Volumes"^].
+Informationen zum Konfigurieren eines Zielvolume für den Datenzugriff finden Sie im link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["ONTAP 9 Express Guide für die Disaster Recovery von Volumes"^].
 
 . Löschen Sie das ursprüngliche Volume.
 +
@@ -356,7 +356,7 @@ image::screenshot_aggr_capacity.png[Screenshot Aggr Kapazität]
 +
 Weitere Informationen finden Sie unter link:task-create-aggregates.html["Aggregate werden erstellt"^].
 
-. Verwenden Sie System Manager oder die CLI, um die Volumes in das Aggregat zu verschieben.
+. Verwenden Sie ONTAP System Manager oder die ONTAP CLI, um die Volumes in das Aggregat zu verschieben.
 . In den meisten Fällen können Sie mit System Manager Volumes verschieben.
 +
 Anweisungen hierzu finden Sie im link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 Volume Move Express Guide"^].
@@ -385,7 +385,7 @@ Ein älteres Benennungsschema wird verwendet, wenn das Daten-Tiering auf einem A
 
 == Zeigen Sie FlexGroup Volumes an
 
-FlexGroup Volumes, die über CLI oder System Manager erstellt wurden, können direkt über die Registerkarte Volumes in BlueXP angezeigt werden. Wie bei FlexVol Volumes angegeben, bietet BlueXP über eine dedizierte Volume-Kachel detaillierte Informationen zu den erstellten FleGroup Volumes. Unter der Kachel „Volumes“ können Sie jede FlexGroup Volume-Gruppe über den Mauszeiger über das Symbol halten. Darüber hinaus können Sie FlexGroup-Volumes in der Listenansicht Volumes in der Spalte Volume-Stil identifizieren und sortieren.
+FlexGroup Volumes, die mit ONTAP System Manager oder der ONTAP CLI erstellt wurden, können direkt über die Registerkarte Volumes in BlueXP  angezeigt werden. Wie bei FlexVol Volumes angegeben, bietet BlueXP über eine dedizierte Volume-Kachel detaillierte Informationen zu den erstellten FleGroup Volumes. Unter der Kachel „Volumes“ können Sie jede FlexGroup Volume-Gruppe über den Mauszeiger über das Symbol halten. Darüber hinaus können Sie FlexGroup-Volumes in der Listenansicht Volumes in der Spalte Volume-Stil identifizieren und sortieren.
 
 image::screenshot_show_flexgroup_vol.png[Screenshot zeigt FlexGroup Vol]
 

@@ -97,7 +97,7 @@ NOTE: Das LIF-Failover ist für Cloud Volumes ONTAP standardmäßig aufgrund von
 +
 Auf die Backups kann von \http://ipaddress/occm/offboxconfig/ zugegriffen werden, wobei _ipaddress_ die IP-Adresse des Connector-Hosts ist.
 
-** BlueXP setzt einige Volume-Attribute anders als andere Managementtools (z. B. System Manager oder die CLI).
+** BlueXP  setzt einige Volume-Attribute anders als andere Management Tools (beispielsweise ONTAP System Manager oder ONTAP CLI).
 +
 In der folgenden Tabelle sind die Volume-Attribute aufgeführt, die BlueXP anders als die Standardwerte setzt:
 
@@ -127,7 +127,7 @@ NOTE: Der Kontoadministrator kann diesen Wert auf der Seite Einstellungen änder
 | UNIX-Berechtigungen (nur NFS) | 777 
 |===
 +
-Siehe link:https://docs.netapp.com/us-en/ontap-cli-9121/volume-create.html["ONTAP_Volume create_ man page"] Weitere Informationen zu diesen Attributen.
+Informationen zu diesen Attributen finden Sie unter link:https://docs.netapp.com/us-en/ontap-cli-9121/volume-create.html["ONTAP_Volume create_ man page"].
 
 
 
@@ -189,6 +189,9 @@ Wenn die für Cloud Volumes ONTAP ausgewählte virtuelle Maschine Ultra SSDs unt
 * Eine 1024 gib Standard-Festplatte zum Speichern der Kerne
 * Ein Azure Snapshot für jedes Boot- und Root-Laufwerk
 * Jede Festplatte ist standardmäßig in Azure verschlüsselt.
++
+Wenn die virtuelle Maschine, die Sie für Cloud Volumes ONTAP gewählt haben, Premium SSD v2 Managed Disk als Datenfestplatten unterstützt, verwendet das System ein 32 gib Premium SSD v2 Managed Disk für NVRAM und ein anderes als Root Disk.
+
 
 
 
@@ -210,7 +213,7 @@ NOTE: Snapshots werden beim Neustart automatisch erstellt.
 
 .HA-Paare mit gemeinsam genutzten verwalteten Festplatten in mehreren Verfügbarkeitszonen
 * Zwei 10 gib Premium-SSD-Festplatten für das Boot-Volume (eine pro Node)
-* Zwei Blobs für 512 gib Premium Storage für das Root-Volume (eine pro Node)
+* Zwei Premium-SSD-Festplatten mit 512 gib für das Root-Volume (eine pro Node)
 * Zwei 1024 gib Standard-HDD-Festplatten für das Speichern von Cores (eine pro Node)
 * Zwei 512 gib Premium-SSD-Festplatten für NVRAM (eine pro Node)
 * Ein Azure Snapshot für jedes Boot- und Root-Laufwerk
@@ -219,6 +222,16 @@ NOTE: Snapshots werden beim Neustart automatisch erstellt.
 NOTE: Snapshots werden beim Neustart automatisch erstellt.
 
 * Jede Festplatte ist standardmäßig in Azure verschlüsselt.
+
+
+.HA-Paare mit gemeinsam genutzten verwalteten Festplatten in einzelnen Verfügbarkeitszonen
+* Zwei 10 gib Premium-SSD-Festplatten für das Boot-Volume (eine pro Node)
+* Zwei gemeinsam genutzte 512 gib Premium-SSD-Laufwerke für das Root-Volume (eine pro Node)
+* Zwei 1024 gib Standard-HDD-Festplatten für das Speichern von Cores (eine pro Node)
+* Zwei gemanagte Premium-SSD-Festplatten mit 512 gib für NVRAM (eine pro Node)
++
+Wenn Ihre virtuelle Maschine Premium SSD v2 Managed Disks als Datenfestplatten unterstützt, verwendet sie 32 gib Premium SSD v2 Managed Disks für NVRAM und 512 gib Premium SSD v2 Shared Managed Disks für das Root-Volume.
+
 
 
 endif::azure[]

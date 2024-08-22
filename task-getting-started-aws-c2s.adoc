@@ -628,7 +628,7 @@ CAUTION: Wählen Sie während der Auswahl über den Assistenten nicht *Data Sens
 .Hinweise zur Bereitstellung von Cloud Volumes ONTAP HA in mehreren Verfügbarkeitszonen
 Beachten Sie Folgendes, wenn Sie den Assistenten für HA-Paare abschließen.
 
-* Wenn Sie Cloud Volumes ONTAP HA in Multiple Availability Zones (AZS) implementieren, sollten Sie ein Transit-Gateway konfigurieren. Siehe link:task-setting-up-transit-gateway.html["AWS Transit Gateway einrichten"].
+* Wenn Sie Cloud Volumes ONTAP HA in Multiple Availability Zones (AZS) implementieren, sollten Sie ein Transit-Gateway konfigurieren. Anweisungen hierzu finden Sie unter link:task-setting-up-transit-gateway.html["AWS Transit Gateway einrichten"].
 * Implementieren Sie die Konfiguration wie folgt, da zum Zeitpunkt der Veröffentlichung nur zwei AZS in der AWS Top Secret Cloud verfügbar waren:
 +
 ** Node 1: Verfügbarkeitszone A

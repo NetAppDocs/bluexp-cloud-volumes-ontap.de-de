@@ -83,6 +83,8 @@ sidebar:
         url: "/task-set-up-licensing-azure.html"
       - title: Aktivieren Sie den Hochverfügbarkeits-Modus
         url: "/task-azure-high-availability-mode.html"
+      - title: Aktivieren Sie VMOrchestratorZonalMultiFD für einzelne Verfügbarkeitszonen
+        url: "/task-saz-feature.html"
       - title: Starten Sie Cloud Volumes ONTAP in Azure
         url: "/task-deploying-otc-azure.html"
       - title: Image-Verifizierung Für Azure Plattform

@@ -65,20 +65,23 @@ Typ der virtuellen Maschine:: Sehen Sie sich die unterstützten Typen von Virtua
 Azure Festplattentyp mit Single-Node-Systemen:: Wenn Sie Volumes für Cloud Volumes ONTAP erstellen, müssen Sie den zugrunde liegenden Cloud-Storage auswählen, den Cloud Volumes ONTAP als Festplatte verwendet.
 +
 --
-Systeme mit einem Node können drei Typen von Azure Managed Disks verwenden:
+Single-Node-Systeme können die folgenden Typen von Azure Managed Disks verwenden:
 
 * _Premium SSD Managed Disks_ bieten hohe Performance für I/O-intensive Workloads zu höheren Kosten.
+* _Premium SSD v2 Managed Disks_ bieten im Vergleich zu Premium SSD Managed Disks eine höhere Performance mit niedrigerer Latenz zu geringeren Kosten.
 * _Standard SSD Managed Disks_ bieten konsistente Performance für Workloads, die niedrige IOPS erfordern.
 * _Standard HDD Managed Disks_ sind eine gute Wahl, wenn Sie keine hohen IOPS benötigen und Ihre Kosten senken möchten.
 
 
-Weitere Details zu den Anwendungsfällen für diese Festplatten finden Sie unter https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure-Dokumentation: Welche Festplattentypen sind in Azure verfügbar?"^].
+Weitere Informationen zu den Anwendungsbeispielen für diese Festplatten finden Sie unter https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure-Dokumentation: Welche Festplattentypen sind in Azure verfügbar?"^].
 
 --
 Azure-Festplattentyp mit HA-Paaren:: HA-Systeme verwenden Shared Managed Disks mit Premium-SSDs, die beide eine hohe Performance für I/O-intensive Workloads mit höheren Kosten bieten. HA-Implementierungen, die vor der Version 9.12.1 erstellt wurden, verwenden Premium-Blobs auf Seite.
-Festplattengröße Azure:: Wenn Sie Cloud Volumes ONTAP Instanzen starten, müssen Sie die standardmäßige Festplattengröße für Aggregate auswählen. BlueXP verwendet diese Festplattengröße für das anfängliche Aggregat und für alle zusätzlichen Aggregate, die es beim Verwenden der einfachen Bereitstellungsoption erstellt. Sie können Aggregate erstellen, die eine Festplattengröße verwenden, die sich von der Standardgröße unterscheidet link:task-create-aggregates.html["Verwenden der erweiterten Zuweisungsoption"].
+Festplattengröße Azure::
 +
 --
+Wenn Sie Cloud Volumes ONTAP Instanzen starten, müssen Sie die standardmäßige Festplattengröße für Aggregate auswählen. BlueXP verwendet diese Festplattengröße für das anfängliche Aggregat und für alle zusätzlichen Aggregate, die es beim Verwenden der einfachen Bereitstellungsoption erstellt. Sie können Aggregate erstellen, die eine Festplattengröße verwenden, die sich von der Standardgröße unterscheidet link:task-create-aggregates.html["Verwenden der erweiterten Zuweisungsoption"].
+
 
 TIP: Alle Festplatten in einem Aggregat müssen dieselbe Größe haben.
 

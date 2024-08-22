@@ -19,7 +19,7 @@ Wenn Sie ein iSCSI-Volume erstellen, erstellt BlueXP automatisch eine LUN für S
 Beachten Sie Folgendes:
 
 * Das automatische Kapazitätsmanagement von BlueXP gilt nicht für LUNs. Wenn BlueXP eine LUN erstellt, wird die Autogrow Funktion deaktiviert.
-* Sie können weitere LUNs aus System Manager oder der CLI erstellen.
+* Sie können weitere LUNs über ONTAP System Manager oder die ONTAP CLI erstellen.
 
 
 .Schritte

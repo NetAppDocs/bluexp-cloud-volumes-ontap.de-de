@@ -31,7 +31,7 @@ Bei HA-Paaren ist die Änderung unterbrechungsfrei. Ha-Paare stellen weiterhin D
 
 +
 
-TIP: BlueXP ändert den Knoten nacheinander ordnungsgemäß, indem es Takeover und Warten auf Giveback initiiert. Das QA-Team von NetApp testete während dieses Prozesses sowohl das Schreiben als auch das Lesen der Dateien und sah keine Probleme auf Kundenseite. Wenn sich die Verbindungen änderten, wurden Wiederholungen auf I/O-Ebene gesehen, aber die Applikationsebene übergab diese kurze „Re-Wire“ der NFS/CIFS-Verbindungen.
+TIP: BlueXP  führt nacheinander Änderungen an den Nodes durch, indem die Übernahme initiiert und auf die Rückmeldung gewartet wird. Das Qualitätssicherungsteam von NetApp hat während dieses Prozesses sowohl das Schreiben als auch das Lesen von Dateien getestet und keinerlei Probleme auf der Client-Seite gesehen. Als sich Verbindungen änderten, wurden einige Wiederholungen auf I/O-Ebene beobachtet, doch die Anwendungsschicht überwand die Neuverdrahtung von NFS/CIFS-Verbindungen.
 
 
 
