@@ -308,9 +308,6 @@ Im folgenden Video wird gezeigt, wie Sie ein Marketplace-Abonnement zu einem Azu
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 . *Dienste*: Aktivieren oder deaktivieren Sie die einzelnen Dienste je nachdem, ob Sie sie mit Cloud Volumes ONTAP nutzen möchten.
 +
-Ab Cloud Volumes ONTAP 9.15.1 können Sie VM-Instanzen in einzelnen Verfügbarkeitszonen des lokal redundanten Storage (LRS) bereitstellen. Dazu muss die `Microsoft.Compute/VMOrchestratorZonalMultiFD` Funktion auch für Ihr Abonnement aktiviert sein. Diese Funktion erleichtert die Implementierung von HA-Paaren (High Availability, Hochverfügbarkeit) in derselben Verfügbarkeitszone. Siehe link:task-saz-feature.html["Aktivieren Sie VMOrchestratorZonalMultiFD für einzelne Verfügbarkeitszonen"] und link:task-azure-high-availability-mode.html["Aktivieren Sie den Hochverfügbarkeits-Modus in Azure"].
-
-+
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Weitere Informationen zur BlueXP Klassifizierung"^]
 ** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Erfahren Sie mehr über Backup und Recovery von BlueXP"^]
 +
@@ -323,9 +320,9 @@ TIP: Wenn SIE WORM und Daten-Tiering nutzen möchten, müssen Sie BlueXP Backup 
 +
 .. Wählen Sie *Single Availability Zone* oder *Multiple Availability Zone* aus.
 +
-*** Wählen Sie für einzelne Verfügbarkeitszonen eine Azure-Region, eine Verfügbarkeitszone, ein vnet und ein Subnetz aus. Ab Cloud Volumes ONTAP 9.15.1 können Sie VM-Instanzen in einer einzigen Verfügbarkeitszone installieren. Sie müssen eine Region auswählen, die diesen Modus unterstützt. Wenn die von Ihnen ausgewählte Region keine zonale Bereitstellung unterstützt, wird das vorherige nicht zonale Bereitstellungsmodell für LRS verwendet.
+*** Wählen Sie für einzelne Verfügbarkeitszonen eine Azure-Region, eine Verfügbarkeitszone, ein vnet und ein Subnetz aus.
 +
-Weitere Informationen zu diesem Implementierungsmodus und den unterstützten Azure-Zonen finden Sie unter https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure-Dokumentation: Virtual Machine Scale Sets Dokumentation"^] und https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure-Website: Produkte nach Region verfügbar"^].
+Ab Cloud Volumes ONTAP 9.15.1 können Instanzen von Virtual Machines (VM) im HA-Modus in einzelnen Verfügbarkeitszonen (AZS) in Azure implementiert werden. Sie müssen eine Zone und eine Region auswählen, die diese Bereitstellung unterstützen. Wenn die Zone oder die Region keine zonale Bereitstellung unterstützt, wird der vorherige nicht zonale Bereitstellungsmodus für LRS verwendet. Informationen zu den unterstützten Konfigurationen für gemeinsam genutzte verwaltete Festplatten finden Sie unter link:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["HA-Konfiguration mit einer einzelnen Verfügbarkeitszone und gemeinsam genutzten gemanagten Festplatten"].
 
 *** Wählen Sie für mehrere Verfügbarkeitszonen eine Region, ein vnet, ein Subnetz, eine Zone für Knoten 1 und eine Zone für Knoten 2 aus.
 

@@ -61,6 +61,16 @@ Beachten Sie Folgendes zu den Azure Komponenten, die BlueXP für Sie implementie
 
 Azure Standard Load Balancer:: Der Load Balancer managt den eingehenden Datenverkehr zum Cloud Volumes ONTAP HA-Paar.
 VMs in einzelnen Verfügbarkeitszonen:: Ab Cloud Volumes ONTAP 9.15.1 können Sie heterogene Virtual Machines (VMs) in einer einzelnen Verfügbarkeitszone (AZ) erstellen und managen. Sie können Hochverfügbarkeits-(HA-)Nodes in separaten Fehler-Domains innerhalb derselben Verfügbarkeitszone implementieren und so eine optimale Verfügbarkeit sicherstellen. Weitere Informationen zum flexiblen Orchestrierungsmodus, der diese Funktion ermöglicht, finden Sie unter https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure-Dokumentation: Virtual Machine-Skalierungssets"^].
++
+--
+Die zonale Bereitstellung verwendet Premium SSD v2 Managed Disks, wenn die folgenden Bedingungen erfüllt sind:
+
+* Die Version von Cloud Volumes ONTAP ist 9.15.1 oder höher.
+* Die ausgewählte Region und Zone unterstützt Premium SSD v2 Managed Disks. Informationen zu den unterstützten Regionen finden Sie unter  https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure-Website: Produkte nach Region verfügbar"^].
+* Das Abonnement ist für Microsoft registriertlink:task-saz-feature.html["Microsoft.Compute/VMOrchestratorZonalMultiFD Funktion"].
+
+
+--
 Festplatten:: Kundendaten befinden sich auf lokal redundanten, über LRS (Storage Management) gemanagten Festplatten. Jeder Node hat Zugriff auf den Storage des anderen Nodes. Zusätzliche Lagerung ist auch für erforderlichlink:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["Boot-, Root-, Partner-Root-, Core- und NVRAM-Daten"^].
 Konten mit Storage-Systemen:: Storage-Konten werden für gemanagte, festplattenbasierte Implementierungen verwendet, um Diagnoseprotokolle und das Tiering an Blob-Storage zu verarbeiten.
 

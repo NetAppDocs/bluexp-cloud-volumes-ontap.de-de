@@ -2317,8 +2317,6 @@
   <block id="1ee261e062b77615a21251aa4b6da907" category="section-title">Funktionsweise VON WORM-Speicher</block>
   <block id="a4a6f068d81ff1afeac110af2570a8ab" category="paragraph">Sobald eine Datei im WORM-Storage gespeichert wurde, kann sie nicht mehr verändert werden, selbst wenn der Aufbewahrungszeitraum abgelaufen ist. Eine manipulationssichere Uhr bestimmt, wann die Aufbewahrungsfrist für eine WORM-Datei abgelaufen ist.</block>
   <block id="487d92711c834ef6ed6c245a4ade969b" category="paragraph">Nach Ablauf der Aufbewahrungsfrist sind Sie dafür verantwortlich, alle Dateien zu löschen, die Sie nicht mehr benötigen.</block>
-  <block id="d7b54fc61b65b19c4694a29b6044aacd" category="section-title">Wird Geladen</block>
-  <block id="e85cd480a7048786255eb3e2a749e48d" category="paragraph">Die Abrechnung FÜR WORM-Speicher erfolgt stündlich, entsprechend der insgesamt bereitgestellten Kapazität von WORM-Volumes.</block>
   <block id="10142c9d88b9419ee393574e858e86c8" category="inline-link">Informieren Sie sich über die Preisgestaltung für WORM Storage</block>
   <block id="074dbf8cc93ccd34e86e3e2e8f2a1e3a" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block>.</block>
   <block id="74f13d97ea448b8140308bf35c78920e" category="section-title">WORM-Storage wird aktiviert</block>
@@ -3320,8 +3318,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open Source</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">Hinweis für BlueXP</block>
-  <block id="6a8bfe07e1e703ed3692dbea8b2a81de" category="inline-link">Hinweise für den Cloud Volumes ONTAP Mediator</block>
-  <block id="b8a867ef3334c621e08f3cfef506f53b" category="list-text"><block ref="b8a867ef3334c621e08f3cfef506f53b" category="inline-link-rx"></block></block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">Hinweis für ONTAP</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="8ec18a80b08142a9ee538b8ce4350b54" category="summary">Möglicherweise müssen Sie die Konfiguration von Cloud Volumes ONTAP-Systemen ändern, wenn sich Ihre Storage-Anforderungen ändern. Sie können beispielsweise zwischen nutzungsbasierten Konfigurationen wechseln, den Instanz- oder VM-Typ ändern und vieles mehr.</block>
@@ -3566,10 +3562,6 @@
   <block id="5a5214fb40dd557d5d3934ffa3d72686" category="list-text">Basisrichtlinie für Cloud Volumes ONTAP-Nodes</block>
   <block id="bf82e7bc6353b008da4cfeb0bcb78391" category="list-text">Backup-Richtlinie für Cloud Volumes ONTAP-Nodes</block>
   <block id="80fca5903d4623d5bd92d44dca6188ff" category="list-text">Erstellen Sie eine IAM-Rolle, und hängen Sie die von Ihnen erstellten Richtlinien an die Rolle an.</block>
-  <block id="f30b44d93ffa429590bd7907a3d0099c" category="paragraph">Sie sollten das folgende Ladeverhalten mit Cloud Volumes ONTAP 9.10.1 und höher verstehen:</block>
-  <block id="0514cef4c1e1a5949a3acc085ee50110" category="list-text">Ab ONTAP 9.10.1 KÖNNEN WORM Volumes und nicht-WORM-Volumes auf demselben Aggregat vorhanden sein.</block>
-  <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">Wenn Sie WORM aktivieren, wenn Sie eine Cloud Volumes ONTAP-Arbeitsumgebung erstellen, ist für jedes in BlueXP erstellte Volume WORM aktiviert. Allerdings können Sie mit der ONTAP CLI oder mit System Manager Volumes erstellen, in denen WORM deaktiviert ist. Diese Volumes werden NICHT mit DER WORM-Rate berechnet.</block>
-  <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">Single Node</block>
   <block id="d83f214fdb8074463fb047c3669d0f00" category="list-text">HA-Paare verwenden zwei Festplattenarten, die eine hohe Performance für I/O-intensive Workloads zu höheren Kosten bieten:</block>
   <block id="de017bcc9ee62a910294463646126cd7" category="list-text">_Premium Seite Blobs_ mit einer maximalen Festplattengröße von 8 tib</block>
@@ -3640,8 +3632,6 @@
   <block id="770d7d25a250359f096cca82c310f07b" category="paragraph">Wie Sie WORM-Speicher aktivieren, hängt von der verwendeten Cloud Volumes ONTAP Version ab.</block>
   <block id="f7bdab9f1b3e432deef3bba2021d518d" category="section-title">Version 9.10.1 und höher</block>
   <block id="2c404b5c40a30cea75e4486ca42855d7" category="paragraph">Wenn Sie eine neue Cloud Volumes ONTAP Arbeitsumgebung erstellen, werden Sie aufgefordert, WORM-Speicher zu aktivieren oder zu deaktivieren:</block>
-  <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">Erfahren Sie, wie das Laden funktioniert</block>
-  <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">Mit beiden Optionen sollten Sie dies tun <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>.</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">Version 9.10.0 und früher</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX für ONTAP</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Dateien</block>
@@ -3879,7 +3869,6 @@
   <block id="824be8b95270c8a8618f49cb7fb21ae8" category="inline-link">Was BlueXP mit Google Cloud-Berechtigungen macht</block>
   <block id="c8f6e82c7aad23d387dc5633fe484591" category="paragraph">Ab Cloud Volumes ONTAP 9.10.1 haben Sie die Möglichkeit, WORM auf Volume-Ebene zu aktivieren oder zu deaktivieren.</block>
   <block id="f4b6aa85f64f47d1816ec182949156ef" category="paragraph">Sie können WORM Storage auf einem Cloud Volumes ONTAP System aktivieren, wenn Sie eine neue Arbeitsumgebung erstellen. Jedes von Ihnen aus BlueXP erstellte Volume ist DURCH WORM aktiviert. WORM Storage kann nicht auf einzelnen Volumes deaktiviert werden.</block>
-  <block id="60e4218f85755238d0c16943a070de88" category="list-text">Wenn SIE WORM nicht aktivieren, wenn Sie eine Arbeitsumgebung erstellen, ist jedes mit BlueXP erstellte Volume WORM deaktiviert. FÜR diese Volumes werden die WORM-Rate nicht berechnet.</block>
   <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">Wenn Sie Azure Private Links deaktiviert haben und der Connector einen Proxyserver verwendet, müssen Sie direkten API-Datenverkehr aktivieren.</block>
   <block id="40e86593118ce089551b3691f6bba919" category="inline-link">Erfahren Sie, wie Sie direkten API-Datenverkehr auf dem Connector aktivieren</block>
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Die Standard-Storage-Zugriffs-Tier für Tiered Daten in Azure ist die _Hot_-Tier. Die Tier mit häufig benötigten Daten ist ideal für Daten in der Kapazitäts-Tier.</block>
@@ -4451,8 +4440,6 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">Autonomer Schutz Durch Ransomware</block>
   <block id="6f7a609c476697f17ecdfbfe367e39ad" category="paragraph">Cloud Volumes ONTAP unterstützt die ARP-Funktion (Autonomous Ransomware Protection), die Workload-Analysen durchführt, um abnormale Aktivitäten, die auf einen Ransomware-Angriff hinweisen, proaktiv zu erkennen und zu warnen.</block>
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">Autonomer Schutz Vor Ransomware</block>
-  <block id="46d7a6dd7db3af97caa5603b84f76cc1" category="paragraph">Nur für PAYGO oder Jahresverpflichtung verfügbar, Lizenzierung für WORM kann über den Marketplace des Cloud-Providers erworben werden. WORM unterstützt sowohl Node- als auch kapazitätsbasierte Lizenzmodelle.</block>
-  <block id="66ab7e49c11a830935ab2c9b0bf49e5e" category="admonition">Die BYOL-Lizenzierung ist nicht für WORM Storage auf Cloud Volumes ONTAP verfügbar.</block>
   <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">WORM-Dateien werden gelöscht</block>
   <block id="728c208823318f76bc30851f92119221" category="paragraph">MIT der Funktion Privileged delete können SIE WORM-Dateien während des Aufbewahrungszeitraums löschen.</block>
   <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">Anweisungen finden Sie unter<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
@@ -4783,14 +4770,12 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP erstellt Google Cloud Firewall-Regeln, die die ein- und ausgehenden Regeln enthalten, die Cloud Volumes ONTAP für den erfolgreichen Betrieb benötigt. Sie können zu Testzwecken auf die Ports verweisen oder Ihre eigenen Firewall-Regeln verwenden.</block>
   <block id="f297f6161ef6c027c4e0cd622d4c9f53" category="paragraph">Die ARP-Funktion ist nur zur Verwendung mit BYOL-Lizenzen (Laufzeit von 1 bis 36 Monaten) sowohl für Node-basierte als auch für kapazitätsbasierte Lizenzmodell verfügbar. Wenden Sie sich an Ihren NetApp Vertriebsmitarbeiter, um eine neue, separate Add-on-Lizenz zur Verwendung mit der ARP-Funktion in Cloud Volumes ONTAP zu erwerben.</block>
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">Die Verwendung der ARP-Funktion mit Node-basierten Cloud Volumes ONTAP-Lizenzen ist derzeit nicht in Digital Wallet enthalten. Die Möglichkeit, die Node-basierte ARP-Nutzung anzuzeigen, wird in einer zukünftigen Version unter Digital Wallet verfügbar sein.</block>
-  <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">Beim Kauf einer Add-on-Lizenz und beim Hinzufügen zur Digital Wallet können Sie ARP mit Cloud Volumes ONTAP auf Volume-Basis aktivieren. Die Abrechnung für ARP erfolgt auf Volume-Ebene entsprechend der insgesamt bereitgestellten Kapazität von Volumes mit aktivierter ARP-Funktion. Die minimale Lizenzkapazität beträgt 1 TB. Es gibt jedoch keine Mindestkapazitätsgebühren für die ARP-Funktion.</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">Die Konfiguration von ARP für Volumes wird über ONTAP System Manager und ONTAP CLI durchgeführt.</block>
   <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">16 Januar 2024</block>
   <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">Patch-Versionen in BlueXP</block>
   <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">Patch-Releases sind in BlueXP nur für die drei neuesten Cloud Volumes ONTAP Versionen verfügbar.</block>
   <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
   <block id="fa8624c42ea6d2ce73d1dbb434c41dc8" category="paragraph">Die ARP Lizenz gilt als „fließende“ Lizenz, was bedeutet, dass sie nicht an eine einzelne Cloud Volumes ONTAP Instanz gebunden ist und auf mehrere Cloud Volumes ONTAP Umgebungen angewendet werden kann.</block>
-  <block id="a7453af7846f7db9aba5aa90fa8093e5" category="paragraph">ARP-aktivierte Volumes haben einen bestimmten Status als „Lernmodus“ oder „aktiv“. Jede Lautstärke mit dem ARP-Status „deaktiviert“ ist vom Laden ausgeschlossen. Bei einer Cloud Volumes ONTAP-Umgebung mit 30 tib bereitgestellter Kapazität kann beispielsweise nur eine Teilmenge von 15 tib Volumes mit aktivierter ARP-Funktion gewählt werden.</block>
   <block id="677ee5101eb2acd8a357643d03784fa7" category="section-title">Patch-Versionen</block>
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">ONTAP-Image wird heruntergeladen</block>
   <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">Ab Januar 2024 sind Patch-Upgrades nur in BlueXP verfügbar, wenn es sich um ein Patch-Release für die drei neuesten Versionen von Cloud Volumes ONTAP handelt. Wir verwenden die neueste GA-Version, um zu bestimmen, welche drei neuesten Versionen in BlueXP angezeigt werden. Wenn beispielsweise die aktuelle GA-Version 9.13.1 lautet, werden Patches für 9.11.1-9.13.1 in BlueXP angezeigt. Wenn Sie ein Upgrade auf ein Patch-Release für Versionen 9.11.1 oder niedriger durchführen möchten, müssen Sie das manuelle Upgrade-Verfahren von verwenden <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>.</block>
@@ -5351,11 +5336,7 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="d91c9bd9d601398d431e2acc5559f7bf" category="paragraph">Weitere Informationen finden Sie unter <block ref="f7e49e28b2875e2913382dd3096ff790" category="inline-link-macro-rx"></block> und <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>.</block>
   <block id="8c286011c74e75b22d1d90dbeb4504b6" category="list-text">*Dienste*: Aktivieren oder deaktivieren Sie die einzelnen Dienste je nachdem, ob Sie sie mit Cloud Volumes ONTAP nutzen möchten.</block>
   <block id="e9e34ff3ab97c79b3c316c17375f6ff1" category="inline-link-macro">Aktivieren Sie VMOrchestratorZonalMultiFD für einzelne Verfügbarkeitszonen</block>
-  <block id="5d53fdb6098c234fa40898b914a4f5db" category="paragraph">Ab Cloud Volumes ONTAP 9.15.1 können Sie VM-Instanzen in einzelnen Verfügbarkeitszonen des lokal redundanten Storage (LRS) bereitstellen. Dazu muss die<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block> Funktion auch für Ihr Abonnement aktiviert sein. Diese Funktion erleichtert die Implementierung von HA-Paaren (High Availability, Hochverfügbarkeit) in derselben Verfügbarkeitszone. Siehe <block ref="8237f408225e4c565d3ae8daf52a7def" category="inline-link-macro-rx"></block> und <block ref="88705e19880d9fa1af5df70699e53b95" category="inline-link-macro-rx"></block>.</block>
-  <block id="2976779596586c38da75f46052ad2926" category="list-text">Wählen Sie für einzelne Verfügbarkeitszonen eine Azure-Region, eine Verfügbarkeitszone, ein vnet und ein Subnetz aus. Ab Cloud Volumes ONTAP 9.15.1 können Sie VM-Instanzen in einer einzigen Verfügbarkeitszone installieren. Sie müssen eine Region auswählen, die diesen Modus unterstützt. Wenn die von Ihnen ausgewählte Region keine zonale Bereitstellung unterstützt, wird das vorherige nicht zonale Bereitstellungsmodell für LRS verwendet.</block>
-  <block id="fcb7516396bf1d9722f3e765d3004427" category="inline-link">Microsoft Azure-Dokumentation: Virtual Machine Scale Sets Dokumentation</block>
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure-Website: Produkte nach Region verfügbar</block>
-  <block id="6d613bce1a88fcb164ac593c1058e246" category="paragraph">Weitere Informationen zu diesem Implementierungsmodus und den unterstützten Azure-Zonen finden Sie unter<block ref="a0eb41cb535bf2a39d70134c95375180" category="inline-link-rx"></block> und<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>.</block>
   <block id="e4eaa3d391d7d55d8c20cbf06dc81915" category="list-text">Wählen Sie für mehrere Verfügbarkeitszonen eine Region, ein vnet, ein Subnetz, eine Zone für Knoten 1 und eine Zone für Knoten 2 aus.</block>
   <block id="407f144abfa1ac000a5a8035a2a3eb77" category="paragraph">Hilfe bei der Auswahl einer Datenträgergröße finden Sie unter <block ref="693042947faf99c4ded2e1854ea1714d" category="inline-link-macro-rx"></block>.</block>
   <block id="561bec0387138d2b07f137df6774960c" category="paragraph">Weitere Informationen finden Sie unter <block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block> und <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>.</block>
@@ -5445,4 +5426,25 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">Canada West wird jetzt in AWS unterstützt</block>
   <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">Die Region Kanada West wird jetzt in AWS für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.</block>
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Eine Liste aller Regionen finden Sie im<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
+  <block id="208717af2c6557faae5e8d47b38680bd" category="paragraph">Die zonale Bereitstellung verwendet Premium SSD v2 Managed Disks, wenn die folgenden Bedingungen erfüllt sind:</block>
+  <block id="6326d313b843fff1d57ed50ec7c000f1" category="list-text">Die Version von Cloud Volumes ONTAP ist 9.15.1 oder höher.</block>
+  <block id="fd4ec163c1cf6efd42bc780358b7fb84" category="list-text">Die ausgewählte Region und Zone unterstützt Premium SSD v2 Managed Disks. Informationen zu den unterstützten Regionen finden Sie unter <block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>.</block>
+  <block id="a9b7d8164fa6256aced367d79aa2abab" category="inline-link-macro">Microsoft.Compute/VMOrchestratorZonalMultiFD Funktion</block>
+  <block id="218949100f9bb1c7fe8ef525701547a0" category="list-text">Das Abonnement ist für Microsoft registriert<block ref="b47370f17ae59423c751ec1694c9ca74" category="inline-link-macro-rx"></block>.</block>
+  <block id="d63d6372ae20eb19f707718f270a6b48" category="list-text"><block ref="d63d6372ae20eb19f707718f270a6b48" category="inline-link-macro-rx"></block></block>
+  <block id="e378925ca7c13e386e5c5d854097dc26" category="inline-link">Hinweis zum Cloud Volumes ONTAP</block>
+  <block id="72b3ada156bb3b51f9862f1754d974d2" category="list-text"><block ref="72b3ada156bb3b51f9862f1754d974d2" category="inline-link-rx"></block></block>
+  <block id="ea7b4173339bef8c2570812171d360a0" category="paragraph">Sie können die Backups für die Neukonfiguration Ihres Cloud Volumes ONTAP-Systems verwenden. Weitere Informationen zu Konfigurationssicherungen finden Sie unter<block ref="49fe905ea86eeb386daebc5876800d6b" category="inline-link-rx"></block>.</block>
+  <block id="fadac06c68e9ffce4bb17bd0d6ec5f2b" category="paragraph">Sie können HA-Paare in einer einzelnen Verfügbarkeitszone bereitstellen und Managed Disks mit Premium SSD v2 verwenden, wenn die folgenden Bedingungen erfüllt sind:</block>
+  <block id="ed0e2426cd36bf5b4eb9a140ae9a7508" category="list-text">Wählen Sie für einzelne Verfügbarkeitszonen eine Azure-Region, eine Verfügbarkeitszone, ein vnet und ein Subnetz aus.</block>
+  <block id="e09953ef98be5a0cd4cc4ad0c288c775" category="paragraph">Ab Cloud Volumes ONTAP 9.15.1 können Instanzen von Virtual Machines (VM) im HA-Modus in einzelnen Verfügbarkeitszonen (AZS) in Azure implementiert werden. Sie müssen eine Zone und eine Region auswählen, die diese Bereitstellung unterstützen. Wenn die Zone oder die Region keine zonale Bereitstellung unterstützt, wird der vorherige nicht zonale Bereitstellungsmodus für LRS verwendet. Informationen zu den unterstützten Konfigurationen für gemeinsam genutzte verwaltete Festplatten finden Sie unter <block ref="2148c58538cc3adf327c3ade110b8487" category="inline-link-macro-rx"></block>.</block>
+  <block id="26ab4d3fe221f0b273d79d8ce5ebc8bc" category="paragraph">Beim Kauf einer Add-on-Lizenz und beim Hinzufügen zur Digital Wallet können Sie ARP mit Cloud Volumes ONTAP auf Volume-Basis aktivieren.</block>
+  <block id="c728dacf8c5d7e9da86b3512e6ea5301" category="paragraph">ARP-aktivierte Volumes haben einen bestimmten Status als „Lernmodus“ oder „aktiv“.</block>
+  <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">9 September 2024</block>
+  <block id="cdd78645b017b927a25b5449e345f823" category="section-title">WORM- und ARP-Funktionalitäten sind nicht mehr kostenpflichtig</block>
+  <block id="f1967946737edb98fc1947e0768aa8bf" category="paragraph">Die integrierten Datensicherungs- und Sicherheitsfunktionen von WORM (Write Once Read Many) und ARP (Autonomous Ransomware Protection) sind ohne zusätzliche Kosten in allen Cloud Volumes ONTAP Lizenzen enthalten. Dies gilt für neue und bestehende BYOL- und PAYGO/Marketplace-Implementierungen sowohl für Node-basierte als auch kapazitätsbasierte Lizenzen. Das neue Preismodell gilt für alle Cloud-Provider und Implementierungstypen, einschließlich Single-Node- und HA-Konfigurationen (Hochverfügbarkeit).</block>
+  <block id="be80dbfae56af07d4af9dfce1c36cc75" category="paragraph">Die folgenden Vorteile werden verfügbar sein:</block>
+  <block id="c2cf1fd5e48d77ab96276adb197066c3" category="list-text">Bestehende Konten mit WORM und ARP werden für diese Funktionen nicht mehr in Rechnung gestellt. Ihre Kapazitätsnutzung wird Ihnen entsprechend den vor dieser Änderung geltenden Anforderungen in Rechnung gestellt. WORM und ARP werden bei zukünftigen Abrechnungen ausgeschlossen.</block>
+  <block id="404e8d1aa5724e9535ccf69bb3ee9c54" category="list-text">Wenn Sie diese Funktionen in Ihren bestehenden Konten nicht aktiviert haben, können Sie sich jetzt für WORM und ARP ohne zusätzliche Kosten entscheiden.</block>
+  <block id="3ed34d6b3fd7cd8c4e08b032a9f2dc07" category="list-text">Bei neuen Konten werden WORM- und ARP-Gebühren von allen Cloud Volumes ONTAP-Angeboten ausgeschlossen.</block>
 </blocks>

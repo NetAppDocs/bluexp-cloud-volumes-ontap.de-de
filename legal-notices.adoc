@@ -48,6 +48,6 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/media/notice.pdf["Hinweis für BlueXP"^]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/legal-notices.html#open-source["Hinweise für den Cloud Volumes ONTAP Mediator"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/legal-notices.html#open-source["Hinweis zum Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/ontap/reference_legal_notices.html#open-source["Hinweis für ONTAP"^]
 

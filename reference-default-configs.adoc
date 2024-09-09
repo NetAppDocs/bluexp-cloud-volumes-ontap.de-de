@@ -97,6 +97,9 @@ NOTE: Das LIF-Failover ist für Cloud Volumes ONTAP standardmäßig aufgrund von
 +
 Auf die Backups kann von \http://ipaddress/occm/offboxconfig/ zugegriffen werden, wobei _ipaddress_ die IP-Adresse des Connector-Hosts ist.
 
++
+Sie können die Backups für die Neukonfiguration Ihres Cloud Volumes ONTAP-Systems verwenden. Weitere Informationen zu Konfigurationssicherungen finden Sie unter https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["ONTAP-Dokumentation"].
+
 ** BlueXP  setzt einige Volume-Attribute anders als andere Management Tools (beispielsweise ONTAP System Manager oder ONTAP CLI).
 +
 In der folgenden Tabelle sind die Volume-Attribute aufgeführt, die BlueXP anders als die Standardwerte setzt:
@@ -229,9 +232,15 @@ NOTE: Snapshots werden beim Neustart automatisch erstellt.
 * Zwei gemeinsam genutzte 512 gib Premium-SSD-Laufwerke für das Root-Volume (eine pro Node)
 * Zwei 1024 gib Standard-HDD-Festplatten für das Speichern von Cores (eine pro Node)
 * Zwei gemanagte Premium-SSD-Festplatten mit 512 gib für NVRAM (eine pro Node)
-+
+
+
 Wenn Ihre virtuelle Maschine Premium SSD v2 Managed Disks als Datenfestplatten unterstützt, verwendet sie 32 gib Premium SSD v2 Managed Disks für NVRAM und 512 gib Premium SSD v2 Shared Managed Disks für das Root-Volume.
 
+Sie können HA-Paare in einer einzelnen Verfügbarkeitszone bereitstellen und Managed Disks mit Premium SSD v2 verwenden, wenn die folgenden Bedingungen erfüllt sind:
+
+* Die Version von Cloud Volumes ONTAP ist 9.15.1 oder höher.
+* Die ausgewählte Region und Zone unterstützt Premium SSD v2 Managed Disks. Informationen zu den unterstützten Regionen finden Sie unter  https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure-Website: Produkte nach Region verfügbar"^].
+* Das Abonnement ist für Microsoft registriertlink:task-saz-feature.html["Microsoft.Compute/VMOrchestratorZonalMultiFD Funktion"].
 
 
 endif::azure[]

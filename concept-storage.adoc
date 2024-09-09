@@ -100,9 +100,10 @@ HA-Paare:: HA-Paare verwenden zwei Festplattenarten, die eine hohe Performance f
 
 *Verwandte Links*
 
+* link:task-planning-your-config-azure.html["Erfahren Sie, wie Sie Festplattentypen und Festplattengrößen für Ihre Systeme in Azure auswählen"]
+* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["Starten eines Cloud Volumes ONTAP HA-Paars in Azure"]
 * https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure-Dokumentation: Verwaltete Festplattentypen in Azure"^]
 * https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure-Dokumentation: Übersicht über die Blobs der Azure-Seite"^]
-* link:task-planning-your-config-azure.html["Erfahren Sie, wie Sie Festplattentypen und Festplattengrößen für Ihre Systeme in Azure auswählen"]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Prüfen Sie Storage-Limits für Cloud Volumes ONTAP in Azure"^]
 
 

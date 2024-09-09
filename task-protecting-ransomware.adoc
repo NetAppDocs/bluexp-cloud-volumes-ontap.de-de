@@ -70,9 +70,9 @@ Die ARP Lizenz gilt als „fließende“ Lizenz, was bedeutet, dass sie nicht an
 
 NOTE: Die Verwendung der ARP-Funktion mit Node-basierten Cloud Volumes ONTAP-Lizenzen ist derzeit nicht in Digital Wallet enthalten. Die Möglichkeit, die Node-basierte ARP-Nutzung anzuzeigen, wird in einer zukünftigen Version unter Digital Wallet verfügbar sein.
 
-Beim Kauf einer Add-on-Lizenz und beim Hinzufügen zur Digital Wallet können Sie ARP mit Cloud Volumes ONTAP auf Volume-Basis aktivieren. Die Abrechnung für ARP erfolgt auf Volume-Ebene entsprechend der insgesamt bereitgestellten Kapazität von Volumes mit aktivierter ARP-Funktion. Die minimale Lizenzkapazität beträgt 1 TB. Es gibt jedoch keine Mindestkapazitätsgebühren für die ARP-Funktion.
+Beim Kauf einer Add-on-Lizenz und beim Hinzufügen zur Digital Wallet können Sie ARP mit Cloud Volumes ONTAP auf Volume-Basis aktivieren.
 
-ARP-aktivierte Volumes haben einen bestimmten Status als „Lernmodus“ oder „aktiv“. Jede Lautstärke mit dem ARP-Status „deaktiviert“ ist vom Laden ausgeschlossen. Bei einer Cloud Volumes ONTAP-Umgebung mit 30 tib bereitgestellter Kapazität kann beispielsweise nur eine Teilmenge von 15 tib Volumes mit aktivierter ARP-Funktion gewählt werden.
+ARP-aktivierte Volumes haben einen bestimmten Status als „Lernmodus“ oder „aktiv“.
 
 Die Konfiguration von ARP für Volumes wird über ONTAP System Manager und ONTAP CLI durchgeführt.
 
