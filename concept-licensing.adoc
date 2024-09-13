@@ -402,6 +402,9 @@ endif::gcp[]
 
 Bei der Node-basierten Lizenzierung handelt es sich um das Lizenzmodell der vorherigen Generation, mit dem Cloud Volumes ONTAP pro Node lizenziert werden können. Dieses Lizenzmodell ist für Neukunden nicht verfügbar. Das Laden durch Knoten wurde durch die oben beschriebenen Methoden zum Aufladen von Kapazität ersetzt.
 
+
+IMPORTANT: NetApp wird in Kürze die Node-basierte Lizenzierung absetzen, die durch kapazitätsbasierte Lizenzen ersetzt wird. Weitere Informationen finden Sie unter https://mysupport.netapp.com/info/communications/CPC-00589.html["Mitteilungen für Kunden: CPC-00589"^].
+
 Node-basierte Lizenzierung ist weiterhin für Bestandskunden verfügbar:
 
 * Wenn Sie über eine aktive Lizenz verfügen, steht BYOL nur für Lizenzerneuerungen zur Verfügung.

@@ -26,6 +26,69 @@ Die folgenden Anforderungen müssen in AWS erfüllt sein.
 
 === Outbound-Internetzugang für Cloud Volumes ONTAP Nodes
 
+Cloud Volumes ONTAP-Nodes benötigen für den täglichen Betrieb einen ausgehenden Internetzugang, um die folgenden Endpunkte zu kontaktieren.
+
+
+
+==== Cloud Volumes ONTAP Endpunkte
+
+Für Cloud Volumes ONTAP ist ein ausgehender Internetzugang erforderlich, um im täglichen Betrieb verschiedene Endpunkte zu kontaktieren.
+
+Die folgenden Endpunkte sind Cloud Volumes ONTAP-spezifisch. Der Connector kontaktiert auch mehrere Endpunkte für den täglichen Betrieb, sowie die webbasierte BlueXP -Konsole. Siehe https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["Vom Connector aus kontaktierte Endpunkte anzeigen"^] und https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["Networking zur Nutzung der BlueXP Konsole vorbereiten"^].
+
+[cols="5*"]
+|===
+| Endpunkte | Anwendbar für | Zweck | BlueXP Implementierungsmodi | Auswirkung, wenn Endpunkt nicht verfügbar ist 
+
+
+| \https://netapp-cloud-account.auth0.com | Authentifizierung  a| 
+Wird für die BlueXP -Authentifizierung verwendet.
+| Standardmodi und eingeschränkte Modi.  a| 
+Die Benutzerauthentifizierung schlägt fehl, und die folgenden Dienste sind weiterhin nicht verfügbar:
+
+* Cloud Volumes ONTAP Services
+* ONTAP-Dienste
+* Protokolle und Proxy-Services
+
+
+
+
+| \https://keyvault-production-aks.vault.azure.net | Schlüsselspeicher | Dient zum Abrufen des geheimen Client-Schlüssels aus dem Azure Key Vault zur Kommunikation mit S3 Buckets zur Metadatenverarbeitung. Der Cloud Volumes ONTAP Service verwendet diese Komponente intern. | Standardmodus, eingeschränkter und privater Modus. | Die Cloud Volumes ONTAP-Services sind nicht verfügbar. 
+
+
+| \https://cloudmanager.cloud.netapp.com/tenancy | Mandantenfähigkeit | Wird verwendet, um die Cloud Volumes ONTAP-Ressourcen vom BlueXP -Mandanten abzurufen und Ressourcen und Benutzer zu autorisieren. | Standardmodi und eingeschränkte Modi. | Cloud Volumes ONTAP-Ressourcen und die Benutzer sind nicht autorisiert. 
+
+
+| \https://support.NetApp.com/aods/asupmessage \https://support.NetApp.com/asupprod/post/1.0/postAsup | AutoSupport | Zum Senden von AutoSupport Telemetriedaten an den NetApp Support | Standardmodi und eingeschränkte Modi. | Informationen zu AutoSupport bleiben unzugestellt. 
+
+
+| Der genaue kommerzielle Endpunkt für AWS-Service (mit Suffixed `amazonaws.com` ) hängt von der AWS-Region, die Sie verwenden. Siehe https://docs.aws.amazon.com/general/latest/gr/rande.html["AWS Dokumentation für Details"^].  a| 
+* CloudFormation
+* Elastic Compute Cloud (EC2)
+* Identitäts- und Zugriffsmanagement (Identity and Access Management, IAM)
+* Key Management Service (KMS)
+* Security Token Service (STS)
+* Simple Storage Service (S3)
+
+| Kommunikation mit AWS Services. | Standard- und Privatmodus. | Cloud Volumes ONTAP kann nicht mit dem AWS-Service kommunizieren, um bestimmte BlueXP -Vorgänge auf AWS auszuführen. 
+
+
+| Der genaue Endpunkt des AWS-Dienstes hängt von der von Ihnen verwendeten AWS-Region ab. Die Endpunkte werden mit `amazonaws.com` und angestiftet `c2s.ic.gov`. 	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["AWS SDK"] https://docs.aws.amazon.com/general/latest/gr/rande.html["Amazon Dokumentation"]Weitere Informationen finden Sie unter  und.  a| 
+* CloudFormation
+* Elastic Compute Cloud (EC2)
+* Identitäts- und Zugriffsmanagement (Identity and Access Management, IAM)
+* Key Management Service (KMS)
+* Security Token Service (STS)
+* Simple Storage Service (S3)
+
+| Kommunikation mit AWS Services. | Eingeschränkter Modus. | Cloud Volumes ONTAP kann nicht mit dem AWS-Service kommunizieren, um bestimmte BlueXP -Vorgänge auf AWS auszuführen. 
+|===
+
+
+==== Outbound-Internetzugang für NetApp AutoSupport
+
+Cloud Volumes ONTAP-Knoten erfordern ausgehenden Internetzugang für den Zugriff auf externe Endpunkte für verschiedene Funktionen. Cloud Volumes ONTAP kann nicht ordnungsgemäß funktionieren, wenn diese Endpunkte in Umgebungen mit strengen Sicherheitsanforderungen blockiert sind.
+
 Cloud Volumes ONTAP Nodes benötigen Outbound-Internetzugang für NetApp AutoSupport, der den Zustand Ihres Systems proaktiv überwacht und Meldungen an den technischen Support von NetApp sendet.
 
 Routing- und Firewall-Richtlinien müssen HTTP-/HTTPS-Datenverkehr an die folgenden Endpunkte ermöglichen, damit Cloud Volumes ONTAP AutoSupport-Meldungen senden kann:

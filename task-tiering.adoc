@@ -313,7 +313,7 @@ Das Verhältnis von freiem Speicherplatz für Daten-Tiering bestimmt, wie viel f
 So können Sie beispielsweise weniger als 10 % freien Speicherplatz auswählen, um sicherzustellen, dass Sie die erworbene Kapazität nutzen. BlueXP kann dann zusätzliche Festplatten für Sie erwerben, wenn zusätzliche Kapazität benötigt wird (bis zur Obergrenze des Festplattenaggregats).
 
 
-CAUTION: Wenn nicht genügend Speicherplatz zur Verfügung steht, können die Daten mit Cloud Volumes ONTAP nicht verschoben werden. Möglicherweise kommt es zu Performance-Einbußen. Jede Änderung sollte mit Vorsicht vorgenommen werden. Wenn Sie sich nicht sicher sind, wenden Sie sich an den NetApp Support.
+CAUTION: Wenn nicht genügend Speicherplatz verfügbar ist, können die Daten von Cloud Volumes ONTAP nicht verschoben werden, sodass es zu Performance-Einbußen kommen kann. Jede Änderung sollte mit Vorsicht vorgenommen werden. Wenn Sie sich nicht sicher sind, wenden Sie sich an den NetApp Support, um weitere Informationen zu erhalten.
 
 Das Verhältnis ist wichtig für Disaster-Recovery-Szenarien, da die Daten vom Objektspeicher gelesen werden, verschiebt Cloud Volumes ONTAP die Daten auf SSDs/HDDs, um eine bessere Performance zu bieten. Wenn nicht genügend Speicherplatz vorhanden ist, dann kann Cloud Volumes ONTAP die Daten nicht verschieben. Wenn Sie das Verhältnis ändern, können Sie Ihre geschäftlichen Anforderungen erfüllen.
 

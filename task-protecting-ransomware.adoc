@@ -63,7 +63,7 @@ Cloud Volumes ONTAP unterstützt die ARP-Funktion (Autonomous Ransomware Protect
 
 Trennen Sie sich von den Schutzmaßnahmen für die Dateierweiterung, die im bereitgestellt werden https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["ransomware-Schutz-Einstellung"], Die ARP-Funktion verwendet Workload-Analyse, um den Benutzer auf mögliche Angriffe auf der Grundlage erkannt “abnorme Aktivität“ zu warnen. Die Ransomware-Schutzeinstellung und die ARP-Funktion können in Verbindung für einen umfassenden Schutz vor Ransomware verwendet werden.
 
-Die ARP-Funktion ist nur zur Verwendung mit BYOL-Lizenzen (Laufzeit von 1 bis 36 Monaten) sowohl für Node-basierte als auch für kapazitätsbasierte Lizenzmodell verfügbar. Wenden Sie sich an Ihren NetApp Vertriebsmitarbeiter, um eine neue, separate Add-on-Lizenz zur Verwendung mit der ARP-Funktion in Cloud Volumes ONTAP zu erwerben.
+Die ARP-Funktion kann ohne zusätzliche Kosten in Kombination mit BYOL- und Marketplace-Abonnements für Node- und kapazitätsbasierte Lizenzen eingesetzt werden. Wenden Sie sich an Ihren NetApp Vertriebsmitarbeiter, um ARP zu Ihrer aktuellen Lizenz hinzuzufügen.
 
 Die ARP Lizenz gilt als „fließende“ Lizenz, was bedeutet, dass sie nicht an eine einzelne Cloud Volumes ONTAP Instanz gebunden ist und auf mehrere Cloud Volumes ONTAP Umgebungen angewendet werden kann.
 

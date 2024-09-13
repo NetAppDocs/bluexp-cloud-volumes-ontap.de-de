@@ -17,7 +17,7 @@ summary: Die Azure-Image-Digest-Datei können Sie von der NetApp-Support-Website
 Die Azure Image Digest-Datei kann von der heruntergeladen werden https://mysupport.netapp.com/site/["NetApp Support Website"^]. Der Download wurde im Format tar.gz heruntergeladen und enthält Dateien zur Überprüfung der Bildsignatur.
 
 .Schritte
-. Wechseln Sie zum https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["Cloud Volumes ONTAP Produktseite auf der NetApp Support-Website"^] Und laden Sie die gewünschte Softwareversion im Abschnitt Downloads herunter.
+. Gehen Sie zum https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["Cloud Volumes ONTAP Produktseite auf der NetApp Support-Website"^] und laden Sie die erforderliche Softwareversion im Abschnitt Downloads herunter.
 . Klicken Sie auf der Cloud Volumes ONTAP-Download-Seite auf den *Download-Button* für die Azure-Image-Digest-Datei, um den TAR herunterzuladen. GZ-Datei.
 +
 image::screenshot_cloud_volumes_ontap_tar.gz.png[Screenshot Cloud Volumes ONTAP tar.gz]
