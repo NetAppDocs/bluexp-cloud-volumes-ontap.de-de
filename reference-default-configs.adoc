@@ -155,10 +155,15 @@ ifdef::aws[]
 ** 540 gib gp2-Festplatte für Core-Daten
 
 
-* Bei HA-Paaren sind zwei st1-EBS-Volumes für die Mediator-Instanz, die ca. 8 gib und 4 gib betragen, sowie eine zusätzliche gp3-Festplatte mit 140 gib in jedem Node, die eine Kopie der Root-Daten des anderen Node enthalten soll.
+* Bei HA-Paaren:
++
+** Zwei st1 EBS Volumes für die Mediatorinstanz, einer von ca. 8 gib als Root-Festplatte und einer von 4 gib als Datenfestplatte
+** Ein gp3-Laufwerk mit 140 gib pro Knoten, das eine Kopie der Stammdaten des anderen Knotens enthält
 +
 
 NOTE: In einigen Zonen kann der verfügbare EBS-Festplattentyp nur gp2 sein.
+
+
 
 * Ein EBS-Snapshot für jede Boot- und Root-Festplatte
 +
