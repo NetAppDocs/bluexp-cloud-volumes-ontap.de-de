@@ -117,7 +117,7 @@ In der folgenden Tabelle sind die Volume-Attribute aufgeführt, die BlueXP ander
 1.000 Prozent
 
 
-NOTE: Der Kontoadministrator kann diesen Wert auf der Seite Einstellungen ändern.
+NOTE: Die BlueXP -Organisation oder der Kontoadministrator können diesen Wert auf der Seite Einstellungen ändern.
 
 
 

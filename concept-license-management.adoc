@@ -55,7 +55,7 @@ image:screenshot_warning.gif["Screenshot: Zeigt eine Cloud Volumes ONTAP Arbeits
 
 Sie können die Arbeitsumgebung auswählen, in der die Nachricht angezeigt werden soll.
 
-BlueXP enthält eine Warnung zum Ablauf der Lizenz im Cloud Volumes ONTAP-Bericht, die Ihnen per E-Mail zugesandt wurde, falls Sie als Kontoadministrator berechtigt sind und Sie die Option aktiviert haben:
+BlueXP  enthält eine Warnung zum Ablauf der Lizenz im Cloud Volumes ONTAP-Bericht, der Ihnen per E-Mail zugesendet wird, wenn Sie eine BlueXP -Organisation oder ein Account-Administrator sind und die Option aktiviert haben:
 
 image:screenshot_cvo_report.gif["Ein Screenshot des Benutzerprofilfelds, in dem das Kontrollkästchen zum Aktivieren des Cloud Volumes ONTAP-Berichts per E-Mail angezeigt wird"]
 

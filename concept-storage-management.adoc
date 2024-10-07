@@ -48,9 +48,6 @@ endif::aws[]
 
 BlueXP bestimmt, wo ein neues Volume platziert werden soll, indem es sich auf mehrere Faktoren ausschaut: Die maximale Größe eines Aggregats, ob Thin Provisioning aktiviert ist und die freien Speicherplatzschwellenwerte für Aggregate.
 
-
-TIP: Der Kontoadministrator kann die Schwellenwerte für freien Speicherplatz auf der Seite *Einstellungen* ändern.
-
 ifdef::aws[]
 
 
@@ -91,7 +88,7 @@ Statt BlueXP Aggregate für Sie verwalten zu lassen, können Sie es selbst erled
 
 == Kapazitätsmanagement
 
-Der Account Admin kann auswählen, ob BlueXP Sie über Entscheidungen zur Storage-Kapazität benachrichtigt oder ob BlueXP die Kapazitätsanforderungen automatisch managt.
+Der BlueXP -Bereich oder der Account-Administrator kann entscheiden, ob BlueXP  Sie von Entscheidungen zur Storage-Kapazität benachrichtigt oder ob BlueXP  die Kapazitätsanforderungen automatisch managt.
 
 Dieses Verhalten wird durch den _Capacity Management Mode_ auf einem Connector bestimmt. Der Capacity Management-Modus betrifft alle von diesem Connector verwalteten Cloud Volumes ONTAP-Systeme. Wenn Sie einen anderen Konnektor haben, kann er anders konfiguriert werden.
 
@@ -135,7 +132,7 @@ Das automatische Kapazitätsmanagement von BlueXP gilt nicht für LUNs. Wenn Blu
 
 === Manuelles Kapazitätsmanagement
 
-Wenn der Kontoadministrator den Kapazitätsverwaltungsmodus auf manuell setzt, zeigt BlueXP Meldungen zu Maßnahmen erforderlich an, wenn Kapazitätsentscheidungen getroffen werden müssen. Die gleichen Beispiele, die im automatischen Modus beschrieben werden, gelten für den manuellen Modus, aber Sie müssen die Aktionen akzeptieren.
+Wenn die BlueXP -Organisation oder der Kontoadministrator den Kapazitätsverwaltungsmodus auf manuell setzen, zeigt BlueXP  die Meldung Aktion erforderlich an, wenn Kapazitätsentscheidungen getroffen werden müssen. Die gleichen Beispiele, die im automatischen Modus beschrieben werden, gelten für den manuellen Modus, aber Sie müssen die Aktionen akzeptieren.
 
 
 

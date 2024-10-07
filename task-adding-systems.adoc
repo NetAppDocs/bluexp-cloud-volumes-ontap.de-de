@@ -38,4 +38,4 @@ endif::aws[]
 
 
 .Ergebnis
-BlueXP fügt die Cloud Volumes ONTAP-Instanzen zum Arbeitsbereich hinzu.
+BlueXP  fügt die Cloud Volumes ONTAP-Instanzen zum Projekt oder Arbeitsbereich hinzu.

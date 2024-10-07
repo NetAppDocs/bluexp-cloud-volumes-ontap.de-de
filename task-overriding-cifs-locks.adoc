@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-overriding-cifs-locks.html 
 keywords: CIFS locks, azure maintenance, maintenance events, cifs sessions, storage failover, storage giveback, giveback 
-summary: Der Account Administrator kann in BlueXP eine Einstellung aktivieren, die Probleme mit der Cloud Volumes ONTAP Storage-Rückgabe bei Azure Wartungsereignissen verhindert. Wenn Sie diese Einstellung aktivieren, sperrt Cloud Volumes ONTAP Vetoes CIFS und setzt aktive CIFS-Sitzungen zurück. 
+summary: Die BlueXP -Organisation oder der Account-Administrator können eine Einstellung in BlueXP  aktivieren, die Probleme mit der Rückgabe von Cloud Volumes ONTAP Storage während Azure-Wartungsereignissen verhindert. Wenn Sie diese Einstellung aktivieren, sperrt Cloud Volumes ONTAP Vetoes CIFS und setzt aktive CIFS-Sitzungen zurück. 
 ---
 = Überschreiben von CIFS-Sperren für Cloud Volumes ONTAP HA-Paare in Azure
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Der Account Administrator kann in BlueXP eine Einstellung aktivieren, d
 
 
 [role="lead"]
-Der Account Administrator kann in BlueXP eine Einstellung aktivieren, die Probleme mit der Cloud Volumes ONTAP Storage-Rückgabe bei Azure Wartungsereignissen verhindert. Wenn Sie diese Einstellung aktivieren, sperrt Cloud Volumes ONTAP Vetoes CIFS und setzt aktive CIFS-Sitzungen zurück.
+Die BlueXP -Organisation oder der Account-Administrator können eine Einstellung in BlueXP  aktivieren, die Probleme mit der Rückgabe von Cloud Volumes ONTAP Storage während Azure-Wartungsereignissen verhindert. Wenn Sie diese Einstellung aktivieren, sperrt Cloud Volumes ONTAP Vetoes CIFS und setzt aktive CIFS-Sitzungen zurück.
 
 .Über diese Aufgabe
 Microsoft Azure plant regelmäßige Wartungsereignisse auf seinen Virtual Machines. Wenn ein Wartungsereignis auf einem Cloud Volumes ONTAP HA-Paar stattfindet, initiiert das HA-Paar die Storage-Übernahme. Wenn während dieses Wartungsereignisses aktive CIFS-Sitzungen vorhanden sind, können die Sperren von CIFS-Dateien die Rückgabe von Storage verhindern.

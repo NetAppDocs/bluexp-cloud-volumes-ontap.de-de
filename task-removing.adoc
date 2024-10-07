@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-removing.html 
 keywords: working environments, removing, remove, rediscover 
-summary: Der Kontoadministrator kann eine Cloud Volumes ONTAP Arbeitsumgebung entfernen, in der sie auf ein anderes System verschoben oder Fehler bei der Erkennung behoben werden. 
+summary: Sie können eine Cloud Volumes ONTAP-Arbeitsumgebung entfernen, um sie auf ein anderes System zu verschieben oder Probleme bei der Erkennung zu beheben. 
 ---
 = Entfernen von Cloud Volumes ONTAP Arbeitsumgebungen
 :hardbreaks:
@@ -14,17 +14,10 @@ summary: Der Kontoadministrator kann eine Cloud Volumes ONTAP Arbeitsumgebung en
 
 
 [role="lead"]
-Der Kontoadministrator kann eine Cloud Volumes ONTAP Arbeitsumgebung entfernen, in der sie auf ein anderes System verschoben oder Fehler bei der Erkennung behoben werden.
+Sie können eine Cloud Volumes ONTAP-Arbeitsumgebung entfernen, um sie auf ein anderes System zu verschieben oder Probleme bei der Erkennung zu beheben.
 
 .Über diese Aufgabe
-Durch Entfernen einer Cloud Volumes ONTAP-Arbeitsumgebung wird sie von BlueXP entfernt. Das Cloud Volumes ONTAP System wird nicht gelöscht. Sie können die Arbeitsumgebung später neu entdecken.
-
-Durch das Entfernen einer Arbeitsumgebung aus BlueXP können Sie Folgendes tun:
-
-* In einem anderen Arbeitsbereich neu entdecken
-* Entdecken Sie sie von einem anderen BlueXP-System
-* Entdecken Sie es erneut, wenn Sie während der ersten Erkennung Probleme hatten
-
+Durch Entfernen einer Cloud Volumes ONTAP-Arbeitsumgebung wird sie von BlueXP entfernt. Das Cloud Volumes ONTAP System wird nicht gelöscht. Sie können die Arbeitsumgebung später wiederfinden, z. B. wenn bei der ersten Erkennung Probleme aufgetreten sind.
 
 .Schritte
 . Doppelklicken Sie auf der Seite Arbeitsfläche auf die Arbeitsumgebung, die Sie entfernen möchten.

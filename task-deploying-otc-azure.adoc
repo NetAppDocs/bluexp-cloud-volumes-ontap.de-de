@@ -22,7 +22,7 @@ Um eine Arbeitsumgebung zu schaffen, benötigen Sie Folgendes.
 [[licensing]]
 * Ein Anschluss, der betriebsbereit ist.
 +
-** Sie sollten ein haben https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Anschluss, der Ihrem Arbeitsbereich zugeordnet ist"^].
+** Sie sollten eine haben https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Connector, der Ihrem Projekt oder Arbeitsbereich zugeordnet ist"^].
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Sie sollten darauf vorbereitet sein, den Konnektor jederzeit in Betrieb zu nehmen"^].
 
 

@@ -82,11 +82,8 @@ Darüber hinaus wird die rollenbasierte Zugriffssteuerung von System Manager nic
 
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
-. Doppelklicken Sie auf der Seite Arbeitsfläche auf den Namen eines Cloud Volumes ONTAP-Systems.
-. Klicken Sie oben rechts auf *zur erweiterten Ansicht wechseln*.
-+
-image:screenshot_advanced_view.png["Ein Screenshot einer Cloud Volumes ONTAP Arbeitsumgebung, in der die Option zur erweiterten Ansicht wechseln angezeigt wird."]
-
+. Wählen Sie auf der Seite Bildschirm ein Cloud Volumes ONTAP-System aus.
+. Suchen Sie im rechten Bereich unter *Services* *System Manager* und wählen Sie *Open* aus.
 . Wenn die Bestätigungsmeldung angezeigt wird, lesen Sie sie durch und klicken Sie auf *Schließen*.
 . Verwenden Sie System Manager zum Verwalten von Cloud Volumes ONTAP.
 . Klicken Sie bei Bedarf auf *zur Standardansicht wechseln*, um zur Standardverwaltung über BlueXP zurückzukehren.

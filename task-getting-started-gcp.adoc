@@ -18,7 +18,7 @@ Erste Schritte in wenigen Schritten mit Cloud Volumes ONTAP für Google Cloud
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Einen Konnektor erstellen
 [role="quick-margin-para"]
-Wenn Sie keine haben https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Stecker"^] Dennoch muss ein Kontoadministrator einen erstellen. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Erfahren Sie, wie Sie einen Connector in Google Cloud erstellen"^]
+Wenn Sie noch keinen haben https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Stecker"^], müssen Sie einen erstellen. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Erfahren Sie, wie Sie einen Connector in Google Cloud erstellen"^]
 
 [role="quick-margin-para"]
 Wenn Sie Cloud Volumes ONTAP in einem Subnetz bereitstellen möchten, in dem kein Internetzugang verfügbar ist, müssen Sie den Connector manuell installieren und auf die BlueXP Benutzeroberfläche zugreifen, die auf diesem Connector ausgeführt wird. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Erfahren Sie, wie Sie den Connector manuell an einem Ort ohne Internetzugang installieren"^]

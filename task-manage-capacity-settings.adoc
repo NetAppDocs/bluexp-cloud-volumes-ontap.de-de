@@ -19,7 +19,7 @@ Jeder Connector hat Einstellungen, die bestimmen, wie er die Aggregatskapazität
 Diese Einstellungen betreffen alle Cloud Volumes ONTAP-Systeme, die von einem Connector verwaltet werden. Wenn Sie einen anderen Konnektor haben, kann er anders konfiguriert werden.
 
 .Erforderliche Berechtigungen
-Zum Ändern der Cloud Volumes ONTAP-Einstellungen sind Administratorrechte erforderlich.
+Zum Ändern der Cloud Volumes ONTAP-Einstellungen sind Privileges für BlueXP -Organisation oder Kontoverwaltung erforderlich.
 
 .Schritte
 . Klicken Sie oben rechts in der BlueXP Konsole auf das Symbol Einstellungen und wählen Sie *Cloud Volumes ONTAP-Einstellungen* aus.
