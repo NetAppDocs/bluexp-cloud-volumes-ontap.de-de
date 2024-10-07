@@ -26,8 +26,6 @@ Zudem können Sie mit der ONTAP CLI oder mit ONTAP System Manager FlexCache Volu
 * http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["FlexCache Volumes werden in System Manager erstellt"^]
 
 
-BlueXP generiert eine FlexCache Lizenz für alle neuen Cloud Volumes ONTAP Systeme. Die Lizenz umfasst ein Nutzungslimit von 500 gib.
-
 video::PBNPVRUeT1o[youtube,width=848,height=480]
 
 
@@ -58,7 +56,7 @@ Für Google Cloud ist es der Google Cloud Key Management Service. Weitere Inform
 endif::gcp[]
 
 . *Schlüsselmanagement-Services*: Bevor Sie ein FlexCache-Volume erstellen, stellen Sie sicher, dass die Schlüsselmanagement-Services auf dem Cloud Volumes ONTAP-System korrekt konfiguriert sind. Diese Konfiguration ist wichtig, damit das FlexCache Volume die Daten aus dem Ursprungs-Volume entschlüsseln kann.
-. *Lizenzierung*: Bestätigen Sie, dass eine gültige FlexCache-Lizenz auf dem Cloud Volumes ONTAP-System verfügbar und aktiviert ist. BlueXP generiert für alle neuen Cloud Volumes ONTAP Systeme eine FlexCache Lizenz mit einer Nutzungsbeschränkung von 500 gib.
+. *Lizenzierung*: Bestätigen Sie, dass eine gültige FlexCache-Lizenz auf dem Cloud Volumes ONTAP-System verfügbar und aktiviert ist.
 . *ONTAP-Version*: Stellen Sie sicher, dass die ONTAP-Version Ihres Cloud Volumes ONTAP-Systems FlexCache mit verschlüsselten Volumes unterstützt. Weitere Informationen finden Sie in der aktuellsten https://docs.netapp.com/us-en/ontap/release-notes/index.html["Versionshinweise zu ONTAP"^] Version oder der Kompatibilitätsmatrix.
 . *Netzwerkkonfiguration*: Stellen Sie sicher, dass die Netzwerkkonfiguration eine nahtlose Kommunikation zwischen dem Ursprungs-Volume und dem FlexCache-Volume ermöglicht. Dazu gehören das richtige Routing und die DNS-Auflösung in einer Cloud-Umgebung.
 

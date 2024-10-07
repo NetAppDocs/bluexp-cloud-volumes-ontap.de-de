@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-ha-azure.html 
 keywords: high-availability, HA, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, recovery point objective, recovery time objective, nas, nfs, cifs, iscsi, mpio, alua, failover, failure, azure, shared storage, active, passive, load balancer, storage accounts, page blobs 
-summary: Ein HA-Paar von Cloud Volumes ONTAP bietet Zuverlässigkeit der Enterprise-Klasse und unterbrechungsfreien Betrieb bei Ausfällen in Ihrer Cloud-Umgebung. In Azure wird der Storage zwischen den beiden Nodes gemeinsam genutzt. 
+summary: 'Ein HA-Paar (Cloud Volumes ONTAP High Availability, Hochverfügbarkeit) bietet Zuverlässigkeit der Enterprise-Klasse und unterbrechungsfreien Betrieb bei Ausfällen in der Cloud-Umgebung. In Azure wird der Storage zwischen den beiden Nodes gemeinsam genutzt.' 
 ---
 = Hochverfügbarkeitspaare in Azure
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Ein HA-Paar von Cloud Volumes ONTAP bietet Zuverlässigkeit der Enterpr
 
 
 [role="lead"]
-Ein HA-Paar von Cloud Volumes ONTAP bietet Zuverlässigkeit der Enterprise-Klasse und unterbrechungsfreien Betrieb bei Ausfällen in Ihrer Cloud-Umgebung. In Azure wird der Storage zwischen den beiden Nodes gemeinsam genutzt.
+Ein HA-Paar (Cloud Volumes ONTAP High Availability, Hochverfügbarkeit) bietet Zuverlässigkeit der Enterprise-Klasse und unterbrechungsfreien Betrieb bei Ausfällen in der Cloud-Umgebung. In Azure wird der Storage zwischen den beiden Nodes gemeinsam genutzt.
 
 
 

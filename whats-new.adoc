@@ -20,6 +20,18 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 7 Oktober 2024
+
+
+
+=== Verbesserte Benutzerfreundlichkeit bei der Versionsauswahl für das Upgrade
+
+Wenn Sie ab dieser Version versuchen, Cloud Volumes ONTAP mithilfe der BlueXP -Benachrichtigung zu aktualisieren, erhalten Sie eine Anleitung zu den Standardversionen, neuesten und kompatiblen Versionen. Außerdem können Sie jetzt die neueste Patch- oder Hauptversion auswählen, die mit Ihrer Cloud Volumes ONTAP-Instanz kompatibel ist, oder manuell eine Version für das Upgrade eingeben.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Upgrade der Cloud Volumes ONTAP Software"^]
+
+
+
 == 9 September 2024
 
 

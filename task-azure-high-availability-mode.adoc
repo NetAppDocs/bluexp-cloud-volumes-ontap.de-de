@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-azure-high-availability-mode.html 
 keywords: high availability mode, EnableHighAvailabilityMode, action required, nfsv4 
-summary: Der Hochverfügbarkeits-Modus von Microsoft Azure sollte aktiviert sein, um ungeplante Failover-Zeiten zu verringern und die NFSv4-Unterstützung für Cloud Volumes ONTAP zu aktivieren. 
+summary: Der Hochverfügbarkeits-Modus von Microsoft Azure sollte aktiviert sein, um ungeplante Failover-Zeiten zu reduzieren und die NFSv4-Unterstützung für Cloud Volumes ONTAP zu aktivieren. 
 ---
 = Aktivieren Sie den Hochverfügbarkeits-Modus in Azure
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Der Hochverfügbarkeits-Modus von Microsoft Azure sollte aktiviert sein
 
 
 [role="lead"]
-Der Hochverfügbarkeits-Modus von Microsoft Azure sollte aktiviert sein, um ungeplante Failover-Zeiten zu verringern und die NFSv4-Unterstützung für Cloud Volumes ONTAP zu aktivieren.
+Der Hochverfügbarkeits-Modus von Microsoft Azure sollte aktiviert sein, um ungeplante Failover-Zeiten zu reduzieren und die NFSv4-Unterstützung für Cloud Volumes ONTAP zu aktivieren.
 
-Ab der Version Cloud Volumes ONTAP 9.10.1 reduzierten wir die ungeplante Failover-Zeit für Cloud Volumes ONTAP HA-Paare, die in Microsoft Azure laufen, und fügten Unterstützung für NFSv4 hinzu. Um diese Verbesserungen für Cloud Volumes ONTAP verfügbar zu machen, müssen Sie die Hochverfügbarkeitsfunktion Ihres Azure Abonnements aktivieren.
+Ab der Version Cloud Volumes ONTAP 9.10.1 reduzierten wir die ungeplante Failover-Zeit für Cloud Volumes ONTAP HA-Paare, die in Microsoft Azure laufen, und fügten Unterstützung für NFSv4 hinzu. Um diese Verbesserungen für Cloud Volumes ONTAP verfügbar zu machen, müssen Sie in Ihrem Azure-Abonnement die Hochverfügbarkeitsfunktion aktivieren.
 
 In BlueXP werden Sie diese Angaben in einer Meldung „Aktion erforderlich“ eingeben, wenn die Funktion auf einem Azure-Abonnement aktiviert werden muss.
 
@@ -31,7 +31,7 @@ Ein Azure-Benutzer mit „Owner“-Berechtigungen kann die Funktion über die Az
 
 .Schritte
 . https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart["Greifen Sie über das Azure-Portal auf die Azure Cloud Shell zu"^]
-. Registrieren der Funktion des Hochverfügbarkeits-Modus:
+. Registrieren Sie die Funktion für den Hochverfügbarkeits-Modus:
 +
 [source, azurecli]
 ----

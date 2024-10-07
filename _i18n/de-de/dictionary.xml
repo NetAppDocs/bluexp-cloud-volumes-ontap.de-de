@@ -1416,9 +1416,6 @@
   <block id="caaaa38484381ed0bb22152b0d66d03e" category="list-text">Einstellen des Cluster-Passworts</block>
   <block id="bfb824288ae0c3e5dd2481cb36146ceb" category="list-text">Managen von Festplatten und Aggregaten (erweiterte Zuweisung)</block>
   <block id="d510ccf57ef7fde29b73e1d6d9cf5c72" category="paragraph">Diese Aktionen sind wieder verfügbar, nachdem das Storage-Giveback abgeschlossen ist und der Status der Arbeitsumgebung sich wieder auf „Normal“ ändert.</block>
-  <block id="f4cf4636284848695d07f7eb4c75e531" category="summary">Der Hochverfügbarkeits-Modus von Microsoft Azure sollte aktiviert sein, um ungeplante Failover-Zeiten zu verringern und die NFSv4-Unterstützung für Cloud Volumes ONTAP zu aktivieren.</block>
-  <block id="e50998a44626779ff3f707014e804bb6" category="doc">Aktivieren Sie den Hochverfügbarkeits-Modus in Azure</block>
-  <block id="8c3a857138568ac83d0c9e6b5e13c75e" category="paragraph">Ab der Version Cloud Volumes ONTAP 9.10.1 reduzierten wir die ungeplante Failover-Zeit für Cloud Volumes ONTAP HA-Paare, die in Microsoft Azure laufen, und fügten Unterstützung für NFSv4 hinzu. Um diese Verbesserungen für Cloud Volumes ONTAP verfügbar zu machen, müssen Sie die Hochverfügbarkeitsfunktion Ihres Azure Abonnements aktivieren.</block>
   <block id="83abd5ee8b7f73b0a1f8620e32618f71" category="paragraph">In BlueXP werden Sie diese Angaben in einer Meldung „Aktion erforderlich“ eingeben, wenn die Funktion auf einem Azure-Abonnement aktiviert werden muss.</block>
   <block id="4b86a9bfe35da8d5b3e1175b8664656d" category="list-text">Es gibt keine Probleme mit der Hochverfügbarkeit Ihres Cloud Volumes ONTAP HA-Paars. Diese Azure Funktion arbeitet in Kombination mit ONTAP, um die von Clients beobachteten Applikationsausfallzeiten für NFS-Protokolle zu reduzieren, die aus ungeplanten Failover-Ereignissen resultieren.</block>
   <block id="74c86f2714a033254b4bc8058a066937" category="list-text">Wenn Sie diese Funktion aktivieren, wird für Cloud Volumes ONTAP HA-Paare keine Unterbrechung verursacht.</block>
@@ -1426,7 +1423,6 @@
   <block id="3a3aee537f8eb946ce95b303a0b0cde6" category="paragraph">Ein Azure-Benutzer mit „Owner“-Berechtigungen kann die Funktion über die Azure-CLI aktivieren.</block>
   <block id="dede8f1d754e5872747fd6fdd219a9da" category="inline-link">Greifen Sie über das Azure-Portal auf die Azure Cloud Shell zu</block>
   <block id="826fb3564b49a63adcbf5c36eec58144" category="list-text"><block ref="826fb3564b49a63adcbf5c36eec58144" category="inline-link-rx"></block></block>
-  <block id="17cecf34f6070ab2eecf2740c05f04fb" category="list-text">Registrieren der Funktion des Hochverfügbarkeits-Modus:</block>
   <block id="f2c8cae480fd1319bed5bc6dad61485e" category="list-text">Überprüfen Sie optional, ob die Funktion jetzt registriert ist:</block>
   <block id="3f8d6716204225738a12373603bece28" category="paragraph">Die Azure CLI sollte ein Ergebnis wie die folgenden zurückgeben:</block>
   <block id="0b92442656d83f3067193055685902c8" category="list-text">Interner Lastausgleich</block>
@@ -1492,7 +1488,6 @@
   <block id="4e9d1f4e3c452c7aba2d9cc51c690416" category="inline-xref">O. g. für Cloud Volumes ONTAP</block>
   <block id="639c4a9b76126cf4712751dee5546383" category="paragraph">Gleichzeitig ermöglichen die vordefinierten Firewall-Regeln, die BlueXP für Instanzen in VPC-1, VPC-2 und VPC-3 erstellt, die Ingress-Kommunikation über _all_ Protokolle und Ports. Diese Regeln ermöglichen die Kommunikation zwischen HA-Nodes.</block>
   <block id="e83b31d42852ca12480d330a3385214f" category="paragraph">Die Kommunikation zwischen den HA-Nodes und dem HA Mediator erfolgt über Port 3260 (iSCSI).</block>
-  <block id="521c31e5e6d2868178e36a845afac351" category="summary">Eine Cloud Volumes ONTAP Hochverfügbarkeitskonfiguration (HA) bietet unterbrechungsfreien Betrieb und Fehlertoleranz. In AWS werden die Daten zwischen den beiden Nodes synchron gespiegelt.</block>
   <block id="39579c446d8c5e21ff1d2b6c3e65c086" category="section-title">HA-Komponenten</block>
   <block id="828fb65f829775430308146b1ce7cd2e" category="paragraph">In AWS umfassen die Cloud Volumes ONTAP HA-Konfigurationen die folgenden Komponenten:</block>
   <block id="481cd89d21864bf4d528a439dfb59421" category="list-text">Zwei Cloud Volumes ONTAP Nodes, deren Daten synchron gespiegelt werden.</block>
@@ -1666,9 +1661,7 @@
   <block id="57614f27dec39901199cca4b61cebfe9" category="list-text"><block ref="57614f27dec39901199cca4b61cebfe9" category="inline-link-rx"></block></block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="inline-link">Datensicherung</block>
   <block id="168463a2e30ac746441036fb49df730e" category="list-text"><block ref="168463a2e30ac746441036fb49df730e" category="inline-link-rx"></block></block>
-  <block id="d7f3b0a003c7b0fa058047d5df76abae" category="summary">Eine hochverfügbare Konfiguration von Cloud Volumes ONTAP ermöglicht unterbrechungsfreien Betrieb und Fehlertoleranz. In Google Cloud werden die Daten zwischen beiden Nodes synchron gespiegelt.</block>
   <block id="d17c4281542937487475a76b3afea508" category="doc">Hochverfügbarkeitspaare in Google Cloud</block>
-  <block id="36b2e0baf475c546a7d804d50bd41be4" category="paragraph">Eine Cloud Volumes ONTAP Hochverfügbarkeitskonfiguration (HA) bietet unterbrechungsfreien Betrieb und Fehlertoleranz. In Google Cloud werden die Daten zwischen beiden Nodes synchron gespiegelt.</block>
   <block id="f406c9d6eeead7db4c0d7c4436e4365f" category="paragraph">Die Cloud Volumes ONTAP HA-Konfigurationen in Google Cloud umfassen die folgenden Komponenten:</block>
   <block id="fb60cc8b1c07b3747a72dcf7ce2f2f58" category="list-text">Eine Zone oder drei Zonen (empfohlen).</block>
   <block id="0f3118cdf0606432dbda8dd0e39d7d10" category="paragraph">Bei Auswahl von drei Zonen befinden sich die beiden Nodes und der Mediator in separaten Google Cloud Zonen.</block>
@@ -2021,7 +2014,6 @@
   <block id="3a3843b2672bd389702bef2d50b13ac2" category="section-title">Upgrade von Cloud Volumes ONTAP</block>
   <block id="32d300cab53087f3ab3e15c01593d633" category="section-title">Upgrade von BlueXP-Benachrichtigungen</block>
   <block id="5f75615300b4a5dfb537f7f68f86cad0" category="paragraph">BlueXP zeigt eine Benachrichtigung in Cloud Volumes ONTAP-Arbeitsumgebungen an, wenn eine neue Version von Cloud Volumes ONTAP verfügbar ist:</block>
-  <block id="31d167cba5cdd422c65657c793b962dc" category="inline-image-macro">Screenshot: Zeigt die Benachrichtigung über die neue verfügbare Version an, die nach der Auswahl einer Arbeitsumgebung auf der Seite „Arbeitsfläche“ angezeigt wird.</block>
   <block id="1e565fae8cb8375a73df9abf2e99667a" category="paragraph">Sie können den Upgrade-Prozess von dieser Benachrichtigung aus starten, die den Prozess automatisiert, indem Sie das Software-Image aus einem S3-Bucket beziehen, das Image installieren und das System dann neu starten.</block>
   <block id="31aacf5ad0f1f7f769f403486ca64107" category="paragraph">BlueXP-Vorgänge wie die Erstellung von Volumes oder Aggregaten dürfen auf dem Cloud Volumes ONTAP-System nicht ausgeführt werden.</block>
   <block id="d51a07decbe601cbb24e543eb1a87686" category="list-text">Wählen Sie eine Arbeitsumgebung aus.</block>
@@ -2793,7 +2785,6 @@
   <block id="16d02e57fc208d2c24b3f5cd7527e48d" category="cell">VPC-2 und Subnetz</block>
   <block id="f842fc334f5bc052d81236c37c753259" category="cell">VPC-3 und Subnetz</block>
   <block id="2d4d84f16138a9fb32b47976a72ec863" category="paragraph">*Netzwerkinformationen für ein HA-Paar in einer einzelnen Zone*</block>
-  <block id="1fb183d03128aa46689bbfc76f997a80" category="paragraph">Mit BlueXP können Sie eine Schreibgeschwindigkeitseinstellung für Cloud Volumes ONTAP auswählen, außer für HA-Paare in Google Cloud. Bevor Sie sich für eine Schreibgeschwindigkeit entscheiden, sollten Sie die Unterschiede zwischen den normalen und hohen Einstellungen sowie Risiken und Empfehlungen verstehen, wenn Sie eine hohe Schreibgeschwindigkeit verwenden. <block ref="12222f10612c9f092ca31c9e99478649" category="inline-link-macro-rx"></block>.</block>
   <block id="f6ff5ec319049af5e46c8b306858252c" category="doc">Überschreiben von CIFS-Sperren für Cloud Volumes ONTAP HA-Paare in Azure</block>
   <block id="f0186be0ddaae2816f6d38932fcc74bb" category="paragraph">Microsoft Azure plant regelmäßige Wartungsereignisse auf seinen Virtual Machines. Wenn ein Wartungsereignis auf einem Cloud Volumes ONTAP HA-Paar stattfindet, initiiert das HA-Paar die Storage-Übernahme. Wenn während dieses Wartungsereignisses aktive CIFS-Sitzungen vorhanden sind, können die Sperren von CIFS-Dateien die Rückgabe von Storage verhindern.</block>
   <block id="b41beec6b021aed8f5f64bcce68ec5c9" category="paragraph">Wenn Sie diese Einstellung aktivieren, setzt Cloud Volumes ONTAP die Sperren zurück und setzt die aktiven CIFS-Sitzungen zurück. So kann das HA-Paar während dieser Wartungsereignisse das Storage-Giveback durchführen.</block>
@@ -2801,7 +2792,6 @@
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link">Erfahren Sie, wie</block>
   <block id="5d7d393103e631a9504fcc5405e11df7" category="list-text">Klicken Sie unter *Azure* auf *Azure CIFS Locks for Azure HA Working Environments*.</block>
   <block id="92a186c5aba7b8e6286c41ea529a4b1b" category="list-text">Klicken Sie auf das Kontrollkästchen, um die Funktion zu aktivieren, und klicken Sie dann auf *Speichern*.</block>
-  <block id="f5c4745b8a5809c2aa248d1297288719" category="summary">Ein HA-Paar von Cloud Volumes ONTAP bietet Zuverlässigkeit der Enterprise-Klasse und unterbrechungsfreien Betrieb bei Ausfällen in Ihrer Cloud-Umgebung. In Azure wird der Storage zwischen den beiden Nodes gemeinsam genutzt.</block>
   <block id="ca010532511b0575d0c11648404720a6" category="doc">Hochverfügbarkeitspaare in Azure</block>
   <block id="9d9d5448fe99790931a55c5e19b2bf67" category="paragraph">Beachten Sie Folgendes zu den Azure Komponenten, die BlueXP für Sie implementiert:</block>
   <block id="957e0d287584ed2cb6cff5c8c76e1be1" category="list-text">Azure Standard Load Balancer</block>
@@ -3371,7 +3361,6 @@
   <block id="a3272fd5c4bd1903de9b1b2f5e1665a8" category="sidebar">Starten Sie Cloud Volumes ONTAP in AWS</block>
   <block id="1649f10406b5e0e0054f2cb76197f63a" category="sidebar">Erste Schritte in Microsoft Azure</block>
   <block id="97eaaff53e693fb413bacbae932f73ac" category="sidebar">Richten Sie die Verschlüsselung mit Ihrem Schlüssel ein</block>
-  <block id="0b6cbfb7fa10ae2ac77ae5d3273ea95e" category="sidebar">Aktivieren Sie den Hochverfügbarkeits-Modus</block>
   <block id="70c84621a7336f391b4b7df86b5f1396" category="sidebar">Starten Sie Cloud Volumes ONTAP in Azure</block>
   <block id="34d4ba89a5a404f7068a211071e4b81a" category="sidebar">Erste Schritte in Google Cloud</block>
   <block id="516d2ada3b8ef1647b348c09503c54c3" category="sidebar">Planung von VPC Service-Kontrollen</block>
@@ -3545,7 +3534,6 @@
   <block id="2e40430d8621fa0117dad7bd5bd6ce3d" category="list-text">_Gemanagte Festplatten_ mit einer maximalen Festplattengröße von 32 tib</block>
   <block id="ec3e0203f4a9c74546691ee9a62623bb" category="summary">Cloud Volumes ONTAP unterstützt die Client-Protokolle iSCSI, NFS, SMB, NVMe-TCP und S3.</block>
   <block id="ad18d9aa7c4c9bdbf86e39bd6dd5b727" category="section-title">NVMe-TCP</block>
-  <block id="23c4b82f7249c5985875e4b099d8089b" category="paragraph">NVMe-TCP wird für Cloud-Provider unterstützt, wenn Sie Cloud Volumes ONTAP Version 9.12.1 oder höher verwenden. BlueXP bietet keine Managementfunktionen für NVMe-TCP.</block>
   <block id="a441b4ab4a68e599e4c2acbfa61f336e" category="inline-link">Konfigurieren Sie eine Storage-VM für NVMe</block>
   <block id="607cc86a46864bcd2f3a17351fea91fe" category="section-title">HA-Konfiguration mit einer einzelnen Verfügbarkeitszone und Seitenlobs</block>
   <block id="28440751cbe2a16368822f02f298a2f4" category="section-title">HA-Konfiguration mit einer einzelnen Verfügbarkeitszone und gemeinsam genutzten gemanagten Festplatten</block>
@@ -3658,7 +3646,6 @@
   <block id="0a44bfce0bc775d87f0ac6a57bdba584" category="list-text">Aktivieren Sie auf Wunsch den WORM-Storage (Write Once, Read Many).</block>
   <block id="6aeb3713e488b71d0dcbb96914a7951f" category="paragraph">WORM kann nicht aktiviert werden, wenn Daten-Tiering für Cloud Volumes ONTAP-Versionen 9.7 und darunter aktiviert wurde. Ein Wechsel- oder Downgrade auf Cloud Volumes ONTAP 9.8 ist nach Aktivierung VON WORM und Tiering gesperrt.</block>
   <block id="02675533e5e8f922a01de0dd3f2892ad" category="list-text">Wenn Sie DEN WORM-Speicher aktivieren, wählen Sie den Aufbewahrungszeitraum aus.</block>
-  <block id="94fb201facd8c99956b25af1c56a2562" category="paragraph">Cloud Volumes ONTAP fällt aus und führt neue Implementierungen der AWS HA-Konfigurationen (High Availability, Hochverfügbarkeit) in einer einzelnen Verfügbarkeitszone (AZ) zurück, sobald die Erstellung der Speichergruppen ausfällt. Bei Bedarf können Sie den erfolgreichen Abschluss von Bereitstellungen erzwingen, indem Sie Platzierungsgruppen so konfigurieren, dass der Rollback-Prozess bei jedem Fehler der Erstellung umgehen kann.</block>
   <block id="4b80314a98cf05dbcb3b2c5f33f9e79f" category="paragraph">Standardmäßig werden Implementierungen fehlschlagen und Rollback durchgeführt, wenn eine Platzierungsgruppe den Erstellungsvorgang für eine einzige HA-Verfügbarkeitszone in der Arbeitsumgebung nicht unterstützt. Die Erstellung der Platzierungsgruppe schlägt ebenfalls fehl und führt ein Rollen zurück, wenn sowohl Cloud Volumes ONTAP-Nodes als auch die Instanz des Mediators nicht vorhanden sind.</block>
   <block id="65f98964e7d8889df16715139a88da9d" category="paragraph">Sie können den Rollback-Prozess umgehen, wenn die Erstellung der Platzierungsgruppe fehlschlägt und die Bereitstellung durch die Konfiguration der Datei App.conf fortgesetzt werden kann. Beim Umgehen des Rollback-Prozesses wurden die Bereitstellungen erfolgreich abgeschlossen, und das System generiert eine Benachrichtigung, die besagt, dass die Erstellung der Platzierungsgruppe fehlgeschlagen ist und der Status unvollständig ist.</block>
   <block id="8dbf64cf105a5f307a9741aab14c6d90" category="section-title">Deaktivieren des Rollbacks bei Ausfall der Platzierungsgruppe</block>
@@ -3810,7 +3797,6 @@
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 März 2023</block>
   <block id="eed8585d0b45afc4676b1c89f6f22a9a" category="paragraph">Die folgenden Änderungen wurden mit der Version 3.9.27 des Connectors eingeführt.</block>
   <block id="e2c7f196cec5020e2b840087f6a8e068" category="section-title">Unterstützung für 16 tib und 32 TIB in Azure</block>
-  <block id="bfb9ab5387a727da709a7377d950cee0" category="paragraph">Cloud Volumes ONTAP unterstützt jetzt 16 tib und 32 tib Festplatten für Hochverfügbarkeitsimplementierungen auf verwalteten Festplatten in Azure.</block>
   <block id="8f9e72f80a7dd402a28a4b46aca286f9" category="inline-link">Unterstützte Festplattengrößen in Azure</block>
   <block id="9bc26ebd17008cdc39569edf382f0b5e" category="paragraph">Weitere Informationen zu<block ref="e55b1d7df019ac083c7ffec036e8de25" category="inline-link-rx"></block>.</block>
   <block id="3cc0e97defd245de4dee36cae1e4c485" category="paragraph">Die MTEKM-Lizenz (Multi-Tenant Encryption Key Management) ist jetzt auch in neuen und bestehenden Cloud Volumes ONTAP Systemen mit Version 9.12.1 GA oder höher enthalten.</block>
@@ -3843,7 +3829,6 @@
   <block id="b73b2829274aee64ee8dcd0fc7290f49" category="list-text">Outbound-Internetzugang über die Ziel-VPC für NetApp AutoSupport aktivieren</block>
   <block id="f26437251ef23953176712de75dc4d69" category="paragraph">Dieser Schritt ist nicht erforderlich, wenn Sie Cloud Volumes ONTAP an einem Ort bereitstellen, an dem kein Internetzugang verfügbar ist.</block>
   <block id="824be8b95270c8a8618f49cb7fb21ae8" category="inline-link">Was BlueXP mit Google Cloud-Berechtigungen macht</block>
-  <block id="c8f6e82c7aad23d387dc5633fe484591" category="paragraph">Ab Cloud Volumes ONTAP 9.10.1 haben Sie die Möglichkeit, WORM auf Volume-Ebene zu aktivieren oder zu deaktivieren.</block>
   <block id="f4b6aa85f64f47d1816ec182949156ef" category="paragraph">Sie können WORM Storage auf einem Cloud Volumes ONTAP System aktivieren, wenn Sie eine neue Arbeitsumgebung erstellen. Jedes von Ihnen aus BlueXP erstellte Volume ist DURCH WORM aktiviert. WORM Storage kann nicht auf einzelnen Volumes deaktiviert werden.</block>
   <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">Wenn Sie Azure Private Links deaktiviert haben und der Connector einen Proxyserver verwendet, müssen Sie direkten API-Datenverkehr aktivieren.</block>
   <block id="40e86593118ce089551b3691f6bba919" category="inline-link">Erfahren Sie, wie Sie direkten API-Datenverkehr auf dem Connector aktivieren</block>
@@ -4004,11 +3989,9 @@
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">Ein Screenshot, der den Fortschritt des Hinzufügens eines Aggregats zeigt.</block>
   <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c0db33b74d957aee90885031cc634b6" category="paragraph">Wenn eine neue Version verfügbar ist, wird auf der Registerkarte „Übersicht“ eine Benachrichtigung angezeigt:</block>
   <block id="9646f8f8111c91fa6c731c727c894c5f" category="inline-image-macro">Ein Screenshot, der das "Upgrade jetzt!" zeigt Auf der Registerkarte „Übersicht“.</block>
   <block id="96189d65a45e7fa44a02098d1c2994b3" category="paragraph"><block ref="96189d65a45e7fa44a02098d1c2994b3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c8a40603d5d9f8240beba1de505700ab" category="list-text">Wenn eine neue Version verfügbar ist, klicken Sie auf *Jetzt aktualisieren!*</block>
   <block id="e4e172ed018cf6c10be6941fd7282e6f" category="list-text">Lesen Sie auf der Seite Upgrade Cloud Volumes ONTAP die EULA, und wählen Sie dann *Ich habe die EULA gelesen und genehmigt*.</block>
   <block id="f6e8db7e26c18ff77395c70107114b81" category="list-text">Klicken Sie Auf *Upgrade*.</block>
   <block id="aac15e5127b7a8b7e9fa2c9cd925e9b5" category="paragraph">BlueXP startet das Software-Upgrade. Sie können Aktionen in der Arbeitsumgebung durchführen, wenn die Softwareaktualisierung abgeschlossen ist.</block>
@@ -4346,9 +4329,6 @@ Wenn eine Lizenz direkt über NetApp (BYOL) erworben wird, ist kein AWS Abonneme
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">Die Bereitstellung Ihres NSS-Kontos ist erforderlich, damit BlueXP Ihren Lizenzschlüssel hochladen und das Abonnement für den von Ihnen erworbenen Zeitraum aktivieren kann. Dies schließt automatische Updates für Vertragsverlängerungen ein.</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Aktualisieren der Cloud Volumes ONTAP Software auf die neueste Version</block>
   <block id="b164b6fd89d2aa03544d045cf180f639" category="admonition">Bevor Sie Cloud Volumes ONTAP über die BlueXP Benachrichtigung aktualisieren können, benötigen Sie ein NetApp Support Site Konto.</block>
-  <block id="1284a776b9f3feb49d88b74d4068f85f" category="inline-link">Liste der unterstützten Upgrade-Pfade</block>
-  <block id="08c727e5413b02eb0e2eaebdfa595ec1" category="admonition">Auf der Seite Upgrade Cloud Volumes ONTAP wird standardmäßig die neueste verfügbare Cloud Volumes ONTAP-Version für das Upgrade ausgewählt. Falls verfügbar, können Sie stattdessen ältere Versionen von Cloud Volumes ONTAP für Ihr Upgrade auswählen, indem Sie auf *Ältere Versionen auswählen* klicken.
-Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></block> Sie erhalten basierend auf Ihrer aktuellen Cloud Volumes ONTAP Version die gewünschten Upgrade-Pfade.</block>
   <block id="40a5b297d7fc7d1cb7f4639309d92351" category="inline-image-macro">Ein Screenshot der Seite Cloud Volumes ONTAP-Version aktualisieren.</block>
   <block id="94730a34db857a8cffa1610edfc7314d" category="paragraph"><block ref="94730a34db857a8cffa1610edfc7314d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9b8cca0e5a3840c29a71a4c6f13a917" category="inline-link-macro">Erfahren Sie mehr über NetApp Keystone</block>
@@ -4383,7 +4363,6 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="0882685275009e45f6167bce4081e668" category="list-text">Überprüfen und erstellen Sie die Zugriffsrichtlinie.</block>
   <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">Nehmen Sie die auf<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> Feld, wenn Sie diese Ressource für die Verschlüsselung von Speicherkontos erstellt haben.</block>
   <block id="57a3061930625af99195891e9e561fb2" category="cell">9.13.1</block>
-  <block id="99430eacf0d5244d50939eea94bd5962" category="paragraph">Hier ein paar Beispiele:</block>
   <block id="1893a0478b381d08866888a1c7f8607a" category="list-text">9.13.0 &gt; 9,13,1P15</block>
   <block id="4ae2d614cc725ba442c80c740c08f75f" category="list-text">9.12.1 &gt; 9,13,1P2</block>
   <block id="a6f0c7a0901d4da8e8ff8a6db3216b38" category="list-text">Klicken Sie zur Bestätigung auf *Weiter*.</block>
@@ -4526,7 +4505,6 @@ Siehe<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></b
   <block id="5f63db6bf0512dc0612ee852c1faf373" category="inline-link-macro">BlueXP Volume-Caching</block>
   <block id="28495b8712e93ec4d83d5af5db51d535" category="paragraph">BlueXP ermöglicht das Management von FlexCache Volumes mit dem <block ref="06867f1eea47d22d6d5c52a51ce61294" category="inline-link-macro-rx"></block> Service:</block>
   <block id="06156010b52bde259c58b15866491a02" category="paragraph">Zudem können Sie mit der ONTAP CLI oder mit ONTAP System Manager FlexCache Volumes erstellen und managen:</block>
-  <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP generiert eine FlexCache Lizenz für alle neuen Cloud Volumes ONTAP Systeme. Die Lizenz umfasst ein Nutzungslimit von 500 gib.</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 September 2023</block>
   <block id="e749c9d187d1531bb81af1a3c9eb73be" category="section-title">Unterstützung für VMs der Lsv3-Serie in Azure</block>
   <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">Die Instanztypen L48s_v3 und L64s_v3 werden nun mit Cloud Volumes ONTAP in Azure unterstützt. Dies gilt für Single-Node- und Hochverfügbarkeitspaare-Implementierungen mit gemeinsam genutzten verwalteten Festplatten in einzelnen und mehreren Verfügbarkeitszonen, beginnend mit Version 9.13.1. Diese Instanztypen unterstützen Flash Cache.</block>
@@ -5166,7 +5144,6 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="2f3839adaa606a1f97c79876fe7c1c58" category="inline-link-macro">Schlüsselmanagement mit dem Cloud Key Management Service von Google</block>
   <block id="ee361a3f988700740b3fadeca2bdd1e0" category="paragraph">Für Google Cloud ist es der Google Cloud Key Management Service. Weitere Informationen finden Sie unter <block ref="9a0de177eaebd309cc4f26a09b5d5013" category="inline-link-macro-rx"></block>.</block>
   <block id="e29e14dbb5385db3b2de688e4fbe1a6b" category="list-text">*Schlüsselmanagement-Services*: Bevor Sie ein FlexCache-Volume erstellen, stellen Sie sicher, dass die Schlüsselmanagement-Services auf dem Cloud Volumes ONTAP-System korrekt konfiguriert sind. Diese Konfiguration ist wichtig, damit das FlexCache Volume die Daten aus dem Ursprungs-Volume entschlüsseln kann.</block>
-  <block id="5d6ac79246155b5f33cacd0077c2172a" category="list-text">*Lizenzierung*: Bestätigen Sie, dass eine gültige FlexCache-Lizenz auf dem Cloud Volumes ONTAP-System verfügbar und aktiviert ist. BlueXP generiert für alle neuen Cloud Volumes ONTAP Systeme eine FlexCache Lizenz mit einer Nutzungsbeschränkung von 500 gib.</block>
   <block id="0f40216c1ad47c12e8ccc087d555570f" category="inline-link">Versionshinweise zu ONTAP</block>
   <block id="543cc078f66d581004934cfaa8988453" category="list-text">*ONTAP-Version*: Stellen Sie sicher, dass die ONTAP-Version Ihres Cloud Volumes ONTAP-Systems FlexCache mit verschlüsselten Volumes unterstützt. Weitere Informationen finden Sie in der aktuellsten<block ref="9ec4657ceea5a1d054b2b0fa2482a129" category="inline-link-rx"></block> Version oder der Kompatibilitätsmatrix.</block>
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">*Netzwerkkonfiguration*: Stellen Sie sicher, dass die Netzwerkkonfiguration eine nahtlose Kommunikation zwischen dem Ursprungs-Volume und dem FlexCache-Volume ermöglicht. Dazu gehören das richtige Routing und die DNS-Auflösung in einer Cloud-Umgebung.</block>
@@ -5401,7 +5378,6 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="23061a7b150b62a269bdf5346feaa7d1" category="list-text"><block ref="1f4fa402fb905ee626761b74cd1a4c87" prefix="" category="inline-code"></block></block>
   <block id="58a7b8379178f95002ceeceb82feb029" category="list-text"><block ref="0d409a8ed03d0fa3e161460f3f21e0b4" prefix="" category="inline-code"></block></block>
   <block id="3c1cec80e048088b9c829a18b7d5111b" category="list-text"><block ref="8e6e205a8b8f4f22cf306f9b85bd6c2c" prefix="" category="inline-code"></block></block>
-  <block id="7fd6d2c43ef162414a32b6569dfcc99a" category="paragraph">Die integrierten Datensicherungs- und Sicherheitsfunktionen von WORM (Write Once Read Many) und ARP (Autonomous Ransomware Protection) werden ohne zusätzliche Kosten mit Cloud Volumes ONTAP Lizenzen angeboten. Das neue Preismodell gilt sowohl für neue als auch bestehende BYOL- und PAYGO/Marketplace-Abonnements von AWS, Azure und Google Cloud. Sowohl kapazitätsbasierte als auch Node-basierte Lizenzen enthalten ARP- und WORM-Funktionen für alle Konfigurationen, einschließlich Single Node und HA-Paaren mit hoher Verfügbarkeit, ohne dass zusätzliche Kosten anfallen.</block>
   <block id="9dab6b96899670128353b1e92c2b8997" category="paragraph">Die vereinfachte Preisgestaltung bietet Ihnen diese Vorteile:</block>
   <block id="000f6c26eec43af35931bc5e6fbf9f49" category="list-text">Konten, die derzeit WORM und ARP enthalten, werden für diese Funktionen nicht mehr berechnet. In Zukunft fallen für Ihre Abrechnung nur Gebühren für die Kapazitätsnutzung an, wie vor dieser Änderung. WORM und ARP werden nicht mehr in Ihren zukünftigen Rechnungen enthalten sein.</block>
   <block id="3817bf50b7761fc5155c59e4a334d37a" category="list-text">Wenn Ihre aktuellen Konten diese Funktionen nicht enthalten, können Sie sich jetzt für WORM und ARP ohne zusätzliche Kosten entscheiden.</block>
@@ -5525,4 +5501,33 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">Um die folgenden wichtigen Workflows für Cloud Volumes ONTAP zu ermöglichen, müssen die Zugangsdaten auf der NetApp Support Website Ihrer BlueXP  Abteilung zugeordnet werden:</block>
   <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">Das Zuordnen von NSS-Anmeldeinformationen zu Ihrer BlueXP -Organisation unterscheidet sich von dem NSS-Konto, das mit einer BlueXP -Benutzeranmeldung verknüpft ist.</block>
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">Diese NSS-Anmeldedaten sind mit Ihrer spezifischen BlueXP -Organisations-ID verknüpft. Benutzer, die zur BlueXP -Organisation gehören, können über *Support &gt; NSS-Verwaltung* auf diese Anmeldeinformationen zugreifen.</block>
+  <block id="6c0a4a49afd7a59a236f66bcd2c36132" category="paragraph">Ab ONTAP Version 9.12.1 wird NVMe-TCP für Cloud-Provider unterstützt. BlueXP bietet keine Managementfunktionen für NVMe-TCP.</block>
+  <block id="c735549ebe0b83aaa44f1cb8cf914b26" category="summary">Ein HA-Paar (Cloud Volumes ONTAP High Availability, Hochverfügbarkeit) bietet Zuverlässigkeit der Enterprise-Klasse und unterbrechungsfreien Betrieb bei Ausfällen in der Cloud-Umgebung. In Azure wird der Storage zwischen den beiden Nodes gemeinsam genutzt.</block>
+  <block id="c60675d0dad7e91669b8a7d700995f3a" category="summary">Eine Hochverfügbarkeitskonfiguration von Cloud Volumes ONTAP sorgt für unterbrechungsfreien Betrieb und Fehlertoleranz. In Google Cloud werden die Daten zwischen beiden Nodes synchron gespiegelt.</block>
+  <block id="a24987227442914c4ad6acf3f96fecc8" category="paragraph">Eine Cloud Volumes ONTAP HA-Konfiguration (High Availability) bietet unterbrechungsfreien Betrieb und Fehlertoleranz. In Google Cloud werden die Daten zwischen beiden Nodes synchron gespiegelt.</block>
+  <block id="9d009c8b1de318075d9a1a7ebbea12ba" category="summary">Eine Cloud Volumes ONTAP HA-Konfiguration (High Availability) bietet unterbrechungsfreien Betrieb und Fehlertoleranz. In AWS werden die Daten zwischen den beiden Nodes synchron gespiegelt.</block>
+  <block id="818463a565efd170c3b438984db3eb77" category="paragraph">Eine HA-Konfiguration sorgt wie folgt für die Hochverfügbarkeit Ihrer Daten:</block>
+  <block id="8a0f22007e4d3655ce31d0f694736801" category="paragraph">Ab Cloud Volumes ONTAP 9.10.1 haben Sie die Möglichkeit, WORM auf Volume-Ebene zu aktivieren oder zu deaktivieren.</block>
+  <block id="cd0f7e99403d8fa2d51f79da8490c871" category="list-text">*Lizenzierung*: Bestätigen Sie, dass eine gültige FlexCache-Lizenz auf dem Cloud Volumes ONTAP-System verfügbar und aktiviert ist.</block>
+  <block id="d2a65c4b3d7d612fe9fcff1cd53a7468" category="summary">Der Hochverfügbarkeits-Modus von Microsoft Azure sollte aktiviert sein, um ungeplante Failover-Zeiten zu reduzieren und die NFSv4-Unterstützung für Cloud Volumes ONTAP zu aktivieren.</block>
+  <block id="5bc18ee7996a6b2f47f52d9c0d64c84c" category="doc">Aktivieren Sie den Hochverfügbarkeits-Modus in Azure</block>
+  <block id="f9d5342a5ffe6f23e9e7c99df8a42301" category="paragraph">Ab der Version Cloud Volumes ONTAP 9.10.1 reduzierten wir die ungeplante Failover-Zeit für Cloud Volumes ONTAP HA-Paare, die in Microsoft Azure laufen, und fügten Unterstützung für NFSv4 hinzu. Um diese Verbesserungen für Cloud Volumes ONTAP verfügbar zu machen, müssen Sie in Ihrem Azure-Abonnement die Hochverfügbarkeitsfunktion aktivieren.</block>
+  <block id="3cad9b9a9f4d8a66f7f9dabc18c3c350" category="list-text">Registrieren Sie die Funktion für den Hochverfügbarkeits-Modus:</block>
+  <block id="55b69e64ede595e0a10eefb4d9199033" category="paragraph">Wenn die Erstellung der Platzierungsgruppe fehlschlägt, führt Cloud Volumes ONTAP ein Rollback neuer Implementierungen von AWS HA-Konfigurationen (High Availability Zone, Hochverfügbarkeit) in einer Single Availability Zone (AZ) durch. Bei Bedarf können Sie den erfolgreichen Abschluss von Bereitstellungen erzwingen, indem Sie Platzierungsgruppen so konfigurieren, dass der Rollback-Prozess bei jedem Fehler der Erstellung umgehen kann.</block>
+  <block id="43c795154e3b7bf74f7abd49f2e26e1a" category="paragraph">Mit BlueXP  können Sie eine Einstellung für die Schreibgeschwindigkeit für Cloud Volumes ONTAP wählen, außer bei Hochverfügbarkeitspaaren (HA) in Google Cloud. Bevor Sie sich für eine Schreibgeschwindigkeit entscheiden, sollten Sie die Unterschiede zwischen den normalen und hohen Einstellungen sowie Risiken und Empfehlungen verstehen, wenn Sie eine hohe Schreibgeschwindigkeit verwenden. <block ref="12222f10612c9f092ca31c9e99478649" category="inline-link-macro-rx"></block>.</block>
+  <block id="473579de7dd820e9afa2d1deba8066a3" category="paragraph">Hier einige Beispiele:</block>
+  <block id="f7cd19fdb1155c901cb27faf15e77439" category="list-text">Wenn Sie die installierte Version von Cloud Volumes ONTAP aktualisieren möchten, klicken Sie auf *Jetzt aktualisieren!* Standardmäßig wird die neueste kompatible Version für das Upgrade angezeigt.</block>
+  <block id="9e86b6254cc29df18fac17b280fac325" category="paragraph">Wenn Sie auf eine andere Version aktualisieren möchten, klicken Sie auf *andere Versionen auswählen*. Es werden die aktuellen Cloud Volumes ONTAP-Versionen angezeigt, die auch mit der auf Ihrem System installierten Version kompatibel sind. Die auf Ihrem System installierte Version ist beispielsweise 9.12.1P3, und die folgenden kompatiblen Versionen sind verfügbar:</block>
+  <block id="d4814bca9862afd417c1a260eff25dcd" category="list-text">9.12.1P4 bis 9.12.1P14</block>
+  <block id="48237032fa691734071e589539cdca15" category="list-text">9.13.1 und 9.13.1P1 sehen Sie 9.13.1P1 als Standardversion für das Upgrade und 9.12.1P13, 9.13.1P14, 9.13.1 und 9.13.1P1 als die anderen verfügbaren Versionen.</block>
+  <block id="407a24a0e5b59702955c0dcc294f7527" category="list-text">Optional können Sie auf *Alle Versionen* klicken, um eine andere Version einzugeben, auf die Sie aktualisieren möchten (z. B. den nächsten Patch der installierten Version). Einen kompatiblen Upgrade-Pfad Ihrer aktuellen Cloud Volumes ONTAP-Version finden Sie unter <block ref="edc516954278e6b04bf6c1ef0d737956" category="inline-link-macro-rx"></block>.</block>
+  <block id="9e4cdb05c97e8577ba53a001bce78c3b" category="inline-image-macro">Ein Screenshot mit den verfügbaren Versionen für das Upgrade.</block>
+  <block id="b452606099f6a8b77fe9005a225c9276" category="list-text">Klicken Sie auf *Speichern* und dann auf *Anwenden*. <block ref="6b667d1b749c4cd029bb5e750df2c060" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">7 Oktober 2024</block>
+  <block id="1b658f77da3dfa84be0559359889c6d1" category="section-title">Verbesserte Benutzerfreundlichkeit bei der Versionsauswahl für das Upgrade</block>
+  <block id="76723ae6fdfacae29242fdb7085394b0" category="paragraph">Wenn Sie ab dieser Version versuchen, Cloud Volumes ONTAP mithilfe der BlueXP -Benachrichtigung zu aktualisieren, erhalten Sie eine Anleitung zu den Standardversionen, neuesten und kompatiblen Versionen. Außerdem können Sie jetzt die neueste Patch- oder Hauptversion auswählen, die mit Ihrer Cloud Volumes ONTAP-Instanz kompatibel ist, oder manuell eine Version für das Upgrade eingeben.</block>
+  <block id="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="paragraph"><block ref="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="inline-link-rx"></block></block>
+  <block id="c5686848892b4de33534dcc294c33fff" category="paragraph">Die integrierten Datensicherungs- und Sicherheitsfunktionen von WORM (Write Once Read Many) und ARP (Autonomous Ransomware Protection) werden ohne zusätzliche Kosten mit Cloud Volumes ONTAP Lizenzen angeboten. Das neue Preismodell gilt sowohl für neue als auch bestehende BYOL- und PAYGO/Marketplace-Abonnements von AWS, Azure und Google Cloud. Sowohl kapazitätsbasierte als auch Node-basierte Lizenzen enthalten ARP- und WORM-Funktionen für alle Konfigurationen, einschließlich Single Node und HA-Paaren mit hoher Verfügbarkeit, ohne dass zusätzliche Kosten anfallen.</block>
+  <block id="9da5d2f7e476f47c6a26d4ededfa4837" category="paragraph">Cloud Volumes ONTAP unterstützt jetzt 16 tib und 32 tib Festplatten für Hochverfügbarkeitsimplementierungen auf verwalteten Festplatten in Azure.</block>
+  <block id="c4603a2a1f5be3fcdbe4e7ce09178104" category="sidebar">Aktivieren Sie den Hochverfügbarkeitsmodus</block>
 </blocks>

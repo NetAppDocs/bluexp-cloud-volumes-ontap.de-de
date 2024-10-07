@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-ha.html 
 keywords: high availability, HA, mediator, concepts, understanding, overview, availability zones, AZs, takeover, giveback, rpo, rto, floating ip, nondisruptive, ha pairs, node, nodes, synchronous, resync, recovery point objective, recovery time objective, nas, nfs, cifs, floating ip address, route tables, iscsi, mpio, alua, failover, mount, remount, failure, data access, access, ip address, performance 
-summary: 'Eine Cloud Volumes ONTAP Hochverfügbarkeitskonfiguration (HA) bietet unterbrechungsfreien Betrieb und Fehlertoleranz. In AWS werden die Daten zwischen den beiden Nodes synchron gespiegelt.' 
+summary: 'Eine Cloud Volumes ONTAP HA-Konfiguration (High Availability) bietet unterbrechungsfreien Betrieb und Fehlertoleranz. In AWS werden die Daten zwischen den beiden Nodes synchron gespiegelt.' 
 ---
 = Hochverfügbarkeitspaare in AWS
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Eine Cloud Volumes ONTAP Hochverfügbarkeitskonfiguration (HA) bietet 
 
 
 [role="lead"]
-Eine Cloud Volumes ONTAP Hochverfügbarkeitskonfiguration (HA) bietet unterbrechungsfreien Betrieb und Fehlertoleranz. In AWS werden die Daten zwischen den beiden Nodes synchron gespiegelt.
+Eine Cloud Volumes ONTAP HA-Konfiguration (High Availability) bietet unterbrechungsfreien Betrieb und Fehlertoleranz. In AWS werden die Daten zwischen den beiden Nodes synchron gespiegelt.
 
 
 
@@ -60,7 +60,7 @@ Storage-Übernahme, -Resynchronisierung und -Rückgabe sind standardmäßig auto
 
 == RPO und RTO
 
-Eine HA-Konfiguration sorgt für eine hohe Verfügbarkeit Ihrer Daten wie folgt:
+Eine HA-Konfiguration sorgt wie folgt für die Hochverfügbarkeit Ihrer Daten:
 
 * Das Recovery Point Objective (RPO) beträgt 0 Sekunden. Ihre Daten sind transaktionskonsistent und ohne Datenverlust.
 * Die Recovery-Zeitvorgabe (RTO) beträgt 120 Sekunden. Bei einem Ausfall sollten die Daten in maximal 120 Sekunden verfügbar sein.

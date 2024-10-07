@@ -154,7 +154,7 @@ Ab Januar 2024 sind Patch-Upgrades nur in BlueXP verfügbar, wenn es sich um ein
 
 Als allgemeine Regel für Patch (P)-Versionen können Sie von einer Version auf eine beliebige P-Version der aktuellen oder der nächsten Version upgraden.
 
-Hier ein paar Beispiele:
+Hier einige Beispiele:
 
 * 9.13.0 > 9,13,1P15
 * 9.12.1 > 9,13,1P2
@@ -307,7 +307,8 @@ Eine andere Möglichkeit, Software-Upgrades mithilfe eines Images auf einer exte
 
 BlueXP zeigt eine Benachrichtigung in Cloud Volumes ONTAP-Arbeitsumgebungen an, wenn eine neue Version von Cloud Volumes ONTAP verfügbar ist:
 
-image:screenshot_overview_upgrade.png["Screenshot: Zeigt die Benachrichtigung über die neue verfügbare Version an, die nach der Auswahl einer Arbeitsumgebung auf der Seite „Arbeitsfläche“ angezeigt wird."]
+
+NOTE: Bevor Sie Cloud Volumes ONTAP über die BlueXP Benachrichtigung aktualisieren können, benötigen Sie ein NetApp Support Site Konto.
 
 Sie können den Upgrade-Prozess von dieser Benachrichtigung aus starten, die den Prozess automatisiert, indem Sie das Software-Image aus einem S3-Bucket beziehen, das Image installieren und das System dann neu starten.
 
@@ -323,21 +324,22 @@ Wenn eine neue Version verfügbar ist, wird auf der Registerkarte „Übersicht�
 +
 image:screenshot_overview_upgrade.png["Ein Screenshot, der das \"Upgrade jetzt!\" zeigt Auf der Registerkarte „Übersicht“."]
 
-. Wenn eine neue Version verfügbar ist, klicken Sie auf *Jetzt aktualisieren!*
-+
-
-NOTE: Bevor Sie Cloud Volumes ONTAP über die BlueXP Benachrichtigung aktualisieren können, benötigen Sie ein NetApp Support Site Konto.
-
-. Lesen Sie auf der Seite Upgrade Cloud Volumes ONTAP die EULA, und wählen Sie dann *Ich habe die EULA gelesen und genehmigt*.
-. Klicken Sie Auf *Upgrade*.
-+
-
-NOTE: Auf der Seite Upgrade Cloud Volumes ONTAP wird standardmäßig die neueste verfügbare Cloud Volumes ONTAP-Version für das Upgrade ausgewählt. Falls verfügbar, können Sie stattdessen ältere Versionen von Cloud Volumes ONTAP für Ihr Upgrade auswählen, indem Sie auf *Ältere Versionen auswählen* klicken.
-Siehe https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#supported-upgrade-paths["Liste der unterstützten Upgrade-Pfade"^] Sie erhalten basierend auf Ihrer aktuellen Cloud Volumes ONTAP Version die gewünschten Upgrade-Pfade.
-
+. Wenn Sie die installierte Version von Cloud Volumes ONTAP aktualisieren möchten, klicken Sie auf *Jetzt aktualisieren!* Standardmäßig wird die neueste kompatible Version für das Upgrade angezeigt.
 +
 image:screenshot_upgrade_select_versions.png["Ein Screenshot der Seite Cloud Volumes ONTAP-Version aktualisieren."]
 
++
+Wenn Sie auf eine andere Version aktualisieren möchten, klicken Sie auf *andere Versionen auswählen*. Es werden die aktuellen Cloud Volumes ONTAP-Versionen angezeigt, die auch mit der auf Ihrem System installierten Version kompatibel sind. Die auf Ihrem System installierte Version ist beispielsweise 9.12.1P3, und die folgenden kompatiblen Versionen sind verfügbar:
+
++
+** 9.12.1P4 bis 9.12.1P14
+** 9.13.1 und 9.13.1P1 sehen Sie 9.13.1P1 als Standardversion für das Upgrade und 9.12.1P13, 9.13.1P14, 9.13.1 und 9.13.1P1 als die anderen verfügbaren Versionen.
+
+
+. Optional können Sie auf *Alle Versionen* klicken, um eine andere Version einzugeben, auf die Sie aktualisieren möchten (z. B. den nächsten Patch der installierten Version). Einen kompatiblen Upgrade-Pfad Ihrer aktuellen Cloud Volumes ONTAP-Version finden Sie unter link:task-updating-ontap-cloud.html#supported-upgrade-paths["Unterstützte Upgrade-Pfade"].
+. Klicken Sie auf *Speichern* und dann auf *Anwenden*. image:screenshot_upgrade_other_versions.png["Ein Screenshot mit den verfügbaren Versionen für das Upgrade."]
+. Lesen Sie auf der Seite Upgrade Cloud Volumes ONTAP die EULA, und wählen Sie dann *Ich habe die EULA gelesen und genehmigt*.
+. Klicken Sie Auf *Upgrade*.
 . Um den Status des Upgrades zu überprüfen, klicken Sie auf das Symbol Einstellungen und wählen Sie *Timeline*.
 
 
