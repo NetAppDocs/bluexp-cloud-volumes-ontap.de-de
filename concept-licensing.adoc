@@ -23,7 +23,7 @@ Für Cloud Volumes ONTAP sind verschiedene Lizenzierungsoptionen verfügbar. Jed
 Die folgenden Lizenzierungsoptionen stehen für Neukunden zur Verfügung.
 
 Kapazitätsbasierte Lizenzierung:: Bezahlen Sie für mehrere Cloud Volumes ONTAP Systeme Ihres NetApp Kontos durch bereitgestellte Kapazität. Mit der Möglichkeit, zusätzliche Cloud-Datenservices zu erwerben
-Keystone Abonnement:: Ein abonnementbasierter Service mit Bezahlung nach Bedarf für eine nahtlose Hybrid Cloud-Nutzung für HA-Paare
+Keystone Abonnement:: Ein abonnementbasierter Pay-as-you-grow-Service, der ein nahtloses Hybrid-Cloud-Erlebnis für HA-Paare (High Availability, Hochverfügbarkeit) bietet.
 
 
 Das vorherige Node-Lizenzmodell bleibt bestehenden Kunden, die bereits eine Lizenz erworben haben oder über ein aktives Marketplace-Abonnement verfügen, verfügbar.
@@ -121,7 +121,7 @@ endif::gcp[]
 
 ==== Essentials
 
-Bezahlung nach Kapazität für Cloud Volumes ONTAP in verschiedenen Konfigurationen
+Sie können in verschiedenen Konfigurationen nach Kapazität bezahlen:
 
 * Wählen Sie Ihre Cloud Volumes ONTAP Konfiguration:
 +
@@ -130,6 +130,26 @@ Bezahlung nach Kapazität für Cloud Volumes ONTAP in verschiedenen Konfiguratio
 
 
 * Fügen Sie die Cloud-Datenservices von NetApp zu zusätzlichen Kosten hinzu
+
+
+Die Lizenzierung basiert vollständig auf dem in Cloud Volumes ONTAP Systemen erstellten Volume-Typ:
+
+* Essentials Einzelknoten: Lese-/Schreib-Volumes, die auf einem Cloud Volumes ONTAP-System nur mit einem ONTAP-Knoten erstellt werden.
+* Essentials HA: Lese-/Schreib-Volumes mit zwei ONTAP Nodes, die für einen unterbrechungsfreien Datenzugriff untereinander Failover können
+* Essentials Secondary Single Node: Volumes vom Typ Data Protection (DP) (normalerweise SnapMirror oder SnapVault Ziel-Volumes, die schreibgeschützt sind) werden auf einem Cloud Volumes ONTAP System erstellt, und zwar nur mit einem ONTAP Node.
++
+
+NOTE: Wenn ein schreibgeschütztes Volume oder ein DP-Volume zu einem primären Volume wird, sieht BlueXP  es als Primärdaten an und die Abrechnungskosten werden auf Basis des Zeitraums berechnet, in dem sich das Volume im Lese-/Schreibmodus befand. Sobald das Volume wieder schreibgeschützt ist, berücksichtigt BlueXP  es erneut als sekundäre Daten und berechnet diese entsprechend mit der passenden Lizenz in der Digital Wallet.
+
+* Essentials Sekundärspeicher HA: Volumes vom Typ Data Protection (DP) (normalerweise SnapMirror oder SnapVault Ziel-Volumes, die schreibgeschützt sind), werden auf einem Cloud Volumes ONTAP System mit zwei ONTAP-Nodes erstellt, die für den unterbrechungsfreien Datenzugriff gegenseitig Failover können.
+
+
+Beachten Sie folgende Punkte:
+
+* Mindestbetrag: Pro Daten-Service-Storage-VM wird eine Gebühr von 4 tib erhoben, für die mindestens ein primäres Volume (Lese-/Schreibzugriff) vorhanden ist. Für das Essentials-Paket gilt diese Mindestgebühr nicht für Storage-VMs, die nur sekundäre Volumes (Datensicherung) haben.
+* Überschreitungen: Bei Überschreitung der lizenzierten Kapazität werden Überkapazitäten zu Marktpreisen berechnet. Bevorzugt wird dabei zuerst die verfügbare Kapazität aus anderen Lizenzen genutzt.
+* FlexClone und FlexCache Volumes: FlexClone Volumes werden nicht berechnet. FlexCache-Quell- und Ziel-Volumes werden als primäre Daten betrachtet und nach bereitgestelltem Speicherplatz abgerechnet.
+* Gebühren für HA-Paare: Bei HA-Paaren wird nur die bereitgestellte Kapazität auf einem Node berechnet. Daten, die synchron zum Partner-Node gespiegelt wurden, werden nicht in Rechnung gestellt.
 
 
 
@@ -403,7 +423,7 @@ endif::gcp[]
 Bei der Node-basierten Lizenzierung handelt es sich um das Lizenzmodell der vorherigen Generation, mit dem Cloud Volumes ONTAP pro Node lizenziert werden können. Dieses Lizenzmodell ist für Neukunden nicht verfügbar. Das Laden durch Knoten wurde durch die oben beschriebenen Methoden zum Aufladen von Kapazität ersetzt.
 
 
-IMPORTANT: NetApp wird in Kürze die Node-basierte Lizenzierung absetzen, die durch kapazitätsbasierte Lizenzen ersetzt wird. Weitere Informationen finden Sie unter https://mysupport.netapp.com/info/communications/CPC-00589.html["Mitteilungen für Kunden: CPC-00589"^].
+IMPORTANT: NetApp wird die Verfügbarkeit der Node-basierten Lizenzierung in Kürze beenden. Nach Ende der Verfügbarkeit müssen Node-basierte Lizenzen in kapazitätsbasierte Lizenzen konvertiert werden. Weitere Informationen finden Sie unter https://mysupport.netapp.com/info/communications/CPC-00589.html["Mitteilungen für Kunden: CPC-00589"^].
 
 Node-basierte Lizenzierung ist weiterhin für Bestandskunden verfügbar:
 

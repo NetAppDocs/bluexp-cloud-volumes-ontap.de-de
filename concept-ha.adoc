@@ -153,18 +153,18 @@ Bei NAS-Konfigurationen können die Daten-IP-Adressen zwischen HA-Nodes migriert
 
 === AWS lokale Zonen
 
-AWS Local Zones sind eine Infrastrukturimplementierung, bei der Storage, Computing, Datenbanken und andere ausgewählte AWS Services in der Nähe von großen Städten und Branchenbereichen liegen. Mit AWS Local Zones bringen Sie AWS Services näher und verbessern so die Latenz Ihrer Workloads und pflegen Datenbanken lokal.
+AWS Local Zones sind eine Infrastrukturimplementierung, bei der Storage, Computing, Datenbanken und andere ausgewählte AWS Services in der Nähe von großen Städten und Branchenbereichen liegen. Mit AWS Local Zones bringen Sie AWS Services näher und verbessern so die Latenz Ihrer Workloads und pflegen Datenbanken lokal. Auf Cloud Volumes ONTAP
 
 Sie können eine einzelne AZ- oder mehrere AZ-Konfiguration in AWS Local Zones implementieren.
 
 
-NOTE: AWS Local Zones werden beim Einsatz von BlueXP im Standardmodus unterstützt. Derzeit werden AWS Lokale Zonen nicht unterstützt, wenn BlueXP im eingeschränkten Modus oder im privaten Modus verwendet wird.
+NOTE: AWS Local Zones werden unterstützt, wenn BlueXP  im Standard- und Privatmodus verwendet wird. Derzeit werden lokale AWS Zonen nicht unterstützt, wenn BlueXP  im eingeschränkten Modus verwendet wird.
 
 
 
 ==== Beispielkonfigurationen für die AWS Local Zone
 
-Im Folgenden sind Beispielkonfigurationen aufgeführt:
+Cloud Volumes ONTAP unterstützt nur HA-Implementierungen in AWS Local Zones. Im Folgenden sind Beispielkonfigurationen aufgeführt:
 
 * Einzelne Verfügbarkeitszone: Beide Clusterknoten und der Mediator befinden sich in derselben lokalen Zone.
 * Verfügbarkeitszonen
@@ -184,9 +184,7 @@ Hier sind drei Beispielkonfigurationen:
 
 ==== Unterstützte Festplatten- und Instanztypen
 
-Der einzige unterstützte Festplattentyp ist GP2.
-
-Die folgenden EC2 Instanztypen mit den Größen xlarge bis 4xlarge werden derzeit unterstützt:
+Der einzige unterstützte Festplattentyp ist GP2. Die folgenden EC2 Instanztypen mit den Größen xlarge bis 4xlarge werden derzeit unterstützt:
 
 * M5
 * C5
@@ -195,7 +193,7 @@ Die folgenden EC2 Instanztypen mit den Größen xlarge bis 4xlarge werden derzei
 * R5d
 
 
-Die neuesten und vollständigen Details zum unterstützten finden Sie in der AWS-Dokumentationlink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2-Instanztypen in lokalen Zonen"^].
+Cloud Volumes ONTAP unterstützt nur diese Konfigurationen. Wenn Sie einen anderen Festplattentyp oder eine EC2-Instanz in der AWS-Konfiguration für lokale Zone für Cloud Volumes ONTAP auswählen, kann die Implementierung fehlgeschlagen sein. Die neuesten und vollständigen Details der finden Sie in der AWSlink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2-Instanztypen in lokalen Zonen"^]-Dokumentation.
 
 
 
