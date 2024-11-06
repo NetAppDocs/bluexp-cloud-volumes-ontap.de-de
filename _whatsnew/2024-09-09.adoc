@@ -1,0 +1,22 @@
+= WORM- und ARP-Funktionalitäten sind nicht mehr kostenpflichtig
+:allow-uri-read: 
+
+
+
+
+=== WORM- und ARP-Funktionalitäten sind nicht mehr kostenpflichtig
+
+Die integrierten Datensicherungs- und Sicherheitsfunktionen von WORM (Write Once Read Many) und ARP (Autonomous Ransomware Protection) werden ohne zusätzliche Kosten mit Cloud Volumes ONTAP Lizenzen angeboten. Das neue Preismodell gilt sowohl für neue als auch bestehende BYOL- und PAYGO/Marketplace-Abonnements von AWS, Azure und Google Cloud. Sowohl kapazitätsbasierte als auch Node-basierte Lizenzen enthalten ARP- und WORM-Funktionen für alle Konfigurationen, einschließlich Single Node und HA-Paaren mit hoher Verfügbarkeit, ohne dass zusätzliche Kosten anfallen.
+
+Die vereinfachte Preisgestaltung bietet Ihnen diese Vorteile:
+
+* Konten, die derzeit WORM und ARP enthalten, werden für diese Funktionen nicht mehr berechnet. In Zukunft fallen für Ihre Abrechnung nur Gebühren für die Kapazitätsnutzung an, wie vor dieser Änderung. WORM und ARP werden nicht mehr in Ihren zukünftigen Rechnungen enthalten sein.
+* Wenn Ihre aktuellen Konten diese Funktionen nicht enthalten, können Sie sich jetzt für WORM und ARP ohne zusätzliche Kosten entscheiden.
+* Alle Cloud Volumes ONTAP-Angebote für neue Konten sind ohne Gebühren für WORM und ARP erhältlich.
+
+
+Weitere Informationen zu diesen Funktionen:
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Besserer Schutz gegen Ransomware"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM-Storage"]
+
