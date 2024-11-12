@@ -146,6 +146,7 @@ NOTE: Wenn für die ausgewählte Version eine neuere Version von Release Candida
 Beachten Sie Folgendes:
 
 +
+** Wenn der öffentliche Zugriff auf Ihr Storage-Konto in vnet deaktiviert ist, können Sie das Daten-Tiering in Ihrem Cloud Volumes ONTAP System nicht aktivieren. Weitere Informationen finden Sie unter link:reference-networking-azure.html#security-group-rules["Regeln für Sicherheitsgruppen"].
 ** Der Festplattentyp ist für das anfängliche Volume. Sie können einen anderen Festplattentyp für nachfolgende Volumes auswählen.
 ** Die Festplattengröße ist für alle Festplatten im ursprünglichen Aggregat und für alle zusätzlichen Aggregate bestimmt, die BlueXP erzeugt, wenn Sie die einfache Bereitstellungsoption verwenden. Mithilfe der erweiterten Zuweisungsoption können Sie Aggregate erstellen, die eine andere Festplattengröße verwenden.
 +
@@ -386,6 +387,7 @@ Beachten Sie Folgendes:
 +
 Hilfe bei der Auswahl einer Datenträgergröße finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Größe Ihres Systems in Azure"^].
 
+** Wenn der öffentliche Zugriff auf Ihr Storage-Konto in vnet deaktiviert ist, können Sie das Daten-Tiering in Ihrem Cloud Volumes ONTAP System nicht aktivieren. Weitere Informationen finden Sie unter link:reference-networking-azure.html#security-group-rules["Regeln für Sicherheitsgruppen"].
 ** Sie können eine bestimmte Volume-Tiering-Richtlinie auswählen, wenn Sie ein Volume erstellen oder bearbeiten.
 ** Wenn Sie das Daten-Tiering deaktivieren, können Sie es bei nachfolgenden Aggregaten aktivieren.
 +

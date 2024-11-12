@@ -330,13 +330,7 @@ Einige der Felder auf dieser Seite sind selbsterklärend. In der folgenden Tabel
 | Benutzername und Passwort | Dies sind die Anmeldeinformationen für das Cloud Volumes ONTAP Cluster-Administratorkonto. Sie können diese Anmeldeinformationen verwenden, um sich über ONTAP System Manager oder die ONTAP-CLI mit Cloud Volumes ONTAP zu verbinden. Behalten Sie den Standardbenutzernamen „_admin_“ bei, oder ändern Sie ihn in einen benutzerdefinierten Benutzernamen. 
 
 
-| Anmeldedaten Bearbeiten | AWS Zugangsdaten und das Marketplace-Abonnement für dieses Cloud Volumes ONTAP System auswählen
-
-Klicken Sie auf *Abonnement hinzufügen*, um die ausgewählten Anmeldeinformationen mit einem neuen AWS Marketplace-Abonnement zu verknüpfen. Bei dem Abonnement kann es sich um einen Jahresvertrag oder um die Bezahlung von Cloud Volumes ONTAP auf Stundenbasis handelt.
-
-Wenn eine Lizenz direkt über NetApp (BYOL) erworben wird, ist kein AWS Abonnement erforderlich.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Erfahren Sie, wie Sie BlueXP zusätzliche AWS Zugangsdaten hinzufügen"^]. 
+| Anmeldedaten Bearbeiten | AWS Zugangsdaten und das Marketplace-Abonnement für dieses Cloud Volumes ONTAP System auswählen Klicken Sie auf *Abonnement hinzufügen*, um die ausgewählten Anmeldeinformationen mit einem neuen AWS Marketplace-Abonnement zu verknüpfen. Bei dem Abonnement kann es sich um einen Jahresvertrag oder um die Bezahlung von Cloud Volumes ONTAP auf Stundenbasis handelt. Wenn Sie eine Lizenz direkt von NetApp erwerben (Bring-Your-Own-License, BYOL), ist kein AWS Abonnement erforderlich. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Erfahren Sie, wie Sie BlueXP zusätzliche AWS Zugangsdaten hinzufügen"^]. 
 |===
 +
 Im folgenden Video wird gezeigt, wie Sie ein Pay-as-you-go Marketplace Abonnement mit Ihren AWS Zugangsdaten verknüpfen:

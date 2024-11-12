@@ -48,7 +48,7 @@ Dank der kapazitätsbasierten Lizenzierung können Sie für Cloud Volumes ONTAP 
 
 Die Essentials- und Professional-Pakete sind mit den folgenden Verbrauchsmodellen erhältlich:
 
-* Eine Lizenz (BYOL) von NetApp erworben
+* Eine Lizenz (Bring-Your-Own-License, BYOL), die von NetApp erworben wurde
 * Ein stündliches PAYGO-Abonnement (Pay-as-you-go) über den Google Cloud Marketplace
 * Einem Jahresvertrag
 

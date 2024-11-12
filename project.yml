@@ -204,6 +204,8 @@ sidebar:
         url: "/task-updating-ontap-cloud.html"
       - title: "„Pay-as-you-go“-Systeme registrieren"
         url: "/task-registering.html"
+      - title: Konvertieren Sie Node-basierte Lizenzen
+        url: "/task-convert-node-capacity.html"
       - title: Stoppen und starten Sie ein System
         url: "/task-managing-state.html"
       - title: Systemzeit synchronisieren
@@ -260,7 +262,11 @@ sidebar:
   - title: Konzepte
     entries:
     - title: Lizenzierung
-      url: "/concept-licensing.html"
+      entries:
+      - title: Lizenzierung in Cloud Volumes ONTAP
+        url: "/concept-licensing.html"
+      - title: Mehr zu kapazitätsbasierten Lizenzen
+        url: "/concept-licensing-charging.html"
     - title: Storage
       entries:
       - title: Client-Protokolle

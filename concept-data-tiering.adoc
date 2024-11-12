@@ -57,7 +57,7 @@ Wenn Sie keinen Zugriff auf inaktive Daten planen, können Sie die Storage-Koste
 
 Die Zugriffskosten sind höher, wenn Sie auf die Daten zugreifen. Berücksichtigen Sie dies vor einer Änderung der Storage-Klasse. https://aws.amazon.com/s3/storage-classes["Amazon S3 Dokumentation: Weitere Informationen zu Amazon S3 Storage-Klassen"^].
 
-Sie können eine Speicherklasse auswählen, wenn Sie die Arbeitsumgebung erstellen, und Sie können sie jederzeit danach ändern. Anweisungen zum Ändern der Speicherklasse finden Sie unter link:task-tiering.html["Tiering inaktiver Daten in kostengünstigen Objektspeicher"].
+Sie können eine Storage-Klasse auswählen, wenn Sie die Arbeitsumgebung erstellen und sie danach jederzeit ändern. Anweisungen zum Ändern der Speicherklasse finden Sie unter link:task-tiering.html["Tiering inaktiver Daten in kostengünstigen Objektspeicher"].
 
 Die Storage-Klasse für Daten-Tiering beträgt die systemweite; nicht pro Volume.
 
@@ -96,11 +96,9 @@ BlueXP erstellt das Speicherkonto mit den folgenden Einstellungen:
 Storage-Zugriffstufen:: Die Standard-Storage-Zugriffs-Tier für Tiered Daten in Azure ist die _Hot_-Tier. Die Tier mit häufig benötigten Daten ist ideal für Daten in der Kapazitäts-Tier.
 +
 --
-Wenn Sie nicht planen, auf die inaktiven Daten in der Kapazitäts-Tier zuzugreifen, können Sie Ihre Speicherkosten senken, indem Sie auf die Storage-Tier _cool_ wechseln. Wenn Sie den Speicher-Tier zu kühlen ändern, werden inaktive Kapazitäts-Tier-Daten direkt in den kühlen Speicher-Tier verschoben.
+Wenn Sie nicht planen, auf die inaktiven Daten in der Kapazitäts-Tier zuzugreifen, können Sie die Speicherebene _cool_ wählen, bei der die inaktiven Daten mindestens 30 Tage aufbewahrt werden. Sie können sich auch für die _Cold_-Ebene entscheiden, bei der die inaktiven Daten mindestens 90 Tage lang gespeichert werden. Wählen Sie je nach Ihren Storage-Anforderungen und Kostenüberlegungen die Tier aus, die Ihren Anforderungen am besten entspricht. Wenn Sie die Speicherebene in _cool_ oder _cold_ ändern, werden die inaktiven Daten der Kapazitäts-Tiers direkt in die Cold-Storage-Tier verschoben. Die Cold-Tiers bieten im Vergleich zum Tier mit heißen Daten niedrigere Storage-Kosten. Allerdings haben sie höhere Zugriffskosten, berücksichtigen Sie dies also vor einem Wechsel des Storage-Tiers. Siehe https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["Dokumentation zu Microsoft Azure: Weitere Informationen zu Azure Blob Storage-Zugriffs-Tiers"^].
 
-Die Zugriffskosten sind höher, wenn auf die Daten zugegriffen wird. Berücksichtigen Sie dies vor einer Änderung des Storage-Tier. https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["Dokumentation zu Microsoft Azure: Weitere Informationen zu Azure Blob Storage-Zugriffs-Tiers"^].
-
-Sie können eine Speicherebene auswählen, wenn Sie die Arbeitsumgebung erstellen, und sie kann jederzeit danach geändert werden. Weitere Informationen zum Ändern der Speicherebene finden Sie unter link:task-tiering.html["Tiering inaktiver Daten in kostengünstigen Objektspeicher"].
+Sie können beim Erstellen der Arbeitsumgebung eine Storage-Ebene auswählen und sie anschließend jederzeit ändern. Weitere Informationen zum Ändern der Speicherebene finden Sie unter link:task-tiering.html["Tiering inaktiver Daten in kostengünstigen Objektspeicher"].
 
 Die Storage-Zugriffs-Tier für Daten-Tiering beträgt die systemweite; nicht pro Volume.
 
@@ -142,7 +140,7 @@ NOTE: Alle vorhandenen inaktiven Daten behalten die Standardspeicherklasse bei, 
 
 Die Zugriffskosten sind höher, wenn Sie auf die Daten zugreifen. Berücksichtigen Sie dies also vor einem Wechsel der Storage-Klasse. Weitere Informationen finden Sie unter https://cloud.google.com/storage/docs/storage-classes["Google Cloud-Dokumentation: Storage-Klassen"^].
 
-Sie können eine Speicherebene auswählen, wenn Sie die Arbeitsumgebung erstellen, und sie kann jederzeit danach geändert werden. Weitere Informationen zum Ändern der Speicherklasse finden Sie unter link:task-tiering.html["Tiering inaktiver Daten in kostengünstigen Objektspeicher"].
+Sie können beim Erstellen der Arbeitsumgebung eine Storage-Ebene auswählen und sie anschließend jederzeit ändern. Weitere Informationen zum Ändern der Speicherklasse finden Sie unter link:task-tiering.html["Tiering inaktiver Daten in kostengünstigen Objektspeicher"].
 
 Die Storage-Klasse für Daten-Tiering beträgt die systemweite; nicht pro Volume.
 

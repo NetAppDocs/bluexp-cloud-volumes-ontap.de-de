@@ -41,9 +41,9 @@ TIP: BlueXP  führt nacheinander Änderungen an den Nodes durch, indem die Übe
 +
 image:screenshot_features_machine_type.png["Ein Screenshot, in dem die Einstellung Maschinentyp unter dem Bereich Funktionen angezeigt wird, das oben rechts auf der Seite Übersicht angezeigt wird, wenn eine Arbeitsumgebung angezeigt wird."]
 
-+
-.. Wenn Sie eine Node-basierte PAYGO-Lizenz verwenden, können Sie optional eine andere Lizenz und einen anderen Maschinentyp auswählen, indem Sie auf das Bleistiftsymbol neben *Lizenztyp* klicken.
 
+
+Wenn Sie eine Node-basierte Pay-as-you-go-Lizenz (PAYGO) verwenden, können Sie optional eine andere Lizenz und einen anderen Maschinentyp auswählen, indem Sie auf das Bleistiftsymbol neben *Lizenztyp* klicken.
 
 . Wählen Sie einen Maschinentyp, aktivieren Sie das Kontrollkästchen, um zu bestätigen, dass Sie die Auswirkungen der Änderung verstehen, und klicken Sie dann auf *Ändern*.
 

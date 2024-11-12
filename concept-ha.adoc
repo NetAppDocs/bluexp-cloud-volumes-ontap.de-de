@@ -164,7 +164,11 @@ NOTE: AWS Local Zones werden unterstützt, wenn BlueXP  im Standard- und Privat
 
 ==== Beispielkonfigurationen für die AWS Local Zone
 
-Cloud Volumes ONTAP unterstützt nur HA-Implementierungen in AWS Local Zones. Im Folgenden sind Beispielkonfigurationen aufgeführt:
+Cloud Volumes ONTAP in AWS unterstützt nur den HA-Modus (High Availability, Hochverfügbarkeit) in einer einzelnen Verfügbarkeitszone. Implementierungen mit einem Node werden nicht unterstützt.
+
+Cloud Volumes ONTAP unterstützt nicht Daten-Tiering, Cloud-Tiering und nicht qualifizierte Instanzen in AWS Local Zones.
+
+Im Folgenden sind Beispielkonfigurationen aufgeführt:
 
 * Einzelne Verfügbarkeitszone: Beide Clusterknoten und der Mediator befinden sich in derselben lokalen Zone.
 * Verfügbarkeitszonen
@@ -193,7 +197,10 @@ Der einzige unterstützte Festplattentyp ist GP2. Die folgenden EC2 Instanztypen
 * R5d
 
 
-Cloud Volumes ONTAP unterstützt nur diese Konfigurationen. Wenn Sie einen anderen Festplattentyp oder eine EC2-Instanz in der AWS-Konfiguration für lokale Zone für Cloud Volumes ONTAP auswählen, kann die Implementierung fehlgeschlagen sein. Die neuesten und vollständigen Details der finden Sie in der AWSlink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2-Instanztypen in lokalen Zonen"^]-Dokumentation.
+
+NOTE: Cloud Volumes ONTAP unterstützt nur diese Konfigurationen. Die Auswahl nicht unterstützter Festplattentypen oder nicht qualifizierter Instanzen in der Konfiguration der AWS Local Zone kann zu einem Bereitstellungsfehler führen. Daten-Tiering zu AWS S3 ist in AWS Local Zones aufgrund fehlender Konnektivität nicht verfügbar.
+
+Die neuesten und vollständigen Details der finden Sie in der AWSlink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2-Instanztypen in lokalen Zonen"^]-Dokumentation.
 
 
 

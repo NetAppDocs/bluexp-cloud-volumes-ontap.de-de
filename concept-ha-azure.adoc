@@ -120,4 +120,4 @@ Storage-Übernahme, -Resynchronisierung und -Rückgabe sind standardmäßig auto
 
 == Storage-Konfigurationen
 
-Sie können ein HA-Paar als Aktiv/Aktiv-Konfiguration verwenden, in der beide Nodes Daten an Clients bereitstellen, oder als Aktiv/Passiv-Konfiguration, bei der der passive Node nur dann auf Datenanforderungen reagiert, wenn er Storage für den aktiven Node übernommen hat.
+Sie können ein HA-Paar als aktiv/aktiv-Konfiguration verwenden, in der beide Nodes Daten für Clients bereitstellen, oder als aktiv/Passiv-Konfiguration, bei der der passive Node nur dann auf Datenanfragen reagiert, wenn er den Storage für den aktiven Node übernommen hat.

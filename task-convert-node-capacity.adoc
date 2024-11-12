@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: task-convert-node-capacity.html 
+keywords: license conversion, convert node-based to capacity based, by-node to by-capacity, bluexp license conversion for node based 
+summary: 'Nach dem Ende der Verfügbarkeit (EOA) Ihrer Node-basierten Lizenzen sollten Sie die kapazitätsbasierte Lizenzierung mit dem BlueXP  Lizenzkonvertierungstool nutzen.' 
+---
+= Konvertieren Sie Node-basierte Lizenzen in kapazitätsbasierte Lizenzen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Nach dem Ende der Verfügbarkeit (EOA) Ihrer Node-basierten Lizenzen sollten Sie die kapazitätsbasierte Lizenzierung mit dem BlueXP  Lizenzkonvertierungstool nutzen.
+
+Wenn NetApp Sie ein jährliches oder längerfristiges Programm nutzen möchten, sollten Sie sich vor dem EOA-Datum (11. November 2024) an Ihren NetApp Ansprechpartner wenden oder das Ablaufdatum der Lizenz verschreiben, um sicherzustellen, dass die Voraussetzungen für die Transition gegeben sind. Wenn Sie keinen langfristigen Vertrag für einen Cloud Volumes ONTAP-Node haben und Ihr System mit einem PAYGO-Abonnement (On-Demand Pay-as-you-go) ausführen können, ist es wichtig, die Konvertierung vor dem Ende des Supports (EOS) am 31. Dezember 2024 zu planen. In beiden Fällen sollten Sie sicherstellen, dass Ihr System die Anforderungen erfüllt, bevor Sie das BlueXP  Lizenzkonvertierungstool für einen nahtlosen Übergang verwenden.
+
+Informationen zu EOA und EOS finden Sie unter link:concept-licensing.html#end-of-availability-of-node-based-licenses["Ende der Verfügbarkeit von Node-basierten Lizenzen"].
+
+.Über diese Aufgabe
+* Mit dem Lizenzkonvertierungstool erfolgt die Umstellung von einem Node- auf ein kapazitätsbasiertes Lizenzmodell online. Es ist weder eine Datenmigration noch die Bereitstellung zusätzlicher Cloud-Ressourcen erforderlich.
+* Der Betrieb ist unterbrechungsfrei und es treten keine Serviceunterbrechungen oder Applikations-Ausfallzeiten auf.
+* Die Konto- und Anwendungsdaten in Ihrem Cloud Volumes ONTAP-System bleiben erhalten.
+* Die zugrunde liegenden Cloud-Ressourcen bleiben nach der Konvertierung unbeeinträchtigt.
+* Das Lizenzkonvertierungstool unterstützt alle Implementierungstypen, darunter Single Node, Hochverfügbarkeit in einer einzelnen Verfügbarkeitszone (AZ), Hochverfügbarkeit in mehreren Verfügbarkeitszonen, BYOL (Bring-Your-Own-License) und PAYGO.
+* Das Tool unterstützt alle Node-basierten Lizenzen als Quelle und alle kapazitätsbasierten Lizenzen als Ziel. Wenn Sie beispielsweise über eine Node-basierte PAYGO Standard-Lizenz verfügen, können Sie diese in eine kapazitätsbasierte BYOL-Lizenz konvertieren.
+* Die Konvertierung wird für alle Cloud-Provider, AWS, Azure und Google Cloud unterstützt.
+* Nach der Konvertierung wird die Seriennummer der Node-basierten Lizenz durch ein kapazitätsbasiertes Format ersetzt. Dies erfolgt im Rahmen der Konvertierung und wird auf Ihrem NSS-Konto (NetApp Support Site) angezeigt.
+* Bei der Umstellung auf das kapazitätsbasierte Modell bleiben die Daten weiterhin am selben Standort wie die Node-basierte Lizenzierung erhalten. Dieser Ansatz garantiert keine Unterbrechungen bei der Datenplatzierung und hält bei der Transition Prinzipien für die Datenhoheit fest.
+
+
+.Bevor Sie beginnen
+* Sie sollten über ein NSS-Konto mit Kundenzugriff oder Administratorzugriff verfügen.
+* Ihr NSS-Konto sollte mit den BlueXP -Benutzeranmeldeinformationen registriert werden.
+* Die Arbeitsumgebung sollte mit dem NSS-Konto mit Kundenzugriff oder Administratorzugriff verknüpft werden.
+* Sie sollten über eine gültige kapazitätsbasierte Lizenz verfügen, entweder über eine BYOL-Lizenz oder ein Marketplace-Abonnement.
+* Eine kapazitätsbasierte Lizenz sollte über das BlueXP  Konto verfügbar sein. Bei dieser Lizenz kann es sich um ein Marketplace-Abonnement oder ein BYOL/Private Offer-Paket in der BlueXP  Digital Wallet handeln.
+* Verstehen Sie die folgenden Kriterien, bevor Sie ein Zielpaket auswählen:
++
+** Wenn das Konto über eine kapazitätsbasierte BYOL-Lizenz verfügt, sollte das ausgewählte Zielpaket mit den kapazitätsbasierten BYOL-Lizenzen des Kontos übereinstimmen:
++
+*** Wenn `Professional` als Zielpaket ausgewählt wird, sollte das Konto über eine BYOL-Lizenz mit einem Professional-Paket verfügen:
+*** Wenn `Essentials` als Zielpaket ausgewählt wird, sollte das Konto über eine BYOL-Lizenz mit dem Essentials-Paket verfügen.
+*** Wenn `Optimized` als Zielpaket ausgewählt wird, sollte das Konto über eine BYOL-Lizenz mit dem optimierten Paket verfügen.
+
+
+** Wenn das Zielpaket nicht mit der BYOL-Lizenzverfügbarkeit des Kontos ausgerichtet ist, bedeutet dies, dass die kapazitätsbasierte Lizenz das ausgewählte Paket möglicherweise nicht enthält. In diesem Fall werden Sie über Ihr Marketplace-Abonnement belastet.
+** Wenn keine kapazitätsbasierte BYOL-Lizenz, sondern nur ein Marketplace-Abonnement vorhanden ist, sollte das ausgewählte Paket im kapazitätsbasierten Marketplace-Abonnement enthalten sein.
+** Wenn Ihre bestehende kapazitätsbasierte Lizenz nicht über genügend Kapazität verfügt und Sie ein Marketplace-Abonnement haben, um die zusätzliche Kapazitätsnutzung in Rechnung zu stellen, wird Ihnen die zusätzliche Kapazität in Ihrem Marketplace-Abonnement in Rechnung gestellt.
+** Wenn Ihre bestehende kapazitätsbasierte Lizenz nicht genügend Kapazität enthält und Sie kein Marketplace-Abonnement für die zusätzliche Kapazitätsnutzung haben, kann die Umwandlung nicht erfolgen. Sie sollten ein Marketplace-Abonnement hinzufügen, um die zusätzliche Kapazität aufzuladen oder die verfügbare Kapazität auf Ihre aktuelle Lizenz zu erweitern.
+** Wenn das Zielpaket nicht mit der BYOL-Lizenzverfügbarkeit des Kontos abgestimmt ist und auch wenn in Ihrer vorhandenen kapazitätsbasierten Lizenz nicht genügend Kapazität vorhanden ist, werden Sie über Ihr Marketplace-Abonnement abgerechnet.
+
+
+
+
+
+NOTE: Wenn eine dieser Anforderungen nicht erfüllt ist, erfolgt die Lizenzkonvertierung nicht. In bestimmten Fällen kann die Lizenz konvertiert, aber nicht verwendet werden. Klicken Sie auf das Informationssymbol, um die Probleme zu identifizieren und Korrekturmaßnahmen zu ergreifen.
+
+.Schritte
+. Doppelklicken Sie auf der Seite Arbeitsfläche auf den Namen der Arbeitsumgebung, für die Sie den Lizenztyp ändern möchten.
+. Klicken Sie auf der Registerkarte Übersicht auf das Bedienfeld Funktionen.
+. Prüfen Sie das Bleistiftsymbol neben *Lademethode*. Wenn die Lademethode für Ihr System ist `Node Based`, können Sie es in eine Nebenleistung laden.
++
+
+TIP: Das Symbol ist deaktiviert, wenn Ihr Cloud Volumes ONTAP System bereits nach Kapazität berechnet wurde oder wenn eine der Anforderungen nicht erfüllt ist.
+
+. Überprüfen Sie auf dem Bildschirm *Node-basierte Lizenzen in kapazitätsbasierte Lizenzen konvertieren* den Namen der Arbeitsumgebung und die Details der Quelllizenz.
+. Wählen Sie das Zielpaket für die Konvertierung der vorhandenen Lizenz aus:
++
+** Kernelemente. Der Standardwert ist `Essentials`.
+** Professionell
+
+
+
+
+ifdef::azure[]
+
+* Optimiert (für Azure)
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Optimiert (für Google Cloud)
+
+
+endif::gcp[]
+
+. Wenn Sie über eine BYOL-Lizenz verfügen, können Sie das Kontrollkästchen aktivieren, um die Node-basierte Lizenz nach der Konvertierung aus dem BlueXP  Digital Wallet zu löschen. Wenn die Konvertierung nicht abgeschlossen ist, wird die Lizenz auch bei Anklicken dieses Kontrollkästchens nicht aus dem Digital Wallet gelöscht. Wenn Sie über ein Marketplace-Abonnement verfügen, ist diese Option nicht verfügbar.
+. Aktivieren Sie das Kontrollkästchen, um zu bestätigen, dass Sie die Auswirkungen der Änderung verstehen, und klicken Sie dann auf *Fortfahren*.
+
+
+.Nachdem Sie fertig sind
+Zeigen Sie die neue Lizenzseriennummer an, und überprüfen Sie die Änderungen in der BlueXP  Digital Wallet.

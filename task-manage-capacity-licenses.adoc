@@ -44,10 +44,10 @@ Das Digital Wallet von BlueXP zeigt Ihnen die verbrauchte Gesamtkapazität in Ih
 .Schritte
 . Wählen Sie im Navigationsmenü BlueXP die Option *Governance > Digital Wallet* aus.
 . Lassen Sie auf der Registerkarte *Cloud Volumes ONTAP* *Capacity Based Licenses* ausgewählt.
-. Sehen Sie sich die Paketübersicht an, in der Sie die verbrauchte Kapazität, die gesamte vorab gebuchte Kapazität und die gesamte PAYGO-Kapazität anzeigen lassen.
+. In der Paketübersicht werden die verbrauchte Kapazität, die gesamte vorab gebuchte Kapazität und die gesamte Pay-as-you-go-Kapazität (PAYGO) angezeigt.
 +
 ** _Verbrauchte Gesamtkapazität_ ist die insgesamt bereitgestellte Kapazität aller Cloud Volumes ONTAP Systeme in Ihrem NetApp Konto. Die Abrechnung basiert auf der bereitgestellten Größe eines jeden Volumes, unabhängig vom lokalen, genutzten, gespeicherten oder effektiven Speicherplatz innerhalb des Volumes.
-** _Gesamte vorab gebuchte Kapazität_ ist die gesamte lizenzierte Kapazität (BYOL oder Marketplace Contract), die Sie von NetApp erworben haben.
+** _Gesamte vorab gebuchte Kapazität_ ist die gesamte lizenzierte Kapazität (Bring-Your-Own-License (BYOL) oder Marketplace-Vertrag), die Sie von NetApp erworben haben.
 ** _Total PAYGO_ ist die insgesamt bereitgestellte Kapazität anhand von Cloud-Marketplace-Abonnements. Die Abrechnung über PAYGO wird nur dann genutzt, wenn die verbrauchte Kapazität über der lizenzierten Kapazität liegt oder wenn im Digital Wallet von BlueXP keine BYOL-Lizenz verfügbar ist.
 +
 Hier ein Beispiel für eine Zusammenfassung der Cloud Volumes ONTAP Pakete in der BlueXP Digital Wallet:

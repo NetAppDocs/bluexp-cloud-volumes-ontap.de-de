@@ -14,7 +14,7 @@ summary: Der Support von NetApp ist bei Cloud Volumes ONTAP PAYGO Systemen entha
 
 
 [role="lead"]
-Der Support von NetApp ist bei Cloud Volumes ONTAP PAYGO Systemen enthalten. Sie müssen jedoch zuerst den Support aktivieren, indem Sie die Systeme bei NetApp registrieren.
+Der Support von NetApp ist in den PAYGO-Systemen (Cloud Volumes ONTAP Pay-as-you-go) enthalten, allerdings müssen Sie zuerst den Support durch Registrierung der Systeme bei NetApp aktivieren.
 
 Die Registrierung eines PAYGO-Systems bei NetApp ist für ein Upgrade der ONTAP Software anhand einer der Methoden erforderlich link:task-updating-ontap-cloud.html["Auf dieser Seite beschrieben"].
 

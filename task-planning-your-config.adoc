@@ -38,15 +38,15 @@ Neuere AWS Regionen müssen aktiviert sein, bevor Ressourcen in diesen Regionen 
 
 === Wählen Sie eine unterstützte lokale Zone aus
 
-Cloud Volumes ONTAP wird in einigen AWS lokalen Zonen unterstützt, einschließlich Singapur. Die Auswahl einer lokalen Zone ist optional.
+Die Auswahl einer lokalen Zone ist optional. Cloud Volumes ONTAP wird in einigen AWS lokalen Zonen unterstützt, einschließlich Singapur. Cloud Volumes ONTAP in AWS unterstützt nur den HA-Modus (High Availability, Hochverfügbarkeit) in einer einzelnen Verfügbarkeitszone. Implementierungen mit einem Node werden nicht unterstützt.
+
+
+NOTE: Cloud Volumes ONTAP hat keine Unterstützung für Daten-Tiering und Cloud Tiering in AWS Local Zones. Darüber hinaus werden lokale Zonen mit Instanzen, die nicht für Cloud Volumes ONTAP qualifiziert wurden, nicht unterstützt. Ein Beispiel dafür ist Miami, das nicht als lokale Zone verfügbar ist, da es nur Gen6-Instanzen hat, die nicht unterstützt und nicht qualifiziert sind.
 
 link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["Sehen Sie sich die vollständige Liste der lokalen Zonen an"^].
 Lokale Zonen müssen aktiviert sein, bevor Sie Ressourcen in diesen Zonen erstellen und verwalten können.
 
 link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["Erfahren Sie, wie Sie eine lokale Zone aktivieren"^].
-
-
-NOTE: Phoenix ist keine unterstützte lokale Zone.
 
 
 
@@ -102,7 +102,7 @@ Beachten Sie, dass Cloud Volumes ONTAP die elastische Amazon EBS Volumes-Funktio
 * _Throughput Optimized HDD (st1)_ Festplatten sind für häufig abgerufene Workloads, die einen schnellen und konsistenten Durchsatz zu einem niedrigeren Preis erfordern.
 +
 
-NOTE: Bei der Verwendung von durchsatzoptimierten HDDs (st1) wird kein Tiering von Daten zu Objekt-Storage empfohlen.
+NOTE: Daten-Tiering zu AWS S3 ist in AWS Local Zones aufgrund fehlender Konnektivität nicht verfügbar.
 
 
 

@@ -14,7 +14,7 @@ summary: Für jedes Cloud Volumes ONTAP System mit einem Node-basierten BYOL mus
 
 
 [role="lead"]
-Für jedes Cloud Volumes ONTAP System mit einem Node-basierten BYOL muss eine Systemlizenz mit einem aktiven Abonnement installiert werden. BlueXP vereinfacht den Prozess durch die Verwaltung von Lizenzen für Sie und durch das Anzeigen einer Warnung vor deren Ablauf.
+Für jedes Cloud Volumes ONTAP System mit einer Node-basierten Bring-Your-Own-License (BYOL) muss eine Systemlizenz mit einem aktiven Abonnement installiert sein. BlueXP vereinfacht den Prozess durch die Verwaltung von Lizenzen für Sie und durch das Anzeigen einer Warnung vor deren Ablauf.
 
 
 TIP: Eine Node-basierte Lizenz ist das BYOL-Modell der vorherigen Generation für Cloud Volumes ONTAP. Eine Node-basierte Lizenz ist nur für Lizenzerneuerungen verfügbar.

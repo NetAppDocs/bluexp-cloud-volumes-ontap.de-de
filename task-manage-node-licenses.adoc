@@ -18,7 +18,7 @@ Managen Sie Node-basierte Lizenzen in der BlueXP Digital Wallet, um sicherzustel
 
 _Node-basierte Lizenzen_ sind das Lizenzmodell der vorherigen Generation (und für neue Kunden nicht verfügbar):
 
-* Byol-Lizenzen, die von NetApp erworben wurden
+* Bring-Your-Own-License-Lizenzen (BYOL), die bei NetApp erworben wurden
 * PAYGO-Abonnements (Pay-as-you-go) vom Markt Ihres Cloud-Providers
 
 
@@ -231,3 +231,6 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Erf
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deleting-working-env.html["Erfahren Sie, wie Sie eine Cloud Volumes ONTAP-Arbeitsumgebung löschen"].
 
 
+
+.Verwandtes Thema
+Link: link:concept-licensing.html#end-of-availability-of-node-based-licenses["Ende der Verfügbarkeit von Node-basierten Lizenzen"] link:task-convert-node-capacity.html["Konvertieren Sie Node-basierte Lizenzen in kapazitätsbasierte Lizenzen"]

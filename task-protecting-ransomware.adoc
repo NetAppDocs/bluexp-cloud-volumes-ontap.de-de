@@ -63,22 +63,12 @@ Cloud Volumes ONTAP unterstützt die ARP-Funktion (Autonomous Ransomware Protect
 
 Trennen Sie sich von den Schutzmaßnahmen für die Dateierweiterung, die im bereitgestellt werden https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["ransomware-Schutz-Einstellung"], Die ARP-Funktion verwendet Workload-Analyse, um den Benutzer auf mögliche Angriffe auf der Grundlage erkannt “abnorme Aktivität“ zu warnen. Die Ransomware-Schutzeinstellung und die ARP-Funktion können in Verbindung für einen umfassenden Schutz vor Ransomware verwendet werden.
 
-Die ARP-Funktion kann ohne zusätzliche Kosten in Kombination mit BYOL- und Marketplace-Abonnements für Node- und kapazitätsbasierte Lizenzen eingesetzt werden. Wenden Sie sich an Ihren NetApp Vertriebsmitarbeiter, um ARP zu Ihrer aktuellen Lizenz hinzuzufügen.
+Die ARP-Funktion kann ohne zusätzliche Kosten mit Bring-Your-Own-License (BYOL) und Marketplace-Abonnements für Ihre Lizenzen genutzt werden.
 
-Die ARP Lizenz gilt als „fließende“ Lizenz, was bedeutet, dass sie nicht an eine einzelne Cloud Volumes ONTAP Instanz gebunden ist und auf mehrere Cloud Volumes ONTAP Umgebungen angewendet werden kann.
-
-
-NOTE: Die Verwendung der ARP-Funktion mit Node-basierten Cloud Volumes ONTAP-Lizenzen ist derzeit nicht in Digital Wallet enthalten. Die Möglichkeit, die Node-basierte ARP-Nutzung anzuzeigen, wird in einer zukünftigen Version unter Digital Wallet verfügbar sein.
-
-Beim Kauf einer Add-on-Lizenz und beim Hinzufügen zur Digital Wallet können Sie ARP mit Cloud Volumes ONTAP auf Volume-Basis aktivieren.
-
-ARP-aktivierte Volumes haben einen bestimmten Status als „Lernmodus“ oder „aktiv“.
+ARP-fähige Volumes haben einen bestimmten Status „Learning Mode“ oder „Active“.
 
 Die Konfiguration von ARP für Volumes wird über ONTAP System Manager und ONTAP CLI durchgeführt.
 
 Weitere Informationen zum Aktivieren von ARP mit ONTAP System Manager und der ONTAP CLI finden Sie unter https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["Autonomer Schutz Vor Ransomware"^].
 
 image::screenshot_arp.png[Screenshot zeigt die Add-on-Lizenz für Autonomous Ransomware Protection.]
-
-
-NOTE: Ohne Lizenz ist kein Support für die Nutzung lizenzierter Funktionen verfügbar.

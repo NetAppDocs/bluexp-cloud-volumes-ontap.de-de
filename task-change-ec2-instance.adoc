@@ -46,9 +46,9 @@ Wenn Sie den Instanztyp nicht von den Instanzen c4, m4 oder R4 ändern können, 
 +
 image::screenshot_features_instance_type.png[400]
 
-+
-.. Wenn Sie eine Node-basierte PAYGO-Lizenz verwenden, können Sie optional einen anderen Lizenz- und Instanztyp auswählen, indem Sie auf das Bleistiftsymbol neben *Lizenztyp* klicken.
 
+
+Wenn Sie eine Node-basierte Pay-as-you-go-Lizenz (PAYGO) verwenden, können Sie optional einen anderen Lizenz- und Instanztyp auswählen, indem Sie auf das Bleistiftsymbol neben *Lizenztyp* klicken.
 
 . Wählen Sie einen Instanztyp, aktivieren Sie das Kontrollkästchen, um zu bestätigen, dass Sie die Auswirkungen der Änderung verstehen, und klicken Sie dann auf *Ändern*.
 

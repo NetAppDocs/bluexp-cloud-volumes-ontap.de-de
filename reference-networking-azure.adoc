@@ -225,8 +225,9 @@ TIP: Sie suchen Informationen über den Connector? https://docs.netapp.com/us-en
 
 Wenn Sie eine Arbeitsumgebung erstellen und eine vordefinierte Sicherheitsgruppe auswählen, können Sie den Datenverkehr innerhalb einer der folgenden Optionen zulassen:
 
-* *Nur vnet ausgewählt*: Die Quelle für eingehenden Datenverkehr ist der Subnetz-Bereich des vnet für das Cloud Volumes ONTAP-System und der Subnetz-Bereich des vnet, in dem sich der Connector befindet. Dies ist die empfohlene Option.
+* *Nur ausgewähltes vnet*: Die Quelle für eingehenden Datenverkehr ist der Subnetz-Bereich des vnet für das Cloud Volumes ONTAP-System und der Subnetz-Bereich des vnet, in dem sich der Connector befindet. Dies ist die empfohlene Option.
 * *Alle VNets*: Die Quelle für eingehenden Datenverkehr ist der IP-Bereich 0.0.0.0/0.
+* *Disabled*: Diese Option beschränkt den Zugriff auf das öffentliche Netzwerk auf Ihr Speicherkonto und deaktiviert das Daten-Tiering für Cloud Volumes ONTAP-Systeme. Dies ist eine empfohlene Option, wenn Ihre privaten IP-Adressen aufgrund von Sicherheitsvorschriften und -Richtlinien nicht innerhalb desselben vnet offengelegt werden sollten.
 
 
 [cols="4*"]
@@ -311,12 +312,15 @@ Wenn Sie eine Arbeitsumgebung erstellen und eine vordefinierte Sicherheitsgruppe
 
 Wenn Sie eine Arbeitsumgebung erstellen und eine vordefinierte Sicherheitsgruppe auswählen, können Sie den Datenverkehr innerhalb einer der folgenden Optionen zulassen:
 
-* *Nur vnet ausgewählt*: Die Quelle für eingehenden Datenverkehr ist der Subnetz-Bereich des vnet für das Cloud Volumes ONTAP-System und der Subnetz-Bereich des vnet, in dem sich der Connector befindet. Dies ist die empfohlene Option.
+* *Nur ausgewähltes vnet*: Die Quelle für eingehenden Datenverkehr ist der Subnetz-Bereich des vnet für das Cloud Volumes ONTAP-System und der Subnetz-Bereich des vnet, in dem sich der Connector befindet. Dies ist die empfohlene Option.
 * *Alle VNets*: Die Quelle für eingehenden Datenverkehr ist der IP-Bereich 0.0.0.0/0.
 
 
 
 NOTE: HA-Systeme weisen weniger eingehende Regeln als Systeme mit einzelnen Nodes auf, da eingehender Datenverkehr durch den Azure Standard Load Balancer geleitet wird. Aus diesem Grund sollte der Verkehr aus dem Load Balancer geöffnet sein, wie in der Regel "AllowAzureLoadBalancerInBound" gezeigt.
+
+* *Disabled*: Diese Option beschränkt den Zugriff auf das öffentliche Netzwerk auf Ihr Speicherkonto und deaktiviert das Daten-Tiering für Cloud Volumes ONTAP-Systeme. Dies ist eine empfohlene Option, wenn Ihre privaten IP-Adressen aufgrund von Sicherheitsvorschriften und -Richtlinien nicht innerhalb desselben vnet offengelegt werden sollten.
+
 
 [cols="4*"]
 |===
