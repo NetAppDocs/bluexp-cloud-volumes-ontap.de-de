@@ -276,7 +276,7 @@ Nach dem EOS-Datum wird der NetApp Support solange nicht mehr erhalten, bis Sie 
 .Ausschlüsse
 NetApp ist sich bewusst, dass in bestimmten Situationen eine besondere Berücksichtigung erforderlich ist. Eine OA- und EOS-Lizenzierung auf Node-Basis gilt in den folgenden Fällen nicht:
 
-* USPS Kunden ein
+* Kunden des öffentlichen Sektors in den USA
 * Bereitstellungen im privaten Modus
 * China-Region Bereitstellung von Cloud Volumes ONTAP in AWS
 

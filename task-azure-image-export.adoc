@@ -67,23 +67,28 @@ South Central US          southcentralus       (US) South Central US
 ----
 
 
-. Überprüfen Sie den SKU-Namen für den entsprechenden VM-Bereitstellungstyp aus der folgenden Tabelle.
+. Überprüfen Sie die SKU-Namen für die entsprechenden Cloud Volumes ONTAP-Versionen und VM-Bereitstellungstypen aus der folgenden Tabelle.
 +
 Der SKU-Name wird als Wert für die Variable „skuName“ verwendet, wenn die URN des Marketplace-Images festgelegt wird.
 
 +
-Beispielsweise sollten für Single-Node-Implementierungen der SKU-Name „ontap_Cloud_byol“ verwendet werden.
+Beispielsweise sollten alle Single-Node-Implementierungen mit Cloud Volumes ONTAP 9.15.0 als SKU-Name verwendet werden `ontap_cloud_byol`.
 
 +
-[cols="1,1"]
+[cols="1,1,1"]
 |===
-| VM-Bereitstellungstyp | SKU-Name 
 
 
-| Single Node | ontap_Cloud_byol 
+| *Cloud Volumes ONTAP-Version* | *Typ der VM-Bereitstellung* | *SKU-Name* 
 
 
-| Hochverfügbarkeit | ontap_Cloud_byol_ha 
+| 9.15.1 und 9.16.0 | Alle Bereitstellungen sind über BlueXP  möglich | ONTAP_Cloud 
+
+
+| 9.15.0 | Single Node | ontap_Cloud_byol 
+
+
+| 9.15.0 | Hochverfügbarkeit | ontap_Cloud_byol_ha 
 |===
 . Sobald die ONTAP Version und das Azure Marketplace Image zugeordnet sind, exportieren Sie die VHD-Datei aus dem Azure Marketplace über die Azure Cloud Shell oder die Azure CLI.
 
@@ -94,7 +99,7 @@ Beispielsweise sollten für Single-Node-Implementierungen der SKU-Name „ontap_
 
 . Exportieren Sie das Marketplace-Image von Azure Cloud Shell in ein vhd (image2, z. B. 9150.01000024.05090105.vhd), und laden Sie es auf Ihren lokalen Rechner (z. B. einen Linux-Rechner oder einen Windows-PC) herunter.
 +
-.Klicken Sie zum Anzeigen auf
+.Schritte anzeigen
 [%collapsible]
 ====
 [source]
@@ -150,7 +155,7 @@ PS /home/user1> Remove-AzDisk -ResourceGroupName $diskRG -DiskName $diskName
 
 . Exportieren Sie das Marketplace-Image über die Azure CLI von einem lokalen Linux-Rechner in ein VHD.
 +
-.Klicken Sie zum Anzeigen auf
+.Schritte anzeigen
 [%collapsible]
 ====
 [source]

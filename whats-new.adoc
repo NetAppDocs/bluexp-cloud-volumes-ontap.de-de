@@ -40,7 +40,7 @@ Die Option, Cloud Volumes ONTAP Systeme mit Node-basierten Lizenzen zu implement
 
 NetApp erkennt die folgenden besonderen Lizenzierungsanforderungen bei der Einhaltung der vertraglichen Verpflichtungen und betrieblichen Anforderungen und unterstützt in den folgenden Situationen weiterhin Node-basierte Lizenzen:
 
-* USPS Kunden ein
+* Kunden des öffentlichen Sektors in den USA
 * Bereitstellungen im privaten Modus
 * China-Region Bereitstellung von Cloud Volumes ONTAP in AWS
 * Wenn Sie über eine gültige, nicht abgelaufene by-Node-Lizenz (BYOL-Lizenz) verfügen,
