@@ -199,7 +199,7 @@ Kapazitätsbasierte Lizenzierung ist in Form eines _package_ erhältlich. Wenn S
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Erfahren Sie mehr über kapazitätsbasierte Lizenzierungspakete"^].
 
 .Über diese Aufgabe
-* Eine Änderung der Abrechnungsmethode hat keine Auswirkung darauf, ob die Abrechnung über eine von NetApp (BYOL) erworbene Lizenz oder über den Marketplace des Cloud-Providers (Pay-as-you-go) erfolgt.
+* Eine Änderung der Abrechnungsmethode hat keine Auswirkung, ob die Abrechnung über eine Lizenz von NetApp (BYOL) oder über das PAYGO-Abonnement (Pay-as-you-go) des Cloud-Providers erfolgt.
 +
 BlueXP versucht immer zuerst, eine Lizenz zu berechnen. Wenn eine Lizenz nicht verfügbar ist, wird sie für ein Marketplace-Abonnement berechnet. Für das BYOL-Abonnement für Marketplace ist keine „Konvertierung“ erforderlich und umgekehrt.
 

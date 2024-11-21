@@ -82,7 +82,7 @@ Beispielsweise sollten alle Single-Node-Implementierungen mit Cloud Volumes ONTA
 | *Cloud Volumes ONTAP-Version* | *Typ der VM-Bereitstellung* | *SKU-Name* 
 
 
-| 9.15.1 und 9.16.0 | Alle Bereitstellungen sind über BlueXP  möglich | ONTAP_Cloud 
+| 9.15.1 | Alle Bereitstellungen sind über BlueXP  möglich | ONTAP_Cloud 
 
 
 | 9.15.0 | Single Node | ontap_Cloud_byol 

@@ -66,7 +66,7 @@ Kopieren Sie die privaten IP-Adressen, die Sie gerade erstellt haben. Sie müsse
 
 === HA-Paar
 
-Wie Sie IP-Adressen für ein HA-Paar zuweisen, hängt vom verwendeten Storage-Protokoll ab.
+Bei HA-Paaren (High Availability, HA) sollten Sie auf jede Storage-VM (SVM) im Cluster zugreifen und für jede SVM die entsprechenden IPs unter nic0 erstellen. Wie Sie IP-Adressen für ein HA-Paar zuweisen, hängt vom verwendeten Storage-Protokoll ab. Im HA-Modus müssen die Benutzer sicherstellen, dass die IP-Adressen richtig konfiguriert sind, um Failover und Redundanz zu unterstützen. Dies ist entscheidend für die Aufrechterhaltung der Hochverfügbarkeit und Zuverlässigkeit des Storage-Systems.
 
 [role="tabbed-block"]
 ====
@@ -78,7 +78,7 @@ Sie müssen die folgenden IP-Adressen erstellen:
 
 * Eine IP-Adresse für LIF-Zugriff auf iSCSI-Daten von Knoten 1
 * Eine IP-Adresse für LIF-Zugriff auf iSCSI-Daten von Node 2
-* Eine optionale IP-Adresse für eine Storage-VM (SVM)-Management-LIF
+* Eine optionale IP-Adresse für eine SVM-Management-LIF
 +
 Dieses Management-LIF bietet eine Verbindung zu Management-Tools wie SnapCenter.
 
@@ -111,7 +111,7 @@ Sie müssen die folgenden IP-Adressen erstellen:
 * Eine IP-Adresse für LIF-Zugriff auf NAS-Daten von Node 2
 * Eine optionale IP-Adresse für eine Storage-VM (SVM)-Management-LIF
 +
-Die iSCSI LIFs sind für die DNS-Kommunikation erforderlich. Dazu wird ein iSCSI-LIF verwendet, da bei einem Failover keine Migration durchgeführt wird.
+Die iSCSI LIFs sind für die DNS-Kommunikation erforderlich, selbst wenn das iSCSI-Protokoll nicht verwendet wird. Dazu wird ein iSCSI-LIF verwendet, da bei einem Failover keine Migration durchgeführt wird.
 
 +
 Dieses Management-LIF bietet eine Verbindung zu Management-Tools wie SnapCenter.
@@ -434,7 +434,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. Daten-LIFs erstellen:
+. Daten-LIFs erstellen. In diesem Schritt verwenden Sie die IPs, die Sie in der zugewiesen link:task-managing-svms-azure.html#ha-pair["Vorheriges Verfahren"]haben, um als Daten-LIFs zu dienen.
 +
 .. Verwenden Sie den folgenden Befehl, um eine iSCSI-LIF auf Knoten 1 zu erstellen.
 +
@@ -519,7 +519,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. Daten-LIFs erstellen:
+. Daten-LIFs erstellen. In diesem Schritt verwenden Sie die IPs, die Sie in der zugewiesen link:task-managing-svms-azure.html#ha-pair["Vorheriges Verfahren"]haben, um als Daten-LIFs zu dienen.
 +
 .. Verwenden Sie den folgenden Befehl, um eine NAS-LIF auf Knoten 1 zu erstellen.
 +
@@ -535,7 +535,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -service-policy def
 ----
 
 
-. ISCSI LIFs erstellen, um DNS-Kommunikation bereitzustellen:
+. Erstellen Sie iSCSI LIFs, um DNS-Kommunikation bereitzustellen. Die iSCSI LIFs sind für die DNS-Kommunikation erforderlich, selbst wenn das iSCSI-Protokoll nicht verwendet wird.
 +
 .. Verwenden Sie den folgenden Befehl, um eine iSCSI-LIF auf Knoten 1 zu erstellen.
 +
@@ -629,7 +629,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. NAS-Daten-LIFs erstellen:
+. Erstellung von NAS-Daten-LIFs. In diesem Schritt verwenden Sie die IPs, die Sie in der zugewiesen link:task-managing-svms-azure.html#ha-pair["Vorheriges Verfahren"]haben, um als Daten-LIFs zu dienen.
 +
 .. Verwenden Sie den folgenden Befehl, um eine NAS-LIF auf Knoten 1 zu erstellen.
 +
@@ -645,7 +645,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -service-policy def
 ----
 
 
-. ISCSI LIFs erstellen, um DNS-Kommunikation bereitzustellen:
+. Erstellen Sie iSCSI LIFs, um DNS-Kommunikation bereitzustellen. Die iSCSI LIFs sind für die DNS-Kommunikation erforderlich, selbst wenn das iSCSI-Protokoll nicht verwendet wird.
 +
 .. Verwenden Sie den folgenden Befehl, um eine iSCSI-LIF auf Knoten 1 zu erstellen.
 +
