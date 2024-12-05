@@ -100,7 +100,7 @@ Sie können in verschiedenen Konfigurationen nach Kapazität bezahlen:
 * Fügen Sie die Cloud-Datenservices von NetApp zu zusätzlichen Kosten hinzu
 
 
-Weitere Informationen finden Sie unter link:licensing-charging.html["Abrechnung für kapazitätsbasierte Lizenzen"].
+Weitere Informationen finden Sie unter link:concept-licensing-charging.html["Mehr zu kapazitätsbasierten Lizenzen"].
 
 
 
