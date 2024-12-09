@@ -93,7 +93,7 @@ ifdef::azure[]
 
 === Azure Storage Service Encryption
 
-Die Daten werden auf Cloud Volumes ONTAP in Azure automatisch verschlüsselt https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption"^] Mit einem von Microsoft gemanagten Schlüssel
+Die Daten werden auf Cloud Volumes ONTAP in Azure mithilfe eines von Microsoft gemanagten Schlüssels automatisch verschlüsselt https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Azure Storage Service Encryption"^].
 
 Sie können Ihre eigenen Schlüssel verwenden. link:task-set-up-azure-encryption.html["Erfahren Sie, wie Sie Cloud Volumes ONTAP einrichten und einen vom Kunden gemanagten Schlüssel in Azure verwenden"].
 

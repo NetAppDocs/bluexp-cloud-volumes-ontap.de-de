@@ -20,6 +20,18 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== Bis 9. Dezember 2024
+
+
+
+=== Liste der unterstützten VMs, die für Azure aktualisiert wurden, um die Best Practices abzustimmen
+
+Die Maschinenfamilien DS_v2 und Es_v3 stehen bei der Bereitstellung neuer Instanzen von Cloud Volumes ONTAP in Azure nicht mehr zur Auswahl auf BlueXP  zur Verfügung. Diese Familien werden nur in älteren, bestehenden Systemen beibehalten und unterstützt. Neue Implementierungen von Cloud Volumes ONTAP werden in Azure erst ab Version 9.12.1 unterstützt. Wir empfehlen, entweder auf Es_v4 oder eine andere Serie zu wechseln, die mit Cloud Volumes ONTAP 9.12.1 und höher kompatibel ist. Die Maschinen der Serien DS_v2 und Es_v3 werden jedoch für neue Bereitstellungen über die API verfügbar sein.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^]
+
+
+
 == Bis 11. November 2024
 
 
@@ -78,7 +90,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabl
 
 
 
-=== Maschinen der n1-Serie stehen für die Auswahl auf BlueXP  nicht zur Verfügung
+=== Liste der unterstützten VMs, die für Google Cloud aktualisiert wurden, um an den Best Practices ausgerichtet zu sein
 
 Bei der Bereitstellung neuer Instanzen von Cloud Volumes ONTAP in der Google Cloud stehen die Maschinen der n1-Serie nicht mehr zur Auswahl auf BlueXP . Die Maschinen der Serie n1 werden nur in älteren, bestehenden Systemen beibehalten und unterstützt. Neue Implementierungen von Cloud Volumes ONTAP werden in Google Cloud erst ab Version 9.8 unterstützt. Wir empfehlen Ihnen, zu den Maschinentypen der n2-Serie zu wechseln, die mit Cloud Volumes ONTAP 9.8 und höher kompatibel sind. Die Maschinen der Serie n1 sind jedoch für neue Bereitstellungen verfügbar, die über die API durchgeführt werden.
 
@@ -1410,7 +1422,7 @@ Die folgenden Änderungen wurden mit der Version 3.9.10 des Connectors eingefüh
 
 === Vom Kunden gemanagte Verschlüsselung in Azure
 
-Die Daten werden auf Cloud Volumes ONTAP in Azure automatisch verschlüsselt https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption"^] Mit einem von Microsoft gemanagten Schlüssel Sie können nun jedoch Ihren eigenen, vom Kunden gemanagten Verschlüsselungsschlüssel verwenden, indem Sie die folgenden Schritte ausführen:
+Die Daten werden auf Cloud Volumes ONTAP in Azure mithilfe eines von Microsoft gemanagten Schlüssels automatisch verschlüsselt https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Azure Storage Service Encryption"^]. Sie können nun jedoch Ihren eigenen, vom Kunden gemanagten Verschlüsselungsschlüssel verwenden, indem Sie die folgenden Schritte ausführen:
 
 . Aus Azure erstellen Sie einen Schlüsselspeicher und generieren Sie anschließend einen Schlüssel in diesem Vault.
 . Verwenden Sie für BlueXP die API, um eine Cloud Volumes ONTAP-Arbeitsumgebung zu erstellen, in der der Schlüssel zum Einsatz kommt.

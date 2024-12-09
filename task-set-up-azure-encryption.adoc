@@ -14,13 +14,13 @@ summary: Daten werden auf Cloud Volumes ONTAP in Azure automatisch verschlüssel
 
 
 [role="lead"]
-Die Daten werden auf Cloud Volumes ONTAP in Azure automatisch verschlüsselt https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption"] Mit einem von Microsoft gemanagten Schlüssel Aber Sie können Ihren eigenen Verschlüsselungsschlüssel verwenden, indem Sie die Schritte auf dieser Seite befolgen.
+Daten werden auf Cloud Volumes ONTAP in Azure automatisch verschlüsselt. Dazu wird Azure Storage Service Encryption mit einem von Microsoft gemanagten Schlüssel verwendet. Aber Sie können Ihren eigenen Verschlüsselungsschlüssel verwenden, indem Sie die Schritte auf dieser Seite befolgen.
 
 
 
 == Übersicht über die Datenverschlüsselung
 
-Cloud Volumes ONTAP-Daten werden in Azure automatisch verschlüsselt https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption"^]. Bei der Standardimplementierung wird ein von Microsoft verwalteter Schlüssel verwendet. Es ist keine Einrichtung erforderlich.
+Cloud Volumes ONTAP-Daten werden in Azure automatisch mit verschlüsselt https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Azure Storage Service Encryption"^]. Bei der Standardimplementierung wird ein von Microsoft verwalteter Schlüssel verwendet. Es ist keine Einrichtung erforderlich.
 
 Wenn Sie einen vom Kunden gemanagten Schlüssel mit Cloud Volumes ONTAP verwenden möchten, müssen Sie folgende Schritte ausführen:
 
