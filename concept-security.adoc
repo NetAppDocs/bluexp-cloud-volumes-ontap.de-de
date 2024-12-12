@@ -60,13 +60,7 @@ Cloud Volumes ONTAP unterstützt https://www.netapp.com/pdf.html?item=/media/170
 
 Sowohl NVE als auch NAE werden von einem externen Schlüsselmanager unterstützt.
 
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+Ifdef::Azure[] endif::Azure[] ifdef::gcp[] endif::gcp[]
 
 Neue Aggregate haben NetApp Aggregate Encryption (NAE) standardmäßig aktiviert, nachdem Sie einen externen Schlüsselmanager eingerichtet haben. Für neue Volumes, die nicht Teil eines NAE-Aggregats sind, ist standardmäßig NetApp Volume Encryption (NVE) aktiviert (bei vorhandenen Aggregaten, die vor dem Einrichten eines externen Schlüsselmanagers erstellt wurden).
 

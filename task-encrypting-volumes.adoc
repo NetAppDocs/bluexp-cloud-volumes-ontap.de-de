@@ -18,26 +18,4 @@ Cloud Volumes ONTAP unterstützt NetApp Volume Encryption (NVE) und NetApp Aggre
 
 Sowohl NVE als auch NAE werden von einem externen Schlüsselmanager unterstützt.
 
-ifdef::aws[]
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
-
-ifdef::aws[]
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+Ifdef::aws[] endif::aws[] ifdef::azure[] endif::azure[] ifdef::gcp[] endif::gcp[] ifdef::aws[] endif::aws[] ifdef::azure[] endif::azure[] ifdef::gcp[]
