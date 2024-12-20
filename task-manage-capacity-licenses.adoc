@@ -230,6 +230,8 @@ Vielleicht ist Ihnen auch aufgefallen, dass das Digital Wallet von BlueXP die ve
 
 Wenn eine kapazitätsbasierte Lizenz abgelaufen ist und nicht mehr verwendet wird, können Sie sie jederzeit entfernen.
 
+Informationen darüber, was bei Ablauf oder Entfernung Ihrer Lizenz mit Ihren Cloud Volumes ONTAP-Daten geschieht, finden Sie unter https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/FAQs_on_Cloud_Volumes_ONTAP_license_expiry["Dieser Knowledge Base-Artikel (KB)"^].
+
 .Schritte
 . Wählen Sie im Navigationsmenü BlueXP die Option *Governance > Digital Wallet* aus.
 . Klicken Sie auf der Registerkarte *Cloud Volumes ONTAP* auf das Aktionsmenü neben der Lizenz und wählen Sie *Lizenz entfernen*.

@@ -4,7 +4,7 @@ permalink: concept-licensing-charging.html
 keywords: capacity-based license charging, consumption for licenses, pricing for licenses, CVO licensing, CVO charging 
 summary: Machen Sie sich mit der Abrechnung, dem Nutzungsmodell, der Preisgestaltung und der Konfiguration kapazitätsbasierter Lizenzen vertraut. 
 ---
-= Mehr zu kapazitätsbasierten Lizenzen
+= Erfahren Sie mehr über kapazitätsbasierte Lizenzen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

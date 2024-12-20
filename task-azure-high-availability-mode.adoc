@@ -14,9 +14,9 @@ summary: Der Hochverfügbarkeits-Modus von Microsoft Azure sollte aktiviert sein
 
 
 [role="lead"]
-Der Hochverfügbarkeits-Modus von Microsoft Azure sollte aktiviert sein, um ungeplante Failover-Zeiten zu reduzieren und die NFSv4-Unterstützung für Cloud Volumes ONTAP zu aktivieren.
+Der HA-Modus (High Availability, Hochverfügbarkeit) von Microsoft Azure sollte aktiviert sein, um ungeplante Failover-Zeiten zu reduzieren und die NFSv4-Unterstützung für Cloud Volumes ONTAP zu aktivieren. In diesem Modus können Ihre Cloud Volumes ONTAP HA-Nodes bei nicht geplanten Failovers auf CIFS- und NFSv4-Clients eine niedrige Recovery Time Objective (RTO) (60 Sekunden) erreichen.
 
-Ab der Version Cloud Volumes ONTAP 9.10.1 reduzierten wir die ungeplante Failover-Zeit für Cloud Volumes ONTAP HA-Paare, die in Microsoft Azure laufen, und fügten Unterstützung für NFSv4 hinzu. Um diese Verbesserungen für Cloud Volumes ONTAP verfügbar zu machen, müssen Sie in Ihrem Azure-Abonnement die Hochverfügbarkeitsfunktion aktivieren.
+Ab Cloud Volumes ONTAP 9.10.1 haben wir die ungeplante Failover-Zeit für Cloud Volumes ONTAP HA-Paare in Microsoft Azure reduziert und Unterstützung für NFSv4 hinzugefügt. Um diese Verbesserungen für Cloud Volumes ONTAP verfügbar zu machen, müssen Sie in Ihrem Azure-Abonnement die Hochverfügbarkeitsfunktion aktivieren.
 
 In BlueXP werden Sie diese Angaben in einer Meldung „Aktion erforderlich“ eingeben, wenn die Funktion auf einem Azure-Abonnement aktiviert werden muss.
 
@@ -24,7 +24,9 @@ Beachten Sie Folgendes:
 
 * Es gibt keine Probleme mit der Hochverfügbarkeit Ihres Cloud Volumes ONTAP HA-Paars. Diese Azure Funktion arbeitet in Kombination mit ONTAP, um die von Clients beobachteten Applikationsausfallzeiten für NFS-Protokolle zu reduzieren, die aus ungeplanten Failover-Ereignissen resultieren.
 * Wenn Sie diese Funktion aktivieren, wird für Cloud Volumes ONTAP HA-Paare keine Unterbrechung verursacht.
-* Wenn Sie diese Funktion auf Ihrem Azure-Abonnement aktivieren, treten keine Probleme bei anderen VMs auf.
+* Die Aktivierung dieser Funktion in Ihrem Azure-Abonnement verursacht keine Probleme mit anderen VMs.
+* Cloud Volumes ONTAP nutzt einen internen Azure Load Balancer beim Failover von LIFs für das Cluster- und SVM-Management auf CIFS- und NFS-Clients.
+* Wenn der HA-Modus aktiviert ist, scannt BlueXP  das System alle 12 Stunden, um die internen Regeln für Azure Load Balancer zu aktualisieren.
 
 
 Ein Azure-Benutzer mit „Owner“-Berechtigungen kann die Funktion über die Azure-CLI aktivieren.

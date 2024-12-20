@@ -82,7 +82,7 @@ Beim Austausch der Lizenz wird die Cloud Volumes ONTAP-Lizenz zurückgerufen und
 * Die Lizenzierung für einen Cloud Volumes ONTAP-Single-Node wird in eine 32 tib Datenservice-Lizenz umgewandelt
 
 
-Die konvertierte Lizenz hat das gleiche Ablaufdatum wie die Cloud Volumes ONTAP-Lizenz.
+Die konvertierte Lizenz hat dasselbe Ablaufdatum wie die Cloud Volumes ONTAP-Lizenz.
 
 .Schritte
 . Wählen Sie im Navigationsmenü BlueXP die Option *Governance > Digital Wallet* aus.
