@@ -50,6 +50,9 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 
 
+NOTE: Ab Cloud Volumes ONTAP 915.0P1 werden Blobs auf der Azure-Seite nicht mehr für neue Implementierungen von Hochverfügbarkeitspaaren unterstützt. Wenn Sie derzeit Azure-Seitenlobs in vorhandenen Implementierungen von Hochverfügbarkeitspaaren verwenden, können Sie zu neueren VM-Instanztypen in den VMs der Edsv4-Serie und den VMs der Edsv5-Serie migrieren. link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Erfahren Sie mehr zu unterstützten Konfigurationen in Azure"^].
+
+
 
 === HA-Konfiguration mit einer einzelnen Verfügbarkeitszone und gemeinsam genutzten gemanagten Festplatten
 
