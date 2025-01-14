@@ -53,9 +53,6 @@ Die Benutzerauthentifizierung schlägt fehl, und die folgenden Dienste sind weit
 
 
 
-| \https://keyvault-production-aks.vault.azure.net | Schlüsselspeicher | Dient zum Abrufen des geheimen Client-Schlüssels aus dem Azure Key Vault zur Kommunikation mit S3 Buckets zur Metadatenverarbeitung. Der Cloud Volumes ONTAP Service verwendet diese Komponente intern. | Standardmodus, eingeschränkter und privater Modus. | Die Cloud Volumes ONTAP-Services sind nicht verfügbar. 
-
-
 | \https://cloudmanager.cloud.netapp.com/tenancy | Mandantenfähigkeit | Wird verwendet, um die Cloud Volumes ONTAP-Ressourcen vom BlueXP -Mandanten abzurufen und Ressourcen und Benutzer zu autorisieren. | Standardmodi und eingeschränkte Modi. | Cloud Volumes ONTAP-Ressourcen und die Benutzer sind nicht autorisiert. 
 
 

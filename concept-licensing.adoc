@@ -290,7 +290,7 @@ NOTE: Selbst in diesen Szenarien sind neue Node-basierte Lizenzen und Lizenzerne
 
 == Lizenzkonvertierung
 
-BlueXP  ermöglicht eine nahtlose Konvertierung Node-basierter Lizenzen in Kapazitätskapazität basierend auf dem Lizenzkonvertierungstool. Informationen zum EOA für Node-basierte Lizenzierung finden Sie unter link:/concept-licensing.html#end-of-availability-of-node-based-licenses["Ende der Verfügbarkeit von Node-basierten Lizenzen"].
+BlueXP  ermöglicht eine nahtlose Konvertierung Node-basierter Lizenzen in Kapazitätskapazität basierend auf dem Lizenzkonvertierungstool. Informationen zum EOA für Node-basierte Lizenzierung finden Sie unter link:concept-licensing.html#end-of-availability-of-node-based-licenses["Ende der Verfügbarkeit von Node-basierten Lizenzen"].
 
 Vor dem Übergang sollten Sie sich mit dem Unterschied zwischen den beiden Lizenzmodellen vertraut machen. Die Node-basierte Lizenzierung umfasst feste Kapazität für jede ONTAP Instanz, wodurch sich die Flexibilität einschränken lässt. Kapazitätsbasierte Lizenzierung hingegen ermöglicht einen gemeinsamen Storage-Pool über mehrere Instanzen hinweg. Dies erhöht die Flexibilität, optimiert die Ressourcenauslastung und verringert das Risiko von finanziellen Einbußen bei der Umverteilung von Workloads. Kapazitätsbasierte Ladefunktion passt sich nahtlos an sich verändernde Speicheranforderungen an.
 

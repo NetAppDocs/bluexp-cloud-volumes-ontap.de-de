@@ -57,7 +57,7 @@ Wenn Sie keinen Zugriff auf inaktive Daten planen, können Sie die Storage-Koste
 
 Die Zugriffskosten sind höher, wenn Sie auf die Daten zugreifen. Berücksichtigen Sie dies vor einer Änderung der Storage-Klasse. https://aws.amazon.com/s3/storage-classes["Amazon S3 Dokumentation: Weitere Informationen zu Amazon S3 Storage-Klassen"^].
 
-Sie können eine Storage-Klasse auswählen, wenn Sie die Arbeitsumgebung erstellen und sie danach jederzeit ändern. Anweisungen zum Ändern der Speicherklasse finden Sie unter link:task-tiering.html["Tiering inaktiver Daten in kostengünstigen Objektspeicher"].
+Sie können eine Storage-Klasse auswählen, wenn Sie die Arbeitsumgebung erstellen und sie danach jederzeit ändern. Anweisungen zum Ändern der Speicherklasse finden Sie unter link:task-tiering.html["Tiering inaktiver Daten auf kostengünstigen Objekt-Storage"].
 
 Die Storage-Klasse für Daten-Tiering beträgt die systemweite; nicht pro Volume.
 
@@ -98,7 +98,7 @@ Storage-Zugriffstufen:: Die Standard-Storage-Zugriffs-Tier für Tiered Daten in 
 --
 Wenn Sie nicht planen, auf die inaktiven Daten in der Kapazitäts-Tier zuzugreifen, können Sie die Speicherebene _cool_ wählen, bei der die inaktiven Daten mindestens 30 Tage aufbewahrt werden. Sie können sich auch für die _Cold_-Ebene entscheiden, bei der die inaktiven Daten mindestens 90 Tage lang gespeichert werden. Wählen Sie je nach Ihren Storage-Anforderungen und Kostenüberlegungen die Tier aus, die Ihren Anforderungen am besten entspricht. Wenn Sie die Speicherebene in _cool_ oder _cold_ ändern, werden die inaktiven Daten der Kapazitäts-Tiers direkt in die Cold-Storage-Tier verschoben. Die Cold-Tiers bieten im Vergleich zum Tier mit heißen Daten niedrigere Storage-Kosten. Allerdings haben sie höhere Zugriffskosten, berücksichtigen Sie dies also vor einem Wechsel des Storage-Tiers. Siehe https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["Dokumentation zu Microsoft Azure: Weitere Informationen zu Azure Blob Storage-Zugriffs-Tiers"^].
 
-Sie können beim Erstellen der Arbeitsumgebung eine Storage-Ebene auswählen und sie anschließend jederzeit ändern. Weitere Informationen zum Ändern der Speicherebene finden Sie unter link:task-tiering.html["Tiering inaktiver Daten in kostengünstigen Objektspeicher"].
+Sie können beim Erstellen der Arbeitsumgebung eine Storage-Ebene auswählen und sie anschließend jederzeit ändern. Weitere Informationen zum Ändern der Speicherebene finden Sie unter link:task-tiering.html["Tiering inaktiver Daten auf kostengünstigen Objekt-Storage"].
 
 Die Storage-Zugriffs-Tier für Daten-Tiering beträgt die systemweite; nicht pro Volume.
 
@@ -140,7 +140,7 @@ NOTE: Alle vorhandenen inaktiven Daten behalten die Standardspeicherklasse bei, 
 
 Die Zugriffskosten sind höher, wenn Sie auf die Daten zugreifen. Berücksichtigen Sie dies also vor einem Wechsel der Storage-Klasse. Weitere Informationen finden Sie unter https://cloud.google.com/storage/docs/storage-classes["Google Cloud-Dokumentation: Storage-Klassen"^].
 
-Sie können beim Erstellen der Arbeitsumgebung eine Storage-Ebene auswählen und sie anschließend jederzeit ändern. Weitere Informationen zum Ändern der Speicherklasse finden Sie unter link:task-tiering.html["Tiering inaktiver Daten in kostengünstigen Objektspeicher"].
+Sie können beim Erstellen der Arbeitsumgebung eine Storage-Ebene auswählen und sie anschließend jederzeit ändern. Weitere Informationen zum Ändern der Speicherklasse finden Sie unter link:task-tiering.html["Tiering inaktiver Daten auf kostengünstigen Objekt-Storage"].
 
 Die Storage-Klasse für Daten-Tiering beträgt die systemweite; nicht pro Volume.
 
@@ -212,4 +212,4 @@ TIP: Wenn Cloud Volumes ONTAP deaktiviert wird, bleibt die Temperatur jedes Bloc
 
 == Einrichten von Data Tiering
 
-Anweisungen und eine Liste der unterstützten Konfigurationen finden Sie unter link:task-tiering.html["Tiering inaktiver Daten in kostengünstigen Objektspeicher"].
+Anweisungen und eine Liste der unterstützten Konfigurationen finden Sie unter link:task-tiering.html["Tiering inaktiver Daten auf kostengünstigen Objekt-Storage"].
