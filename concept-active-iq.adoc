@@ -39,7 +39,7 @@ Digital Advisor zeigt den gesamten Bestand sowie Informationen zur Software- und
 
 
 
-.Verwandte Informationen
+.Weiterführende Links
 * https://docs.netapp.com/us-en/active-iq/["NetApp Dokumentation: Digitaler Berater"^]
 * https://aiq.netapp.com/custom-dashboard/search["Starten Sie Digital Advisor"^]
 * https://www.netapp.com/us/services/support-edge.aspx["SupportEdge Services"^]

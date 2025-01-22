@@ -20,7 +20,7 @@ Um Daten-Tiering einzurichten, müssen Sie die folgenden Schritte ausführen:
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Wählen Sie eine unterstützte Konfiguration aus
 [role="quick-margin-para"]
-Die meisten Konfigurationen werden unterstützt. Wenn Sie ein Cloud Volumes ONTAP System mit der aktuellsten Version haben, sollten Sie gut zu gehen. link:task-tiering.html#configurations-that-support-data-tiering["Weitere Informationen ."].
+Die meisten Konfigurationen werden unterstützt. Wenn Sie ein Cloud Volumes ONTAP-System mit der neuesten Version haben, dann sind Sie gut zu gehen. link:task-tiering.html#configurations-that-support-data-tiering["Weitere Informationen ."].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Stellen Sie die Konnektivität zwischen Cloud Volumes ONTAP und Objekt-Storage sicher
 [role="quick-margin-list"]
@@ -47,7 +47,7 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Stellen Sie sicher, dass Sie über ein Aggregat mit aktiviertem Tiering verfügen
 [role="quick-margin-para"]
-Daten-Tiering muss auf einem Aggregat aktiviert sein, um Daten-Tiering auf einem Volume zu ermöglichen. Die Anforderungen für neue Volumes und vorhandene Volumes sollten Sie kennen. <<Ensuring that tiering is enabled on aggregates,Weitere Informationen .>>.
+Daten-Tiering sollte auf einem Aggregat aktiviert werden, um es auf einem Volume zu ermöglichen. Die Anforderungen für neue Volumes und vorhandene Volumes sollten Sie kennen. <<Ensuring that tiering is enabled on aggregates,Weitere Informationen .>>.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Wählen Sie eine Tiering-Richtlinie beim Erstellen, Ändern oder Replizieren eines Volume
 [role="quick-margin-para"]
@@ -65,7 +65,7 @@ BlueXP fordert Sie auf, beim Erstellen, Ändern oder Replizieren eines Volumes e
 * Sie müssen keinen Objektspeicher für die Kapazitäts-Tier erstellen. BlueXP ist das für Sie.
 * Sie müssen das Daten-Tiering auf Systemebene nicht aktivieren.
 +
-BlueXP erstellt bei der Systemerstellung einen Objektspeicher für „kalte“ Daten. <<Enabling data tiering after implementing the requirements,Solange es keine Verbindungs- oder Berechtigungsprobleme gibt>>. Danach müssen Sie nur noch Daten-Tiering auf den Volumes aktivieren (und in einigen Fällen, <<Ensuring that tiering is enabled on aggregates,Auf Aggregaten>>).
+BlueXP  erstellt beim Erstellen des Systems einen Objektspeicher für kalte Daten<<Enabling data tiering after implementing the requirements,Solange es keine Verbindungs- oder Berechtigungsprobleme gibt>>. Danach müssen Sie nur Daten-Tiering auf Volumen aktivieren (und in einigen Fällen, <<Ensuring that tiering is enabled on aggregates,Auf Aggregaten>>).
 
 
 
@@ -162,7 +162,7 @@ Sie müssen keine Verbindung zwischen der Performance- und der Kapazitäts-Tier 
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-Die Berechtigungen sind standardmäßig in die benutzerdefinierte Rolle enthalten. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Zeigen Sie die Azure-Berechtigung für den Connector an"^]
+Die benutzerdefinierte Rolle enthält standardmäßig die Berechtigungen. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Zeigen Sie die Azure-Berechtigung für den Connector an"^]
 
 endif::azure[]
 
@@ -212,7 +212,7 @@ Wenn Sie Daten-Tiering auf einem neuen Volume aktivieren, müssen Sie sich keine
 
 * *Vorhandene Bände*
 +
-Wenn Sie Daten-Tiering auf einem vorhandenen Volume aktivieren möchten, müssen Sie sicherstellen, dass das Daten-Tiering auf dem zugrunde liegenden Aggregat aktiviert ist. Wenn Daten-Tiering auf dem vorhandenen Aggregat nicht aktiviert ist, müssen Sie ONTAP System Manager verwenden, um ein vorhandenes Aggregat an den Objektspeicher zu binden.
+Um Daten-Tiering auf einem vorhandenen Volume zu aktivieren, stellen Sie sicher, dass es auf dem zugrunde liegenden Aggregat aktiviert ist. Wenn Daten-Tiering auf dem vorhandenen Aggregat nicht aktiviert ist, müssen Sie ONTAP System Manager verwenden, um ein vorhandenes Aggregat an den Objektspeicher zu binden.
 
 
 
@@ -356,4 +356,4 @@ Sie können den S3-Bucket nur löschen, wenn:
 * Alle Objekte werden aus dem Bucket gelöscht und der S3-Bucket ist leer.
 
 
-Wenn Sie eine Cloud Volumes ONTAP-Arbeitsumgebung ausmustern, wird der für die Umgebung erstellte S3-Bucket nicht automatisch gelöscht. Stattdessen bleiben sie in einem verwaisten Zustand, um versehentliche Datenverluste zu verhindern. Sie können die Objekte in dem Bucket löschen und den S3-Bucket selbst anschließend entfernen oder zur späteren Verwendung beibehalten. Siehe https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["ONTAP CLI: Löschen von Buckets aus dem vserver Objektspeicher"^].
+Wenn Sie eine Cloud Volumes ONTAP-Arbeitsumgebung ausmustern, wird der für die Umgebung erstellte S3-Bucket nicht automatisch gelöscht. Stattdessen bleiben sie in einem verwaisten Zustand, um versehentliche Datenverluste zu verhindern. Sie können die Objekte in dem Bucket löschen, den S3-Bucket selbst entfernen oder für eine spätere Verwendung aufbewahren. Siehe https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["ONTAP CLI: Löschen von Buckets aus dem vserver Objektspeicher"^].

@@ -47,7 +47,7 @@ Weitere Informationen finden Sie unter link:reference-networking-aws.html["Netzw
 
 == Starten eines Cloud Volumes ONTAP Systems mit einem Node in AWS
 
-Wenn Sie Cloud Volumes ONTAP in AWS starten möchten, müssen Sie eine neue Arbeitsumgebung in BlueXP schaffen
+Wenn Sie Cloud Volumes ONTAP in AWS starten möchten, müssen Sie eine neue Arbeitsumgebung in BlueXP  erstellen.
 
 .Über diese Aufgabe
 Unmittelbar nach der Erstellung der Arbeitsumgebung startet BlueXP eine Testinstanz in der angegebenen VPC, um die Konnektivität zu überprüfen. Wenn der Vorgang erfolgreich war, beendet BlueXP die Instanz sofort und beginnt dann mit der Bereitstellung des Cloud Volumes ONTAP-Systems. Wenn BlueXP die Verbindung nicht überprüfen kann, schlägt die Erstellung der Arbeitsumgebung fehl. Die Testinstanz ist entweder t2.nano (für Standard-VPC-Mandantenfähigkeit) oder m3.medium (für dedizierte VPC-Mandantenfähigkeit).
@@ -274,7 +274,7 @@ Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp
 .Ergebnis
 BlueXP startet die Cloud Volumes ONTAP-Instanz. Sie können den Fortschritt in der Timeline verfolgen.
 
-Wenn beim Starten der Cloud Volumes ONTAP Instanz Probleme auftreten, lesen Sie die Fehlermeldung. Sie können auch die Arbeitsumgebung auswählen und auf Umgebung neu erstellen klicken.
+Wenn beim Starten der Cloud Volumes ONTAP-Instanz Probleme auftreten, überprüfen Sie die Fehlermeldung. Sie können auch die Arbeitsumgebung auswählen und auf Umgebung neu erstellen klicken.
 
 Weitere Hilfe finden Sie unter https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp Cloud Volumes ONTAP Support"^].
 
@@ -330,7 +330,7 @@ Einige der Felder auf dieser Seite sind selbsterklärend. In der folgenden Tabel
 | Benutzername und Passwort | Dies sind die Anmeldeinformationen für das Cloud Volumes ONTAP Cluster-Administratorkonto. Sie können diese Anmeldeinformationen verwenden, um sich über ONTAP System Manager oder die ONTAP-CLI mit Cloud Volumes ONTAP zu verbinden. Behalten Sie den Standardbenutzernamen „_admin_“ bei, oder ändern Sie ihn in einen benutzerdefinierten Benutzernamen. 
 
 
-| Anmeldedaten Bearbeiten | AWS Zugangsdaten und das Marketplace-Abonnement für dieses Cloud Volumes ONTAP System auswählen Klicken Sie auf *Abonnement hinzufügen*, um die ausgewählten Anmeldeinformationen mit einem neuen AWS Marketplace-Abonnement zu verknüpfen. Bei dem Abonnement kann es sich um einen Jahresvertrag oder um die Bezahlung von Cloud Volumes ONTAP auf Stundenbasis handelt. Wenn Sie eine Lizenz direkt von NetApp erwerben (Bring-Your-Own-License, BYOL), ist kein AWS Abonnement erforderlich. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Erfahren Sie, wie Sie BlueXP zusätzliche AWS Zugangsdaten hinzufügen"^]. 
+| Anmeldedaten Bearbeiten | AWS Zugangsdaten und das Marketplace-Abonnement für dieses Cloud Volumes ONTAP System auswählen Klicken Sie auf *Abonnement hinzufügen*, um die ausgewählten Anmeldeinformationen mit einem neuen AWS Marketplace-Abonnement zu verknüpfen. Bei dem Abonnement kann es sich um einen Jahresvertrag oder um die Bezahlung von Cloud Volumes ONTAP auf Stundenbasis handelt. Wenn Sie eine Lizenz direkt von NetApp erworben haben (Bring-Your-Own-License (BYOL)), ist kein AWS Abonnement erforderlich. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Erfahren Sie, wie Sie BlueXP zusätzliche AWS Zugangsdaten hinzufügen"^]. 
 |===
 +
 Im folgenden Video wird gezeigt, wie Sie ein Pay-as-you-go Marketplace Abonnement mit Ihren AWS Zugangsdaten verknüpfen:
