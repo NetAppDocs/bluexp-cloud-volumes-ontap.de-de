@@ -196,15 +196,15 @@ https://cloud.google.com/vpc/docs/packet-mirroring["Paketspiegelung"^] Muss im G
 
 === Outbound-Internetzugang
 
-Cloud Volumes ONTAP-Knoten erfordern ausgehenden Internetzugang für den Zugriff auf externe Endpunkte für verschiedene Funktionen. Cloud Volumes ONTAP kann nicht ordnungsgemäß funktionieren, wenn diese Endpunkte in Umgebungen mit strengen Sicherheitsanforderungen blockiert sind.
+Cloud Volumes ONTAP-Systeme benötigen ausgehenden Internetzugang, um auf externe Endpunkte für verschiedene Funktionen zugreifen zu können. Cloud Volumes ONTAP kann nicht ordnungsgemäß funktionieren, wenn diese Endpunkte in Umgebungen mit strengen Sicherheitsanforderungen blockiert sind.
+
+Der BlueXP -Connector kontaktiert auch mehrere Endpunkte für den täglichen Betrieb sowie die webbasierte Konsole BlueXP . Informationen zu den BlueXP -Endpunkten finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["Vom Connector aus kontaktierte Endpunkte anzeigen"^] und https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["Networking zur Nutzung der BlueXP Konsole vorbereiten"^].
 
 
 
 ==== Cloud Volumes ONTAP Endpunkte
 
-Für Cloud Volumes ONTAP ist ein ausgehender Internetzugang erforderlich, um im täglichen Betrieb verschiedene Endpunkte zu kontaktieren.
-
-Die folgenden Endpunkte sind Cloud Volumes ONTAP-spezifisch. Der Connector kontaktiert auch mehrere Endpunkte für den täglichen Betrieb, sowie die webbasierte BlueXP -Konsole. Siehe https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["Vom Connector aus kontaktierte Endpunkte anzeigen"^] und https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["Networking zur Nutzung der BlueXP Konsole vorbereiten"^].
+Cloud Volumes ONTAP nutzt diese Endpunkte zur Kommunikation mit verschiedenen Services.
 
 [cols="5*"]
 |===
