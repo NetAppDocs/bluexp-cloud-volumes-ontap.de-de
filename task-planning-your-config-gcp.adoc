@@ -30,7 +30,7 @@ Für Cloud Volumes ONTAP sind verschiedene Lizenzierungsoptionen verfügbar. Jed
 
 == Wählen Sie eine unterstützte Region aus
 
-Cloud Volumes ONTAP wird in den meisten Google Cloud Regionen unterstützt. https://cloud.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^].
+Cloud Volumes ONTAP wird in den meisten Google Cloud-Regionen unterstützt. https://bluexp.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^].
 
 
 
