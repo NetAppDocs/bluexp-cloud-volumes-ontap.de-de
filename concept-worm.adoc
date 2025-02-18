@@ -56,7 +56,7 @@ Sie können WORM Storage auf einem Cloud Volumes ONTAP System aktivieren, wenn S
 
 Sie können eine Applikation verwenden, um Dateien über NFS oder CIFS in WORM zu übergeben, oder die ONTAP CLI verwenden, um Dateien automatisch in WORM zu übertragen. Sie können auch eine WORM-Datei verwenden, die Daten speichert, die inkrementell geschrieben werden, z. B. Protokollinformationen.
 
-Nachdem Sie WORM Storage auf einem Cloud Volumes ONTAP System aktiviert haben, müssen Sie die ONTAP CLI für das gesamte Management von WORM Storage verwenden. Anweisungen finden Sie unter http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-arch-con/home.html["ONTAP-Dokumentation"^].
+Nachdem Sie WORM Storage auf einem Cloud Volumes ONTAP System aktiviert haben, müssen Sie die ONTAP CLI für das gesamte Management von WORM Storage verwenden. Anweisungen hierzu finden Sie im http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-arch-con/home.html["ONTAP-Dokumentation auf SnapLock"^].
 
 
 
@@ -77,7 +77,7 @@ Wenn WORM bereits auf dem System aktiviert ist, ist das Bleistiftsymbol deaktivi
 
 . Legen Sie auf der Seite *WORM* die Aufbewahrungsfrist für die Cluster-Compliance-Uhr fest.
 +
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap/snaplock/initialize-complianceclock-task.html["ONTAP-Dokumentation: Initialisieren Sie die Compliance-Uhr"^].
+Weitere Informationen finden Sie im https://docs.netapp.com/us-en/ontap/snaplock/initialize-complianceclock-task.html["ONTAP-Dokumentation: Initialisieren Sie die Compliance-Uhr"^].
 
 . Klicken Sie Auf *Set*.
 
@@ -91,7 +91,7 @@ Sie können den Status von *WORM* im Funktionsbereich überprüfen. Nach der Akt
 
 MIT der Funktion Privileged delete können SIE WORM-Dateien während des Aufbewahrungszeitraums löschen.
 
-Anweisungen hierzu finden Sie unter https://docs.netapp.com/us-en/ontap/snaplock/delete-worm-files-concept.html["ONTAP-Dokumentation"^].
+Anweisungen hierzu finden Sie im https://docs.netapp.com/us-en/ontap/snaplock/delete-worm-files-concept.html["ONTAP-Dokumentation"^].
 
 
 

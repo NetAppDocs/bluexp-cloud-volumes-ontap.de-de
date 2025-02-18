@@ -245,7 +245,7 @@ Wenn keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten 
 
 Wenn Sie strenge ausgehende Regeln für Cloud Volumes ONTAP festgelegt haben, müssen Sie auch sicherstellen, dass die Cloud Volumes ONTAP-Firewall _Outbound_-Verbindungen über Port 3128 zulässt.
 
-Nachdem Sie bestätigt haben, dass der ausgehende Internetzugang verfügbar ist, können Sie AutoSupport testen, um sicherzustellen, dass er Nachrichten senden kann. Anweisungen finden Sie unter https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP Dokumentation: Einrichten von AutoSupport"^].
+Nachdem Sie bestätigt haben, dass der ausgehende Internetzugang verfügbar ist, können Sie AutoSupport testen, um sicherzustellen, dass er Nachrichten senden kann. Anweisungen hierzu finden Sie im https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP-Dokumentation: AutoSupport einrichten"^].
 
 
 TIP: Wenn Sie ein HA-Paar verwenden, benötigt der HA Mediator keinen Outbound-Internetzugang.
@@ -473,7 +473,7 @@ NOTE: Die Quelle ist die Schnittstelle (IP-Adresse) auf dem Cloud Volumes ONTAP 
 | Cluster | Gesamter Datenverkehr | Gesamter Datenverkehr | Alle LIFs auf einem Node | Alle LIFs auf dem anderen Node | Kommunikation zwischen Clustern (nur Cloud Volumes ONTAP HA) 
 
 
-| Konfigurations-Backups | HTTP | 80 | Node Management-LIF | \Http://<connector-IP-address>/occm/offboxconfig | Senden Sie Konfigurationssicherungen an den Connector. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["Informationen zu Backup-Dateien für die Konfiguration"^]. 
+| Konfigurations-Backups | HTTP | 80 | Node Management-LIF | \Http://<connector-IP-address>/occm/offboxconfig | Senden Sie Konfigurationssicherungen an den Connector. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["ONTAP-Dokumentation"^] 
 
 
 | DHCP | UDP | 68 | Node Management-LIF | DHCP | DHCP-Client für die erstmalige Einrichtung 

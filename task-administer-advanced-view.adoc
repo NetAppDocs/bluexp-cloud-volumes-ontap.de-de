@@ -118,7 +118,7 @@ Sie können über eine Cloud Volumes ONTAP-Arbeitsumgebung auf den ONTAP System 
 
 == Hilfe bei der Verwendung von System Manager
 
-Wenn Sie Hilfe bei der Verwendung von System Manager mit Cloud Volumes ONTAP benötigen, finden Sie unter https://docs.netapp.com/us-en/ontap/index.html["ONTAP-Dokumentation"^] Schritt-für-Schritt-Anleitungen. Hier sind einige Links, die helfen könnten:
+Wenn Sie Hilfe bei der Verwendung von System Manager mit Cloud Volumes ONTAP benötigen, finden Sie eine Schritt-für-Schritt-Anleitung im https://docs.netapp.com/us-en/ontap/index.html["ONTAP-Dokumentation"^]. Hier finden Sie einige Links zur ONTAP-Dokumentation, die Ihnen helfen könnten:
 
 * https://docs.netapp.com/us-en/ontap/ontap-security-hardening/roles-applications-authentication.html["ONTAP-Rollen, -Applikationen und -Authentifizierung"^]
 * https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-system-manager-browser-task.html["Verwenden Sie System Manager zum Zugriff auf ein Cluster"^].

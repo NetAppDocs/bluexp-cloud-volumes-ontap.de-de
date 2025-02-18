@@ -17,14 +17,14 @@ summary: 'Sie können manipulationssichere Snapshot Kopien von WORM-Dateien (Wri
 Sie können manipulationssichere Snapshot Kopien von WORM-Dateien (Write Once, Read Many) auf einem Cloud Volumes ONTAP System erstellen und die Snapshots in unveränderter Form für einen bestimmten Aufbewahrungszeitraum beibehalten. Diese Funktion basiert auf der SnapLock Technologie und bietet eine zusätzliche Schicht für Datensicherung und Compliance.
 
 .Bevor Sie beginnen
-Stellen Sie sicher, dass das Volume, das Sie zum Erstellen von Snapshot Kopien verwenden, ein SnapLock Volume ist. Informationen zum Aktivieren des SnapLock-Schutzes auf Volumes finden Sie unter https://docs.netapp.com/us-en/ontap/snaplock/snaplock-config-overview-concept.html["Konfigurieren Sie SnapLock"^].
+Stellen Sie sicher, dass das Volume, das Sie zum Erstellen von Snapshot Kopien verwenden, ein SnapLock Volume ist. Informationen zum Aktivieren des SnapLock-Schutzes auf Volumes finden Sie im https://docs.netapp.com/us-en/ontap/snaplock/snaplock-config-overview-concept.html["ONTAP-Dokumentation: SnapLock konfigurieren"^].
 
 .Schritte
-. Erstellen Sie Snapshot Kopien aus dem SnapLock Volume. Informationen zum Erstellen von Snapshot Kopien mit der CLI oder mit System Manager finden Sie unter https://docs.netapp.com/us-en/ontap/data-protection/manage-local-snapshot-copies-concept.html["Überblick: Managen von lokalen Snapshot Kopien"^].
+. Erstellen Sie Snapshot Kopien aus dem SnapLock Volume. Informationen zum Erstellen von Snapshot Kopien mit der CLI oder mit System Manager finden Sie im https://docs.netapp.com/us-en/ontap/data-protection/manage-local-snapshot-copies-concept.html["ONTAP Dokumentation: Übersicht über lokale Snapshot Kopien managen"^].
 +
 Die Snapshot Kopien übernehmen die WORM-Eigenschaften des Volume und sind somit manipulationssicher. Die zugrunde liegende SnapLock Technologie sorgt dafür, dass ein Snapshot bis zum Ablauf der festgelegten Aufbewahrungsfrist vor Bearbeitung und Löschung geschützt bleibt.
 
-. Sie können die Aufbewahrungsfrist ändern, wenn eine Bearbeitung dieser Snapshots erforderlich ist. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap/snaplock/set-retention-period-task.html#set-the-default-retention-period["Aufbewahrungszeit einstellen"^].
+. Sie können die Aufbewahrungsfrist ändern, wenn eine Bearbeitung dieser Snapshots erforderlich ist. Weitere Informationen finden Sie im https://docs.netapp.com/us-en/ontap/snaplock/set-retention-period-task.html#set-the-default-retention-period["ONTAP-Dokumentation: Aufbewahrungszeit einstellen"^].
 
 
 

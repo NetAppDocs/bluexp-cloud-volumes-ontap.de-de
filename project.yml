@@ -73,40 +73,48 @@ sidebar:
     - title: Erste Schritte in Microsoft Azure
       flavor: azure
       entries:
-      - title: Schnellstart
-        url: "/task-getting-started-azure.html"
-      - title: Planen Sie Ihre Konfiguration
-        url: "/task-planning-your-config-azure.html"
-      - title: Richten Sie Ihr Netzwerk ein
-        url: "/reference-networking-azure.html"
-      - title: Richten Sie die Verschlüsselung mit Ihrem Schlüssel ein
-        url: "/task-set-up-azure-encryption.html"
-      - title: Lizenzierung einrichten
-        url: "/task-set-up-licensing-azure.html"
-      - title: Aktivieren Sie den Hochverfügbarkeitsmodus
-        url: "/task-azure-high-availability-mode.html"
-      - title: Aktivieren Sie VMOrchestratorZonalMultiFD für einzelne Verfügbarkeitszonen
-        url: "/task-saz-feature.html"
-      - title: Starten Sie Cloud Volumes ONTAP in Azure
-        url: "/task-deploying-otc-azure.html"
-      - title: Image-Verifizierung Für Azure Plattform
+      - title: Informieren Sie sich über Ihre Implementierungsoptionen
+        url: "/concept-azure-mktplace-direct.html"
+      - title: Starten Sie in BlueXP 
         entries:
-        - title: Überblick
-          url: "/concept-azure-image-verification.html"
-        - title: Azure Image Digest File Herunterladen
-          url: "/task-azure-download-digest-file.html"
-        - title: Bildexport
-          url: "/task-azure-image-export.html"
-        - title: Überprüfung der Dateisignatur
+        - title: Schnellstart
+          url: "/task-getting-started-azure.html"
+        - title: Planen Sie Ihre Konfiguration
+          url: "/task-planning-your-config-azure.html"
+        - title: Richten Sie Ihr Netzwerk ein
+          url: "/reference-networking-azure.html"
+        - title: Richten Sie die Verschlüsselung mit Ihrem Schlüssel ein
+          url: "/task-set-up-azure-encryption.html"
+        - title: Lizenzierung einrichten
+          url: "/task-set-up-licensing-azure.html"
+        - title: Aktivieren Sie den Hochverfügbarkeitsmodus
+          url: "/task-azure-high-availability-mode.html"
+        - title: Aktivieren Sie VMOrchestratorZonalMultiFD für einzelne Verfügbarkeitszonen
+          url: "/task-saz-feature.html"
+        - title: Starten Sie Cloud Volumes ONTAP in Azure
+          url: "/task-deploying-otc-azure.html"
+        - title: Image-Verifizierung Für Azure Plattform
           entries:
+          - title: Überblick
+            url: "/concept-azure-image-verification.html"
+          - title: Azure Image Digest File Herunterladen
+            url: "/task-azure-download-digest-file.html"
+          - title: Bildexport
+            url: "/task-azure-image-export.html"
           - title: Überprüfung der Dateisignatur
-            url: "/concept-azure-file-sig-verify.html"
-          - title: Überprüfung der Signatur von Linux-Dateien
-            url: "/task-file-verification-linux.html"
-          - title: Überprüfung der Signatur von Mac OS-Dateien
-            url: "/task-file-verification-mac.html"
-        - title: Weitere Informationen
-          url: "/reference-image-verification-links.html"
+            entries:
+            - title: Überprüfung der Dateisignatur
+              url: "/concept-azure-file-sig-verify.html"
+            - title: Überprüfung der Signatur von Linux-Dateien
+              url: "/task-file-verification-linux.html"
+            - title: Überprüfung der Signatur von Mac OS-Dateien
+              url: "/task-file-verification-mac.html"
+          - title: Weitere Informationen
+            url: "/reference-image-verification-links.html"
+      - title: Legen Sie los auf dem Markt
+        entries:
+        - title: Implementieren Sie Cloud Volumes ONTAP über den Markt
+          url: "/task-deploy-cvo-azure-mktplc.html"
     - title: Erste Schritte in Google Cloud
       flavor: gcp
       entries:
@@ -227,7 +235,7 @@ sidebar:
       - title: AWS Administration
         flavor: aws
         entries:
-        - title: EC2 Instanztyp ändern
+        - title: Arbeiten Sie mit EC2-Instanzen in AWS
           url: "/task-change-ec2-instance.html"
         - title: Ändern Sie die Routingtabellen für HA-Paare
           url: "/task-change-route-tables.html"
