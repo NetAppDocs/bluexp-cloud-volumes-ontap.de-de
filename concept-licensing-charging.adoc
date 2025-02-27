@@ -146,7 +146,7 @@ Für das Essentials-Paket gilt die Mindestkapazitätsgebühr von 4 tib nicht fü
 
 === Überalt
 
-Wenn Sie Ihre BYOL-Kapazität überschreiten oder Ihre Lizenz abgelaufen ist, werden Ihnen auf Basis Ihres Marktabonnements für Überkapazitäten zum Stundensatz berechnet.
+Wenn Sie Ihre BYOL-Kapazität überschreiten oder Ihre Lizenz abläuft, werden Ihnen basierend auf Ihrem Marketplace-Abonnement für mehr Kapazität zu Stundensätzen Gebühren berechnet. Überhöhte Preise werden zu Marktpreisen abgerechnet, wobei zunächst die verfügbare Kapazität von anderen Lizenzen genutzt wird.
 
 
 
@@ -164,14 +164,6 @@ Die Lizenzierung basiert vollständig auf dem in Cloud Volumes ONTAP Systemen er
 NOTE: Wenn ein schreibgeschütztes Volume oder ein DP-Volume zu einem primären Volume wird, sieht BlueXP  es als Primärdaten an und die Abrechnungskosten werden auf Basis des Zeitraums berechnet, in dem sich das Volume im Lese-/Schreibmodus befand. Sobald das Volume wieder schreibgeschützt ist, berücksichtigt BlueXP  es erneut als sekundäre Daten und berechnet diese entsprechend mit der passenden Lizenz in der Digital Wallet.
 
 * Essentials Sekundärspeicher HA: Volumes vom Typ Data Protection (DP) (normalerweise SnapMirror oder SnapVault Ziel-Volumes, die schreibgeschützt sind), werden auf einem Cloud Volumes ONTAP System mit zwei ONTAP-Nodes erstellt, die für den unterbrechungsfreien Datenzugriff gegenseitig Failover können.
-
-
-Beachten Sie folgende Punkte:
-
-* Mindestbetrag: Pro Daten-Service-Storage-VM wird eine Gebühr von 4 tib erhoben, für die mindestens ein primäres Volume (Lese-/Schreibzugriff) vorhanden ist. Für das Essentials-Paket gilt diese Mindestgebühr nicht für Storage-VMs, die nur sekundäre Volumes (Datensicherung) haben.
-* Überschreitungen: Bei Überschreitung der lizenzierten Kapazität werden Überkapazitäten zu Marktpreisen berechnet. Bevorzugt wird dabei zuerst die verfügbare Kapazität aus anderen Lizenzen genutzt.
-* FlexClone und FlexCache Volumes: FlexClone Volumes werden nicht berechnet. FlexCache-Quell- und Ziel-Volumes werden als primäre Daten betrachtet und nach bereitgestelltem Speicherplatz abgerechnet.
-* Gebühren für HA-Paare: Bei HA-Paaren wird nur die bereitgestellte Kapazität auf einem Node berechnet. Daten, die synchron zum Partner-Node gespiegelt wurden, werden nicht in Rechnung gestellt.
 
 
 .BYOL

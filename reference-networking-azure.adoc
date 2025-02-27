@@ -53,7 +53,7 @@ Die Benutzerauthentifizierung schlägt fehl, und die folgenden Dienste sind weit
 
 
 
-| \https://keyvault-production-aks.vault.azure.net | Schlüsselspeicher | Dient zum Abrufen des geheimen Client-Schlüssels aus dem Azure Key Vault zur Kommunikation mit S3 Buckets zur Metadatenverarbeitung. Der Cloud Volumes ONTAP Service verwendet diese Komponente intern. | Standardmodus, eingeschränkter und privater Modus. | Die Cloud Volumes ONTAP-Services sind nicht verfügbar. 
+| https://vault.azure.net[] | Schlüsselspeicher | Dient zum Abrufen von geheimen Client-Schlüsseln aus dem Azure Key Vault bei Verwendung von vom Kunden gemanagten Schlüsseln (CMK). | Standardmodus, eingeschränkter und privater Modus. | Die Cloud Volumes ONTAP-Services sind nicht verfügbar. 
 
 
 | \https://cloudmanager.cloud.netapp.com/tenancy | Mandantenfähigkeit | Wird verwendet, um die Cloud Volumes ONTAP-Ressourcen vom BlueXP -Mandanten abzurufen und Ressourcen und Benutzer zu autorisieren. | Standardmodi und eingeschränkte Modi. | Cloud Volumes ONTAP-Ressourcen und die Benutzer sind nicht autorisiert. 
@@ -82,7 +82,7 @@ Die Benutzerauthentifizierung schlägt fehl, und die folgenden Dienste sind weit
 
 Cloud Volumes ONTAP Nodes benötigen Outbound-Internetzugang für NetApp AutoSupport, der den Zustand Ihres Systems proaktiv überwacht und Meldungen an den technischen Support von NetApp sendet.
 
-Routing- und Firewall-Richtlinien müssen HTTP-/HTTPS-Datenverkehr an die folgenden Endpunkte ermöglichen, damit Cloud Volumes ONTAP AutoSupport-Meldungen senden kann:
+Routing- und Firewall-Richtlinien müssen HTTPS-Datenverkehr an die folgenden Endpunkte zulassen, damit Cloud Volumes ONTAP AutoSupport Meldungen senden kann:
 
 * \https://support.netapp.com/aods/asupmessage
 * \https://support.netapp.com/asupprod/post/1.0/postAsup

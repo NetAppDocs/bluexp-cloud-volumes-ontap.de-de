@@ -1,0 +1,11 @@
+= Neuseeland Nordregion wird jetzt in Azure unterstützt
+:allow-uri-read: 
+
+
+
+
+=== Neuseeland Nordregion wird jetzt in Azure unterstützt
+
+Die neuseeländische Nordregion wird jetzt in Azure für Single Node- und HA-Konfigurationen (High Availability, Hochverfügbarkeit) von Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt. Beachten Sie, dass der Lsv3-Instanztyp in dieser Region nicht unterstützt wird.
+
+Eine Liste aller unterstützten Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].

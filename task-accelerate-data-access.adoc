@@ -33,7 +33,7 @@ video::PBNPVRUeT1o[youtube,width=848,height=480]
 
 Bei der Konfiguration von FlexCache auf einem Cloud Volumes ONTAP System, bei dem das Ursprungs-Volume verschlüsselt ist, sind weitere Schritte erforderlich, um zu gewährleisten, dass das FlexCache-Volume ordnungsgemäß auf die verschlüsselten Daten zugreifen und sie im Cache speichern kann.
 
-.Was Sie benötigen
+.Bevor Sie beginnen
 . *Verschlüsselungseinrichtung*: Stellen Sie sicher, dass das Quellvolume vollständig verschlüsselt und betriebsbereit ist. Bei Cloud Volumes ONTAP Systemen umfasst dies die Integration in Cloud-spezifische Verschlüsselungsmanagement Services.
 
 

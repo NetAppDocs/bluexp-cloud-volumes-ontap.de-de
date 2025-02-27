@@ -235,7 +235,7 @@ Die Benutzerauthentifizierung schlägt fehl, und die folgenden Dienste sind weit
 
 Für Cloud Volumes ONTAP ist ein Outbound-Internetzugang für NetApp AutoSupport erforderlich, der den Zustand Ihres Systems proaktiv überwacht und Meldungen an den technischen Support von NetApp sendet.
 
-Routing- und Firewall-Richtlinien müssen HTTP-/HTTPS-Datenverkehr an die folgenden Endpunkte ermöglichen, damit Cloud Volumes ONTAP AutoSupport-Meldungen senden kann:
+Routing- und Firewall-Richtlinien müssen HTTPS-Datenverkehr an die folgenden Endpunkte zulassen, damit Cloud Volumes ONTAP AutoSupport Meldungen senden kann:
 
 * \https://support.netapp.com/aods/asupmessage
 * \https://support.netapp.com/asupprod/post/1.0/postAsup

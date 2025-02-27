@@ -14,9 +14,9 @@ summary:
 
 
 [role="lead"]
-NetApp bietet zwei Optionen für die Implementierung von Cloud Volumes ONTAP auf Azure: Über NetApp BlueXP  oder über den Azure Marketplace. Für setzt Cloud Volumes ONTAP traditionell bei der Implementierung und Orchestrierung auf BlueXP . Ab Cloud Volumes ONTAP 9.16.1 können Sie die direkte Implementierung von Azure Marketplace nutzen. Dieser optimierte Prozess bietet Zugriff auf begrenzte, aber dennoch leistungsstarke Funktionen und Optionen von Cloud Volumes ONTAP.
+NetApp bietet zwei Optionen zur Implementierung von Cloud Volumes ONTAP auf Azure. Für setzt Cloud Volumes ONTAP traditionell bei der Implementierung und Orchestrierung auf BlueXP . Ab Cloud Volumes ONTAP 9.16.1 können Sie die direkte Implementierung von Azure Marketplace nutzen. Dieser optimierte Prozess bietet Zugriff auf begrenzte, aber dennoch leistungsstarke Funktionen und Optionen von Cloud Volumes ONTAP.
 
-Wenn Sie Cloud Volumes ONTAP direkt über den Azure Marketplace implementieren, müssen Sie weder den BlueXP  Connector noch weitere Sicherheits- und Onboarding-Kriterien erfüllen, die für die Implementierung von Cloud Volumes ONTAP über BlueXP  erforderlich sind. Über den Azure Marketplace kann mit nur wenigen Klicks implementiert und die Kernfunktionen von Cloud Volumes ONTAP in Ihrer Umgebung genauer untersucht werden.
+Wenn Sie Cloud Volumes ONTAP direkt über den Azure Marketplace implementieren, müssen Sie weder den BlueXP  Connector noch weitere Sicherheits- und Onboarding-Kriterien erfüllen, die für die Implementierung von Cloud Volumes ONTAP über BlueXP  erforderlich sind. Über den Azure Marketplace kann schnell mit nur wenigen Klicks implementiert und die Kernfunktionen von Cloud Volumes ONTAP in der Umgebung erkundet werden.
 
 Hier ist der Funktionsvergleich zwischen den beiden Optionen:
 
@@ -28,7 +28,7 @@ Hier ist der Funktionsvergleich zwischen den beiden Optionen:
 | *Onboarding* | Kürzere, einfachere und minimale Vorbereitung für die direkte Implementierung erforderlich | Längerer Onboarding-Prozess, einschließlich der Installation des BlueXP  Connectors 
 
 
-| *Unterstützte Storage Virtual Machine (SVM) Instanzen* | Edsv5 und LsV3 | Umfassende Storage-VM-Optionen https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^] 
+| *Unterstützte Storage Virtual Machine (Storage VM) Instanzen* | Edsv5 und Lsv3 | Umfassende Storage-VM-Optionen https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^] 
 
 
 | *Lizenz* | Kostenlose Lizenz | Jede kapazitätsbasierte Lizenz, link:concept-licensing.html["Cloud Volumes ONTAP Lizenzierung"] 
@@ -52,7 +52,7 @@ Hier ist der Funktionsvergleich zwischen den beiden Optionen:
 | *Orchestrierungsmöglichkeiten* | Nicht verfügbar | Verfügbar über BlueXP , je nach Lizenztyp 
 
 
-| *Anzahl der unterstützten SVMs* | Eine SVM pro Implementierung – | Mehrere SVMs basierend auf Ihrer Konfiguration link:task-managing-svms-azure.html#supported-number-of-storage-vms["Unterstützte Anzahl an SVMs"] 
+| *Anzahl der unterstützten Storage VMs* | Eine pro Implementierung | Mehrere Storage VMs, basierend auf Ihrer Konfiguration. link:task-managing-svms-azure.html#supported-number-of-storage-vms["Unterstützte Anzahl von Storage-VMs"] 
 
 
 | *Instanztyp ändern* | Nicht unterstützt | Unterstützt 
@@ -60,7 +60,7 @@ Hier ist der Funktionsvergleich zwischen den beiden Optionen:
 
 | *FabricPool Tiering* | Nicht unterstützt | Unterstützt 
 |===
-In Zukunft können Sie mit dem BlueXP  Connector die Implementierungen ermitteln, die über die direkte Implementierung von Azure Marketplace durchgeführt werden, und die vollständigen Management- und Orchestrierungsfunktionen von Cloud Volumes ONTAP nutzen.
+In Zukunft kann der BlueXP  Connector Implementierungen identifizieren, die über den Azure Marketplace direkt implementiert wurden. Auf diese Weise können Sie die erweiterten Funktionen von BlueXP  nutzen.
 
 .Weiterführende Links
 * Direkte Implementierung im Azure Marketplace: link:task-deploy-cvo-azure-mktplc.html["Implementieren Sie Cloud Volumes ONTAP über den Azure Marketplace"]
