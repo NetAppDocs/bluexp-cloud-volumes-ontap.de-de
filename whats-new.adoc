@@ -16,7 +16,19 @@ summary: Erfahren Sie mehr über Neuerungen beim Cloud Volumes ONTAP Management 
 [role="lead"]
 Erfahren Sie mehr über Neuerungen beim Cloud Volumes ONTAP Management in BlueXP.
 
-Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-Funktionen, die das Management von Cloud Volumes ONTAP ermöglichen. Lesen Sie, was mit der Cloud Volumes ONTAP Software selbst neu ist, https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Wechseln Sie zu den Versionshinweisen zu Cloud Volumes ONTAP"^]
+Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-Funktionen, die das Management von Cloud Volumes ONTAP ermöglichen. Um zu erfahren, was mit der Cloud Volumes ONTAP Software selbst neu ist, https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Wechseln Sie zu den Versionshinweisen zu Cloud Volumes ONTAP"^].
+
+
+
+== 6 März 2025
+
+
+
+=== Cloud Volumes ONTAP 9.16.1 GA
+
+Mit BlueXP  können Sie jetzt die Cloud Volumes ONTAP 9.16.1 General Availability-Version in Azure und Google Cloud implementieren und managen. Diese Version steht jedoch nicht für die Bereitstellung und das Upgrade in AWS zur Verfügung.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
 
 
 
@@ -24,7 +36,7 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
-=== Neuseeland Nordregion wird jetzt in Azure unterstützt
+=== Unterstützung für die Region Neuseeland Nord in Azure
 
 Die neuseeländische Nordregion wird jetzt in Azure für Single Node- und HA-Konfigurationen (High Availability, Hochverfügbarkeit) von Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt. Beachten Sie, dass der Lsv3-Instanztyp in dieser Region nicht unterstützt wird.
 
@@ -223,7 +235,7 @@ Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-
 
 BlueXP  kann jetzt die allgemeine Verfügbarkeitsversion von Cloud Volumes ONTAP 9.15.1 in AWS, Azure und Google Cloud implementieren und managen.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
 
 
 
@@ -259,7 +271,7 @@ Die automatische kostenlose 30-Tage-Testversion für Pay-as-you-go-Abonnements a
 
 BlueXP kann jetzt Cloud Volumes ONTAP 9.15.0 in AWS, Azure und Google Cloud implementieren und managen.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9150-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
 
 
 
