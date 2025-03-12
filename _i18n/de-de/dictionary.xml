@@ -2,94 +2,22 @@
 <blocks>
   <block id="0ca27a1b4f5a64b823a04f58a204d499" category="summary">Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihren Kunden Storage und Datenservices zur Verfügung stellt. Sie können dies als SVM oder vServer wissen. Cloud Volumes ONTAP ist standardmäßig mit einer Storage-VM konfiguriert, aber einige Konfigurationen unterstützen zusätzliche Storage-VMs.</block>
   <block id="65cc3fef2113d2e1d1f636ab8cb02386" category="doc">Erstellen Sie Daten-Serving-Storage VMs für Cloud Volumes ONTAP in Azure</block>
-  <block id="479c3296d54e6f4715be2e37ee57edf1" category="paragraph">Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihren Kunden Storage und Datenservices zur Verfügung stellt. Vielleicht wissen Sie das als _SVM_ oder _vServer_. Cloud Volumes ONTAP ist standardmäßig mit einer Storage-VM konfiguriert, aber bei der Ausführung von Cloud Volumes ONTAP in Azure werden zusätzliche Storage-VMs unterstützt.</block>
-  <block id="a58a1a73a0fc2d46b2c8d3212a81b76b" category="paragraph">Um zusätzliche Storage VMs für Daten zu erstellen, müssen Sie IP-Adressen in Azure zuweisen und anschließend ONTAP Befehle ausführen, um die Storage-VM und Daten-LIFs zu erstellen.</block>
   <block id="bbf8762fd7719517f7567e338ea9aa0b" category="section-title">Unterstützte Anzahl von Storage-VMs</block>
   <block id="bc2d1afe4b7b88784be36363245bd652" category="inline-link">Versionshinweise zu Cloud Volumes ONTAP</block>
-  <block id="5e10fd94744d67ee9b4af8576d7d871b" category="paragraph">Ab Version 9.9.0 werden mehrere Storage-VMs mit spezifischen Cloud Volumes ONTAP Konfigurationen unterstützt. Wechseln Sie zum<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> Um zu überprüfen, wie viele Storage VMs für Ihre Cloud Volumes ONTAP-Version unterstützt werden.</block>
   <block id="61a207d9bd50b686e92d93d0f36e5fd4" category="paragraph">Alle anderen Cloud Volumes ONTAP Konfigurationen unterstützen eine Storage-VM mit Datenbereitstellung und eine Ziel-Storage-VM für die Disaster Recovery. Sie können die Ziel-Storage-VM für Datenzugriff aktivieren, wenn es einen Ausfall auf der Quell-Storage-VM gibt.</block>
-  <block id="bc2d82be5ce2a751775a44460f5f36ae" category="section-title">Weisen Sie IP-Adressen in Azure zu</block>
-  <block id="b06a344c267b8ee73a6d4d78ace617ea" category="paragraph">Bevor Sie eine Storage-VM erstellen und LIFs zuweisen, müssen Sie in Azure IP-Adressen zuweisen.</block>
   <block id="0ecbfe2cb5b1df888639e1751cec905a" category="section-title">Single Node-System</block>
-  <block id="ab446ebd1f851655193779b7c50f3533" category="paragraph">IP-Adressen müssen nic0 in Azure zugewiesen werden, bevor Sie eine Storage-VM erstellen und LIFs zuweisen.</block>
-  <block id="19c2f8be3dc9f0749efedd54317e259b" category="paragraph">Sie müssen eine IP-Adresse für den Daten-LIF-Zugriff und eine weitere optionale IP-Adresse für eine Storage VM (SVM)-Management-LIF erstellen. Dieses Management-LIF bietet eine Verbindung zu Management-Tools wie SnapCenter.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Schritte</block>
-  <block id="2c1d1f56d207e6b42d7866029b8f4f38" category="list-text">Melden Sie sich im Azure-Portal an und öffnen Sie den Service *Virtual Machine*.</block>
-  <block id="dd5a058a2c46a43106332205c45a30ee" category="list-text">Klicken Sie auf den Namen der Cloud Volumes ONTAP-VM.</block>
-  <block id="e63661b2472f7f4dc8a5b7065ca6d208" category="list-text">Klicken Sie Auf *Networking*.</block>
-  <block id="1610b48e6b730ea719aa58edd2bd7f8f" category="list-text">Klicken Sie auf den Namen der Netzwerkschnittstelle für nic0.</block>
-  <block id="b19099ea0de1f8c1bb7e71583234b1f4" category="list-text">Klicken Sie unter *Einstellungen* auf *IP-Konfigurationen*.</block>
-  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">Klicken Sie Auf *Hinzufügen*.</block>
-  <block id="9c13fa64c3b08e53658431a53f9c6b28" category="list-text">Geben Sie einen Namen für die IP-Konfiguration ein, wählen Sie *dynamisch* und klicken Sie dann auf *OK*.</block>
-  <block id="4835f23f6ce17d26f5e908f04392b0e7" category="list-text">Klicken Sie auf den Namen der gerade erstellten IP-Konfiguration, ändern Sie die *Zuordnung* in *statisch* und klicken Sie auf *Speichern*.</block>
-  <block id="42986462673b87a9a58e425c4a99bb91" category="paragraph">Es empfiehlt sich, eine statische IP-Adresse zu verwenden, da eine statische IP sicherstellt, dass sich die IP-Adresse nicht ändert, was dazu beitragen kann, unnötige Ausfälle Ihrer Anwendung zu vermeiden.</block>
-  <block id="3fc61f795c4036debc9bbee70495f5d3" category="paragraph">Wenn Sie eine SVM-Management-LIF erstellen möchten, wiederholen Sie diese Schritte, um eine zusätzliche IP-Adresse zu erstellen.</block>
-  <block id="b961dd3512f483e2a3c032644c80c59b" category="paragraph">Kopieren Sie die privaten IP-Adressen, die Sie gerade erstellt haben. Sie müssen diese IP-Adressen beim Erstellen von LIFs für die neue Storage-VM angeben.</block>
   <block id="556696d309aaf81ce29c6a76f8f8a503" category="section-title">HA-Paar</block>
   <block id="e4e1c13bb0b14f6cb7608cbecea948ef" category="open-title">ISCSI</block>
-  <block id="de6c446eec02722de82f7d7eaffa3970" category="paragraph">ISCSI-IP-Adressen müssen nic0 in Azure zugewiesen werden, bevor Sie eine Storage-VM erstellen und LIFs zuweisen. IPS für iSCSI werden nic0 und nicht dem Load Balancer zugewiesen, da iSCSI ALUA für das Failover verwendet.</block>
-  <block id="bd88ed594712224b8e3f79251707158b" category="paragraph">Sie müssen die folgenden IP-Adressen erstellen:</block>
-  <block id="959519864abf23eb751637cd9762312f" category="list-text">Eine IP-Adresse für LIF-Zugriff auf iSCSI-Daten von Knoten 1</block>
-  <block id="72b179a0d02f32caa6ee9d21826a4a30" category="list-text">Eine IP-Adresse für LIF-Zugriff auf iSCSI-Daten von Node 2</block>
-  <block id="d9fa1bba25e264315bb45a5db857089c" category="list-text">Eine optionale IP-Adresse für eine Storage-VM (SVM)-Management-LIF</block>
-  <block id="0212110e6e591f399e46a0a33621323b" category="paragraph">Dieses Management-LIF bietet eine Verbindung zu Management-Tools wie SnapCenter.</block>
-  <block id="27f352c696e29cd9fd0f401648ff9862" category="list-text">Klicken Sie auf den Namen der Cloud Volumes ONTAP-VM für Node 1.</block>
-  <block id="160ff1b01bd06e8151784b706f33a6a1" category="list-text">Wiederholen Sie diese Schritte auf Knoten 2.</block>
-  <block id="69aaba68c1c7e074c02079ece294e4ca" category="list-text">Wenn Sie eine SVM-Management-LIF erstellen möchten, wiederholen Sie diese Schritte auf Node 1.</block>
   <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="open-title">NFS</block>
-  <block id="92e91b161b0371348686cd8b37ca5028" category="paragraph">Die für NFS verwendeten IP-Adressen werden im Load Balancer zugewiesen, sodass bei einem Failover-Ereignis die IP-Adressen zu dem anderen Node migriert werden können.</block>
-  <block id="8560b84a5b55caac8c8ef30051a197e5" category="list-text">Eine IP-Adresse für LIF-Zugriff auf NAS-Daten von Node 1</block>
-  <block id="aba6d4795536d5c4e61cf75ce0ddd22c" category="list-text">Eine IP-Adresse für LIF-Zugriff auf NAS-Daten von Node 2</block>
-  <block id="7be0ecb9e73595d673d5fbaed0cb6378" category="list-text">Öffnen Sie im Azure-Portal den *Load Balancer*-Service.</block>
-  <block id="8097feb21f6c4186704bf26f92131fe0" category="list-text">Klicken Sie auf den Namen des Load Balancer für das HA-Paar.</block>
-  <block id="7a5be31086b3ad69d1c6b2c5abafcc64" category="list-text">Erstellung einer Frontend-IP-Konfiguration für den Daten-LIF-Zugriff von Node 1, eine andere für Daten-LIF-Zugriff von Node 2 und ein weiteres optionales Frontend-IP für eine Storage-VM (SVM)-Management-LIF.</block>
-  <block id="91755019ec4f9b4503c2abd1e2018220" category="list-text">Klicken Sie unter *Einstellungen* auf *Frontend IP-Konfiguration*.</block>
-  <block id="b961ba228f0253598e8fe47f55865219" category="list-text">Geben Sie einen Namen für die Frontend-IP ein, wählen Sie das Subnetz für das Cloud Volumes ONTAP HA-Paar aus, lassen Sie *dynamisch* ausgewählt, und lassen Sie in Regionen mit Verfügbarkeitszonen *Zone-redundant* die Option, um sicherzustellen, dass die IP-Adresse bei Ausfall einer Zone verfügbar bleibt.</block>
-  <block id="fde48a87720c7f4a7b3fe579cf70ce21" category="inline-image-macro">Ein Screenshot, wie eine Frontend-IP-Adresse im Azure-Portal hinzugefügt wird, in dem ein Name und ein Subnetz ausgewählt sind.</block>
-  <block id="c00e2d19af360558425fe43036ba7057" category="paragraph"><block ref="c00e2d19af360558425fe43036ba7057" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0da801a9d3d38ccf39fc77f357cbd875" category="list-text">Klicken Sie auf den Namen der gerade erstellten Frontend-IP-Konfiguration, ändern Sie die *Zuordnung* in *statisch* und klicken Sie auf *Speichern*.</block>
-  <block id="0f21ca89d8c8b745954f3d9e19a0dd80" category="list-text">Fügen Sie für jede gerade erstellte Frontend-IP eine Gesundheitssonde hinzu.</block>
-  <block id="1b45149e0b23a41687b2084ae6d33a48" category="list-text">Klicken Sie unter der Option *Einstellungen* des Load Balancer auf *Health Sonden*.</block>
-  <block id="dc5af89bd23317abec464d2c75aeaac1" category="list-text">Geben Sie einen Namen für die Gesundheitssonde ein, und geben Sie eine Portnummer zwischen 63005 und 65000 ein. Behalten Sie die Standardwerte für die anderen Felder bei.</block>
-  <block id="8d5ccc6064bf24d956199fe629c8a705" category="paragraph">Es ist wichtig, dass die Portnummer zwischen 63005 und 65000 liegt. Wenn Sie beispielsweise drei Integritätssonden erstellen, können Sie Sonden eingeben, die die Portnummern 63005, 63006 und 63007 verwenden.</block>
-  <block id="3f158195d787a76b9930725abf90217b" category="inline-image-macro">Ein Screenshot des Hinzufügens einer Health Probe im Azure-Portal, in dem ein Name und ein Port eingegeben werden.</block>
-  <block id="7221eeb99a62a5c16a91eaad3abc1af7" category="paragraph"><block ref="7221eeb99a62a5c16a91eaad3abc1af7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0f0494656b267aab37751c30e5a8a07e" category="list-text">Erstellen neuer Regeln für den Lastausgleich für jedes Frontend-IP.</block>
-  <block id="f11380e89562c6ffb0067deb927a00ee" category="list-text">Klicken Sie unter dem Load Balancer *Einstellungen* auf *Load Balancing rules*.</block>
-  <block id="b46de1ad1e07b7775bace9bf4917a405" category="list-text">Klicken Sie auf *Hinzufügen* und geben Sie die erforderlichen Informationen ein:</block>
-  <block id="a914e28fc43d170da9c2b2b78518eb37" category="list-text">*Name*: Geben Sie einen Namen für die Regel ein.</block>
-  <block id="1e4efbe4a8dfa84e3f6f93e1573c601e" category="list-text">*IP-Version*: Wählen Sie *IPv4*.</block>
-  <block id="1ddd50f122f73d126a4cb3fee90d2b7b" category="list-text">*Frontend IP-Adresse*: Wählen Sie eine der Front-end-IP-Adressen, die Sie gerade erstellt haben.</block>
-  <block id="8328ee96d378b2984c58f116fcccd3a6" category="list-text">*HA-Ports*: Aktivieren Sie diese Option.</block>
-  <block id="741c2eb7c095a3b40a6d1715966dbeb6" category="list-text">*Back-End-Pool*: Behalten Sie den bereits ausgewählten Standard-Back-End-Pool.</block>
-  <block id="9e72535253d8088038289763956d0b16" category="list-text">*Health Probe*: Wählen Sie die Gesundheitssonde aus, die Sie für die ausgewählte Frontend-IP erstellt haben.</block>
-  <block id="36703ed8697639a53fe06da2f1d77acc" category="list-text">*Sitzungspersistenz*: Wählen Sie *Keine*.</block>
-  <block id="f1830206581ce60d04d4025551d9e990" category="list-text">*Schwimmende IP*: Wählen Sie *aktiviert*.</block>
-  <block id="0763674e9bf55481025f48bd27d7aa67" category="inline-image-macro">Ein Screenshot, wie eine Lastausgleichsregel im Azure-Portal mit den oben gezeigten Feldern hinzugefügt wird</block>
-  <block id="4dfb9365c6db058f009ea80d9ad1d88a" category="paragraph"><block ref="4dfb9365c6db058f009ea80d9ad1d88a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5031fdddd713681aa180d7bfa60b1f72" category="list-text">Stellen Sie sicher, dass die Netzwerksicherheitsgruppenregeln für Cloud Volumes ONTAP es dem Load Balancer ermöglichen, TCP-Sonden für die in Schritt 4 erstellten Gesundheitssonden zu senden. Beachten Sie, dass dies standardmäßig zulässig ist.</block>
   <block id="b4fdd997b1f33e0d4c6964444c2bf399" category="open-title">SMB</block>
-  <block id="c09d6988bf61135b41e7b195d446e2b9" category="paragraph">Die für SMB-Daten verwendeten IP-Adressen werden im Load Balancer zugewiesen, sodass die IP-Adressen bei einem Failover-Ereignis auf den anderen Node migriert werden können.</block>
-  <block id="5aa1fc4c5c5e3c602f89524b94fcaf47" category="list-text">Eine IP-Adresse für eine iSCSI-LIF auf Knoten 2</block>
-  <block id="d31b2ca2df7d7ec89a597cf3ff166e6d" category="paragraph">Die iSCSI LIFs sind für die DNS- und SMB-Kommunikation erforderlich. Dazu wird ein iSCSI-LIF verwendet, da bei einem Failover keine Migration durchgeführt wird.</block>
-  <block id="a094ded8d387643804f456ad69ef9c4e" category="section-title">Erstellung einer Storage-VM und logischer Schnittstellen</block>
-  <block id="3ad6e3f460248126da5c801e403088c1" category="paragraph">Nachdem Sie in Azure IP-Adressen zugewiesen haben, können Sie eine neue Storage-VM auf einem Single Node-System oder auf einem HA-Paar erstellen.</block>
-  <block id="5683cfda0c67cd1651e904160b0a5460" category="paragraph">Wie Sie eine Storage-VM und LIFs auf einem einzelnen Node-System erstellen, hängt vom verwendeten Storage-Protokoll ab.</block>
-  <block id="2d376cf045c4838856b9429d7fecf7a5" category="paragraph">Befolgen Sie diese Schritte, um eine neue Storage-VM zusammen mit den erforderlichen LIFs zu erstellen.</block>
   <block id="9b08db40ecf3304d34c7dadb34a6d2c2" category="list-text">Erstellen Sie die Storage-VM und eine Route zur Storage-VM.</block>
-  <block id="070ee68a98b928bc45bc4178848e21da" category="list-text">Daten-LIF erstellen:</block>
   <block id="cf9742a528f0c020828f8af26d4a20dc" category="list-text">Optional: Erstellen Sie eine Storage-VM-Management-LIF.</block>
   <block id="15b547deddcdfd8bf2fb3a23397e7833" category="list-text">Weisen Sie der Storage-VM ein oder mehrere Aggregate zu.</block>
   <block id="d6f0e34ef668049ec1996dc9805ae695" category="paragraph">Dieser Schritt ist erforderlich, da die neue Storage-VM Zugriff auf mindestens ein Aggregat benötigt, bevor Sie Volumes auf der Storage-VM erstellen können.</block>
-  <block id="b41808a70de11f6ad8400c22ebe933f1" category="paragraph">Wie Sie eine Storage-VM und LIFs auf einem HA-Paar erstellen, hängt vom verwendeten Storage-Protokoll ab.</block>
-  <block id="604199268b7709a557c60a09df0624bf" category="list-text">Verwenden Sie den folgenden Befehl, um eine iSCSI-LIF auf Knoten 1 zu erstellen.</block>
-  <block id="83871791a7611e5a981ec0b38a662078" category="list-text">Verwenden Sie den folgenden Befehl, um eine iSCSI-LIF auf Knoten 2 zu erstellen.</block>
   <block id="67694021a675f2be09781b9b9c744e99" category="list-text">Optional: Erstellen Sie eine Storage-VM-Management-LIF auf Node 1.</block>
   <block id="6705d4b1a3db9cb88b17655dcca33de5" category="list-text">Wenn Sie Cloud Volumes ONTAP 9.11.1 oder höher verwenden, ändern Sie die Netzwerk-Service-Richtlinien für die Storage VM.</block>
   <block id="7acb007d1fa18c791042f54b5a8aa8ee" category="paragraph">Das Ändern der Services ist erforderlich, da Cloud Volumes ONTAP sicherstellen kann, dass die iSCSI-LIF für ausgehende Managementverbindungen verwendet werden kann.</block>
-  <block id="622931dd0b6724a34dfe5a4f99b9a820" category="list-text">Verwenden Sie den folgenden Befehl, um eine NAS-LIF auf Knoten 1 zu erstellen.</block>
-  <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">Verwenden Sie den folgenden Befehl, um eine NAS-LIF auf Knoten 2 zu erstellen.</block>
-  <block id="9a34c8001fb2a94f36b91cd1711ee39f" category="paragraph">Nachdem Sie eine Storage VM auf einem HA-Paar erstellt haben, warten Sie am besten 12 Stunden, bevor Sie Storage auf dieser SVM bereitstellen. Ab Version Cloud Volumes ONTAP 9.10.1 scannt BlueXP die Einstellungen für den Load Balancer eines HA-Paars in einem 12-Stunden-Intervall. Wenn neue SVMs vorhanden sind, aktiviert BlueXP eine Einstellung für kürzere ungeplante Failover.</block>
   <block id="2d136412703a915f2b3b47846e42252a" category="summary">Managen Sie Aggregate selbst, indem Sie Festplatten hinzufügen, Informationen über die Aggregate anzeigen und sie löschen.</block>
   <block id="ae271afdca3c7d6785a9aefa74e6c80e" category="doc">Kapazitätseinstellungen auf einem Konnektor verwalten</block>
   <block id="b62aaf3fb48f9f8f103dc68c41211be5" category="paragraph">Jeder Connector hat Einstellungen, die bestimmen, wie er die Aggregatskapazität für Cloud Volumes ONTAP verwaltet.</block>
@@ -2345,18 +2273,15 @@
   <block id="29788364ff656936651870f4b1c88537" category="list-text">Optional: Erstellen Sie eine Storage-VM-Management-LIF, indem Sie die IP-Adresse angeben, die Sie in Google Cloud hinzugefügt haben.</block>
   <block id="2c5d07ca61673fa8fb94be1c97bf91fe" category="paragraph">Beachten Sie, dass BlueXP die erforderlichen IP-Adressen in Google Cloud zuweist und die Storage VM mit einer Daten-LIF für SMB/NFS-Zugriff und einer iSCSI LIF für ausgehende SMB-Kommunikation erstellt.</block>
   <block id="8786838db6c83df6feac856057d2e141" category="list-text">Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM zu erstellen:</block>
-  <block id="78beb47b48fe8b17a288b32a8942a187" category="paragraph"><block ref="969418114de5daee0030fd2eade35222" prefix="" category="inline-code"></block></block>
   <block id="995ddfd1247131c9653edbf829fa6e28" category="paragraph">Der Anforderungsgremium sollte Folgendes umfassen:</block>
   <block id="b93afa1b577022f0769bc7e27b5bcd75" category="section-title">Managen Sie Storage VMs auf HA-Paaren</block>
   <block id="4a5ed1e1f5c4ada56ab2471bc9700165" category="paragraph">Die BlueXP API unterstützt auch das Umbenennen und Löschen von Storage-VMs auf HA-Paaren.</block>
   <block id="c97c5ffc330239a3245482bb4881877a" category="section-title">Benennen Sie eine Storage-VM um</block>
   <block id="e0867a20bdb8328df5da5826abffd2f7" category="paragraph">Bei Bedarf können Sie den Namen einer Storage-VM jederzeit ändern.</block>
   <block id="369a2d15e783c13b71dafb712d78bd30" category="list-text">Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM umzubenennen:</block>
-  <block id="a8e13a4a2ae779d87c425f89f896c8d6" category="paragraph"><block ref="e167fe445b9575f30af233894a7d0ade" prefix="" category="inline-code"></block></block>
   <block id="ce9c0fa786ae9e9debeb029c1c0a4c92" category="section-title">Löschen einer Speicher-VM</block>
   <block id="60bf8baad4677ce21f08a45b132bf6a5" category="paragraph">Wenn Sie keine Storage-VM mehr benötigen, können Sie sie aus Cloud Volumes ONTAP löschen.</block>
   <block id="730a4c8af06cfa818a6cf7829358b200" category="list-text">Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM zu löschen:</block>
-  <block id="cf85e355c90a5d24771cdce3003c6914" category="paragraph"><block ref="4ff7e1d96489ff4a1886b99f43cd0f39" prefix="" category="inline-code"></block></block>
   <block id="627dbb600651aad7173ae13133dfe740" category="summary">Der Support von NetApp ist bei Cloud Volumes ONTAP PAYGO Systemen enthalten. Sie müssen jedoch zuerst den Support aktivieren, indem Sie die Systeme bei NetApp registrieren.</block>
   <block id="969ea14c5bc8e5c519f2569d0b7e4ead" category="inline-link-macro">Auf dieser Seite beschrieben</block>
   <block id="145677a5a159dfbbd80d693eb835dd56" category="paragraph">Die Registrierung eines PAYGO-Systems bei NetApp ist für ein Upgrade der ONTAP Software anhand einer der Methoden erforderlich <block ref="a298d5e88f2fe29dd7b686b16fbea686" category="inline-link-macro-rx"></block>.</block>
@@ -3740,18 +3665,6 @@
   <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">Systeme mit Single Node werden unterstützt.</block>
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">Lizenzen, die direkt von NetApp erworben wurden, werden unterstützt.</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">Karten für globale Regionen für Cloud Volumes ONTAP</block>
-  <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">Sie müssen die folgenden IP-Adressen im Load Balancer erstellen:</block>
-  <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">Eine IP-Adresse für eine iSCSI-LIF auf Node 1 in der jeweiligen NIC0 jeder VM</block>
-  <block id="6f2174023153761cdb987311021eaf2b" category="list-text">Erstellen Sie nur für die Daten und SVM-LIFs die erforderliche Anzahl von Frontend-IP-Konfigurationen:</block>
-  <block id="b31c05988fa937699345307f0d088b5e" category="list-text">Fügen Sie für iSCSI LIFs die IP-Adresse für NIC0 hinzu.</block>
-  <block id="d8268f30cad7ca754b650b30d5a9fb20" category="list-text">Klicken Sie unter Einstellungen auf *IP-Konfigurationen*.</block>
-  <block id="f14404f1eb77db8c34dfa687da4e9969" category="inline-image-macro">Ein Screenshot der Seite mit den IP-Konfigurationen im Azure-Portal</block>
-  <block id="d3f503b2101b1859a2272746e61a2bca" category="paragraph"><block ref="d3f503b2101b1859a2272746e61a2bca" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d8292c375cfd1e8785887fa2307c216e" category="list-text">Geben Sie einen Namen für die IP-Konfiguration ein, wählen Sie dynamisch aus, und klicken Sie dann auf *OK*.</block>
-  <block id="d139a8131606839195ad605bafe04b07" category="inline-image-macro">Ein Screenshot zum Fenster „IP-Konfiguration hinzufügen“</block>
-  <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">Klicken Sie auf den Namen der gerade erstellten IP-Konfiguration, ändern Sie die Zuweisung zu statisch und klicken Sie auf *Speichern*.</block>
-  <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">Geben Sie den folgenden Befehl ein, um auf den erweiterten Modus zuzugreifen.</block>
   <block id="b85a0d4dea04769a8ce6e0860eb4c90f" category="paragraph">Die vordefinierte Sicherheitsgruppe für den HA-Mediator umfasst die folgende eingehende Regel.</block>
   <block id="52554fb81854d42f02280f83a1067574" category="cell">CIDR des Connectors</block>
   <block id="cdbb82146d412877f64f943229bd9533" category="cell">IP-Adresse des Connectors auf der AWS EC2 Instanz</block>
@@ -4074,7 +3987,6 @@ Informationen zum Erstellen einer Erteilung finden Sie unter <block ref="2e58dbc
   <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">Dies ist eine vom System generierte ID, die Ihrer E-Mail zugeordnet ist. Auf der Seite *NSS Management* können Sie Ihre E-Mail über anzeigen <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> Menü.</block>
   <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">Wenn Sie jemals Ihre Anmeldeinformationen aktualisieren müssen, gibt es im auch eine *Anmeldeinformationen aktualisieren*-Option <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> Menü.</block>
   <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="be9422df375517187d0426d4361fafa6" category="paragraph">Für den Connector sind bestimmte Berechtigungen erforderlich, um Storage-VMs für Cloud Volumes ONTAP HA-Paare zu erstellen und zu managen. Die erforderlichen Berechtigungen sind in enthalten<block ref="24390b04eaeaec89ce5246eaa294abc3" category="inline-link-rx"></block>.</block>
   <block id="af13749595f5960a363d1c58fc759656" category="paragraph"><block ref="4610c02b1fca3398eed82ad29d834f6a" category="inline-link-macro-rx"></block>.</block>
   <block id="fef38ae672e04cfca804a3528b0c02b9" category="paragraph"><block ref="ae94ab44d9cabcaf642548c08d913cf9" category="inline-link-rx"></block>.</block>
   <block id="78b9037265070d084c1d8bcd663811e7" category="paragraph"><block ref="78b9037265070d084c1d8bcd663811e7" category="inline-link-rx"></block></block>
@@ -4441,7 +4353,6 @@ Klicken Sie auf *Abonnement hinzufügen*, um die ausgewählten Anmeldeinformatio
   <block id="44c305a704023f5d643a06ce08c03402" category="section-title">Erweiterte Netzwerkfunktionen aktivieren</block>
   <block id="2aed0ca02213325feada0ee707489e81" category="inline-link-macro">Aktivieren von erweiterten Netzwerkfunktionen wie SR-IOV oder ENA auf AWS Cloud Volumes ONTAP Instanzen</block>
   <block id="489d7e740d2dd946585a03c48af8f4cf" category="paragraph">Um ein Upgrade auf Cloud Volumes ONTAP Version 9.8 und höher durchzuführen, müssen Sie _enhanced Networking_ auf dem Cluster aktivieren, auf dem der Instanztyp c4, m4 oder R4 ausgeführt wird. Informationen zum Aktivieren von ENA finden Sie in dem Artikel der Knowledge Base <block ref="a4ba9465250c8fbd5a9415056507370e" category="inline-link-macro-rx"></block>.</block>
-  <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Microsoft Azure-Dokumentation</block>
   <block id="2cf711540cadf3cbb4cac96dba2d9464" category="list-text">Umfasst unbegrenzte Volume-Backups mit BlueXP Backup und Recovery, aber nur für Cloud Volumes ONTAP Systeme, die das Professional Paket verwenden.</block>
   <block id="f4b04af639ebf32754e26b928989f33f" category="inline-link">Lizenzierung für Backup und Recovery von BlueXP einrichten</block>
   <block id="fb2530f9293a4ba59cfd3ca6492bb972" category="section-title">23 Oktober 2023</block>
@@ -5094,8 +5005,6 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="4855acbd91be04daa7cfbcfc6779e8fc" category="paragraph">Weitere Informationen finden Sie unter <block ref="7f365a8b545ccbb9e9433fd7ab85acf6" category="inline-link-macro-rx"></block>.</block>
   <block id="00ca87b823c9fbffa58cc1470a0fc184" category="paragraph">FlexGroup Volumes, die mit ONTAP System Manager oder der ONTAP CLI erstellt wurden, können direkt über die Registerkarte Volumes in BlueXP  angezeigt werden. Wie bei FlexVol Volumes angegeben, bietet BlueXP über eine dedizierte Volume-Kachel detaillierte Informationen zu den erstellten FleGroup Volumes. Unter der Kachel „Volumes“ können Sie jede FlexGroup Volume-Gruppe über den Mauszeiger über das Symbol halten. Darüber hinaus können Sie FlexGroup-Volumes in der Listenansicht Volumes in der Spalte Volume-Stil identifizieren und sortieren.</block>
   <block id="704ce057086edc7f390e72f33febfb03" category="list-text">Optional: Rufen Sie die ONTAP-CLI für Cloud Volumes ONTAP auf und führen Sie *Network Interface show* aus, um zu bestätigen, dass jede dieser IP-Adressen verwendet wird.</block>
-  <block id="210737c390cb0d28243061081a9b7c4a" category="admonition">Um weitere NIC-bezogene Aufgaben auszuführen, können Sie eine Rolle für den Netzwerkbeitrag oder eine benutzerdefinierte Rolle mit den entsprechenden Berechtigungen in Azure zuweisen. Weitere Informationen zu diesen NIC-bezogenen Berechtigungen finden Sie im<block ref="66f156d6b7e425dd982efc44f4fabac6" category="inline-link-rx"></block>.</block>
-  <block id="61576418077bcd8f8092882074c7da4e" category="admonition">Eine Frontend-IP sollte nur unter der NIC0 für jede entsprechende SVM angelegt werden. Weitere Informationen zum Hinzufügen der IP-Adresse zum SVM NIC0 finden Sie unter „Schritt 7 [Hyperlink]“.</block>
   <block id="448ebe9e1f128098ee0a86ff8eada021" category="paragraph">Wenn Ihre Lizenz unterstützt wird, können Sie mehrere Storage-VMs auf einem System mit einzelnen Nodes oder auf einem HA-Paar erstellen. Beachten Sie, dass Sie mit der BlueXP  API eine Storage-VM auf einem HA-Paar erstellen müssen, während Sie mit ONTAP System Manager oder der ONTAP CLI eine Storage-VM auf einem einzelnen Node-System erstellen können.</block>
   <block id="0bc83530bf1c3dfbdf7ae1a46191b416" category="paragraph">Sie müssen die BlueXP API verwenden, um eine Speicher-VM auf einem Cloud Volumes ONTAP-System in Google Cloud zu erstellen. Die API (und nicht ONTAP System Manager oder die ONTAP CLI) ist erforderlich, da BlueXP  die Storage VM mit den erforderlichen LIF-Services konfiguriert, sowie eine iSCSI LIF, die für ausgehende SMB/CIFS-Kommunikation benötigt wird.</block>
   <block id="3fddfb3310c868dbd37067b4e4c94bc2" category="paragraph">BlueXP  unterstützt alle zusätzlichen Storage VMs, die Sie über ONTAP System Manager oder die ONTAP CLI erstellen.</block>
@@ -5465,13 +5374,6 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="23364a1412324aba4675105eacf57908" category="example-title">Schritte anzeigen</block>
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">Sie können nun WORM-Storage (Write Once, Read Many) auf einem bestehenden Cloud Volumes ONTAP System mithilfe von BlueXP  aktivieren. Mit dieser Funktionalität erhalten Sie die Flexibilität, WORM in einer Arbeitsumgebung zu aktivieren, auch wenn WORM während seiner Erstellung nicht aktiviert wurde. Sobald diese Option aktiviert ist, können Sie WORM nicht mehr deaktivieren.</block>
   <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">Eine Änderung der Abrechnungsmethode hat keine Auswirkung, ob die Abrechnung über eine Lizenz von NetApp (BYOL) oder über das PAYGO-Abonnement (Pay-as-you-go) des Cloud-Providers erfolgt.</block>
-  <block id="deeb890dedc65f3ba1539e8c0083a08b" category="paragraph">Bei HA-Paaren (High Availability, HA) sollten Sie auf jede Storage-VM (SVM) im Cluster zugreifen und für jede SVM die entsprechenden IPs unter nic0 erstellen. Wie Sie IP-Adressen für ein HA-Paar zuweisen, hängt vom verwendeten Storage-Protokoll ab. Im HA-Modus müssen die Benutzer sicherstellen, dass die IP-Adressen richtig konfiguriert sind, um Failover und Redundanz zu unterstützen. Dies ist entscheidend für die Aufrechterhaltung der Hochverfügbarkeit und Zuverlässigkeit des Storage-Systems.</block>
-  <block id="d40f712a330c4835a0ab9b70db06051b" category="list-text">Eine optionale IP-Adresse für eine SVM-Management-LIF</block>
-  <block id="534113954d7a54ea89ef88fa230b7146" category="paragraph">Die iSCSI LIFs sind für die DNS-Kommunikation erforderlich, selbst wenn das iSCSI-Protokoll nicht verwendet wird. Dazu wird ein iSCSI-LIF verwendet, da bei einem Failover keine Migration durchgeführt wird.</block>
-  <block id="779dc7c57d3ba82d3f1438a241a8770a" category="inline-link-macro">Vorheriges Verfahren</block>
-  <block id="7e5f8351d1e24c2cf0c0d5fbc956ea2b" category="list-text">Daten-LIFs erstellen. In diesem Schritt verwenden Sie die IPs, die Sie in der zugewiesen <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>haben, um als Daten-LIFs zu dienen.</block>
-  <block id="e5da8bd8aa33e128edc30f4d0c6082f4" category="list-text">Erstellen Sie iSCSI LIFs, um DNS-Kommunikation bereitzustellen. Die iSCSI LIFs sind für die DNS-Kommunikation erforderlich, selbst wenn das iSCSI-Protokoll nicht verwendet wird.</block>
-  <block id="1ea87a95c176e342e1e8fd101628481f" category="list-text">Erstellung von NAS-Daten-LIFs. In diesem Schritt verwenden Sie die IPs, die Sie in der zugewiesen <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>haben, um als Daten-LIFs zu dienen.</block>
   <block id="c023c17ce97ef2fee30e2cb2aa0cd81a" category="paragraph">Weitere Informationen finden Sie unter <block ref="7e81f0f3d7f6d88b77289e1baaf5eecf" category="inline-link-macro-rx"></block>.</block>
   <block id="c0131b1cf44af0fec95135e45a801bbe" category="doc">Planung der VPC-Servicekontrollen in Google Cloud</block>
   <block id="fa055d94084c7095d6c7ec354ec44857" category="doc">Liste der unterstützten VMs, die für Google Cloud aktualisiert wurden, um an den Best Practices ausgerichtet zu sein</block>
@@ -5841,4 +5743,35 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">Zentral USA</block>
   <block id="7a6df46ff8e25ac610f60f312512afa4" category="list-text">US-Behörde Virginia (Region der US-Regierung – Virginia)</block>
   <block id="0de5f5ade75808b90faefd69873b4b3c" category="section-title">12 März 2025</block>
+  <block id="322a339b221056f32120ffd18077d44d" category="doc">Automatisierte Erstellung von Storage-VMs über APIs in Azure</block>
+  <block id="aa1c2167957b1092da7e43e77867748c" category="paragraph">Sie können jetzt die BlueXP  APIs verwenden, um zusätzliche Storage-VMs für Cloud Volumes ONTAP in Azure zu erstellen, umzubenennen und zu löschen. Durch die Verwendung der APIs wird die Erstellung von Storage-VMs automatisiert, einschließlich der Konfiguration der erforderlichen Netzwerkschnittstellen, LIFs und einer Management-LIF, wenn Sie eine Storage-VM zu Managementzwecken verwenden müssen.</block>
+  <block id="5fc68a139fdd05790792b12eb853e84d" category="paragraph"><block ref="5fc68a139fdd05790792b12eb853e84d" category="inline-link-rx"></block></block>
+  <block id="6c06918c853ceff156bfa91e6f728521" category="paragraph">Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihren Kunden Storage und Datenservices zur Verfügung stellt. Vielleicht wissen Sie das als _SVM_ oder _vServer_. Cloud Volumes ONTAP ist standardmäßig mit einer Storage-VM konfiguriert, Sie können jedoch zusätzliche Storage-VMs erstellen, wenn Sie Cloud Volumes ONTAP in Azure ausführen.</block>
+  <block id="a085c0a61467db1db666585d6c91ebba" category="paragraph">Um zusätzliche Storage-VMs für Datenbereitstellung auf Azure zu erstellen und zu managen, sollten Sie die BlueXP  APIs verwenden. Das liegt daran, dass die APIs die Erstellung der Storage-VMs automatisieren und die erforderlichen Netzwerkschnittstellen konfigurieren. Beim Erstellen der Storage-VMs konfiguriert BlueXP  die erforderlichen LIF-Services sowie eine iSCSI LIF, die für ausgehende SMB/CIFS-Kommunikation von der Storage-VM benötigt wird.</block>
+  <block id="7147a143d2af533e058f535a19e1223d" category="paragraph">Ab Cloud Volumes ONTAP 9.9 werden basierend auf Ihrer Lizenz mehrere Storage VMs mit spezifischen Konfigurationen unterstützt. Überprüfen Sie im die<block ref="17601f6b0c4702ab7b2568d76b48bf40" category="inline-link-rx"></block> unterstützte Anzahl von Storage-VMs für Ihre Version von Cloud Volumes ONTAP.</block>
+  <block id="c0bc1a321126780ce6dd98fe7445b54b" category="paragraph">Alle Versionen von Cloud Volumes ONTAP vor Version 9.9.0 unterstützen nur eine Daten-Serving-VM und eine Ziel-Storage-VM, die für das Disaster Recovery verwendet wurde. Sie können die Ziel-Storage-VM für Datenzugriff aktivieren, wenn es einen Ausfall auf der Quell-Storage-VM gibt.</block>
+  <block id="d614d92be13a98e84d160b41e3cc3192" category="paragraph">Der Connector erfordert bestimmte Berechtigungen zum Erstellen und Managen von Storage-VMs für Cloud Volumes ONTAP. Die erforderlichen Berechtigungen sind in enthalten<block ref="7dc648b1297c419be8c55b589146f4e1" category="inline-link-rx"></block>.</block>
+  <block id="d77aca129ef05e1d8e6c8f148746dce9" category="paragraph">Basierend auf Konfiguration und Lizenztyp können Sie mithilfe der BlueXP  APIs mehrere Storage VMs auf einem Single Node-System oder in einer HA-Konfiguration (High Availability, Hochverfügbarkeit) erstellen.</block>
+  <block id="ee24c5eec6ef0b71321a4b5ab8c7c8eb" category="paragraph">Wenn Sie Storage-VMs mit den APIs erstellen und die erforderlichen Netzwerkschnittstellen konfigurieren, ändert BlueXP  auch die<block ref="891e111023ee3cccd4407be6ddd24c21" prefix=" " category="inline-code"></block> Richtlinien der Datenspeicher-VMs, indem die folgenden Services von der logischen Schnittstelle für NAS-Daten entfernt und zur iSCSI-Datenschnittstelle hinzugefügt werden, die für Outbound-Managementverbindungen verwendet wird:</block>
+  <block id="8706f6ead181f6948eb97f37a1eb2445" category="paragraph">Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem System mit einem einzelnen Node zu erstellen.</block>
+  <block id="3fdacbfd71cad923423d9367166e8e10" category="paragraph"><block ref="c9cca6b9ba2558d529f121eb1e013395" prefix="" category="inline-code"></block></block>
+  <block id="6b6d0dcd4030cb1778fc115dbc546a6d" category="paragraph">Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM in einer Azure HA-Konfiguration zu erstellen:</block>
+  <block id="ffed8e594be63a1704331cda026451ec" category="paragraph"><block ref="332a159c5eb24709f786ad048b2b2fc8" prefix="" category="inline-code"></block></block>
+  <block id="546e719c658c5e1549c21e8288af2461" category="section-title">Management von Storage-VMs auf Single Node-Systemen und HA-Paaren</block>
+  <block id="2d9a7bdb8e630290a3ab4f21dc7b190b" category="paragraph">Mit den BlueXP  APIs können Sie Storage-VMs in einzelnen Node- und HA-Konfigurationen umbenennen und löschen.</block>
+  <block id="292926f0684b9510b55c12943203a47a" category="paragraph">Zum Umbenennen einer Storage-VM sollten Sie die Namen der vorhandenen Storage-VM und die neue Storage-VM als Parameter angeben.</block>
+  <block id="e313c8cca3b79dbc79cbcfe63c3d6efb" category="list-text">Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem System mit einem einzelnen Node umzubenennen:</block>
+  <block id="163713240b16088767c6e8dd70caefde" category="paragraph"><block ref="d3fe545ac501d33a61917e447e4f0069" prefix="" category="inline-code"></block></block>
+  <block id="5fb2806cc031c54b3af655dfffd8fd1e" category="list-text">Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM in einer HA-Konfiguration umzubenennen:</block>
+  <block id="f80f88eb929c0d4cd5386633be23cf21" category="paragraph"><block ref="d138335618e0186622605f96b9b3b0d1" prefix="" category="inline-code"></block></block>
+  <block id="c92f0160e249d6660e4b4262409aea6c" category="paragraph">Sie können in einem einzelnen Node oder einer HA-Konfiguration eine Storage-VM entfernen, wenn diese nicht über aktive Volumes verfügt.</block>
+  <block id="a3590d03d962ac5b789854576b314e57" category="list-text">Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem System mit einem einzelnen Node zu löschen:</block>
+  <block id="eba2f559f6f185c3ecb4fd32a7acf4c8" category="paragraph"><block ref="f72e53a28ab0632263c72933e322d2a6" prefix="" category="inline-code"></block></block>
+  <block id="55aa553ec7b227afb3f22326cbc74d66" category="list-text">Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM in einer HA-Konfiguration zu löschen:</block>
+  <block id="ab5ee533b7c08abc987c74ffd54477b9" category="paragraph"><block ref="4bd28f76ace2927734ae3d3abcca1009" prefix="" category="inline-code"></block></block>
+  <block id="29840bff9430e52461cf42481774b929" category="paragraph">Für den Connector sind bestimmte Berechtigungen erforderlich, um Storage-VMs für Cloud Volumes ONTAP HA-Paare zu erstellen und zu managen. Die erforderlichen Berechtigungen sind in enthalten<block ref="fef452a667b371049bf1cd426aa1994a" category="inline-link-rx"></block>.</block>
+  <block id="3fab6f26ccc1354a7fda62c947fe176d" category="paragraph"><block ref="4ae3965c67ec8b00b8c07c6aa50d0d55" prefix="" category="inline-code"></block></block>
+  <block id="491f4afb4d76ae587fca5e7ac986bec8" category="paragraph"><block ref="6c678c0fbac1c8687769d59bba8c2b43" prefix="" category="inline-code"></block></block>
+  <block id="f6c911e7dfb2a5f8d5a5d0776d47d0cf" category="paragraph"><block ref="ead0722cb022f93c950a941d0eae1560" prefix="" category="inline-code"></block></block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 März 2025</block>
 </blocks>

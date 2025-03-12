@@ -1,0 +1,11 @@
+= Automatisierte Erstellung von Storage-VMs über APIs in Azure
+:allow-uri-read: 
+
+
+
+
+=== Automatisierte Erstellung von Storage-VMs über APIs in Azure
+
+Sie können jetzt die BlueXP  APIs verwenden, um zusätzliche Storage-VMs für Cloud Volumes ONTAP in Azure zu erstellen, umzubenennen und zu löschen. Durch die Verwendung der APIs wird die Erstellung von Storage-VMs automatisiert, einschließlich der Konfiguration der erforderlichen Netzwerkschnittstellen, LIFs und einer Management-LIF, wenn Sie eine Storage-VM zu Managementzwecken verwenden müssen.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["Erstellen Sie Daten-Serving-Storage VMs für Cloud Volumes ONTAP in Azure"^]

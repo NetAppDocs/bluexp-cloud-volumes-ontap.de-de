@@ -114,12 +114,12 @@ BlueXP  ändert auch die `default-data-files` Richtlinien der Storage-VMs, inde
 Das Ändern der Services ist erforderlich, da Cloud Volumes ONTAP sicherstellen kann, dass die iSCSI-LIF für ausgehende Managementverbindungen verwendet werden kann.
 
 .Erforderliche Google Cloud Berechtigungen
-Für den Connector sind bestimmte Berechtigungen erforderlich, um Storage-VMs für Cloud Volumes ONTAP HA-Paare zu erstellen und zu managen. Die erforderlichen Berechtigungen sind in enthalten https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Die von NetApp bereitgestellten Richtlinien"].
+Für den Connector sind bestimmte Berechtigungen erforderlich, um Storage-VMs für Cloud Volumes ONTAP HA-Paare zu erstellen und zu managen. Die erforderlichen Berechtigungen sind in enthalten https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Die von NetApp bereitgestellten Richtlinien"^].
 
 .Schritte
 . Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM zu erstellen:
 +
-`POST /occm/api/gcp/ha/working-environments/{WE_ID}/svm/`
+`POST /gcp/ha/working-environments/{workingEnvironmentId}/svm/`
 
 +
 Der Anforderungsgremium sollte Folgendes umfassen:
@@ -146,7 +146,7 @@ Bei Bedarf können Sie den Namen einer Storage-VM jederzeit ändern.
 .Schritte
 . Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM umzubenennen:
 +
-`PUT /occm/api/gcp/ha/working-environments/{WE_ID}/svm`
+`PUT /gcp/ha/working-environments/{workingEnvironmentId}/svm`
 
 +
 Der Anforderungsgremium sollte Folgendes umfassen:
@@ -170,6 +170,6 @@ Wenn Sie keine Storage-VM mehr benötigen, können Sie sie aus Cloud Volumes ONT
 .Schritte
 . Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM zu löschen:
 +
-`DELETE /occm/api/gcp/ha/working-environments/{WE_ID}/svm/{SVM_NAME}`
+`DELETE /gcp/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
 
