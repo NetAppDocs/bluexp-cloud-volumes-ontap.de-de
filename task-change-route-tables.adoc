@@ -4,7 +4,7 @@ permalink: task-change-route-tables.html
 keywords: route tables, update route tables, modify route tables, change route table 
 summary: Sie können die AWS-Routingtabellen ändern, die Routen zu den unverankerten IP-Adressen für ein HA-Paar einschließen, das in mehreren AWS Availability Zones bereitgestellt wird. Vielleicht möchten Sie dies tun, wenn neue NFS- oder CIFS-Clients auf ein HA-Paar in AWS zugreifen müssen. 
 ---
-= Ändern Sie Routingtabellen für HA-Paare in mehreren AZS
+= Routingtabellen für Cloud Volumes ONTAP HA-Paare in mehreren AWS AZS ändern
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

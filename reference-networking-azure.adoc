@@ -4,7 +4,7 @@ permalink: reference-networking-azure.html
 keywords: networking, network, requirements, connection, connections, vnet, security group, security groups, subnet, vpn, internet, proxy, HTTP, private, proxy server, routing, firewall, autosupport, connection, jump host, outbound, ports, blob, service endpoint 
 summary: Richten Sie Ihr Azure Netzwerk ein, um Cloud Volumes ONTAP Systeme ordnungsgemäß funktionieren zu können. 
 ---
-= Netzwerkanforderungen für Cloud Volumes ONTAP in Azure
+= Azure Networking für Cloud Volumes ONTAP einrichten
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

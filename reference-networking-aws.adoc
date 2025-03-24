@@ -4,7 +4,7 @@ permalink: reference-networking-aws.html
 keywords: networking, network, requirements, connection, connections, vpc, security group, security groups, subnets, vpn, internet, nat, s3, dns, ad, active directory, az, availability zone, floating IP, floating, SVM, management LIF, route, route tables, proxy, HTTP, private, tier, s3 endpoint, tiering, storage tier, storage tiering, proxy server, nat device, vpn, snapmanager, snapcenter, iscsi, nfs, cifs, nas, san, outbound, inbound, connections, autosupport, ha, ha pair, high availability 
 summary: BlueXP übernimmt die Einrichtung von Netzwerkkomponenten für Cloud Volumes ONTAP, z. B. IP-Adressen, Netzmasken und Routen. Sie müssen sicherstellen, dass Outbound-Internetzugang verfügbar ist, dass genügend private IP-Adressen verfügbar sind, dass die richtigen Verbindungen vorhanden sind und vieles mehr. 
 ---
-= Netzwerkanforderungen für Cloud Volumes ONTAP in AWS
+= AWS-Netzwerk für Cloud Volumes ONTAP einrichten
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,7 +20,7 @@ BlueXP übernimmt die Einrichtung von Netzwerkkomponenten für Cloud Volumes ONT
 
 == Allgemeine Anforderungen
 
-Die folgenden Anforderungen müssen in AWS erfüllt sein.
+Stellen Sie sicher, dass Sie die folgenden Anforderungen in AWS erfüllt haben.
 
 
 

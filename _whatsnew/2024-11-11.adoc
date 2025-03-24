@@ -10,7 +10,7 @@ NetApp plant das Ende der Verfügbarkeit (EOA) und das Ende des Supports (EOS) f
 
 Wenn NetApp Sie ein jährliches oder längerfristiges Programm nutzen möchten, sollten Sie Ihren NetApp Ansprechpartner vor dem EOA-Datum oder dem Ablaufdatum der Lizenz kontaktieren. So sollten Sie sicherstellen, dass die Voraussetzungen für die Transition gegeben sind. Wenn Sie keinen langfristigen Vertrag für einen Cloud Volumes ONTAP-Node haben und Ihr System mit einem PAYGO-Abonnement (On-Demand Pay-as-you-go) ausführen, ist es wichtig, die Konvertierung vor dem EOS-Datum zu planen. Sowohl für langfristige Verträge als auch für PAYGO Abonnements können Sie das BlueXP  Lizenzkonvertierungstool für eine nahtlose Konvertierung verwenden.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Ende der Verfügbarkeit von Node-basierten Lizenzen"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Konvertieren Sie Node-basierte Lizenzen in kapazitätsbasierte Lizenzen"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Ende der Verfügbarkeit von Node-basierten Lizenzen"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Konvertieren Sie eine Node-basierte Cloud Volumes ONTAP Lizenz in eine kapazitätsbasierte Lizenz"^]
 
 
 

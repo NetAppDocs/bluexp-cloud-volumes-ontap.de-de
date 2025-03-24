@@ -4,7 +4,7 @@ permalink: task-managing-svms-azure.html
 keywords: storage virtual machine, vserver, svm, storage vm, supported number, number supported 
 summary: Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihren Kunden Storage und Datenservices zur Verfügung stellt. Sie können dies als SVM oder vServer wissen. Cloud Volumes ONTAP ist standardmäßig mit einer Storage-VM konfiguriert, aber einige Konfigurationen unterstützen zusätzliche Storage-VMs. 
 ---
-= Erstellen Sie Daten-Serving-Storage VMs für Cloud Volumes ONTAP in Azure
+= Managen Sie Datenservice-Storage-VMs für Cloud Volumes ONTAP in Azure
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: concept-worm.html
 keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage, tiering 
 summary: 'Sie können WORM-Storage (Write Once, Read Many) auf einem Cloud Volumes ONTAP System aktivieren, um Dateien für einen bestimmten Aufbewahrungszeitraum in unveränderter Form aufzubewahren. Cloud-WORM-Storage wird durch SnapLock Technologie unterstützt, d. h., WORM-Dateien sind auf Dateiebene gesichert.' 
 ---
-= WORM-Storage
+= Erfahren Sie mehr über WORM Storage auf Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

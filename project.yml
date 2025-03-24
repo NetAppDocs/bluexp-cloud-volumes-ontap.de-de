@@ -50,7 +50,7 @@ sidebar:
         url: "/task-planning-your-config.html"
       - title: Richten Sie Ihr Netzwerk ein
         entries:
-        - title: Netzwerkanforderungen
+        - title: AWS-Netzwerk einrichten
           url: "/reference-networking-aws.html"
         - title: AWS Transit Gateway einrichten
           url: "/task-setting-up-transit-gateway.html"
@@ -110,8 +110,6 @@ sidebar:
               url: "/task-file-verification-linux.html"
             - title: Überprüfung der Signatur von Mac OS-Dateien
               url: "/task-file-verification-mac.html"
-          - title: Weitere Informationen
-            url: "/reference-image-verification-links.html"
       - title: Legen Sie los auf dem Markt
         url: "/task-deploy-cvo-azure-mktplc.html"
     - title: Erste Schritte in Google Cloud
@@ -179,13 +177,13 @@ sidebar:
       entries:
       - title: Arbeiten Sie mit Storage VMs in BlueXP
         url: "/task-managing-svms.html"
-      - title: Erstellung von Storage VMs in AWS
+      - title: Managen Sie Storage-VMs in AWS
         flavor: aws
         url: "/task-managing-svms-aws.html"
-      - title: Erstellung von Storage VMs in Azure
+      - title: Managen Sie Storage-VMs in Azure
         flavor: azure
         url: "/task-managing-svms-azure.html"
-      - title: Erstellung von Storage VMs in Google Cloud
+      - title: Managen Sie Storage-VMs in Google Cloud
         flavor: gcp
         url: "/task-managing-svms-gcp.html"
       - title: Disaster Recovery für SVMs einrichten

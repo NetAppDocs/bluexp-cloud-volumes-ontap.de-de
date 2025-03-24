@@ -4,7 +4,7 @@ permalink: task-manage-node-licenses.html
 keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator, extra, by-node, digital wallet, cloud backup, cloud data sense, cloud tiering 
 summary: Managen Sie Ihre Node-basierten Lizenzen aus dem BlueXP Digital Wallet, um sicherzustellen, dass für jedes Cloud Volumes ONTAP System eine gültige Lizenz mit der erforderlichen Kapazität vorhanden ist. 
 ---
-= Management knotenbasierter Lizenzen
+= Node-basierte Lizenzierung für Cloud Volumes ONTAP managen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

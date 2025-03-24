@@ -4,7 +4,7 @@ permalink: concept-licensing.html
 keywords: 'freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, cloud backup, digital wallet, bluexp license conversion for node based, license end of support (EOS) node-based, end of availability (EOA) of node-based' 
 summary: Für Cloud Volumes ONTAP sind verschiedene Lizenzierungsoptionen verfügbar. Mit jeder Option können Sie eine Konfiguration wählen, die Ihren Anforderungen entspricht. 
 ---
-= Cloud Volumes ONTAP Lizenzierung
+= Lizenzierung für Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -22,7 +22,7 @@ Für Cloud Volumes ONTAP sind verschiedene Lizenzierungsoptionen verfügbar. Jed
 
 Die folgenden Lizenzierungsoptionen stehen für Neukunden zur Verfügung.
 
-Kapazitätsbasierte Lizenzierung:: Bezahlen Sie für mehrere Cloud Volumes ONTAP Systeme Ihres NetApp Kontos durch bereitgestellte Kapazität. Mit der Möglichkeit, zusätzliche Cloud-Datenservices zu erwerben
+Kapazitätsbasierte Lizenzierung:: Bezahlen Sie für mehrere Cloud Volumes ONTAP Systeme Ihres NetApp Kontos durch bereitgestellte Kapazität. Mit der Möglichkeit, zusätzliche Cloud-Datenservices zu erwerben Weitere Informationen zu Nutzungsmodellen in kapazitätsbasierten Lizenzen finden Sie unter link:concept-licensing-charging.html["Erfahren Sie mehr über kapazitätsbasierte Lizenzen"].
 Keystone Abonnement:: Ein abonnementbasierter Pay-as-you-grow-Service, der ein nahtloses Hybrid-Cloud-Erlebnis für HA-Paare (High Availability, Hochverfügbarkeit) bietet.
 
 
@@ -48,7 +48,7 @@ NOTE: Während die tatsächliche Nutzung und Nutzungsmessung für die in BlueXP 
 
 === Pakete
 
-Die folgenden kapazitätsbasierten Pakete stehen für Cloud Volumes ONTAP zur Verfügung.
+Die folgenden kapazitätsbasierten Pakete stehen für Cloud Volumes ONTAP zur Verfügung. Weitere Informationen zu kapazitätsbasierten Lizenzpaketen finden Sie unter link:concept-licensing-charging.html["Erfahren Sie mehr über kapazitätsbasierte Lizenzen"].
 
 Eine Liste der unterstützten VM-Typen mit den folgenden kapazitätsbasierten Paketen finden Sie unter:
 
@@ -78,7 +78,7 @@ Bietet alle Cloud Volumes ONTAP-Funktionen kostenlos von NetApp an (Gebühren f�
 * Sie können bis zu 10 Cloud Volumes ONTAP Systeme mit Freemium-Angebot pro NetApp Konto bei jedem Cloud-Provider nutzen.
 * Wenn die bereitgestellte Kapazität für ein Cloud Volumes ONTAP-System 500 gib überschreitet, konvertiert BlueXP das System in das Essentials-Paket.
 +
-Sobald ein System in das Essentials-Paket konvertiert wird, wird das verwendet <<Hinweise zum Laden,Mindestgebühr>> Gilt.
+Sobald ein System in das Essentials-Paket konvertiert wird, gilt daslink:concept-licensing-charging.html#minimum-charge["Mindestladung"].
 
 +
 Alle anderen Systeme mit einer bereitgestellten Kapazität von weniger als 500 gib bleiben auf Freemium (sofern sie mit dem Freemium-Angebot bereitgestellt wurden).
@@ -99,8 +99,6 @@ Sie können in verschiedenen Konfigurationen nach Kapazität bezahlen:
 
 * Fügen Sie die Cloud-Datenservices von NetApp zu zusätzlichen Kosten hinzu
 
-
-Weitere Informationen finden Sie unter link:concept-licensing-charging.html["Mehr zu kapazitätsbasierten Lizenzen"].
 
 
 
@@ -300,7 +298,7 @@ BlueXP  ermöglicht eine nahtlose Konvertierung Node-basierter Lizenzen in Kapa
 
 Vor dem Übergang sollten Sie sich mit dem Unterschied zwischen den beiden Lizenzmodellen vertraut machen. Die Node-basierte Lizenzierung umfasst feste Kapazität für jede ONTAP Instanz, wodurch sich die Flexibilität einschränken lässt. Kapazitätsbasierte Lizenzierung hingegen ermöglicht einen gemeinsamen Storage-Pool über mehrere Instanzen hinweg. Dies erhöht die Flexibilität, optimiert die Ressourcenauslastung und verringert das Risiko von finanziellen Einbußen bei der Umverteilung von Workloads. Kapazitätsbasierte Ladefunktion passt sich nahtlos an sich verändernde Speicheranforderungen an.
 
-Informationen dazu, wie Sie diese Konvertierung durchführen können, finden Sie unter link:task-convert-node-capacity.html["Konvertieren Sie Node-basierte Lizenzen in kapazitätsbasierte Lizenzen"].
+Informationen dazu, wie Sie diese Konvertierung durchführen können, finden Sie unter link:task-convert-node-capacity.html["Konvertieren Sie eine Node-basierte Cloud Volumes ONTAP Lizenz in eine kapazitätsbasierte Lizenz"].
 
 
 NOTE: Die Konvertierung eines Systems von kapazitätsbasierter in Node-basierte Lizenzierung wird nicht unterstützt.

@@ -4,7 +4,7 @@ permalink: task-aws-key-management.html
 keywords: aws, amazon, encryption, NVE, NetApp volume encryption, KMIP, kms, key manager service 
 summary: Nutzen Sie den Verschlüsselungsmanagement-Service von AWS für Ihren Drittanbieter-Service für das Verschlüsselungsmanagement. 
 ---
-= Schlüsselmanagement mit AWS Key Management Service
+= Management von Cloud Volumes ONTAP Verschlüsselungen mit AWS Key Management Service
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

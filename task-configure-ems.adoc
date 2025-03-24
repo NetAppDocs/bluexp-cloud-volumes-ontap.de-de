@@ -4,7 +4,7 @@ permalink: task-configure-ems.html
 keywords: ems, event management system, ems notifications, notifications 
 summary: Das Ereignismanagementsystem erfasst und zeigt Informationen zu Ereignissen an, die auf ONTAP Systemen auftreten. Um Event-Benachrichtigungen zu erhalten, können Sie Ereignisziele und Ereignisrouten für einen bestimmten Schweregrad festlegen. 
 ---
-= EMS konfigurieren
+= Konfiguration von EMS für Cloud Volumes ONTAP-Systeme
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

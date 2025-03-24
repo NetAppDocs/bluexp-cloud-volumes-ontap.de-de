@@ -4,7 +4,7 @@ permalink: concept-storage.html
 keywords: storage, capacity, volumes, aggregates, raw capacity, usable capacity 
 summary: Wenn Sie verstehen, wie Cloud Volumes ONTAP Cloud Storage verwendet, können Sie Ihre Storage-Kosten besser verstehen. 
 ---
-= Festplatten und Aggregate
+= Festplatten und Aggregate, die für Cloud Volumes ONTAP Cluster verwendet werden
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -45,7 +45,7 @@ EBS Storage:: In AWS kann ein Aggregat bis zu 6 Festplatten enthalten, die jewei
 --
 Die maximale Festplattengröße beträgt 16 tib.
 
-Der zugrunde liegende EBS-Festplattentyp kann entweder universell einsetzbare SSDs (gp3 oder gp2), bereitgestellte IOPS-SSD (io1) oder durchsatzoptimierte Festplatte (st1) sein. Sie können eine EBS-Festplatte mit Amazon S3 zu koppeln link:concept-data-tiering.html["Verschieben inaktiver Daten in kostengünstigen Objektspeicher"].
+Der zugrunde liegende EBS-Festplattentyp kann entweder universell einsetzbare SSDs (gp3 oder gp2), bereitgestellte IOPS-SSD (io1) oder durchsatzoptimierte Festplatte (st1) sein. Sie können eine EBS-Festplatte mit Amazon S3 zu koppelnlink:concept-data-tiering.html["Kostengünstiger Objekt-Storage"].
 
 
 NOTE: Bei der Verwendung von durchsatzoptimierten HDDs (st1) wird kein Tiering von Daten zu Objekt-Storage empfohlen.
@@ -83,7 +83,7 @@ Systeme mit einzelnen Nodes:: Single-Node-Systeme können die folgenden Typen vo
 Jeder verwaltete Festplattentyp hat eine maximale Festplattengröße von 32 tib.
 
 +
-Sie können eine gemanagte Festplatte mit Azure Blob Storage kombinieren link:concept-data-tiering.html["Verschieben inaktiver Daten in kostengünstigen Objektspeicher"].
+Sie können eine gemanagte Festplatte mit Azure Blob Storage mit koppelnlink:concept-data-tiering.html["Kostengünstiger Objekt-Storage"].
 
 
 
@@ -101,7 +101,7 @@ HA-Paare:: HA-Paare verwenden zwei Festplattenarten, die eine hohe Performance f
 *Verwandte Links*
 
 * link:task-planning-your-config-azure.html["Erfahren Sie, wie Sie Festplattentypen und Festplattengrößen für Ihre Systeme in Azure auswählen"]
-* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["Starten eines Cloud Volumes ONTAP HA-Paars in Azure"]
+* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["Starten Sie ein Cloud Volumes ONTAP HA-Paar in Azure"]
 * https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure-Dokumentation: Verwaltete Festplattentypen in Azure"^]
 * https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure-Dokumentation: Übersicht über die Blobs der Azure-Seite"^]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Prüfen Sie Storage-Limits für Cloud Volumes ONTAP in Azure"^]
@@ -117,7 +117,7 @@ ifdef::gcp[]
 
 In Google Cloud kann ein Aggregat bis zu 6 Festplatten enthalten, die alle gleich groß sind. Die maximale Festplattengröße beträgt 64 tib.
 
-Der Festplattentyp kann entweder _Zonal SSD persistente Festplatten_, _Zonal Balance persistente Festplatten_ oder _Zonal Standard persistente Festplatten_ sein. Sie können persistente Festplatten mit einem Google Storage Bucket kombinieren link:concept-data-tiering.html["Verschieben inaktiver Daten in kostengünstigen Objektspeicher"].
+Der Festplattentyp kann entweder _Zonal SSD persistente Festplatten_, _Zonal Balance persistente Festplatten_ oder _Zonal Standard persistente Festplatten_ sein. Sie können persistente Festplatten mit einem Google Storage-Bucket zu koppelnlink:concept-data-tiering.html["Kostengünstiger Objekt-Storage"].
 
 *Verwandte Links*
 

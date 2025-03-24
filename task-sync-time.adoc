@@ -4,7 +4,7 @@ permalink: task-sync-time.html
 keywords: set up, setting up, ntp, time, synch 
 summary: Durch das Festlegen eines NTP-Servers wird die Zeit zwischen den Systemen im Netzwerk synchronisiert, wodurch Probleme aufgrund von Zeitunterschieden vermieden werden können. 
 ---
-= Synchronisieren Sie die Systemzeit mit NTP
+= Synchronisieren Sie die Cloud Volumes ONTAP-Systemzeit mithilfe des NTP-Servers
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

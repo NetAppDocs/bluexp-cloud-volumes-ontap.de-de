@@ -4,36 +4,19 @@ permalink: task-configure-placement-group-failure-aws.html
 keywords: placement group, failure, HA single zone, app.conf, rollback, AWS 
 summary: Für Verbindungen zu den zugehörigen Storage-Konten nutzt Cloud Volumes ONTAP einen Azure Private Link. Bei Bedarf können Sie Azure Private Links deaktivieren und stattdessen Service-Endpunkte verwenden. 
 ---
-= Konfiguration der Erstellung von Platzierungsgruppen für AWS HA Single AZ
-:hardbreaks:
+= Erstellung von Platzierungsgruppen für Cloud Volumes ONTAP HA-Paare in AWS einzelnen AZS konfigurieren
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]
-Wenn die Erstellung der Platzierungsgruppe fehlschlägt, führt Cloud Volumes ONTAP ein Rollback neuer Implementierungen von AWS HA-Konfigurationen (High Availability Zone, Hochverfügbarkeit) in einer Single Availability Zone (AZ) durch. Bei Bedarf können Sie den erfolgreichen Abschluss von Bereitstellungen erzwingen, indem Sie Platzierungsgruppen so konfigurieren, dass der Rollback-Prozess bei jedem Fehler der Erstellung umgehen kann.
+Bei Ausfall der Erstellung der Platzierungsgruppe können Cloud Volumes ONTAP-Implementierungen für Hochverfügbarkeit (High Availability, HA) in AWS Single Availability Zone (AZ) ausfallen und ein Rollback durchführen. Die Erstellung der Platzierungsgruppe schlägt ebenfalls fehl, und die Implementierung wird wieder ausgeführt, wenn der Cloud Volumes ONTAP-Node und die Mediatorinstanz nicht verfügbar sind. Um dies zu vermeiden, können Sie die Konfiguration so ändern, dass die Bereitstellung auch dann abgeschlossen werden kann, wenn die Erstellung der Platzierungsgruppe fehlschlägt.
 
-
-
-== Überblick
-
-Standardmäßig werden Implementierungen fehlschlagen und Rollback durchgeführt, wenn eine Platzierungsgruppe den Erstellungsvorgang für eine einzige HA-Verfügbarkeitszone in der Arbeitsumgebung nicht unterstützt. Die Erstellung der Platzierungsgruppe schlägt ebenfalls fehl und führt ein Rollen zurück, wenn sowohl Cloud Volumes ONTAP-Nodes als auch die Instanz des Mediators nicht vorhanden sind.
-
-Sie können den Rollback-Prozess umgehen, wenn die Erstellung der Platzierungsgruppe fehlschlägt und die Bereitstellung durch die Konfiguration der Datei App.conf fortgesetzt werden kann. Beim Umgehen des Rollback-Prozesses wurden die Bereitstellungen erfolgreich abgeschlossen, und das System generiert eine Benachrichtigung, die besagt, dass die Erstellung der Platzierungsgruppe fehlgeschlagen ist und der Status unvollständig ist.
-
-
-
-=== Deaktivieren des Rollbacks bei Ausfall der Platzierungsgruppe
-
-Um den Ausfall der Platzierungsgruppe zu deaktivieren, muss das Flag „Rollback-on-placement-Group-Failure“ auf „false“ gesetzt werden.
+Beim Umgehen des Rollback-Prozesses wird der Cloud Volumes ONTAP-Bereitstellungsprozess erfolgreich abgeschlossen und Sie werden benachrichtigt, dass die Erstellung der Platzierungsgruppe unvollständig ist.
 
 .Schritte
 . Verwenden Sie SSH, um eine Verbindung zum Connector-Host herzustellen und sich anzumelden.
-. Navigieren Sie zum folgenden Verzeichnis: /Opt/Application/netapp/cloudmanager/docker_occm/Data
-. Bearbeiten Sie App.conf, indem Sie den Wert für den Parameter „Rollback-on-placement-Group-Failure“ auf „false“ ändern:
+. Navigieren Sie zu `/opt/application/netapp/cloudmanager/docker_occm/data`.
+.  `app.conf`Ändern Sie den Wert des `rollback-on-placement-group-failure` Parameters in `false`. Der Standardwert dieses Parameters ist `true`.
 +
 [listing]
 ----
@@ -45,12 +28,5 @@ Um den Ausfall der Platzierungsgruppe zu deaktivieren, muss das Flag „Rollback
     }
 }
 ----
-+
-
-NOTE: Standardmäßig ist der Parameter „Rollback-on-placement-Group-Failure“ auf „true“ gesetzt.
-
-. Speichern Sie die Datei und melden Sie sich vom Connector ab.
-+
-Ein Neubooten ist nicht erforderlich.
-
+. Speichern Sie die Datei und melden Sie sich vom Connector ab. Sie müssen den Connector nicht neu starten.
 

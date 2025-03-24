@@ -4,7 +4,7 @@ permalink: task-verify-autosupport.html
 keywords: autosupport, set up autosupport, test autosupport, asup, test asup 
 summary: AutoSupport überwacht proaktiv den Zustand Ihres Systems und sendet Meldungen an den technischen Support von NetApp. Standardmäßig ist AutoSupport auf jedem Node aktiviert, um Meldungen mithilfe des HTTPS-Transportprotokolls an den technischen Support zu senden. Überprüfen Sie am besten, ob AutoSupport diese Meldungen senden kann. 
 ---
-= AutoSupport-Einrichtung überprüfen
+= Überprüfen Sie die AutoSupport-Einrichtung für Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

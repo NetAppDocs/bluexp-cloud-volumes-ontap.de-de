@@ -4,7 +4,7 @@ permalink: task-getting-started-aws-c2s.html
 keywords: commercial cloud services, c2s, secret cloud, top secret cloud, aws secret region, BlueXP 
 summary: 'Ähnlich wie eine Standard-AWS-Region können Sie BlueXP in der AWS Secret Cloud und in Top Secret Cloud-Umgebungen zum Implementieren von Cloud Volumes ONTAP verwenden, die Funktionen der Enterprise-Klasse für Ihren Cloud-Storage bieten. Die Regionen AWS Secret Cloud und Top Secret Cloud sind geschlossene Regionen speziell für die USA Intelligence Community: Die Anweisungen auf dieser Seite gelten nur für Benutzer der AWS Secret Cloud und der Region Top Secret Cloud.' 
 ---
-= Implementieren Sie Cloud Volumes ONTAP in AWS Secret Cloud und Top Secret Cloud-Regionen
+= Implementieren Sie Cloud Volumes ONTAP in AWS Secret Cloud oder AWS Top Secret Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

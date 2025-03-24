@@ -4,7 +4,7 @@ permalink: task-setting-up-kms.html
 keywords: encryption, kms, key management service, cmk, customer master key, master key, key, permissions 
 summary: Wenn Sie Amazon Verschlüsselung mit Cloud Volumes ONTAP verwenden möchten, müssen Sie den AWS Verschlüsselungsmanagement-Service einrichten. 
 ---
-= Einrichten des AWS KMS
+= Richten Sie Cloud Volumes ONTAP zur Verwendung eines vom Kunden gemanagten Schlüssels in AWS ein
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

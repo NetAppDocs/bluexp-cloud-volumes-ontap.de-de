@@ -4,7 +4,7 @@ permalink: concept-azure-image-verification.html
 keywords: Azure, image, VHD, image signature file, 
 summary: Überprüfen Sie die Signaturdateien der Azure VHD-Image-Datei. 
 ---
-= Azure Image Verifizierung – Übersicht
+= Image-Verifizierung für Cloud Volumes ONTAP in Azure Marketplace
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -28,3 +28,13 @@ Die führende 1MB (1048576 Byte) und die letzte 512 Byte VHD-Datei wird von Azur
 image:screenshot_azure_vhd_10gb.png["Ein Bild, das die Abwechselung der 10GB VHD-Datei von Azure zeigt"]
 
 Das obige Diagramm zeigt als Beispiel eine VHD-Datei mit einer Größe von 10 GB. Aber der NetApp-signierte Teil ist grün mit einer Größe von 10GB - 1MB - 512B markiert.
+
+.Weiterführende Links
+* https://pagefault.blog/2019/04/22/how-to-sign-and-verify-using-openssl/["Page Fault Blog: Wie signieren und überprüfen Sie mit OpenSSL"^]
+* https://docs.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-machine-marketplace-image["Erstellen Sie mit Azure Marketplace Image ein VM-Image für Ihre Azure Stack Edge Pro GPU im Microsoft Learn"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/scripts/copy-managed-disks-vhd-to-storage-account["Exportieren/Kopieren einer verwalteten Festplatte in ein Storage-Konto mithilfe der Azure CLI in Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/azure/cloud-shell/quickstart["Azure Cloud Shell Quickstart – Bash Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["So installieren Sie die Azure CLI von Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/storage/blob/copy?view=azure-cli-latest#az-storage-blob-copy-start["az Storage Blob copy – Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli["Anmelden mit Azure CLI – Anmeldung und Authentifizierung – Microsoft Learn"^]
+
