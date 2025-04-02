@@ -100,15 +100,16 @@ Alle Azure-Storage-Konten für Cloud Volumes ONTAP werden über einen vom Kunden
 
 == Schlüsselrotation in Cloud Volumes ONTAP
 
-Wenn Sie eine neue Version Ihres Schlüssels erstellen, verwendet Cloud Volumes ONTAP automatisch die neueste Schlüsselversion, um sicherzustellen, dass Ihre Daten sicher bleiben, ohne dass manuelle Updates erforderlich sind.
+Sie sollten Ihre Verschlüsselungsschlüssel im Azure-Portal konfigurieren. Informationen zum Konfigurieren der Tasten und zum Einrichten der Tastenrotation finden Sie in den folgenden Microsoft Azure-Dokumentationsmaterialien:
 
-.Schritte
-. Navigieren Sie im Azure-Portal zu Ihrem Schlüsselspeicher.
-. Wählen Sie die Taste aus, die Sie drehen möchten.
-. Klicken Sie auf *Neue Version*, um eine neue Version des Schlüssels zu generieren.
+* https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation["Konfigurieren Sie die automatische Drehung des kryptografischen Schlüssels in Azure Key Vault"^]
+* https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-customer-managed-keys-powershell#set-up-an-azure-key-vault-and-diskencryptionset-with-automatic-key-rotation-preview["Azure PowerShell - Aktivieren Sie vom Kunden gemanagte Schlüssel"^]
 
 
-Sobald eine neue Version erstellt wurde, erkennt Cloud Volumes ONTAP automatisch die neueste Version des Schlüssels und verwendet diese für die Verschlüsselung.
+
+NOTE: Nach der Konfiguration der Tasten, stellen Sie sicher, dass Sie haben https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption#customer-managed-keys["Schlüsselrotation im Azure-Portal aktiviert"^], so dass Cloud Volumes ONTAP die neuen Tasten verwenden kann.
+
+Beim Erstellen und Aktivieren einer neuen Version Ihrer Schlüssel erkennt und verwendet Cloud Volumes ONTAP automatisch die neueste Version für die Verschlüsselung. So wird sichergestellt, dass Ihre Daten sicher bleiben, ohne dass manuelle Updates erforderlich sind.
 
 
 

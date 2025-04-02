@@ -20,6 +20,18 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 28 März 2025
+
+
+
+=== Private-Mode-Bereitstellungen aktiviert für Cloud Volumes ONTAP 9.14.1
+
+Sie können Cloud Volumes ONTAP 9.14.1 jetzt im privaten Modus in AWS, Azure und Google Cloud implementieren. Der private Modus ist sowohl für Single-Node- als auch für HA-Implementierungen (High Availability) von Cloud Volumes ONTAP 9.14.1 aktiviert.
+
+Weitere Informationen zu Bereitstellungen im privaten Modus finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#restricted-mode["Weitere Informationen zu BlueXP Implementierungsmodi"^].
+
+
+
 == 12 März 2025
 
 
