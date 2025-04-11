@@ -40,7 +40,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.ht
 
 === Option, den öffentlichen Zugriff auf Storage-Konto für Azure zu beschränken
 
-Sie haben nun die Möglichkeit, den öffentlichen Zugriff auf Ihr Storage-Konto für Cloud Volumes ONTAP-Systeme auf Azure einzuschränken. Wenn Sie den Zugriff deaktivieren, können Sie Ihre private IP-Adresse auch im selben vnet vor der Offenlegung schützen, falls die Sicherheitsrichtlinien Ihres Unternehmens eingehalten werden müssen. Diese Option deaktiviert auch das Daten-Tiering für Ihre Cloud Volumes ONTAP-Systeme und ist sowohl für einzelne Nodes als auch für Hochverfügbarkeitspaare anwendbar.
+Sie haben nun die Möglichkeit, den öffentlichen Zugriff auf Ihr Storage-Konto für Cloud Volumes ONTAP-Systeme in Azure einzuschränken. Wenn Sie den Zugriff deaktivieren, können Sie Ihre private IP-Adresse auch im selben vnet vor der Offenlegung schützen, falls die Sicherheitsrichtlinien Ihres Unternehmens eingehalten werden müssen. Diese Option deaktiviert auch das Daten-Tiering für Ihre Cloud Volumes ONTAP-Systeme und ist sowohl für einzelne Nodes als auch für Hochverfügbarkeitspaare anwendbar.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["Regeln für Sicherheitsgruppen"^].
 

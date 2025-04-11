@@ -16,93 +16,24 @@ summary: Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird
 [role="lead"]
 Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihren Kunden Storage und Datenservices zur Verfügung stellt. Vielleicht wissen Sie das als _SVM_ oder _vServer_. Cloud Volumes ONTAP ist standardmäßig mit einer Storage-VM konfiguriert, aber einige Konfigurationen unterstützen zusätzliche Storage-VMs.
 
+Um zusätzliche Storage-VMs für Datenbereitstellung in Google Cloud zu erstellen und zu managen, sollten Sie die BlueXP -APIs verwenden. Das liegt daran, dass die APIs die Erstellung der Storage-VMs automatisieren und die erforderlichen Netzwerkschnittstellen konfigurieren. Beim Erstellen der Storage-VMs konfiguriert BlueXP  die erforderlichen LIF-Services sowie eine iSCSI LIF, die für ausgehende SMB/CIFS-Kommunikation von der Storage-VM benötigt wird.
+
 
 
 == Unterstützte Anzahl von Storage-VMs
 
-In Google Cloud werden ab Version 9.11.1 mehrere Storage-VMs mit spezifischen Cloud Volumes ONTAP Konfigurationen unterstützt. Wechseln Sie zum https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] Um zu überprüfen, wie viele Storage VMs für Ihre Cloud Volumes ONTAP-Version unterstützt werden.
+Ab Cloud Volumes ONTAP 9.11.1 werden basierend auf Ihrer Lizenz mehrere Storage VMs mit spezifischen Konfigurationen unterstützt. Überprüfen Sie im die https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Versionshinweise zu Cloud Volumes ONTAP"^] unterstützte Anzahl von Storage-VMs für Ihre Version von Cloud Volumes ONTAP.
 
-Alle anderen Cloud Volumes ONTAP Konfigurationen unterstützen eine Storage-VM mit Datenbereitstellung und eine Ziel-Storage-VM für die Disaster Recovery. Sie können die Ziel-Storage-VM für Datenzugriff aktivieren, wenn es einen Ausfall auf der Quell-Storage-VM gibt.
+Alle Versionen von Cloud Volumes ONTAP vor Version 9.11.1 unterstützen nur eine Daten-Serving-VM und eine Ziel-Storage-VM, die für das Disaster Recovery verwendet wurde. Sie können die Ziel-Storage-VM für Datenzugriff aktivieren, wenn es einen Ausfall auf der Quell-Storage-VM gibt.
 
 
 
 == Erstellen einer Storage-VM
 
-Wenn Ihre Lizenz unterstützt wird, können Sie mehrere Storage-VMs auf einem System mit einzelnen Nodes oder auf einem HA-Paar erstellen. Beachten Sie, dass Sie mit der BlueXP  API eine Storage-VM auf einem HA-Paar erstellen müssen, während Sie mit ONTAP System Manager oder der ONTAP CLI eine Storage-VM auf einem einzelnen Node-System erstellen können.
+Basierend auf Konfiguration und Lizenztyp können Sie mithilfe der BlueXP  APIs mehrere Storage VMs auf einem Single Node-System oder in einer HA-Konfiguration (High Availability, Hochverfügbarkeit) erstellen.
 
-
-
-=== Single Node-System
-
-Mit diesen Schritten wird eine neue Storage-VM auf einem System mit einem einzelnen Node mithilfe der CLI erstellt. Eine private IP-Adresse ist erforderlich, um eine Daten-LIF zu erstellen, und eine weitere optionale private IP-Adresse ist erforderlich, um eine Management-LIF zu erstellen.
-
-.Schritte
-. Gehen Sie in Google Cloud zur Cloud Volumes ONTAP-Instanz und fügen Sie nic0 für jede LIF eine IP-Adresse hinzu.
-+
-image:screenshot-gcp-add-ip-range.png["Ein Screenshot der Google Cloud Konsole, in der Sie die Netzwerkschnittstelle für Cloud Volumes ONTAP bearbeiten können, indem Sie einen IP-Bereich hinzufügen."]
-
-+
-Sie benötigen eine IP-Adresse für eine Daten-LIF und eine andere optionale IP-Adresse, wenn Sie eine Management-LIF auf der Storage-VM erstellen möchten.
-
-+
-https://cloud.google.com/vpc/docs/configure-alias-ip-ranges#adding_alias_ip_ranges_to_an_existing_instance["Google Cloud Dokumentation: Hinzufügen von Alias-IP-Bereichen zu einer bestehenden Instanz"^]
-
-. Erstellen Sie die Storage-VM und eine Route zur Storage-VM.
-+
-[source, cli]
-----
-vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-name> -rootvolume-security-style unix
-----
-+
-[source, cli]
-----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
-----
-. Erstellen Sie eine Daten-LIF, indem Sie die IP-Adresse angeben, die Sie in Google Cloud hinzugefügt haben.
-+
-[role="tabbed-block"]
-====
-.ISCSI
---
-[source, cli]
-----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
-----
---
-.NFS oder SMB
---
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
-----
---
-====
-. Optional: Erstellen Sie eine Storage-VM-Management-LIF, indem Sie die IP-Adresse angeben, die Sie in Google Cloud hinzugefügt haben.
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
-----
-. Weisen Sie der Storage-VM ein oder mehrere Aggregate zu.
-+
-[source, cli]
-----
-vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
-----
-+
-Dieser Schritt ist erforderlich, da die neue Storage-VM Zugriff auf mindestens ein Aggregat benötigt, bevor Sie Volumes auf der Storage-VM erstellen können.
-
-
-
-
-
-=== HA-Paar
-
-Sie müssen die BlueXP API verwenden, um eine Speicher-VM auf einem Cloud Volumes ONTAP-System in Google Cloud zu erstellen. Die API (und nicht ONTAP System Manager oder die ONTAP CLI) ist erforderlich, da BlueXP  die Storage VM mit den erforderlichen LIF-Services konfiguriert, sowie eine iSCSI LIF, die für ausgehende SMB/CIFS-Kommunikation benötigt wird.
-
-Beachten Sie, dass BlueXP die erforderlichen IP-Adressen in Google Cloud zuweist und die Storage VM mit einer Daten-LIF für SMB/NFS-Zugriff und einer iSCSI LIF für ausgehende SMB-Kommunikation erstellt.
-
-BlueXP  ändert auch die `default-data-files` Richtlinien der Storage-VMs, indem die folgenden Services von NAS-Daten-LIFs entfernt und den iSCSI-Daten-LIFs hinzugefügt werden:
+.Über diese Aufgabe
+Wenn Sie Storage-VMs mit den APIs erstellen und die erforderlichen Netzwerkschnittstellen konfigurieren, ändert BlueXP  auch die `default-data-files` Richtlinien der Datenspeicher-VMs, indem die folgenden Services von der logischen Schnittstelle für NAS-Daten entfernt und zur iSCSI-Datenschnittstelle hinzugefügt werden, die für Outbound-Managementverbindungen verwendet wird:
 
 * `data-fpolicy-client`
 * `management-ad-client`
@@ -111,52 +42,85 @@ BlueXP  ändert auch die `default-data-files` Richtlinien der Storage-VMs, inde
 * `management-nis-client`
 
 
-Das Ändern der Services ist erforderlich, da Cloud Volumes ONTAP sicherstellen kann, dass die iSCSI-LIF für ausgehende Managementverbindungen verwendet werden kann.
+.Bevor Sie beginnen
+Der Connector erfordert bestimmte Berechtigungen, um Storage-VMs für Cloud Volumes ONTAP HA-Paare zu erstellen. Die erforderlichen Berechtigungen sind in enthalten https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Die von NetApp bereitgestellten Richtlinien"^].
 
-.Erforderliche Google Cloud Berechtigungen
-Für den Connector sind bestimmte Berechtigungen erforderlich, um Storage-VMs für Cloud Volumes ONTAP HA-Paare zu erstellen und zu managen. Die erforderlichen Berechtigungen sind in enthalten https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Die von NetApp bereitgestellten Richtlinien"^].
 
-.Schritte
-. Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM zu erstellen:
-+
-`POST /gcp/ha/working-environments/{workingEnvironmentId}/svm/`
 
-+
-Der Anforderungsgremium sollte Folgendes umfassen:
+=== Single Node-System
 
-+
+Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem System mit einem einzelnen Node zu erstellen.
+
+`POST /gcp/vsa/working-environments/{workingEnvironmentId}/svm`
+
+Nehmen Sie die folgenden Parameter in den Anforderungstext auf:
+
 [source, json]
 ----
-{ "svmName": "myNewSvm1" }
+{ "svmName": "NewSvmName"
+   "svmPassword": "optional value, the API takes the cluster password if not provided"
+   "mgmtLif": "optional value, to create an additional management LIF, if you want to use the storage VM for management purposes"}
 ----
 
 
+=== HA-Paar
+
+Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem HA-Paar zu erstellen:
+
+`POST /gcp/ha/working-environments/{workingEnvironmentId}/svm/`
+
+Nehmen Sie die folgenden Parameter in den Anforderungstext auf:
+
+[source, json]
+----
+{ "svmName": "NewSvmName"
+   "svmPassword": "optional value, the API takes the cluster password if not provided"
+}
+----
 
 
-== Managen Sie Storage VMs auf HA-Paaren
+== Management von Storage VMs
 
-Die BlueXP API unterstützt auch das Umbenennen und Löschen von Storage-VMs auf HA-Paaren.
+Mit den BlueXP  APIs können Sie Storage-VMs in einzelnen Node- und HA-Konfigurationen umbenennen und löschen.
+
+.Bevor Sie beginnen
+Der Connector erfordert bestimmte Berechtigungen für das Management von Storage-VMs für Cloud Volumes ONTAP HA-Paare. Die erforderlichen Berechtigungen sind in enthalten https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Die von NetApp bereitgestellten Richtlinien"^].
 
 
 
 === Benennen Sie eine Storage-VM um
 
-Bei Bedarf können Sie den Namen einer Storage-VM jederzeit ändern.
+Um eine Storage-VM umzubenennen, sollten Sie die Namen der vorhandenen Storage-VM und der neuen Storage-VM als Parameter angeben.
 
 .Schritte
-. Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM umzubenennen:
+* Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem System mit einem einzelnen Node umzubenennen:
 +
-`PUT /gcp/ha/working-environments/{workingEnvironmentId}/svm`
+`PUT /gcp/vsa/working-environments/{workingEnvironmentId}/svm`
 
 +
-Der Anforderungsgremium sollte Folgendes umfassen:
+Nehmen Sie die folgenden Parameter in den Anforderungstext auf:
 
 +
 [source, json]
 ----
 {
-"svmNewName": "newSvmName",
-"svmName": "oldSvmName"
+  "svmNewName": "NewSvmName",
+  "svmName": "OldSvmName"
+}
+----
+* Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem HA-Paar umzubenennen:
++
+`PUT /gcp/ha/working-environments/{workingEnvironmentId}/svm`
+
++
+Nehmen Sie die folgenden Parameter in den Anforderungstext auf:
+
++
+[source, json]
+----
+{
+  "svmNewName": "NewSvmName",
+  "svmName": "OldSvmName"
 }
 ----
 
@@ -165,10 +129,14 @@ Der Anforderungsgremium sollte Folgendes umfassen:
 
 === Löschen einer Speicher-VM
 
-Wenn Sie keine Storage-VM mehr benötigen, können Sie sie aus Cloud Volumes ONTAP löschen.
+Sie können in einem einzelnen Node oder einer HA-Konfiguration eine Storage-VM entfernen, wenn diese nicht über aktive Volumes verfügt.
 
 .Schritte
-. Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM zu löschen:
+* Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem System mit einem einzelnen Node zu löschen:
++
+`DELETE /gcp/vsa/working-environments/{workingEnvironmentId}/svm/{svmName}`
+
+* Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem HA-Paar zu löschen:
 +
 `DELETE /gcp/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 

@@ -16,7 +16,7 @@ summary: Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird
 [role="lead"]
 Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihren Kunden Storage und Datenservices zur Verfügung stellt. Vielleicht wissen Sie das als _SVM_ oder _vServer_. Cloud Volumes ONTAP ist standardmäßig mit einer Storage-VM konfiguriert, Sie können jedoch zusätzliche Storage-VMs erstellen, wenn Sie Cloud Volumes ONTAP in Azure ausführen.
 
-Um zusätzliche Storage-VMs für Datenbereitstellung auf Azure zu erstellen und zu managen, sollten Sie die BlueXP  APIs verwenden. Das liegt daran, dass die APIs die Erstellung der Storage-VMs automatisieren und die erforderlichen Netzwerkschnittstellen konfigurieren. Beim Erstellen der Storage-VMs konfiguriert BlueXP  die erforderlichen LIF-Services sowie eine iSCSI LIF, die für ausgehende SMB/CIFS-Kommunikation von der Storage-VM benötigt wird.
+Um zusätzliche Storage-VMs für Datenbereitstellung in Azure zu erstellen und zu managen, sollten Sie die BlueXP  APIs verwenden. Das liegt daran, dass die APIs die Erstellung der Storage-VMs automatisieren und die erforderlichen Netzwerkschnittstellen konfigurieren. Beim Erstellen der Storage-VMs konfiguriert BlueXP  die erforderlichen LIF-Services sowie eine iSCSI LIF, die für ausgehende SMB/CIFS-Kommunikation von der Storage-VM benötigt wird.
 
 
 
@@ -25,9 +25,6 @@ Um zusätzliche Storage-VMs für Datenbereitstellung auf Azure zu erstellen und 
 Ab Cloud Volumes ONTAP 9.9 werden basierend auf Ihrer Lizenz mehrere Storage VMs mit spezifischen Konfigurationen unterstützt. Überprüfen Sie im die https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Versionshinweise zu Cloud Volumes ONTAP"^] unterstützte Anzahl von Storage-VMs für Ihre Version von Cloud Volumes ONTAP.
 
 Alle Versionen von Cloud Volumes ONTAP vor Version 9.9.0 unterstützen nur eine Daten-Serving-VM und eine Ziel-Storage-VM, die für das Disaster Recovery verwendet wurde. Sie können die Ziel-Storage-VM für Datenzugriff aktivieren, wenn es einen Ausfall auf der Quell-Storage-VM gibt.
-
-.Bevor Sie beginnen
-Der Connector erfordert bestimmte Berechtigungen zum Erstellen und Managen von Storage-VMs für Cloud Volumes ONTAP. Die erforderlichen Berechtigungen sind in enthalten https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Die von NetApp bereitgestellten Richtlinien"^].
 
 
 
@@ -45,6 +42,9 @@ Wenn Sie Storage-VMs mit den APIs erstellen und die erforderlichen Netzwerkschni
 * `management-nis-client`
 
 
+.Bevor Sie beginnen
+Der Connector erfordert bestimmte Berechtigungen zum Erstellen von Storage-VMs für Cloud Volumes ONTAP. Die erforderlichen Berechtigungen sind in enthalten https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Die von NetApp bereitgestellten Richtlinien"^].
+
 
 
 === Single Node-System
@@ -53,7 +53,7 @@ Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem System mit 
 
 `POST /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
-Der Anforderungsgremium sollte Folgendes umfassen:
+Nehmen Sie die folgenden Parameter in den Anforderungstext auf:
 
 [source, json]
 ----
@@ -65,11 +65,11 @@ Der Anforderungsgremium sollte Folgendes umfassen:
 
 === HA-Paar
 
-Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM in einer Azure HA-Konfiguration zu erstellen:
+Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem HA-Paar zu erstellen:
 
 `POST /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
-Der Anforderungsgremium sollte Folgendes umfassen:
+Nehmen Sie die folgenden Parameter in den Anforderungstext auf:
 
 [source, json]
 ----
@@ -83,11 +83,14 @@ Der Anforderungsgremium sollte Folgendes umfassen:
 
 Mit den BlueXP  APIs können Sie Storage-VMs in einzelnen Node- und HA-Konfigurationen umbenennen und löschen.
 
+.Bevor Sie beginnen
+Der Connector erfordert spezielle Berechtigungen für das Management von Storage-VMs für Cloud Volumes ONTAP. Die erforderlichen Berechtigungen sind in enthalten https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Die von NetApp bereitgestellten Richtlinien"^].
+
 
 
 === Benennen Sie eine Storage-VM um
 
-Zum Umbenennen einer Storage-VM sollten Sie die Namen der vorhandenen Storage-VM und die neue Storage-VM als Parameter angeben.
+Um eine Storage-VM umzubenennen, sollten Sie die Namen der vorhandenen Storage-VM und der neuen Storage-VM als Parameter angeben.
 
 .Schritte
 * Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem System mit einem einzelnen Node umzubenennen:
@@ -95,7 +98,7 @@ Zum Umbenennen einer Storage-VM sollten Sie die Namen der vorhandenen Storage-VM
 `PUT /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
 +
-Der Anforderungsgremium sollte Folgendes umfassen:
+Nehmen Sie die folgenden Parameter in den Anforderungstext auf:
 
 +
 [source, json]
@@ -105,12 +108,12 @@ Der Anforderungsgremium sollte Folgendes umfassen:
   "svmName": "OldSvmName"
 }
 ----
-* Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM in einer HA-Konfiguration umzubenennen:
+* Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem HA-Paar umzubenennen:
 +
 `PUT /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
 +
-Der Anforderungsgremium sollte Folgendes umfassen:
+Nehmen Sie die folgenden Parameter in den Anforderungstext auf:
 
 +
 [source, json]
@@ -133,7 +136,7 @@ Sie können in einem einzelnen Node oder einer HA-Konfiguration eine Storage-VM 
 +
 `DELETE /azure/vsa/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
-* Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM in einer HA-Konfiguration zu löschen:
+* Verwenden Sie den folgenden API-Aufruf, um eine Storage-VM auf einem HA-Paar zu löschen:
 +
 `DELETE /azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 

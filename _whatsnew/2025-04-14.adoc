@@ -1,0 +1,11 @@
+= Automatisierte Erstellung von Storage VMs über APIs in Google Cloud
+:allow-uri-read: 
+
+
+
+
+=== Automatisierte Erstellung von Storage VMs über APIs in Google Cloud
+
+Mit den BlueXP  APIs können Sie jetzt die Erstellung von Storage-VMs in Google Cloud automatisieren. Sie verwenden diese Funktion bereits in hochverfügbaren Konfigurationen (HA) von Cloud Volumes ONTAP und können jetzt auch in Implementierungen mit einzelnen Nodes eingesetzt werden. Mithilfe der BlueXP  APIs können Sie zusätzliche Datenservice-Storage-VMs in Ihrer Google Cloud-Umgebung ganz einfach erstellen, umbenennen und löschen, ohne dass die erforderlichen Netzwerkschnittstellen, LIFs und Management-LIFs manuell konfiguriert werden müssen. Diese Automatisierung vereinfacht das Management von Storage VMs.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Managen Sie die Datenservice-Storage-VMs für Cloud Volumes ONTAP in Google Cloud"^]

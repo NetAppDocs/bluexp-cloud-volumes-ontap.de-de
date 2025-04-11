@@ -62,19 +62,19 @@ Die Benutzerauthentifizierung schlägt fehl, und die folgenden Dienste sind weit
 | \https://support.NetApp.com/aods/asupmessage \https://support.NetApp.com/asupprod/post/1.0/postAsup | AutoSupport | Zum Senden von AutoSupport Telemetriedaten an den NetApp Support | Standardmodi und eingeschränkte Modi. | Informationen zu AutoSupport bleiben unzugestellt. 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Öffentlichen Regionen | Kommunikation mit Azure-Services. | Standardmodus, eingeschränkter und privater Modus. | Cloud Volumes ONTAP kann nicht mit dem Azure-Service kommunizieren, um bestimmte BlueXP -Vorgänge auf Azure auszuführen. 
+| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Öffentlichen Regionen | Kommunikation mit Azure-Services. | Standardmodus, eingeschränkter und privater Modus. | Cloud Volumes ONTAP kann nicht mit dem Azure-Service kommunizieren, um bestimmte BlueXP -Vorgänge in Azure auszuführen. 
 
 
-| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | China-Region | Kommunikation mit Azure-Services. | Standardmodus, eingeschränkter und privater Modus. | Cloud Volumes ONTAP kann nicht mit dem Azure-Service kommunizieren, um bestimmte BlueXP -Vorgänge auf Azure auszuführen. 
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | China-Region | Kommunikation mit Azure-Services. | Standardmodus, eingeschränkter und privater Modus. | Cloud Volumes ONTAP kann nicht mit dem Azure-Service kommunizieren, um bestimmte BlueXP -Vorgänge in Azure auszuführen. 
 
 
-| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | Deutschland Region | Kommunikation mit Azure-Services. | Standardmodus, eingeschränkter und privater Modus. | Cloud Volumes ONTAP kann nicht mit dem Azure-Service kommunizieren, um bestimmte BlueXP -Vorgänge auf Azure auszuführen. 
+| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | Deutschland Region | Kommunikation mit Azure-Services. | Standardmodus, eingeschränkter und privater Modus. | Cloud Volumes ONTAP kann nicht mit dem Azure-Service kommunizieren, um bestimmte BlueXP -Vorgänge in Azure auszuführen. 
 
 
-| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | Regierungseinrichtungen | Kommunikation mit Azure-Services. | Standardmodus, eingeschränkter und privater Modus. | Cloud Volumes ONTAP kann nicht mit dem Azure-Service kommunizieren, um bestimmte BlueXP -Vorgänge auf Azure auszuführen. 
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | Regierungseinrichtungen | Kommunikation mit Azure-Services. | Standardmodus, eingeschränkter und privater Modus. | Cloud Volumes ONTAP kann nicht mit dem Azure-Service kommunizieren, um bestimmte BlueXP -Vorgänge in Azure auszuführen. 
 
 
-| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | Regionen des Verteidigungsministeriums der Regierung | Kommunikation mit Azure-Services. | Standardmodus, eingeschränkter und privater Modus. | Cloud Volumes ONTAP kann nicht mit dem Azure-Service kommunizieren, um bestimmte BlueXP -Vorgänge auf Azure auszuführen. 
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | Regionen des Verteidigungsministeriums der Regierung | Kommunikation mit Azure-Services. | Standardmodus, eingeschränkter und privater Modus. | Cloud Volumes ONTAP kann nicht mit dem Azure-Service kommunizieren, um bestimmte BlueXP -Vorgänge in Azure auszuführen. 
 |===
 
 

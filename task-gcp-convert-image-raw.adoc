@@ -20,7 +20,7 @@ Das Image, das zur Bereitstellung neuer Instanzen, Upgrades oder zur Verwendung 
 
 == Warum ist dieser Schritt erforderlich?
 
-Die Bilder von Google Cloud können nicht direkt heruntergeladen werden. Um das Bild mit dem signierten Digest und den Zertifikaten vergleichen zu können, benötigen Sie einen Mechanismus, um die beiden Dateien zu vergleichen und das Bild herunterzuladen. Dazu müssen Sie das Bild in ein Disk.RAW-Format exportieren/konvertieren und die Ergebnisse in einem Storage-Bucket auf Google Cloud speichern. Die Datei Disk.RAW wird getarbt und gzippt.
+Die Bilder von Google Cloud können nicht direkt heruntergeladen werden. Um das Bild mit dem signierten Digest und den Zertifikaten vergleichen zu können, benötigen Sie einen Mechanismus, um die beiden Dateien zu vergleichen und das Bild herunterzuladen. Dazu müssen Sie das Bild in ein Disk.RAW-Format exportieren/konvertieren und die Ergebnisse in einem Speicher-Bucket in Google Cloud speichern. Die Datei Disk.RAW wird getarbt und gzippt.
 
 Das Benutzer-/Servicekonto benötigt Berechtigungen, um Folgendes auszuführen:
 
