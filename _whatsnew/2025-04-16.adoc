@@ -1,0 +1,15 @@
+= In Azure werden neue Regionen unterstützt
+:allow-uri-read: 
+
+
+
+
+=== In Azure werden neue Regionen unterstützt
+
+In Azure können Sie jetzt Cloud Volumes ONTAP 9.12.1 GA und höher in einzelnen und mehreren Verfügbarkeitszonen in folgenden Regionen implementieren. Dies umfasst die Unterstützung von Single-Node- und HA-Implementierungen (High Availability).
+
+* Spanien, Mitte
+* Mexiko-Mitte
+
+
+Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].
