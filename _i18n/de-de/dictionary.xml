@@ -1554,13 +1554,9 @@
   <block id="68935a38790e91889cd56742a47079f3" category="paragraph">Beispielsweise könnten Sie eine einzelne 20-tib-Lizenz erwerben, vier Cloud Volumes ONTAP Systeme implementieren und jedem System dann ein 5-tib-Volume zuweisen, also insgesamt 20 tib. Die Kapazität ist für die Volumes auf jedem in diesem Konto implementierten Cloud Volumes ONTAP System verfügbar.</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">Kapazitätsbasierte Lizenzierung ist in Form eines _package_ erhältlich. Bei der Implementierung eines Cloud Volumes ONTAP Systems haben Sie die Möglichkeit, je nach Ihren geschäftlichen Anforderungen aus mehreren Lizenzierungspaketen auszuwählen.</block>
   <block id="27fe4eb3edbaff8f250e2d51f7462681" category="section-title">Pakete</block>
-  <block id="d7c357dcc3b8476a2eeba19c87ec383d" category="paragraph">Bietet alle Cloud Volumes ONTAP-Funktionen kostenlos von NetApp an (Gebühren für Cloud-Provider gelten noch).</block>
   <block id="24996c045717f17c4e40ebb44791b2af" category="list-text">Lizenz oder Vertrag sind nicht erforderlich.</block>
   <block id="cc3b16b51bb72e66b8f103fef83035d9" category="list-text">Support von NetApp ist nicht inbegriffen.</block>
   <block id="895dacd81cbc05951744c0bce981546c" category="list-text">Sie sind auf 500 gib der bereitgestellten Kapazität pro Cloud Volumes ONTAP System begrenzt.</block>
-  <block id="46cb473c7acee70e9be90113f3acce9d" category="list-text">Sie können bis zu 10 Cloud Volumes ONTAP Systeme mit Freemium-Angebot pro NetApp Konto bei jedem Cloud-Provider nutzen.</block>
-  <block id="16c274138bfaf739b851a1b611d4cdb0" category="list-text">Wenn die bereitgestellte Kapazität für ein Cloud Volumes ONTAP-System 500 gib überschreitet, konvertiert BlueXP das System in das Essentials-Paket.</block>
-  <block id="2b5b1f6feb7719bc282a3518f33b1784" category="paragraph">Alle anderen Systeme mit einer bereitgestellten Kapazität von weniger als 500 gib bleiben auf Freemium (sofern sie mit dem Freemium-Angebot bereitgestellt wurden).</block>
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">Optimiert</block>
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">Sie bezahlen für bereitgestellte Kapazität und I/O-Vorgänge separat.</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP Single Node oder HA</block>
@@ -5646,7 +5642,6 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="95b5ae6b0af18840a3741634cd325668" category="list-text">Bezahlen Sie für mehrere Cloud Volumes ONTAP Systeme Ihres NetApp Kontos durch bereitgestellte Kapazität. Mit der Möglichkeit, zusätzliche Cloud-Datenservices zu erwerben Weitere Informationen zu Nutzungsmodellen in kapazitätsbasierten Lizenzen finden Sie unter <block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>.</block>
   <block id="c3f0a05442b6c8a72739ff963cfeed7f" category="paragraph">Die folgenden kapazitätsbasierten Pakete stehen für Cloud Volumes ONTAP zur Verfügung. Weitere Informationen zu kapazitätsbasierten Lizenzpaketen finden Sie unter <block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>.</block>
   <block id="19a5330bf6f5eac370d1103981c5a834" category="inline-link-macro">Mindestladung</block>
-  <block id="b0890bcc109876c5e12a5adec396926f" category="paragraph">Sobald ein System in das Essentials-Paket konvertiert wird, gilt das<block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block>.</block>
   <block id="f6d538cae99e0f8fa45e7e8780358583" category="paragraph">Informationen dazu, wie Sie diese Konvertierung durchführen können, finden Sie unter <block ref="3fdaa70059ad7f9b695791d3dfebbc25" category="inline-link-macro-rx"></block>.</block>
   <block id="1a7468dd02c2c074fc65d2ee7db41483" category="doc">Mehr zur Performance-Überwachung für Cloud Volumes ONTAP-Workloads</block>
   <block id="554a0d7666ec33e45169ab1eed7eb037" category="doc">Informieren Sie sich über Cloud Volumes ONTAP Datenverschlüsselung und Ransomware-Schutz</block>
@@ -5801,4 +5796,9 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">Bis 16. April 2025</block>
   <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">Bis 3. April 2025</block>
   <block id="bbe4e5e3881ef8307eb1dd518412cb45" category="paragraph">Die automatische kostenlose 30-Tage-Testlizenz für Pay-as-you-go-Abonnements auf dem Marketplace des Cloud-Providers ist nicht mehr in Cloud Volumes ONTAP verfügbar. Die Verrechnung für jede Art von Marketplace-Abonnement (PAYGO oder Jahresvertrag) wird ab der ersten Nutzung ohne einen kostenlosen Testzeitraum aktiviert.</block>
+  <block id="f10f9d69e12a045fa89f83322880ee7c" category="paragraph">Bietet alle Cloud Volumes ONTAP-Funktionen kostenlos von NetApp an (Gebühren für Cloud-Provider gelten noch). Ein Freemium-Paket hat folgende Eigenschaften:</block>
+  <block id="4e2db8f84e83acbb3ce91109a9eef20e" category="list-text">Mit dem Freemium-Angebot pro NetApp-Konto können Sie bis zu 10 Cloud Volumes ONTAP-Systeme bei jedem Cloud-Provider einsetzen.</block>
+  <block id="84befd86706fa21112c130084b373991" category="list-text">Wenn die bereitgestellte Kapazität für ein Cloud Volumes ONTAP-System 500 GB überschreitet, konvertiert BlueXP  das System in ein Essentials-Paket.</block>
+  <block id="a0f8f1341588aae4d56d3b5fb0fde3de" category="paragraph">Sobald ein System in das Essentials-Paket konvertiert wird,  gilt es für dieses Paket<block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block>.</block>
+  <block id="0551862e260539a3a516b4868d9bcead" category="paragraph">Ein Cloud Volumes ONTAP-System, das in ein Essentials-Paket umgewandelt wurde, kann nicht auf Freemium zurückgeschaltet werden, selbst wenn die bereitgestellte Kapazität auf weniger als 500 GiB reduziert wird. Andere Systeme mit weniger als 500 GB bereitgestellter Kapazität verbleiben auf Freemium (sofern sie mit dem Freemium-Angebot implementiert wurden).</block>
 </blocks>
