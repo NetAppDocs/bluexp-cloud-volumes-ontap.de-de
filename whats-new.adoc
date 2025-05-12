@@ -20,6 +20,26 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 
 
+== 12 Mai 2025
+
+
+
+=== Bestandsaufnahme der Implementierungen, die über den Azure Marketplace in BlueXP  durchgeführt wurden
+
+BlueXP  ist jetzt in der Lage, die Cloud Volumes ONTAP Systeme zu erkennen, die direkt über den Azure Marketplace bereitgestellt werden. Das bedeutet, dass Sie diese Systeme jetzt wie beliebige andere Cloud Volumes ONTAP-Systeme in BlueXP  als funktionierende Umgebungen hinzufügen und verwalten können.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Implementieren Sie Cloud Volumes ONTAP über den Azure Marketplace"^]
+
+
+
+=== Möglichkeit zum Tiering von Daten für Azure Mandanten
+
+Sie können nun das Tiering für einen Azure Mandanten in einem Szenario aktivieren, in dem die Cloud Volumes ONTAP Arbeitsumgebung von einem Mandanten erstellt und der BlueXP  Connector von einem anderen erstellt wird. Mithilfe dieser Funktion können Sie denselben Connector für das Tiering von Daten für mehrere Azure-Mandanten verwenden.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["Anforderungen für das Tiering von Daten für einen Azure Mandanten"^]
+
+
+
 == Bis 16. April 2025
 
 

@@ -18,6 +18,8 @@ Eine Storage VM ist eine Virtual Machine, die in ONTAP ausgeführt wird und Ihre
 
 Um zusätzliche Storage-VMs für Datenbereitstellung in Google Cloud zu erstellen und zu managen, sollten Sie die BlueXP -APIs verwenden. Das liegt daran, dass die APIs die Erstellung der Storage-VMs automatisieren und die erforderlichen Netzwerkschnittstellen konfigurieren. Beim Erstellen der Storage-VMs konfiguriert BlueXP  die erforderlichen LIF-Services sowie eine iSCSI LIF, die für ausgehende SMB/CIFS-Kommunikation von der Storage-VM benötigt wird.
 
+Informationen zum Ausführen von Cloud Volumes ONTAP-API-Aufrufen finden Sie unter https://docs.netapp.com/us-en/bluexp-automation/cm/your_api_call.html#step-1-select-the-identifie["Ihr erster API-Aufruf"^].
+
 
 
 == Unterstützte Anzahl von Storage-VMs
@@ -140,4 +142,9 @@ Sie können in einem einzelnen Node oder einer HA-Konfiguration eine Storage-VM 
 +
 `DELETE /gcp/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
+
+
+.Verwandte Informationen
+* https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["Die Verwendung der API wird vorbereitet"^]
+* https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Cloud Volumes ONTAP Workflows"^]
 

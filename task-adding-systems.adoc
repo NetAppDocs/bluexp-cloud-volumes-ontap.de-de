@@ -23,7 +23,7 @@ Sie müssen das Kennwort für das Cloud Volumes ONTAP Admin-Benutzerkonto kennen
 . Wählen Sie im linken Navigationsmenü die Option *Speicherung > Leinwand*.
 . Klicken Sie auf der Seite Arbeitsfläche auf *Arbeitsumgebung hinzufügen*.
 . Wählen Sie den Cloud-Provider aus, in dem sich das System befindet.
-. Wählen Sie den Typ des Cloud Volumes ONTAP Systems aus.
+. Wählen Sie den Typ des hinzuzufügenden Cloud Volumes ONTAP-Systems aus.
 . Klicken Sie auf den Link, um ein vorhandenes System zu ermitteln.
 
 
@@ -33,8 +33,12 @@ ifdef::aws[]
 
 endif::aws[]
 
-. Wählen Sie auf der Seite Region den Bereich aus, in dem die Instanzen ausgeführt werden, und wählen Sie dann die Instanzen aus.
-. Geben Sie auf der Seite Anmeldeinformationen das Kennwort für den Cloud Volumes ONTAP-Admin-Benutzer ein, und klicken Sie dann auf *Los*.
+. Wählen Sie auf der Seite Region eine Region aus. Sie können die Systeme sehen, die in der ausgewählten Region ausgeführt werden.
++
+
+NOTE: Cloud Volumes ONTAP-Systeme werden auf dieser Seite als Instanzen dargestellt. In der Liste können Sie nur die Instanzen auswählen, die mit dem aktuellen Konto registriert sind.
+
+. Geben Sie auf der Seite Anmeldeinformationen das Passwort für den Cloud Volumes ONTAP Admin-Benutzer ein, und wählen Sie dann *Go*.
 
 
 .Ergebnis

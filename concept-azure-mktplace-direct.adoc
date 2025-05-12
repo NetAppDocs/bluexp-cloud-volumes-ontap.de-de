@@ -18,7 +18,9 @@ NetApp bietet zwei Optionen zur Implementierung von Cloud Volumes ONTAP auf Azur
 
 Wenn Sie Cloud Volumes ONTAP direkt über den Azure Marketplace implementieren, müssen Sie weder den BlueXP  Connector noch weitere Sicherheits- und Onboarding-Kriterien erfüllen, die für die Implementierung von Cloud Volumes ONTAP über BlueXP  erforderlich sind. Über den Azure Marketplace kann schnell mit nur wenigen Klicks implementiert und die Kernfunktionen von Cloud Volumes ONTAP in der Umgebung erkundet werden.
 
-Hier ist der Funktionsvergleich zwischen den beiden Optionen:
+Nach Abschluss der Implementierung im Azure Marketplace können Sie diese Systeme in BlueXP  ermitteln. Nach der Erkennung können Sie sie als Arbeitsumgebungen managen und von allen BlueXP  Funktionen profitieren. Siehe link:task-deploy-cvo-azure-mktplc.html["Die in BlueXP  implementierten Systeme"].
+
+Hier ist der Funktionsvergleich zwischen den beiden Optionen. Beachten Sie, dass sich die Funktionen einer eigenständigen Instanz, die über den Azure Marketplace bereitgestellt wird, ändern, wenn sie in BlueXP  erkannt wird.
 
 [cols="3*"]
 |===
@@ -28,7 +30,12 @@ Hier ist der Funktionsvergleich zwischen den beiden Optionen:
 | *Onboarding* | Kürzere, einfachere und minimale Vorbereitung für die direkte Implementierung erforderlich | Längerer Onboarding-Prozess, einschließlich der Installation des BlueXP  Connectors 
 
 
-| *Unterstützte Typen virtueller Maschinen (VM)* | Edsv5 und Lsv3 | Umfassende Auswahl an VM-Typen https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^] 
+| *Unterstützte Typen virtueller Maschinen (VM)*  a| 
+Instanztypen EDS_v5 und LS_v3
+
+
+NOTE: Der Instanztyp L8S_v3 wird im Azure Marketplace für HA-Konfigurationen unterstützt, jedoch nicht in BlueXP . BlueXP  kann sie während der Erkennung nicht korrekt erkennen.
+| Umfassende Auswahl an VM-Typen https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^] 
 
 
 | *Lizenz* | Kostenlose Lizenz | Jede kapazitätsbasierte Lizenz, link:concept-licensing.html["Cloud Volumes ONTAP Lizenzierung"] 
@@ -60,8 +67,6 @@ Hier ist der Funktionsvergleich zwischen den beiden Optionen:
 
 | *FabricPool Tiering* | Nicht unterstützt | Unterstützt 
 |===
-In Zukunft kann der BlueXP  Connector Implementierungen identifizieren, die über den Azure Marketplace direkt implementiert wurden. Auf diese Weise können Sie die erweiterten Funktionen von BlueXP  nutzen.
-
 .Weiterführende Links
 * Direkte Implementierung im Azure Marketplace: link:task-deploy-cvo-azure-mktplc.html["Implementieren Sie Cloud Volumes ONTAP über den Azure Marketplace"]
 * BlueXP  Implementierung: link:task-getting-started-azure.html["Schnellstart für Cloud Volumes ONTAP in Azure"]

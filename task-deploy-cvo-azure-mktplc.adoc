@@ -14,12 +14,12 @@ summary:
 
 
 [role="lead"]
-Ab Cloud Volumes ONTAP 9.16.1 können Sie die direkte Implementierung in Azure Marketplace zur schnellen und einfachen Implementierung von Cloud Volumes ONTAP nutzen. Über den Azure Marketplace kann schnell mit nur wenigen Klicks implementiert und die Kernfunktionen von Cloud Volumes ONTAP in der Umgebung erkundet werden.
+Zur schnellen und einfachen Implementierung von Cloud Volumes ONTAP können Sie die direkte Implementierung von Azure Marketplace nutzen. Über den Azure Marketplace kann schnell mit nur wenigen Klicks implementiert und die Kernfunktionen von Cloud Volumes ONTAP in der Umgebung erkundet werden.
 
 Weitere Informationen zu diesem Angebot finden Sie unter link:concept-azure-mktplace-direct.html["Erfahren Sie mehr über Cloud Volumes ONTAP Angebote auf BlueXP  und dem Markt"].
 
 .Über diese Aufgabe
-Die Instanz von Cloud Volumes ONTAP, die mithilfe der direkten Bereitstellung von Azure Marketplace bereitgestellt wird, verfügt über folgende Eigenschaften:
+Das durch die direkte Bereitstellung von Azure Marketplace bereitgestellte Cloud Volumes ONTAP-System verfügt über diese Eigenschaften. Beachten Sie, dass sich die Funktionen einer eigenständigen Instanz, die über den Azure Marketplace bereitgestellt wird, ändern, wenn sie in BlueXP  erkannt wird.
 
 * Die neueste Cloud Volumes ONTAP-Version (9.16.1 oder höher).
 * Eine kostenlose Lizenz für Cloud Volumes ONTAP, die auf 500 gib bereitgestellter Kapazität beschränkt ist. Diese Lizenz umfasst keinen NetApp-Support und hat kein Ablaufdatum.
@@ -27,12 +27,12 @@ Die Instanz von Cloud Volumes ONTAP, die mithilfe der direkten Bereitstellung vo
 * Standardmäßig ist ein Aggregat für die Instanz erstellt.
 * Ein Premium SSD v2 Managed Disk mit einer bereitgestellten Kapazität von 500 gib sowie ein Root- und eine Datenfestplatte.
 * Eine Storage-VM mit NFS-, CIFS-, iSCSI- und NVMe/TCP-Datenservices wird implementiert. Sie können keine zusätzlichen Datenspeicher-VMs hinzufügen.
-* Lizenzen für NFS, CIFS (SMB), iSCSI, Anti-Ransomware (ARW), SnapLock und SnapMirror installiert.
+* Lizenzen für NFS, CIFS (SMB), iSCSI, Autonomous Ransomware Protection (ARP), SnapLock und SnapMirror installiert.
 * https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["ONTAP temperaturempfindliche Speichereffizienz (TSSE)"^], Volume-Verschlüsselung und externe Schlüsselverwaltung standardmäßig aktiviert.
 * Diese Funktionen werden nicht unterstützt:
 +
 ** FabricPool Tiering
-** Ändern des Instanztyps
+** Ändern des Typs der Storage-VM
 ** Schneller Schreibmodus
 
 
@@ -67,7 +67,7 @@ NOTE: Wenn Sie den Ressourcenanbieter „Microsoft.Storage“ für Ihr Abonnemen
 . Geben Sie auf der Registerkarte *Grundlagen* folgende Informationen an:
 +
 ** *Abonnement*: Wählen Sie ein Abonnement. Die Bereitstellung wird mit der Abonnementnummer verknüpft.
-** *Ressourcengruppe*: Verwenden Sie eine vorhandene Ressourcengruppe oder erstellen Sie eine neue. Ressourcengruppen helfen bei der Zuweisung aller Ressourcen wie Festplatten und Storage-VMs innerhalb einer einzelnen Gruppe für eine Cloud Volumes ONTAP Instanz.
+** *Ressourcengruppe*: Verwenden Sie eine vorhandene Ressourcengruppe oder erstellen Sie eine neue. Ressourcengruppen helfen bei der Zuweisung aller Ressourcen wie Festplatten und Storage-VMs innerhalb einer einzelnen Gruppe für ein Cloud Volumes ONTAP System.
 ** *Region*: Wählen Sie eine Region aus, die Azure HA-Implementierung in einem einzigen AZ unterstützt. In der Liste werden nur die verfügbaren Regionen angezeigt.
 ** *Größe*: Wählen Sie eine Speicher-VM-Größe für die unterstützte Premium SSD v2 Managed Disk.
 ** *Zone*: Wählen Sie eine Zone für die ausgewählte Region aus.
@@ -96,9 +96,9 @@ Sobald der Zugriff möglich ist, melden Sie sich mit ONTAP System Manager oder d
 
 
 
-== Fehlerbehebung
+== Fehlerbehebung bei Bereitstellungsproblemen
 
-Cloud Volumes ONTAP-Implementierungen, die direkt über den Azure Marketplace erstellt wurden, bieten keinen Support von NetApp. Sollten während der Implementierung Probleme auftreten, können Sie eigenständig Fehler beheben und beheben.
+Cloud Volumes ONTAP Systeme, die direkt über den Azure Marketplace bereitgestellt werden, unterstützen keine NetApp. Sollten während der Implementierung Probleme auftreten, können Sie eigenständig Fehler beheben und beheben.
 
 .Schritte
 . Gehen Sie auf der Azure Marketplace-Website zu *Boot Diagnostics > Serial Log*.
@@ -111,6 +111,38 @@ Cloud Volumes ONTAP-Implementierungen, die direkt über den Azure Marketplace er
 
 
 
+
+
+
+== Die in BlueXP  implementierten Systeme
+
+Sie können die über die direkte Bereitstellung von Azure Marketplace implementierten Cloud Volumes ONTAP Systeme erkennen und diese als Arbeitsumgebungen in BlueXP  managen. Der BlueXP  Connector erkennt die Systeme, fügt sie als Arbeitsumgebungen hinzu, wendet die erforderlichen BlueXP -Lizenzen an und sorgt für die volle Nutzung der Funktionen von BlueXP  für diese Systeme. Die ursprüngliche HA-Konfiguration in einem einzelnen AZ mit PSSD v2 Managed Disks bleibt erhalten, und das System ist in demselben Azure-Abonnement und derselben Ressourcengruppe wie die ursprüngliche Implementierung registriert.
+
+.Über diese Aufgabe
+Bei der Erkennung der über die direkte Bereitstellung von Azure Marketplace implementierten Cloud Volumes ONTAP-Systeme führt der BlueXP  Connector die folgenden Aufgaben aus:
+
+* Ersetzt die kostenlosen Lizenzen der entdeckten Systeme als reguläre kapazitätsbasierte link:concept-licensing.html#packages["Freemium-Lizenzen"].
+* Behält die bestehenden Funktionen der implementierten Systeme bei und erweitert die zusätzlichen Funktionen von BlueXP , z. B. Funktionen für Datensicherung, Datenmanagement und Sicherheit
+* Ersetzt die auf den Knoten installierten Lizenzen durch neue ONTAP Lizenzen für NFS, CIFS (SMB), iSCSI, ARP, SnapLock und SnapMirror.
+* Konvertiert die allgemeinen Seriennummern der Nodes in eindeutige Seriennummern.
+* Weist den Ressourcen nach Bedarf neue System-Tags zu.
+* Konvertiert die dynamischen IP-Adressen der Instanz in statische IP-Adressen.
+* Aktiviert die Funktionen von link:task-tiering.html["FabricPool Tiering"], link:task-verify-autosupport.html["AutoSupport"]und link:concept-worm.html["Write-Once-Read-Many"] (WORM) Speicher auf den eingesetzten Systemen. Sie können diese Funktionen bei Bedarf über die BlueXP -Konsole aktivieren.
+* Registriert die Instanzen bei den NSS-Konten, die zur Erkennung verwendet werden.
+* Aktiviert Funktionen für das Kapazitätsmanagement in link:concept-storage-management.html#capacity-management["Automatischer und manueller Modus"] für die erkannten Systeme.
+
+
+.Bevor Sie beginnen
+Stellen Sie sicher, dass die Implementierung im Azure Marketplace abgeschlossen ist. Der BlueXP -Connector kann die Systeme nur erkennen, wenn die Bereitstellung abgeschlossen ist und zur Erkennung verfügbar ist.
+
+
+NOTE: Die direkte Bereitstellung von Azure Marketplace unterstützt Instanztypen L8S_v3. BlueXP  unterstützt jedoch diesen Instanztyp nicht für HA-Konfigurationen und wird ihn während der Erkennung nicht korrekt erkennen können.
+
+.Schritte
+In BlueXP  befolgen Sie das Standardverfahren zur Erkennung vorhandener Systeme. Siehe link:task-adding-systems.html["Fügen Sie ein vorhandenes Cloud Volumes ONTAP-System zu BlueXP  hinzu"].
+
+.Nachdem Sie fertig sind
+Nachdem die Erkennung abgeschlossen ist, können Sie die Systeme anzeigen, die in BlueXP  als Arbeitsumgebungen aufgeführt sind. Sie können verschiedene Verwaltungsaufgaben ausführen, wie link:task-manage-aggregates.html["Erweitern des Aggregats"], , link:task-create-volumes.html["Hinzufügen von Volumes"] link:task-managing-svms-azure.html["Bereitstellung zusätzlicher Storage-VMs"]und link:task-change-azure-vm.html["Ändern der Instanztypen"].
 
 .Weiterführende Links
 Weitere Informationen zum Erstellen von Speicher finden Sie in der Dokumentation zu ONTAP:

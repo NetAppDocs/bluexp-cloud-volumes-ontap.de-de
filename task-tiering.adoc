@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering.html 
-keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket 
+keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket, tenant, multi-tenant tiering 
 summary: Sie können die Storage-Kosten für Cloud Volumes ONTAP senken, indem Sie eine SSD- oder HDD-Performance-Tier für häufig abgerufene Daten mit einem Objekt-Storage-Kapazitäts-Tier für inaktive Daten kombinieren. Data Tiering wird durch FabricPool Technologie unterstützt. 
 ---
 = Tiering inaktiver Cloud Volumes ONTAP Daten auf kostengünstigen Objektspeicher
@@ -47,15 +47,15 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Stellen Sie sicher, dass Sie über ein Aggregat mit aktiviertem Tiering verfügen
 [role="quick-margin-para"]
-Daten-Tiering sollte auf einem Aggregat aktiviert werden, um es auf einem Volume zu ermöglichen. Die Anforderungen für neue Volumes und vorhandene Volumes sollten Sie kennen. <<Ensuring that tiering is enabled on aggregates,Weitere Informationen .>>.
+Daten-Tiering sollte auf einem Aggregat aktiviert werden, um es auf einem Volume zu ermöglichen. Die Anforderungen für neue Volumes und vorhandene Volumes sollten Sie kennen. <<Stellen Sie sicher, dass Tiering auf Aggregaten aktiviert ist,Weitere Informationen .>>.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Wählen Sie eine Tiering-Richtlinie beim Erstellen, Ändern oder Replizieren eines Volume
 [role="quick-margin-para"]
 BlueXP fordert Sie auf, beim Erstellen, Ändern oder Replizieren eines Volumes eine Tiering-Richtlinie auszuwählen.
 
 [role="quick-margin-list"]
-* link:task-tiering.html#tiering-data-from-read-write-volumes["Tiering von Daten auf Lese-/Schreib-Volumes"]
-* link:task-tiering.html#tiering-data-from-data-protection-volumes["Tiering von Daten auf Data-Protection-Volumes"]
+* link:task-tiering.html#tier-data-from-read-write-volumes["Tiering von Daten aus Volumes mit Lese- und Schreibzugriffen"]
+* link:task-tiering.html#tier-data-from-data-protection-volumes["Daten-Tiering von Datensicherungs-Volumes"]
 
 
 [NOTE]
@@ -65,7 +65,7 @@ BlueXP fordert Sie auf, beim Erstellen, Ändern oder Replizieren eines Volumes e
 * Sie müssen keinen Objektspeicher für die Kapazitäts-Tier erstellen. BlueXP ist das für Sie.
 * Sie müssen das Daten-Tiering auf Systemebene nicht aktivieren.
 +
-BlueXP  erstellt beim Erstellen des Systems einen Objektspeicher für kalte Daten<<Enabling data tiering after implementing the requirements,Solange es keine Verbindungs- oder Berechtigungsprobleme gibt>>. Danach müssen Sie nur Daten-Tiering auf Volumen aktivieren (und in einigen Fällen, <<Ensuring that tiering is enabled on aggregates,Auf Aggregaten>>).
+BlueXP  erstellt beim Erstellen des Systems einen Objektspeicher für kalte Daten<<Aktivieren Sie Daten-Tiering nach der Implementierung der Anforderungen,Solange es keine Verbindungs- oder Berechtigungsprobleme gibt>>. Danach müssen Sie nur Daten-Tiering auf Volumen aktivieren (und in einigen Fällen, <<Stellen Sie sicher, dass Tiering auf Aggregaten aktiviert ist,Auf Aggregaten>>).
 
 
 
@@ -163,6 +163,17 @@ Sie müssen keine Verbindung zwischen der Performance- und der Kapazitäts-Tier 
 "Microsoft.Network/routeTables/join/action",
 ----
 Die benutzerdefinierte Rolle enthält standardmäßig die Berechtigungen. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Zeigen Sie die Azure-Berechtigung für den Connector an"^]
+
+
+
+=== Anforderungen für das Tiering von Daten für einen Azure Mandanten
+
+Sie können denselben Connector verwenden, um Daten für mehrere Azure Mandanten zu verschieben. Um in einem Szenario, in dem die Cloud Volumes ONTAP-Arbeitsumgebung von einem Mandanten erstellt und der Connector von einem anderen erstellt wird, Tiering für einen Azure Mandanten zu aktivieren, müssen Sie Folgendes sicherstellen:
+
+* Sie haben die Anmeldeinformationen für beide Mandanten in BlueXP  zur Kreuzvalidierung eingegeben. Siehe https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Azure Zugangsdaten und Marketplace-Abonnements für BlueXP managen"^].
+* Sie haben das virtuelle Netzwerk (vnet) Peering zwischen den beiden Mandanten aktiviert https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview["Im Azure-Portal"^]. Dies ist erforderlich, damit der Connector auf das Speicherkonto des anderen Mandanten zugreifen kann.
+* Sie müssen link:task-enabling-private-link.html#disable-azure-private-links-and-use-service-endpoints-instead["Private Links für Azure deaktiviert"]den Subnetz-Service-Endpunkt verwenden.
+
 
 endif::azure[]
 
