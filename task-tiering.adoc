@@ -86,8 +86,9 @@ ifdef::aws[]
 * Beim Performance-Tier können es sich um allgemeine SSDs (gp3 oder gp2) oder bereitgestellte IOPS-SSDs (io1) handelt.
 +
 
-NOTE: Bei der Verwendung von durchsatzoptimierten HDDs (st1) wird kein Tiering von Daten zu Objekt-Storage empfohlen.
+NOTE: Wir empfehlen, bei Verwendung von durchsatzoptimierten HDDs (st1) keine Datenschichtung in Objektspeicher vorzunehmen.
 
+* Die inaktiven Daten werden in Amazon S3-Buckets verteilt. Die Verteilung auf andere Anbieter wird nicht unterstützt.
 
 
 endif::aws[]
@@ -105,6 +106,7 @@ ifdef::azure[]
 
 
 * Es kann sich bei dem Performance-Tier um von Premium-SSDs gemanagte Festplatten, von Standard-SSDs gemanagte Festplatten oder Standard-HDDs geben.
+* Die inaktiven Daten werden in Microsoft Azure Blob ausgelagert. Die Auslagerung auf andere Anbieter wird nicht unterstützt.
 
 
 endif::azure[]
@@ -117,6 +119,7 @@ ifdef::gcp[]
 
 * Daten-Tiering wird in Google Cloud ab Cloud Volumes ONTAP 9.6 unterstützt.
 * Beim Performance-Tier können es sich entweder um persistente SSD-Festplatten, ausgewogene persistente Festplatten oder um Standard-persistente Festplatten handeln.
+* Die inaktiven Daten werden in Google Cloud Storage ausgelagert. Eine Auslagerung auf andere Anbieter wird nicht unterstützt.
 
 
 endif::gcp[]
