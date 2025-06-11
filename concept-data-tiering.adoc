@@ -84,7 +84,12 @@ BlueXP erstellt das Speicherkonto mit den folgenden Einstellungen:
 
 * Zugriffsebene: Heiß
 * Leistung: Standard
-* Redundanz: Lokal redundanter Storage (LRS)
+* Redundanz: Entsprechend der Cloud Volume ONTAP-Bereitstellung
++
+** Einzelne Verfügbarkeitszone: Lokal redundanter Speicher (LRS)
+** Mehrere Verfügbarkeitszonen: Zonenredundanter Speicher (ZRS)
+
+
 * Konto: StorageV2 (allgemeine Zwecke v2)
 * Sichere Übertragung für REST-API-Vorgänge nötig: Aktiviert
 * Zugriff auf Schlüssel des Storage-Kontos: Aktiviert
