@@ -4,7 +4,7 @@ permalink: concept-azure-image-verification.html
 keywords: Azure, image, VHD, image signature file, 
 summary: Überprüfen Sie die Signaturdateien der Azure VHD-Image-Datei. 
 ---
-= Image-Verifizierung für Cloud Volumes ONTAP in Azure Marketplace
+= Azure Marketplace-Imageüberprüfung für Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,20 +14,20 @@ summary: Überprüfen Sie die Signaturdateien der Azure VHD-Image-Datei.
 
 
 [role="lead"]
-Die Azure-Image-Verifizierung erfüllt erweiterte Sicherheitsanforderungen von NetApp. Die Verifizierung einer Bilddatei ist zwar ein einfacher Vorgang, doch aufgrund eines Wechsels des Azure Marketplace erfordert die Überprüfung der Bildsignaturen bei Azure aufgrund einer speziellen Übergabe an die bekannte Azure VHD Bilddatei.
+Die Azure-Image-Verifizierung erfüllt erweiterte Sicherheitsanforderungen von NetApp. Das Überprüfen einer Imagedatei ist ein unkomplizierter Vorgang. Bei der Überprüfung der Azure-Imagesignatur sind jedoch besondere Überlegungen für die Azure-VHD-Imagedatei erforderlich, da diese im Azure Marketplace geändert wird.
 
 
-NOTE: Die Azure-Image-Verifizierung wird von der Cloud Volumes ONTAP Softwareversion 9.15.0 oder höher unterstützt.
+NOTE: Die Azure-Image-Verifizierung wird auf Cloud Volumes ONTAP 9.15.0 und höher unterstützt.
 
 
 
 == Änderung veröffentlichter VHD-Dateien in Azure
 
-Die führende 1MB (1048576 Byte) und die letzte 512 Byte VHD-Datei wird von Azure geändert. NetApp Image Signing überspringt die ersten 1 MB und die letzten 512 Byte und signiert den verbleibenden VHD-Bildbereich.
+Die 1 MB (1048576 Bytes) am Anfang und die 512 Bytes am Ende der VHD-Datei werden von Azure geändert. NetApp signiert die restliche VHD-Datei.
 
 image:screenshot_azure_vhd_10gb.png["Ein Bild, das die Abwechselung der 10GB VHD-Datei von Azure zeigt"]
 
-Das obige Diagramm zeigt als Beispiel eine VHD-Datei mit einer Größe von 10 GB. Aber der NetApp-signierte Teil ist grün mit einer Größe von 10GB - 1MB - 512B markiert.
+Im Beispiel ist die VHD-Datei 10 GB groß. Der von NetApp signierte Teil ist grün markiert (10 GB – 1 MB – 512 Bytes).
 
 .Weiterführende Links
 * https://pagefault.blog/2019/04/22/how-to-sign-and-verify-using-openssl/["Page Fault Blog: Wie signieren und überprüfen Sie mit OpenSSL"^]

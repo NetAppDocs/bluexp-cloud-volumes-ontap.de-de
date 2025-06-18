@@ -183,7 +183,7 @@ Category: kms_wrapped_key_status
 3 entries were displayed.
 ----
 +
-Wenn der `service_reachability` Status ist nicht `OK`, Die SVM kann den Azure Key Vault Service nicht mit allen erforderlichen Konnektivitäts- und Berechtigungen erreichen. Stellen Sie sicher, dass Ihre Azure Netzwerkrichtlinien und Ihr Routing Ihr privates vnet nicht an den öffentlichen Endpunkt von Azure KeyVault blockieren. Falls dies der Fall ist, sollten sie einen Azure Private Endpunkt zum Zugriff auf den Schlüsselvaults innerhalb der vnet-Umgebung verwenden. Möglicherweise müssen Sie auch einen statischen Hosteintrag auf Ihrer SVM hinzufügen, um die private IP-Adresse für Ihren Endpunkt zu lösen.
+Wenn die  `service_reachability` Status ist nicht  `OK` , kann die SVM den Azure Key Vault-Dienst nicht mit der erforderlichen Konnektivität und den erforderlichen Berechtigungen erreichen. Stellen Sie sicher, dass Ihre Azure-Netzwerkrichtlinien und das Routing Ihr privates virtuelles Netzwerk nicht daran hindern, den öffentlichen Azure Key Vault-Endpunkt zu erreichen. Falls dies der Fall ist, sollten sie einen Azure Private Endpunkt zum Zugriff auf den Schlüsselvaults innerhalb der vnet-Umgebung verwenden. Möglicherweise müssen Sie auch einen statischen Hosteintrag auf Ihrer SVM hinzufügen, um die private IP-Adresse für Ihren Endpunkt zu lösen.
 
 +
 Der `kms_wrapped_key_status` Wird berichten `UNKNOWN` Bei der Erstkonfiguration. Sein Status ändert sich in `OK` Nach der Verschlüsselung des ersten Volume.
@@ -197,9 +197,12 @@ Bei korrekter Konfiguration erstellt Cloud Volumes ONTAP automatisch das Volume 
 
 . Bestätigen Sie, dass das Volume ordnungsgemäß erstellt und verschlüsselt wurde. Wenn das der Fall ist, wird der angezeigt `-is-encrypted` Der Parameter wird als angezeigt `true`.
 `vol show -vserver _SVM_name_ -fields is-encrypted`
+. Optional: Wenn Sie die Anmeldeinformationen im Azure Key Vault-Authentifizierungszertifikat aktualisieren möchten, verwenden Sie den folgenden Befehl: 
+`security key-manager external azure update-credentials -vserver v1 -authentication-method certificate`
 
 
 .Weiterführende Links
 * link:task-set-up-azure-encryption.html["Cloud Volumes ONTAP einrichten, um einen vom Kunden gemanagten Schlüssel in Azure zu verwenden"]
 * https://learn.microsoft.com/en-us/azure/key-vault/general/overview["Microsoft Azure Docmentation: About Azure Key Vault"^]
+* https://docs.netapp.com/us-en/ontap-cli/index.html["ONTAP-Befehlsreferenzhandbuch"^]
 

@@ -17,7 +17,7 @@ summary: Überprüfen Sie mit OpenSSL, ob die heruntergeladene Datei Disk.RAW vo
 Sie können die heruntergeladene Datei „Disk.RAW“ von Google Cloud anhand der über den verfügbaren Inhalte der Digest-Datei überprüfen https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^] OpenSSL verwenden.
 
 
-NOTE: Die OpenSSL-Befehle zur Validierung des Images sind mit Linux, Mac OS und Windows-Maschinen kompatibel.
+NOTE: Die OpenSSL-Befehle zur Validierung des Images sind mit Linux-, macOS- und Windows-Computern kompatibel.
 
 .Schritte
 . Überprüfen Sie das Zertifikat mit OpenSSL.

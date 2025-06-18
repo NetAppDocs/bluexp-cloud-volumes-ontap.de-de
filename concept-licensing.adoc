@@ -42,7 +42,7 @@ Beispielsweise könnten Sie eine einzelne 20-tib-Lizenz erwerben, vier Cloud Vol
 Kapazitätsbasierte Lizenzierung ist in Form eines _package_ erhältlich. Bei der Implementierung eines Cloud Volumes ONTAP Systems haben Sie die Möglichkeit, je nach Ihren geschäftlichen Anforderungen aus mehreren Lizenzierungspaketen auszuwählen.
 
 
-NOTE: Während die tatsächliche Nutzung und Nutzungsmessung für die in BlueXP gemanagten Produkte und Services immer in gib und tib berechnet werden, werden die Begriffe GB/gib und TB/tib synonym verwendet. Dies spiegelt sich in den Angeboten, Preisangeboten, Listenbeschreibungen und anderen Begleitdokumenten des Cloud Marketplace wider.
+NOTE: Während die tatsächliche Nutzung und Nutzungsmessung für die in BlueXP gemanagten Produkte und Services immer in gib und tib berechnet werden, werden die Begriffe GB/gib und TB/tib synonym verwendet. Dies spiegelt sich in den Einträgen im Cloud-Marktplatz, Preisangeboten, Eintragsbeschreibungen und in anderen unterstützenden Dokumenten wider.
 
 
 

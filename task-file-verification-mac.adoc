@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-file-verification-mac.html 
-keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, Mac OS 
-summary: Überprüfen Sie eine exportierte VHD-Dateisignatur über das Cloud Volumes ONTAP-Image-Digest-Dateiwerkzeug unter Mac OS 
+keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, macOS 
+summary: Überprüfen Sie die Signatur einer exportierten VHD-Datei mit dem Cloud Volumes ONTAP Image Digest File Tool auf macOS. 
 ---
-= Überprüfen Sie die Signatur des Azure Marketplace-Images für Cloud Volumes ONTAP unter MAC OS
+= Überprüfen der Azure Marketplace-Imagesignatur für Cloud Volumes ONTAP unter macOS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,41 +14,31 @@ summary: Überprüfen Sie eine exportierte VHD-Dateisignatur über das Cloud Vol
 
 
 [role="lead"]
-Sie können eine exportierte VHD-Dateisignatur für Mac OS überprüfen, indem Sie die folgenden Schritte ausführen.
+Die Überprüfung der Signatur einer exportierten VHD-Datei unter Linux umfasst die Validierung der Vertrauenskette, das Bearbeiten der Datei und die Überprüfung der Signatur.
 
 .Schritte
-. Laden Sie die Datei Azure Image Digest von der herunter https://mysupport.netapp.com/site/["NetApp Support Website"^] Und extrahieren Sie die Digest-Datei(.SIG), die Zertifikatdatei des öffentlichen Schlüssels(.pem) und die Zertifikatdatei der Kette(.pem).
+. Laden Sie die Azure-Imagedatei von der  https://mysupport.netapp.com/site/["NetApp Support Website"^] und extrahieren Sie die Digest-Datei (.sig), die Public-Key-Zertifikatdatei (.pem) und die Kettenzertifikatdatei (.pem).
 +
-Siehe https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Azure Image Digest Datei herunterladen"^] Finden Sie weitere Informationen.
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Herunterladen der Azure-Image-Digest-Datei"^] .
 
 . Überprüfen Sie die Vertrauenskette.
 +
-[listing]
+[source, cli]
 ----
 % openssl verify -CAfile Certificate-Chain-9.15.0P1_azure.pem Certificate-9.15.0P1_azure.pem
 Certificate-9.15.0P1_azure.pem: OK
 ----
-. Entfernen Sie die führende 1 MB (1048576 Byte) und die letzte 512 Byte VHD-Datei.
+. Entfernen Sie 1 MB (1.048.576 Bytes) am Anfang und 512 Bytes am Ende der VHD-Datei. Bei Verwendung  `tail` , Die  `-c +K` Die Option generiert Bytes aus dem K-ten Byte der Datei. , dass die Ausführung des Tail-Befehls unter macOS etwa zehn Minuten dauern kann.
 +
-Wenn 'Tail' verwendet wird, gibt die Option '-c +K' Bytes beginnend mit den KTH Bytes aus
-Der angegebenen Datei. Daher wird 1048577 an 'tail -c' übergeben. Es dauert ca. 13m
-Damit der tail-Befehl unter Mac OS abgeschlossen wird.
-
-+
-[listing]
+[source, cli]
 ----
 % tail -c +1048577 ./9150.01000024.05090105.vhd > ./sign.tmp.tail
 % head -c -512 ./sign.tmp.tail > sign.tmp
 % rm ./sign.tmp.tail
 ----
-. Verwenden Sie openssl, um den öffentlichen Schlüssel aus dem Zertifikat zu extrahieren und den gestreiften Schlüssel zu überprüfen
-Datei(sign.tmp) mit Signaturdatei und öffentlichem Schlüssel.
+. Verwenden Sie OpenSSL, um den öffentlichen Schlüssel aus dem Zertifikat zu extrahieren und die extrahierte Datei (sign.tmp) mit der Signaturdatei und dem öffentlichen Schlüssel zu verifizieren. In der Eingabeaufforderung werden Meldungen angezeigt, die den Erfolg oder Misserfolg der Verifizierung bestätigen.
 +
-Wenn die Eingabedatei die Überprüfung besteht, wird im Befehl „Überprüfung OK“ angezeigt.
-Andernfalls wird „Überprüfungsfehler“ angezeigt.
-
-+
-[listing]
+[source, cli]
 ----
 % openssl x509 -pubkey -noout -in ./Certificate-9.15.0P1_azure.pem > ./Code-Sign-Cert-Public-key.pub
 
@@ -60,7 +50,7 @@ Verification Failure
 ----
 . Den Arbeitsbereich bereinigen.
 +
-[listing]
+[source, cli]
 ----
 % rm ./9150.01000024.05090105.vhd ./sign.tmp
 % rm *.sig *.pub *.pem
