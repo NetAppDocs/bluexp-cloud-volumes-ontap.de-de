@@ -78,23 +78,15 @@ Die Benutzerauthentifizierung schlägt fehl, und die folgenden Dienste sind weit
 |===
 
 
-==== Outbound-Internetzugang für NetApp AutoSupport
+=== Netzwerkkonfigurationen zur Unterstützung des Connector-Proxys
 
-Cloud Volumes ONTAP Nodes benötigen Outbound-Internetzugang für NetApp AutoSupport, der den Zustand Ihres Systems proaktiv überwacht und Meldungen an den technischen Support von NetApp sendet.
+Sie können die für den BlueXP Connector konfigurierten Proxyserver verwenden, um ausgehenden Internetzugriff von Cloud Volumes ONTAP zu ermöglichen. BlueXP unterstützt zwei Proxy-Typen:
 
-Routing- und Firewall-Richtlinien müssen HTTPS-Datenverkehr an die folgenden Endpunkte zulassen, damit Cloud Volumes ONTAP AutoSupport Meldungen senden kann:
-
-* \https://support.netapp.com/aods/asupmessage
-* \https://support.netapp.com/asupprod/post/1.0/postAsup
+* *Expliziter Proxy*: Der ausgehende Datenverkehr von Cloud Volumes ONTAP verwendet die HTTP-Adresse des Proxyservers, der bei der Connector-Proxy-Konfiguration angegeben wurde. Der Connector-Administrator hat möglicherweise auch Benutzeranmeldeinformationen und Root-CA-Zertifikate für zusätzliche Authentifizierung konfiguriert. Wenn ein Root-CA-Zertifikat für den expliziten Proxy verfügbar ist, stellen Sie sicher, dass Sie dasselbe Zertifikat abrufen und in Ihre Cloud Volumes ONTAP Arbeitsumgebung hochladen. Verwenden Sie dazu  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: Sicherheitszertifikat installieren"^] Befehl.
+* *Transparenter Proxy*: Das Netzwerk ist so konfiguriert, dass ausgehender Datenverkehr von Cloud Volumes ONTAP automatisch über den Connector-Proxy geleitet wird. Beim Einrichten eines transparenten Proxys muss der Connector-Administrator lediglich ein Root-CA-Zertifikat für die Konnektivität von Cloud Volumes ONTAP angeben, nicht die HTTP-Adresse des Proxy-Servers. Stellen Sie sicher, dass Sie dasselbe Root-CA-Zertifikat abrufen und in Ihre Cloud Volumes ONTAP Arbeitsumgebung hochladen. Verwenden Sie dazu  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: Sicherheitszertifikat installieren"^] Befehl.
 
 
-Wenn keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten verfügbar ist, konfiguriert BlueXP Ihre Cloud Volumes ONTAP-Systeme automatisch so, dass der Connector als Proxy-Server verwendet wird. Die einzige Anforderung besteht darin, sicherzustellen, dass die Sicherheitsgruppe des Connectors _eingehende_ -Verbindungen über Port 3128 zulässt. Nach der Bereitstellung des Connectors müssen Sie diesen Port öffnen.
-
-Wenn Sie strenge ausgehende Regeln für Cloud Volumes ONTAP definiert haben, müssen Sie auch sicherstellen, dass die Cloud Volumes ONTAP-Sicherheitsgruppe _Outbound_-Verbindungen über Port 3128 zulässt.
-
-Nachdem Sie bestätigt haben, dass der ausgehende Internetzugang verfügbar ist, können Sie AutoSupport testen, um sicherzustellen, dass er Nachrichten senden kann. Anweisungen hierzu finden Sie im https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP-Dokumentation: AutoSupport einrichten"^].
-
-Wenn Sie von BlueXP darüber informiert werden, dass AutoSupport-Meldungen nicht gesendet werden können, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Fehler bei der AutoSupport Konfiguration beheben"].
+Informationen zum Konfigurieren von Proxy-Servern für den BlueXP Connector finden Sie im  https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["Konfigurieren Sie einen Konnektor für die Verwendung eines Proxy-Servers"^] .
 
 
 
@@ -494,4 +486,9 @@ Wenn Sie noch keinen Connector erstellt haben, sollten Sie auch die Netzwerkanfo
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Zeigen Sie die Netzwerkanforderungen für den Connector an"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Für Sicherheitsgruppen gibt es in Azure Regeln"^]
+
+
+.Verwandte Themen
+* link:task-verify-autosupport.html["Überprüfen Sie die AutoSupport-Einrichtung für Cloud Volumes ONTAP"]
+* https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["Informieren Sie sich über interne ONTAP Ports"^].
 

@@ -147,4 +147,6 @@ Sie können in einem einzelnen Node oder einer HA-Konfiguration eine Storage-VM 
 .Verwandte Informationen
 * https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["Die Verwendung der API wird vorbereitet"^]
 * https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Cloud Volumes ONTAP Workflows"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-connector-identifier["Abrufen der erforderlichen Kennungen"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/use_rest_apis.html["Verwenden Sie die BlueXP REST-APIs"^]
 

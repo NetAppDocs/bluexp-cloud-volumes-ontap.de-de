@@ -135,9 +135,6 @@ Bei der Erkennung der über die direkte Bereitstellung von Azure Marketplace imp
 .Bevor Sie beginnen
 Stellen Sie sicher, dass die Implementierung im Azure Marketplace abgeschlossen ist. Der BlueXP -Connector kann die Systeme nur erkennen, wenn die Bereitstellung abgeschlossen ist und zur Erkennung verfügbar ist.
 
-
-NOTE: Die direkte Bereitstellung von Azure Marketplace unterstützt Instanztypen L8S_v3. BlueXP  unterstützt jedoch diesen Instanztyp nicht für HA-Konfigurationen und wird ihn während der Erkennung nicht korrekt erkennen können.
-
 .Schritte
 In BlueXP  befolgen Sie das Standardverfahren zur Erkennung vorhandener Systeme. Siehe link:task-adding-systems.html["Fügen Sie ein vorhandenes Cloud Volumes ONTAP-System zu BlueXP  hinzu"].
 

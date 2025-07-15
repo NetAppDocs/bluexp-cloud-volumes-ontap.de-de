@@ -331,8 +331,6 @@
   <block id="72928bd9aacf64df0eb1285c03f5f5c0" category="section-title">Anforderungen für Cloud Volumes ONTAP</block>
   <block id="098d8cb8c4a1291e10ee07b333610f24" category="paragraph">Die folgenden Netzwerkanforderungen müssen in Azure erfüllt werden.</block>
   <block id="c8f224037ea295aeec347c94779d9932" category="section-title">Outbound-Internetzugang</block>
-  <block id="2963bb3da6cd2f26e6b000d48fda5b9c" category="inline-link-macro">Fehler bei der AutoSupport Konfiguration beheben</block>
-  <block id="c88f764485548292578f2128d1953adc" category="paragraph">Wenn Sie von BlueXP darüber informiert werden, dass AutoSupport-Meldungen nicht gesendet werden können, <block ref="b6432223d87858d9cd4e446578247e88" category="inline-link-macro-rx"></block>.</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="section-title">IP-Adressen</block>
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">Beachten Sie, dass BlueXP in Azure eine SVM Management-LIF auf HA-Paaren erstellt, nicht jedoch auf Systemen mit einzelnen Nodes.</block>
   <block id="0af87aead9b1478c9d33afc90cbcbf02" category="section-title">Sichere Verbindung zu Azure Services</block>
@@ -1320,9 +1318,6 @@
   <block id="9bbb7f4f51c49edeb24f8a9b17a2d5f4" category="inline-link">Erforderliche gemeinsame VPC-Berechtigungen für die Connector-Implementierung prüfen</block>
   <block id="0d8050524ef140aadb3a681481890b39" category="list-text">Paketspiegelung in VPCs</block>
   <block id="4d6aebef0af2c2c1118b467bdf0dadf0" category="inline-link">Paketspiegelung</block>
-  <block id="99ac8cc27f368522d020a76c65551219" category="list-text">Für Cloud Volumes ONTAP ist ein Outbound-Internetzugang für NetApp AutoSupport erforderlich, der den Zustand Ihres Systems proaktiv überwacht und Meldungen an den technischen Support von NetApp sendet.</block>
-  <block id="c44db905496bb7220714be5427afb035" category="paragraph">Wenn keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten verfügbar ist, konfiguriert BlueXP Ihre Cloud Volumes ONTAP-Systeme automatisch so, dass der Connector als Proxy-Server verwendet wird. Die einzige Anforderung besteht darin, sicherzustellen, dass die Firewall des Connectors _Inbound_-Verbindungen über Port 3128 zulässt. Nach der Bereitstellung des Connectors müssen Sie diesen Port öffnen.</block>
-  <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">Wenn Sie strenge ausgehende Regeln für Cloud Volumes ONTAP festgelegt haben, müssen Sie auch sicherstellen, dass die Cloud Volumes ONTAP-Firewall _Outbound_-Verbindungen über Port 3128 zulässt.</block>
   <block id="4c896c50345c5252f4b0e8fc4bf10723" category="admonition">Wenn Sie ein HA-Paar verwenden, benötigt der HA Mediator keinen Outbound-Internetzugang.</block>
   <block id="af5123aa908861af9755bea4400d279c" category="list-text">Private IP-Adressen</block>
   <block id="c0d1b864d00da3eb6415590dfa2621ab" category="paragraph">Sie können die Erstellung der Storage-VM (SVM)-Management-LIF überspringen, wenn Sie Cloud Volumes ONTAP mithilfe der API implementieren und folgende Flag angeben:</block>
@@ -1579,7 +1574,6 @@
   <block id="30603aec25d6436b9b4c18f5e88da521" category="paragraph">Bei diesem Lizenzmodell unterstützt jedes einzelne Cloud Volumes ONTAP System bis zu 2 PiB Kapazität durch Festplatten und Tiering zu Objekt-Storage.</block>
   <block id="28d17a1ec8598824eb0c46f1ef2668af" category="paragraph">Bei der Lizenz selbst gibt es keine maximale Kapazitätsgrenze.</block>
   <block id="170d227d215fb560bb4c8ad4e345183a" category="section-title">Maximale Anzahl an Systemen</block>
-  <block id="34010f1e0d61721ccadb44d47c32e547" category="paragraph">Bei der kapazitätsbasierten Lizenzierung ist die maximale Anzahl von Cloud Volumes ONTAP Systemen auf 20 pro NetApp Konto begrenzt. Ein _System_ ist ein Cloud Volumes ONTAP HA-Paar, ein Cloud Volumes ONTAP Single Node System oder zusätzliche, von Ihnen erstellte Storage VMs. Die standardmäßige Storage-VM wird nicht mit dem Grenzwert gezählt. Diese Begrenzung gilt für alle Lizenzmodelle.</block>
   <block id="ee39f25358b04b9ab4c35e9b485d2797" category="paragraph">Nehmen wir beispielsweise an, Sie haben drei Arbeitsumgebungen:</block>
   <block id="35851ad4214e2cb5358ee8d010fd31e9" category="list-text">Ein Cloud Volumes ONTAP-System mit einem einzelnen Node mit einer Storage-VM (dies ist die Standard-Storage-VM, die beim Implementieren von Cloud Volumes ONTAP erstellt wird)</block>
   <block id="75a89431d9d36de5dedb4018f6ca3cbe" category="paragraph">Diese Arbeitsumgebung zählt als ein System.</block>
@@ -1588,8 +1582,6 @@
   <block id="4c41d499b08fed91769d6d2c3b51157a" category="list-text">Ein Cloud Volumes ONTAP HA-Paar mit drei Storage VMs (der Standard-Storage-VM plus zwei zusätzlichen Storage-VMs, die Sie erstellt haben)</block>
   <block id="f327746b90761d64fda358e3ff9ce7a3" category="paragraph">Diese Arbeitsumgebung zählt als drei Systeme: Eines für das HA-Paar und zwei für die zusätzlichen Storage VMs.</block>
   <block id="e1d61ff8b15b12854145940279164504" category="paragraph">Das sind insgesamt sechs Systeme. Sie hätten dann Platz für weitere 14 Systeme in Ihrem Konto.</block>
-  <block id="b4c7b5de587c69b61237e13a2d37bbf1" category="paragraph">Wenn eine große Implementierung mehr als 20 Systeme erfordert, wenden Sie sich an Ihren Ansprechpartner oder Ihr Vertriebsteam.</block>
-  <block id="fc2be74c7bf9f46e12967c2298a899ba" category="inline-link">Weitere Informationen über NetApp Accounts</block>
   <block id="25827e83a178b9b140976a356e0ea48a" category="section-title">Hinweise zum Laden</block>
   <block id="e26935ad375965079b7681b616fa96eb" category="paragraph">Die folgenden Details helfen Ihnen dabei, die Funktionsweise der Verrechnung mit kapazitätsbasierter Lizenzierung zu verstehen.</block>
   <block id="10297bdbea13a5f039ea0c228d352388" category="section-title">Mindestgebühr</block>
@@ -1979,7 +1971,6 @@
   <block id="2f1e7d6affd61098f336e5b1777ec8e2" category="summary">BlueXP übernimmt die Einrichtung von Netzwerkkomponenten für Cloud Volumes ONTAP, z. B. IP-Adressen, Netzmasken und Routen. Sie müssen sicherstellen, dass Outbound-Internetzugang verfügbar ist, dass genügend private IP-Adressen verfügbar sind, dass die richtigen Verbindungen vorhanden sind und vieles mehr.</block>
   <block id="a1a264e616e24563d4b8f8b5795ea403" category="section-title">Allgemeine Anforderungen</block>
   <block id="5908bdfb58aef23bebf7df36d49b9dfb" category="section-title">Outbound-Internetzugang für Cloud Volumes ONTAP Nodes</block>
-  <block id="478c1991e02e68a88a4f2e550c670a76" category="paragraph">Wenn Sie über eine NAT-Instanz verfügen, müssen Sie eine eingehende Sicherheitsgruppenregel definieren, die HTTPS-Datenverkehr vom privaten Subnetz zum Internet zulässt.</block>
   <block id="06606cd8200a61c1bae33d7388ecad3e" category="section-title">Outbound-Internetzugang für den HA Mediator</block>
   <block id="af02a1d35914a788c9da7b1c26185fae" category="paragraph">Die HA-Mediatorinstanz muss über eine ausgehende Verbindung zum AWS EC2-Service verfügen, damit sie beim Storage-Failover unterstützt werden kann. Um die Verbindung bereitzustellen, können Sie eine öffentliche IP-Adresse hinzufügen, einen Proxyserver angeben oder eine manuelle Option verwenden.</block>
   <block id="cbdf0e4a6b992dae978b69b70468f5fe" category="inline-link">AWS Dokumentation: Interface VPC Endpunkte (AWS PrivateLink)</block>
@@ -1995,7 +1986,6 @@
   <block id="df47a11ce6c17c82716b888fb22a8fdc" category="paragraph"><block ref="df47a11ce6c17c82716b888fb22a8fdc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="311bb2a509cb1b719973430da8bab55f" category="paragraph">Die Anzahl der für ein HA-Paar erforderlichen privaten IP-Adressen hängt vom ausgewählten Implementierungsmodell ab. Ein in einer _Single_ AWS Availability Zone (AZ) implementiertes HA-Paar benötigt 15 Private IP-Adressen, während ein in _multiple_ AZS implementiertes HA-Paar 13 Private IP-Adressen erfordert.</block>
   <block id="6a83d00b38d76ec3a04d16028380b9d0" category="paragraph">Die folgenden Tabellen enthalten Details zu den LIFs, die mit den einzelnen privaten IP-Adressen verknüpft sind.</block>
-  <block id="4c74b0fad0ec0a36e66d7dbfda717515" category="section-title">LIFs für HA-Paare in einer einzelnen Verfügbarkeitszone</block>
   <block id="95416f2c916dabe21f738406546ebc53" category="cell">LIF</block>
   <block id="3c1aac82863ed9e5a9aca8ce687f711d" category="cell">Schnittstelle</block>
   <block id="6c3a6944a808a7c0bbb6788dbec54a9f" category="cell">Knoten</block>
@@ -2022,7 +2012,6 @@
   <block id="1c3ef30d8bdb6fe749451eacaebaf7c4" category="cell">Eth3</block>
   <block id="e63d2e05b66ab370cc2baaae9d2dcfe9" category="cell">RAID SyncMirror iSCSI-Datenverkehr sowie die Kommunikation zwischen den beiden Cloud Volumes ONTAP-Nodes und dem Mediator.</block>
   <block id="af90726bf48cd763b5fb4e961da15871" category="cell">Kommunikationskanal zwischen den Nodes und dem Mediator zur Unterstützung bei Storage-Takeover- und Giveback-Prozessen</block>
-  <block id="bff3c591c699ca31f730e1f2040baf4f" category="section-title">LIFs für HA-Paare in mehreren Verfügbarkeitszonen</block>
   <block id="ab89f6727a41ad22707663146b9002d8" category="admonition">Wenn eine Implementierung in mehreren Verfügbarkeitszonen erstellt wird, werden mehrere LIFs zugeordnet <block ref="c1f676036d5f93c88159c13cc04402fb" category="inline-link-macro-rx"></block>, Die nicht gegen die private IP-Beschränkung von AWS gezählt werden.</block>
   <block id="a83fb1ff36ceed286841d6eef8f99b92" category="section-title">Verbindung für Daten-Tiering</block>
   <block id="5cde4cca9b7e853dbf42e3287b5a1a5a" category="section-title">Verbindungen zu ONTAP Systemen</block>
@@ -3879,7 +3868,6 @@ Informationen zum Erstellen einer Erteilung finden Sie unter <block ref="2e58dbc
   <block id="9f7853ed9e8e024ede0e0d721f07b3c2" category="admonition">Wenn im Azure Konto, das Sie verwenden, der angezeigt wird<block ref="20fa32895c3c822e36a026ce606da187" category="inline-link-rx"></block>, BlueXP entfernt Cloud Volumes ONTAP-Ressourcen aus einer Ressourcengruppe, bei Ausfall oder Löschung der Bereitstellung.</block>
   <block id="dae0654f47d0d65003246da7fea41da1" category="paragraph"><block ref="a003b98e4140542975c2369f893345c7" category="inline-link-rx"></block>.</block>
   <block id="d001c1747f716a5e10d9eb65615cb9a2" category="paragraph">Geben Sie über den einen NTP-Server an<block ref="fd174c6a4d787b14119b835ff87e9043" category="inline-link-rx"></block> Oder über die Benutzeroberfläche, wenn Sie möchten <block ref="f63e013edf4f3da2f43cd797b99d909b" category="inline-link-macro-rx"></block>.</block>
-  <block id="7857d697f7e51708dc956bda0f1f5fc6" category="paragraph"><block ref="9401756ef4e22d0aa08f72bacfe691f1" category="inline-link-rx"></block>.</block>
   <block id="dd7ce3b5b8314dfd863defca8a331361" category="admonition">Sie können die mit Ihren Azure-Konten verbundenen Azure Marketplace-Abonnements auf der Seite „Einstellungen“ &gt; „Anmeldeinformationen“ managen.<block ref="f5a767d443b85b73e48a343532c1468a" category="inline-link-rx"></block></block>
   <block id="d0922b1e87a764a73d3cfca142d88a3e" category="paragraph"><block ref="43cde999a8a50b7abff143c352cabd37" category="inline-link-rx"></block>.</block>
   <block id="15620bf0529e3d68b9f6b01095e269d3" category="paragraph"><block ref="15620bf0529e3d68b9f6b01095e269d3" category="inline-image-macro-rx" type="image"></block></block>
@@ -4900,8 +4888,6 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="ca6c1b8dd23dea0cefa49ccce01e7bf6" category="inline-link">Amazon Dokumentation</block>
   <block id="6ac9d9128a75fd3ed101cf091ff7b6cd" category="cell">Der genaue Endpunkt des AWS-Dienstes hängt von der von Ihnen verwendeten AWS-Region ab. Die Endpunkte werden mit<block ref="3441ddb447d90616fe905a033c8acc75" prefix=" " category="inline-code"></block> und angestiftet<block ref="9418634abcbc8743a13685b8ac2ee79b" prefix=" " category="inline-code"></block>. <block ref="a5c675e1d96015bd51012d29ec2a093b" category="inline-link-rx"></block><block ref="681746188c4b856bd684247ebb305be7" category="inline-link-rx"></block>Weitere Informationen finden Sie unter  und.</block>
   <block id="f01dcf4246a1f130eae10e4fb90b9fed" category="cell">Eingeschränkter Modus.</block>
-  <block id="dab36868c1a7d7f560e209ac6adf5a57" category="section-title">Outbound-Internetzugang für NetApp AutoSupport</block>
-  <block id="12fd9367eea1001986ee9a0f050035dd" category="paragraph">Cloud Volumes ONTAP-Knoten erfordern ausgehenden Internetzugang für den Zugriff auf externe Endpunkte für verschiedene Funktionen. Cloud Volumes ONTAP kann nicht ordnungsgemäß funktionieren, wenn diese Endpunkte in Umgebungen mit strengen Sicherheitsanforderungen blockiert sind.</block>
   <block id="6486582264c3651aad9b7bb2237218eb" category="cell">Auswirkung, falls nicht verfügbar</block>
   <block id="7dfb843f052469a3cc66d13554feb0f4" category="cell">\https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net</block>
   <block id="347be217cfefaa7b87992105cf67635d" category="cell">Öffentlichen Regionen</block>
@@ -5683,7 +5669,6 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="b2c6aab3a91ad13c906bdd0aa040d62a" category="paragraph">Nach Abschluss der Implementierung im Azure Marketplace können Sie diese Systeme in BlueXP  ermitteln. Nach der Erkennung können Sie sie als Arbeitsumgebungen managen und von allen BlueXP  Funktionen profitieren. Siehe <block ref="2692dc6f425f7eb6cb61608c1e797cfb" category="inline-link-macro-rx"></block>.</block>
   <block id="73c413c9be642ae1dcba807da01ed9c1" category="paragraph">Hier ist der Funktionsvergleich zwischen den beiden Optionen. Beachten Sie, dass sich die Funktionen einer eigenständigen Instanz, die über den Azure Marketplace bereitgestellt wird, ändern, wenn sie in BlueXP  erkannt wird.</block>
   <block id="47c593846f1ae327489596a5d77c3318" category="paragraph">Instanztypen EDS_v5 und LS_v3</block>
-  <block id="d7a49ef829fbbc11240852920fc128b9" category="admonition">Der Instanztyp L8S_v3 wird im Azure Marketplace für HA-Konfigurationen unterstützt, jedoch nicht in BlueXP . BlueXP  kann sie während der Erkennung nicht korrekt erkennen.</block>
   <block id="988061bf5cc6bb2a04fa1a44abd369a1" category="list-text">Wählen Sie den Typ des hinzuzufügenden Cloud Volumes ONTAP-Systems aus.</block>
   <block id="8f366f7a602a0b428202bf1bf7b932d8" category="list-text">Wählen Sie auf der Seite Region eine Region aus. Sie können die Systeme sehen, die in der ausgewählten Region ausgeführt werden.</block>
   <block id="33baa2d44b32218796e0d2c00f3253ca" category="admonition">Cloud Volumes ONTAP-Systeme werden auf dieser Seite als Instanzen dargestellt. In der Liste können Sie nur die Instanzen auswählen, die mit dem aktuellen Konto registriert sind.</block>
@@ -5710,7 +5695,6 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="9ea9c6e19b1b679ebc8489e1abbcca81" category="inline-link-macro">Automatischer und manueller Modus</block>
   <block id="cafedbc12625c51784900844db248af7" category="list-text">Aktiviert Funktionen für das Kapazitätsmanagement in <block ref="a953b070790e096be6f09488828337e6" category="inline-link-macro-rx"></block> für die erkannten Systeme.</block>
   <block id="9a907982d0ec72433154968c4f37505e" category="paragraph">Stellen Sie sicher, dass die Implementierung im Azure Marketplace abgeschlossen ist. Der BlueXP -Connector kann die Systeme nur erkennen, wenn die Bereitstellung abgeschlossen ist und zur Erkennung verfügbar ist.</block>
-  <block id="60fc07059cb7041923e12e08ca950393" category="admonition">Die direkte Bereitstellung von Azure Marketplace unterstützt Instanztypen L8S_v3. BlueXP  unterstützt jedoch diesen Instanztyp nicht für HA-Konfigurationen und wird ihn während der Erkennung nicht korrekt erkennen können.</block>
   <block id="5074efba5aea5ce50888675e00a7b9a5" category="paragraph">In BlueXP  befolgen Sie das Standardverfahren zur Erkennung vorhandener Systeme. Siehe <block ref="f425b68573921e015280a6ac0f002e09" category="inline-link-macro-rx"></block>.</block>
   <block id="fd11d45aadcd4e9407d5c24aab385e8f" category="inline-link-macro">Erweitern des Aggregats</block>
   <block id="cfac425cd6b9dce2e8b747e094c6e8b2" category="inline-link-macro">Hinzufügen von Volumes</block>
@@ -5866,4 +5850,43 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="6505562134574bd5ec457f8041b5b41b" category="paragraph">Informationen zum Konfigurieren der Tasten und zum Einrichten der Tastenrotation finden Sie in den folgenden Microsoft Azure-Dokumentationsmaterialien:</block>
   <block id="f630598948a04f18a70fded14127468d" category="inline-link">_Automatische Drehung aktivieren_</block>
   <block id="57d9892a3d271d27b26e51e3f7d04d90" category="admonition">Stellen Sie nach der Konfiguration der Schlüssel sicher, dass Sie <block ref="864eb32f5dc808f575a1395e038bf9e3" category="inline-link-rx"></block> , damit Cloud Volumes ONTAP die neuen Schlüssel verwenden kann, wenn die vorherigen Schlüssel ablaufen. Wenn Sie diese Option im Azure-Portal nicht aktivieren, kann Cloud Volumes ONTAP die neuen Schlüssel nicht automatisch erkennen. Dies kann zu Problemen bei der Speicherbereitstellung führen.</block>
+  <block id="243dc35e4fca799b66ae2ac81899769f" category="doc">Netzwerkkonfigurationen zur Unterstützung des Connector-Proxys</block>
+  <block id="2ed774d054bc1507c4959d0ac6b89ef7" category="paragraph">Sie können die für den BlueXP Connector konfigurierten Proxyserver verwenden, um ausgehenden Internetzugriff von Cloud Volumes ONTAP zu ermöglichen. BlueXP unterstützt zwei Proxy-Typen:</block>
+  <block id="7ca7b5499afab82dcf3ebcea7fd1545b" category="inline-link">ONTAP CLI: Sicherheitszertifikat installieren</block>
+  <block id="1254bb04420b69b7e6ab73440264457c" category="list-text">*Expliziter Proxy*: Der ausgehende Datenverkehr von Cloud Volumes ONTAP verwendet die HTTP-Adresse des Proxyservers, der bei der Connector-Proxy-Konfiguration angegeben wurde. Der Connector-Administrator hat möglicherweise auch Benutzeranmeldeinformationen und Root-CA-Zertifikate für zusätzliche Authentifizierung konfiguriert. Wenn ein Root-CA-Zertifikat für den expliziten Proxy verfügbar ist, stellen Sie sicher, dass Sie dasselbe Zertifikat abrufen und in Ihre Cloud Volumes ONTAP Arbeitsumgebung hochladen. Verwenden Sie dazu <block ref="7870ceedff13ac103bbff22d8c968db3" category="inline-link-rx"></block> Befehl.</block>
+  <block id="1a6fb037dcd2648eb2f354c86c3419b9" category="list-text">*Transparenter Proxy*: Das Netzwerk ist so konfiguriert, dass ausgehender Datenverkehr von Cloud Volumes ONTAP automatisch über den Connector-Proxy geleitet wird. Beim Einrichten eines transparenten Proxys muss der Connector-Administrator lediglich ein Root-CA-Zertifikat für die Konnektivität von Cloud Volumes ONTAP angeben, nicht die HTTP-Adresse des Proxy-Servers. Stellen Sie sicher, dass Sie dasselbe Root-CA-Zertifikat abrufen und in Ihre Cloud Volumes ONTAP Arbeitsumgebung hochladen. Verwenden Sie dazu <block ref="7870ceedff13ac103bbff22d8c968db3" category="inline-link-rx"></block> Befehl.</block>
+  <block id="146adb7944757e88795676b780c31811" category="inline-link">Konfigurieren Sie einen Konnektor für die Verwendung eines Proxy-Servers</block>
+  <block id="b55415a76ebbca1e69a9b11bc903f49f" category="paragraph">Informationen zum Konfigurieren von Proxy-Servern für den BlueXP Connector finden Sie im <block ref="4d83a369cd8d5456206d71335578eaaa" category="inline-link-rx"></block> .</block>
+  <block id="0a1a38d9120e0fab1c0df30a212aec1e" category="doc">Unterstützung für transparenten Proxy</block>
+  <block id="374dae6d0dc6a44c6fd0b2460130a97c" category="paragraph">BlueXP unterstützt jetzt zusätzlich zu den bestehenden expliziten Proxy-Verbindungen transparente Proxy-Server. Beim Erstellen oder Ändern des BlueXP Connectors können Sie einen transparenten Proxy-Server konfigurieren, um den Netzwerkverkehr von und zu Cloud Volumes ONTAP sicher zu verwalten.</block>
+  <block id="5a7b8246539d23392a5e05eac48af71a" category="paragraph">Weitere Informationen zur Verwendung von Proxyservern in Cloud Volumes ONTAP finden Sie unter:</block>
+  <block id="962f31c6077b2508ca34a7930c9c7dc0" category="inline-link">Netzwerkkonfigurationen zur Unterstützung des Connector-Proxys in AWS</block>
+  <block id="5a2dfec708ec872c65198946ceb515a6" category="list-text"><block ref="5a2dfec708ec872c65198946ceb515a6" category="inline-link-rx"></block></block>
+  <block id="0a2e015f172d6cd890b0fc1f8d2f6f85" category="inline-link">Netzwerkkonfigurationen zur Unterstützung des Connector-Proxys in Azure</block>
+  <block id="d447db0a36245dbd7a8d6b7062f9c674" category="list-text"><block ref="d447db0a36245dbd7a8d6b7062f9c674" category="inline-link-rx"></block></block>
+  <block id="8f535228ace6ee4ad083884380e57ed0" category="inline-link">Netzwerkkonfigurationen zur Unterstützung des Connector-Proxys in Google Cloud</block>
+  <block id="ab7d0c86c98ea6501e61aa06f71b65de" category="list-text"><block ref="ab7d0c86c98ea6501e61aa06f71b65de" category="inline-link-rx"></block></block>
+  <block id="cda7c1b179968a5c9f823fe41b03f086" category="section-title">Neuer VM-Typ wird für Cloud Volumes ONTAP in Azure unterstützt</block>
+  <block id="84e0dab4374dc2dde153fe0a05e4184c" category="paragraph">Ab Cloud Volumes ONTAP 9.13.1 wird L8s_v3 als VM-Typ in Azure-Einzel- und Mehrfachverfügbarkeitszonen sowohl für neue als auch für bestehende Hochverfügbarkeitspaarbereitstellungen (HA) unterstützt.</block>
+  <block id="1dd216b5b85ac7f18d8b638535da234b" category="paragraph">Weitere Informationen finden Sie unter <block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block>.</block>
+  <block id="6b6ed9e27c4ab07a9fd2f83451add7bb" category="paragraph">Bei der kapazitätsbasierten Lizenzierung ist die maximale Anzahl von Cloud Volumes ONTAP -Systemen auf 24 pro BlueXP -Konto begrenzt. Ein _System_ ist ein Cloud Volumes ONTAP HA-Paar, ein Cloud Volumes ONTAP Single Node System oder zusätzliche, von Ihnen erstellte Storage VMs. Die standardmäßige Storage-VM wird nicht mit dem Grenzwert gezählt. Diese Begrenzung gilt für alle Lizenzmodelle.</block>
+  <block id="2357265e1fb763337b05d3b30d1a7528" category="paragraph">Wenn eine große Implementierung mehr als 24 Systeme erfordert, wenden Sie sich an Ihren Ansprechpartner oder Ihr Vertriebsteam.</block>
+  <block id="57bc385e23757f5fc39808d222aec1e0" category="inline-link">Erfahren Sie mehr über BlueXP -Konten</block>
+  <block id="ac2daaf676b64d5dca9c5dae497efe69" category="paragraph"><block ref="18293813bf5d781cb98550ea0d672f19" category="inline-link-rx"></block>.</block>
+  <block id="a0aa07133f0223d64ee6522e4e293e43" category="inline-link">Informieren Sie sich über Speicherlimits für AWS, Azure und Google Cloud</block>
+  <block id="9f909224987b48cbe22536ad43c7ca22" category="paragraph"><block ref="1d60a77806a2b83c9b2383a4fa2b7908" category="inline-link-rx"></block>.</block>
+  <block id="9d7e0542459b60f98e1d8529e2c87e4e" category="list-title">Verwandte Themen</block>
+  <block id="af116ecf0d8a28877e0e0fab17786c9e" category="list-text"><block ref="af116ecf0d8a28877e0e0fab17786c9e" category="inline-link-macro-rx"></block></block>
+  <block id="2026723e7fcdf41513a924f34d9e927e" category="list-text"><block ref="0c062311f918f6a3e877cd35d87ca817" category="inline-link-rx"></block>.</block>
+  <block id="06332379d0475f8dc057549603de79fd" category="paragraph">Wenn Sie strenge Regeln für ausgehenden Datenverkehr benötigen, können Sie mit den folgenden Informationen nur die Ports öffnen, die für die ausgehende Kommunikation durch Cloud Volumes ONTAP erforderlich sind. Die Cloud Volumes ONTAP -Cluster verwenden die folgenden Ports zur Regulierung des Knotenverkehrs.</block>
+  <block id="07bb5df713985e089cc7b42eb0e0f7fa" category="paragraph-title">Konfigurieren Sie Netzwerk-Tags für Cloud Volumes ONTAP in Google Cloud</block>
+  <block id="7e38553c8b62bb30a1badf50692c90f4" category="paragraph">Während der Konfiguration des transparenten Connector-Proxys fügt der Connector-Administrator ein Netzwerk-Tag für Google Cloud hinzu. Sie müssen dasselbe Netzwerk-Tag für Ihre Cloud Volumes ONTAP Konfiguration abrufen und manuell hinzufügen. Dieses Tag ist für die ordnungsgemäße Funktion des Proxyservers erforderlich.</block>
+  <block id="addabcadb17b86bb5a3143f4c25ab463" category="list-text">Suchen Sie in der Google Cloud-Konsole Ihre Cloud Volumes ONTAP Arbeitsumgebung.</block>
+  <block id="c54cc2a3649745490397c1485da258bc" category="list-text">Gehen Sie zu *Details &gt; Netzwerk &gt; Netzwerk-Tags*.</block>
+  <block id="d2de2f20c3fb9912c1f57c49209e01ee" category="list-text">Fügen Sie das für den Connector verwendete Tag hinzu und speichern Sie die Konfiguration.</block>
+  <block id="ea2e1db5ab46de0f54f5bd6eb1d8a423" category="inline-link">Abrufen der erforderlichen Kennungen</block>
+  <block id="d82215de3d8a672c3ff8f734f2d49175" category="list-text"><block ref="d82215de3d8a672c3ff8f734f2d49175" category="inline-link-rx"></block></block>
+  <block id="646a7d74ffd7db2bf6c623751ea66299" category="inline-link">Verwenden Sie die BlueXP REST-APIs</block>
+  <block id="1f41c0bf5c8ffc7560d3000ed0d0cd1c" category="list-text"><block ref="1f41c0bf5c8ffc7560d3000ed0d0cd1c" category="inline-link-rx"></block></block>
+  <block id="f2673d4a3fe0162a501d43f5168ae950" category="section-title">14 Juli 2025</block>
 </blocks>

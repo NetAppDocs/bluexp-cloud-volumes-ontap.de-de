@@ -34,6 +34,9 @@ Wenn keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten 
 
 Wenn Sie strenge ausgehende Regeln für Cloud Volumes ONTAP definiert haben, müssen Sie auch sicherstellen, dass die Cloud Volumes ONTAP-Sicherheitsgruppe _Outbound_-Verbindungen über Port 3128 zulässt.
 
+
+TIP: Wenn Sie ein HA-Paar verwenden, benötigt der HA Mediator keinen Outbound-Internetzugang.
+
 Nachdem Sie bestätigt haben, dass der ausgehende Internetzugang verfügbar ist, können Sie AutoSupport testen, um sicherzustellen, dass er Nachrichten senden kann. Anweisungen hierzu finden Sie im https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP-Dokumentation: AutoSupport einrichten"^].
 
 
