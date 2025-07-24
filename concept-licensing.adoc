@@ -155,6 +155,9 @@ NOTE: Für BlueXP  Backup und Recovery ist ein Pay-as-you-go-Abonnement (PAYGO)
 Die Verfügbarkeit der PAYGO- und BYOL-Lizenzen für Cloud Volumes ONTAP Systeme setzt die Inbetriebnahme des BlueXP  Connectors voraus. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#impact-on-cloud-volumes-ontap["Erfahren Sie mehr über Steckverbinder"^].
 
 
+NOTE: NetApp hat den Kauf, die Erweiterung und die Erneuerung von BYOL-Lizenzen eingeschränkt. Weitere Informationen finden Sie unter  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Eingeschränkte Verfügbarkeit der BYOL-Lizenzierung für Cloud Volumes ONTAPP"^] .
+
+
 
 === Erste Schritte
 
