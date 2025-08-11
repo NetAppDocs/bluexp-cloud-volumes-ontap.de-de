@@ -102,36 +102,6 @@ Sie können in verschiedenen Konfigurationen nach Kapazität bezahlen:
 
 
 
-==== Optimiert
-
-Sie bezahlen für bereitgestellte Kapazität und I/O-Vorgänge separat.
-
-* Cloud Volumes ONTAP Single Node oder HA
-* Der Ladevorgang basiert auf zwei Kostenkomponenten: Speicher und Nutzung (I/O).
-+
-Es fallen keine I/O-Kosten für Datenreplizierung (SnapMirror), Backups (SnapVault) oder NDMP an.
-
-
-
-ifdef::azure[]
-
-* Verfügbar im Azure Marketplace als Pay-as-you-go-Angebot oder als Jahresvertrag
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Verfügbar im Google Cloud Marketplace als Pay-as-you-go-Angebot oder als Jahresvertrag
-
-
-endif::gcp[]
-
-* Fügen Sie die Cloud-Datenservices von NetApp zu zusätzlichen Kosten hinzu
-
-
-
-
 ==== Professionell
 
 Sie bezahlen nach Kapazität für jede Art von Cloud Volumes ONTAP-Konfiguration mit unbegrenzten Backups.
@@ -249,7 +219,7 @@ Weitere Informationen finden Sie unter https://mysupport.netapp.com/info/communi
 
 === Ende der Verfügbarkeit von Node-basierten Lizenzen
 
-Ab dem 11. November 2024 wurde die begrenzte Verfügbarkeit von Node-basierten Lizenzen eingestellt. Der Support für Node-basierte Lizenzierung endet am 31. Dezember 2024.
+Ab dem 11. November 2024 wurde die begrenzte Verfügbarkeit von knotenbasierten Lizenzen beendet.  Der Support für die knotenbasierte Lizenzierung endet am 31. Dezember 2024.
 
 Falls Sie über einen gültigen Node-basierten Vertrag verfügen, der über das EOA-Datum hinausgeht, können Sie die Lizenz bis zum Ablauf des Vertrags weiter nutzen. Nach Ablauf des Vertrags ist eine Umstellung auf das kapazitätsbasierte Lizenzmodell erforderlich. Wenn Sie keinen langfristigen Vertrag für einen Cloud Volumes ONTAP-Knoten haben, ist es wichtig, Ihre Konvertierung vor dem EOS-Datum zu planen.
 

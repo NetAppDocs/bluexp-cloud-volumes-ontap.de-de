@@ -31,8 +31,6 @@ NOTE: NetApp hat den Kauf, die Erweiterung und die Erneuerung von BYOL-Lizenzen 
 
 ifdef::azure[]
 
-+ Beachten Sie, dass das optimierte Paket mit BYOL nicht verfügbar ist.
-
 endif::azure[]
 
 * *PAYGO*: Ein Pay-as-you-go-Abonnement (PAYGO) ist ein stündliches Abonnement über den Marketplace Ihres Cloud-Providers.
@@ -68,7 +66,7 @@ Informationen zum Konvertieren von Node-basierten Lizenzen in kapazitätsbasiert
 
 == Preise und unterstützte Konfigurationen
 
-Weitere Informationen zur Preisgestaltung finden Sie unter https://bluexp.netapp.com/pricing/["NetApp BlueXP Website"^] .
+Einzelheiten zu den Preisen finden Sie auf der https://bluexp.netapp.com/pricing/["NetApp BlueXP Website"^] .
 
 Kapazitätsbasierte Lizenzpakete sind mit Cloud Volumes ONTAP 9.7 und höher verfügbar.
 
@@ -146,7 +144,7 @@ Es gibt eine Mindestgebühr von 4 tib für jede Daten-Serving-Storage-VM mit min
 
 Wenn Sie noch keine Volumes bereitgestellt haben, gilt die Mindestgebühr nicht.
 
-Für das Essentials-Paket gilt die Mindestkapazitätsgebühr von 4 tib nicht für Storage-VMs, die nur sekundäre Volumes (Datensicherung) enthalten. Wenn Sie beispielsweise eine Storage-VM mit 1 tib sekundären Daten haben, werden Sie nur für die 1 tib Daten berechnet. Bei allen anderen nicht-Essentials-Pakettypen (optimiert und Professional) gilt unabhängig vom Volume-Typ die Mindestkapazitätsladung von 4 tib.
+Beim Essentials-Paket fällt die Gebühr für die Mindestkapazität von 4 TiB nicht für Speicher-VMs an, die nur sekundäre (Datenschutz-)Volumes enthalten.  Wenn Sie beispielsweise über eine Speicher-VM mit 1 TiB sekundärer Daten verfügen, werden Ihnen nur die Kosten für dieses 1 TiB Daten in Rechnung gestellt.  Beim Pakettyp „Professional“ gilt unabhängig vom Volume-Typ die Mindestkapazitätsberechnung von 4 TiB.
 
 
 

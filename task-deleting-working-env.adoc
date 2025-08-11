@@ -18,10 +18,10 @@ Sie sollten Cloud Volumes ONTAP-Systeme immer von BlueXP löschen, anstatt von d
 
 Wenn Sie eine Arbeitsumgebung löschen, beendet BlueXP Cloud Volumes ONTAP-Instanzen und löscht Festplatten und Snapshots.
 
-Ressourcen, die von anderen Services wie Backups für BlueXP Backup und Recovery sowie Instanzen für die BlueXP Klassifizierung gemanagt werden, werden beim Löschen einer Arbeitsumgebung nicht gelöscht. Sie müssen sie manuell löschen. Andernfalls erhalten Sie weiterhin Gebühren für diese Ressourcen.
 
+NOTE: Andere Ressourcen, wie beispielsweise von BlueXP backup and recovery verwaltete Backups und Instanzen für die BlueXP classification, werden beim Löschen einer Arbeitsumgebung nicht gelöscht.  Sie müssen sie manuell löschen.  Wenn Sie dies nicht tun, fallen für diese Ressourcen weiterhin Kosten an.
 
-NOTE: Wenn BlueXP Cloud Volumes ONTAP bei Ihrem Cloud-Provider implementiert, ermöglicht es Ihnen, die Beendigung des Arbeitsabfalls zu gewährleisten. Diese Option verhindert versehentliches Beenden.
+Wenn BlueXP Cloud Volumes ONTAP bei Ihrem Cloud-Provider implementiert, ermöglicht es Ihnen, die Beendigung des Arbeitsabfalls zu gewährleisten. Diese Option verhindert versehentliches Beenden.
 
 .Schritte
 . Wenn Sie das Backup und Recovery von BlueXP in der Arbeitsumgebung aktiviert haben, stellen Sie fest, ob die gesicherten Daten noch erforderlich sind, und legen Sie dann fest https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backups-ontap.html#deleting-backups["Löschen Sie die Backups, falls erforderlich"^].
@@ -46,3 +46,6 @@ Das Löschen der Arbeitsumgebung kann bis zu 5 Minuten dauern.
 
 
 
+
+
+NOTE: BlueXP backup and recovery sind nur für Cloud Volumes ONTAP Professional-Lizenzen kostenlos.  Dieser kostenlose Vorteil gilt nicht für gelöschte Umgebungen.  Wenn gesicherte Kopien der Cloud Volumes ONTAP Umgebung in einer BlueXP backup and recovery aufbewahrt werden, werden Ihnen die gesicherten Kopien in Rechnung gestellt, bis sie gelöscht werden.
