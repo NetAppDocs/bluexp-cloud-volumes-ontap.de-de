@@ -28,7 +28,7 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 Ab dem 11. August 2025 wird die Lizenz „Cloud Volumes ONTAP Optimized“ veralten und kann in den Azure- und Google Cloud-Marktplätzen für Pay-as-you-go-Abonnements (PAYGO) nicht mehr erworben oder verlängert werden.  Wenn Sie einen bestehenden Jahresvertrag mit einer optimierten Lizenz haben, können Sie die Lizenz bis zum Ende Ihres Vertrags weiter verwenden.  Wenn Ihre optimierte Lizenz abläuft, können Sie sich für Cloud Volumes ONTAP Essentials- oder Professional-Lizenzen entscheiden.
 
-Die Möglichkeit, optimierte Lizenzen hinzuzufügen oder zu erneuern, wäre jedoch über die APIs verfügbar.
+Die Möglichkeit, optimierte Lizenzen hinzuzufügen oder zu erneuern, besteht jedoch über die APIs.
 
 Informationen zu Lizenzpaketen finden Sie unter https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Lizenzierung für Cloud Volumes ONTAP"^] .
 
@@ -272,7 +272,7 @@ NetApp plant das Ende der Verfügbarkeit (EOA) und das Ende des Supports (EOS) f
 
 Wenn NetApp Sie ein jährliches oder längerfristiges Programm nutzen möchten, sollten Sie Ihren NetApp Ansprechpartner vor dem EOA-Datum oder dem Ablaufdatum der Lizenz kontaktieren. So sollten Sie sicherstellen, dass die Voraussetzungen für die Transition gegeben sind. Wenn Sie keinen langfristigen Vertrag für einen Cloud Volumes ONTAP-Node haben und Ihr System mit einem PAYGO-Abonnement (On-Demand Pay-as-you-go) ausführen, ist es wichtig, die Konvertierung vor dem EOS-Datum zu planen. Sowohl für langfristige Verträge als auch für PAYGO Abonnements können Sie das BlueXP  Lizenzkonvertierungstool für eine nahtlose Konvertierung verwenden.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Ende der Verfügbarkeit von Node-basierten Lizenzen"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Konvertieren Sie eine Node-basierte Cloud Volumes ONTAP Lizenz in eine kapazitätsbasierte Lizenz"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Ende der Verfügbarkeit von Node-basierten Lizenzen"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Konvertieren Sie eine knotenbasierte Cloud Volumes ONTAP -Lizenz in eine kapazitätsbasierte Lizenz"^]
 
 
 

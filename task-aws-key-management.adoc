@@ -8,7 +8,7 @@ summary: Nutzen Sie den Verschlüsselungsmanagement-Service von AWS für Ihren D
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

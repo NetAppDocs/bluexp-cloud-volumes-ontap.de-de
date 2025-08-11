@@ -1118,7 +1118,6 @@
   <block id="57cbefe39109ab51b31e818f9ce6d9c4" category="list-text">Löschen Sie die Cloud Volumes ONTAP-Arbeitsumgebung.</block>
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">Doppelklicken Sie auf der Seite „Arbeitsfläche“ auf den Namen der Cloud Volumes ONTAP-Arbeitsumgebung, die Sie löschen möchten.</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">Ein Screenshot, in dem das Menü angezeigt wird, das in der Arbeitsumgebung verfügbar ist, in der die Aktion Löschen enthalten ist.</block>
-  <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">Das Löschen der Arbeitsumgebung kann bis zu 5 Minuten dauern.</block>
   <block id="f71bca1a74e3009d7cff4912558ab628" category="summary">Einrichten eines AWS-Transit-Gateways für den NAS-Client-Zugriff auf unverankerte IP-Adressen von außerhalb der VPC, in dem sich die Cloud Volumes ONTAP befinden. Dies ist vorteilhaft, da bei Ausfällen automatisch Floating IPs zwischen Nodes migriert werden.</block>
   <block id="cf6001a1cee041e1f5a754d3c5447f93" category="inline-link-macro">Floating-IP-Adressen</block>
   <block id="74800c4b0c4f7420856e108da469e4d7" category="paragraph">Einrichten eines AWS Transit-Gateways für den Zugriff auf HA-Paare <block ref="b4592641b260566283cc706f7ca397da" category="inline-link-macro-rx"></block> Von außerhalb der VPC, wo das HA-Paar residiert.</block>
@@ -2534,7 +2533,6 @@
   <block id="2d51420db26e68ce07b81103e73ac40f" category="list-text">Applikationskonsistenz</block>
   <block id="39cc8f8f6f1d13bb434a4ddc5d57b61b" category="paragraph">Konsistenz von NetApp Snapshot Kopien mit NetApp SnapCenter sicherstellen.</block>
   <block id="b130d62b437f2a119198feb1466a4c3b" category="inline-link">Weitere Informationen zu SnapCenter</block>
-  <block id="17f0fae3c5e44f9a095562194f423343" category="paragraph"><block ref="17f0fae3c5e44f9a095562194f423343" category="inline-link-rx"></block></block>
   <block id="4c5d94eb4dc4bff93f6a96a08ab7b244" category="list-text">Datensicherheit</block>
   <block id="7bf338973426a289a345974f4910386c" category="list-text">Kontrolloptionen für die Einhaltung des Datenschutzes</block>
   <block id="81a04b1e875d3a2de5542007c35718a3" category="admonition">Lizenzen für ONTAP Funktionen sind im Lieferumfang von Cloud Volumes ONTAP enthalten.</block>
@@ -3585,7 +3583,6 @@
   <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">Screenshot, der die verfügbaren Optionen zum Ändern der Tiering-Richtlinie für ein Volume zeigt</block>
   <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">Geben Sie im Fenster Arbeitsumgebung löschen den Namen der Arbeitsumgebung ein und klicken Sie dann auf *Löschen*.</block>
   <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">Klicken Sie in der Arbeitsumgebung auf die Registerkarte *Volumes*.</block>
   <block id="31fe088c17d984a78f5027d2b8428e18" category="list-text">Navigieren Sie auf der Registerkarte Volumes zum gewünschten Volume-Titel, und klicken Sie dann auf *Volume verwalten*, um auf das rechte Bedienfeld Volumes verwalten zuzugreifen.</block>
   <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">Klicken Sie auf *Target IQN*.</block>
@@ -5436,7 +5433,6 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="cded3209819889817786a4170eb0e49c" category="inline-link">Setzen Sie NetApp Ransomware-Schutzlösungen für Cloud Volumes ONTAP ein</block>
   <block id="d2675df83ff2fbafe199fb06a1fd5d56" category="list-text"><block ref="d2675df83ff2fbafe199fb06a1fd5d56" category="inline-link-rx"></block></block>
   <block id="c2e10e9222f5db93eded2cefa02c0ef5" category="inline-link">Konvertieren Sie eine Node-basierte Cloud Volumes ONTAP Lizenz in eine kapazitätsbasierte Lizenz</block>
-  <block id="0fc6c6e7c7c886fe493ee21e8e7be67d" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="b3c563b157608d2aec77c4e8d2c32e61" category="inline-link-rx"></block></block>
   <block id="4a688a36b1b8761ed6587867f87a2cc3" category="inline-link">Managen Sie Datenservice-Storage-VMs für Cloud Volumes ONTAP in Azure</block>
   <block id="efef8f9f364ee7668a530080a3464383" category="paragraph"><block ref="efef8f9f364ee7668a530080a3464383" category="inline-link-rx"></block></block>
   <block id="36b957c17f5c2834f27a8de7ecccad90" category="doc">AutoSupport und Digital Advisor werden für Cloud Volumes ONTAP eingesetzt</block>
@@ -5879,7 +5875,6 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9def883103b7b964dcbb0993e3f8a065" category="doc">Ende der Verfügbarkeit optimierter Lizenzen</block>
   <block id="cf4dd05cf065c9ae01bc836c5033bb63" category="paragraph">Ab dem 11. August 2025 wird die Lizenz „Cloud Volumes ONTAP Optimized“ veralten und kann in den Azure- und Google Cloud-Marktplätzen für Pay-as-you-go-Abonnements (PAYGO) nicht mehr erworben oder verlängert werden.  Wenn Sie einen bestehenden Jahresvertrag mit einer optimierten Lizenz haben, können Sie die Lizenz bis zum Ende Ihres Vertrags weiter verwenden.  Wenn Ihre optimierte Lizenz abläuft, können Sie sich für Cloud Volumes ONTAP Essentials- oder Professional-Lizenzen entscheiden.</block>
-  <block id="4e106c84c3dd2cbdc5b24d055fe09562" category="paragraph">Die Möglichkeit, optimierte Lizenzen hinzuzufügen oder zu erneuern, wäre jedoch über die APIs verfügbar.</block>
   <block id="2b8e43c95c1d15bc0824064c3dc0f993" category="paragraph">Informationen zu Lizenzpaketen finden Sie unter<block ref="4b2776d787a70224c2441f63d3888380" category="inline-link-rx"></block> .</block>
   <block id="ed1f600d01a229b43b3196dd2f2e48ca" category="inline-link">Verwalten der kapazitätsbasierten Lizenzierung</block>
   <block id="1d4a9a37e700957e9d79664f032cf5ec" category="paragraph">Informationen zum Umschalten auf eine andere Lademethode finden Sie unter<block ref="eeeecd1116eaf4db26e064552c04366d" category="inline-link-rx"></block> .</block>
@@ -5897,4 +5892,9 @@ Maximale Effizienz Anzeige von Storage-Effizienz-Metriken und Identifizierung vo
   <block id="219fa750a13ad456df1d25524d9f6ad9" category="list-text">* Cloud Volumes ONTAP -Paketnutzung*: Dieser Bericht enthält die folgenden Informationen für jedes Paket:</block>
   <block id="cfba7e7177c8f36e5c073175ecdcec93" category="paragraph">Mit der kapazitätsbasierten Lizenzierung können Sie für Cloud Volumes ONTAP pro TiB Kapazität bezahlen.  Die kapazitätsbasierte Lizenzierung ist in Form eines _Pakets_ verfügbar: dem Essentials- oder Professional-Paket.</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">11. August 2025</block>
+  <block id="d7541fdf3e0094adec62a7042b5512d9" category="inline-link">Konvertieren Sie eine knotenbasierte Cloud Volumes ONTAP -Lizenz in eine kapazitätsbasierte Lizenz</block>
+  <block id="249c33a7057b26f2c17f912ee1675174" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="c718c65e9665241afe238019ab334376" category="inline-link-rx"></block></block>
+  <block id="09027718866a8a3a2edb0bb0eb53c926" category="paragraph">Die Möglichkeit, optimierte Lizenzen hinzuzufügen oder zu erneuern, besteht jedoch über die APIs.</block>
+  <block id="064c8585f26a6a9766e55da306b39425" category="paragraph"><block ref="064c8585f26a6a9766e55da306b39425" category="inline-link-rx"></block></block>
+  <block id="42f21a40b3b95c1fc1fe699b458d9f4f" category="list-text">Geben Sie im Fenster „Arbeitsumgebung löschen“ den Namen der Arbeitsumgebung ein und klicken Sie dann auf *Löschen*.  Das Löschen der Arbeitsumgebung kann bis zu fünf Minuten dauern.</block>
 </blocks>

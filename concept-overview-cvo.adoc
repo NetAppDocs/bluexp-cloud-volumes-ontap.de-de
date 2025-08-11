@@ -45,7 +45,7 @@ Wechseln Sie nach Bedarf zwischen hochperformanten Storage Pools, ohne Applikati
 Konsistenz von NetApp Snapshot Kopien mit NetApp SnapCenter sicherstellen.
 
 +
-https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html["Weitere Informationen zu SnapCenter"^]
+https://docs.netapp.com/us-en/snapcenter/get-started/concept_snapcenter_overview.html["Weitere Informationen zu SnapCenter"^]
 
 * Datensicherheit
 +

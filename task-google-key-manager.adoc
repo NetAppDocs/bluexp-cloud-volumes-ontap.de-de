@@ -8,7 +8,7 @@ summary: Nutzen Sie den Key Management Service von Google für Ihren Drittanbiet
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
