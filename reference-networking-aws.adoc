@@ -70,7 +70,7 @@ Die Benutzerauthentifizierung schlägt fehl, und die folgenden Dienste sind weit
 | Kommunikation mit AWS Services. | Standard- und Privatmodus. | Cloud Volumes ONTAP kann nicht mit AWS-Service kommunizieren, um bestimmte BlueXP -Vorgänge in AWS auszuführen. 
 
 
-| Der genaue Endpunkt des AWS-Dienstes hängt von der von Ihnen verwendeten AWS-Region ab. Die Endpunkte werden mit `amazonaws.com` und angestiftet `c2s.ic.gov`. 	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["AWS SDK"] https://docs.aws.amazon.com/general/latest/gr/rande.html["Amazon Dokumentation"]Weitere Informationen finden Sie unter  und.  a| 
+| Der genaue Regierungsendpunkt für den AWS-Dienst hängt von der von Ihnen verwendeten AWS-Region ab.  Die Endpunkte werden mit dem Suffix `amazonaws.com` Und `c2s.ic.gov` .  Siehe	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["AWS SDK"^] Und https://docs.aws.amazon.com/general/latest/gr/rande.html["AWS-Dokumentation"^] für weitere Informationen.  a| 
 * CloudFormation
 * Elastic Compute Cloud (EC2)
 * Identitäts- und Zugriffsmanagement (Identity and Access Management, IAM)

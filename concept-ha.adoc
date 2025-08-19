@@ -126,7 +126,7 @@ Sie können die richtige IP-Adresse von BlueXP leicht erkennen, indem Sie die La
 Die Implementierung einer HA-Konfiguration in einer einzelnen Verfügbarkeitszone (AZ) kann die Hochverfügbarkeit Ihrer Daten gewährleisten, wenn eine Instanz, auf der ein Cloud Volumes ONTAP Node ausgeführt wird, ausfällt. Alle Daten sind nativ von außerhalb des VPC zugänglich.
 
 
-NOTE: BlueXP erstellt eine https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS Spread-Platzierungsgruppe"^] Und startet die beiden HA-Nodes in dieser Platzierungsgruppe. Die Platzierungsgruppe verringert das Risiko gleichzeitiger Ausfälle, indem sie die Instanzen auf unterschiedliche zugrunde liegende Hardware verteilt. Diese Funktion verbessert die Redundanz aus Sicht des Computing und nicht aus Sicht des Festplattenausfalls.
+NOTE: BlueXP erstellt eine https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS-Dokumentation: AWS Spread Placement Group"^] und startet die beiden HA-Knoten in dieser Platzierungsgruppe.  Die Platzierungsgruppe verringert das Risiko gleichzeitiger Ausfälle, indem sie die Instanzen auf unterschiedliche zugrunde liegende Hardware verteilt.  Diese Funktion verbessert die Redundanz aus der Perspektive der Datenverarbeitung und nicht aus der Perspektive eines Festplattenausfalls.
 
 
 
@@ -200,7 +200,7 @@ Der einzige unterstützte Festplattentyp ist GP2. Die folgenden EC2 Instanztypen
 
 NOTE: Cloud Volumes ONTAP unterstützt nur diese Konfigurationen. Die Auswahl nicht unterstützter Festplattentypen oder nicht qualifizierter Instanzen in der Konfiguration der AWS Local Zone kann zu einem Bereitstellungsfehler führen. Daten-Tiering zu AWS S3 ist in AWS Local Zones aufgrund fehlender Konnektivität nicht verfügbar.
 
-Die neuesten und vollständigen Details der finden Sie in der AWSlink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2-Instanztypen in lokalen Zonen"^]-Dokumentation.
+Die aktuellsten und vollständigen Informationen zu denlink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["AWS-Dokumentation: EC2-Instanztypen in lokalen Zonen"^] .
 
 
 

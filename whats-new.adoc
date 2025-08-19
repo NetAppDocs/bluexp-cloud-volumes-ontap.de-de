@@ -26,7 +26,7 @@ Die auf dieser Seite beschriebenen Verbesserungen beziehen sich nur auf BlueXP-F
 
 === Ende der Verfügbarkeit optimierter Lizenzen
 
-Ab dem 11. August 2025 wird die Lizenz „Cloud Volumes ONTAP Optimized“ veralten und kann in den Azure- und Google Cloud-Marktplätzen für Pay-as-you-go-Abonnements (PAYGO) nicht mehr erworben oder verlängert werden.  Wenn Sie einen bestehenden Jahresvertrag mit einer optimierten Lizenz haben, können Sie die Lizenz bis zum Ende Ihres Vertrags weiter verwenden.  Wenn Ihre optimierte Lizenz abläuft, können Sie sich für Cloud Volumes ONTAP Essentials- oder Professional-Lizenzen entscheiden.
+Ab dem 11. August 2025 wird die Lizenz „Cloud Volumes ONTAP Optimized“ veralten und kann in den Azure- und Google Cloud-Marktplätzen für Pay-as-you-go-Abonnements (PAYGO) nicht mehr erworben oder verlängert werden. Wenn Sie einen bestehenden Jahresvertrag mit einer optimierten Lizenz haben, können Sie die Lizenz bis zum Ende Ihres Vertrags weiter verwenden. Wenn Ihre optimierte Lizenz abläuft, können Sie sich für Cloud Volumes ONTAP Essentials- oder Professional-Lizenzen in BlueXP entscheiden.
 
 Die Möglichkeit, optimierte Lizenzen hinzuzufügen oder zu erneuern, besteht jedoch über die APIs.
 
@@ -1762,7 +1762,7 @@ Die folgenden Änderungen wurden mit der Version 3.9.7 des Connectors eingeführ
 
 === Neues Professional Package in AWS
 
-Mit einem neuen Professional-Paket können Sie Cloud Volumes ONTAP und Cloud Backup Service unter Verwendung eines jährlichen Vertrags über AWS Marketplace bündeln. Die Zahlung erfolgt pro tib. Durch dieses Abonnement können Sie Backups von Daten vor Ort nicht erstellen.
+Mit einem neuen Professional-Paket können Sie Cloud Volumes ONTAP und Cloud Backup Service bündeln, indem Sie einen Jahresvertrag vom AWS Marketplace nutzen.  Die Bezahlung erfolgt pro TiB.  Mit diesem Abonnement können Sie keine lokalen Daten sichern.
 
 Bei Auswahl dieser Zahlungsoption können Sie bis zu 2 PiB pro Cloud Volumes ONTAP-System über EBS Festplatten und Tiering zu S3 Objekt-Storage (Single Node oder HA) bereitstellen.
 

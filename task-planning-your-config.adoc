@@ -43,10 +43,9 @@ Die Auswahl einer lokalen Zone ist optional. Cloud Volumes ONTAP wird in einigen
 
 NOTE: Cloud Volumes ONTAP hat keine Unterstützung für Daten-Tiering und Cloud Tiering in AWS Local Zones. Darüber hinaus werden lokale Zonen mit Instanzen, die nicht für Cloud Volumes ONTAP qualifiziert wurden, nicht unterstützt. Ein Beispiel dafür ist Miami, das nicht als lokale Zone verfügbar ist, da es nur Gen6-Instanzen hat, die nicht unterstützt und nicht qualifiziert sind.
 
-link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["Sehen Sie sich die vollständige Liste der lokalen Zonen an"^].
-Lokale Zonen müssen aktiviert sein, bevor Sie Ressourcen in diesen Zonen erstellen und verwalten können.
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["AWS-Dokumentation: Vollständige Liste der lokalen Zonen anzeigen"^] . Lokale Zonen müssen aktiviert werden, bevor Sie Ressourcen in diesen Zonen erstellen und verwalten können.
 
-link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["Erfahren Sie, wie Sie eine lokale Zone aktivieren"^].
+link:https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html["AWS-Dokumentation: Erste Schritte mit AWS Local Zones"^] .
 
 
 
@@ -78,7 +77,7 @@ Instanztyp::
 * Wenn Sie eine Anwendung haben, die hauptsächlich liest, dann wählen Sie ein System mit genügend RAM.
 +
 ** https://aws.amazon.com/ec2/instance-types/["AWS Dokumentation: Amazon EC2 Instanztypen"^]
-** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS Dokumentation: Für Amazon EBS optimierte Instanzen"^]
+** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS-Dokumentation: Amazon EBS-optimierte Instances"^]
 
 
 
@@ -89,7 +88,7 @@ EBS-Festplattentyp:: Auf höherer Ebene unterscheiden sich die EBS-Festplattenty
 --
 * _General Purpose SSD (gp3)_ Festplatten sind die kostengünstigsten SSDs, die ein ausgewogenes Verhältnis zwischen Kosten und Performance für ein breites Spektrum an Workloads bieten. Die Performance wird hinsichtlich IOPS und Durchsatz definiert. gp3-Festplatten werden von Cloud Volumes ONTAP 9.7 und höher unterstützt.
 +
-Wenn Sie eine gp3-Festplatte auswählen, füllt BlueXP die Standard-IOPS- und Durchsatzwerte, die eine Performance liefern, die einer gp2-Festplatte entspricht, die auf der ausgewählten Festplattengröße basiert. Sie können die Werte erhöhen, um eine bessere Leistung zu einem höheren Preis zu erhalten, aber wir unterstützen keine niedrigeren Werte, weil es zu einer minderwertigen Leistung führen kann. Kurz gesagt: Halten Sie bei den Standardwerten an, oder erhöhen Sie sie. Senken Sie Ihre Storage-Kosten nicht. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["Erfahren Sie mehr über gp3-Festplatten und deren Leistung"^].
+Wenn Sie eine GP3-Festplatte auswählen, füllt BlueXP Standard-IOPS- und Durchsatzwerte aus, die basierend auf der ausgewählten Festplattengröße eine Leistung bieten, die einer GP2-Festplatte entspricht.  Sie können die Werte erhöhen, um zu einem höheren Preis eine bessere Leistung zu erzielen. Niedrigere Werte werden von uns jedoch nicht unterstützt, da dies zu einer schlechteren Leistung führen kann.  Kurz gesagt: Bleiben Sie bei den Standardwerten oder erhöhen Sie sie.  Senken Sie sie nicht. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["AWS-Dokumentation: Erfahren Sie mehr über GP3-Festplatten und ihre Leistung"^] .
 
 +
 Beachten Sie, dass Cloud Volumes ONTAP die Funktion Amazon EBS Elastic Volumes mit gp3-Festplatten unterstützt. link:concept-aws-elastic-volumes.html["Weitere Informationen zur Unterstützung von Elastic Volumes"].
