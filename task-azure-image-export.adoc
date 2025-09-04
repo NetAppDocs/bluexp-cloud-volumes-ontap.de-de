@@ -63,22 +63,28 @@ Beispielsweise sollten alle Single-Node-Implementierungen mit Cloud Volumes ONTA
 |===
 
 
-| *Cloud Volumes ONTAP-Version* | *VM-Bereitstellungsmethode* | *SKU-Name* 
+| *Cloud Volumes ONTAP-Version* | *VM-Bereitstellung durch* | *SKU-Name* 
 
 
-| 9.16.1 und höher | Über die direkte Markteinsatzmethode | ONTAP_Cloud_direct 
+| 9.17.1 und höher | Der Azure Marketplace | ontap_cloud_direct_gen2 
 
 
-| 9.16.1 und höher | Alle Bereitstellungen sind über BlueXP  möglich | ONTAP_Cloud 
+| 9.17.1 und höher | BlueXP | ontap_cloud_gen2 
 
 
-| 9.15.1 | Alle Bereitstellungen sind über BlueXP  möglich | ONTAP_Cloud 
+| 9.16.1 | Der Azure Marketplace | ONTAP_Cloud_direct 
 
 
-| 9.15.0 | Single Node | ontap_Cloud_byol 
+| 9.16.1 | BlueXP | ONTAP_Cloud 
 
 
-| 9.15.0 | Hochverfügbarkeit | ontap_Cloud_byol_ha 
+| 9.15.1 | BlueXP | ONTAP_Cloud 
+
+
+| 9.15.0 | BlueXP, Einzelknotenbereitstellungen | ontap_Cloud_byol 
+
+
+| 9.15.0 | BlueXP, Bereitstellungen mit hoher Verfügbarkeit (HA) | ontap_Cloud_byol_ha 
 |===
 . Nachdem Sie die ONTAP-Version und das Azure Marketplace-Image zugeordnet haben, exportieren Sie die VHD-Datei mithilfe der Azure Cloud Shell oder der Azure CLI aus dem Azure Marketplace.
 
